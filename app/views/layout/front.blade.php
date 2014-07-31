@@ -167,7 +167,7 @@ height: 80px;"></span> </a> </h1>
 				</a>
 				</article>
 			</li>
-			<li><article>
+			<li class="service"><article>
 				<a href="http://techid.stab-iitb.org">
 				<figure class="preview"> <img class="preview_bw" src="{{ URL::asset('assets/front/img/index_panel_09_img_01.jpg')}}" alt="">
 					<video class="preview_color" autoplay muted loop>
