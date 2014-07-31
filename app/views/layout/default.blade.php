@@ -3,11 +3,7 @@
 <html lang="en">
 	<head>
 		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		@yield('meta')
 		
 		<title>STAB | IITB</title>
 		
@@ -37,19 +33,12 @@
 			<script src="{{ URL::asset('assets/js/respond.min.js')}}"></script>
 		<![endif]-->
 		
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			
-			ga('create', 'UA-35598290-4', 'fuviz.com');
-			ga('send', 'pageview');
-		</script>
 	</head>
 	
 	<body>
-		
+
+	
+
 		<!-- ============================================================= HEADER ============================================================= -->
 		
 		<header>
@@ -59,16 +48,14 @@
 					<div class="container">
 						
 						<ul class="info pull-left">
-							<li><a href="#"><i class="icon-mail-1 contact"></i> stab.iitb@gmail.com</a></li>
+							<li><a href="mailto://stab.iitb@gmail.com"><i class="icon-mail-1 contact"></i> stab.iitb@gmail.com</a></li>
 						</ul><!-- /.info -->
 						
 						<ul class="social pull-right">
-							<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/stab.iitb"><i class="icon-s-facebook"></i></a></li>
+							<li><a href="https://github.com/stabiitb"><i class="icon-s-github"></i></a></li>
+							<li><a href="https://www.youtube.com/user/STABiitb"><i class="icon-s-youtube"></i></a></li>
 							<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-							<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-							<li><a href="#"><i class="icon-s-behance"></i></a></li>
-							<li><a href="#"><i class="icon-s-dribbble"></i></a></li>
 						</ul><!-- /.social -->
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
@@ -283,77 +270,14 @@
 <!-- ============================================================= FOOTER ============================================================= -->
 		
 		<footer class="dark-bg">
-			<div class="container inner">
-				<div class="row">
-					
-					<div class="col-md-3 col-sm-6 inner">
-						<h4>Who we are</h4>
-						<a href="index.html"><img class="logo img-intext" src="{{ URL::asset('assets/images/logo-white.svg')}}" alt=""></a>
-						<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-						<a href="about.html" class="txt-btn">More about us</a>
-					</div><!-- /.col -->
-					
-					<div class="col-md-3 col-sm-6 inner">
-						<h4>Latest works</h4>
-						
-						<div class="row thumbs gap-xs">
-														
-							<div class="col-xs-6 thumb">
-								<figure class="icon-overlay icn-link">
-									<a href="portfolio-post.html"><img src="{{ URL::asset('assets/images/art/work02.jpg')}}" alt=""></a>
-								</figure>
-							</div><!-- /.thumb -->
-							
-							<div class="col-xs-6 thumb">
-								<figure class="icon-overlay icn-link">
-									<a href="portfolio-post.html"><img src="{{ URL::asset('assets/images/art/work03.jpg')}}" alt=""></a>
-								</figure>
-							</div><!-- /.thumb -->
-							
-							<div class="col-xs-6 thumb">
-								<figure class="icon-overlay icn-link">
-									<a href="portfolio-post.html"><img src="{{ URL::asset('assets/images/art/work07.jpg')}}" alt=""></a>
-								</figure>
-							</div><!-- /.thumb -->
-							
-							<div class="col-xs-6 thumb">
-								<figure class="icon-overlay icn-link">
-									<a href="portfolio-post.html"><img src="{{ URL::asset('assets/images/art/work01.jpg')}}" alt=""></a>
-								</figure>
-							</div><!-- /.thumb -->
-							
-						</div><!-- /.row -->
-					</div><!-- /.col -->
-					
-					
-					<div class="col-md-3 col-sm-6 inner">
-						<h4>Get In Touch</h4>
-						<p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
-						<ul class="contacts">
-							<li><i class="icon-location contact"></i> 84 Street, City, State 24813</li>
-							<li><i class="icon-mobile contact"></i> +00 (123) 456 78 90</li>
-							<li><a href="#"><i class="icon-mail-1 contact"></i> info@reen.com</a></li>
-						</ul><!-- /.contacts -->
-					</div><!-- /.col -->
-					
-					<div class="col-md-3 col-sm-6 inner">
-						<h4>Free updates</h4>
-						<p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
-						<form id="newsletter" class="form-inline newsletter" role="form">
-							<label class="sr-only" for="exampleInputEmail">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address">
-							<button type="submit" class="btn btn-default btn-submit">Subscribe</button>
-						</form>
-					</div><!-- /.col -->
-					
-				</div><!-- /.row --> 
-			</div><!-- .container -->
-		  
+			
 			<div class="footer-bottom">
 				<div class="container inner">
-					<p class="pull-left">© 2014 REEN. All rights reserved.</p>
+					<p class="pull-left">© 2014 STAB-IITB. All rights reserved. Designed and maintained by
+					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a>
+					</p>
 					<ul class="footer-menu pull-right">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="{{URL::to('/')}}">Home</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="about.html">About</a></li>

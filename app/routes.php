@@ -15,3 +15,13 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('test', function()
+{
+	return View::make('layout.front');
+});
+
+
+Route::get('team-stab-2014', array('as'=>'team-stab-2014','uses'=>function(){
+	return View::make('team.2014');
+}));
