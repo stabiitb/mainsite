@@ -75,7 +75,7 @@
 							
 							<!-- ============================================================= LOGO ============================================================= -->
 							
-							<a class="navbar-brand" href="index.php"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
+							<a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
 							
 							<!-- ============================================================= LOGO : END ============================================================= -->
 							
