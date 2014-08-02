@@ -48,7 +48,7 @@
 					<div class="container">
 						
 						<ul class="info pull-left">
-							<li><a href="mailto://stab.iitb@gmail.com"><i class="icon-mail-1 contact"></i> stab.iitb@gmail.com</a></li>
+							<li><a href="mailto://oc.stab@iitb.ac.in"><i class="icon-mail-1 contact"></i>oc.stab@iitb.ac.in</a></li>
 						</ul><!-- /.info -->
 						
 						<ul class="social pull-right">
@@ -84,17 +84,36 @@
 							
 							<ul class="nav navbar-nav">
 								
-								<li class="dropdown">
+								<li class="dropdown yamm-fullwidth">
 									<a href="#" class="dropdown-toggle js-activated">About</a>
 									
-									<ul class="dropdown-menu">
-										<li><a href="#">Team Stab 2014</a></li>
-										<li><a href="#">Vision of STAB Team 2014-15</a></li>
-										<li><a href="#">Alumni</a></li>
-										<li><a href="#">Hall of Fame</a></li>
-										<li><a href="#">Faculty advisors/mentors</a></li>
-									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
+									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left: 21%;">
+										<li>
+											<div class="yamm-content row">
+											
+											
+												<div class="col-sm-6 inner">
+													<h4>Special Pages</h4>
+													
+													<ul class="circled">
+														<li><a href="{{URL::Route('vision')}}">Vision</a></li>
+														<li><a href="">Hall of Fame</a></li>
+														<li>Reports
+															<ul>
+																<li>
+																	
+																</li>
+															</ul>
+														</li>
+													</ul><!-- /.circled -->
+												</div><!-- /.col -->
+											
+												
+											</div><!-- /.yamm-content -->
+										</li>
+									</ul><!-- /.yamm-dropdown-menu -->
+								</li><!-- /.yamm-fullwidth -->
+								
 								
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Clubs</a>
