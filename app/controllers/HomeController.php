@@ -15,9 +15,40 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function home()
 	{
-		return View::make('hello');
+		return View::make('mainpage');
 	}
-
+	public function aeromodelling_club()
+	{
+		return View::make('mainpage');
+	}
+	public function electronics_club()
+	{
+		return View::make('mainpage');
+	}
+	public function krittika()
+	{
+		return View::make('mainpage');
+	}
+	public function MnP()
+	{
+		return View::make('mainpage');
+	}
+	public function robotics_club()
+	{
+		return View::make('mainpage');
+	}
+	public function wncc()
+	{
+		return View::make('mainpage');
+	}
+	public function technovation()
+	{
+		return View::make('mainpage');
+	}
+	public function vision()
+	{
+		return View::make('vision');
+	}
 }
