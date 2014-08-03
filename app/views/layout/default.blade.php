@@ -129,12 +129,12 @@
 									<a href="#" class="dropdown-toggle js-activated">Clubs</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="#">Aeromodelling Club</a></li>
-										<li><a href="#">Electronics Club</a></li>
-										<li><a href="#">Krittika</a></li>
-										<li><a href="#">Math and Physics Club</a></li>
-										<li><a href="#">Robotics Club</a></li>
-										<li><a href="#">Web and Coding club</a></li>
+										<li><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></li>
+										<li><a href="{{URL::Route('electronics-club')}}">Electronics Club</a></li>
+										<li><a href="{{URL::Route('krittika')}}">Krittika</a></li>
+										<li><a href="{{URL::Route('MnP')}}">Math and Physics Club</a></li>
+										<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
+										<li><a href="{{URL::Route('wncc')}}">Web and Coding club</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
