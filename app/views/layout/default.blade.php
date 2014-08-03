@@ -93,7 +93,7 @@
 											
 											
 												<div class="col-sm-6 inner">
-													<h4>Special Pages</h4>
+													<h4></h4>
 													
 													<ul class="circled">
 														<li><a href="{{URL::Route('vision')}}">Vision</a></li>
@@ -101,10 +101,20 @@
 														<li>Reports
 															<ul>
 																<li>
-																	
+																	Institute Review 2013
 																</li>
 															</ul>
 														</li>
+													</ul><!-- /.circled -->
+												</div><!-- /.col -->
+
+												<div class="col-sm-6 inner">
+													<h4>Contacts</h4>
+													
+													<ul class="circled">
+														<li><a href="{{URL::Route('vision')}}">Team 2014-15</a></li>
+														<li><a href="">Alumni</a></li>
+														<li><a href="">Faculty Advisors/Mentors</a></li>
 													</ul><!-- /.circled -->
 												</div><!-- /.col -->
 											
@@ -128,14 +138,21 @@
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
-								<li class="dropdown">
-									<a href="http://technovation.stab-iitb.org/" class="dropdown-toggle js-activated">Technovation</a>
-
-									<ul class="dropdown-menu">
-										<li><a href="http://technovation.stab-iitb.org/">Visit Site</a></li>
-									</ul>
+								<li >
+									<a href="http://technovation.stab-iitb.org/">Technovation</a>
 								</li><!-- /.dropdown -->
 								
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
+									
+									<ul class="dropdown-menu">
+										
+										<li><a href="#">Visit Site</a></li>
+										
+									</ul><!-- /.dropdown-menu -->
+								</li><!-- /.dropdown -->
+								
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Resources</a>
 									
@@ -147,120 +164,26 @@
 								</li><!-- /.dropdown -->
 								
 								<li class="dropdown">
-									<a href="http://techid.stab-iitb.org/" class="dropdown-toggle js-activated">Tech ID</a>
+									<a href="#" class="dropdown-toggle js-activated">IITB's Corner</a>
 
 									<ul class="dropdown-menu">
-										<li><a href="http://technovation.stab-iitb.org/">Visit tech id</a></li>
+										<li><a href="#">Tech GC Rankings</a></li>
+										<li><a href="#">Component Sharing Portal</a></li>
+										<li><a href="#">Tech Calender</a></li>
+										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
 									</ul>
 								</li><!-- /.dropdown -->
 
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
-									
+									<a href="#" class="dropdown-toggle js-activated">More</a>
+
 									<ul class="dropdown-menu">
-										
-										<li><a href="#">View Page</a></li>
-										
-									</ul><!-- /.dropdown-menu -->
+										<li><a href="#">Tech GC Rankings</a></li>
+										<li><a href="#">Component Sharing Portal</a></li>
+										<li><a href="#">Tech Calender</a></li>
+										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
+									</ul>
 								</li><!-- /.dropdown -->
-								
-								<!-- ============================================================= MEGA MENU ============================================================= -->
-								
-								<li class="dropdown yamm-fullwidth">
-									<a href="#" class="dropdown-toggle js-activated">Mega Menu</a>
-									
-									<ul class="dropdown-menu yamm-dropdown-menu">
-										<li>
-											<div class="yamm-content row">
-											
-												<div class="col-sm-3 inner">
-													<h4>Focus on</h4>
-													<figure>
-														<div class="icon-overlay icn-link">
-															<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work01.jpg')}}" alt=""></a>
-														</div>
-														<figcaption>
-															<p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
-															<a href="portfolio-post.php" class="btn">View Project</a>
-														</figcaption>
-													</figure>
-												</div><!-- /.col -->
-												
-												<div class="col-sm-3 inner">
-													<h4>Special Pages</h4>
-													
-													<ul class="circled">
-														<li><a href="portfolio2.php">3 Columns Details Grid Portfolio</a></li>
-														<li><a href="portfolio5.php">Fullscreen Grid Portfolio</a></li>
-														<li><a href="portfolio-post5.php">Portfolio Post with Video</a></li>
-														<li><a href="blog5.php">2 Columns Grid Blog with Left Sidebar</a></li>
-														<li><a href="blog7.php">3 Columns Grid Blog without Sidebar</a></li>
-														<li><a href="blog-post.php">Blog Post with Right Sidebar</a></li>
-														<li><a href="sidenav.php">Side Navigation Page</a></li>
-														<li><a href="about2.php">About Page II</a></li>
-														<li><a href="services.php">Service Page I</a></li>
-														<li><a href="pricing.php">Pricing Page I</a></li>
-														<li><a href="contact.php">Contact Page I</a></li>
-													</ul><!-- /.circled -->
-												</div><!-- /.col -->
-												
-												<div class="col-sm-3 inner">
-													<h4>Latest Works</h4>
-													
-													<div class="row thumbs gap-xs">
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work02.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work03.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work04.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work05.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work06.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-														<div class="col-xs-6 thumb">
-															<figure class="icon-overlay icn-link">
-																<a href="portfolio-post.php"><img src="{{ URL::asset('assets/images/art/work07.jpg')}}" alt=""></a>
-															</figure>
-														</div><!-- /.thumb -->
-														
-													</div><!-- /.row -->
-												</div><!-- /.col -->
-												
-												<div class="col-sm-3 inner">
-													<h4>About Us</h4>
-													<p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
-													<p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam.</p>
-													<a href="about.php" class="btn">Read More</a>
-												</div><!-- /.col -->
-												
-											</div><!-- /.yamm-content -->
-										</li>
-									</ul><!-- /.yamm-dropdown-menu -->
-								</li><!-- /.yamm-fullwidth -->
-								
-								<!-- ============================================================= MEGA MENU : END ============================================================= -->
 								
 								
 								<li class="dropdown pull-right searchbox">
@@ -323,7 +246,6 @@
 		<script src="{{ URL::asset('assets/js/owl.carousel.min.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.isotope.min.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.easytabs.min.js')}}"></script>
-		<script src="{{ URL::asset('assets/js/google.maps.api.v3.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/viewport-units-buggyfill.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/scripts.js')}}"></script>
 		

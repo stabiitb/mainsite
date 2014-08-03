@@ -14,3 +14,9 @@ Route::get('technovation',array('as'=>'technovation','uses'=>'HomeController@tec
 // Vision
 Route::get('vision-of-stab-team-2014-15',array('as'=>'vision','uses'=>'HomeController@vision'));
 
+Route::get('pradyot',function ()
+{
+	$name="pradyot";
+	return View::make('mainpage')->with('na',$name);
+});
+

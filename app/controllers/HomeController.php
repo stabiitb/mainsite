@@ -25,7 +25,7 @@ class HomeController extends BaseController {
 	}
 	public function electronics_club()
 	{
-		return View::make('mainpage');
+		return View::make('club.elec');
 	}
 	public function krittika()
 	{
