@@ -40,13 +40,13 @@ class HomeController extends BaseController {
 	public function robotics_club($page="about")
 	{
 		if($page=='about')
-			return View::make('club.robo');
+			return View::make('club.robo.home');
 		else if($page=='team')
 			return View::make('club.robo.team');
 		else if($page=='vision')
 			return View::make('club.robo.vision');
 		else
-			return View::make('club.robo');
+			return View::make('club.robo.home');
 	}
 	public function wncc()
 	{
