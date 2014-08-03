@@ -16,6 +16,7 @@
 							
 						<ul class="sidenav">
 							<li><a href="{{URL::Route('robotics-club')}}">Home</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
 						</ul><!-- /.sidenav -->

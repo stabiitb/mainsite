@@ -43,6 +43,8 @@ class HomeController extends BaseController {
 			return View::make('club.robo');
 		else if($page=='team')
 			return View::make('club.robo.team');
+		else if($page=='vision')
+			return View::make('club.robo.vision');
 		else
 			return View::make('club.robo');
 	}
