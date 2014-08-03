@@ -229,13 +229,7 @@
 								</div><!-- /.posts -->
 							</div><!-- /.grid-blog -->
 							
-							<ul class="pagination">
-								<li><a href="#">Prev</a></li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">Next</a></li>
-							</ul><!-- /.pagination --> 
+						
 							
 						</div><!-- /.col -->
 					</div><!-- /.row -->
@@ -244,5 +238,5 @@
 			</section>
 			
 			<!-- ============================================================= SECTION – BLOG : END ============================================================= -->
-			
+
 @endsection
