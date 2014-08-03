@@ -15,15 +15,9 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Videos</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}">Home</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/event">Events</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
@@ -31,7 +25,7 @@
 					</div><!-- /.col -->
 					
 					<div class="col-md-9 inner-left-md border-left">
-						@yield('content')
+						@yield('inner-content')
 					</div><!-- ./col -->
 						
 				</div><!-- /.row -->

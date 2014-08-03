@@ -31,13 +31,20 @@ class HomeController extends BaseController {
 	{
 		return View::make('mainpage');
 	}
+
 	public function MnP()
 	{
 		return View::make('mainpage');
 	}
-	public function robotics_club()
+
+	public function robotics_club($page="about")
 	{
-		return View::make('mainpage');
+		if($page=='about')
+			return View::make('club.robo');
+		else if($page=='team')
+			return View::make('club.robo.team');
+		else
+			return View::make('club.robo');
 	}
 	public function wncc()
 	{
