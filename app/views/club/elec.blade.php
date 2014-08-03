@@ -2,4 +2,5 @@
 
 @section('content')
 yo !
+
 @endsection
