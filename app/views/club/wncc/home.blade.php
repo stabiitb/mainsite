@@ -1,0 +1,9 @@
+@extends('club.wncc.layout')
+
+@section('inner-content')
+<figure>
+	<img src="{{URL::asset('assets/images/art/wncc.png')}}" alt="">
+</figure>
+<h1>Web and Coding Club</h1>
+<p>Welcome to one of the biggest and exclusive Clubs of IIT Bombay. Web n Coding Club (WnCC) houses of the most talented and genius computer GEEKs of IITB. If you see 1’s and 0’s or &nbsp;if you see algorithms flowing around or if you find coding fun — &nbsp;then you have landed the right place. Even if you don’t find yourself surrounded by binary — no matter; We here at WnCC work days and night to make you ambient with codes and algorithms.<br>Your journey with WnCC will begin with workshops, hands-on sessions and competitions. We learn coding skills and then compete with best brains in IITB — this prepares you for various international coding championships like ACM-ICPC and Google Code Jam. If you are a beginner then don’t be afraid because we are a learning community — you will get a chance to learn from your seniors and friends, they will guide you to learn. In case of any doubts you can post it on our most dynamic tool –you will get multiple ways and exquisite solutions for your problem. Some of our workshops held last fall were on Android-SDK, HTML-CSS, Python, JavaScript, PHP, Java Applets, Scilab, Perl, Bash Scripting and many more. We have done lectures on Search Engine Optimization, Networking and many other interesting topics. After all this learning stuff we organise Hack-Nights and Code-JAM where you can try out real coding challenges…<br>Well over all this we are not just limited to coding stuff, we are not so geeky as you would be thinking of, WnCC organises Club parties where u can display your exclusive work along with snacks and drinks..,</p>		
+@endsection

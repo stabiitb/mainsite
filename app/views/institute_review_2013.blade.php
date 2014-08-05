@@ -9,18 +9,18 @@
 				<div class="container inner-top-md">
 					
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center" style="">
+						<div class="col-md-10 col-sm-10 center-block text-center" style="">
 							<header>
-								<h1>Vision of STAB Team 2014-15</h1>
+								<h1>InstiReview , HobbyClubs &amp; TechTeams</h1>
 							</header>
 						</div>
 						<hr>
 						<div class="col-sm-12">
 								<div class="item">
 									<figure>
-										<object data="{{URL::asset('media/STAB%202014-15%20vision.pdf')}}" type="application/pdf" style="width:100%;min-height:800px">
+										<object data="{{URL::asset('media/2014/InstiReview_HobbyClubs&TechTeams.pdf')}}" type="application/pdf" style="width:100%;min-height:800px">
 										<p>YOur brouswer doesnt support pdf reader.  
-											<a href="{{URL::asset('media/STAB%202014-15%20vision.pdf')}}">Click here to sownload</a>
+										<a href="{{URL::asset('media/2014/InstiReview_HobbyClubs&TechTeams.pdf')}}">Click here to sownload</a>
 										</p>
 									</object>
 									</figure>
