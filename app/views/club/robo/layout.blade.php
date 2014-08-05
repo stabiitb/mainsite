@@ -32,39 +32,6 @@
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 			
-			<!-- ============================================================= SECTION – SHARE ============================================================= -->
-			
-			<section id="share" class="light-bg">
-				<div class="container">
-					
-					<div class="col-sm-4 reset-padding">
-						<a href="#" class="btn-share-md">
-							<p class="name">Facebook</p>
-							<i class="icon-s-facebook"></i>
-							<p class="counter">1080</p>
-						</a>
-					</div><!-- /.col -->
-					
-					<div class="col-sm-4 reset-padding">
-						<a href="#" class="btn-share-md">
-							<p class="name">Twitter</p>
-							<i class="icon-s-twitter"></i>
-							<p class="counter">1263</p>
-						</a>
-					</div><!-- /.col -->
-					
-					<div class="col-sm-4 reset-padding">
-						<a href="#" class="btn-share-md">
-							<p class="name">Google +</p>
-							<i class="icon-s-gplus"></i>
-							<p class="counter">963</p>
-						</a>
-					</div><!-- /.col -->
-					
-				</div><!-- /.container -->
-			</section>
-			
-			<!-- ============================================================= SECTION – SHARE : END ============================================================= -->
 			
 		</main>
 		
