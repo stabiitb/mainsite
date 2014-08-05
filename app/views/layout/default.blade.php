@@ -87,7 +87,7 @@
 								<li class="dropdown yamm-fullwidth">
 									<a href="#" class="dropdown-toggle js-activated">About</a>
 									
-									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left: 21%;">
+									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left:10%">
 										<li>
 											<div class="yamm-content row">
 											
@@ -101,7 +101,7 @@
 														<li>Reports
 															<ul>
 																<li>
-																	Institute Review 2013
+																	<a href="{{URL::Route('institute_review_2013')}}">Institute Review 2013</a>
 																</li>
 															</ul>
 														</li>
@@ -174,7 +174,7 @@
 									</ul>
 								</li><!-- /.dropdown -->
 
-								<li class="dropdown">
+								<!--li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">More</a>
 
 									<ul class="dropdown-menu">
