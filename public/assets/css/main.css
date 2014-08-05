@@ -627,6 +627,10 @@ figure.post-media + * {
     color: #DD4B39;
     color: #DE5745;
 }
+.member .text-overlay .info .social li a:hover .icon-mail {
+    color: #DD4B39;
+    color: #DE5745;
+}
 .member .text-overlay .info .social li a:hover .icon-s-twitter {
     color: #00ACED;
     color: #2FBBED;
@@ -1814,6 +1818,13 @@ aside .thumb figure {
     background: #DD4B39;
     background: #DE5745;
 }
+.btn-share-lg:hover .icon-mail:after,
+.btn-share-md:hover .icon-mail:after,
+.btn-share-sm:hover .icon-mail:after,
+.btn-share-xs:hover .icon-mail:after {
+    background: #DD4B39;
+    background: #DE5745;
+}
 .btn-share-lg:hover .icon-s-twitter:after,
 .btn-share-md:hover .icon-s-twitter:after,
 .btn-share-sm:hover .icon-s-twitter:after,
@@ -1956,6 +1967,10 @@ p .btn {
     background: #4668B3;
 }
 .social a .icon-s-gplus:after {
+    background: #DD4B39;
+    background: #DE5745;
+}
+.social a .icon-mail:after {
     background: #DD4B39;
     background: #DE5745;
 }

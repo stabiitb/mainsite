@@ -97,7 +97,7 @@
 													
 													<ul class="circled">
 														<li><a href="{{URL::Route('vision')}}">Vision</a></li>
-														<li><a href="">Hall of Fame</a></li>
+														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
 														<li>Reports
 															<ul>
 																<li>
@@ -112,7 +112,7 @@
 													<h4>Contacts</h4>
 													
 													<ul class="circled">
-														<li><a href="{{URL::Route('vision')}}">Team 2014-15</a></li>
+														<li><a href="{{URL::Route('team_2014')}}">Team 2014-15</a></li>
 														<li><a href="">Alumni</a></li>
 														<li><a href="">Faculty Advisors/Mentors</a></li>
 													</ul><!-- /.circled -->
@@ -147,7 +147,7 @@
 									
 									<ul class="dropdown-menu">
 										
-										<li><a href="#">Visit Site</a></li>
+										<li><a href="http://stab-iitb.org/tinkerers-lab/">Visit Site</a></li>
 										
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
@@ -221,11 +221,7 @@
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::to('/')}}">Home</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="{{URL::Route('team_2014')}}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->
