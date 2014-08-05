@@ -31,7 +31,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Chetan Agarwal 
+												Riddhish 
 												<span>Manager</span>
 											</h3>
 										</figcaption>
@@ -60,7 +60,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Vineetha Reddy 
+												Ankita
 												<span>Manager</span>
 											</h3>
 										</figcaption>

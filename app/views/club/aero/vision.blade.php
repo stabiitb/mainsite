@@ -1,4 +1,4 @@
-@extends('club.robo.layout')
+@extends('club.aero.layout')
 
 @section('inner-content')
 <!-- ============================================================= SECTION – BLOG ============================================================= -->

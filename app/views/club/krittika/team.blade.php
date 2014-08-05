@@ -1,4 +1,4 @@
-@extends('club.robo.layout')
+@extends('club.krittika.layout')
 
 @section('inner-content')
 <h1>Our Team</h1>
@@ -10,7 +10,7 @@
 							
 							<div class="row thumbs gap-md text-center">
 								
-								<div class="col-sm-6 thumb">
+								<div class="col-sm-6 col-sm-offset-3 thumb">
 									<figure class="member">
 										
 										<div class="member-image">
@@ -31,7 +31,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Chetan Agarwal 
+												Sharad 
 												<span>Manager</span>
 											</h3>
 										</figcaption>
@@ -39,34 +39,6 @@
 									</figure>
 								</div><!-- /.col -->
 								
-								<div class="col-sm-6 thumb">
-									<figure class="member">
-										
-										<div class="member-image">
-											
-											<div class="text-overlay">
-												<div class="info">
-													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-													</ul><!-- /.social -->
-												</div><!-- /.info -->
-											</div><!-- /.text-overlay -->
-											
-											<img src="assets/images/art/human01.jpg">
-											
-										</div><!-- /.member-image -->
-										
-										<figcaption class="member-details bordered no-top-border">
-											<h3>
-												Vineetha Reddy 
-												<span>Manager</span>
-											</h3>
-										</figcaption>
-										
-									</figure>
-								</div><!-- /.col -->
 								
 							</div><!-- /.row -->
 							

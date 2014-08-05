@@ -1,4 +1,4 @@
-@extends('club.robo.layout')
+@extends('club.aero.layout')
 
 @section('inner-content')
 <h1>Our Team</h1>
@@ -6,40 +6,12 @@
 						
 						<section id="team" class="light-bg inner-xs inner-left-xs inner-right-xs">
 								
-							<h3 class="team-headline sidelines text-center"><span>Managers</span></h3>
+							<h3 class="team-headline sidelines text-center"><span>Manager</span></h3>
 							
 							<div class="row thumbs gap-md text-center">
 								
-								<div class="col-sm-6 thumb">
-									<figure class="member">
-										
-										<div class="member-image">
-											
-											<div class="text-overlay">
-												<div class="info">
-													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-													</ul><!-- /.social -->
-												</div><!-- /.info -->
-											</div><!-- /.text-overlay -->
-											
-											<img src="assets/images/art/human03.jpg">
-											
-										</div><!-- /.member-image -->
-										
-										<figcaption class="member-details bordered no-top-border">
-											<h3>
-												Chetan Agarwal 
-												<span>Manager</span>
-											</h3>
-										</figcaption>
-										
-									</figure>
-								</div><!-- /.col -->
-								
-								<div class="col-sm-6 thumb">
+						
+								<div class="col-sm-6 col-sm-offset-3 thumb">
 									<figure class="member">
 										
 										<div class="member-image">
@@ -60,7 +32,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Vineetha Reddy 
+												Kuldeep
 												<span>Manager</span>
 											</h3>
 										</figcaption>

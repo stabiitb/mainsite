@@ -1,4 +1,4 @@
-@extends('club.robo.layout')
+@extends('club.wncc.layout')
 
 @section('inner-content')
 <h1>Our Team</h1>
@@ -31,7 +31,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Chetan Agarwal 
+												Ranveer Aggarwal
 												<span>Manager</span>
 											</h3>
 										</figcaption>
@@ -60,7 +60,7 @@
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Vineetha Reddy 
+												Manish Goregaokar
 												<span>Manager</span>
 											</h3>
 										</figcaption>
