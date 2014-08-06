@@ -104,7 +104,7 @@ class HomeController extends BaseController {
 
 	public function technovation()
 	{
-		return View::make('mainpage');
+		return View::make('technovation');
 	}
 	public function vision()
 	{
