@@ -169,7 +169,7 @@
 									<ul class="dropdown-menu">
 										<li><a href="#">Tech GC Rankings</a></li>
 										<li><a href="#">Component Sharing Portal</a></li>
-										<li><a href="#">Tech Calender</a></li>
+										<li><a href="{{URL::Route('calender')}}">Tech Calender</a></li>
 										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
 									</ul>
 								</li><!-- /.dropdown -->

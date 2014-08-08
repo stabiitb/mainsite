@@ -36,5 +36,9 @@ Route::get('hall-of-fame',array('as'=>'halloffame','uses'=>function ()
 	return View::make('hallofame');
 }));
 
-
+// Calender
+Route::get('calender',array('as'=>'calender','uses'=>function ()
+{
+	return View::make('calender');
+}));
 
