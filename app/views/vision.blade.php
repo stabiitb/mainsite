@@ -18,7 +18,11 @@
 						<div class="col-sm-12">
 								<div class="item">
 									<figure>
-										<object data="{{URL::asset('media/STAB%202014-15%20vision.pdf')}}" type="application/pdf" style="width:100%;min-height:800px"><p>YOur brouswer doesnt support pdf reader.  <a href="http://stab-iitb.org/stabnew/wp-content/STAB%202014-15%20vision.pdf">Click here to sownload</a></p></object>
+										<object data="{{URL::asset('media/STAB%202014-15%20vision.pdf')}}" type="application/pdf" style="width:100%;min-height:800px">
+										<p>YOur brouswer doesnt support pdf reader.  
+											<a href="{{URL::asset('media/STAB%202014-15%20vision.pdf')}}">Click here to sownload</a>
+										</p>
+									</object>
 									</figure>
 								</div><!-- /.item -->
 								

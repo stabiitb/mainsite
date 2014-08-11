@@ -19,42 +19,94 @@ class HomeController extends BaseController {
 	{
 		return View::make('mainpage');
 	}
-	public function aeromodelling_club()
+
+	public function aeromodelling_club($page="about")
 	{
-		return View::make('mainpage');
+		if($page=='about')
+			return View::make('club.aero.home');
+		else if($page=='team')
+			return View::make('club.aero.team');
+		else if($page=='vision')
+			return View::make('club.aero.vision');
+		else if($page=='event')
+			return View::make('club.aero.event');
+		else
+			return View::make('club.aero.home');
 	}
-	public function electronics_club()
+	public function electronics_club($page="about")
 	{
-		return View::make('club.elec');
+		if($page=='about')
+			return View::make('club.elec.home');
+		else if($page=='team')
+			return View::make('club.elec.team');
+		else if($page=='vision')
+			return View::make('club.elec.vision');
+		else if($page=='event')
+			return View::make('club.elec.event');
+		else
+			return View::make('club.elec.home');
 	}
-	public function krittika()
+	public function krittika($page="about")
 	{
-		return View::make('mainpage');
+		if($page=='about')
+			return View::make('club.krittika.home');
+		else if($page=='team')
+			return View::make('club.krittika.team');
+		else if($page=='vision')
+			return View::make('club.krittika.vision');
+		else if($page=='event')
+			return View::make('club.krittika.event');
+		else
+			return View::make('club.krittika.home');
 	}
 
-	public function MnP()
+	public function MnP($page="about")
 	{
-		return View::make('mainpage');
+		if($page=='about')
+			return View::make('club.mnp.home');
+		else if($page=='team')
+			return View::make('club.mnp.team');
+		else if($page=='vision')
+			return View::make('club.mnp.vision');
+		else if($page=='event')
+			return View::make('club.mnp.event');
+		else
+			return View::make('club.mnp.home');
 	}
 
 	public function robotics_club($page="team")
 	{
 		if($page=='about')
-			return View::make('club.robo');
+			return View::make('club.robo.home');
 		else if($page=='team')
 			return View::make('club.robo.team');
 		else if($page=='vision')
 			return View::make('club.robo.vision');
+		else if($page=='event')
+			return View::make('club.robo.event');
+		else if($page=='form')
+			return View::make('club.robo.form');
 		else
-			return View::make('club.robo');
+			return View::make('club.robo.home');
 	}
-	public function wncc()
+	public function wncc($page="about")
 	{
-		return View::make('mainpage');
+		if($page=='about')
+			return View::make('club.wncc.home');
+		else if($page=='team')
+			return View::make('club.wncc.team');
+		else if($page=='vision')
+			return View::make('club.wncc.vision');
+		else if($page=='event')
+			return View::make('club.wncc.event');
+		else
+			return View::make('club.wncc.home');
 	}
+
+
 	public function technovation()
 	{
-		return View::make('mainpage');
+		return View::make('technovation');
 	}
 	public function vision()
 	{
