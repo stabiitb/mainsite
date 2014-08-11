@@ -87,7 +87,7 @@
 								<li class="dropdown yamm-fullwidth">
 									<a href="#" class="dropdown-toggle js-activated">About</a>
 									
-									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left: 21%;">
+									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left:10%">
 										<li>
 											<div class="yamm-content row">
 											
@@ -97,11 +97,11 @@
 													
 													<ul class="circled">
 														<li><a href="{{URL::Route('vision')}}">Vision</a></li>
-														<li><a href="">Hall of Fame</a></li>
+														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
 														<li>Reports
 															<ul>
 																<li>
-																	Institute Review 2013
+																	<a href="{{URL::Route('institute_review_2013')}}">Institute Review 2013</a>
 																</li>
 															</ul>
 														</li>
@@ -112,7 +112,7 @@
 													<h4>Contacts</h4>
 													
 													<ul class="circled">
-														<li><a href="{{URL::Route('vision')}}">Team 2014-15</a></li>
+														<li><a href="{{URL::Route('team_2014')}}">Team 2014-15</a></li>
 														<li><a href="">Alumni</a></li>
 														<li><a href="">Faculty Advisors/Mentors</a></li>
 													</ul><!-- /.circled -->
@@ -129,12 +129,12 @@
 									<a href="#" class="dropdown-toggle js-activated">Clubs</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="#">Aeromodelling Club</a></li>
-										<li><a href="#">Electronics Club</a></li>
-										<li><a href="#">Krittika</a></li>
-										<li><a href="#">Math and Physics Club</a></li>
-										<li><a href="#">Robotics Club</a></li>
-										<li><a href="#">Web and Coding club</a></li>
+										<li><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></li>
+										<li><a href="{{URL::Route('electronics-club')}}">Electronics Club</a></li>
+										<li><a href="{{URL::Route('krittika')}}">Krittika</a></li>
+										<li><a href="{{URL::Route('MnP')}}">Math and Physics Club</a></li>
+										<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
+										<li><a href="{{URL::Route('wncc')}}">Web and Coding club</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
@@ -147,7 +147,7 @@
 									
 									<ul class="dropdown-menu">
 										
-										<li><a href="#">Visit Site</a></li>
+										<li><a href="http://stab-iitb.org/tinkerers-lab/">Visit Site</a></li>
 										
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
@@ -159,7 +159,7 @@
 									<ul class="dropdown-menu">
 										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
 										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
-										<li><a href="#">Light Saber</a></li>
+										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
@@ -169,12 +169,12 @@
 									<ul class="dropdown-menu">
 										<li><a href="#">Tech GC Rankings</a></li>
 										<li><a href="#">Component Sharing Portal</a></li>
-										<li><a href="#">Tech Calender</a></li>
+										<li><a href="{{URL::Route('calender')}}">Tech Calender</a></li>
 										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
 									</ul>
 								</li><!-- /.dropdown -->
 
-								<li class="dropdown">
+								<!--li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">More</a>
 
 									<ul class="dropdown-menu">
@@ -221,11 +221,7 @@
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::to('/')}}">Home</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="{{URL::Route('team_2014')}}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->

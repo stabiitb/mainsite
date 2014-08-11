@@ -1,4 +1,4 @@
-@extends('layout.robo')
+@extends('club.robo.layout')
 
 @section('inner-content')
 <h1>Our Team</h1>
