@@ -37,7 +37,7 @@ class HomeController extends BaseController {
 		return View::make('mainpage');
 	}
 
-	public function robotics_club($page="about")
+	public function robotics_club($page="team")
 	{
 		if($page=='about')
 			return View::make('club.robo');
