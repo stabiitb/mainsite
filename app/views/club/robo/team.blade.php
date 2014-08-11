@@ -25,7 +25,7 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="assets/images/art/human03.jpg">
+											<img src="{{URL::asset('assets/images/manager/chetam.jpg')}}" alt="">
 											
 										</div><!-- /.member-image -->
 										
@@ -54,7 +54,7 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="assets/images/art/human01.jpg">
+											<img src="{{URL::asset('assets/images/manager/vineeta.jpg')}}" alt="">
 											
 										</div><!-- /.member-image -->
 										
@@ -123,6 +123,7 @@
 										</div><!-- /.member-image -->
 										
 										<figcaption class="member-details bordered no-top-border">
+											<div class="row">
 											<h3>
 												Rishabh Choudhary
 												<span>Chemical</span>
@@ -147,7 +148,7 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="{{URL::asset('assets/images/convener/robo/Aditya.jpg')}}">
+											<img src="{{URL::asset('assets/images/convener/robo/aditya.jpg')}}">
 											
 										</div><!-- /.member-image -->
 										
@@ -189,6 +190,8 @@
 										
 									</figure>
 								</div><!-- /.col -->
+							</div>
+							<div class="row thumbs gap-md text-center">
 
                                 <div class="col-sm-3 thumb">
 									<figure class="member">
@@ -263,7 +266,7 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="{{URL::asset('assets/images/convener/robo/aishwarya.jpg')}}">
+											<img src="{{URL::asset('assets/images/convener/robo/aishwary.jpg')}}">
 											
 										</div><!-- /.member-image -->
 										
