@@ -84,6 +84,8 @@ class HomeController extends BaseController {
 			return View::make('club.robo.vision');
 		else if($page=='event')
 			return View::make('club.robo.event');
+		else if($page=='form')
+			return View::make('club.robo.form');
 		else
 			return View::make('club.robo.home');
 	}

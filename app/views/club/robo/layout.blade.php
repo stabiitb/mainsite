@@ -19,6 +19,7 @@
 							<li><a href="{{URL::Route('robotics-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/form">Form</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
