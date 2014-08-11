@@ -2,5 +2,5 @@
 
 @section('inner-content')
 
-<a href="#">Click here</a> to go to this google form 
+<a href="#">Click here</a> to go register your team for XLR8
 @endsection

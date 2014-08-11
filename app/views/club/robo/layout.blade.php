@@ -15,11 +15,12 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="{{URL::Route('robotics-club')}}">Home</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/home">Home</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/form">Form</a></li>
+						
+
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
