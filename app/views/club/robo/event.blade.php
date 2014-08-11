@@ -40,7 +40,11 @@
 
 
 
-               <p>XLR8 the first technical event for freshmen was organised by Robotics club on 24th and 25th august. The event was a great success with 93 teams completing the track. The teams also designed the CAD model of their bots with the help of their mentors. There were lot of innovations made by freshmen this time that included using rack and pinion mechanism, making suspension using steel scales, and even designing the full transmitter receiver circuit.
+               <p>XLR8 the first technical event for freshmen is organised by Robotics club on 
+               23rd and 24th august. The event is biggest event for freshmen. The teams also design the CAD model of their bots with the help of their 
+               mentors. There are lot of innovations made by freshmen everyt time that includes 
+               using rack and pinion mechanism, making suspension using steel scales, and even 
+               designing the full transmitter receiver circuit.
                </p>    
                 <div>
                 	<b>
