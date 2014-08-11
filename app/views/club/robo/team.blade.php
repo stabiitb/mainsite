@@ -118,14 +118,188 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="assets/images/art/human04.jpg">
+											<img src="{{URL::asset('assets/images/convener/robo/rishabh.jpg')}}">
 											
 										</div><!-- /.member-image -->
 										
 										<figcaption class="member-details bordered no-top-border">
 											<h3>
-												Toby Evans
-												<span>Senior Designer</span>
+												Rishabh Choudhary
+												<span>Chemical</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+                                
+                                <div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/Aditya.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Aditya Mate
+												<span>Electrical</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+
+								<div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/madhur.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Madhur Maheshwari
+												<span>Energy</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+
+                                <div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/rushil.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Rushil Modi
+												<span>Energy</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+
+                               <div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/maithili.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Maithili Patel
+												<span>Mechanical</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+
+                                <div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/aishwarya.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Aishwarya Joshi
+												<span>Electrical</span>
+											</h3>
+										</figcaption>
+										
+									</figure>
+								</div><!-- /.col -->
+
+                                <div class="col-sm-3 thumb">
+									<figure class="member">
+										
+										<div class="member-image">
+											
+											<div class="text-overlay">
+												<div class="info">
+													<ul class="social">
+														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+													</ul><!-- /.social -->
+												</div><!-- /.info -->
+											</div><!-- /.text-overlay -->
+											
+											<img src="{{URL::asset('assets/images/convener/robo/hardik.jpg')}}">
+											
+										</div><!-- /.member-image -->
+										
+										<figcaption class="member-details bordered no-top-border">
+											<h3>
+												Hardik Seth
+												<span>Chemical</span>
 											</h3>
 										</figcaption>
 										
@@ -133,7 +307,6 @@
 								</div><!-- /.col -->
 
 
-								
 							</div><!-- /.row -->
 					
 							
