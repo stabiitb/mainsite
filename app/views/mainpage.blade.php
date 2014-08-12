@@ -189,9 +189,7 @@
 									
 									<p>Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.</p>
 									
-									<figure>
-										<img src="{{URL::asset('assets/images/art/technovation/parinat.jpg')}}" alt="">
-									</figure>
+									
 									
 									
 									<a href="{{URL::Route('technovation')}}" class="btn btn-large">Visit Site</a>
@@ -203,9 +201,7 @@
 									<p>The dictionary defines a tinkerer as one who enjoys experimenting with machines. This lab is for all! Such tinkerers who love to do, for those who want limitless hands-on experience, for those who can spend hours tinkering. If you are turned on by machines and technology and integrated circuits, this place is built keeping you in mind.</p>
 									<p>Tinkerers needed something better, so we've got it for you. Tinkerers’ Lab has all you will need for projects and prototyping. We’ve got modern electrical and mechanical equipment in place and more is coming soon. The fresh and enabling environment makes this the perfect place for ideating, implementing and innovating. We have coffee too!</p>
 									
-									<figure>
-										<img src="{{URL::asset('assets/images/art/technovation/tl.jpg')}}" alt="">
-									</figure>
+									
 									<a href="http://stab-iitb.org/tinkerers-lab/" class="btn btn-large">Visit Site</a>
 								</div><!-- /.col -->
 								
