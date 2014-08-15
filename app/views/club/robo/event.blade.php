@@ -66,6 +66,13 @@
                 		<b><a href="{{URL::Route('robotics-club')}}/xlr8-registration">CLICK HERE</a></b> to go register your team for XLR8
                	</div>
 
+               	<div>
+                		<a href="{{URL::Route('robotics-club')}}/teams-and-mentors-xlr8-2014"> Check the Teams and Mentors for XLR8 <sup style="color:red">New</sup></a>
+               	</div>
+               	<div>
+                		<a href="{{URL::asset('media/2014/robo/Lamington Visit Handouts.docx')}}">Click to download Lamington visit Handout<sup style="color:red">New</sup></a>
+               	</div>
+
 
 
 

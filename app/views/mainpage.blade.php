@@ -10,7 +10,7 @@
 				<div class="container inner-sm">
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
-							<h3 class="single-block">Tinkerers’ Lab is inaugarated on january 4, 2014 <a href="http://stab-iitb.org/tinkerers-lab" target="_blank" class="btn btn-large">View</a></h3>
+							<h3 class="single-block">Tinkerers’ Lab is inaugurated on january 4, 2014 <a href="http://stab-iitb.org/tinkerers-lab" target="_blank" class="btn btn-large">View</a></h3>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->
@@ -174,41 +174,79 @@
 			</section>
 			
 			<!-- ============================================================= SECTION – SERVICES : END ============================================================= -->
+			<!-- ============================================================= SECTION – STANDARD TABS TOP ============================================================= -->
 			
-			<!-- ============================================================= SECTION – CONTENT ============================================================= -->
-						
-						<section id="content" class="light-bg">
-							<div class="row">
-								<div class="col-md-8 col-sm-10 center-block text-center inner-top-sm" style="">
-									<header>
-										<h1>Innovation Programme and Infrastructure</h1>
-									</header>
-								</div>
-								<div class="col-sm-6 inner-right-xs inner-left-md inner-top-sm">
-									<h2><a href="{{URL::Route('technovation')}}">Technovation</a></h2>
-									
-									<p>Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.</p>
-									
-									
-									
-									
-									<a href="{{URL::Route('technovation')}}" class="btn btn-large">Visit Site</a>
-								</div><!-- /.col -->
+			<section id="standard-tabs-top" class="light-bg">
+				<div class="container inner">
+					
+					<div class="row">
+						<div class="col-md-8 col-sm-9 center-block text-center">
+							<header>
+								<h1>Innovation Programme and Infrastructure</h1>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- ./row -->
+					
+					<div class="row">
+						<div class="col-xs-12 inner-top">
+							<div class="tabs tabs-top tab-container">
 								
-								<div class="col-sm-6 inner-left-xs inner-right-md inner-top-sm">
-									<h2><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></h2>
-									
-									<p>The dictionary defines a tinkerer as one who enjoys experimenting with machines. This lab is for all! Such tinkerers who love to do, for those who want limitless hands-on experience, for those who can spend hours tinkering. If you are turned on by machines and technology and integrated circuits, this place is built keeping you in mind.</p>
-									<p>Tinkerers needed something better, so we've got it for you. Tinkerers’ Lab has all you will need for projects and prototyping. We’ve got modern electrical and mechanical equipment in place and more is coming soon. The fresh and enabling environment makes this the perfect place for ideating, implementing and innovating. We have coffee too!</p>
-									
-									
-									<a href="http://stab-iitb.org/tinkerers-lab/" class="btn btn-large">Visit Site</a>
-								</div><!-- /.col -->
+								<ul class="etabs text-center">
+									<li class="tab"><a href="#tab-technovation">Technovation</a></li>
+									<li class="tab"><a href="#tab-tinkerer-lab">Tinkerers' Lab</a></li>
+								</ul><!-- /.etabs -->
 								
-							</div><!-- ./row -->
-						</section>
-						
-						<!-- ============================================================= SECTION – CONTENT : END ============================================================= -->
+								<div class="panel-container">
+									
+									<div class="tab-content" id="tab-technovation">
+										<div class="row">
+											
+											<div class="col-md-5 col-md-offset-1 col-sm-6 inner-right-xs">
+												<figure><img src="{{URL::asset('assets/images/art/technovation/parinat.jpg')}}" alt=""></figure>
+											</div><!-- /.col -->
+											
+											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+												<h3><a href="{{URL::Route('technovation')}}">Technovation</a></h3>
+												<p>Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.</p>
+
+											<a href="{{URL::Route('technovation')}}" class="btn btn-blue">Visit WebPage</a>
+
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+									</div><!-- /.tab-content -->
+									
+									<div class="tab-content" id="tab-tinkerer-lab">
+										<div class="row">
+											
+											<div class="col-md-5 col-md-push-5 col-md-offset-1 col-sm-6 col-sm-push-6 inner-left-xs">
+												<figure><img src="{{URL::asset('assets/images/art/technovation/tl.jpg')}}" alt=""></figure>
+											</div><!-- /.col -->
+											
+											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-top-xs inner-right-xs">
+												<h3><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></h3>
+												<p>The dictionary defines a tinkerer as one who enjoys experimenting with machines. This lab is for all! Such tinkerers who love to do, for those who want limitless hands-on experience, for those who can spend hours tinkering. If you are turned on by machines and technology and integrated circuits, this place is built keeping you in mind.</p>
+												<p>Tinkerers needed something better, so we've got it for you. Tinkerers’ Lab has all you will need for projects and prototyping. We’ve got modern electrical and mechanical equipment in place and more is coming soon. The fresh and enabling environment makes this the perfect place for ideating, implementing and innovating. We have coffee too!</p>
+												<a href="http://stab-iitb.org/tinkerers-lab/" class="btn btn-blue">Visit WebPage</a>
+												
+											</div><!-- /.col -->
+											
+										</div><!-- /.row -->
+									</div><!-- /.tab-content -->
+									
+									 
+								</div><!-- /.panel-container -->
+								 
+							</div><!-- /.tabs -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.container -->
+			</section>
+			
+			<!-- ============================================================= SECTION – STANDARD TABS TOP : END ============================================================= -->
+			
+			
+			
 			<!-- ============================================================= SECTION – TEAM ============================================================= -->
 			
 			<section id="team"  class="light-bg img-bg-softer" style="background-image: url(assets/images/art/pattern-background01.jpg);">

@@ -152,6 +152,15 @@
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle js-activated">Technical Teams</a>
+									
+									<ul class="dropdown-menu">
+										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
+										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
+										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
+									</ul><!-- /.dropdown-menu -->
+								</li><!-- /.dropdown -->
 
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Resources</a>
@@ -186,7 +195,7 @@
 								</li><!-- /.dropdown -->
 								
 								
-								<li class="dropdown pull-right searchbox">
+								<!--li class="dropdown pull-right searchbox">
 									<a href="#" class="dropdown-toggle js-activated"><i class="icon-search"></i></a>
 											  
 									<div class="dropdown-menu">
@@ -195,7 +204,7 @@
 											<button type="submit" class="btn btn-default btn-submit icon-right-open"></button>
 										</form>
 									</div><!-- /.dropdown-menu -->
-								</li><!-- /.searchbox -->
+								<!--/li><!-- /.searchbox -->
 								
 							</ul><!-- /.nav -->
 							
