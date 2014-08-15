@@ -156,9 +156,12 @@
 									<a href="#" class="dropdown-toggle js-activated">Technical Teams</a>
 									
 									<ul class="dropdown-menu">
-										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
-										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
-										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
+										<li><a target=_blank href="http://www.iitbracing.org/">IITB Racing</a></li>
+										<li><a target=_blank href="http://www.auv-iitb.org/">AUV IITB</a></li>
+										<li><a target=_blank href="http://www.aero.iitb.ac.in/pratham/Pratham/">Pratham</a></li>
+										<li><a target=_blank href="http://www.marssociety.org.in/">Mars Rover</a></li>
+										<li><a target=_blank href="http://www.umic-iitb.org/">Innovation Cell</a></li>
+										<li><a target=_blank href="http://teamshunya.in/">Team Shunya</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 
