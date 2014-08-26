@@ -42,3 +42,8 @@ Route::get('calendar',array('as'=>'calender','uses'=>function ()
 	return View::make('calender');
 }));
 
+// Calender
+Route::get('tech-and-RnD-exposition-2014',array('as'=>'tech_rnd','uses'=>function ()
+{
+	return View::make('events.tech_rnd');
+}));

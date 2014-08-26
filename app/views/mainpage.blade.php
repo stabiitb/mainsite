@@ -10,7 +10,7 @@
 				<div class="container inner-sm">
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
-							<h3 class="single-block">Tinkerers’ Lab is inaugurated on january 4, 2014 <a href="http://stab-iitb.org/tinkerers-lab" target="_blank" class="btn btn-large">View</a></h3>
+							<h3 class="single-block">Tech & RnD Exposition  2014 Launched<a href="{{URL::route('tech_rnd')}}" class="btn btn-large">View</a></h3>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->
