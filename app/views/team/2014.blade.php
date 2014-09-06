@@ -367,7 +367,7 @@
 								<figcaption>
 									<h2>
 										Chirag Shetty
-										<span><i class="icon-phone"></i></span>
+										<span><i class="icon-phone"></i>9892611771</span>
 										<span><i class="icon-mail">chiragcshetty@gmail.com</i></span>
 									</h2>
 								</figcaption>
