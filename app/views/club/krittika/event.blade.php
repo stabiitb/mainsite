@@ -14,10 +14,10 @@
 					<div class="row">
 						<div class="col-sm-10 col-md-offset-1">
 							
-							<div class="grid-blog col-3 no-sidebar">
+							<div class="grid-blog no-sidebar">
 								<div class="posts">
 															
-									<div class="post format-image">
+									<div class="post format-image" style="width:50%;">
 										
 										<div class="post-content">
 											
@@ -41,8 +41,36 @@
 										</div><!-- /.post-content --> 
 										
 									</div><!-- /.post -->
+
+									<div class="post format-image" style="width:50%">
+										
+										<div class="post-content">
+											
+											<figure class="icon-overlay icn-link post-media">
+												<a href="{{URL::route('krittika')}}/astronomy-demystified"><img src="{{URL::asset('assets/images/2014/krittika/astronomy_demys.jpg')}}" alt=""></a>
+											</figure><!-- /.post-media -->
+											
+											<h2 class="post-title">
+												<a href="blog-post.html">Astronomy Demystified</a>
+											</h2>
+											
+											<ul class="meta">
+												<li class="date">20th August 2014</li>
+												<li class="categories">by Ruturaj Atre</li>
+											</ul><!-- /.meta -->
+											
+											<p>Yesterday we kicked off the journey by a lecture delivered by the former manager of the club...</p>
+											
+											<a href="{{URL::route('krittika')}}/astronomy-demystified" class="btn">Read more</a>
+											
+										</div><!-- /.post-content --> 
+										
+									</div><!-- /.post -->
+									
 																	
 								</div><!-- /.posts -->
+
+
 							</div><!-- /.grid-blog -->
 							
 							
