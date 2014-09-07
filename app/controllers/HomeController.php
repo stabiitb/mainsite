@@ -56,6 +56,8 @@ class HomeController extends BaseController {
 			return View::make('club.krittika.vision');
 		else if($page=='event')
 			return View::make('club.krittika.event');
+		else if($page=='the-cosmic-ladder-distance')
+			return View::make('club.krittika.events.cosmic_ladder');
 		else
 			return View::make('club.krittika.home');
 	}
