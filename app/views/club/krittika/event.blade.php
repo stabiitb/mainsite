@@ -10,9 +10,9 @@
 			
 			<section id="blog" class="light-bg">
 					
-					
+				<div class="inner-top-sm inner-bottom">
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-10 col-md-offset-1">
 							
 							<div class="grid-blog col-3 no-sidebar">
 								<div class="posts">
@@ -34,7 +34,7 @@
 												<li class="categories">by Alankar Kotwal</li>
 											</ul><!-- /.meta -->
 											
-											<p>we went a step further in our understanding of Astronomy with a lecture delivered from Alankar Kotwal (Gold Medalist at the 6th International Olympiad on Astronomy and Astrophysics) who has also successfully completed GSoC in Laboratory for Cosmological Data Mining</p>
+											<p>we went a step further in our understanding of Astronomy with a lecture delivered from Alankar Kotwal ...</p>
 											
 											<a href="{{URL::route('krittika')}}/the-cosmic-ladder-distance" class="btn">Read more</a>
 											
@@ -48,7 +48,7 @@
 							
 						</div><!-- /.col -->
 					</div><!-- /.row -->
-					
+				</div>
 			</section>
 			
 			<!-- ============================================================= SECTION – BLOG : END ============================================================= -->
