@@ -29,6 +29,7 @@
 							
 							<h2>List of Registered Teams</h2>
 							
+							@if(sizeof($all)>0)
 							<table class="table">
 								<thead>
 									<tr>
@@ -100,7 +101,15 @@
 									</tr>
 								@endforeach
 							</table>
+							@else
+							<blockquote>
+								No Team registered yet
+							</blockquote>
+							@endif
 							
+							<div class="btn-wrapper">
+								<a href="{{URL::Route('expo.register')}}" class="btn btn-large btn-green">Register your team</a>
+							</div>
 						</section>
 						
 					
