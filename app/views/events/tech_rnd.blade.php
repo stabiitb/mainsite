@@ -94,6 +94,12 @@
 								<li class="date">Sunday, August  24, 2014</li>
 								<li class="categories">IIT Bombay</li>
 							</ul><!-- /.item-details -->
+							<div class="btn-wrapper">
+								<a href="{{URL::Route('expo.register')}}" class="btn btn-large btn-green">Register your team</a>
+							</div>
+							<div class="btn-wrapper">
+								<a href="{{URL::Route('expo.all')}}" class="btn btn-large btn-navy">See all teams</a>
+							</div>
 						</div><!-- /.col -->
 						
 					</div><!-- /.row -->

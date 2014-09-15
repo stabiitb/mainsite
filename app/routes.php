@@ -24,6 +24,11 @@ Route::get('InstiReview-HobbyClubs-TechTeams',array('as'=>'institute_review_2013
 Route::get('lightsaber',array('as'=>'lightsaber','uses'=>function(){return View::make('lightsaber');}));
 
 
+//Tech Expo Registrant
+Route::get('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_view'));
+Route::post('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_save'));
+Route::get('tech-expo-all',array('as' => 'expo.all' , 'uses' => 'AppsController@expo_all'));
+
 // Team 
 Route::get('team-stab-2014',array('as'=>'team_2014','uses'=>function ()
 {
