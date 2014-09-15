@@ -91,7 +91,7 @@
 						
 						<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
 							<ul class="item-details">
-								<li class="date">Sunday, August  24, 2014</li>
+								<li class="date">Sunday, October  11-12, 2014</li>
 								<li class="categories">IIT Bombay</li>
 							</ul><!-- /.item-details -->
 							<div class="btn-wrapper">
