@@ -124,7 +124,7 @@
 
 								<div class="row">
 									<div class="col-md-2">
-										<label>Comments</label>
+										<label>Comments/Query</label>
 									</div>
 									<div class="col-sm-6">
 										<textarea name="comment" class="form-control" placeholder="Other Comments"></textarea>
