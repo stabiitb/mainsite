@@ -34,11 +34,29 @@ Route::get('team-stab-2014',array('as'=>'team_2014','uses'=>function ()
 {
 	return View::make('team.2014');
 }));
+Route::get('team-stab-2013',array('as'=>'team_2013','uses'=>function ()
+{
+	return View::make('team.2013');
+}));
+Route::get('team-stab-2012',array('as'=>'team_2012','uses'=>function ()
+{
+	return View::make('team.2012');
+}));
+Route::get('stab-alumni',array('as'=>'alumni','uses'=>function ()
+{
+	return View::make('team.alumni');
+}));
 
 // Hall of fame
 Route::get('hall-of-fame',array('as'=>'halloffame','uses'=>function ()
 {
 	return View::make('hallofame');
+}));
+
+// Hall of fame
+Route::get('faculty-advisor-and-mentor',array('as'=>'facad','uses'=>function ()
+{
+	return View::make('home.facad');
 }));
 
 // Calender

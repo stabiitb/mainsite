@@ -113,8 +113,8 @@
 													
 													<ul class="circled">
 														<li><a href="{{URL::Route('team_2014')}}">Team 2014-15</a></li>
-														<li><a href="">Alumni</a></li>
-														<li><a href="">Faculty Advisors/Mentors</a></li>
+														<li><a href="{{URL::Route('alumni')}}">Alumni</a></li>
+														<li><a href="{{URL::Route('facad')}}">Faculty Advisors/Mentors</a></li>
 													</ul><!-- /.circled -->
 												</div><!-- /.col -->
 											
