@@ -9,8 +9,9 @@
 					<div class="row">
 						<div class="col-md-8">
 							<header>
-								<h2>Tech & RnD Expo - Register</h2>
-								<p>Register for Tech and RnD Expo here. To know more about it <a href="{{URL::Route('tech_rnd')}}">go here</a></p>
+								<h2>ITSP Exhibition Registration</h2>
+								<p>The exhibition will happen on 11th and 12th October as a part of 'Tech & RnD Exposition 2014'. Register by filling in the details below:  </p>
+								<p>To know more about it <a href="{{URL::Route('tech_rnd')}}">go here</a></p>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- ./row -->
