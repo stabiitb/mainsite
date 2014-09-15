@@ -139,7 +139,7 @@
 								</li><!-- /.dropdown -->
 								
 								<li >
-									<a href="http://technovation.stab-iitb.org/">Technovation</a>
+									<a href="http://www.stab-iitb.org/technovation">Technovation</a>
 								</li><!-- /.dropdown -->
 								
 								<li class="dropdown">
@@ -170,6 +170,7 @@
 									
 									<ul class="dropdown-menu">
 										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
+										<li><a href="http://stab-iitb.org/forum">Tech Forum</a></li>
 										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 									</ul><!-- /.dropdown-menu -->
