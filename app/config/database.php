@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => '',
-			'password'  => '',
+			'database'  => 'stabiitb',
+			'username'  => 'stab_manager',
+			'password'  => '<Stabiitb7@>',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
