@@ -97,9 +97,6 @@
 							<div class="btn-wrapper">
 								<a href="{{URL::Route('expo.register')}}" class="btn btn-large btn-green">Register your team</a>
 							</div>
-							<div class="btn-wrapper">
-								<a href="{{URL::Route('expo.all')}}" class="btn btn-large btn-navy">See all teams</a>
-							</div>
 						</div><!-- /.col -->
 						
 					</div><!-- /.row -->
