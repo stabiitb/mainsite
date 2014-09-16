@@ -29,7 +29,7 @@ class AppsController extends Controller {
 
 		if(Request::server('SERVER_NAME')!='localhost'){
 
-			Mail::send('email.tech_rnd)',Input::all(), function($message)
+			Mail::send('email.tech_rnd',Input::all(), function($message)
 			{
 				$message->from('stab.iitb@gmail.com.com', 'Stab IIT Bombay');
 			    $message->to('chiragcshetty@gmail.com')->subject('[STAB IITB] New registration for Tech and Rnd Expo');
