@@ -2,10 +2,30 @@
 
 @section('inner-content')
 <style type="text/css">
-	
+.item-details li.time:before {
+	content: "\e865";
+}
 </style>
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>Product Development Session</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-6">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/pds.png')}}" alt="">
+			</div>
+			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+				<p>Robotics club is organizing a session on Product Development where different phases and approach of how to take your idea/project to product level will be explained. Do come, it will be worth attending it!</p>
+				<ul class="item-details">
+					<li class="time"><i class="fa fa-clock-o"></i>9:00 PM tp 10:00PM</li>
+					<li class="date">Wednesday, September 17, 2014</li>
+					<li class="categories">LC12</li>
+				</ul>
+			</div>
+		</div>
+	</figure>
+</section>
 <!-- ============================================================= SECTION – BLOG ============================================================= -->
-			<section>
+			<section  class="light-bg" style="padding:20px">
 				<h2>XLR8</h2>
 				<figure>
 					

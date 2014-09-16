@@ -18,14 +18,14 @@
 											<div class="text-overlay">
 												<div class="info">
 													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+														<li><a href="https://www.facebook.com/ranveeraggarwal"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="https://plus.google.com/+RanveerAggarwal/posts"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="https://github.com/ranveeraggarwal"><i class="icon-s-github"></i></a></li>
 													</ul><!-- /.social -->
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="assets/images/art/human03.jpg">
+											<img src="{{URL::asset('assets/images/2014/ranveer.png')}}">
 											
 										</div><!-- /.member-image -->
 										
@@ -47,14 +47,14 @@
 											<div class="text-overlay">
 												<div class="info">
 													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
+														<li><a href="https://www.facebook.com/manish.goregaokar"><i class="icon-s-facebook"></i></a></li>
+														<li><a href="https://plus.google.com/112804966934275174479/posts"><i class="icon-s-gplus"></i></a></li>
+														<li><a href="https://github.com/Manishearth"><i class="icon-s-github"></i></a></li>
 													</ul><!-- /.social -->
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 											
-											<img src="assets/images/art/human01.jpg">
+											<img src="{{URL::asset('assets/images/2014/manish.png')}}" style="max-height:327px">
 											
 										</div><!-- /.member-image -->
 										
@@ -74,63 +74,7 @@
 
 							<div class="row thumbs gap-md text-center">
 								
-								<div class="col-sm-3 thumb">
-									<figure class="member">
-										
-										<div class="member-image">
-											
-											<div class="text-overlay">
-												<div class="info">
-													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-													</ul><!-- /.social -->
-												</div><!-- /.info -->
-											</div><!-- /.text-overlay -->
-											
-											<img src="{{URL::asset('assets/images/convener/robo/kedar.jpg')}}">
-											
-										</div><!-- /.member-image -->
-										
-										<figcaption class="member-details bordered no-top-border">
-											<h3>
-												Kedar Joshi 
-												<span>Mechanical</span>
-											</h3>
-										</figcaption>
-										
-									</figure>
-								</div><!-- /.col -->
 								
-								<div class="col-sm-3 thumb">
-									<figure class="member">
-										
-										<div class="member-image">
-											
-											<div class="text-overlay">
-												<div class="info">
-													<ul class="social">
-														<li><a href="#"><i class="icon-s-facebook"></i></a></li>
-														<li><a href="#"><i class="icon-s-gplus"></i></a></li>
-														<li><a href="#"><i class="icon-s-twitter"></i></a></li>
-													</ul><!-- /.social -->
-												</div><!-- /.info -->
-											</div><!-- /.text-overlay -->
-											
-											<img src="assets/images/art/human04.jpg">
-											
-										</div><!-- /.member-image -->
-										
-										<figcaption class="member-details bordered no-top-border">
-											<h3>
-												Toby Evans
-												<span>Senior Designer</span>
-											</h3>
-										</figcaption>
-										
-									</figure>
-								</div><!-- /.col -->
 
 
 								
