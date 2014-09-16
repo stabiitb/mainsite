@@ -1,17 +1,6 @@
 <?php
 Route::get('/','HomeController@home');
 
-Route::get('test',function()
-{
-	if(Request::server('SERVER_NAME')!='localhost'){
-			Mail::send('email.test',array(), function($message)
-			{
-				$message->from('stab.iitb@gmail.com.com', 'Stab IIT Bombay');
-			    $message->to('prateekchandan5545@gmail.com')->subject('Test Mail');
-			});
-		}
-	return 'mail sent';
-});
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
 Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
@@ -38,7 +27,7 @@ Route::get('lightsaber',array('as'=>'lightsaber','uses'=>function(){return View:
 //Tech Expo Registrant
 Route::get('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_view'));
 Route::post('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_save'));
-Route::get('tech-expo-all',array('as' => 'expo.all' , 'uses' => 'AppsController@expo_all'));
+//Route::get('tech-expo-all',array('as' => 'expo.all' , 'uses' => 'AppsController@expo_all'));
 
 // Team 
 Route::get('team-stab-2014',array('as'=>'team_2014','uses'=>function ()

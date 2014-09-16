@@ -26,6 +26,16 @@ class AppsController extends Controller {
 		$newuser->saveFromInput(Input::all());
 		$newuser->save();
 
+
+		if(Request::server('SERVER_NAME')!='localhost'){
+
+			Mail::send('email.tech_rnd)',Input::all(), function($message)
+			{
+				$message->from('stab.iitb@gmail.com.com', 'Stab IIT Bombay');
+			    $message->to('chiragcshetty@gmail.com')->subject('[STAB IITB] New registration for Tech and Rnd Expo');
+			});
+		}
+
 		$messageBag->add('type', 'alert-success green-bg');
 		$messageBag->add('message', 'Successfully registered for Tech and RnD Expo');
 		return Redirect::back()->with('messages', $messageBag);

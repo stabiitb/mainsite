@@ -147,7 +147,7 @@
 					
 					<div class="col-md-3 outer-top-md inner-left-sm border-left">
 						<div class="btn-wrapper">
-								<a href="{{URL::Route('expo.all')}}" class="btn btn-large btn-navy">See all teams</a>
+								<a href="{{URL::Route('tech_rnd')}}" class="btn btn-large btn-navy">Read about Exhibition</a>
 						</div>
 					</div>				
 										
