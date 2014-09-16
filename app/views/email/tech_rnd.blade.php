@@ -3,7 +3,7 @@
 <b>Team Name</b> : {{$team_name}}<br>
 <b>Description</b> : {{$desc}}<br>
 <b>Slot</b> : {{$slot}}<br>
-<b>No of team members</b> : {{$no_of_memeber}}<br>
+<b>No of team members</b> : {{$no_of_member}}<br>
 <b>Team member detail</b><br>
 <b>Name</b> : {{$name}}<br>
 <b>Email</b> : {{$email}}<br>
