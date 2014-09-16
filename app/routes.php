@@ -1,6 +1,17 @@
 <?php
 Route::get('/','HomeController@home');
 
+Route::get('test',function()
+{
+	if(Request::server('SERVER_NAME')!='localhost'){
+			Mail::send('email.test',array(), function($message)
+			{
+				$message->from('stab.iitb@gmail.com.com', 'Stab IIT Bombay');
+			    $message->to('prateekchandan5545@gmail.com')->subject('Test Mail');
+			});
+		}
+	return 'mail sent';
+});
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
 Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
