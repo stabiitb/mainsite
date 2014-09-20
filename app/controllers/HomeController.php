@@ -39,10 +39,12 @@ class HomeController extends BaseController {
 			return View::make('club.elec.home');
 		else if($page=='team')
 			return View::make('club.elec.team');
-		else if($page=='vision')
-			return View::make('club.elec.vision');
 		else if($page=='event')
 			return View::make('club.elec.event');
+		else if($page=='line-follower-registration')
+			return View::make('club.elec.lf-register');
+		else if($page=='club-initiatives')
+			return View::make('club.elec.club_initiative');
 		else
 			return View::make('club.elec.home');
 	}

@@ -130,7 +130,7 @@
 									
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></li>
-										<li><a href="http://www.stab-iitb.org/elec-club">Electronics Club</a></li>
+										<li><a href="{{URL::Route('electronics-club')}}">Electronics Club</a></li>
 										<li><a href="{{URL::Route('krittika')}}">Krittika</a></li>
 										<li><a href="{{URL::Route('MnP')}}">Math and Physics Club</a></li>
 										<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
