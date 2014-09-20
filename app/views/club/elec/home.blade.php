@@ -1,9 +1,31 @@
 @extends('club.elec.layout')
 
 @section('inner-content')
-<figure>
-	<img src="{{URL::asset('assets/images/art/elec.png')}}" alt="">
-</figure>
+<section id="popular-posts" class="light-bg">
+	<div id="owl-work" class="owl-carousel owl-inner-pagination owl-inner-nav post-media">
+
+		<div class="item">
+			<figure>
+				<img src="{{URL::asset('assets/images/art/elec.png')}}" alt="">
+			</figure>
+		</div><!-- /.item -->
+
+		<div class="item">
+			<figure>
+				<img src="{{URL::asset('assets/images/2014/elec/teampic.jpg')}}" alt="">
+			</figure>
+		</div><!-- /.item -->
+
+		<div class="item">
+			<figure>
+				<img src="{{URL::asset('assets/images/2014/elec/wel1.jpg')}}" alt="">
+			</figure>
+		</div><!-- /.item -->
+	</div>
+</section>
+
+
+	
 <h1>Electronics Club</h1>
 <p>
 	Want to know a computer works, or how to design a weird circuit? Well, this is the place for you!
