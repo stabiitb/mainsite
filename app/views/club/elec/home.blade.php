@@ -6,6 +6,20 @@
 </figure>
 <h1>Electronics Club</h1>
 <p>
-	The Robotics Club is a community of students who derive pleasure in creating robots that may even be potent to work without human intervention. Each member of this family is provided insight into mechanical, basic electronic, monetary and informatory aid besides the indispensable guidance of experienced members. Club will support and foster interest in various aspects related to robotics in particular, mechanical design through workshops and projects.Robo-geeks will be provided a workspace, tools and other amenities to let their imagination loose. Competitions of various levels like Formula-1, Maze solver will be held under this club which will develop your interest in Robotics.This club will definitely give you what students look for and expect from a technological institute.
+	Want to know a computer works, or how to design a weird circuit? Well, this is the place for you!
 </p>		
+<p>
+	The Electronics Club is a community of electronics hobbyists and enthusiasts within IIT, Bombay. We conduct various events and sessions through out the year to bring out the techie in you. We pour in our every ounce of energy and support to satisfy your curiosity. Every comrade of this community is given exposure to basic Electronic components, Mechanical, Monetary related issues. We have a large number of seniors expert in various areas who are more than ready to sort your bug out. The newly commissioned Tinkerers' Lab provides an excellent place to experiment and try out new things. 
+</p>
+<p>
+	Enthu about joining a Big Tech Team like Mars Society, Pratham, AUV, or Formula Student? <br>
+Well, this is the place to be!
+
+</p>
+<br>
+	We work in close association with other clubs including:
+<ul class="circled">
+<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
+<li><a href="technovation.stab-iitb.org">Technovation</a></li>
+</ul>
 @endsection
