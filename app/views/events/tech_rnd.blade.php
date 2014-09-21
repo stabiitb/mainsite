@@ -7,43 +7,6 @@
 			<section id="portfolio-post">
 				<div class="container inner-top-md">
 					
-					<!--div class="row">
-						<div class="col-sm-12">
-							<div id="owl-work" class="owl-carousel owl-inner-pagination owl-outer-nav owl-ui-lg">
-								
-								<div class="item">
-									<figure>
-										<img src="assets/images/art/work08-lg.jpg" alt="">
-									</figure>
-								</div>
-								
-								<div class="item">
-									<figure>
-										<img src="assets/images/art/work08a-lg.jpg" alt="">
-									</figure>
-								</div>
-								
-								<div class="item">
-									<figure>
-										<img src="assets/images/art/work08b-lg.jpg" alt="">
-									</figure>
-								</div>
-								
-								<div class="item">
-									<figure>
-										<img src="assets/images/art/work08c-lg.jpg" alt="">
-									</figure>
-								</div>
-								
-								<div class="item">
-									<figure>
-										<img src="assets/images/art/work08d-lg.jpg" alt="">
-									</figure>
-								</div>
-								
-							</div>
-						</div>
-					</div><!-- /.row -->
 					
 					<div class="row">
 						
@@ -53,7 +16,8 @@
 							</header>
 								<p class="text-normal">Students' Technical Activities Body, IITB, takes great pleasure in inviting you to the inaugural edition of 'Tech & RnD Exposition' aimed at showcasing
 								student participation in technical and research efforts in the institute.  </p>
- 
+ 								
+ 								
 								<p>The Visions for Tech & RnD Exposition 2014 are</p>
 								<ul class="circled">
 									<li>
@@ -85,6 +49,9 @@
 										<b>Project display by Technical</b> teams in the institute which have won competitions of international repute multiple times and talks by professors across all departments on diverse subjects
 									</li>
 								</ul>
+							</p>
+							<p>
+								To experience the real tech, visit us in VMCC on 11th and 12th Oct.
 							</p>
 							<br>
 						</div><!-- /.col -->
