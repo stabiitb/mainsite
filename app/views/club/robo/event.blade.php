@@ -6,6 +6,9 @@
 	content: "\e865";
 }
 </style>
+
+
+
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
 	<h2>Product Development Session</h2>
 	<figure>
@@ -16,10 +19,17 @@
 			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
 				<p>Robotics club is organizing a session on Product Development where different phases and approach of how to take your idea/project to product level will be explained. Do come, it will be worth attending it!</p>
 				<ul class="item-details">
-					<li class="time"><i class="fa fa-clock-o"></i>9:00 PM tp 10:00PM</li>
+					<li class="time"><i class="fa fa-clock-o"></i>9:00 PM to 10:00PM</li>
 					<li class="date">Wednesday, September 17, 2014</li>
 					<li class="categories">LC12</li>
 				</ul>
+                <div>
+                	<b>
+                    	<a href="{{URL::asset('assets/images/Productdevelopment.pdf')}}">The slides of Product Development session<sup style="color:red">New</sup></a>
+                    </b>
+               </div>
+         
+
 			</div>
 		</div>
 	</figure>
@@ -66,6 +76,11 @@
                using rack and pinion mechanism, making suspension using steel scales, and even 
                designing the full transmitter receiver circuit.
                </p>    
+                
+                
+         
+
+
                 <div>
                 	<b>
                     	<a href="{{URL::asset('assets/images/xlr8ps.pdf')}}">The Problem Statement for XLR8 2014
