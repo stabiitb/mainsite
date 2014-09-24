@@ -7,7 +7,26 @@
 }
 </style>
 
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>Manufacturing Processes</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-6">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/mp.jpg')}}" alt="">
+			</div>
+			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+				<p>Robotics club is organizing a session on Manufacturing Processes. It will cover some common practices done for manufacturing a product. Do come, if you want to get a basic understanding of the processes!!</p>
+				<ul class="item-details">
+					<li class="time"><i class="fa fa-clock-o"></i>8:45 PM to 10:00PM</li>
+					<li class="date">Thursday, September 25, 2014</li>
+					<li class="categories">LC 103</li>
+				</ul>
+                 
 
+			</div>
+		</div>
+	</figure>
+</section>
 
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
 	<h2>Product Development Session</h2>
@@ -27,7 +46,7 @@
                 	<b>
                     	<a href="{{URL::asset('assets/images/Productdevelopment.pdf')}}">The slides of Product Development session<sup style="color:red">New</sup></a>
                     </b>
-               </div>
+                </div>
          
 
 			</div>
