@@ -1,7 +1,9 @@
 @extends('layout.default')
 
 @section('content')
-
+<style type="text/css">
+	
+</style>
 		<!-- ============================================================= MAIN ============================================================= -->
 		
 		<main>
@@ -202,7 +204,7 @@
 										<div class="row">
 											
 											<div class="col-md-5 col-md-offset-1 col-sm-6 inner-right-xs">
-												<figure><img src="{{URL::asset('assets/images/art/technovation/parinat.jpg')}}" alt=""></figure>
+												<figure><img src="{{URL::asset('assets/images/art/technovation/parinat.png')}}" alt="" style="width:auto;max-height:450px;"></figure>
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
@@ -333,7 +335,7 @@
 							<figure class="member">
 								
 								<div class="icn-link">
-									<a href="http://www.marssociety.org.in/"><img src="{{URL::asset('assets/images/art/msi.jpg')}}" class="img-circle"></a>
+									<a href="http://www.marssociety.org.in/"><img src="{{URL::asset('assets/images/art/msi.png')}}" class="img-circle"></a>
 								</div><!-- /.icon-overlay -->
 								
 								<figcaption>
