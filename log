@@ -1,0 +1,2 @@
+Laravel development server started on http://localhost:8088
+[Fri Oct  3 01:59:24 2014] Failed to listen on localhost:8088 (reason: Address already in use)
