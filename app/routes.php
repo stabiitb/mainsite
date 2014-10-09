@@ -23,12 +23,6 @@ Route::get('vision-of-stab-team-2014-15',array('as'=>'vision','uses'=>'HomeContr
 Route::get('InstiReview-HobbyClubs-TechTeams',array('as'=>'institute_review_2013','uses'=>function(){return View::make('institute_review_2013');}));
 Route::get('lightsaber',array('as'=>'lightsaber','uses'=>function(){return View::make('lightsaber');}));
 
-
-//Tech Expo Registrant
-Route::get('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_view'));
-Route::post('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_save'));
-//Route::get('tech-expo-all',array('as' => 'expo.all' , 'uses' => 'AppsController@expo_all'));
-
 // Team 
 Route::get('team-stab-2014',array('as'=>'team_2014','uses'=>function ()
 {
@@ -65,8 +59,12 @@ Route::get('calendar',array('as'=>'calender','uses'=>function ()
 	return View::make('calender');
 }));
 
-// Calender
-Route::get('tech-and-RnD-exposition-2014',array('as'=>'tech_rnd','uses'=>function ()
+//TechEXPO
+Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 {
 	return View::make('events.tech_rnd');
 }));
+//Tech Expo Registrant
+Route::get('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_view'));
+Route::post('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_save'));
+
