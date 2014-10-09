@@ -8,20 +8,42 @@
 </style>
 
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
-	<h2>Manufacturing Processes</h2>
+	<h2>Technight</h2>
 	<figure>
 		<div class="row">
 			<div class="col-md-6">
-	    		<img class="custom-img" src="{{URL::asset('assets/images/mp.jpg')}}" alt="">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/technight.jpg')}}" alt="">
 			</div>
 			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
-				<p>Robotics club is organizing a session on Manufacturing Processes. It will cover some common practices done for manufacturing a product. Do come, if you want to get a basic understanding of the processes!!</p>
+				<p>Robotics club is organizing a Technight. It's an overnight event where you will be mentored to participate in "Mechatron", gripper based Techfest competition!! </p>
+				
+                
+
+			</div>
+		</div>
+	</figure>
+</section>
+
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>Session on Grippers</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-6">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/gripper.jpg')}}" alt="">
+			</div>
+			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+				<p>Robotics club and Techfest organized a session on 'Grippers' where in various gripping mechanisms and designs where explained </p>
 				<ul class="item-details">
-					<li class="time"><i class="fa fa-clock-o"></i>8:45 PM to 10:00PM</li>
-					<li class="date">Thursday, September 25, 2014</li>
-					<li class="categories">LC 103</li>
+					<li class="time"><i class="fa fa-clock-o"></i>8:30 PM</li>
+					<li class="date">Wednesday, September 30, 2014</li>
+					<li class="categories">LC102</li>
 				</ul>
-                 
+                <div>
+                	<b>
+                    	<a href="{{URL::asset('assets/images/gripper.pptx')}}">The slides of session on grippers<sup style="color:red">New</sup></a>
+                    </b>
+                </div>
+         
 
 			</div>
 		</div>
