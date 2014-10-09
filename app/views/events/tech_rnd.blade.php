@@ -62,7 +62,7 @@
 								<li class="categories">IIT Bombay</li>
 							</ul><!-- /.item-details -->
 							<div class="btn-wrapper">
-								<a href="{{URL::asset('assets/images/techexpo_brochure.png')}}" class="btn btn-large btn-green">Download Brochure </a>
+								<a href="{{URL::asset('assets/images/techexpo_brochure.pdf')}}" class="btn btn-large btn-green">Download Brochure </a>
 							</div>
 						</div><!-- /.col -->
 						
