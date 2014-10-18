@@ -2,11 +2,35 @@
 use Illuminate\Support\MessageBag;
 class AppsController extends Controller {
 
-	/**
-	 * Setup the layout used by the controller.
-	 *
-	 * @return void
-	 */
+
+	// Smart CAMPUS
+	public function smart_campus_home($page="home"){
+
+		switch ($page) {
+			case 'home':
+				return View::make('events.smartcampus.home');
+				break;
+
+			case 'instruction':
+				return View::make('events.smartcampus.instruction');
+				break;
+			case 'faq':
+				return View::make('events.smartcampus.faq');
+				break;
+			case 'register':
+				return View::make('events.smartcampus.register');
+				break;
+			case 'contact':
+				return View::make('events.smartcampus.contact');
+				break;
+			
+			default:
+				return View::make('events.smartcampus.home');
+				break;
+		}
+		
+	}
+
 	public function expo_view()
 	{
 		return View::make('expo.register');
@@ -47,5 +71,7 @@ class AppsController extends Controller {
 		return View::make('expo.all');
 
 	}
+
+
 
 }

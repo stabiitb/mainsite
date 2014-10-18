@@ -3,7 +3,10 @@ Route::get('/','HomeController@home');
 
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
-Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
+Route::get('electronics-club',array('as'=>'electronics-club','uses'=>//'HomeController@electronics_club'));
+function(){
+	Redirect::to('http://www.stab-iitb.org/elec-club');
+}));
 Route::get('krittika',array('as'=>'krittika','uses'=>'HomeController@krittika'));
 Route::get('math-and-physics-club',array('as'=>'MnP','uses'=>'HomeController@MnP'));
 Route::get('robotics-club',array('as'=>'robotics-club','uses'=>'HomeController@robotics_club'));
@@ -12,7 +15,7 @@ Route::get('technovation',array('as'=>'technovation','uses'=>'HomeController@tec
 
 // Clubs Pages
 Route::get('aeromodelling-club/{page}','HomeController@aeromodelling_club');
-Route::get('electronics-club/{page}','HomeController@electronics_club');
+//Route::get('electronics-club/{page}','HomeController@electronics_club');
 Route::get('krittika/{page}','HomeController@krittika');
 Route::get('robotics-club/{page}','HomeController@robotics_club');
 Route::get('math-and-physics-club/{page}','HomeController@MnP');
@@ -64,7 +67,7 @@ Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 {
 	return View::make('events.tech_rnd');
 }));
-//Tech Expo Registrant
-Route::get('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_view'));
-Route::post('tech-expo-register',array('as' => 'expo.register' , 'uses' => 'AppsController@expo_save'));
 
+// Smart Campus
+Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
+Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_home'));
