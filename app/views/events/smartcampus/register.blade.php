@@ -11,6 +11,7 @@
 						</div>
 					</div>
 					@endif
+					<p><i>Note : If you have already registered <a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to submit abstract</i></p>
 						<form id="contactform" class="forms" method="post">
 								
 								<div class="row">

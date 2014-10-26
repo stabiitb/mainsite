@@ -32,6 +32,8 @@
 			<script src="{{ URL::asset('assets/js/html5shiv.js')}}"></script>
 			<script src="{{ URL::asset('assets/js/respond.min.js')}}"></script>
 		<![endif]-->
+
+		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
 		
 	</head>
 	
@@ -243,7 +245,7 @@
 		<!-- ============================================================= FOOTER : END ============================================================= -->
 		
 		<!-- JavaScripts placed at the end of the document so the pages load faster -->
-		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
+		
 		<script src="{{ URL::asset('assets/js/jquery.easing.1.3.min.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.form.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.validate.min.js')}}"></script>
