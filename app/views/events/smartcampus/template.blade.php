@@ -22,6 +22,7 @@
 							<li><a href="{{URL::Route('smart-campus')}}/faq">FAQ</a></li>
 							<li><a href="{{URL::Route('smart-campus')}}/register">Register</a></li>
 							<li><a href="{{URL::Route('smart-campus')}}/contact">Contact Us</a></li>
+							<li><a href="{{URL::Route('smart-campus')}}/associations">Associations</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
