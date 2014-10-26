@@ -47,6 +47,26 @@ class AppsController extends Controller {
 		$messageBag->add('message', 'Successfully Registered <br> your team id is : '.$user->id);
 		return Redirect::back()->with('messages', $messageBag);
 	}
+	public function smart_campus_abstract(){
+		$id=Input::get('id');
+		$team=DB::table('smartcampus_users')->where('id','=',$id)->first();
+		if($team==NULL)
+			return Redirect::back();
+
+		$dest=public_path()."/media/2014/smartcampus";
+		if (Input::hasFile('abstract'))
+		{
+			$ext = Input::file('abstract')->getClientOriginalExtension();
+			$name="abstract-".$id.".".$ext;
+		    Input::file('abstract')->move($dest, $name);
+		    DB::table('smartcampus_users')->where('id','=',$id)->update(array('abstract_path'=>"/media/2014/smartcampus/".$name));
+		    return Redirect::back();
+		}
+		else{
+			return Redirect::back();
+		}
+		
+	}
 	public function expo_view()
 	{
 		return View::make('expo.register');

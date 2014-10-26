@@ -10,7 +10,7 @@
 <table class="table table-bordered table-responsive">
 	<thead>
 		<tr>
-			<th>Sl No</th>
+			<th>Team Id</th>
 			<th>Name</th>
 			<th>Roll</th>
 			<th>Email</th>
@@ -38,7 +38,19 @@
 			<td>{{$team->idea}}</td>
 			<td>{{$team->sop}}</td>
 			<td>{{$team->sop}}</td>
-			<td></td>
+			<td>
+				@if($team->abstract_path!="")
+					<a href="{{URL::asset($team->abstract_path)}}">see abstract</a><br>
+					
+					<button  class="btn btn-small" onclick="addabstract({{$team->id}})">edit</button>
+				@else
+					<button class="btn btn-small" onclick="addabstract({{$team->id}})">Add Abstract</button>
+				@endif
+				<form method="post" id="abs-{{$team->id}}" enctype="multipart/form-data">
+						<input type="hidden" value="{{$team->id}}" name="id">
+						<input style="display:none" name="abstract" type="file" class="file" id="file-{{$team->id}}">
+				</form>
+			</td>
 		</tr>
 		@endforeach
 	</tbody>
@@ -46,5 +58,15 @@
 </div>
 </div>
 </main>
-
+<script type="text/javascript">
+	function addabstract(id){
+		$("#file-"+id).click();
+		console.log(id);
+	}
+	$('.file').on('change',function(e){
+		if($(this).val()!=""){
+			$(this).parent().submit();
+		}
+	})
+</script>
 @endsection
