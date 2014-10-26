@@ -28,7 +28,9 @@ class AppsController extends Controller {
 				View::share('teams',$all);
 				return View::make('events.smartcampus.teams');
 				break;
-			
+			case 'associations':
+				return View::make('events.smartcampus.assoc');
+				break;
 			default:
 				return View::make('events.smartcampus.home');
 				break;
