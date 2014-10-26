@@ -23,6 +23,11 @@ class AppsController extends Controller {
 			case 'contact':
 				return View::make('events.smartcampus.contact');
 				break;
+			case 'all-team':
+				$all = DB::table('smartcampus_users')->get();
+				View::share('teams',$all);
+				return View::make('events.smartcampus.teams');
+				break;
 			
 			default:
 				return View::make('events.smartcampus.home');
@@ -31,6 +36,15 @@ class AppsController extends Controller {
 		
 	}
 
+	public function smart_campus_register(){
+		$user=new SmartcampusUser;
+		$user->saveFromInput(Input::all());
+		$user->save();
+
+		$messageBag = new MessageBag;
+		$messageBag->add('message', 'Successfully Registered <br> your team id is : '.$user->id);
+		return Redirect::back()->with('messages', $messageBag);
+	}
 	public function expo_view()
 	{
 		return View::make('expo.register');
