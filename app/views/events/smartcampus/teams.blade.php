@@ -21,7 +21,7 @@
 			<th>Project Idea</th>
 			<th>SOP</th>
 			<th>Team Details</th>
-			<th>Abstract</th>
+			<!--th>Abstract</th-->
 		</tr>
 	</thead>
 	<tbody>
@@ -38,6 +38,7 @@
 			<td>{{$team->idea}}</td>
 			<td>{{$team->sop}}</td>
 			<td>{{$team->sop}}</td>
+			{{--
 			<td>
 				@if($team->abstract_path!="")
 					<a href="{{URL::asset($team->abstract_path)}}">see abstract</a><br>
@@ -51,6 +52,7 @@
 						<input style="display:none" name="abstract" type="file" class="file" id="file-{{$team->id}}">
 				</form>
 			</td>
+			--}}
 		</tr>
 		@endforeach
 	</tbody>
