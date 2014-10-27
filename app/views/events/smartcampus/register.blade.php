@@ -118,8 +118,11 @@
 										<label style="width:100%">Team Details</label>
 									</div>
 									<div class="col-sm-6">
-										<textarea name="team-detail" class="form-control" id="team-detail-box"></textarea>
+										<input name="team-detail" class="form-control" type="number" value="0" id="team-detail-box">
 									</div><!-- /.col -->
+									<div class="col-md-12">
+										Note : Each team member have to register individually
+									</div>
 								</div><!-- /.row -->
 
 								
