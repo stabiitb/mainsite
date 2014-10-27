@@ -5,8 +5,8 @@
 <h2>Instructions : </h2>
 
 <ul class="arrowed">
-	<li>Deadline for registration - 25th Oct</li>
-	<li>Individual registrations will be informed about their teams by 27th Oct</li>
+	<li>Deadline for registration - 2nd Nov</li>
+	<li>Individual registrations will be informed about their teams by 7th Nov</li>
 	<li>
 		Strictly follow this format for your abstract
 		<ul class="circled">
