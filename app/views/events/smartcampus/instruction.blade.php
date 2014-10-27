@@ -7,6 +7,7 @@
 <ul class="arrowed">
 	<li>Deadline for registration - 2nd Nov</li>
 	<li>Individual registrations will be informed about their teams by 7th Nov</li>
+	{{-- THIS IS A COMMENT
 	<li>
 		Strictly follow this format for your abstract
 		<ul class="circled">
@@ -26,6 +27,7 @@
 			
 		</ul>
 	</li>
+	--}}
 </ul>
 
 @endsection
