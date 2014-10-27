@@ -85,10 +85,10 @@
 
 								<div class="row">
 									<div class="col-md-3">
-										<label style="width:100%">Do you have any ideas for project<sup style="color:red">*</sup></label>
+										<label style="width:100%">Do you have any ideas for project?</label>
 									</div>
 									<div class="col-sm-6">
-										<textarea name="idea" class="form-control" required></textarea>
+										<textarea name="idea" class="form-control"></textarea>
 									</div><!-- /.col -->
 								</div><!-- /.row -->
 
