@@ -11,7 +11,7 @@
 						</div>
 					</div>
 					@endif
-					<p><i><a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to see al registrations</i></p>
+					<p><i><a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to see all registrations</i></p>
 						<form id="contactform" class="forms" method="post">
 								
 								<div class="row">
