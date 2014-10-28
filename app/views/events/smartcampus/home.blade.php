@@ -16,7 +16,7 @@ And so, we have decided to make our home i.e the IITB campus smarter, greener an
 We recently circulated a form around, asking people about their ideas on how to do this. The result we got was mind blowing, with nearly 200 people pouring in their thoughts!
 </p>
 <p>
-	The primary motivation is to encourage students to come up with novel solutions and implement to day to day problems which they face inside the institute. We never had shortage of ideas but somehow they are never implemented to a scalable product, and hence with the help of expert mentorship from the associated professionals from well-established firms like Arduino India, Texas Instruments and successful start-ups like Humming Whale, Leaf Techonologies we aim at turning these ideas into reality through this week long workshops. We encourage you to come and participate in this workshop and together lets make our campus better!
+	The primary motivation is to encourage students to come up with novel solutions and implement to day to day problems which they face inside the institute. We never had shortage of ideas but somehow they are never implemented to a scalable product, and hence with the help of expert mentorship from the associated professionals from well-established firms like Arduino India, Texas Instruments and successful start-ups like Humming Whale, Leaf Techonologies , NanoSniff we aim at turning these ideas into reality through this week long workshops. We encourage you to come and participate in this workshop and together lets make our campus better!
 </p>
 
 

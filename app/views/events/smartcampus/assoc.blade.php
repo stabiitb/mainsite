@@ -26,7 +26,7 @@
 		</a>
 	</div>
 </div>
-<hr>
+<br>
 <div class="row">
 	<div class="col-md-6 text-center">
 		<a href="http://www.leaftechnologies.com/">
@@ -47,6 +47,19 @@
 			<b>Humming Whale</b><br>
 		</a>
 	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-6 text-center">
+		<a href="http://www.nanosniff.com/">
+			<div class="col-md-12" style="height:150px">
+				<img src="http://siemac.in/wp-content/uploads/2014/09/nanosniff.jpg">
+			</div>
+			<br>
+			<b>NanoSniff </b><br>
+		</a>
+	</div>
+
 </div>
 
 
