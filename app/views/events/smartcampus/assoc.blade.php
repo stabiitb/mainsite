@@ -6,15 +6,19 @@
 <hr>
 
 <div class="col-md-6">
-	<img src="http://www.leaftechnologies.com/test/wp-content/uploads/2014/01/logo-CS51.png">
-	<br>
-	<b>Lesaffre Advanced Fermentation Technologies </b><br>
+	<a href="http://www.leaftechnologies.com/">
+		<img src="http://www.leaftechnologies.com/test/wp-content/uploads/2014/01/logo-CS51.png">
+		<br>
+		<b>Lesaffre Advanced Fermentation Technologies </b><br>
+	</a>
 </div>
 
 <div class="col-md-6">
-	<img src="http://www.hummingwhale.com/wp-content/uploads/2013/12/logo.png">
-	<br>
-	<b>Humming Whale</b><br>
+	<a href="http://www.hummingwhale.com/">
+		<img src="http://www.hummingwhale.com/wp-content/uploads/2013/12/logo.png">
+		<br>
+		<b>Humming Whale</b><br>
+	</a>
 </div>
 
 
