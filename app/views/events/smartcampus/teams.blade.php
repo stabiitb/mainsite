@@ -1,10 +1,7 @@
-@extends('layout.default')
+@extends('events.smartcampus.template')
 
-@section('clubcontent')
-<main>
-			
-			<div class="container inner">
-				<div class="row">
+@section('inner-content')
+
 			<h2>List of teams for <a href="{{URL::Route('smart-campus')}}">Smart Campus Challenge</a></h2>
  
 <table class="table table-bordered table-responsive">
@@ -12,15 +9,9 @@
 		<tr>
 			<th>Team Id</th>
 			<th>Name</th>
-			<th>Roll</th>
-			<th>Email</th>
-			<th>Contact</th>
-			<th>Hno/Room no</th>
-			<th>Department</th>
-			<th>Skills</th>
 			<th>Project Idea</th>
-			<th>SOP</th>
 			<th>Team Details</th>
+			<th></th>
 			<!--th>Abstract</th-->
 		</tr>
 	</thead>
@@ -29,15 +20,9 @@
 		<tr>
 			<td>{{$team->id}}</td>
 			<td>{{$team->name}}</td>
-			<td>{{$team->roll}}</td>
-			<td>{{$team->email}}</td>
-			<td>{{$team->contact}}</td>
-			<td>{{$team->hno}}</td>
-			<td>{{$team->dept}}</td>
-			<td>{{$team->skills}}</td>
 			<td>{{$team->idea}}</td>
-			<td>{{$team->sop}}</td>
-			<td>{{$team->sop}}</td>
+			<td>{{$team->team_detail}}</td>
+			<td><a href="{{URL::Route('smart-campus')}}/team/{{$team->id}}">View This team</a></td>
 			{{--
 			<td>
 				@if($team->abstract_path!="")
@@ -57,9 +42,7 @@
 		@endforeach
 	</tbody>
 </table>
-</div>
-</div>
-</main>
+
 <script type="text/javascript">
 	function addabstract(id){
 		$("#file-"+id).click();

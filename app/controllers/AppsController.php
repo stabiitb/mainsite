@@ -67,6 +67,20 @@ class AppsController extends Controller {
 		}
 		
 	}
+
+	public function smart_campus_team($id=0){
+		
+		$all = DB::table('smartcampus_users')->where('id','=',$id)->first();
+		if($all!=NULL){
+			View::share('team',$all);
+			return View::make('events.smartcampus.one-team');
+		}
+		$all = DB::table('smartcampus_users')->get();
+		View::share('teams',$all);
+		return View::make('events.smartcampus.teams');
+		
+	}
+
 	public function expo_view()
 	{
 		return View::make('expo.register');
