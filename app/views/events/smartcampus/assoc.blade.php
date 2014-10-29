@@ -7,9 +7,9 @@
 
 <div class="row">
 	<div class="col-md-6 text-center">
-		<a href="#">
-			<div class="col-md-12" style="height:100px">
-				
+		<a href="http://local.arduino.cc/bangalore/about/">
+			<div class="col-md-12" style="height:180px">
+				<img src="http://arduino.cc/en/uploads/Trademark/ArduinoCommunityLogo.png" style="max-width:100%">
 			</div>
 			<br>
 			<b>Arduino India </b><br>
@@ -18,7 +18,7 @@
 
 	<div class="col-md-6 text-center">
 		<a href="http://www.ti.com/">
-			<div class="col-md-12" style="height:150px">
+			<div class="col-md-12" style="height:180px">
 				<img src="http://oedk.rice.edu/Resources/Pictures/ti_logo.jpg" style="max-width:100%">
 			</div>
 			<br>

@@ -1,4 +1,14 @@
 <?php
+
+Route::filter('login',function(){
+	$value = Session::get('admin');
+	if($value!="1")
+	{
+		return View::make('user.login');
+	}
+});
+
+
 Route::get('/','HomeController@home');
 
 // Clubs URLs
@@ -70,6 +80,12 @@ Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 
 // Smart Campus
 Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
+Route::get('smart-campus/team/{id}',array('before'=>'login','as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_team'));
 Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_home'));
 Route::post('smart-campus/register',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_register'));
 Route::post('smart-campus/all-team',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_abstract'));
+
+
+// USERS
+Route::post('login',array('as'=>'login','uses'=>'UserController@ManagerAuth'));
+Route::get('logout',array('as'=>'logout','uses'=>'UserController@ManagerLogout'));
