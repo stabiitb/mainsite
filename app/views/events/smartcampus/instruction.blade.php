@@ -5,7 +5,7 @@
 <h2>Instructions : </h2>
 
 <ul class="arrowed">
-	<li>Deadline for registration - 2nd Nov ,	11:59 PM</li>
+	<li>Deadline for registration - 4th Nov ,	11:59 PM</li>
 	<li>Individual registrations will be informed about their teams by 7th Nov</li>
 	<li>Event Date : <b>25th Nov - 1st Dec</b></li>
 	{{-- THIS IS A COMMENT
