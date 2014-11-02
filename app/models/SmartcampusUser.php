@@ -17,6 +17,7 @@ class SmartcampusUser extends Eloquent{
 		$this->idea = Input::get('idea');
 		$this->team_detail = Input::get('team-detail');
 		$this->sop = Input::get('sop');
+		$this->ug_pg = Input::get('ug_pg');
 		
 		
 	}
