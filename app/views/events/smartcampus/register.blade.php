@@ -118,7 +118,7 @@
 										<label style="width:100%">Team Details</label>
 									</div>
 									<div class="col-sm-6">
-										<input name="team-detail" class="form-control" type="number" value="0" id="team-detail-box">
+										<input name="team-detail" class="form-control" type="text" value="0" id="team-detail-box">
 									</div><!-- /.col -->
 									<div class="col-md-12">
 										Note : Each team member have to register individually
