@@ -19,6 +19,7 @@ class Smartcampustable extends Migration {
 			$table->string('roll', 100);
 			$table->string('hno', 500);
 			$table->string('year', 500);
+			$table->string('ug_pg', 50);
 			$table->string('email', 500);
 			$table->string('dept', 500);
 			$table->string('contact', 500);

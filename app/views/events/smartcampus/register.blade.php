@@ -58,6 +58,17 @@
 								</div><!-- /.row -->
 								<div class="row">
 									<div class="col-md-3">
+										<label style="width:100%">Are you a UG/PG? </label>
+									</div>
+									<div class="col-sm-3">
+									<input type="radio" name="ug_pg" checked="checked" style="width:10%" value="UG"> UG
+									</div><!-- /.col -->
+									<div class="col-sm-3">
+										<input type="radio" name="ug_pg" style="width:10%" value="PG"> PG										
+									</div><!-- /.col -->
+								</div><!-- /.row -->
+								<div class="row">
+									<div class="col-md-3">
 										<label>Email<sup style="color:red">*</sup></label>
 									</div>
 									<div class="col-md-6">
@@ -118,7 +129,7 @@
 										<label style="width:100%">Team Details</label>
 									</div>
 									<div class="col-sm-6">
-										<input name="team-detail" class="form-control" type="text" value="0" id="team-detail-box">
+										<input name="team-detail" class="form-control" type="text"  id="team-detail-box">
 									</div><!-- /.col -->
 									<div class="col-md-12">
 										Note : Each team member have to register individually
