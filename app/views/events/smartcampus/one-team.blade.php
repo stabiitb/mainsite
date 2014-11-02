@@ -9,6 +9,7 @@
 			<div class="row"><div class="col-md-3">Team ID : </div> <div class="col-md-9"> {{$team->id}}</div></div>
 			<div class="row"><div class="col-md-3">Name : </div> <div class="col-md-9"> {{$team->name}}</div></div>
 			<div class="row"><div class="col-md-3">Roll : </div> <div class="col-md-9">{{$team->roll}}</div></div>
+			<div class="row"><div class="col-md-3">UG/PG : </div> <div class="col-md-9">{{$team->ug_pg}}</div></div>
 			<div class="row"><div class="col-md-3">Email : </div> <div class="col-md-9"> {{$team->email}}</div></div>
 			<div class="row"><div class="col-md-3">Contact : </div> <div class="col-md-9"> {{$team->contact}}</div></div>
 			<div class="row"><div class="col-md-3">Hostel No/room No : </div> <div class="col-md-9"> {{$team->hno}}</div></div>
