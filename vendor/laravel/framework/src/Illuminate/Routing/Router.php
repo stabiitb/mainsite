@@ -229,7 +229,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 */
 	public function match($methods, $uri, $action)
 	{
-		return $this->addRoute($methods, $uri, $action);
+		return $this->addRoute(array_map('strtoupper', (array) $methods), $uri, $action);
 	}
 
 	/**
@@ -298,7 +298,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 		// If a given controller method has been named, we will assign the name to the
 		// controller action array, which provides for a short-cut to method naming
 		// so you don't have to define an individual route for these controllers.
-		$action['as'] = array_pull($names, $method);
+		$action['as'] = array_get($names, $method);
 
 		$this->{$route['verb']}($route['uri'], $action);
 	}
@@ -524,7 +524,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceIndex($name, $base, $controller, $options)
 	{
@@ -542,7 +542,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceCreate($name, $base, $controller, $options)
 	{
@@ -560,7 +560,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceStore($name, $base, $controller, $options)
 	{
@@ -578,7 +578,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceShow($name, $base, $controller, $options)
 	{
@@ -596,7 +596,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceEdit($name, $base, $controller, $options)
 	{
@@ -630,7 +630,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addPutResourceUpdate($name, $base, $controller, $options)
 	{
@@ -663,7 +663,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return Route
+	 * @return \Illuminate\Routing\Route
 	 */
 	protected function addResourceDestroy($name, $base, $controller, $options)
 	{
@@ -1152,10 +1152,8 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 		{
 			return $callback.'@filter';
 		}
-		else
-		{
-			return $callback;
-		}
+
+		return $callback;
 	}
 
 	/**
@@ -1164,6 +1162,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $pattern
 	 * @param  string  $name
 	 * @param  array|null  $methods
+	 * @return void
 	 */
 	public function when($pattern, $name, $methods = null)
 	{
@@ -1591,7 +1590,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	/**
 	 * Alias for the "currentRouteNamed" method.
 	 *
-	 * @param  dynamic  string
+	 * @param  mixed  string
 	 * @return bool
 	 */
 	public function is()
@@ -1635,7 +1634,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	/**
 	 * Alias for the "currentRouteUses" method.
 	 *
-	 * @param  dynamic  string
+	 * @param  mixed  string
 	 * @return bool
 	 */
 	public function uses()
@@ -1734,7 +1733,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  \Symfony\Component\HttpFoundation\Request  $request
 	 * @param  int   $type
 	 * @param  bool  $catch
-	 * @return \Symfony\Component\HttpFoundation\Response
+	 * @return \Illuminate\Http\Response
 	 */
 	public function handle(SymfonyRequest $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
 	{

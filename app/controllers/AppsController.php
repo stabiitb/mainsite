@@ -81,6 +81,33 @@ class AppsController extends Controller {
 		
 	}
 
+	public function smart_campus_xls(){
+		Excel::create('Smart_campus_Users', function($excel) {
+
+		    // Set the title
+		    $excel->setTitle('List of All Smart Campus Applicants');
+
+		    // Chain the setters
+		    $excel->setCreator('Prateek Chandan')
+		          ->setCompany('Prateek');
+
+		    // Call them separately
+		    $excel->setDescription('This file contains list of all smart campus users');
+
+		    $excel->sheet('Sheetname', function($sheet) {
+		    	$all = DB::table('smartcampus_users')->get();
+				foreach ($all as $key => $value) {
+					$all[$key]=(array)$value;
+				}
+
+		        $sheet->fromArray($all);
+
+		    });
+
+		})->download('xlsx');
+
+		echo "List of All Smart Campus Users";
+	}
 	public function expo_view()
 	{
 		return View::make('expo.register');

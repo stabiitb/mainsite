@@ -81,9 +81,10 @@ Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 // Smart Campus
 Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
 Route::get('smart-campus/team/{id}',array('before'=>'login','as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_team'));
+Route::get('smart-campus/all-team-list',array('before'=>'login','as'=>'smart_campus.all-team-list','uses'=>'AppsController@smart_campus_xls'));
 Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_home'));
-Route::post('smart-campus/register',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_register'));
-Route::post('smart-campus/all-team',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_abstract'));
+Route::post('smart-campus/register',array('as'=>'smart_campus.register','uses'=>'AppsController@smart_campus_register'));
+Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>'AppsController@smart_campus_abstract'));
 
 
 // USERS

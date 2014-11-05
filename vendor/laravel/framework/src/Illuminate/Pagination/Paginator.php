@@ -117,7 +117,7 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	/**
 	 * Setup the pagination context (current and last page).
 	 *
-	 * @return \Illuminate\Pagination\Paginator
+	 * @return $this
 	 */
 	public function setupPaginationContext()
 	{
@@ -233,13 +233,15 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	 * Get / set the URL fragment to be appended to URLs.
 	 *
 	 * @param  string|null  $fragment
-	 * @return \Illuminate\Pagination\Paginator|string
+	 * @return $this|string
 	 */
 	public function fragment($fragment = null)
 	{
 		if (is_null($fragment)) return $this->fragment;
 
-		$this->fragment = $fragment; return $this;
+		$this->fragment = $fragment;
+
+		return $this;
 	}
 
 	/**
@@ -257,7 +259,7 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	 *
 	 * @param  string  $key
 	 * @param  string  $value
-	 * @return \Illuminate\Pagination\Paginator
+	 * @return $this
 	 */
 	public function appends($key, $value = null)
 	{
@@ -270,7 +272,7 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	 * Add an array of query string values.
 	 *
 	 * @param  array  $keys
-	 * @return \Illuminate\Pagination\Paginator
+	 * @return $this
 	 */
 	protected function appendArray(array $keys)
 	{
@@ -287,7 +289,7 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	 *
 	 * @param  string  $key
 	 * @param  string  $value
-	 * @return \Illuminate\Pagination\Paginator
+	 * @return $this
 	 */
 	public function addQuery($key, $value)
 	{
@@ -321,10 +323,8 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 		{
 			return $this->currentPage;
 		}
-		else
-		{
-			return min($this->currentPage, (int) ceil($total / $this->perPage));
-		}
+
+		return min($this->currentPage, (int) ceil($total / $this->perPage));
 	}
 
 	/**
@@ -432,7 +432,7 @@ class Paginator implements ArrayableInterface, ArrayAccess, Countable, IteratorA
 	/**
 	 * Get an iterator for the items.
 	 *
-	 * @return ArrayIterator
+	 * @return \ArrayIterator
 	 */
 	public function getIterator()
 	{

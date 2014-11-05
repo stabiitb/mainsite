@@ -1,5 +1,6 @@
 <?php namespace Illuminate\Support;
 
+use Patchwork\Utf8;
 use Illuminate\Support\Traits\MacroableTrait;
 
 class Str {
@@ -14,7 +15,7 @@ class Str {
 	 */
 	public static function ascii($value)
 	{
-		return \Patchwork\Utf8::toAscii($value);
+		return Utf8::toAscii($value);
 	}
 
 	/**
@@ -56,7 +57,7 @@ class Str {
 	{
 		foreach ((array) $needles as $needle)
 		{
-			if ($needle == substr($haystack, -strlen($needle))) return true;
+			if ((string) $needle === substr($haystack, -strlen($needle))) return true;
 		}
 
 		return false;
@@ -146,9 +147,7 @@ class Str {
 	{
 		preg_match('/^\s*+(?:\S++\s*+){1,'.$words.'}/u', $value, $matches);
 
-		if ( ! isset($matches[0])) return $value;
-
-		if (strlen($value) == strlen($matches[0])) return $value;
+		if ( ! isset($matches[0]) || strlen($value) === strlen($matches[0])) return $value;
 
 		return rtrim($matches[0]).$end;
 	}
@@ -284,9 +283,11 @@ class Str {
 	 */
 	public static function snake($value, $delimiter = '_')
 	{
+		if (ctype_lower($value)) return $value;
+
 		$replace = '$1'.$delimiter.'$2';
 
-		return ctype_lower($value) ? $value : strtolower(preg_replace('/(.)([A-Z])/', $replace, $value));
+		return strtolower(preg_replace('/(.)([A-Z])/', $replace, $value));
 	}
 
 	/**
