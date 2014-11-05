@@ -14,7 +14,7 @@
 					</div>
 				</div><!-- /.row -->
 				<div class="row">
-					<div class="col-md-12 table-responsive">
+					<div class="col-md-12" style="max-height:600px;overflow:auto">
 						<table class="table table-bordered ">
 							<thead>
 								<tr>
