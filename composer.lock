@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bf116b24dc3a8ccdba8262a71fac9065",
+    "hash": "a67a0697bf4fbd3362f1a1b5ffe52b31",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -630,6 +630,37 @@
                 "utf8"
             ],
             "time": "2014-08-05 08:00:32"
+        },
+        {
+            "name": "phpexcel/phpexcel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ddeboer/phpexcel.git",
+                "reference": "656336f53bcd0d11abba40db6c9f8553d320434c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ddeboer/phpexcel/zipball/656336f53bcd0d11abba40db6c9f8553d320434c",
+                "reference": "656336f53bcd0d11abba40db6c9f8553d320434c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU"
+            ],
+            "description": "DEPRECATED! Use phpoffice/phpexcel instead.",
+            "homepage": "http://phpexcel.codeplex.com",
+            "time": "2014-02-06 05:54:09"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -1808,9 +1839,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "phpexcel/phpexcel": 20
+    },
     "prefer-stable": false,
     "platform": [
 

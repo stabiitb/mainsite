@@ -82,9 +82,9 @@ class AppsController extends Controller {
 	}
 
 	public function smart_campus_xls(){
-		Excel::create('Smart_campus_Users', function($excel) {
+		$sheet=Excel::create('Smart_campus_Users', function($excel) {
 
-		    // Set the title
+		   // Set the title
 		    $excel->setTitle('List of All Smart Campus Applicants');
 
 		    // Chain the setters
@@ -99,14 +99,16 @@ class AppsController extends Controller {
 				foreach ($all as $key => $value) {
 					$all[$key]=(array)$value;
 				}
-
 		        $sheet->fromArray($all);
 
 		    });
 
-		})->download('xlsx');
-
-		echo "List of All Smart Campus Users";
+		});
+		$sheet->store('xls',public_path()."/media");
+//		print_r($sheet);
+		echo "List of All Smart Campus Users<br>";
+		$url= URL::Asset("media/Smart_campus_Users.xls");
+		echo "<a href='".$url."'>Click here to download</a>";
 	}
 	public function expo_view()
 	{

@@ -1,0 +1,14 @@
+{
+    "name": "phpexcel/phpexcel",
+    "description": "DEPRECATED! Use phpoffice/phpexcel instead.",
+    "homepage": "http://phpexcel.codeplex.com",
+    "license": "GNU",
+    "require": {
+        "php": ">5.2.0"        
+    },
+    "autoload": {
+        "psr-0": {
+            "PHPExcel": "Classes"
+        }
+    }
+}
