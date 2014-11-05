@@ -158,13 +158,13 @@ class Mailer {
 	 * @param  array   $data
 	 * @param  \Closure|string  $callback
 	 * @param  string  $queue
-	 * @return void
+	 * @return mixed
 	 */
 	public function queue($view, array $data, $callback, $queue = null)
 	{
 		$callback = $this->buildQueueCallable($callback);
 
-		$this->queue->push('mailer@handleQueuedMessage', compact('view', 'data', 'callback'), $queue);
+		return $this->queue->push('mailer@handleQueuedMessage', compact('view', 'data', 'callback'), $queue);
 	}
 
 	/**
@@ -174,11 +174,11 @@ class Mailer {
 	 * @param  string|array  $view
 	 * @param  array   $data
 	 * @param  \Closure|string  $callback
-	 * @return void
+	 * @return mixed
 	 */
 	public function queueOn($queue, $view, array $data, $callback)
 	{
-		$this->queue($view, $data, $callback, $queue);
+		return $this->queue($view, $data, $callback, $queue);
 	}
 
 	/**
@@ -189,13 +189,13 @@ class Mailer {
 	 * @param  array  $data
 	 * @param  \Closure|string  $callback
 	 * @param  string  $queue
-	 * @return void
+	 * @return mixed
 	 */
 	public function later($delay, $view, array $data, $callback, $queue = null)
 	{
 		$callback = $this->buildQueueCallable($callback);
 
-		$this->queue->later($delay, 'mailer@handleQueuedMessage', compact('view', 'data', 'callback'), $queue);
+		return $this->queue->later($delay, 'mailer@handleQueuedMessage', compact('view', 'data', 'callback'), $queue);
 	}
 
 	/**
@@ -206,11 +206,11 @@ class Mailer {
 	 * @param  string|array  $view
 	 * @param  array  $data
 	 * @param  \Closure|string  $callback
-	 * @return void
+	 * @return mixed
 	 */
 	public function laterOn($queue, $delay, $view, array $data, $callback)
 	{
-		$this->later($delay, $view, $data, $callback, $queue);
+		return $this->later($delay, $view, $data, $callback, $queue);
 	}
 
 	/**
@@ -468,7 +468,7 @@ class Mailer {
 	 * Set the log writer instance.
 	 *
 	 * @param  \Illuminate\Log\Writer  $logger
-	 * @return \Illuminate\Mail\Mailer
+	 * @return $this
 	 */
 	public function setLogger(Writer $logger)
 	{
@@ -481,7 +481,7 @@ class Mailer {
 	 * Set the queue manager instance.
 	 *
 	 * @param  \Illuminate\Queue\QueueManager  $queue
-	 * @return \Illuminate\Mail\Mailer
+	 * @return $this
 	 */
 	public function setQueue(QueueManager $queue)
 	{

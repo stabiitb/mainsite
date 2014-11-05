@@ -50,7 +50,7 @@ abstract class Grammar {
 		{
 			$segments = explode(' ', $value);
 
-			return $this->wrap($segments[0]).' as '.$this->wrap($segments[2]);
+			return $this->wrap($segments[0]).' as '.$this->wrapValue($segments[2]);
 		}
 
 		$wrapped = array();
@@ -167,7 +167,7 @@ abstract class Grammar {
 	 * Set the grammar's table prefix.
 	 *
 	 * @param  string  $prefix
-	 * @return \Illuminate\Database\Grammar
+	 * @return $this
 	 */
 	public function setTablePrefix($prefix)
 	{

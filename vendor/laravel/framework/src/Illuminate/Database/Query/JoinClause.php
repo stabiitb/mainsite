@@ -3,13 +3,6 @@
 class JoinClause {
 
 	/**
-	 * The query builder instance.
-	 *
-	 * @var \Illuminate\Database\Query\Builder
-	 */
-	public $query;
-
-	/**
 	 * The type of join being performed.
 	 *
 	 * @var string
@@ -31,17 +24,22 @@ class JoinClause {
 	public $clauses = array();
 
 	/**
+	* The "on" bindings for the join.
+	*
+	* @var array
+	*/
+	public $bindings = array();
+
+	/**
 	 * Create a new join clause instance.
 	 *
-	 * @param  \Illuminate\Database\Query\Builder  $query
 	 * @param  string  $type
 	 * @param  string  $table
 	 * @return void
 	 */
-	public function __construct(Builder $query, $type, $table)
+	public function __construct($type, $table)
 	{
 		$this->type = $type;
-		$this->query = $query;
 		$this->table = $table;
 	}
 
@@ -53,13 +51,13 @@ class JoinClause {
 	 * @param  string  $second
 	 * @param  string  $boolean
 	 * @param  bool  $where
-	 * @return \Illuminate\Database\Query\JoinClause
+	 * @return $this
 	 */
 	public function on($first, $operator, $second, $boolean = 'and', $where = false)
 	{
 		$this->clauses[] = compact('first', 'operator', 'second', 'boolean', 'where');
 
-		if ($where) $this->query->addBinding($second, 'join');
+		if ($where) $this->bindings[] = $second;
 
 		return $this;
 	}
@@ -102,6 +100,18 @@ class JoinClause {
 	public function orWhere($first, $operator, $second)
 	{
 		return $this->on($first, $operator, $second, 'or', true);
+	}
+
+	/**
+	 * Add an "on where is null" clause to the join
+	 *
+	 * @param  $column
+	 * @param  string $boolean
+	 * @return \Illuminate\Database\Query\JoinClause
+	 */
+	public function whereNull($column, $boolean = 'and')
+	{
+		return $this->on($column, 'is', new Expression('null'), $boolean, false);
 	}
 
 }

@@ -83,7 +83,7 @@ class RoutesCommand extends Command {
 	{
 		$results = array();
 
-		foreach($this->routes as $route)
+		foreach ($this->routes as $route)
 		{
 			$results[] = $this->getRouteInformation($route);
 		}
@@ -176,7 +176,7 @@ class RoutesCommand extends Command {
 	/**
 	 * Get after filters
 	 *
-	 * @param  Route  $route
+	 * @param  \Illuminate\Routing\Route  $route
 	 * @return string
 	 */
 	protected function getAfterFilters($route)
@@ -197,10 +197,8 @@ class RoutesCommand extends Command {
 		{
 			return null;
 		}
-		else
-		{
-			return $route;
-		}
+
+		return $route;
 	}
 
 	/**

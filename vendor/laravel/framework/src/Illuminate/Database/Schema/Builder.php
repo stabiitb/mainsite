@@ -182,10 +182,8 @@ class Builder {
 		{
 			return call_user_func($this->resolver, $table, $callback);
 		}
-		else
-		{
-			return new Blueprint($table, $callback);
-		}
+
+		return new Blueprint($table, $callback);
 	}
 
 	/**
@@ -202,7 +200,7 @@ class Builder {
 	 * Set the database connection instance.
 	 *
 	 * @param  \Illuminate\Database\Connection
-	 * @return \Illuminate\Database\Schema\Builder
+	 * @return $this
 	 */
 	public function setConnection(Connection $connection)
 	{
