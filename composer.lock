@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a67a0697bf4fbd3362f1a1b5ffe52b31",
+    "hash": "2d78461f79f46c7a336f467943ccba87",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -904,6 +904,53 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "roumen/sitemap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RoumenDamianoff/laravel-sitemap.git",
+                "reference": "920ae90f9a6093086c965b5cb6fa872bf5b9ab81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RoumenDamianoff/laravel-sitemap/zipball/920ae90f9a6093086c965b5cb6fa872bf5b9ab81",
+                "reference": "920ae90f9a6093086c965b5cb6fa872bf5b9ab81",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Roumen\\Sitemap": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roumen Damianoff",
+                    "email": "roumen@dawebs.com",
+                    "homepage": "http://roumen.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple sitemap generator for Laravel.",
+            "homepage": "http://roumen.it/projects/laravel-sitemap",
+            "keywords": [
+                "Sitemap",
+                "laravel"
+            ],
+            "time": "2014-09-11 13:38:05"
         },
         {
             "name": "stack/builder",
@@ -1840,7 +1887,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpexcel/phpexcel": 20
+        "phpexcel/phpexcel": 20,
+        "roumen/sitemap": 20
     },
     "prefer-stable": false,
     "platform": [

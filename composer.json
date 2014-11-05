@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"phpexcel/phpexcel": "dev-master",
-		"maatwebsite/excel": "~1.2.1"
+		"maatwebsite/excel": "~1.2.1",
+		"roumen/sitemap": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
