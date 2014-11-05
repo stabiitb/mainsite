@@ -13,10 +13,10 @@ Route::get('/','HomeController@home');
 
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
-Route::get('electronics-club',array('as'=>'electronics-club','uses'=>//'HomeController@electronics_club'));
-function(){
+Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
+/*function(){
 	Redirect::to('http://www.stab-iitb.org/elec-club');
-}));
+}));*/
 Route::get('krittika',array('as'=>'krittika','uses'=>'HomeController@krittika'));
 Route::get('math-and-physics-club',array('as'=>'MnP','uses'=>'HomeController@MnP'));
 Route::get('robotics-club',array('as'=>'robotics-club','uses'=>'HomeController@robotics_club'));
@@ -90,3 +90,30 @@ Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>
 // USERS
 Route::post('login',array('as'=>'login','uses'=>'UserController@ManagerAuth'));
 Route::get('logout',array('as'=>'logout','uses'=>'UserController@ManagerLogout'));
+
+
+
+Route::get('sitemap', function(){
+
+    // create new sitemap object
+    $sitemap = App::make("sitemap");
+
+    // add items to the sitemap (url, date, priority, freq)
+    $sitemap->add(URL::to('/'), '2012-08-25T20:10:00+02:00', '1.0', 'weekly');
+    $sitemap->add(URL::route('vision'), '2012-08-25T20:10:00+02:00', '0.8', 'monthly');
+
+    $clubs=['aeromodelling-club'=>['about','team','vision','event']
+    ,'electronics-club'=>['about','team','event'],
+    'krittika'=>['about','team','vision','event'],
+    'math-and-physics-club'=>['about','team','vision','event'],
+    'math-and-physics-club'=>['about','team','vision','event'],
+    'web-and-coding-club'=>['about','team','vision','event']];
+
+    foreach ($clubs as $key => $row) {
+    	$sitemap->add(URL::to('/'.$key), '2012-08-25T20:10:00+02:00', '0.8', 'weekly');
+    	foreach ($row as $key1 => $value) {
+    		$sitemap->add(URL::to('/'.$key.'/'.$value), '2012-08-25T20:10:00+02:00', '0.25', 'monthly');
+    	}
+    }
+    return $sitemap->render('xml');
+});

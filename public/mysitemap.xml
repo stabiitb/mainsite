@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://localhost:8088</loc>
+		<priority>1.0</priority>
+		<lastmod>2012-08-25T18:10:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+  </url>
+</urlset>
