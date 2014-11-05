@@ -105,10 +105,12 @@ class AppsController extends Controller {
 
 		});
 		$sheet->store('xls',public_path()."/media");
-//		print_r($sheet);
-		echo "List of All Smart Campus Users<br>";
+	
 		$url= URL::Asset("media/Smart_campus_Users.xls");
-		echo "<a href='".$url."'>Click here to download</a>";
+		View::share('url',$url);
+		$all = DB::table('smartcampus_users')->get();
+		View::share('teams',$all);
+		return View::make('events.smartcampus.all-team-list');
 	}
 	public function expo_view()
 	{
