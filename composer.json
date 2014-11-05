@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
+		"phpexcel/phpexcel": "dev-master",
 		"maatwebsite/excel": "~1.2.1"
 	},
 	"autoload": {
