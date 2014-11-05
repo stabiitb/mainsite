@@ -662,6 +662,7 @@ return array(
     'PHPExcel_Style_NumberFormat' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/Style/NumberFormat.php',
     'PHPExcel_Style_Protection' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/Style/Protection.php',
     'PHPExcel_Style_Supervisor' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/Style/Supervisor.php',
+    'PHPExcel_Token_Stack' => $vendorDir . '/phpexcel/phpexcel/Classes/PHPExcel/Calculation.php',
     'PHPExcel_Worksheet' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/Worksheet.php',
     'PHPExcel_WorksheetIterator' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/WorksheetIterator.php',
     'PHPExcel_Worksheet_AutoFilter' => $vendorDir . '/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/AutoFilter.php',
