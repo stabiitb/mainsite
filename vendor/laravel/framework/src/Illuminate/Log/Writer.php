@@ -112,8 +112,8 @@ class Writer {
 	/**
 	 * Register an error_log handler.
 	 *
-	 * @param  integer $messageType
 	 * @param  string  $level
+	 * @param  integer $messageType
 	 * @return void
 	 */
 	public function useErrorLog($level = 'debug', $messageType = ErrorLogHandler::OPERATING_SYSTEM)
@@ -248,7 +248,7 @@ class Writer {
 	/**
 	 * Dynamically pass log calls into the writer.
 	 *
-	 * @param  dynamic (level, param, param)
+	 * @param  mixed (level, param, param)
 	 * @return mixed
 	 */
 	public function write()

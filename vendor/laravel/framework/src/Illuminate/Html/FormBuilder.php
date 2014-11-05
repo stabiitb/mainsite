@@ -389,6 +389,18 @@ class FormBuilder {
 	}
 
 	/**
+	 * Create a number input field.
+	 *
+	 * @param  string  $name
+	 * @param  array   $options
+	 * @return string
+	 */
+	public function number($name, $value = null, $options = array())
+	{
+		return $this->input('number', $name, $value, $options);
+	}
+
+	/**
 	 * Create a select box field.
 	 *
 	 * @param  string  $name
@@ -960,7 +972,7 @@ class FormBuilder {
 	 * Set the session store implementation.
 	 *
 	 * @param  \Illuminate\Session\Store  $session
-	 * @return \Illuminate\Html\FormBuilder
+	 * @return $this
 	 */
 	public function setSessionStore(Session $session)
 	{
