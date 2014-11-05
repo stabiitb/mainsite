@@ -126,7 +126,7 @@
 
 								<div class="row"  id="team-detail" style="display:none">
 									<div class="col-md-3">
-										<label style="width:100%">Team Details</label>
+										<label style="width:100%">Team Details (No of Team Members and name)</label>
 									</div>
 									<div class="col-sm-6">
 										<input name="team-detail" class="form-control" type="text"  id="team-detail-box">
