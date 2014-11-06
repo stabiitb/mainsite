@@ -2,7 +2,9 @@
 
 @section('inner-content')
 
-<h3>Fill up the form to register:</h3>
+<?php  $closetime=strtotime("7 November 2014"); 
+		$curtime = time();
+?>
 @if (Session::get('messages') != null && Session::get('messages')->has('message'))
 					<div class="col-md-12">
 						<div class="alert alert-success alert-dismissible" role="alert">
@@ -11,6 +13,8 @@
 						</div>
 					</div>
 					@endif
+@if($closetime > $curtime)
+<h3>Fill up the form to register:</h3>
 					<p><i><a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to see all registrations</i></p>
 						<form id="contactform" class="forms" method="post">
 								
@@ -142,4 +146,12 @@
 								
 							</form>
 
+@else
+	<h3>Registrations have been closed for now</h3>
+	<h3>Selected Candidates will be informed by 9th November</h3>
+
+	<p>Note : For any queries <a href="{{URL::Route('smart-campus')}}/contact">Contact Us</a></p>
+	<p><i><a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to see all registrations</i></p>
+	<br>
+@endif
 @endsection

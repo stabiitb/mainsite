@@ -39,6 +39,15 @@ class AppsController extends Controller {
 	}
 
 	public function smart_campus_register(){
+		$closetime=strtotime("7 November 2014"); 
+		$curtime = time();
+		
+		if($closetime<$curtime){
+			$messageBag = new MessageBag;
+			$messageBag->add('message', 'Registration Closed');
+			return Redirect::back()->with('messages', $messageBag);
+		}
+		
 		$user=new SmartcampusUser;
 		$user->saveFromInput(Input::all());
 		$user->save();
