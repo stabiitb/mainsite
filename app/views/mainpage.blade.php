@@ -9,10 +9,13 @@
 		<main>
 			
 			<section id="buy-template" class="tint-bg">
-				<div class="container inner-sm">
+				<div class="container inner-xs">
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
-							<h3 class="single-block">Smart Campus Challenge <a href="{{URL::route('smart-campus')}}" class="btn btn-large">View</a></h3>
+							<ul>
+							<li class="single-block">Smart Campus Challenge <a href="{{URL::route('smart-campus')}}" class="btn ">View</a></li>
+							<li class="single-block">Inter IIT Tech Meet <a href="{{URL::route('interiit.reg')}}" class="btn ">Register</a></li>
+							</ul>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->

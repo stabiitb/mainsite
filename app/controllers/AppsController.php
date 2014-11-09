@@ -121,6 +121,22 @@ class AppsController extends Controller {
 		View::share('teams',$all);
 		return View::make('events.smartcampus.all-team-list');
 	}
+
+	public function interiit($page="home"){
+
+		switch ($page) {
+		
+			case 'register':
+				return View::make('events.interiit.register');
+				break;
+		
+			default:
+				return View::make('events.interiit.register');
+				break;
+		}
+		
+	}
+
 	public function expo_view()
 	{
 		return View::make('expo.register');
