@@ -86,6 +86,9 @@ Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsCo
 Route::post('smart-campus/register',array('as'=>'smart_campus.register','uses'=>'AppsController@smart_campus_register'));
 Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>'AppsController@smart_campus_abstract'));
 
+// Inter IIT Tech Meet
+Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'AppsController@interiit'));
+
 
 // USERS
 Route::post('login',array('as'=>'login','uses'=>'UserController@ManagerAuth'));
