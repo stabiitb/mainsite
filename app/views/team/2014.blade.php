@@ -5,7 +5,7 @@
 				<div class="container inner-top inner-bottom-sm">
 					
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h1>Team STAB 2014</h1>
 							</header>
@@ -13,7 +13,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/rahul.jpg')}}" class="img-circle">
@@ -33,7 +33,7 @@
 					</div><!-- /.row -->
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h1>Club Managers</h1>
 							</header>
@@ -41,7 +41,7 @@
 					</div><!-- /.row -->
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Aermodelling Club</h3>
 							</header>
@@ -49,7 +49,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/kuldeep.jpg')}}" class="img-circle">
@@ -68,7 +68,7 @@
 					</div><!-- /.row -->
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Electronics Club:</h3>
 							</header>
@@ -76,7 +76,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/riddhish.jpg')}}" class="img-circle">
@@ -92,7 +92,7 @@
 								
 							</figure>
 						</div><!-- /.col -->
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/ankita.png')}}" class="img-circle">
@@ -109,7 +109,7 @@
 					</div><!-- /.row -->
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Krittika (Astronomy Club)</h3>
 							</header>
@@ -117,7 +117,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/sharad.png')}}" class="img-circle">
@@ -137,7 +137,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Maths &amp; Physics Club</h3>
 							</header>
@@ -145,7 +145,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/anchal.jpg')}}" class="img-circle">
@@ -165,7 +165,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Robotics Club</h3>
 							</header>
@@ -173,7 +173,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/chetan.jpg')}}" class="img-circle">
@@ -189,7 +189,7 @@
 								
 							</figure>
 						</div><!-- /.col -->
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/vini.jpg')}}" class="img-circle">
@@ -207,7 +207,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Web and Coding Club</h3>
 							</header>
@@ -215,7 +215,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/ranveer.png')}}" class="img-circle">
@@ -231,7 +231,7 @@
 								
 							</figure>
 						</div><!-- /.col -->
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/manish.png')}}" class="img-circle">
@@ -249,7 +249,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Technovation</h3>
 							</header>
@@ -257,7 +257,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-4 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-4 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/shyam.jpg')}}" class="img-circle">
@@ -273,7 +273,7 @@
 								
 							</figure>
 						</div><!-- /.col -->
-						<div class="col-sm-4 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-4 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/mannu.jpg')}}" class="img-circle">
@@ -287,7 +287,7 @@
 								</figcaption>	
 							</figure>
 						</div><!-- /.col -->
-						<div class="col-sm-4 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-4 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/dewa.jpg')}}" class="img-circle">
@@ -305,7 +305,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Web Manager</h3>
 							</header>
@@ -313,7 +313,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/prateek.jpg')}}" class="img-circle">
@@ -333,7 +333,7 @@
 
 					<hr>
 					<div class="row">
-						<div class="col-md-8 col-sm-10 center-block text-center animated fadeInUp" style="opacity: 0;">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
 								<h3>Creatives and Media Manager</h3>
 							</header>
@@ -341,7 +341,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/praveen.jpg')}}" class="img-circle">
@@ -358,7 +358,7 @@
 							</figure>
 						</div><!-- /.col -->
 
-						<div class="col-sm-6 inner-left inner-right animated fadeInUp" style="opacity: 0;">
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2014/chirag.jpg')}}" class="img-circle">

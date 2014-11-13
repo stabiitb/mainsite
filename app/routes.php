@@ -78,6 +78,8 @@ Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 	return View::make('events.tech_rnd');
 }));
 
+Route::get('tech-gc-points',array('as'=>'techgc','uses'=>'HomeController@techgc'));
+
 // Smart Campus
 Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
 Route::get('smart-campus/team/{id}',array('before'=>'login','as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_team'));
