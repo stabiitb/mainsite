@@ -120,4 +120,9 @@ class HomeController extends BaseController {
 	{
 		return View::make('vision');
 	}
+
+	public function techgc()
+	{
+		return View::make('home.techgc');
+	}
 }
