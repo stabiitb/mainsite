@@ -19,8 +19,7 @@
 					</div><!-- /.row -->
 				</div><!-- /.container -->
 			</section>
-			
-			
+						
 			<section id="services">
 				<div class="container inner">
 					<div class="row">

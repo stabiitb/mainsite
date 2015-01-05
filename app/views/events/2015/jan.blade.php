@@ -2,7 +2,6 @@
 
 @section('content')
 <main>
-			<!-- ============================================================= SECTION – STANDARD TABS SIDE ============================================================= -->
 			
 			<section id="standard-tabs-side" class="border-top">
 				<div class="container inner">
@@ -324,6 +323,5 @@
 				</div><!-- /.container -->
 			</section>
 			
-			<!-- ============================================================= SECTION – STANDARD TABS SIDE : END ============================================================= -->
 	</main>
 @endsection
