@@ -321,7 +321,6 @@
 					</div><!-- /.row -->
 					
 				</div><!-- /.container -->
-			</section>
-			
+			</section>			
 	</main>
 @endsection
