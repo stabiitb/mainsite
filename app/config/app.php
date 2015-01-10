@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => ((Request::server('SERVER_NAME')!='localhost')?true:false),
 
 	/*
 	|--------------------------------------------------------------------------
