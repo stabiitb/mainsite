@@ -319,7 +319,6 @@
 							</div><!-- /.tabs -->
 						</div><!-- /.col -->
 					</div><!-- /.row -->
-					
 				</div><!-- /.container -->
 			</section>			
 	</main>
