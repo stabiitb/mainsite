@@ -13,8 +13,7 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
-							<li class="single-block">Smart Campus Challenge <a href="{{URL::route('smart-campus')}}" class="btn ">View</a></li>
-							<li class="single-block">Inter IIT Tech Meet <a href="{{URL::route('interiit.reg')}}" class="btn ">Register</a></li>
+							<li class="single-block">STAB Events for January 2015 <a href="{{URL::route('events.jan.2015')}}" class="btn ">View</a></li>
 							</ul>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
