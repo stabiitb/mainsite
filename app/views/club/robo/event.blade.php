@@ -8,6 +8,40 @@
 </style>
 
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>The Maze Cracker</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-6">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/maze_cracker.jpg')}}" alt="">
+			</div>
+			<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+				<p>Robotics club is organizing a a challenge for sophomores. Make an autonomous maze solver which can solve hurdles via bluetooth module!! </p>
+				<ul class="item-details">
+					<li class="date">Sunday, January 25, 2015</li>
+				</ul>
+                
+
+			</div>
+		</div>
+	</figure>
+</section>
+
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>Session on Bluetooth Controlled Bot</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-12">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/bluetooth_session.png')}}" alt="">
+			</div>
+			<div class="col-md-12">
+				<p>Learn to control your bot via Bluetooth! 
+				<br>Specially for sophomores participating in Maze Cracker!</p>
+			</div>
+		</div>
+	</figure>
+</section>
+
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
 	<h2>Technight</h2>
 	<figure>
 		<div class="row">
