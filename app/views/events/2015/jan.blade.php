@@ -33,51 +33,127 @@
 									
 									<div class="tab-content" id="tab-1">
 										<div class="row">
-											
-											<div class="col-md-6">
-												<figure><img src="assets/images/art/product05.jpg" alt=""></figure>
+											<div class="col-md-12">
+												<div class="col-md-12">
+													<h3>Boomerang Workshop</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">15th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hovercraft GC</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">17th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Session on MultiCopter</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+												
 											</div><!-- /.col -->
-											
-											<div class="col-md-6 inner-top-xs inner-left-xs">
-												<h3>Strategy</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Lorem quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta retibusam emni volorimne consent dolor lomnus.</p>
-											</div><!-- /.col -->
-											
+
+											<div class="col-md-12 inner-top-sm">
+												<h4>
+													Contact for all events:
+												</h4>
+												<ul>
+													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+												</ul>
+												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+											</div>
+
 										</div><!-- /.row -->
 									</div><!-- /.tab-content -->
 									
 									<div class="tab-content" id="tab-2">
 										<div class="row">
-											
-											<div class="col-md-6 col-md-push-6 inner-left-xs">
-												<figure><img src="assets/images/art/product01.jpg" alt=""></figure>
+											<div class="col-md-12">
+												<div class="col-md-12">
+													<h3>Boomerang Workshop</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">15th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hovercraft GC</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">17th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Session on MultiCopter</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+												
 											</div><!-- /.col -->
-											
-											<div class="col-md-6 col-md-pull-6 inner-top-xs inner-right-xs">
-												<h3>User Experience</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque quiae sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus conecus iure posae volor.</p>
-											</div><!-- /.col -->
-											
+
+											<div class="col-md-12 inner-top-sm">
+												<h4>
+													Contact for all events:
+												</h4>
+												<ul>
+													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+												</ul>
+												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+											</div>
+
 										</div><!-- /.row -->
 									</div><!-- /.tab-content -->
 									
 									<div class="tab-content" id="tab-3">
 										<div class="row">
-											
-											<div class="col-lg-4 col-lg-push-4 col-md-6 inner-left-xs inner-right-xs">
-												<figure><img src="assets/images/art/product06.jpg" alt=""></figure>
+											<div class="col-md-12">
+												<div class="col-md-12">
+													<h3>Boomerang Workshop</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">15th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hovercraft GC</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">17th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Session on MultiCopter</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+												
 											</div><!-- /.col -->
-											
-											<div class="col-lg-4 col-lg-pull-4 col-md-6 inner-top-xs">
-												<h3>Design</h3>
-												<p>Magnis modipsae lib voloratati andigen daepedor quiate aut labor. Laceaque quiae sitiorem resti est lore tumquam core posae volor uso remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent it accullignis orum lomnus.</p>
-											</div><!-- /.col -->
-											
-											<div class="col-lg-4 col-md-6 inner-top-xs">
-												<h3>User interface</h3>
-												<p>Magnis modipsae lib voloratati andigen daepedor quiate aut labor. Laceaque quiae sitiorem resti est lore tumquam core posae volor uso remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent it accullignis orum lomnus.</p>
-											</div><!-- /.col -->
-											
+
+											<div class="col-md-12 inner-top-sm">
+												<h4>
+													Contact for all events:
+												</h4>
+												<ul>
+													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+												</ul>
+												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+											</div>
+
 										</div><!-- /.row -->
 									</div><!-- /.tab-content -->
 									
@@ -126,37 +202,87 @@
 									</div><!-- /.tab-content -->
 									
 									<div class="tab-content" id="tab-5">
-										
 										<div class="row">
-											<div class="col-md-8">
-												<figure><img src="assets/images/art/product03.jpg" alt=""></figure>
+											<div class="col-md-12">
+												<div class="col-md-12">
+													<h3>Boomerang Workshop</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">15th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hovercraft GC</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">17th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Session on MultiCopter</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+												
 											</div><!-- /.col -->
+
+											<div class="col-md-12 inner-top-sm">
+												<h4>
+													Contact for all events:
+												</h4>
+												<ul>
+													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+												</ul>
+												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+											</div>
+
 										</div><!-- /.row -->
-										
-										<div class="row">
-											<div class="col-md-8 inner-top-xs">
-												<h3>Social</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
-											</div><!-- /.col -->
-										</div><!-- /.row -->
-										
 									</div><!-- /.tab-content -->
-									
+
 									<div class="tab-content" id="tab-6">
-										
 										<div class="row">
-											<div class="col-md-8">
-												<h3>Marketing</h3>
-												<p>Magnis modipsae que lib voloratati andigen daepedor quiate ut reporemni aut labor. Laceaque sitiorem ut restibusaes es tumquam core posae volor remped modis volor. Doloreiur qui commolu ptatemp dolupta orem retibusam emnis et consent accullignis lomnus.</p>
+											<div class="col-md-12">
+												<div class="col-md-12">
+													<h3>Boomerang Workshop</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">15th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hovercraft GC</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">17th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Session on MultiCopter</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+												
 											</div><!-- /.col -->
+
+											<div class="col-md-12 inner-top-sm">
+												<h4>
+													Contact for all events:
+												</h4>
+												<ul>
+													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+												</ul>
+												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+											</div>
+
 										</div><!-- /.row -->
-										
-										<div class="row">
-											<div class="col-md-8 inner-top-xs">
-												<figure><img src="assets/images/art/humans01.jpg" alt=""></figure>
-											</div><!-- /.col -->
-										</div><!-- /.row -->
-										
 									</div><!-- /.tab-content -->
 									 
 								</div><!-- /.panel-container -->
