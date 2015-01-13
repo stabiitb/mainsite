@@ -25,7 +25,7 @@ Route::get('technovation',array('as'=>'technovation','uses'=>'HomeController@tec
 
 // Clubs Pages
 Route::get('aeromodelling-club/{page}','HomeController@aeromodelling_club');
-//Route::get('electronics-club/{page}','HomeController@electronics_club');
+Route::get('electronics-club/{page}','HomeController@electronics_club');
 Route::get('krittika/{page}','HomeController@krittika');
 Route::get('robotics-club/{page}','HomeController@robotics_club');
 Route::get('math-and-physics-club/{page}','HomeController@MnP');
