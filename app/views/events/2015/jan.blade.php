@@ -11,7 +11,7 @@
 						<div class="col-md-8 col-sm-9 center-block text-center">
 							<header>
 								<h1>January 2015 STAB Events</h1>
-								<p></p>
+								<p>STAB: Because melting ICs is one of the few joys of life</p>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- ./row -->
@@ -135,13 +135,7 @@
 									<div class="tab-content" id="tab-3">
 										<div class="row">
 											<div class="col-md-12">
-												<div class="col-md-12">
-													<h3>GMRT Trip</h3> 
-													<ul class="meta">
-														<li class="date"><a href="#">17th &amp; 18th January, 2015</a></li>
-													</ul>
-													<p class="text-small"></p>
-												</div>
+											
 
 												<div class="col-md-12 inner-top-sm">
 													<h3>Observation Session</h3> 
@@ -188,7 +182,7 @@
 												<div class="col-md-12 inner-top-sm">
 													<h3>Talk on Mathematics</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">29th January, 2015</a></li>
+														<li class="date"><a href="#">27th January, 2015</a></li>
 													</ul>
 													<p class="text-small">Will be delivered by Shanay Shah, 5th year Electrical Engineering student. The topic of the talk is "Why cant we express roots of a general 5th degree polynomials in terms of radicals". The talk won't involve complete proof but will go through important steps involved.</p>
 												</div>
@@ -300,7 +294,7 @@
 												<div class="col-md-12 inner-top-sm">
 													<h3>Principles of Design</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">20th January, 2015</a></li>
+														<li class="date"><a href="#">30th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
