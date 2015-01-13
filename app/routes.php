@@ -72,6 +72,9 @@ Route::get('calendar',array('as'=>'calender','uses'=>function ()
 	return View::make('calender');
 }));
 
+// Events
+Route::get('jan-events',array('as' => 'events.jan.2015' , 'uses' => 'EventController@jan_2015'));
+
 //TechEXPO
 Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
 {
