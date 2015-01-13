@@ -77,7 +77,15 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="col-md-12">
-													<h3>Boomerang Workshop</h3> 
+													<h3>Electrified Session 3</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">13th &amp; 14th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>BLAH</h3> 
 													<ul class="meta">
 														<li class="date"><a href="#">15th January, 2015</a></li>
 													</ul>
@@ -85,20 +93,28 @@
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Hovercraft GC</h3> 
+													<h3>AVR Session Series</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">17th January, 2015</a></li>
+														<li class="date"><a href="#">19th-23rd January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Session on MultiCopter</h3> 
+													<h3>CMOS Design Challenge</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">30th January, 2015</a></li>
+														<li class="date"><a href="#">16th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Techify Your Room</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">24th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>	
 												
 											</div><!-- /.col -->
 
@@ -107,9 +123,10 @@
 													Contact for all events:
 												</h4>
 												<ul>
-													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+													<li>Riddhish   (Manager): 9769472731 riddhishb@gmail.com </li>
+													<li>Ankita    (Manager): 9773619340 aesha.ajp@gmail.com </li>
 												</ul>
-												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+												<a href="{{URL::Route('electronics-club')}}/team">See Club's Contact Page</a>
 											</div>
 
 										</div><!-- /.row -->
@@ -119,25 +136,25 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="col-md-12">
-													<h3>Boomerang Workshop</h3> 
+													<h3>GMRT Trip</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">15th January, 2015</a></li>
+														<li class="date"><a href="#">17th &amp; 18th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Hovercraft GC</h3> 
+													<h3>Observation Session</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">17th January, 2015</a></li>
+														<li class="date"><a href="#">23rd January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Session on MultiCopter</h3> 
+													<h3>Documentory Screening</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">30th January, 2015</a></li>
+														<li class="date"><a href="#">28th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
@@ -149,9 +166,9 @@
 													Contact for all events:
 												</h4>
 												<ul>
-													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+													<li>Sharad   (Manager): 9619589656 sharad157@gmail.com</li>
 												</ul>
-												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+												<a href="{{URL::Route('krittika')}}/team">See Club's Contact Page</a>
 											</div>
 
 										</div><!-- /.row -->
@@ -205,15 +222,16 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="col-md-12">
-													<h3>Boomerang Workshop</h3> 
+													<h3>Session on Bluetooth module</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">15th January, 2015</a></li>
+														<li class="date"><a href="#">14th January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">Learn to control your bot via Bluetooth!
+													<br>Specially for sophomores participating in Maze Cracker!</p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Hovercraft GC</h3> 
+													<h3>Image Processing workshop</h3> 
 													<ul class="meta">
 														<li class="date"><a href="#">17th January, 2015</a></li>
 													</ul>
@@ -221,11 +239,11 @@
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Session on MultiCopter</h3> 
+													<h3>Maze cracker- sophie robotics challenge</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">30th January, 2015</a></li>
+														<li class="date"><a href="#">25th January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">Robotics club is organizing a a challenge for sophomores. Make an autonomous maze solver which can solve hurdles via bluetooth module!! </p>
 												</div>
 												
 											</div><!-- /.col -->
@@ -235,9 +253,10 @@
 													Contact for all events:
 												</h4>
 												<ul>
-													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+													<li>Chetan   (Manager): 9167469004 chetan.agrawal39@gmail.com</li>
+													<li>Vineetha   (Manager): 9819915441 vinni.iitb@gmail.com</li>
 												</ul>
-												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+												<a href="{{URL::Route('robotics-club')}}/team">See Club's Contact Page</a>
 											</div>
 
 										</div><!-- /.row -->
@@ -247,25 +266,41 @@
 										<div class="row">
 											<div class="col-md-12">
 												<div class="col-md-12">
-													<h3>Boomerang Workshop</h3> 
+													<h3>e-bakar Session</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">15th January, 2015</a></li>
+														<li class="date"><a href="#">14th &amp; 21st January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Hovercraft GC</h3> 
+													<h3>AOSP Hackathon</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">17th January, 2015</a></li>
+														<li class="date"><a href="#">17th-18th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
-													<h3>Session on MultiCopter</h3> 
+													<h3>Intro to python</h3> 
 													<ul class="meta">
-														<li class="date"><a href="#">30th January, 2015</a></li>
+														<li class="date"><a href="#">25th January, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Hackathon@E-Summit</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">30th January - 1st February, 2015</a></li>
+													</ul>
+													<p class="text-small"></p>
+												</div>
+
+												<div class="col-md-12 inner-top-sm">
+													<h3>Principles of Design</h3> 
+													<ul class="meta">
+														<li class="date"><a href="#">20th January, 2015</a></li>
 													</ul>
 													<p class="text-small"></p>
 												</div>
@@ -277,9 +312,10 @@
 													Contact for all events:
 												</h4>
 												<ul>
-													<li>Kuldeep  (Manager): 8879476431 kuldeepsingh050895@gmail.com</li>
+													<li>Ranveer Aggarwal   (Manager): 9867744457 ranveeraggarwal@gmail.com</li>
+													<li>Manish Goregaokar    (Manager): 9167337978 manishsmail@gmail.com</li>
 												</ul>
-												<a href="{{URL::Route('aeromodelling-club')}}/team">See Club's Contact Page</a>
+												<a href="{{URL::Route('wncc')}}/team">See Club's Contact Page</a>
 											</div>
 
 										</div><!-- /.row -->
