@@ -80,7 +80,7 @@
 													<ul class="meta">
 														<li class="date"><a href="#">13th &amp; 14th January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">Final Installment of the hands-on session series on Basic Electronics </p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
@@ -88,7 +88,7 @@
 													<ul class="meta">
 														<li class="date"><a href="#">15th January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">A new talk and discussion series called BLAH for seniors and enthusiastic freshmen. It is a platform for the students and by the students, wherein you can showcase your work to other interested people</p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
@@ -96,7 +96,7 @@
 													<ul class="meta">
 														<li class="date"><a href="#">19th-23rd January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">Get acquainted with Know-How about coding an Atmega microcontroller and get started an AVR-based Project in 'Techify Your Room'</p>
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
@@ -104,7 +104,9 @@
 													<ul class="meta">
 														<li class="date"><a href="#">16th January, 2015</a></li>
 													</ul>
-													<p class="text-small"></p>
+													<p class="text-small">Does a circuit designing problem give you an adrenaline rush? Then this is for you</p>
+													<p><a href="{{URL::asset('media/2014/CMOS_Design_Challenge.pdf')}}">Download the Problem Statement</a> </p>
+
 												</div>
 
 												<div class="col-md-12 inner-top-sm">
