@@ -2,6 +2,26 @@
 
 @section('inner-content')
 <!-- ============================================================= SECTION – BLOG ============================================================= -->
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>CMOS Design Challenge</h2>
+	<figure>
+		<div class="row">
+			{{--<div class="col-md-6">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/maze_cracker.jpg')}}" alt="">
+			</div>--}}
+			<div class="col-md-10 col-sm-10{{-- inner-top-xs --}} inner-left-xs">
+				<p>Does a circuit designing problem give you an adrenaline rush? Then this is for you !! </p>
+				<ul class="item-details">
+					<li class="date">Sunday, January 16, 2015</li>
+				</ul>
+
+				<p><a href="{{URL::asset('media/2014/CMOS_Design_Challenge.pdf')}}">Download the Problem Statement</a> </p>
+                
+
+			</div>
+		</div>
+	</figure>
+</section>
 <section  class="light-bg" style="padding:20px;margin-bottom:20px">
 	<h2>Line Follower</h2>
       <p>
