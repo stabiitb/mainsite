@@ -106,6 +106,7 @@
 													</ul>
 													<p class="text-small">Does a circuit designing problem give you an adrenaline rush? Then this is for you</p>
 													<p><a href="{{URL::asset('media/2014/CMOS_Design_Challenge.pdf')}}">Download the Problem Statement</a> </p>
+													<p><a href="{{URL::route('electronics-club.CMOS')}}">Submit your solution</a> </p>
 
 												</div>
 
