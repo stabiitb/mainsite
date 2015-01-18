@@ -19,13 +19,32 @@
 				<ul class="item-details">
 					<li class="date">Sunday, January 25, 2015</li>
 				</ul>
+				<p><a href="https://drive.google.com/file/d/0BzgIkwubB1cgLWdDa21Bc05HeUk/view">Link to Problem Statement</a></p>
+				<p><a href="https://docs.google.com/forms/d/1JyRKVKxUEZYEckeA-W0reRAQxRvK-9EpLrgBmFzAR7k/viewform?c=0&w=1">Click here to Register</a>
+				<br>
+				Deadline : Wednseday , 21st Jan
+				</p>
+
                 
 
 			</div>
 		</div>
 	</figure>
 </section>
-
+<section class="light-bg" style="padding:20px;margin-bottom:20px">
+	<h2>Session on Bluetooth Controlled Bot</h2>
+	<figure>
+		<div class="row">
+			<div class="col-md-12">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/bluetooth_session.png')}}" alt="">
+			</div>
+			<div class="col-md-12">
+				<p>Learn to control your bot via Bluetooth! 
+				<br>Specially for sophomores participating in Maze Cracker!</p>
+			</div>
+		</div>
+	</figure>
+</section>
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
 	<h2>Session on Bluetooth Controlled Bot</h2>
 	<figure>
