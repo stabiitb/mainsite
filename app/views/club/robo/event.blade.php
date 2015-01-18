@@ -32,15 +32,15 @@
 	</figure>
 </section>
 <section class="light-bg" style="padding:20px;margin-bottom:20px">
-	<h2>Session on Bluetooth Controlled Bot</h2>
+	<h2>Image Processing Workshop</h2>
 	<figure>
 		<div class="row">
 			<div class="col-md-12">
-	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/bluetooth_session.png')}}" alt="">
+	    		<img class="custom-img" src="{{URL::asset('assets/images/2014/robo/image-processing.png')}}" alt="">
 			</div>
 			<div class="col-md-12">
-				<p>Learn to control your bot via Bluetooth! 
-				<br>Specially for sophomores participating in Maze Cracker!</p>
+				<br>
+				<p><a href="{{URL::asset('media/2014/robo/ImageProcessing.pdf')}}">Click to download Slides</a></p>
 			</div>
 		</div>
 	</figure>
