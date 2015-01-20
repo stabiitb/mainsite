@@ -2,7 +2,7 @@
 
 @section('inner-content')
 
-<?php  $closetime=strtotime("20 January 2015"); 
+<?php  $closetime=strtotime("25 January 2015"); 
 		$curtime = time();
 ?>
 
@@ -100,11 +100,10 @@
 	</form>
 
 @else
-	<h3>Registrations have been closed for now</h3>
-	<h3>Selected Candidates will be informed by 9th November</h3>
+	<h3>Submissions have been closed for now</h3>
+	<h3>Selected Candidates will be informed soon</h3>
 
-	<p>Note : For any queries <a href="{{URL::Route('smart-campus')}}/contact">Contact Us</a></p>
-	<p><i><a href="{{URL::Route('smart-campus')}}/all-team">Click here</a> to see all registrations</i></p>
+	<p><i><a href="{{URL::Route('electronics-club.CMOS.all')}}">Click here</a> to see all solutions</i></p>
 	<br>
 @endif
 
