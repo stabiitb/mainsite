@@ -56,6 +56,7 @@ class AppsController extends Controller {
 		$messageBag->add('message', 'Successfully Registered <br> your team id is : '.$user->id);
 		return Redirect::back()->with('messages', $messageBag);
 	}
+	
 	public function smart_campus_abstract(){
 		$id=Input::get('id');
 		$team=DB::table('smartcampus_users')->where('id','=',$id)->first();
