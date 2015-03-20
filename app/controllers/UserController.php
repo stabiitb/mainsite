@@ -7,14 +7,10 @@ class UserController extends Controller {
 	{
 		$password=Input::get("password");
 		
-<<<<<<< HEAD
-		
-		if($password=="Manager@SSTep")
-=======
+
 		$sstep_pass = DB::table('env')->where('id' , '=', 'sstep_pass')->first();
 		
 		if($password==$sstep_pass->val)
->>>>>>> 41246fb85f7912c92291d68f37c056b93847db85
 		{
 			Session::put('admin', '1');
 		}
