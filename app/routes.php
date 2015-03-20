@@ -12,7 +12,7 @@ Route::filter('login',function(){
 Route::get('/','HomeController@home');
 
 //ITSP - 2015 URL
-Route::get('ITSP/form',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
+Route::get('itsp/register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
 
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
