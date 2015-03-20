@@ -13,7 +13,7 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
-							<li class="single-block">STAB Events for January 2015 <a href="{{URL::route('events.jan.2015')}}" class="btn ">View</a></li>
+							<li class="single-block">ITSP 2015 &nbsp <a href="{{URL::route('events.ITSP.form')}}" class="btn ">Register</a></li>
 							</ul>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
