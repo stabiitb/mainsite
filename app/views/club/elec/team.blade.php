@@ -1,4 +1,4 @@
-@extends('club.robo.layout')
+@extends('club.elec.layout')
 
 @section('inner-content')
 <h1>Our Team</h1>
@@ -9,7 +9,7 @@
 							<h3 class="team-headline sidelines text-center"><span>Managers</span></h3>
 							
 							<div class="row thumbs gap-md text-center">
-								
+
 								<div class="col-sm-6 thumb">
 									<figure class="member">
 										
