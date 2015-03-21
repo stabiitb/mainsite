@@ -12,7 +12,7 @@ Route::filter('login',function(){
 Route::get('/','HomeController@home');
 
 //ITSP - 2015 URL
-Route::group(array('prefix'=>'itsp'),function()
+Route::group(array('prefix'=>'itsp' , 'subdomain' => 'itsp.stab-iitb.org'),function()
 {
     Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
     Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
