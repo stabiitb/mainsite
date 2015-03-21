@@ -19,9 +19,8 @@ $itspRoutes = function()
 //ITSP - 2015 URL
 Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
 
-Route::group(array('domain' => 'www.stab-iitb.org'),function() use($itspRoutes){
+Route::group(array('domain' => 'www.stab-iitb.org'),function(){
     
-    Route::group(array('prefix' => 'itsp'),$itspRoutes);
     
     Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
     // Clubs URLs
