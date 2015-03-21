@@ -8,16 +8,16 @@ Route::filter('login',function(){
 	}
 });
 
-
-
-//ITSP - 2015 URL
-Route::group(array('domain' => 'itsp.stab-iitb.org'),function()
+function itspRoutes()
 {
     Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
     Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
     Route::get('frequently-asked-questions',array('as'=>'events.ITSP.faq','uses'=>'ITSPController@faq'));
     Route::get('timeline',array('as'=>'events.ITSP.timeline','uses'=>'ITSPController@timeline'));
-});
+}
+
+//ITSP - 2015 URL
+Route::group(array('domain' => 'itsp.stab-iitb.org'),itspRoutes);
 
 Route::group(array('domain' => 'www.stab-iitb.org'),function(){
     Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
