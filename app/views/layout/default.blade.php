@@ -77,7 +77,7 @@
 							
 							<!-- ============================================================= LOGO ============================================================= -->
 							
-							<a class="navbar-brand" href="{{URL::to('/')}}"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
+							<a class="navbar-brand" href="{{URL::Route('stab.home')}}"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
 							
 							<!-- ============================================================= LOGO : END ============================================================= -->
 							
@@ -235,7 +235,7 @@
 					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a>
 					</p>
 					<ul class="footer-menu pull-right">
-						<li><a href="{{URL::to('/')}}">Home</a></li>
+						<li><a href="{{URL::Route('stab.home')}}">Home</a></li>
 						<li><a href="{{URL::Route('team_2014')}}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->

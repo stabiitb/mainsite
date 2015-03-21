@@ -20,7 +20,7 @@ Route::group(array('domain' => 'itsp.stab-iitb.org'),function()
 });
 
 Route::group(array('domain' => 'www.stab-iitb.org'),function(){
-    Route::get('/','HomeController@home');
+    Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
     // Clubs URLs
     Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
     Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
