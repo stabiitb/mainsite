@@ -17,9 +17,10 @@ $itspRoutes = function()
 };
 
 //ITSP - 2015 URL
-Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
+//Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
+Route::group(array('prefix' => 'itsp'),$itspRoutes);
 
-Route::group(array('domain' => 'www.stab-iitb.org'),function(){
+//Route::group(array('domain' => 'www.stab-iitb.org'),function(){
     
     
     Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
@@ -142,4 +143,4 @@ Route::group(array('domain' => 'www.stab-iitb.org'),function(){
         }
         return $sitemap->render('xml');
     });
-});
+//});
