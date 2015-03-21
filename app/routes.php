@@ -21,6 +21,7 @@ Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
 
 Route::group(array('domain' => 'www.stab-iitb.org'),function(){
     
+    global $itspRoutes;
     Route::group(array('prefix' => 'itsp'),$itspRoutes);
     
     Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
