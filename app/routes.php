@@ -14,7 +14,7 @@ $itspRoutes = function()
     Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
     Route::get('frequently-asked-questions',array('as'=>'events.ITSP.faq','uses'=>'ITSPController@faq'));
     Route::get('timeline',array('as'=>'events.ITSP.timeline','uses'=>'ITSPController@timeline'));
-}
+};
 
 //ITSP - 2015 URL
 Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
