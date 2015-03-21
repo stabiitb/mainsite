@@ -8,7 +8,7 @@ Route::filter('login',function(){
 	}
 });
 
-function itspRoutes()
+$itspRoutes = function()
 {
     Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
     Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
@@ -17,7 +17,7 @@ function itspRoutes()
 }
 
 //ITSP - 2015 URL
-Route::group(array('domain' => 'itsp.stab-iitb.org'),'itspRoutes');
+Route::group(array('domain' => 'itsp.stab-iitb.org'),$itspRoutes);
 
 Route::group(array('domain' => 'www.stab-iitb.org'),function(){
     Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
