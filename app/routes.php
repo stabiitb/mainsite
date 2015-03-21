@@ -9,7 +9,6 @@ Route::filter('login',function(){
 });
 
 
-Route::get('/','HomeController@home');
 
 //ITSP - 2015 URL
 Route::group(array('domain' => 'itsp.stab-iitb.org'),function()
@@ -21,6 +20,7 @@ Route::group(array('domain' => 'itsp.stab-iitb.org'),function()
 });
 
 Route::group(array('domain' => 'www.stab-iitb.org'),function(){
+    Route::get('/','HomeController@home');
     // Clubs URLs
     Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
     Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
