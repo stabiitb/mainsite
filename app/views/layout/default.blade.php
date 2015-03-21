@@ -172,7 +172,6 @@
 									
 									<ul class="dropdown-menu">
 										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
-										<li><a href="http://stab-iitb.org/forum">Tech Forum</a></li>
 										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 									</ul><!-- /.dropdown-menu -->
