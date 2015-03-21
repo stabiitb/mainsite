@@ -12,7 +12,13 @@ Route::filter('login',function(){
 Route::get('/','HomeController@home');
 
 //ITSP - 2015 URL
-Route::get('itsp/register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
+Route::group(array('prefix'=>'itsp'),function()
+{
+    Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
+    Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
+    Route::get('frequently-asked-questions',array('as'=>'events.ITSP.faq','uses'=>'ITSPController@faq'));
+    Route::get('timeline',array('as'=>'events.ITSP.timeline','uses'=>'ITSPController@timeline'));
+});
 
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));

@@ -1,5 +1,5 @@
-@extends('layout.default')
-@section('content')
+@extends('events.ITSP_2015.layout')
+@section('inner-content')
 <style type="text/css">
 	iframe{
 		min-height: 600px;

@@ -8,17 +8,31 @@ class ITSPController extends \BaseController {
 	 * @return Response
 	 */
 
+	public function urls()
+	{
+	    Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
+	}
 	public function form()
 	{
-		return View::make('events.ITSP.form');
+		return View::make('events.ITSP_2015.form');
 	}
 
 
 	public function index()
 	{
-		//
+		return View::make('events.ITSP_2015.index');
 	}
 
+	public function faq()
+	{
+		return View::make('events.ITSP_2015.faq');
+	}
+
+
+	public function timeline()
+	{
+		return View::make('events.ITSP_2015.timeline');
+	}
 
 	/**
 	 * Show the form for creating a new resource.
