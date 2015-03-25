@@ -12,10 +12,11 @@ Route::filter('login',function(){
 //ITSP - 2015 URL
 Route::group(array('prefix' => 'itsp'),function()
 {
-    Route::get('register',array('as'=>'events.ITSP.form','uses'=>'ITSPController@form'));
-    Route::get('/',array('as'=>'events.ITSP.index','uses'=>'ITSPController@index'));
-    Route::get('frequently-asked-questions',array('as'=>'events.ITSP.faq','uses'=>'ITSPController@faq'));
-    Route::get('timeline',array('as'=>'events.ITSP.timeline','uses'=>'ITSPController@timeline'));
+    Route::get('register',array('as'=>'events.ITSP_2015.form','uses'=>'ITSPController@form'));
+    Route::get('/',array('as'=>'events.ITSP_2015.index','uses'=>'ITSPController@index'));
+    Route::get('frequently-asked-questions',array('as'=>'events.ITSP_2015.faq','uses'=>'ITSPController@faq'));
+    Route::get('timeline',array('as'=>'events.ITSP_2015.timeline','uses'=>'ITSPController@timeline'));
+    Route::get('about',array('as'=>'events.ITSP_2015.about','uses'=>'ITSPController@about'));
 });
 
 

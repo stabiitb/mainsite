@@ -1,4 +1,4 @@
-@extends('layout.default')
+	@extends('layout.default')
 
 @section('clubcontent')
 

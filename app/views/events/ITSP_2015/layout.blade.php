@@ -15,12 +15,12 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="{{URL::Route('events.ITSP.index')}}">Home</a></li>
-							<li><a href="{{URL::Route('events.ITSP.timeline')}}">Timeline</a></li>
-							<li><a href="{{URL::Route('events.ITSP.faq')}}">FAQ</a></li>
-							<li><a href="{{URL::Route('events.ITSP.index')}}">Archive</a></li>
-							<li><a href="{{URL::Route('events.ITSP.index')}}">About</a></li>
-							<li><a href="{{URL::Route('events.ITSP.form')}}">Register</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.index')}}">Home</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.timeline')}}">Timeline</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.faq')}}">FAQ</a></li>
+							<!-- <li><a href="{{URL::Route('events.ITSP_2015.index')}}">Archive</a></li> -->
+							<li><a href="{{URL::Route('events.ITSP_2015.about')}}">About</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.form')}}">Register</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

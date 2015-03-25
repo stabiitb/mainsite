@@ -13,7 +13,7 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
-							<li class="single-block">ITSP 2015 &nbsp <a href="{{URL::route('events.ITSP.form')}}" class="btn ">Register</a></li>
+							<li class="single-block">ITSP 2015 &nbsp <a href="{{URL::route('events.ITSP_2015.form')}}" class="btn ">Register</a></li>
 							<li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>
 													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
