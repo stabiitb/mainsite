@@ -144,15 +144,15 @@
 									<a href="http://www.stab-iitb.org/technovation">Technovation</a>
 								</li><!-- /.dropdown -->
 								
-								<li class="dropdown">
+								 <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
 									
 									<ul class="dropdown-menu">
 										
 										<li><a href="http://stab-iitb.org/tinkerers-lab/">Visit Site</a></li>
 										
-									</ul><!-- /.dropdown-menu -->
-								</li><!-- /.dropdown -->
+									</ul> <!-- /.dropdown-menu -->
+								 </li> <!-- /.dropdown -->
 								
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Technical Teams</a>
@@ -171,9 +171,11 @@
 									<a href="#" class="dropdown-toggle js-activated">Resources</a>
 									
 									<ul class="dropdown-menu">
+										<!-- <li><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerers’ Lab</a></li>									 -->
 										<li><a href="http://stab-iitb.org/wiki">STAB WIKI</a></li>
-										<li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li>
+										<!-- <li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li> -->
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
+										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
@@ -182,9 +184,8 @@
 
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
-										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
 										<li><a href="{{URL::Route('calender')}}">Tech Calendar</a></li>
-										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
+										<!-- <li><a href="http://techid.stab-iitb.org">Tech ID</a></li> -->
 									</ul>
 								</li><!-- /.dropdown -->
 
