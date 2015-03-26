@@ -19,9 +19,9 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('about',array('as'=>'events.ITSP_2015.about','uses'=>'ITSPController@about'));
 });
 
-Route::group(array('prefix'=>'posts_2015'),function()
+Route::group(array('prefix'=>'PoR'),function()
 {
-    Route::get('form',array('as'=>'events.posts_2015.form','uses'=>'POSTController@form'));
+    Route::get('register',array('as'=>'events.posts_2015.form','uses'=>'POSTController@form'));
 });
     
 
