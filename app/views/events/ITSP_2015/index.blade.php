@@ -9,4 +9,14 @@
 								 4) Abstract submission deadline will soon be announced.<br>
 								 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li>
 	</ul>
+	<br>
+	
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<iframe  width="500" height="270" src="https://www.youtube.com/embed/YcB_bDiuAwo" frameborder="0" allowfullscreen></iframe>
+			<h3 class="text-center"><u>ITSP Trailer</u></h3>		
+		</div>
+		<div class="col-md-2"></div>
+	</div>
 @endsection

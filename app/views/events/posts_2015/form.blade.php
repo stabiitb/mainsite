@@ -1,4 +1,4 @@
-@extends('events.ITSP_2015.layout')
+@extends('events.posts_2015.layout')
 @section('inner-content')
 <style type="text/css">
 	iframe{

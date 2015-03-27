@@ -19,6 +19,7 @@
 													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
 													 4) Abstract submission deadline will soon be announced.<br>
 													 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li> -->
+							<li class="single-block">Convener and Hostel Technical Secretary Application Form &nbsp<a href="{{URL::route('events.posts_2015.form')}}" class="btn">Apply</a></li>
 							</ul>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
