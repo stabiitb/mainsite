@@ -25,6 +25,7 @@ Route::group(array('prefix' => 'itsp'),function()
 
 Route::group(array('prefix'=>'PoR'),function()
 {
+    Route::get('/',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
     Route::get('register',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
 });
     
