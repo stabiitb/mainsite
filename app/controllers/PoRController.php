@@ -1,6 +1,6 @@
 <?php
 
-class POSTController extends \BaseController {
+class PoRController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -15,7 +15,7 @@ class POSTController extends \BaseController {
 
 	public function form()
 	{
-		return View::make('events.posts_2015.form');
+		return View::make('events.PoR.form');
 	}
 	
 
