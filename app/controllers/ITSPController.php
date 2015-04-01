@@ -66,27 +66,38 @@ class ITSPController extends \BaseController {
 
 	public function auth()
 	{	
-		$id=Input::get("id");
-		$team=Input::get("team");
-		$club=Input::get("club");
+		$id=Input::get("ldapId");
+		$passwd=Input::get("passwd");
 		$roll=Input::get("roll");
-		$pdf=Input::file("pdf");
-		if(false)// && $id!="" && $team!="" && $club!="" && $roll!="" )
+		$team=Input::get("team");
+		$gmail=Input::get("gmailId");
+		$club=Input::get("club");
+		$abstract=Input::file("abstract");
+		//echo Input::hasFile("abstract");
+		//echo $gmail."\n";
+		//echo $id." ".$passwd." ".$roll." ".$gmail." ".$club." ".$team;
+		//echo ldap_auth($id,$passwd)."\n";
+		if(Input::hasFile("abstract") && $id!="" && $passwd!="" && $team!="" && $gmail!="" && $club!="" && $roll!="" )
 		{	
-			$pdf=Input::file('pdf');
-			$extension = Input::file('pdf')->getClientOriginalExtension();
+			$extension = $abstract->getClientOriginalExtension();
 			if($extension=="pdf"){
-				$fileName=$club."_".$team."_".$roll."_".pdf;
-				$destinationPath=public_path()."media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/";
-				Input::file('pdf')->move($destinationPath, $fileName);
+				$fileName=$team."_".$roll.$id."_.pdf";
+				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+				if(!file_exists($dest)){
+					mkdir($dest);
+				}
+				$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club."/";
+				$abstract->move($destinationPath, $fileName);
+				return "Abstract Submitted successfully. To resubmit Abstract use the same team name and roll Number.";
 			}
-			return "sid";
+			return "Submission failed. Submit abstract in pdf format.";
 		}
-		$fileName=$club."_".$team."_".$roll.".pdf";
-		$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/";
-		echo $destinationPath;		
-		$pdf->move($destinationPath, $fileName);
-		return $pdf;
+		return "Error in details. Resubmit the form.";
+		//$fileName=$club."_".$team."_".$roll.".pdf";
+		//$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/";
+		//echo $destinationPath;		
+		//$abstract->move($destinationPath, $fileName);
+		//return $abstract;
 
 
 	}

@@ -1,12 +1,4 @@
 @extends('events.ITSP_2015.layout')
 @section('inner-content')
-<style type="text/css">
-	iframe{
-		min-height: 600px;
-	}
-</style>
-<main>
-<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://stab.typeform.com/to/OesrUy"></iframe>
-<script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
-</main>
+<h3> Abstract Submission link will be opened soon.</h3>
 @endsection
