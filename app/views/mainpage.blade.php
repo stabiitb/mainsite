@@ -26,7 +26,18 @@
 					</div><!-- /.row -->
 				</div><!-- /.container -->
 			</section>
-						
+			@if($errors->has('email.absent'))
+									
+			<section id="error" class="light-bg">
+				<div class="container inner-xs">
+					<div class="row">
+						<div class="col-sm-10 center-block text-center">
+							{{$errors->first('email.absent')}}
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			@endif	
 			<section id="services">
 				<div class="container inner">
 					<div class="row">

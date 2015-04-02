@@ -53,6 +53,15 @@
 							<li><a href="mailto://oc.stab@iitb.ac.in"><i class="icon-mail-1 contact"></i>oc.stab@iitb.ac.in</a></li>
 						</ul><!-- /.info -->
 						
+						<ul class="pull-right" style="margin:3px">
+							@if(Auth::check())
+							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
+							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
+							</li>	
+							@else
+							<li><a href="{{UserController::LoginURL()}}" class="btn btn-small btn-green" >Login</a></li> 
+							@endif
+						</ul>
 						<ul class="social pull-right">
 							<li><a href="https://www.facebook.com/stab.iitb"><i class="icon-s-facebook"></i></a></li>
 							<li><a href="https://github.com/stabiitb"><i class="icon-s-github"></i></a></li>
@@ -137,13 +146,11 @@
 										<li><a href="{{URL::Route('MnP')}}">Math and Physics Club</a></li>
 										<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
 										<li><a href="{{URL::Route('wncc')}}">Web and Coding club</a></li>
+										<li><a href="http://www.stab-iitb.org/technovation">Technovation</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
-								<li >
-									<a href="http://www.stab-iitb.org/technovation">Technovation</a>
-								</li><!-- /.dropdown -->
-								
+
 								 <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
 									
@@ -185,15 +192,12 @@
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calender')}}">Tech Calendar</a></li>
-										@if(Auth::check())
-									 	 <li><a href="{{URL::to('logout')}}">Logout</a></li> 
-										@else
-										<li><a href="{{UserController::LoginURL()}}">Login</a></li> 
-										@endif
 										<!-- <li><a href="">STAB in media</a></li> -->
 										<!-- <li><a href="http://techid.stab-iitb.org">Tech ID</a></li> -->
 									</ul>
-								</li><!-- /.dropdown -->
+								</li>
+								
+								<!-- /.dropdown -->
 
 								
 							</ul><!-- /.nav -->

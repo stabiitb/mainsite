@@ -1,7 +1,8 @@
 @extends('events.ITSP_2015.layout')
 
 @section('inner-content')
-
+    @if(Auth::check())
+        @if(Auth::User()->ldap_verified==1)
 	<h4> Write all the details of team members and contact details in abstract.</h4>
 	<h4> No other format is allowed except pdf.</h4>
 	<h4> All fields of member 1 and starting 4 fields are compulsory.</h4>
@@ -30,13 +31,18 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="name" type="text" class="form-control" name="team_name" value="" placeholder="Team Name">                                        
+                                        <input type="text" class="form-control" name="id" value="{{Input::old('id')}}" placeholder="Team Id. (Leave blank if you dont have any team Id.)">                                        
+                             </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="name" type="text" class="form-control" name="team_name" value="{{Input::old('team_name')}}" placeholder="Team Name">                                        
                              </div>
 
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="roll" type="text" class="form-control" name="project_name" value="" placeholder="Project Name">                                        
+                                        <input id="roll" type="text" class="form-control" name="project_name" value="{{Input::old('project_name')}}" placeholder="Project Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
@@ -64,7 +70,10 @@
                                 </tr>
                                 <tr>
                                         <td><input type="radio" name="club" value="Aeromodelling Club"></td><td>Aeromodelling Club</td>
-                                </tr>                               
+                                </tr> 
+                                <tr>
+                                        <td><input type="radio" name="club" value="Tech GSR"></td><td>Tech GSR</td>
+                                </tr>                                                     
                             </table>   
 
                             <div style="margin-bottom: 25px" class="input-group">
@@ -73,112 +82,132 @@
                             </div>
                             <table class="table">
                                 <div>
-                                        <td><input type="radio" name="slot" value="May"></td><td>May</td>
+                                        <td><input type="radio" name="slot" value="1"></td><td>May</td>
                                 </tr>
                                 <tr>
-                                        <td><input type="radio" name="slot" value="June"></td><td>June</td>
+                                        <td><input type="radio" name="slot" value="2   "></td><td>June</td>
                                 </tr>
                                 </div>
                             </table>
 
               				 <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t1_name" value="" placeholder="Member 1 Name">                                        
+                                        <input type="text" class="form-control" name="t1_name" value="{{Input::old('t1_name')}}" placeholder="Member 1 Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t1_roll" value="" placeholder="Member 1 Roll Number">                                        
+                                        <input type="text" class="form-control" name="t1_roll" value="{{Input::old('t1_roll')}}" placeholder="Member 1 Roll Number">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t1_email" value="" placeholder="Member 1 Email">                                        
+                                        <input type="text" class="form-control" name="t1_email" value="{{Input::old('t1_email')}}" placeholder="Member 1 Email">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t1_contact" value="" placeholder="Member 1 Contact">                                        
+                                        <input type="text" class="form-control" name="t1_contact" value="{{Input::old('t1_contact')}}" placeholder="Member 1 Contact">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t1_hostel" value="" placeholder="Member 1 Hostel">                                        
+                                        <input type="text" class="form-control" name="t1_dept" value="{{Input::old('t1_dept')}}" placeholder="Member 1 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_name" value="" placeholder="Member 2 Name">                                        
+                                        <input type="text" class="form-control" name="t1_hostel" value="{{Input::old('t1_hostel')}}" placeholder="Member 1 Hostel">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_roll" value="" placeholder="Member 2 Roll Number">                                        
+                                        <input type="text" class="form-control" name="t2_name" value="{{Input::old('t2_name')}}" placeholder="Member 2 Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_email" value="" placeholder="Member 2 Email">                                        
+                                        <input type="text" class="form-control" name="t2_roll" value="{{Input::old('t2_roll')}}" placeholder="Member 2 Roll Number">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_contact" value="" placeholder="Member 2 Contact">                                        
+                                        <input type="text" class="form-control" name="t2_email" value="{{Input::old('t2_email')}}" placeholder="Member 2 Email">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_hostel" value="" placeholder="Member 2 Hostel">                                        
+                                        <input type="text" class="form-control" name="t2_dept" value="{{Input::old('t2_dept')}}" placeholder="Member 2 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_name" value="" placeholder="Member 3 Name">                                        
+                                        <input type="text" class="form-control" name="t2_contact" value="{{Input::old('t2_contact')}}" placeholder="Member 2 Contact">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_roll" value="" placeholder="Member 3 Roll Number">                                        
+                                        <input type="text" class="form-control" name="t2_hostel" value="{{Input::old('t2_hostel')}}" placeholder="Member 2 Hostel">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_email" value="" placeholder="Member 3 Email">                                        
+                                        <input type="text" class="form-control" name="t3_name" value="{{Input::old('t3_name')}}" placeholder="Member 3 Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_contact" value="" placeholder="Member 3 Contact">                                        
+                                        <input type="text" class="form-control" name="t3_roll" value="{{Input::old('t3_roll')}}" placeholder="Member 3 Roll Number">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_hostel" value="" placeholder="Member 3 Hostel">                                        
+                                        <input type="text" class="form-control" name="t3_email" value="{{Input::old('t3_email')}}" placeholder="Member 3 Email">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_name" value="" placeholder="Member 4 Name">                                        
+                                        <input type="text" class="form-control" name="t3_dept" value="{{Input::old('t3_dept')}}" placeholder="Member 3 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_roll" value="" placeholder="Member 4 Roll Number">                                        
+                                        <input type="text" class="form-control" name="t3_contact" value="{{Input::old('t3_contact')}}" placeholder="Member 3 Contact">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_email" value="" placeholder="Member 4 Email">                                        
+                                        <input type="text" class="form-control" name="t3_hostel" value="{{Input::old('t3_hostel')}}" placeholder="Member 3 Hostel">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_contact" value="" placeholder="Member 4 Contact">                                        
+                                        <input type="text" class="form-control" name="t4_name" value="{{Input::old('t4_name')}}" placeholder="Member 4 Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_hostel" value="" placeholder="Member 4 Hostel">                                        
+                                        <input type="text" class="form-control" name="t4_roll" value="{{Input::old('t4_roll')}}" placeholder="Member 4 Roll Number">                                        
+                             </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" class="form-control" name="t4_email" value="{{Input::old('t4_email')}}" placeholder="Member 4 Email">                                        
+                             </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" class="form-control" name="t4_contact" value="{{Input::old('t4_contact')}}" placeholder="Member 4 Contact">                                        
+                             </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" class="form-control" name="t4_hostel" value="{{Input::old('t4_hostel')}}" placeholder="Member 4 Hostel">                                        
+                             </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" class="form-control" name="t4_dept" value="{{Input::old('t4_dept')}}" placeholder="Member 4 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
@@ -205,5 +234,13 @@
                     </div>  
         </div> 
     </div>
+    @else
+        Please activate your account. Click here to enter your GPO account details.
+    @endif
+
+    @else
+        Please Login with Facebook account to continue.
+    @endif  
+
   	
 @endsection

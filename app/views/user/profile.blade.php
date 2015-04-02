@@ -18,7 +18,7 @@
 					<div class="row">
 						<div class="col-md-12"> 
 						@if($user->ldap_verified == 0)
-						Verify now
+						Verify now . 
 							<form action="{{URL::Route('user.verify')}}" method="post">
 							<input name="gpo_id" type="text" placeholder="gpo Id">
 							<input type="submit" value="verify">

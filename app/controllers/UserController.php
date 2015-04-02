@@ -42,8 +42,8 @@ class UserController extends \BaseController {
      	
      	if(!isset($newUser->email)){
      		$messageBag = new MessageBag;
-			$messageBag->add('email.absent', 'We are unable to fetch your email id. Go to <a href="https://www.facebook.com/settings?tab=applications"> Fb Setting </a> , search for app "Infermap" , remove the app and try login again ');
-     		return Redirect::back()->withInput()
+			$messageBag->add('email.absent', 'We are unable to fetch your email id. Go to <a href="https://www.facebook.com/settings?tab=applications"> Fb Setting </a> , search for app "STAB-IITB" , and allow the app to fetch email. ');
+     		return Redirect::to('/')
 				->withErrors($messageBag);
      	}
 
@@ -113,6 +113,7 @@ class UserController extends \BaseController {
 
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
+		$gpo_id = substr($gpo_id, 0, strpos($gpo_id, "@"));
 		$user=Auth::User();
 		var_dump($user);
 		$key = 'Prateek';
@@ -129,7 +130,7 @@ class UserController extends \BaseController {
 
 		 Mail::send('email.verifygpo', ['key' => URL::Route('user.profile').'?key='.$encrypted,'name'=>$user->Name], function($message) use($user)
 		 {
-     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
+     		$message->to($user->ldap_email.'@iitb.ac.in', $user->Name)->subject('Verify Stab Id');
 		 });
 	}
 }
