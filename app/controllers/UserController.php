@@ -96,13 +96,40 @@ class UserController extends \BaseController {
 		return View::make('user.profile');
 	}
 
+
+	public function verifying(){
+		$key='Prateek';
+		$encrypted=Input::get('encrypted');
+		$decrypted=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+		
+		$user=User::find($decrypted);
+		if(is_null($user)){
+			return "Wrong Key.";
+		}
+		else{
+			User::where('id','=',$decrypted)->update(
+				array('ldap_verified'=>1));
+			return "Account Successfully verified";
+		}
+
+
+	}
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
+		$user=Auth::User();
+		$key = 'Prateek';
+		$string =$user->id;
+
+		$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
+		$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+
+		//var_dump($encrypted);
+		//var_dump($decrypted);
 		echo $gpo_id;
 
-		Mail::send('email.test', ['key' => 'machau prateek :D'], function($message)
+		Mail::send('email.verify', ['key' => 'machau prateek :D','name'=>$user->Name], function($message)
 		{
-    		$message->to('siddharth.bulia@gmail.com', 'Siddharth bulia')->subject('Welcome!');
+    		$message->to('$gpo_id', $user->Name)->subject('Verify Stab Id');
 		});
 	}
 }
