@@ -4,6 +4,7 @@
 
 	<h4> Write all the details of team members and contact details in abstract.</h4>
 	<h4> No other format is allowed except pdf.</h4>
+	<h4> All fields are compulsory.</h4>
 
     <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-7  col-sm-8 ">                    
