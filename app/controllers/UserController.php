@@ -91,35 +91,34 @@ class UserController extends \BaseController {
 	}
 
 	public function profile(){
+		if(Input::has('encrypted')){
+			$key='Prateek';
+			$encrypted=Input::get('encrypted');
+	 		$decrypted=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+		
+			$user=User::find($decrypted);
+			if(is_null($user)){
+				return "Wrong Key.";
+			}
+			else{
+				User::where('id','=',$decrypted)->update(
+				array('ldap_verified'=>1));
+				return "Account Successfully verified";
+			}
+		}
 		$user =  Auth::User();
 		View::share('user',$user);
 		return View::make('user.profile');
 	}
 
-
-	public function verifying(){
-		$key='Prateek';
-		$encrypted=Input::get('encrypted');
-		$decrypted=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
-		
-		$user=User::find($decrypted);
-		if(is_null($user)){
-			return "Wrong Key.";
-		}
-		else{
-			User::where('id','=',$decrypted)->update(
-				array('ldap_verified'=>1));
-			return "Account Successfully verified";
-		}
-
-
-	}
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
 		$user=Auth::User();
 		var_dump($user);
 		$key = 'Prateek';
 		$string =$user->id;
+
+		User::where('id','=',$string)->update(array('ldap_id'=>$gpo_id));
 
 		$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
 		$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
@@ -128,9 +127,9 @@ class UserController extends \BaseController {
 		//var_dump($decrypted);
 		echo $gpo_id;
 
-		 Mail::send('email.verifygpo', ['key' => 'machau prateek :D','name'=>'sid'], function($message)
+		 Mail::send('email.verifygpo', ['key' => URL::Route('user.profile').'?key='.$encrypted,'name'=>$user->Name], function($message) use($user)
 		 {
-     		$message->to('siddharth.bulia@gmail.com', 'yes')->subject('Verify Stab Id');
+     		$message->to($user->gpo_id, $user->Name)->subject('Verify Stab Id');
 		 });
 	}
 }
