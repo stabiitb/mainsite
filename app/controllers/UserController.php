@@ -91,9 +91,9 @@ class UserController extends \BaseController {
 	}
 
 	public function profile(){
-		if(Input::has('encrypted')){
+		if(Input::has('key')){
 			$key='Prateek';
-			$encrypted=Input::get('encrypted');
+			$encrypted=Input::get('key');
 	 		$decrypted=rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
 		
 			$user=User::find($decrypted);
