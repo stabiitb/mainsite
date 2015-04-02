@@ -21,6 +21,7 @@
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.index')}}">Archive</a></li> -->
 							<li><a href="{{URL::Route('events.ITSP_2015.about')}}">About</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2015.form')}}">Register</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.mentor')}}">Mentor Registration</a></li>
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.abstract')}}">Abstract Submission</a></li> -->
 						</ul><!-- /.sidenav -->
 						
