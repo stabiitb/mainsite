@@ -128,9 +128,9 @@ class UserController extends \BaseController {
 		//var_dump($decrypted);
 		echo $gpo_id;
 
-		// Mail::send('email.verify', ['key' => 'machau prateek :D','name'=>$user->Name], function($message)
-		// {
-  //   		$message->to($gpo_id, $user->Name)->subject('Verify Stab Id');
-		// });
+		 Mail::send('email.verify', ['key' => 'machau prateek :D','name'=>$user->Name], function($message)
+		 {
+     		$message->to('siddharth.bulia@gmail.com', 'yes')->subject('Verify Stab Id');
+		 });
 	}
 }
