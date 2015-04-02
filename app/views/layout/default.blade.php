@@ -185,11 +185,11 @@
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calender')}}">Tech Calendar</a></li>
-										{{--@if(Auth::check())
-										<li><a href="{{URL::to('logout')}}">Logout</a></li>
+										@if(Auth::check())
+										<!-- li><a href="{{URL::to('logout')}}">Logout</a></li> -->
 										@else
-										<li><a href="{{UserController::LoginURL()}}">Login</a></li>
-										@endif--}}
+										<!-- <li><a href="{{UserController::LoginURL()}}">Login</a></li> -->
+										@endif
 										<!-- <li><a href="">STAB in media</a></li> -->
 										<!-- <li><a href="http://techid.stab-iitb.org">Tech ID</a></li> -->
 									</ul>
