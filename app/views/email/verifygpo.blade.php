@@ -1,1 +1,1 @@
-Hii {{name}}. To verify click Here <a href ="{{key}}">{{key}}</a>.
+Hii . To verify click Here <a href ="{{key}}">{{key}}</a>.
