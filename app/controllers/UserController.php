@@ -113,7 +113,7 @@ class UserController extends \BaseController {
 
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
-		$gpo_id = substr($gpo_id, 0, strpos($gpo_id, "@"));
+		$gpo_id = explode('@', $gpo_id)[0];
 		$user=Auth::User();
 		//var_dump($user);
 		$key = 'Prateek';
@@ -127,11 +127,15 @@ class UserController extends \BaseController {
 		//var_dump($encrypted);
 		//var_dump($decrypted);
 		//echo $gpo_id;
-
-		 Mail::send('email.verifygpo', ['key' => URL::Route('user.profile').'?key='.$encrypted,'name'=>$user->Name], function($message) use($user)
-		 {
-     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
-		 });
-		 return Redirect::Route('user.profile');
+		try {
+			 Mail::send('email.verifygpo', ['key' => URL::Route('user.profile').'?key='.$encrypted,'name'=>$user->Name], function($message) use($user)
+			 {
+	     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
+			 });
+			 return Redirect::Route('user.profile');
+		} catch (Exception $e) {
+			return $e->getMessage();
+		}
+		
 	}
 }
