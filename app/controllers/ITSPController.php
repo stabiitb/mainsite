@@ -72,26 +72,28 @@ class ITSPController extends \BaseController {
 	public function auth()
 	{	
 		//$id=Input::get("ldapId");
-		$name=Input::get("name");
-		$passwd=Input::get("passwd");
-		$roll=Input::get("roll");
-		$team=Input::get("team");
-		$gmail=Input::get("gmailId");
-		$club=Input::get("club");
+		echo $name=Input::get("name");
+		echo $passwd=Input::get("passwd");
+		echo $roll=Input::get("roll");
+		echo $team=Input::get("team");
+		echo $gmail=Input::get("gmailId");
+		echo $club=Input::get("club");
+		echo Input::hasFile("abstract");
 		$abstract=Input::file("abstract");
-		$phone=Input::file("phone");
+		//echo $abstract->path;
+		echo $phone=Input::get("phone");
 		//echo Input::hasFile("abstract");
 		//echo $gmail."\n";
 		//echo $id." ".$passwd." ".$roll." ".$gmail." ".$club." ".$team;
 		//echo ldap_auth($id,$passwd)."\n";
-		if(Input::hasFile("abstract") && $id!="" && $passwd!="" && $team!="" && $gmail!="" && $club!="" && $roll!="" )
+		if(Input::hasFile("abstract") && $name!="" && $passwd!="" && $team!="" && $gmail!="" && $club!="" && $roll!="" && $phone!="" )
 		{	
 			$extension = $abstract->getClientOriginalExtension();
 			if($extension=="pdf"){
 				//$user=new ITSPUser;
 				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
-				$fileName=$team."_".$roll."_".$name."_".$passwd."_.pdf";
-				$destName=$dest."/".$fileName	;			
+				$fileName=$team."_".$roll."_".$name."_".$passwd.".pdf";
+				$destName=$dest."/".$fileName;			
 				//$user->saveFromInput(Input::all(),$destName);
 				//$user->save();
 
@@ -100,7 +102,7 @@ class ITSPController extends \BaseController {
 				}
 				$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club."/";
 				$abstract->move($destinationPath, $fileName);
-				return "Abstract Submitted successfully. To resubmit Abstract use the same team name and roll Number.";
+				return "Abstract Submitted successfully. To resubmit Abstract use the same name, team name, roll Number and passkey.";
 			}
 			return "Submission failed. Submit abstract in pdf format.";
 		}

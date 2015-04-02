@@ -43,6 +43,12 @@
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="team" type="text" class="form-control" name="team" value="" placeholder="Team Name">                                        
                              </div>
+              
+
+              				 <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="passwd" type="text" class="form-control" name="passwd" value="" placeholder="Passkey (Remember this for resubmitting abstract)">                                        
+                             </div>
                                                                   
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -52,11 +58,6 @@
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="login-username" type="text" class="form-control" name="phone" value="" placeholder="Contact No.">                                        
-                             </div>
-              
-              				 <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="passwd" type="password" class="form-control" name="passwd" value="" placeholder="Passkey (Remember this for resubmitting abstract)">                                        
                              </div>
                                                                                  
 
