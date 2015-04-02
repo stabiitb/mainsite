@@ -49,6 +49,11 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.faq');
 	}
 
+	public function mentor()
+	{
+		return View::make('events.ITSP_2015.mentor');
+	}
+
 	public function timeline()
 	{
 		return View::make('events.ITSP_2015.timeline');
@@ -66,13 +71,15 @@ class ITSPController extends \BaseController {
 
 	public function auth()
 	{	
-		$id=Input::get("ldapId");
+		//$id=Input::get("ldapId");
+		$name=Input::get("name");
 		$passwd=Input::get("passwd");
 		$roll=Input::get("roll");
 		$team=Input::get("team");
 		$gmail=Input::get("gmailId");
 		$club=Input::get("club");
 		$abstract=Input::file("abstract");
+		$phone=Input::file("phone");
 		//echo Input::hasFile("abstract");
 		//echo $gmail."\n";
 		//echo $id." ".$passwd." ".$roll." ".$gmail." ".$club." ".$team;
@@ -81,8 +88,13 @@ class ITSPController extends \BaseController {
 		{	
 			$extension = $abstract->getClientOriginalExtension();
 			if($extension=="pdf"){
-				$fileName=$team."_".$roll.$id."_.pdf";
+				//$user=new ITSPUser;
 				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+				$fileName=$team."_".$roll."_".$name."_".$passwd."_.pdf";
+				$destName=$dest."/".$fileName	;			
+				//$user->saveFromInput(Input::all(),$destName);
+				//$user->save();
+
 				if(!file_exists($dest)){
 					mkdir($dest);
 				}

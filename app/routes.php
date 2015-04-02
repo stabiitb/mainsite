@@ -20,6 +20,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::post('auth',array('as'=>'events.ITSP_2015.auth','uses'=>'ITSPController@auth'));
     Route::post('signup',array('as'=>'events.ITSP_2015.signup','uses'=>'ITSPController@signup'));
     Route::get('abstract',array('as'=>'events.ITSP_2015.abstract','uses'=>'ITSPController@abs'));
+    Route::get('mentor',array('as'=>'events.ITSP_2015.mentor','uses'=>'ITSPController@mentor'));
     
 });
 

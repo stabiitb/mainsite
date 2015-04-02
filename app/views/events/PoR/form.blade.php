@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
 </main>
 @else
-<h2>Registration Link has been closed. For any club related quesries, contact respective club manager.
+<h2>Registration Link has been closed. For any club related queries, contact respective club manager.
 @endif
 
 

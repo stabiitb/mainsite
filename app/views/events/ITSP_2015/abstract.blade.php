@@ -19,7 +19,7 @@
                             
                         <form action="{{route('events.ITSP_2015.auth')}}" class="form-horizontal" method="post" role="form" enctype="multipart/form-data">
 
-							<div style="margin-bottom: 25px" class="input-group">
+<!-- 							<div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="ldap" type="text" class="form-control" name="ldapId" value="" placeholder="Ldap Id">                                        
                              </div>
@@ -27,7 +27,12 @@
 							<div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="pword" type="password" class="form-control" name="passwd" value="" placeholder="Ldap Password">                                        
+                             </div> -->
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="name" type="text" class="form-control" name="name" value="" placeholder="Name of a group member">                                        
                              </div>
+
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -36,14 +41,24 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="login" type="text" class="form-control" name="team" value="" placeholder="Team Name">                                        
+                                        <input id="team" type="text" class="form-control" name="team" value="" placeholder="Team Name">                                        
                              </div>
                                                                   
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input id="login-username" type="text" class="form-control" name="gmailId" value="" placeholder="Gmail Id of a group member">                                        
                              </div>
-                                
+              
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="phone" value="" placeholder="Contact No.">                                        
+                             </div>
+              
+              				 <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="passwd" type="password" class="form-control" name="passwd" value="" placeholder="Passkey (Remember this for resubmitting abstract)">                                        
+                             </div>
+                                                                                 
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
