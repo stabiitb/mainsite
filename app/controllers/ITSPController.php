@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\MessageBag;
 
 class ITSPController extends \BaseController {
 
@@ -50,41 +51,71 @@ class ITSPController extends \BaseController {
 
 	public function auth()
 	{	
+		$user=Auth::User();
 		//$id=Input::get("ldapId");
-		$name=Input::get("name");
-		$passwd=Input::get("passwd");
-		$roll=Input::get("roll");
-		$team=Input::get("team");
-		$gmail=Input::get("gmailId");
+		$team_name=Input::get("team_name");
+		$project_name=Input::get("project_name");
+		$slot=Input::get("slot");
+		$t1_name=Input::get("t1_name");
+		$t1_roll=Input::get("t1_roll");
+		$t1_contact=Input::get("t1_contact");
+		$t1_hostel=Input::get("t1_hostel");
+		$t1_email=Input::get("t1_email");
+		$t2_name=Input::get("t2_name");
+		$t2_roll=Input::get("t2_roll");
+		$t2_contact=Input::get("t2_contact");
+		$t2_hostel=Input::get("t2_hostel");
+		$t2_email=Input::get("t2_email");
+		$t3_name=Input::get("t3_name");
+		$t3_roll=Input::get("t3_roll");
+		$t3_contact=Input::get("t3_contact");
+		$t3_hostel=Input::get("t3_hostel");
+		$t3_email=Input::get("t3_email");
+		$t4_name=Input::get("t4_name");
+		$t4_roll=Input::get("t4_roll");
+		$t4_contact=Input::get("t4_contact");
+		$t4_hostel=Input::get("t4_hostel");
+		$t4_email=Input::get("t4_email");
+
 		$club=Input::get("club");
 		$abstract=Input::file("abstract");
+		if(!Input::hasFile('abstract') || $team_name =="" || $project_name =="" || $slot =="" || $club =="" || $t1_name =="" || $t1_email=="" || $t1_roll==""||$t1_contact==""||$t1_hostel==""){
+			
+		$messageBag = new MessageBag;
+		$messageBag->add('message', 'Error in details. Fill all the required fields.');
+		return Redirect::back()->with('messages', $messageBag);
+		}
+
+		$extension = $abstract->getClientOriginalExtension();
+		if($extension=="pdf"){
+			//$user=new ITSPUser;
+			$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+			$fileName=$team_name."_".$project_name."_".$user->id.".pdf";
+			$destName=$dest."/".$fileName;			
+			//$user->saveFromInput(Input::all(),$destName);
+			//$user->save();
+
+			if(!file_exists($dest)){
+				mkdir($dest);
+			}
+			$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club."/";
+			$abstract->move($destinationPath, $fileName);
+			$messageBag = new MessageBag;
+			$messageBag->add('message', 'Form filled successfully. To change the abstract, refill the form with the same team, project name and same account.');
+			return Redirect::back()->with('messages', $messageBag);	
+		}
+		else{
+			$messageBag = new MessageBag;
+			$messageBag->add('message', 'Submission failed. Submit abstract in pdf format.');
+			return Redirect::back()->with('messages', $messageBag);	
+		}
 		//echo $abstract->path;
-		$phone=Input::get("phone");
+		//$phone=Input::get("phone");
 		//echo Input::hasFile("abstract");
 		//echo $gmail."\n";
 		//echo $id." ".$passwd." ".$roll." ".$gmail." ".$club." ".$team;
 		//echo ldap_auth($id,$passwd)."\n";
-		if(Input::hasFile("abstract") && $name!="" && $passwd!="" && $team!="" && $gmail!="" && $club!="" && $roll!="" && $phone!="" )
-		{	
-			$extension = $abstract->getClientOriginalExtension();
-			if($extension=="pdf"){
-				//$user=new ITSPUser;
-				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
-				$fileName=$team."_".$roll."_".$name."_".$passwd.".pdf";
-				$destName=$dest."/".$fileName;			
-				//$user->saveFromInput(Input::all(),$destName);
-				//$user->save();
 
-				if(!file_exists($dest)){
-					mkdir($dest);
-				}
-				$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club."/";
-				$abstract->move($destinationPath, $fileName);
-				return "Abstract Submitted successfully. To resubmit Abstract use the same name, team name, roll Number and passkey.";
-			}
-			return "Submission failed. Submit abstract in pdf format.";
-		}
-		return "Error in details. Resubmit the form.";
 		//$fileName=$club."_".$team."_".$roll.".pdf";
 		//$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/";
 		//echo $destinationPath;		

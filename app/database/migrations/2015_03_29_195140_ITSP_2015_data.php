@@ -76,7 +76,7 @@ class ITSP2015Data extends Migration {
 	public function down()
 	{
 		//
-		Schema::drop('ITSP_2015_users');
+		Schema::drop('Users');
 	}
 
 }
