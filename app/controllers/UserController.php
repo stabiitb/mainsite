@@ -117,6 +117,7 @@ class UserController extends \BaseController {
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
 		$user=Auth::User();
+		var_dump($user);
 		$key = 'Prateek';
 		$string =$user->id;
 
@@ -129,7 +130,7 @@ class UserController extends \BaseController {
 
 		Mail::send('email.verify', ['key' => 'machau prateek :D','name'=>$user->Name], function($message)
 		{
-    		$message->to('$gpo_id', $user->Name)->subject('Verify Stab Id');
+    		$message->to($gpo_id, $user->Name)->subject('Verify Stab Id');
 		});
 	}
 }
