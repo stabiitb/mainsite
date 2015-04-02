@@ -1,1 +1,3 @@
 test mail
+
+{{$key}}

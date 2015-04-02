@@ -1,13 +1,5 @@
 <?php
 
-Route::filter('login',function(){
-	$value = Session::get('admin');
-	if($value!="1")
-	{
-		return View::make('user.login');
-	}
-});
-
 
 //ITSP - 2015 URL
 Route::group(array('prefix' => 'itsp'),function()
@@ -118,10 +110,10 @@ Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>
 Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'AppsController@interiit'));
 
 
-// USERS
-Route::post('login',array('as'=>'login','uses'=>'UserController@ManagerAuth'));
-Route::get('logout',array('as'=>'logout','uses'=>'UserController@ManagerLogout'));
-
+Route::any('logout',array('as'=>'logout' ,'before'=>'login', 'uses' => 'UserController@logout'));
+Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'UserController@profile'));
+Route::get('fblogin','UserController@fblogin');
+Route::post('ldap_verify',array('as'=>'user.verify','before'=>'login','uses'=>'UserController@verify'));
 
 
 Route::get('sitemap', function(){

@@ -8,7 +8,7 @@ use Symfony\Component\CssSelector\Exception\ExceptionInterface;
  * CSS to Inline Styles class
  *
  * @author         Tijs Verkoyen <php-css-to-inline-styles@verkoyen.eu>
- * @version        1.5.2
+ * @version        1.5.4
  * @copyright      Copyright (c), Tijs Verkoyen. All rights reserved.
  * @license        BSD License
  */
@@ -146,10 +146,13 @@ class CssToInlineStyles
         $document = new \DOMDocument('1.0', $this->getEncoding());
 
         // set error level
-        libxml_use_internal_errors(true);
+        $internalErrors = libxml_use_internal_errors(true);
 
         // load HTML
         $document->loadHTML($this->html);
+
+        // Restore error level
+        libxml_use_internal_errors($internalErrors);
 
         // create new XPath
         $xPath = new \DOMXPath($document);
@@ -207,8 +210,7 @@ class CssToInlineStyles
                         $definedStyles = (string) $stylesAttribute->value;
 
                         // split into properties
-                        $definedProperties = (array) explode(';', $definedStyles);
-
+                        $definedProperties = $this->splitIntoProperties($definedStyles);
                         // loop properties
                         foreach ($definedProperties as $property) {
                             // validate property
@@ -275,7 +277,7 @@ class CssToInlineStyles
 
                 if ($originalStyle != '') {
                     $originalProperties = array();
-                    $originalStyles = (array) explode(';', $originalStyle);
+                    $originalStyles = $this->splitIntoProperties($originalStyle);
 
                     foreach ($originalStyles as $property) {
                         // validate property
@@ -305,7 +307,7 @@ class CssToInlineStyles
                         $definedStyles = (string) $stylesAttribute->value;
 
                         // split into properties
-                        $definedProperties = (array) explode(';', $definedStyles);
+                        $definedProperties = $this->splitIntoProperties($definedStyles);
 
                         // loop properties
                         foreach ($definedProperties as $property) {
@@ -365,7 +367,7 @@ class CssToInlineStyles
         if ($this->stripOriginalStyleTags) {
             $this->stripOriginalStyleTags($xPath);
         }
-        
+
         // should we output XHTML?
         if ($outputXHTML) {
             // set formating
@@ -374,17 +376,8 @@ class CssToInlineStyles
             // get the HTML as XML
             $html = $document->saveXML(null, LIBXML_NOEMPTYTAG);
 
-            // get start of the XML-declaration
-            $startPosition = strpos($html, '<?xml');
-
-            // valid start position?
-            if ($startPosition !== false) {
-                // get end of the xml-declaration
-                $endPosition = strpos($html, '?>', $startPosition);
-
-                // remove the XML-header
-                $html = ltrim(substr($html, $endPosition + 1));
-            }
+            // remove the XML-header
+            $html = ltrim(preg_replace('/<?xml (.*)?>/', '', $html));
         } // just regular HTML 4.01 as it should be used in newsletters
         else {
             // get the HTML
@@ -398,6 +391,28 @@ class CssToInlineStyles
 
         // return
         return $html;
+    }
+
+    /**
+     * Split a style string into an array of properties.
+     * The returned array can contain empty strings.
+     *
+     * @param string $styles ex: 'color:blue;font-size:12px;'
+     * @return array an array of strings containing css property ex: array('color:blue','font-size:12px')
+     */
+    private function splitIntoProperties($styles) {
+        $properties = (array) explode(';', $styles);
+
+        for ($i = 0; $i < count($properties); $i++) {
+            // If next property begins with base64,
+            // Then the ';' was part of this property (and we should not have split on it).
+            if (isset($properties[$i + 1]) && strpos($properties[$i + 1], 'base64,') === 0) {
+                $properties[$i] .= ';' . $properties[$i + 1];
+                $properties[$i + 1] = '';
+                $i += 1;
+            }
+        }
+        return $properties;
     }
 
     /**
@@ -506,7 +521,7 @@ class CssToInlineStyles
     private function processCSSProperties($propertyString)
     {
         // split into chunks
-        $properties = (array) explode(';', $propertyString);
+        $properties = $this->splitIntoProperties($propertyString);
 
         // init var
         $pairs = array();
@@ -567,7 +582,7 @@ class CssToInlineStyles
      *
      * @return void
      * @param  string $encoding The encoding to use.
-     * 
+     *
      * @deprecated Doesn't have any effect
      */
     public function setEncoding($encoding)

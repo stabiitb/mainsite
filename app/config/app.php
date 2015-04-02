@@ -122,7 +122,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Maatwebsite\Excel\ExcelServiceProvider',
-		'Roumen\Sitemap\SitemapServiceProvider',
 	),
 
 	/*

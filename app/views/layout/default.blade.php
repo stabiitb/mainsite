@@ -185,33 +185,16 @@
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calender')}}">Tech Calendar</a></li>
+										{{--@if(Auth::check())
+										<li><a href="{{URL::to('logout')}}">Logout</a></li>
+										@else
+										<li><a href="{{UserController::LoginURL()}}">Login</a></li>
+										@endif--}}
 										<!-- <li><a href="">STAB in media</a></li> -->
 										<!-- <li><a href="http://techid.stab-iitb.org">Tech ID</a></li> -->
 									</ul>
 								</li><!-- /.dropdown -->
 
-								<!--li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">More</a>
-
-									<ul class="dropdown-menu">
-										<li><a href="#">Tech GC Rankings</a></li>
-										<li><a href="#">Component Sharing Portal</a></li>
-										<li><a href="#">Tech Calender</a></li>
-										<li><a href="http://techid.stab-iitb.org">Tech ID</a></li>
-									</ul>
-								</li><!-- /.dropdown -->
-								
-								
-								<!--li class="dropdown pull-right searchbox">
-									<a href="#" class="dropdown-toggle js-activated"><i class="icon-search"></i></a>
-											  
-									<div class="dropdown-menu">
-										<form id="search" class="navbar-form search" role="search">
-											<input type="search" class="form-control" placeholder="Type to search">
-											<button type="submit" class="btn btn-default btn-submit icon-right-open"></button>
-										</form>
-									</div><!-- /.dropdown-menu -->
-								<!--/li><!-- /.searchbox -->
 								
 							</ul><!-- /.nav -->
 							
