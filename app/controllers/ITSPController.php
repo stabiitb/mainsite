@@ -72,16 +72,15 @@ class ITSPController extends \BaseController {
 	public function auth()
 	{	
 		//$id=Input::get("ldapId");
-		echo $name=Input::get("name");
-		echo $passwd=Input::get("passwd");
-		echo $roll=Input::get("roll");
-		echo $team=Input::get("team");
-		echo $gmail=Input::get("gmailId");
-		echo $club=Input::get("club");
-		echo Input::hasFile("abstract");
+		$name=Input::get("name");
+		$passwd=Input::get("passwd");
+		$roll=Input::get("roll");
+		$team=Input::get("team");
+		$gmail=Input::get("gmailId");
+		$club=Input::get("club");
 		$abstract=Input::file("abstract");
 		//echo $abstract->path;
-		echo $phone=Input::get("phone");
+		$phone=Input::get("phone");
 		//echo Input::hasFile("abstract");
 		//echo $gmail."\n";
 		//echo $id." ".$passwd." ".$roll." ".$gmail." ".$club." ".$team;
