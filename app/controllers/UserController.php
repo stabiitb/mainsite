@@ -17,7 +17,7 @@ class UserController extends \BaseController {
 	public function fblogin()
 	{
 
-
+		session_start();
 		$app_id='339712599560349';
 		$code=Input::get('code');
 		$redirect_url=URL::to('/').'/fblogin';
@@ -81,7 +81,7 @@ class UserController extends \BaseController {
 	}
 
 	public static function LoginURL(){
-		session_start();
+
         $redirect_url=URL::to('/').'/fblogin';
         
         FacebookSession::setDefaultApplication('339712599560349', '3c50091370251ec12e280a7af1952572');
