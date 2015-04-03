@@ -239,7 +239,7 @@
     @endif
 
     @else
-        Please <a href="{{UserController::LoginURL()}}">Login</a> with Facebook account to continue.
+        Please Login with Facebook account to continue.
     @endif  
 
   	
