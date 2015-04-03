@@ -219,8 +219,9 @@
 			
 			<div class="footer-bottom">
 				<div class="container inner">
-					<p class="pull-left">© 2014 STAB-IITB. All rights reserved. Designed and maintained by
-					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a>
+					<p class="pull-left">© 2015 STAB-IITB. All rights reserved. Designed by
+					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a> and maintained by 
+					<a href="https://www.facebook.com/siddharth.bulia">Siddharth Bulia</a>.
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::Route('stab.home')}}">Home</a></li>
