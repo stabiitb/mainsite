@@ -18,6 +18,7 @@
 							<li><a href="{{URL::Route('events.ITSP_2015.index')}}">Home</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2015.timeline')}}">Timeline</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2015.faq')}}">FAQ</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.discuss')}}">Discussion Forum</a></li>
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.index')}}">Archive</a></li> -->
 							<li><a href="{{URL::Route('events.ITSP_2015.about')}}">About</a></li>
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.form')}}">Register</a></li> -->

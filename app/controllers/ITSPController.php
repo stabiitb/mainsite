@@ -49,6 +49,11 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.abstract');
 	}
 
+	public function discuss()
+	{
+		return View::make('events.ITSP_2015.discuss');
+	}
+
 	public function auth()
 	{	
 		//$
