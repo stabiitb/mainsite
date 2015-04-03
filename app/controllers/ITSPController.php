@@ -79,7 +79,7 @@ class ITSPController extends \BaseController {
 				$newTeam=new ITSP;
 				$newTeam->saveFromInput(Input::all());
 				//$user=new ITSPUser;
-				$webpath="http://stab--iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+				$webpath="http://stab-iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$fileName=$team_name."_".$project_name."_".$newTeam->id.".pdf";
 				$destName=$dest."/".$fileName;
@@ -121,7 +121,7 @@ class ITSPController extends \BaseController {
 						$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 						$fileName=$team_name."_".$project_name."_".$team->id.".pdf";
 						$destName=$dest."/".$fileName;			
-						$webpath="http://stab--iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+						$webpath="http://stab-iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 
 						$newTeam->abstract=$webpath.'/'.$fileName;
 						$team->user_id=Auth::User()->id;
