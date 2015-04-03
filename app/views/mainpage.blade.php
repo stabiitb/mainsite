@@ -13,7 +13,7 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.index')}}">ITSP 2015 &nbsp</a><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">Abstract Submission Link &nbsp</a> </li>
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">ITSP 2015 Abstract Submission Link &nbsp</a> </li>
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li>
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>
