@@ -5,7 +5,7 @@
         @if(Auth::User()->ldap_verified==1)
 	<h4> Write all the details of team members and contact details in abstract.</h4>
 	<h4> No other format is allowed except pdf.</h4>
-	<h4> All fields of member 1 and starting 4 fields are compulsory.</h4>
+	<h4> All <i class="icon-star"></i> fields are compulsory.</h4>
     @if (Session::get('messages') != null && Session::get('messages')->has('message'))
         <div class="col-md-12">
             <div class="alert alert-success alert-dismissible" role="alert">
@@ -35,18 +35,18 @@
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input id="name" type="text" class="form-control" name="team_name" value="{{Input::old('team_name')}}" placeholder="Team Name">                                        
                              </div>
 
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input id="roll" type="text" class="form-control" name="project_name" value="{{Input::old('project_name')}}" placeholder="Project Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <span>Choose the Club</span>
                             </div>
                             <table class="table">
@@ -77,7 +77,7 @@
                             </table>   
 
                             <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <span>Slot</span>
                             </div>
                             <table class="table">
@@ -91,32 +91,32 @@
                             </table>
 
               				 <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_name" value="{{Input::old('t1_name')}}" placeholder="Member 1 Name">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_roll" value="{{Input::old('t1_roll')}}" placeholder="Member 1 Roll Number">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_email" value="{{Input::old('t1_email')}}" placeholder="Member 1 Email">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_contact" value="{{Input::old('t1_contact')}}" placeholder="Member 1 Contact">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_dept" value="{{Input::old('t1_dept')}}" placeholder="Member 1 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="text" class="form-control" name="t1_hostel" value="{{Input::old('t1_hostel')}}" placeholder="Member 1 Hostel">                                        
                              </div>
 
@@ -235,11 +235,11 @@
         </div> 
     </div>
     @else
-        Please activate your account. Click here to enter your GPO account details.
+        Please activate your account. Click <a href="{{URL::Route('user.profile')}}">here</a> to enter your GPO account details.
     @endif
 
     @else
-        Please Login with Facebook account to continue.
+        Please <a href="{{UserController::LoginURL()}}">Login</a> with Facebook account to continue.
     @endif  
 
   	

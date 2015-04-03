@@ -13,12 +13,24 @@
 				</div><!-- /.container -->
 			</section>
 
+    @if (Session::get('messages') != null && Session::get('messages')->has('message'))
+       									
+			<section id="error" class="light-bg">
+				<div class="container inner-xs">
+					<div class="row">
+						<div class="col-sm-10 center-block text-center">
+						    {{ Session::get('messages')->first('message') }}
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>    
+	@else
 			<section class="img-bg img-bg-softer inner">
 				<div class="container" >
 					<div class="row">
 						<div class="col-md-12"> 
 						@if($user->ldap_verified == 0)
-						Verify now . 
+						Verify now . Enter your GPO Id. 
 							<form action="{{URL::Route('user.verify')}}" method="post">
 							<input name="gpo_id" type="text" placeholder="gpo Id">
 							<input type="submit" value="verify">
@@ -30,5 +42,7 @@
 					</div><!-- ./row -->
 				</div><!-- /.container -->
 			</section>
+	@endif
+
 </main>
 @endsection

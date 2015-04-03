@@ -132,7 +132,9 @@ class UserController extends \BaseController {
 			 {
 	     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
 			 });
-			 return Redirect::Route('user.profile');
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"We have sent you an email regarding account activation on your gpo id ".$user->ldap_email." .Click on the linkk to verify." );
+			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 		} catch (Exception $e) {
 			return $e->getMessage();
 		}

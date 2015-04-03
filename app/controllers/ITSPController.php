@@ -79,10 +79,11 @@ class ITSPController extends \BaseController {
 				$newTeam=new ITSP;
 				$newTeam->saveFromInput(Input::all());
 				//$user=new ITSPUser;
+				$webpath="http://stab--iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$fileName=$team_name."_".$project_name."_".$newTeam->id.".pdf";
 				$destName=$dest."/".$fileName;
-				$newTeam->abstract=$destName;
+				$newTeam->abstract=$webpath.'/'.$fileName;
 				$newTeam->user_id=Auth::User()->id;
 				$newTeam->save();
 
@@ -120,7 +121,9 @@ class ITSPController extends \BaseController {
 						$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 						$fileName=$team_name."_".$project_name."_".$team->id.".pdf";
 						$destName=$dest."/".$fileName;			
-						$team->abstract=$destName;
+						$webpath="http://stab--iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
+
+						$newTeam->abstract=$webpath.'/'.$fileName;
 						$team->user_id=Auth::User()->id;
 
 						$team->save();
@@ -149,6 +152,18 @@ class ITSPController extends \BaseController {
 
 		}
 
+	}
+
+	public function test(){
+
+		$key = 'Prateek';
+		$string ='6';
+
+		$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
+		$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+
+		echo $encrypted."\t";
+		echo $decrypted;
 	}
 
 	/*public function signup(Request $request)
