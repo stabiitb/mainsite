@@ -211,7 +211,7 @@
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="file" class="form-control" name="abstract" value="" placeholder="abstract">                                        
                              </div>
                                     </div>
