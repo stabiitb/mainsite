@@ -1,8 +1,14 @@
 @extends('events.ITSP_2015.layout')
 
 @section('inner-content')
+<?php
+     $closetime=strtotime("6 April 2015"); 
+     $curtime = time();
+?>
+@if($curtime < $closetime)
     @if(Auth::check())
         @if(Auth::User()->ldap_verified==1)
+    <h4> Last date for abstract submission is 5th April 2015.</h4>     
 	<h4> Write all the details of team members and contact details in abstract.</h4>
 	<h4> No other format is allowed except pdf.</h4>
 	<h4> All <i class="icon-star"></i> fields are compulsory.</h4>
@@ -241,6 +247,8 @@
     @else
         Please Login with Facebook account to continue.
     @endif  
-
+@else
+    <h3>Abstract Submission Link has been Closed</h3>
+@endif    
   	
 @endsection
