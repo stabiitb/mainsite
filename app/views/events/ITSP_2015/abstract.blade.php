@@ -82,10 +82,10 @@
                             </div>
                             <table class="table">
                                 <div>
-                                        <td><input type="radio" name="slot" value="1"></td><td>May</td>
+                                        <td><input type="radio" name="slot" value="1"></td><td>Slot 1 (5th May - 16th June)</td>
                                 </tr>
                                 <tr>
-                                        <td><input type="radio" name="slot" value="2   "></td><td>June</td>
+                                        <td><input type="radio" name="slot" value="2"></td><td>Slot 2 (18th May - 28th June)</td>
                                 </tr>
                                 </div>
                             </table>
