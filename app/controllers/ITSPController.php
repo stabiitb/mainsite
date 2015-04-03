@@ -70,7 +70,7 @@ class ITSPController extends \BaseController {
 		$abstract=Input::file("abstract");
 		$id=Input::get('id');
 
-		if(!Input::hasFile("abstract") || $team_name=="" || $project_name=="" || $club=="" ||$slot==""||$t1_name==""||$t1_roll=="" || $t1_contact=="" ||$t1_hostel==="" || $t1_dept=="" ||$t1_email==""){
+		if(!Input::hasFile("abstract") || $team_name=="" || $project_name=="" || $club=="" ||$slot==""||$t1_name==""||$t1_roll=="" || $t1_contact=="" ||$t1_hostel=="" || $t1_dept=="" ||$t1_email==""){
 
 			$messageBag = new MessageBag;
 			$messageBag->add('message',"Error in form. Fill up all the required fields." );
@@ -83,13 +83,15 @@ class ITSPController extends \BaseController {
 			if($extension=="pdf"){
 				$newTeam=new ITSP;
 				$newTeam->saveFromInput(Input::all());
+				$newTeam->user_id=Auth::User()->id;
+				$newTeam->save();				
 				//$user=new ITSPUser;
 				$webpath="http://stab-iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 				$fileName=$team_name."_".$project_name."_".$newTeam->id.".pdf";
 				$destName=$dest."/".$fileName;
 				$newTeam->abstract=$webpath.'/'.$fileName;
-				$newTeam->user_id=Auth::User()->id;
+
 				$newTeam->save();
 
 				//$user->saveFromInput(Input::all(),$destName);
@@ -122,6 +124,7 @@ class ITSPController extends \BaseController {
 					if($extension=="pdf"){
 						//$user=new ITSPUser;
 						ITSP::where('id','=',$id)->first()->saveFromInput(Input::all());
+						$team->save();				
 
 						$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 						$fileName=$team_name."_".$project_name."_".$team->id.".pdf";

@@ -136,6 +136,7 @@
                                         <input type="text" class="form-control" name="t2_roll" value="{{Input::old('t2_roll')}}" placeholder="Member 2 Roll Number">                                        
                              </div>
 
+
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input type="text" class="form-control" name="t2_email" value="{{Input::old('t2_email')}}" placeholder="Member 2 Email">                                        
@@ -143,13 +144,14 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_dept" value="{{Input::old('t2_dept')}}" placeholder="Member 2 Department">                                        
+                                        <input type="text" class="form-control" name="t2_contact" value="{{Input::old('t2_contact')}}" placeholder="Member 2 Contact">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t2_contact" value="{{Input::old('t2_contact')}}" placeholder="Member 2 Contact">                                        
+                                        <input type="text" class="form-control" name="t2_dept" value="{{Input::old('t2_dept')}}" placeholder="Member 2 Department">                                        
                              </div>
+
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -171,15 +173,17 @@
                                         <input type="text" class="form-control" name="t3_email" value="{{Input::old('t3_email')}}" placeholder="Member 3 Email">                                        
                              </div>
 
-                             <div style="margin-bottom: 25px" class="input-group">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t3_dept" value="{{Input::old('t3_dept')}}" placeholder="Member 3 Department">                                        
-                             </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                         <input type="text" class="form-control" name="t3_contact" value="{{Input::old('t3_contact')}}" placeholder="Member 3 Contact">                                        
                              </div>
+
+                             <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" class="form-control" name="t3_dept" value="{{Input::old('t3_dept')}}" placeholder="Member 3 Department">                                        
+                             </div>
+
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -208,18 +212,19 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_hostel" value="{{Input::old('t4_hostel')}}" placeholder="Member 4 Hostel">                                        
+                                        <input type="text" class="form-control" name="t4_dept" value="{{Input::old('t4_dept')}}" placeholder="Member 4 Department">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="t4_dept" value="{{Input::old('t4_dept')}}" placeholder="Member 4 Department">                                        
+                                        <input type="text" class="form-control" name="t4_hostel" value="{{Input::old('t4_hostel')}}" placeholder="Member 4 Hostel">                                        
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="icon-star"></i></span>
                                         <input type="file" class="form-control" name="abstract" value="" placeholder="abstract">                                        
                              </div>
+
                                     </div>
                                 </div>                               
 
