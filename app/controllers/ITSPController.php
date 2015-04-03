@@ -74,7 +74,11 @@ class ITSPController extends \BaseController {
 
 			$messageBag = new MessageBag;
 			$messageBag->add('message',"Error in form. Fill up all the required fields." );
-			return Redirect::back()->with('messages', $messageBag)->withInput();
+			echo $team_name." ".$project_name." ".$club." ".$slot." ".$t1_name." ".$t1_roll." ".$t1_contact." ".$t1_hostel." ".$t1_dept."\n";
+			if(Input::hasFile("abstract")){
+				echo "asd";
+			}
+			return "chill";//Redirect::back()->with('messages', $messageBag)->withInput();
 		}
 
 
