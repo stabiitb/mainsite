@@ -157,12 +157,13 @@ class ITSPController extends \BaseController {
 	public function test(){
 
 		$key = 'Prateek';
-		$string ='6';
+		$string ='16';
 
 		$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
 		$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
 
-		echo $encrypted."\t";
+		echo urlencode($encrypted)."\t";
+		echo htmlspecialchars('+');
 		echo $decrypted;
 	}
 
