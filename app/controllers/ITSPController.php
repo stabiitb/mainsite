@@ -171,7 +171,10 @@ class ITSPController extends \BaseController {
 			global $users;
 			$users=ITSP::where('club','LIKE','%model%')->get();
 		}
-		else return "Random Club doesn't exist. choose from wncc, krittika, electronics, techgsr, robotics, aero, mnp, technovation.";
+		else {
+			$clubs =array('wncc', 'krittika', 'electronics', 'techgsr', 'robotics', 'aero', 'mnp', 'technovation');
+			return View::make('events.ITSP_2015.review_error',compact('clubs'));		
+		}			
 			//var_dump($users);
 			if( sizeof($users)==0){
 				return;
