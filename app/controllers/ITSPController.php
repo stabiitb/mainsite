@@ -249,6 +249,7 @@ class ITSPController extends \BaseController {
 				return Redirect::back()->with('messages', $messageBag)->withInput();
 			}
 			else{				
+
 			 	if(Input::get('team_name')==$team->team_name &&$team->t1_roll ==Input::get('t1_roll')){
 					
 					$extension = $abstract->getClientOriginalExtension();
@@ -262,7 +263,7 @@ class ITSPController extends \BaseController {
 						$destName=$dest."/".$fileName;			
 						$webpath="http://stab-iitb.org/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club;
 
-						$newTeam->abstract=$webpath.'/'.$fileName;
+						$team->abstract=$webpath.'/'.$fileName;
 						$team->user_id=Auth::User()->id;
 
 						$team->save();
@@ -272,7 +273,7 @@ class ITSPController extends \BaseController {
 						$destinationPath=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$club."/";
 						$abstract->move($destinationPath, $fileName);
 						$messageBag = new MessageBag;
-						$messageBag->add('message',"Abstract successfully submitted. Your Team id is ".$newTeam->id.". Remember this for future reference. If you need to change your abstract, refill the entire form with same team name, team id and roll number" );
+						$messageBag->add('message',"Abstract successfully submitted. Your Team id is ".$team->id.". Remember this for future reference. If you need to change your abstract, refill the entire form with same team name, team id and roll number" );
 						return Redirect::back()->with('messages', $messageBag)->withInput();
 					}
 					$messageBag = new MessageBag;
