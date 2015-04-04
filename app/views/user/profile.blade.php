@@ -7,6 +7,7 @@
 						<div class="col-md-8">
 							<header>
 								<h2>Welcome , {{$user->Name}}</h2>
+								<h3>Your user id is {{$user->id}}</h3>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- ./row -->
