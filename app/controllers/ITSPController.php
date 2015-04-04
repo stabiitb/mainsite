@@ -129,62 +129,66 @@ class ITSPController extends \BaseController {
 	}
 
 	public function review($club)
-	{
-		$users="yo";
-		if($club=="mnp"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%Maths%')->get();
+	{	if(Auth::check()){
+			if(Auth::User()->mentor==1){
+				$users="yo";
+				if($club=="mnp"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%Maths%')->get();
 
+				}
+				else if($club=="krittika"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%ttika%')->get();
+
+				}
+				else if($club=="wncc"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%WnCC%')->get();
+
+
+				}
+				else if($club=="robotics"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%Robo%')->get();
+
+				}
+				else if($club=="electronics"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%tronics%')->get();
+
+				}
+				else if($club=="techgsr"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%GSR%')->get();
+
+				}
+				else if($club=="technovation"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%vation%')->get();
+
+				}
+				else if($club=="aero"){
+					global $users;
+					$users=ITSP::where('club','LIKE','%model%')->get();
+				}
+				else {
+					$clubs =array('wncc', 'krittika', 'electronics', 'techgsr', 'robotics', 'aero', 'mnp', 'technovation');
+					return View::make('events.ITSP_2015.review_error',compact('clubs'));		
+				}			
+					//var_dump($users);
+					if( sizeof($users)==0){
+						return;
+					};
+					$users=$users->toArray();
+					$attr = array('class'=>'table', 'id'=>'myTbl');
+					$t = new Table($users, $attr);
+					$data= $t->build();
+					return View::make('events.ITSP_2015.review',compact('data'));
+			}
+			return "You dont have required access.";	
 		}
-		else if($club=="krittika"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%ttika%')->get();
-
-		}
-		else if($club=="wncc"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%WnCC%')->get();
-
-
-		}
-		else if($club=="robotics"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%Robo%')->get();
-
-		}
-		else if($club=="electronics"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%tronics%')->get();
-
-		}
-		else if($club=="techgsr"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%GSR%')->get();
-
-		}
-		else if($club=="technovation"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%vation%')->get();
-
-		}
-		else if($club=="aero"){
-			global $users;
-			$users=ITSP::where('club','LIKE','%model%')->get();
-		}
-		else {
-			$clubs =array('wncc', 'krittika', 'electronics', 'techgsr', 'robotics', 'aero', 'mnp', 'technovation');
-			return View::make('events.ITSP_2015.review_error',compact('clubs'));		
-		}			
-			//var_dump($users);
-			if( sizeof($users)==0){
-				return;
-			};
-			$users=$users->toArray();
-			$attr = array('class'=>'table', 'id'=>'myTbl');
-			$t = new Table($users, $attr);
-			$data= $t->build();
-			return View::make('events.ITSP_2015.review',compact('data'));		
-
+		return '<a href="'.UserController::LoginURL().'">Login</a>. to continue';
 	}
 	public function auth()
 	{	
