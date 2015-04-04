@@ -61,7 +61,7 @@ class Table {
         if(is_null($array)) return false;
             $row = '<tr>';
             foreach ($array as $value) {
-            	if($count==2)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
+            	if($count==3)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
             	else{
                 $row .= '<td>' . $value . '</td>';}
                 $count++;
