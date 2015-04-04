@@ -56,11 +56,15 @@ class Table {
     }
 
     protected function createRow($array = null)
-    {
+    {	
+    	$count=0;
         if(is_null($array)) return false;
             $row = '<tr>';
             foreach ($array as $value) {
-                $row .= '<td>' . $value . '</td>';
+            	if($count==2)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
+            	else{
+                $row .= '<td>' . $value . '</td>';}
+                $count++;
             }
             $row .= '</tr>';
             return $row;
