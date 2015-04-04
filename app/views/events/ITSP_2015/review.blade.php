@@ -1,15 +1,18 @@
-@extends('events.ITSP_2015.layout')
-@section('inner-content')
-	<form action="review_update" method="post">
-	@for($users as $user)
-		<div class="row">
-			<div class="col-md-2">{{$user->team_name}}</div>
-			<div class="col-md-2">{{$user->project_name}}</div>
-			<div class="col-md-2">{{$user->project_desc}}</div>
-			<div class="col-md-2"><a href="{{$user->project_desc}}">Abstract</a></div>
-			<input type="text" name=""
-			<input type="checkbox" name="reviewed" value="{{$user->id}}" >
-
-	@endfor	
-
-@endsection
+<html>
+<head>
+	<link href="{{ URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
+		
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
+		
+		<!-- Icons/Glyphs -->
+		<link href="{{ URL::asset('assets/fonts/fontello.css')}}" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
+</head>
+<body>
+{{$data}}
+	</body>
+	</html>

@@ -14,7 +14,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('abstract',array('as'=>'events.ITSP_2015.abstract','uses'=>'ITSPController@abs'));
     Route::get('mentor',array('as'=>'events.ITSP_2015.mentor','uses'=>'ITSPController@mentor'));
     Route::get('discuss',array('as'=>'events.ITSP_2015.discuss','uses'=>'ITSPController@discuss'));
-    
+    Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review')); 
 });
 
 

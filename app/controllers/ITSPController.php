@@ -1,6 +1,76 @@
 <?php
 use Illuminate\Support\MessageBag;
 
+class Table {
+
+    protected $table = null;
+    protected $header = null;
+    protected $attr = null;
+    protected $data = null;
+
+    public function __construct($data = null, $attr = null, $header = null)
+    {
+        if(is_null($data)) return;
+        $this->data = $data;
+        $this->attr = $attr;
+        if(is_array($header)) {
+            $this->header = $header;
+        }
+        else {
+            if(count($this->data) && $this->is_assoc($this->data[0]) || is_object($this->data[0])) {
+                $headerKeys = is_object($this->data[0]) ? array_keys((array)$this->data[0]) : array_keys($this->data[0]);
+                $this->header = array();
+                foreach ($headerKeys as $value) {
+                    $this->header[] = $value;
+                }
+            }
+        }
+        return $this;
+    }
+
+    public function build()
+    {
+        $atts = '';
+        if(!is_null($this->attr)) {
+            foreach ($this->attr as $key => $value) {
+                $atts .= $key . ' = "' . $value . '" ';
+            }
+        }
+        $table = '<table ' . $atts . ' >';
+
+        if(!is_null($this->header)) {
+            $table .= '<thead><tr>';
+            foreach ($this->header as $value) {
+                $table .= '<th>' . ucfirst($value) . '</th>';
+            }
+            $table .= '</thead></tr>';
+        }
+
+        $table .= '<tbody>';
+        foreach ($this->data as $value) {
+            $table .= $this->createRow($value);
+        }
+        $table .= '</tbody>';
+        $table .= '</table>';
+        return $this->table = $table;
+    }
+
+    protected function createRow($array = null)
+    {
+        if(is_null($array)) return false;
+            $row = '<tr>';
+            foreach ($array as $value) {
+                $row .= '<td>' . $value . '</td>';
+            }
+            $row .= '</tr>';
+            return $row;
+    }
+
+    protected function is_assoc($array){
+        return is_array($array) && array_diff_key($array, array_keys(array_keys($array)));
+    }
+}
+
 class ITSPController extends \BaseController {
 
 	/**
@@ -54,6 +124,61 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.discuss');
 	}
 
+	public function review($club)
+	{
+		$users="yo";
+		if($club=="mnp"){
+			global $users;
+			$users=ITSP::where('club','LIKE','%Maths%')->get();
+
+		}
+		else if($club=="krittika"){
+			global $users;
+			$users=ITSP::where('club','LIKE','%ttika%')->get();
+
+		}
+		else if($club=="wncc"){
+			global $users;
+			$users=ITSP::where('club','LIKE','%WnCC%')->get();
+
+
+		}
+		else if($club=="robotics"){
+			global $users;
+			$users=ITSP::where('club','%LIKE','%Robo%')->get();
+
+		}
+		else if($club=="electronics"){
+			global $users;
+			$users=ITSP::where('club','%LIKE','%tronics%')->get();
+
+		}
+		else if($club=="techgsr"){
+			global $users;
+			$users=ITSP::where('club','%LIKE','%GSR%')->get();
+
+		}
+		else if($club=="technovation"){
+			global $users;
+			$users=ITSP::where('club','%LIKE','%vation%')->get();
+
+		}
+		else if($club=="aero"){
+			global $users;
+			$users=ITSP::where('club','%LIKE','%model%')->get();
+		}
+		else return "Random Club doesn't exist. choose from wncc, krittika, electronics, techgsr, robotics, aero, mnp, technovation.";
+			//var_dump($users);
+			if( sizeof($users)==0){
+				return;
+			};
+			$users=$users->toArray();
+			$attr = array('class'=>'table', 'id'=>'myTbl');
+			$t = new Table($users, $attr);
+			$data= $t->build();
+			return View::make('events.ITSP_2015.review',compact('data'));		
+
+	}
 	public function auth()
 	{	
 		//$
