@@ -149,27 +149,27 @@ class ITSPController extends \BaseController {
 		}
 		else if($club=="robotics"){
 			global $users;
-			$users=ITSP::where('club','%LIKE','%Robo%')->get();
+			$users=ITSP::where('club','LIKE','%Robo%')->get();
 
 		}
 		else if($club=="electronics"){
 			global $users;
-			$users=ITSP::where('club','%LIKE','%tronics%')->get();
+			$users=ITSP::where('club','LIKE','%tronics%')->get();
 
 		}
 		else if($club=="techgsr"){
 			global $users;
-			$users=ITSP::where('club','%LIKE','%GSR%')->get();
+			$users=ITSP::where('club','LIKE','%GSR%')->get();
 
 		}
 		else if($club=="technovation"){
 			global $users;
-			$users=ITSP::where('club','%LIKE','%vation%')->get();
+			$users=ITSP::where('club','LIKE','%vation%')->get();
 
 		}
 		else if($club=="aero"){
 			global $users;
-			$users=ITSP::where('club','%LIKE','%model%')->get();
+			$users=ITSP::where('club','LIKE','%model%')->get();
 		}
 		else return "Random Club doesn't exist. choose from wncc, krittika, electronics, techgsr, robotics, aero, mnp, technovation.";
 			//var_dump($users);
