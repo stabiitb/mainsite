@@ -4,13 +4,16 @@
 <?php
      $closetime=strtotime("6 April 2015"); 
      $curtime = time();
+     //echo $closetime."  ".$curtime."\n";
 ?>
 @if($curtime < $closetime)
     @if(Auth::check())
         @if(Auth::User()->ldap_verified==1)
     <h4> Last date for abstract submission is 5th April 2015.</h4>     
 	<h4> Write all the details of team members and contact details in abstract.</h4>
-	<h4> No other format is allowed except pdf.</h4>
+    <h4> No other format is allowed except pdf.</h4>
+    <h4> If you are filling the form for the first time, leave the team id field blank.</h4>
+    <h4> For changing team details and abstract, use the alloted team id, same team name and same roll number of first member.</h4>
 	<h4> All <i class="icon-star"></i> fields are compulsory.</h4>
     @if (Session::get('messages') != null && Session::get('messages')->has('message'))
         <div class="col-md-12">
