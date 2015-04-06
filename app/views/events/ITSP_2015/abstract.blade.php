@@ -2,14 +2,15 @@
 
 @section('inner-content')
 <?php
-     $closetime=strtotime("6 April 2015"); 
+     date_default_timezone_set('Asia/Kolkata');
+     $closetime=strtotime("2015:04:07 23:59:59 "); 
      $curtime = time();
      //echo $closetime."  ".$curtime."\n";
 ?>
 @if($curtime < $closetime)
     @if(Auth::check())
         @if(Auth::User()->ldap_verified==1)
-    <h4> Last date for abstract submission is 5th April 2015.</h4>     
+    <h4> Deadline for abstract submission is 7th April 2015, 11:59:59 pm.</h4>     
 	<h4> Write all the details of team members and contact details in abstract.</h4>
     <h4> No other format is allowed except pdf.</h4>
     <h4> If you are filling the form for the first time, leave the team id field blank.</h4>
