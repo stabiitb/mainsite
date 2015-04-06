@@ -303,6 +303,11 @@ class ITSPController extends \BaseController {
 
 	public function test(){
 
+		
+     $closetime=strtotime("6 April 2015"); 
+     $curtime = time();
+     echo $closetime."  ".$curtime."\n";
+
 		$key = 'Prateek';
 		$string ='16';
 
