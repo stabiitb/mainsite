@@ -2,7 +2,7 @@
 
 @section('inner-content')
 <?php
-     $closetime=strtotime("2015:04:06 19:45:31"); 
+     $closetime=strtotime("6 April 2015"); 
      $curtime = time();
      //echo $closetime."  ".$curtime."\n";
 ?>
