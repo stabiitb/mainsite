@@ -13,6 +13,11 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
+							@if (Auth::check())
+								@if (Auth::User()->admin==1)
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>		
+							 @endif
+							@endif 		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">ITSP 2015 Abstract Submission Link &nbsp</a> </li>
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li>
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
