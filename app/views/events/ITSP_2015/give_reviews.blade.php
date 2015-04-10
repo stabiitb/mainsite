@@ -24,6 +24,10 @@
 		<td>Selected</td>
 		<td><input type="radio" name="status" value="Selected" ></td>
 	</tr>
+	<tr>
+		<td>Review and Resubmit</td>
+		<td><input type="radio" name="status" value="Review and Resubmit" ></td>
+	</tr>	
 	</table>
 	Alloted Slot
 	<table class="table">
