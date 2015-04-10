@@ -20,6 +20,11 @@ class HomeController extends BaseController {
 		return View::make('mainpage');
 	}
 
+	public function links()
+	{
+		return View::make('linkpage');
+	}
+	
 	public function aeromodelling_club($page="about")
 	{
 		if($page=='about')
