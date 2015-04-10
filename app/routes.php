@@ -20,6 +20,8 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review')); 
 });
 
+Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
+
 
 Route::get('test','ITSPController@test');
 Route::group(array('prefix'=>'PoR'),function()

@@ -4,7 +4,7 @@
 	<head>
 		<!-- Meta -->
 		@yield('meta')
-		
+		<meta name="google-site-verification" content="U37UkrwWrB9z8bjUiI4i6-iss8-hQom2u2j5mlSs9v8" />
 		<title>STAB | IITB</title>
 		
 		<!-- Bootstrap Core CSS -->
