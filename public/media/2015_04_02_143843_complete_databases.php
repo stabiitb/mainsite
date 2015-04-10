@@ -13,9 +13,9 @@ class CompleteDatabases extends Migration {
 	public function up()
 	{
 
-		Schema::dropIfExists('Users');
 		Schema::dropIfExists('techexpo_users');
 		Schema::dropIfExists('ITSP');
+		Schema::dropIfExists('Users');
 		Schema::dropIfExists('smartcampus_users');
 		Schema::dropIfExists('CMOS_challenge_users');
 		Schema::create('Users', function(Blueprint $table)

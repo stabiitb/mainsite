@@ -103,10 +103,21 @@ class ITSPController extends \BaseController {
 		if(Input::has('team_id')){
 			$team_id=Input::get('team_id');
 			$review=Input::get('review');
+			$alloted_slot=Input::get('alloted_slot');
+			$status=Input::get('status');
 			$user=ITSP::find($team_id);
-			if($user!=NULL){
+			if($user!=NULL && $review!="" && $status!="" ){
+				if($alloted_slot==""){
+					if($status=="Selected"){
+						$messageBag = new MessageBag;
+						$messageBag->add('message',"Details not complete. Dekh k bhara kar be :p" );
+						return Redirect::back()->with('messages', $messageBag);
+					}
+				}
 				$user->reviewed=1;
 				$user->reviews=$review;
+				$user->alloted_slot=$alloted_slot;
+				$user->status=$status;
 				$user->save();
 				$messageBag = new MessageBag;
 				$messageBag->add('message',"Reviewed Successfully" );
@@ -114,7 +125,7 @@ class ITSPController extends \BaseController {
 			}
 			else{
 				$messageBag = new MessageBag;
-				$messageBag->add('message',"Wrong team Id. Dekh k bhara kar be :p" );
+				$messageBag->add('message',"Details not complete. Dekh k bhara kar be :p" );
 				return Redirect::back()->with('messages', $messageBag);
 			}
 		}
@@ -128,7 +139,7 @@ class ITSPController extends \BaseController {
 					if((ITSP::find(Input::get('team_id'))->user_id==Auth::User()->id)||(Auth::User()->admin==1)){
 						if(ITSP::find(Input::get('team_id'))->reviewed==1){
 							$review=ITSP::find(Input::get('team_id'))->reviews;
-							View::share('review',$review);
+							View::share('user',ITSP::find(Input::get('team_id')));
 							return View::make('events.ITSP_2015.final_reviews');
 						}
 						else

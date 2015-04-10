@@ -5,9 +5,15 @@
 Team Id<input name="team_id" type="text">
 <input type="submit">
 </form>
-@if(isset($review))
+@if(isset($user))
+	<br>
+	<strong>Status :</strong> {{$user->status}}
+	<br>
+	<strong>Alloted Slot :</strong> {{$user->alloted_slot}}
+	<br>
+	<strong>Reviews:</strong> {{$user->reviews}}
+@elseif(isset($review))
 <br>
-<h2>Reviews</h2>
 {{$review}}
 
 @endif

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddMentorAndAdminToUsers extends Migration {
+class AddAllotedSlotAndStatus extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,11 +13,13 @@ class AddMentorAndAdminToUsers extends Migration {
 	public function up()
 	{
 		//
-		Schema::table('Users', function($table)
+		Schema::table('ITSP', function($table)
 		{
-    		$table->integer('admin')->default(0);
-    		$table->integer('mentor')->default(0);
+    		$table->string('status')->nullable();
+    		$table->string('alloted_slot')->default('0');
 		});
+
+
 	}
 
 	/**

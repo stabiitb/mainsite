@@ -6,7 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AddMentorAndAdminToUsers' => $baseDir . '/app/database/migrations/2015_04_04_125928_add_mentor_and_admin_to_users.php',
+    'AddAllotedSlotAndStatus' => $baseDir . '/app/database/migrations/2015_04_10_181054_add_alloted_slot_and_status.php',
+    'AddMentorAndAdmin' => $baseDir . '/app/database/migrations/2015_04_10_182111_add_mentor_and_admin.php',
     'AppsController' => $baseDir . '/app/controllers/AppsController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
