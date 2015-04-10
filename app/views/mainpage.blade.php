@@ -16,7 +16,7 @@
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>
-							 <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li>
+							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
 							 @endif
 							@endif 		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">ITSP 2015 Abstract Submission Link &nbsp</a> </li>
