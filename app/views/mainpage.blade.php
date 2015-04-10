@@ -15,13 +15,13 @@
 							<ul>
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
-<<<<<<< HEAD
+
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		
-=======
+
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>
 							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
->>>>>>> 9661c0f3bf91a4f1be9f1cc780d5844ee8743204
+
 							 @endif
 							@endif 		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">ITSP 2015 Abstract Submission Link &nbsp</a> </li>
