@@ -93,6 +93,69 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.form');
 	}
 
+	public function give_reviews()
+	{
+		return View::make('events.ITSP_2015.give_reviews');
+	}
+
+	public function take_reviews()
+	{	
+		if(Input::has('team_id')){
+			$team_id=Input::get('team_id');
+			$review=Input::get('review');
+			$user=ITSP::find($team_id);
+			if($user!=NULL){
+				$user->reviewed=1;
+				$user->reviews=$review;
+				$user->save();
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Reviewed Successfully" );
+				return Redirect::back()->with('messages', $messageBag);
+			}
+			else{
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Wrong team Id. Dekh k bhara kar be :p" );
+				return Redirect::back()->with('messages', $messageBag);
+			}
+		}
+			return View::make('events.ITSP_2015.give_reviews');
+	}
+
+	public function final_reviews()
+	{	if(Auth::check()){
+			if(Input::has('team_id')){
+				if(ITSP::find(Input::get('team_id'))!=NULL){
+					if((ITSP::find(Input::get('team_id'))->user_id==Auth::User()->id)||(Auth::User()->admin==1)){
+						if(ITSP::find(Input::get('team_id'))->reviewed==1){
+							$review=ITSP::find(Input::get('team_id'))->reviews;
+							View::share('review',$review);
+							return View::make('events.ITSP_2015.final_reviews');
+						}
+						else
+						{	
+							View::share('review','You are yet to be reviewed');
+							return View::make('events.ITSP_2015.final_reviews');
+						}
+					}
+					else{
+							View::share('review','Well, Login with the account who submitted this abstract. Wrong team id and user combination');
+							return View::make('events.ITSP_2015.final_reviews');
+					}
+				}
+				else{
+						View::share('review','team does not exist');
+						return View::make('events.ITSP_2015.final_reviews');
+				}
+
+			}
+			return View::make('events.ITSP_2015.final_reviews');
+		}
+		else{
+			View::share('error','Login to see your abstract review');
+			return View::make('events.ITSP_2015.final_reviews');
+		}
+	}
+	
 	public function index()
 	{
 		return View::make('events.ITSP_2015.index');

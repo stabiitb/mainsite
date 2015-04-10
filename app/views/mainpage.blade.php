@@ -16,10 +16,11 @@
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>		
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		
 							 @endif
 							@endif 		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.abstract')}}" class="btn">ITSP 2015 Abstract Submission Link &nbsp</a> </li>
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li>
+							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>
 													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
