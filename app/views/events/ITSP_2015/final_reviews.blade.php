@@ -14,6 +14,7 @@ Team Id<input name="team_id" type="text">
 	<strong>Reviews:</strong> {{$user->reviews}}
 @elseif(isset($review))
 <br>
+<strong>Review:</strong>
 {{$review}}
 
 @endif

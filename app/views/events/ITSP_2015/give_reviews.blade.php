@@ -14,7 +14,7 @@
     <h4>Id is different from User_id or team_id. It is the first field in the the abstract table.</h4>	
 	<form method="post" id="review_form" action="{{URL::route('events.ITSP_2015.take_reviews')}}">
 	Id<input type="text" name="team_id" >
-	Status
+	<!-- Status
 	<table class="table">
 	<tr>
 		<td>Rejected</td>
@@ -37,7 +37,7 @@
 	<td>Slot 2</td>
 	<td><input type="radio" name="alloted_slot" value="2" ></td>
 	</tr>
-	</table>
+	</table> -->
 	Review<textarea  name="review" form="review_form" rows="4"></textarea>
 	<input type="submit">
 	</form>
