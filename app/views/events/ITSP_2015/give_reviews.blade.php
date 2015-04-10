@@ -11,8 +11,9 @@
             </div>
         </div>
     	@endif
+    <h3>Id is different from User_id or team_id. It is the first field in the the abstract table.</h3>	
 	<form method="post" id="review_form" action="{{URL::route('events.ITSP_2015.take_reviews')}}">
-	Team Id<input type="text" name="team_id" >
+	Id<input type="text" name="team_id" >
 	Review<textarea  name="review" form="review_form" rows="4"></textarea>
 	<input type="submit">
 	</form>
