@@ -300,8 +300,12 @@ class ITSPController extends \BaseController {
 					global $users;
 					$users=ITSP::where('club','LIKE','%model%')->get();
 				}
+				else if($club=="all"){
+					global $users;
+					$users=ITSP::get();
+				}
 				else {
-					$clubs =array('wncc', 'krittika', 'electronics', 'techgsr', 'robotics', 'aero', 'mnp', 'technovation');
+					$clubs =array('all','wncc', 'krittika', 'electronics', 'techgsr', 'robotics', 'aero', 'mnp', 'technovation');
 					return View::make('events.ITSP_2015.review_error',compact('clubs'));		
 				}			
 					//var_dump($users);
