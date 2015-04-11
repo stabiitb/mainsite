@@ -168,6 +168,59 @@ class ITSPController extends \BaseController {
 		}
 	}
 	
+	public function resubmit_abstract()
+	{	if(!Auth::check()){
+			return Redirect::to(URL::route('events.ITSP_2015.final_reviews'));
+		}
+		$id=Input::get('id');
+		$abs=Input::file('abs');
+
+
+
+		if(!Input::hasFile('abs') || $id==""){
+
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Error in form. Fill up all the required fields." );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();
+		}
+
+		$team=ITSP::find($id);
+		if($team==NULL){
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Team Not found." );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();			
+
+		}
+		if($team->user_id==Auth::User()->id){
+			$extension = $abs->getClientOriginalExtension();
+			if($extension=="pdf"){
+
+			$dest=public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract/".$team->club;
+			$fileName=$team->team_name."_".$team->project_name."_".$team->id.".pdf";
+			$destName=$dest."/".$fileName;
+			$abs->move($dest, $fileName);
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Abstract changed" );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();
+			}
+			else{
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Submit abstract in pdf format" );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();
+			}			
+		}
+		else{
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Login with the user who submitted the abstract earlier." );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();			
+
+		}
+	}
 	public function index()
 	{
 		return View::make('events.ITSP_2015.index');
@@ -285,7 +338,7 @@ class ITSPController extends \BaseController {
 
 			$messageBag = new MessageBag;
 			$messageBag->add('message',"Error in form. Fill up all the required fields." );
-			echo $team_name." ".$project_name." ".$club." ".$slot." ".$t1_name." ".$t1_roll." ".$t1_contact." ".$t1_hostel." ".$t1_dept."\n";
+			//echo $team_name." ".$project_name." ".$club." ".$slot." ".$t1_name." ".$t1_roll." ".$t1_contact." ".$t1_hostel." ".$t1_dept."\n";
 
 			return Redirect::back()->with('messages', $messageBag)->withInput();
 		}

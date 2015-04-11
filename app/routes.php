@@ -16,6 +16,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('discuss',array('as'=>'events.ITSP_2015.discuss','uses'=>'ITSPController@discuss'));
     Route::get('give_reviews',array('as'=>'events.ITSP_2015.give_reviews','uses'=>'ITSPController@give_reviews'));
     Route::any('take_reviews',array('as'=>'events.ITSP_2015.take_reviews','uses'=>'ITSPController@take_reviews'));
+    Route::any('resubmit_abstract',array('as'=>'events.ITSP_2015.resubmit_abstract','uses'=>'ITSPController@resubmit_abstract'));
     Route::get('final_reviews',array('as'=>'events.ITSP_2015.final_reviews','uses'=>'ITSPController@final_reviews'));
     Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review')); 
 });
