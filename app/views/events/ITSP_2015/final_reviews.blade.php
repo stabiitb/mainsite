@@ -31,9 +31,9 @@ Team Id<input name="team_id" type="text">
     @endif
 <h4>If you want to resubmit your abstract, fill this form with your team id and the new abstract and <i> inform the respective Club manager</i>.</h4>
 <form method="post" action="{{URL::route('events.ITSP_2015.resubmit_abstract')}}" enctype="multipart/form-data">
-<input name='id' type='text'>
-<input name='abs' type='file'>
-<input type="submit">
+Team Id <input name='id' type='text'>
+Abstract <input name='abs' type='file'>
+<br><input type="submit">
 </form>
 @else
 {{$error}}
