@@ -1,6 +1,8 @@
 @extends('events.ITSP_2015.layout')
 @section('inner-content')
 @if(Auth::check())
+<h3>Enter your team Id to see the review</h3>
+<h3>Team Id is your ITSP team id. Dont confuse it with your Stab ID</h3>
 <form method="get" action="{{URL::route('events.ITSP_2015.final_reviews')}}">
 Team Id<input name="team_id" type="text">
 <input type="submit">
