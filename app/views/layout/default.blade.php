@@ -147,10 +147,11 @@
 										<li><a href="{{URL::Route('MnP')}}">Math and Physics Club</a></li>
 										<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
 										<li><a href="{{URL::Route('wncc')}}">Web and Coding club</a></li>
-										<li><a href="http://www.stab-iitb.org/technovation">Technovation</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
+								<li><a href="http://www.stab-iitb.org/technovation">Technovation</a></li>
+
 
 								 <li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
