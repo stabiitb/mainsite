@@ -15,7 +15,6 @@ class AddingItspFieldInUserProfile2 extends Migration {
 		//
 		Schema::table('Users', function($table)
 		{	
-			$table->dropColumn('itsp');
   			$table->integer('itsp')->unsigned()->nullable();
 			$table->foreign('itsp')->references('id')->on('ITSP');
 		});
