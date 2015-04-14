@@ -46,6 +46,7 @@
 						<br>
 						@if($team->completed==NULL)
 						<h4 style="color:blue">Enter details of other team members to add them to the team</h4>
+						<h4 style="color:blue">You can add team members only once, so first confirm about all the Members Stab IDs.</h4>
 						<form action="{{URL::Route('events.ITSP_2015.team_update')}}" method="get">
 							
 							<input name="number" type="text" placeholder="Total Members in team (Max 4 Allowed)">
