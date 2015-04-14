@@ -96,6 +96,7 @@ class ITSPController extends \BaseController {
 	{
 		$team=ITSP::find(Auth::User()->itsp);
 		$number=Input::get('number');
+		$user_id1=Auth::User()->id;
 		$user_id2=Input::get('id2');
 		$user_id3=Input::get('id3');
 		$user_id4=Input::get('id4');		
@@ -106,6 +107,11 @@ class ITSPController extends \BaseController {
 		}
 		$team->number=$number;
 			if($number==1){
+			if(User::find($user_id1)->facad==NULL){
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
+				return Redirect::back()->with('messages', $messageBag);
+			}	
 			$team->completed=1;
 			$team->save();
 			$messageBag = new MessageBag;
@@ -119,7 +125,7 @@ class ITSPController extends \BaseController {
 			return Redirect::back()->with('messages', $messageBag);	
 			}
 			$team->user_id2=Input::get('id2');
-			if(User::find($user_id2)->facad==NULL){
+			if(User::find($user_id1)->facad==NULL||User::find($user_id2)->facad==NULL){
 				$messageBag = new MessageBag;
 				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
 				return Redirect::back()->with('messages', $messageBag);
@@ -139,7 +145,7 @@ class ITSPController extends \BaseController {
 			$messageBag->add('message','Members not found. Reload to refill the form' );
 			return Redirect::back()->with('messages', $messageBag);	
 			}
-			if(User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL){
+			if(User::find($user_id1)->facad==NULL||User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL){
 				$messageBag = new MessageBag;
 				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
 				return Redirect::back()->with('messages', $messageBag);
@@ -162,7 +168,7 @@ class ITSPController extends \BaseController {
 			$messageBag->add('message','Members not found. Reload to refill the form' );
 			return Redirect::back()->with('messages', $messageBag);	
 			}
-			if(User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL||User::find($user_id4)->facad==NULL){
+			if(User::find($user_id1)->facad==NULL||User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL||User::find($user_id4)->facad==NULL){
 				$messageBag = new MessageBag;
 				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
 				return Redirect::back()->with('messages', $messageBag);
