@@ -42,16 +42,16 @@
 							<form action="{{URL::Route('user.update')}}" method="post">
 							<input name="name" type="text" placeholder="Full Name">
 							<input name="roll_no" type="text" placeholder="IITB Roll Number">
-							<input name="hostel" type="text" placeholder="Hostel Allotted for the next year">
+							<input name="hostel" type="text" placeholder="Hostel Allotted for the next year (Give only hostel number eg. if your hostel is 6 , write only '6')">
 							<input name="dept" type="text" placeholder="Department(Please use full dept name, dont use short form like meta,chem,cse)">
 							<input name="contact" type="text" placeholder="Phone Number">
 							<input name="facad" type="text" placeholder="Name of Faculty Advisor (Full name of facad)">
 							<h4 style="color:red">Use camp.iitb.ac.in to find the ldap id of your facad.</h4> 
-							<input name="facad_ldap" type="text" placeholder="Ldap Id of Faculty Advisor">
+							<input name="facad_ldap" type="text" placeholder="Ldap Id of Faculty Advisor (Only ldap id, do not include '@iitb.ac.in'">
 							<input type="submit" value="Update Profile">
 							</form>				
 							<br>
-							<br>			
+							<br>
 						GPO email : {{$user->ldap_email}}
 						@else
 							<table class="table">
@@ -96,6 +96,24 @@
 								<td>{{$user->facad_ldap}}</td>
 							</tr>	
 							</table>
+							<br>
+							<br>
+							@if($user->room_retained==0)
+								<form action="{{URL::route('events.ITSP_2015.room_retained')}}" method="get">
+								<table>
+								<tr>
+								<td>Have your request been approved??
+								<input name="room_retained" type="checkbox" value="yes">
+								</td>
+								</tr>
+								<tr>
+								<td><input type="submit" value="My room is confirmed"></td>
+								</tr>
+								</table>
+								</form>
+							@else
+							<h4>Your room has been retained</h4>
+							@endif
 						@endif
 						</div>
 					</div><!-- ./row -->

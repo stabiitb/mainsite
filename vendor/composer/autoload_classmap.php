@@ -8,8 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddAllotedSlotAndStatus' => $baseDir . '/app/database/migrations/2015_04_10_181054_add_alloted_slot_and_status.php',
     'AddedIdsFieldsInItsp' => $baseDir . '/app/database/migrations/2015_04_14_014429_added_ids_fields_in_itsp.php',
-    'AddingItspFieldInUserProfile1' => $baseDir . '/app/database/migrations/2015_04_13_192039_adding_itsp_field_in_user_profile1.php',
     'AddingItspFieldInUserProfile2' => $baseDir . '/app/database/migrations/2015_04_13_193844_adding_itsp_field_in_user_profile2.php',
+    'AddingRoomFieldInUser' => $baseDir . '/app/database/migrations/2015_04_14_131435_adding_room_field_in_User.php',
     'AddingSomeMoreFieldsInUserProfile' => $baseDir . '/app/database/migrations/2015_04_13_212430_adding_some_more_fields_in_user_profile.php',
     'AppsController' => $baseDir . '/app/controllers/AppsController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',

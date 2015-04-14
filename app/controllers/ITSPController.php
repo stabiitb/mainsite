@@ -185,9 +185,18 @@ class ITSPController extends \BaseController {
 		
 
 			$messageBag = new MessageBag;
-						$messageBag->add('message','members added successfully' );
+						$messageBags->add('message','members added successfully' );
 						return Redirect::back()->with('messages', $messageBag);
+	}
+
+	public function room_retained(){
+		if(Input::get('room_retained')=="yes"){
+			Auth::User()->room_retained=1;
+			Auth::User()->save();
 		}
+		return Redirect::back();
+	}
+
 	public function team()
 	{	
 		if(!Auth::check()){
