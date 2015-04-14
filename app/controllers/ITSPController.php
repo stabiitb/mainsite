@@ -119,6 +119,11 @@ class ITSPController extends \BaseController {
 			return Redirect::back()->with('messages', $messageBag);	
 			}
 			$team->user_id2=Input::get('id2');
+			if(User::find($user_id2)->facad==NULL){
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
+				return Redirect::back()->with('messages', $messageBag);
+			}
 			User::where('id','=',Input::get('id2'))
 				->update(array('itsp' => $team->id));
 
@@ -133,6 +138,11 @@ class ITSPController extends \BaseController {
 			$messageBag = new MessageBag;
 			$messageBag->add('message','Members not found. Reload to refill the form' );
 			return Redirect::back()->with('messages', $messageBag);	
+			}
+			if(User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL){
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
+				return Redirect::back()->with('messages', $messageBag);
 			}
 			User::where('id','=',Input::get('id2'))
 			->update(array('itsp' => $team->id));
@@ -152,6 +162,11 @@ class ITSPController extends \BaseController {
 			$messageBag->add('message','Members not found. Reload to refill the form' );
 			return Redirect::back()->with('messages', $messageBag);	
 			}
+			if(User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL||User::find($user_id4)->facad==NULL){
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
+				return Redirect::back()->with('messages', $messageBag);
+			}			
 			User::where('id','=',Input::get('id2'))
 			->update(array('itsp' => $team->id));
 			User::where('id','=',Input::get('id3'))
