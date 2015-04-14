@@ -260,7 +260,6 @@ class ITSPController extends \BaseController {
 			while(! feof($file))
 		  {
 		  $csv=fgetcsv($file);
-		  print($csv[1]);
 		  $team=ITSP::find($csv[1]);
 		  try{
 			  $team->alloted_slot=$csv[4];
@@ -268,7 +267,7 @@ class ITSPController extends \BaseController {
 			  $team->save();
 			}
 			catch(Exception $e){
-				return $csv[1]." ".$csv[4];
+				print( $csv[1]." ".$csv[4]);
 			}
 		  }
 		  fclose($file);	
@@ -276,7 +275,6 @@ class ITSPController extends \BaseController {
 			while(! feof($file))
 		  {
 		  $csv=fgetcsv($file);
-		  print($csv[1]);
 		  $team=ITSP::find($csv[1]);
 		  try{
 			  $team->alloted_slot=$csv[4];
@@ -284,7 +282,7 @@ class ITSPController extends \BaseController {
 			  $team->save();
 			}
 			catch(Exception $e){
-				return $csv[1]." ".$csv[4];
+				print( $csv[1]." ".$csv[4]);
 			}
 		  }
 		fclose($file);
