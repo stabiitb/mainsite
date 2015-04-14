@@ -92,10 +92,167 @@ class ITSPController extends \BaseController {
 	{
 		return View::make('events.ITSP_2015.form');
 	}
+	public function team_update()
+	{
+		$team=ITSP::find(Auth::User()->itsp);
+		$number=Input::get('number');
+		$user_id2=Input::get('id2');
+		$user_id3=Input::get('id3');
+		$user_id4=Input::get('id4');		
+		if($number > 4 or $number<0){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','error in team size detail. Reload to refill the form' );
+			return Redirect::back()->with('messages', $messageBag);			
+		}
+		$team->number=$number;
+			if($number==1){
+			$team->completed=1;
+			$team->save();
+			$messageBag = new MessageBag;
+			$messageBag->add('message','members added successfully' );
+			return Redirect::back()->with('messages', $messageBag);										
+		}
+		if($number==2){
+			if(User::find($user_id2)==NULL){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Members not found. Reload to refill the form' );
+			return Redirect::back()->with('messages', $messageBag);	
+			}
+			$team->user_id2=Input::get('id2');
+			User::where('id','=',Input::get('id2'))
+				->update(array('itsp' => $team->id));
+
+			$team->completed=1;
+			$team->save();
+			$messageBag = new MessageBag;
+			$messageBag->add('message','members added successfully' );
+			return Redirect::back()->with('messages', $messageBag);				
+		}
+		if($number==3){
+			if(User::find($user_id2)==NULL||User::find($user_id3)==NULL){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Members not found. Reload to refill the form' );
+			return Redirect::back()->with('messages', $messageBag);	
+			}
+			User::where('id','=',Input::get('id2'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id3'))
+			->update(array('itsp' => $team->id));
+			$team->user_id2=Input::get('id2');
+			$team->user_id3=Input::get('id3');
+			$team->completed=1;
+			$team->save();
+			$messageBag = new MessageBag;
+			$messageBag->add('message','members added successfully' );
+			return Redirect::back()->with('messages', $messageBag);				
+		}
+		if($number==4){
+			if(User::find($user_id2)==NULL||User::find($user_id3)==NULL||User::find($user_id4)==NULL){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Members not found. Reload to refill the form' );
+			return Redirect::back()->with('messages', $messageBag);	
+			}
+			User::where('id','=',Input::get('id2'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id3'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id4'))
+			->update(array('itsp' => $team->id));
+			$team->user_id2=Input::get('id2');
+			$team->user_id3=Input::get('id3');
+			$team->user_id4=Input::get('id4');
+			$team->completed=1;
+			$team->save();
+			$messageBag = new MessageBag;
+			$messageBag->add('message','members added successfully' );
+			return Redirect::back()->with('messages', $messageBag);					
+		}
+		
+
+			$messageBag = new MessageBag;
+						$messageBag->add('message','members added successfully' );
+						return Redirect::back()->with('messages', $messageBag);
+		}
+	public function team()
+	{	
+		if(!Auth::check()){
+			return Redirect::back();
+		}
+		if(Auth::User()->itsp==0){
+			View::share('user1',Auth::User());
+		}
+		else{
+			$team=ITSP::find(Auth::User()->itsp);
+			$user1=Auth::User();
+			$user2=User::find($team->user_id2);
+			$user3=User::find($team->user_id3);
+			$user4=User::find($team->user_id4);
+			View::share('user1',$user1);
+			View::share('team',$team);
+			View::share('user2',$user2);
+			View::share('user3',$user3);
+			View::share('user4',$user4);
+		}
+	
+		return View::make('events.ITSP_2015.team');
+	}
+
+	public function team_verify()
+	{	
+		try{
+			if(Input::has('team_id')){
+				$team_id=Input::get('team_id');
+				$team=ITSP::find($team_id);
+				if($team!=NULL){
+					if($team->user_id==Auth::User()->id){
+						if($team->status=="Selected"){
+							Auth::User()->itsp=$team_id;
+							Auth::User()->save();
+							$messageBag = new MessageBag;
+							$messageBag->add('message','Team Added successfully' );
+							return Redirect::back()->with('messages', $messageBag);
+						}	
+						$messageBag = new MessageBag;
+						$messageBag->add('message',"Team not selected for Project. Reload to refill the form" );
+						return Redirect::back()->with('messages', $messageBag);
+					}
+					$messageBag = new MessageBag;
+					$messageBag->add('message',"Fill details with the user who submitted the abstract. Reload to refill the form" );
+					return Redirect::back()->with('messages', $messageBag);					
+				}
+			}
+		}
+		catch(Exception $e) {
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Some error found' );
+				return Redirect::back()->with('messages', $messageBag);
+		}
+
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Team Not found" );
+				return Redirect::back()->with('messages', $messageBag);
+
+	}
 
 	public function give_reviews()
 	{
 		return View::make('events.ITSP_2015.give_reviews');
+	}
+
+	public function update_slots()
+	{
+		$file = fopen(public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/Final Slot allotment - Slot 3.csv","r");
+			while(! feof($file))
+		  {
+		  $csv=fgetcsv($file);
+		  print($csv[1]);
+		  $team=ITSP::find($csv[1]);
+		  $team->alloted_slot=$csv[4];
+		  $team->status="Selected";
+		  $team->save();
+		  }
+
+		fclose($file);
 	}
 
 	public function take_reviews()

@@ -9,6 +9,20 @@ class User extends Eloquent implements UserInterface , RemindableInterface{
 	use UserTrait , RemindableTrait;
 
 	protected $table = 'Users';
+
+
+	public function saveFromInput(){
+
+		$this->name = Input::get('name');
+		$this->roll_no = Input::get('roll_no');
+		$this->department = Input::get('dept');
+		$this->contact = Input::get('contact');
+		$this->facad = Input::get('facad');
+		$this->facad_ldap = Input::get('facad_ldap');
+		$this->hostel = Input::get('hostel');
+		$this->room = Input::get('room');
+	}
+
 /*
 
 	public function saveFromInput($inp,$url){

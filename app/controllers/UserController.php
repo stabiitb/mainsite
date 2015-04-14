@@ -140,4 +140,31 @@ class UserController extends \BaseController {
 		}
 		
 	}
+
+	public function update()
+	{
+		
+		if(Auth::check()){
+			$user=Auth::User();
+			if(Input::get('name') !="" && Input::get('roll_no') !="" && Input::get('dept') !="" && Input::get('hostel') !="" && Input::get('contact') !="" && Input::get('facad') !="" && Input::get('facad_ldap') !=""){
+
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Form filled successfully." );
+				$user->saveFromInput(Input::all());
+				$user->save();
+				return Redirect::back()->with('messages',$messageBag);		
+				}		
+			else{
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Error in details." );
+				return Redirect::back()->with('messages',$messageBag);
+			}
+		}
+		else{
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Error in details." );
+			return Redirect::back()->with('messages',$messageBag);
+		}	
+	}
+
 }

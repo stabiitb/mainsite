@@ -7,6 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddAllotedSlotAndStatus' => $baseDir . '/app/database/migrations/2015_04_10_181054_add_alloted_slot_and_status.php',
+    'AddedIdsFieldsInItsp' => $baseDir . '/app/database/migrations/2015_04_14_014429_added_ids_fields_in_itsp.php',
+    'AddingItspFieldInUserProfile1' => $baseDir . '/app/database/migrations/2015_04_13_192039_adding_itsp_field_in_user_profile1.php',
+    'AddingItspFieldInUserProfile2' => $baseDir . '/app/database/migrations/2015_04_13_193844_adding_itsp_field_in_user_profile2.php',
+    'AddingSomeMoreFieldsInUserProfile' => $baseDir . '/app/database/migrations/2015_04_13_212430_adding_some_more_fields_in_user_profile.php',
     'AppsController' => $baseDir . '/app/controllers/AppsController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
@@ -31,6 +35,7 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+    'CompleteDatabases' => $baseDir . '/app/database/migrations/2015_04_02_143843_complete_databases.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',

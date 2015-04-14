@@ -19,6 +19,10 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::any('resubmit_abstract',array('as'=>'events.ITSP_2015.resubmit_abstract','uses'=>'ITSPController@resubmit_abstract'));
     Route::get('final_reviews',array('as'=>'events.ITSP_2015.final_reviews','uses'=>'ITSPController@final_reviews'));
     Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review')); 
+    Route::get('qwsaqwasqwas/updating_data_base',array('as'=>'events.ITSP_2015.updateslots','uses'=>'ITSPController@update_slots'));
+    Route::get('team',array('as'=>'events.ITSP_2015.team','uses'=>'ITSPController@team'));
+    Route::get('team_verify',array('as'=>'events.ITSP_2015.team_verify','uses'=>'ITSPController@team_verify'));
+    Route::get('team_update',array('as'=>'events.ITSP_2015.team_update','uses'=>'ITSPController@team_update'));
 });
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
@@ -123,7 +127,7 @@ Route::any('logout',array('as'=>'logout' ,'before'=>'login', 'uses' => 'UserCont
 Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'UserController@profile'));
 Route::get('fblogin','UserController@fblogin');
 Route::post('ldap_verify',array('as'=>'user.verify','before'=>'login','uses'=>'UserController@verify'));
-
+Route::post('profile_update',array('as'=>'user.update','before'=>'login','uses'=>'UserController@update'));
 
 Route::get('sitemap', function(){
 
