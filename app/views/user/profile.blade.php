@@ -38,6 +38,7 @@
 							</form>
 						@elseif($user->facad==NULL)
 							<h3>Only for students applying for ITSP</h3>
+							<h3 style="color:red">Dont include @iitb.ac.in in ldap id of your facad</h3>
 							<h3>Fill this form form positively by 14th Nov. This is very important for room retention</h3>
 							<form action="{{URL::Route('user.update')}}" method="post">
 							<input name="name" type="text" placeholder="Full Name">
