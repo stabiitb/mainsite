@@ -262,20 +262,30 @@ class ITSPController extends \BaseController {
 		  $csv=fgetcsv($file);
 		  print($csv[1]);
 		  $team=ITSP::find($csv[1]);
-		  $team->alloted_slot=$csv[4];
-		  $team->status="Selected";
-		  $team->save();
+		  try{
+			  $team->alloted_slot=$csv[4];
+			  $team->status="Selected";
+			  $team->save();
+			}
+			catch{
+				return $csv[1]." ".$csv[4];
+			}
 		  }
-		  fclose($file);
+		  fclose($file);	
 		$file = fopen(public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/Final Slot allotment - Slot 2.csv","r");
 			while(! feof($file))
 		  {
 		  $csv=fgetcsv($file);
 		  print($csv[1]);
 		  $team=ITSP::find($csv[1]);
-		  $team->alloted_slot=$csv[4];
-		  $team->status="Selected";
-		  $team->save();
+		  try{
+			  $team->alloted_slot=$csv[4];
+			  $team->status="Selected";
+			  $team->save();
+			}
+			catch{
+				return $csv[1]." ".$csv[4];
+			}
 		  }
 		fclose($file);
 	}
