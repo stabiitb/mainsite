@@ -267,7 +267,7 @@ class ITSPController extends \BaseController {
 			  $team->status="Selected";
 			  $team->save();
 			}
-			catch{
+			catch(Exception $e){
 				return $csv[1]." ".$csv[4];
 			}
 		  }
@@ -283,7 +283,7 @@ class ITSPController extends \BaseController {
 			  $team->status="Selected";
 			  $team->save();
 			}
-			catch{
+			catch(Exception $e){
 				return $csv[1]." ".$csv[4];
 			}
 		  }
