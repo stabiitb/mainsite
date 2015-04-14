@@ -96,7 +96,7 @@ class ITSPController extends \BaseController {
 	{
 		$team=ITSP::find(Auth::User()->itsp);
 		$number=Input::get('number');
-		$user_id1=Auth::User()->idate(format)	;
+		$user_id1=Auth::User()->id;
 		$user_id2=Input::get('id2');
 		$user_id3=Input::get('id3');
 		$user_id4=Input::get('id4');
