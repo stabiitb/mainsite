@@ -54,6 +54,9 @@
 							<input name="id2" type="text" placeholder="Stab Id of member 2">
 							<input name="id3" type="text" placeholder="Stab Id of member 3">
 							<input name="id4" type="text" placeholder="Stab Id of member 4">
+							@if($user1->id==213)
+							<input name="id5" type="text" placeholder="Stab Id of member 5 (especially for your team)">
+							@endif
 							<input type="submit" value="Submit">
 							</form>
 						@else
@@ -65,6 +68,7 @@
 								@if(isset($user2))<th>Team Member 2</th>@endif
 								@if(isset($user3))<th>Team Member 3</th>@endif
 								@if(isset($user4))<th>Team Member 4</th>@endif
+								@if(isset($user5))<th>Team Member 5</th>@endif
 							</tr>
 							<tr>
 								<td><b>Name</b></td>
@@ -72,6 +76,7 @@
 								@if(isset($user2))<td>{{$user2->name}}</td>@endif
 								@if(isset($user3))<td>{{$user3->name}}</td>@endif
 								@if(isset($user4))<td>{{$user4->name}}</td>@endif
+								@if(isset($user5))<td>{{$user5->name}}</td>@endif
 							</tr>
 						</table>
 						@endif

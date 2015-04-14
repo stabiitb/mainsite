@@ -99,11 +99,15 @@ class ITSPController extends \BaseController {
 		$user_id1=Auth::User()->idate(format)	;
 		$user_id2=Input::get('id2');
 		$user_id3=Input::get('id3');
-		$user_id4=Input::get('id4');		
-		if($number > 4 or $number<0){
+		$user_id4=Input::get('id4');
+
+		if($number >4 or $number<0){
+			if($number==5 && $user_id1==213){}
+			else{	
 			$messageBag = new MessageBag;
 			$messageBag->add('message','error in team size detail. Reload to refill the form' );
-			return Redirect::back()->with('messages', $messageBag);			
+			return Redirect::back()->with('messages', $messageBag);	
+			}		
 		}
 		$team->number=$number;
 			if($number==1){
@@ -188,7 +192,35 @@ class ITSPController extends \BaseController {
 			$messageBag->add('message','members added successfully' );
 			return Redirect::back()->with('messages', $messageBag);					
 		}
-		
+		if($number==5){
+			if(User::find($user_id2)==NULL||User::find($user_id3)==NULL||User::find($user_id4)==NULL||User::find($user_id5)==NULL){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Members not found. Reload to refill the form' );
+			return Redirect::back()->with('messages', $messageBag);	
+			}
+			if(User::find($user_id1)->facad==NULL||User::find($user_id2)->facad==NULL||User::find($user_id3)->facad==NULL||User::find($user_id4)->facad==NULL){
+				$messageBag = new MessageBag;
+				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
+				return Redirect::back()->with('messages', $messageBag);
+			}			
+			User::where('id','=',Input::get('id2'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id3'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id4'))
+			->update(array('itsp' => $team->id));
+			User::where('id','=',Input::get('id5'))
+			->update(array('itsp' => $team->id));
+			$team->user_id2=Input::get('id2');
+			$team->user_id3=Input::get('id3');
+			$team->user_id4=Input::get('id4');
+			$team->user_id5=Input::get('id5');
+			$team->completed=1;
+			$team->save();
+			$messageBag = new MessageBag;
+			$messageBag->add('message','members added successfully' );
+			return Redirect::back()->with('messages', $messageBag);					
+		}		
 
 			$messageBag = new MessageBag;
 						$messageBags->add('message','members added successfully' );
@@ -217,11 +249,13 @@ class ITSPController extends \BaseController {
 			$user2=User::find($team->user_id2);
 			$user3=User::find($team->user_id3);
 			$user4=User::find($team->user_id4);
+			$user5=User::find($team->user_id5);
 			View::share('user1',$user1);
 			View::share('team',$team);
 			View::share('user2',$user2);
 			View::share('user3',$user3);
 			View::share('user4',$user4);
+			View::share('user5',$user5);
 		}
 	
 		return View::make('events.ITSP_2015.team');
