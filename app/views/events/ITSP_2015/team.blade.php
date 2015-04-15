@@ -60,6 +60,8 @@
 							<input type="submit" value="Submit">
 							</form>
 						@else
+
+						<a href="{{URL::route('events.ITSP_2015.edit_team')}}"><u><i>Edit your team</i></u></a>
 						<h2 align="center">Team Details</h2>
 						<table class="table">
 							<tr>

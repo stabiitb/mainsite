@@ -824,6 +824,13 @@ th {
 
 	}
 
+	public function edit_team(){
+		$user=ITSP::find((Auth::User()->itsp));
+		$user->completed=NULL;
+		$user->save();
+		return Redirect::back();
+	}
+
 	/*public function signup(Request $request)
 	{
 
