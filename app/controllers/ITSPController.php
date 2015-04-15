@@ -731,19 +731,19 @@ th {
 
 			echo "<tr><th>".$team['id'].'</th><td>';
 			if($user1!=NULL){
-				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>';
+				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>'.$user1->want_room.'</td><td>';
 			}
 			if($user2!=NULL){
-				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>';
+				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
 			}
 			if($user3!=NULL){
-				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>';
+				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
 			}
 			if($user4!=NULL){
-				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>';
+				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
 			}
 			if($user5!=NULL){
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>';
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>'.$user2->want_room.'</td><td>';
 			}
 			echo "</tr>";
 		}
