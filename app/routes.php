@@ -130,6 +130,7 @@ Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'U
 Route::get('fblogin','UserController@fblogin');
 Route::post('ldap_verify',array('as'=>'user.verify','before'=>'login','uses'=>'UserController@verify'));
 Route::post('profile_update',array('as'=>'user.update','before'=>'login','uses'=>'UserController@update'));
+Route::get('profile_edit',array('as'=>'user.edit','before'=>'login','uses'=>'UserController@edit'));
 
 Route::get('sitemap', function(){
 

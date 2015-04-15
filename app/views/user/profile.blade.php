@@ -74,7 +74,7 @@
 								<br>
 								<br>
 						@endif
-
+							<i><u><a href="{{URL::route('user.edit')}}"> Edit your info</a></u></i>
 							<table class="table">
 							<tr>
 								<td>Name</td>

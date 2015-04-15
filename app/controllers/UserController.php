@@ -111,6 +111,13 @@ class UserController extends \BaseController {
 		return View::make('user.profile');
 	}
 
+	public function edit(){
+		$user=Auth::User();
+		$user->facad=NULL;
+		$user->want_room=NULL;
+		$user->save();
+		return Redirect::back();
+	}
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
 		$gpo_id = explode('@', $gpo_id)[0];
@@ -152,7 +159,7 @@ class UserController extends \BaseController {
 				$messageBag->add('message',"Form filled successfully." );
 				$user->saveFromInput(Input::all());
 				$user->save();
-				return Redirect::back()->with('messages',$messageBag);		
+				return Redirect::back();		
 				}		
 			else{
 				$messageBag = new MessageBag;
