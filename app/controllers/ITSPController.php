@@ -94,7 +94,6 @@ class ITSPController extends \BaseController {
 	}
 	public function team_update()
 	{
-		try{
 		$team=ITSP::find(Auth::User()->itsp);
 		$number=Input::get('number');
 		$user_id1=Auth::User()->id;
@@ -111,7 +110,7 @@ class ITSPController extends \BaseController {
 			}		
 		}
 		$team->number=$number;
-			if($number==1){
+		if($number==1){
 			if(User::find($user_id1)->facad==NULL){
 				$messageBag = new MessageBag;
 				$messageBag->add('message','Members have not completed their profile.First all members complete their profile, then fill the team form.' );
@@ -224,12 +223,9 @@ class ITSPController extends \BaseController {
 		}		
 
 			$messageBag = new MessageBag;
-				$messageBag->add('message','members added successfully' );
-						return Redirect::back()->with('messages', $messageBag);
-		}
-		catch(Exception $e){
-			return $e;
-		}
+			$messageBag->add('message','Some error' );
+			return Redirect::back()->with('messages', $messageBag);
+
 	}
 
 	public function want_room(){
