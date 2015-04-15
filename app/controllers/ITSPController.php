@@ -713,7 +713,7 @@ th {
 </head>
 <body>";
 
-		echo "Those who completed their team";
+		echo "Those who completely registered their team and added all the members.";
 
 		$users=ITSP::where('completed','=','1')->get()->toArray();
 		echo "<table >";
@@ -751,7 +751,7 @@ th {
 		echo "</table>";
 
 
-		echo "<br><br><br>Those teams which are selected<br>";
+		echo "<br><br><br>Those teams which are selected for ITSP projects.<br>";
 		echo "<table >";
 		$users=ITSP::where('status','=','Selected')->get()->toArray();
 
