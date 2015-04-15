@@ -94,6 +94,7 @@ class ITSPController extends \BaseController {
 	}
 	public function team_update()
 	{
+		try{
 		$team=ITSP::find(Auth::User()->itsp);
 		$number=Input::get('number');
 		$user_id1=Auth::User()->id;
@@ -225,6 +226,10 @@ class ITSPController extends \BaseController {
 			$messageBag = new MessageBag;
 						$messageBags->add('message','members added successfully' );
 						return Redirect::back()->with('messages', $messageBag);
+		}
+		catch(Exception $e){
+			return $e;
+		}
 	}
 
 	public function room_retained(){
@@ -303,10 +308,14 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.give_reviews');
 	}
 
+	public function excel_maker(){
+		$users=ITSP::where('status','=','Selected')->get();
+		var_dump($users);
+	}
 	public function update_slots()
 	{
 		$file = fopen(public_path()."/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/Final Slot allotment - Slot 1.csv","r");
-			while(! feof($file))
+		while(! feof($file))
 		  {
 		  $csv=fgetcsv($file);
 		  $team=ITSP::find($csv[1]);
@@ -673,21 +682,37 @@ class ITSPController extends \BaseController {
 	}
 
 	public function test(){
+		$users=ITSP::where('status','=','Selected')->get()->toArray();
+		foreach($users as $team){
+			$user1=$team['user_id'];
+			$user2=$team['user_id2'];
+			$user3=$team['user_id3'];
+			$user4=$team['user_id4'];
+			$user5=$team['user_id5'];
+			$user1=User::find($user1);
+			$user2=User::find($user2);
+			$user3=User::find($user3);
+			$user4=User::find($user4);
+			$user5=User::find($user5);
 
-		
-     $closetime=strtotime("6 April 2015"); 
-     $curtime = time();
-     echo $closetime."  ".$curtime."\n";
+			echo $team['id'].',';
+			if($user1!=NULL){
+				echo $user1->name.','.$user1->roll.',';
+			}
+			if($user2!=NULL){
+				echo $user2->name.','.$user2->roll.',';
+			}
+			if($user3!=NULL){
+				echo $user3->name.','.$user3->roll.',';
+			}
+			if($user4!=NULL){
+				echo $user4->name.','.$user4->roll.',';
+			}
+			if($user5!=NULL){
+				echo $user5->name.','.$user5->roll.',';
+			}
+		}
 
-		$key = 'Prateek';
-		$string ='16';
-
-		$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
-		$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
-
-		echo urlencode($encrypted)."\t";
-		echo htmlspecialchars('+');
-		echo $decrypted;
 	}
 
 	/*public function signup(Request $request)
