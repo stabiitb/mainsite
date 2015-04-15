@@ -695,23 +695,23 @@ class ITSPController extends \BaseController {
 			$user4=User::find($user4);
 			$user5=User::find($user5);
 
-			echo $team['id'].',';
+			echo $team['id'].', ';
 			if($user1!=NULL){
-				echo $user1->name.','.$user1->roll_no.',';
+				echo $user1->name.', '.$user1->roll_no.', ';
 			}
 			if($user2!=NULL){
-				echo $user2->name.','.$user2->roll_no.',';
+				echo $user2->name.', '.$user2->roll_no.', ';
 			}
 			if($user3!=NULL){
-				echo $user3->name.','.$user3->roll_no.',';
+				echo $user3->name.', '.$user3->roll_no.', ';
 			}
 			if($user4!=NULL){
-				echo $user4->name.','.$user4->roll_no.',';
+				echo $user4->name.', '.$user4->roll_no.', ';
 			}
 			if($user5!=NULL){
-				echo $user5->name.','.$user5->roll_no.',';
+				echo $user5->name.', '.$user5->roll_no.', ';
 			}
-			echo '\n';
+			echo "\n";
 		}
 
 	}
