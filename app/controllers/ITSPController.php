@@ -224,7 +224,7 @@ class ITSPController extends \BaseController {
 		}		
 
 			$messageBag = new MessageBag;
-						$messageBags->add('message','members added successfully' );
+				$messageBag->add('message','members added successfully' );
 						return Redirect::back()->with('messages', $messageBag);
 		}
 		catch(Exception $e){
