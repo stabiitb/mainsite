@@ -741,8 +741,8 @@ th {
 			echo "</tr>";
 		}
 
-		echo "</table>"
-		
+		echo "</table>";
+
 
 		echo "<br><br><br>Those teams which are selected<br>";
 		echo "<table >";
