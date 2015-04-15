@@ -24,6 +24,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('team_verify',array('as'=>'events.ITSP_2015.team_verify','uses'=>'ITSPController@team_verify'));
     Route::get('team_update',array('as'=>'events.ITSP_2015.team_update','uses'=>'ITSPController@team_update'));
     Route::get('room_retained',array('as'=>'events.ITSP_2015.room_retained','uses'=>'ITSPController@room_retained'));
+    Route::get('want_room',array('as'=>'events.ITSP_2015.want_room','uses'=>'ITSPController@want_room'));
 });
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 

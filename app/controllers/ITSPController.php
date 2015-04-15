@@ -232,6 +232,15 @@ class ITSPController extends \BaseController {
 		}
 	}
 
+	public function want_room(){
+		if(Input::has('want_room')){
+			Auth::User()->want_room=Input::get('want_room');
+			Auth::User()->save();
+		}
+		return Redirect::back();
+	}
+
+
 	public function room_retained(){
 		if(Input::get('room_retained')=="yes"){
 			Auth::User()->room_retained=1;

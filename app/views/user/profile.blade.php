@@ -55,6 +55,26 @@
 							<br>
 						GPO email : {{$user->ldap_email}}
 						@else
+						@if($user->want_room==NULL)
+								<form class="form-horizontal" action="{{URL::route('events.ITSP_2015.want_room')}}" method="get">
+								<table>
+								<tr>
+								<td>Do you want to retain your room?</td>
+								</tr>
+								<tr>
+								<td><input name="want_room" type="radio" value="yes">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYes</td>
+								<td><input name="want_room" type="radio" value="No">No</td>
+								</td>
+								</tr>
+								<tr>
+								<td><input type="submit" value="Submit"></td>
+								</tr>
+								</table>
+								</form>
+								<br>
+								<br>
+						@endif
+
 							<table class="table">
 							<tr>
 								<td>Name</td>
@@ -89,6 +109,10 @@
 								<td>{{$user->itsp}}</td>
 							</tr>	
 							<tr>
+								<td>Want Room</td>
+								<td>{{$user->want_room}}</td>
+							</tr>								
+							<tr>
 								<td>Faculty Advisor</td>
 								<td>{{$user->facad}}</td>
 							</tr>	
@@ -99,7 +123,7 @@
 							</table>
 							<br>
 							<br>
-							@if($user->room_retained==0)
+							@if($user->room_retained==0 && $user->want_room=='yes')
 								<form action="{{URL::route('events.ITSP_2015.room_retained')}}" method="get">
 								<table>
 								<tr>
@@ -112,7 +136,7 @@
 								</tr>
 								</table>
 								</form>
-							@else
+							@elseif($user->room_retained==1)
 							<h4>Your room has been retained</h4>
 							@endif
 						@endif

@@ -12,6 +12,7 @@ return array(
     'AddingItspFieldInUserProfile2' => $baseDir . '/app/database/migrations/2015_04_13_193844_adding_itsp_field_in_user_profile2.php',
     'AddingRoomFieldInUser' => $baseDir . '/app/database/migrations/2015_04_14_131435_adding_room_field_in_User.php',
     'AddingSomeMoreFieldsInUserProfile' => $baseDir . '/app/database/migrations/2015_04_13_212430_adding_some_more_fields_in_user_profile.php',
+    'AddingWantRoomUserProfile' => $baseDir . '/app/database/migrations/2015_04_15_094950_Adding_want_room_User_profile.php',
     'AppsController' => $baseDir . '/app/controllers/AppsController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
