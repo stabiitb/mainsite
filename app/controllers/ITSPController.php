@@ -711,7 +711,7 @@ class ITSPController extends \BaseController {
 			if($user5!=NULL){
 				echo $user5->name.', '.$user5->roll_no.', ';
 			}
-			echo "\n";
+			echo "<br>\n";
 		}
 
 	}
