@@ -706,7 +706,7 @@ th {
 </head>
 <body>";
 
-		echo "<br><br><br>Those who completed their team";
+		echo "Those who completed their team";
 
 		$users=ITSP::where('completed','=','1')->get()->toArray();
 		echo "<table >";
@@ -741,7 +741,10 @@ th {
 			echo "</tr>";
 		}
 
-		echo "Those teams which are selected<br>";
+		echo "</table>"
+		
+
+		echo "<br><br><br>Those teams which are selected<br>";
 		echo "<table >";
 		foreach($users as $team){
 			$user1=$team['user_id'];
