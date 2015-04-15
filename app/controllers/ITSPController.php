@@ -684,6 +684,16 @@ class ITSPController extends \BaseController {
 	public function test(){
 		$users=ITSP::where('status','=','Selected')->get()->toArray();
 		// $users=ITSP::where('completed','=','1')->get()->toArray();
+		echo "<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>";
 		echo "Those teams which are selected<br>";
 		echo "<table >";
 		foreach($users as $team){
@@ -753,7 +763,10 @@ class ITSPController extends \BaseController {
 			}
 			echo "</tr>";
 		}
-		echo "</table>";		
+		echo "</table>";
+		echo "</body>
+</html>
+";		
 		// echo "<br><br><br>Those who completed their team";
 		// $users=ITSP::where('completed','=','1')->get()->toArray();
 		// foreach($users as $team){
