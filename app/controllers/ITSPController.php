@@ -709,7 +709,8 @@ th {
 </head>
 <body>";
 
-		echo "Those who completely registered their team and added all the members.";
+		echo "Those who completely registered their team and added all the members.<br>'Yes' / 'No' means that you want room retention or not. It has nothing to do with ITSP registration or team registration.";
+
 
 		$users=ITSP::where('completed','=','1')->get()->toArray();
 		echo "<table >";
