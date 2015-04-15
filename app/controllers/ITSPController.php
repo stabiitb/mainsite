@@ -705,6 +705,42 @@ th {
 </style>
 </head>
 <body>";
+
+		echo "<br><br><br>Those who completed their team";
+
+		$users=ITSP::where('completed','=','1')->get()->toArray();
+		echo "<table >";
+		foreach($users as $team){
+			$user1=$team['user_id'];
+			$user2=$team['user_id2'];
+			$user3=$team['user_id3'];
+			$user4=$team['user_id4'];
+			$user5=$team['user_id5'];
+			$user1=User::find($user1);
+			$user2=User::find($user2);
+			$user3=User::find($user3);
+			$user4=User::find($user4);
+			$user5=User::find($user5);
+
+			echo "<tr><th>".$team['id'].'</th><td>';
+			if($user1!=NULL){
+				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>';
+			}
+			if($user2!=NULL){
+				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>';
+			}
+			if($user3!=NULL){
+				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>';
+			}
+			if($user4!=NULL){
+				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>';
+			}
+			if($user5!=NULL){
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>';
+			}
+			echo "</tr>";
+		}
+
 		echo "Those teams which are selected<br>";
 		echo "<table >";
 		foreach($users as $team){
@@ -739,41 +775,6 @@ th {
 		}
 		echo "</table>";
 
-		echo "<br><br><br>Those who completed their team";
-
-		$users=ITSP::where('status','=','Selected')->get()->toArray();
-		// $users=ITSP::where('completed','=','1')->get()->toArray();
-		echo "<table >";
-		foreach($users as $team){
-			$user1=$team['user_id'];
-			$user2=$team['user_id2'];
-			$user3=$team['user_id3'];
-			$user4=$team['user_id4'];
-			$user5=$team['user_id5'];
-			$user1=User::find($user1);
-			$user2=User::find($user2);
-			$user3=User::find($user3);
-			$user4=User::find($user4);
-			$user5=User::find($user5);
-
-			echo "<tr><th>".$team['id'].'</th><td>';
-			if($user1!=NULL){
-				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>';
-			}
-			if($user2!=NULL){
-				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>';
-			}
-			if($user3!=NULL){
-				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>';
-			}
-			if($user4!=NULL){
-				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>';
-			}
-			if($user5!=NULL){
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>';
-			}
-			echo "</tr>";
-		}
 		echo "</table>";
 		echo "</body>
 </html>
