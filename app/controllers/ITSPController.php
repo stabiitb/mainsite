@@ -682,7 +682,39 @@ class ITSPController extends \BaseController {
 	}
 
 	public function test(){
-		// $users=ITSP::where('status','=','Selected')->get()->toArray();
+		$users=ITSP::where('status','=','Selected')->get()->toArray();
+		// $users=ITSP::where('completed','=','1')->get()->toArray();
+		foreach($users as $team){
+			$user1=$team['user_id'];
+			$user2=$team['user_id2'];
+			$user3=$team['user_id3'];
+			$user4=$team['user_id4'];
+			$user5=$team['user_id5'];
+			$user1=User::find($user1);
+			$user2=User::find($user2);
+			$user3=User::find($user3);
+			$user4=User::find($user4);
+			$user5=User::find($user5);
+
+			echo $team['id'].', ';
+			if($user1!=NULL){
+				echo $user1->name.', '.$user1->roll_no.', ';
+			}
+			if($user2!=NULL){
+				echo $user2->name.', '.$user2->roll_no.', ';
+			}
+			if($user3!=NULL){
+				echo $user3->name.', '.$user3->roll_no.', ';
+			}
+			if($user4!=NULL){
+				echo $user4->name.', '.$user4->roll_no.', ';
+			}
+			if($user5!=NULL){
+				echo $user5->name.', '.$user5->roll_no.', ';
+			}
+			echo "<br>\n";
+		}
+		echo "<br><br><br>Those who completed their team";
 		$users=ITSP::where('completed','=','1')->get()->toArray();
 		foreach($users as $team){
 			$user1=$team['user_id'];
@@ -714,6 +746,7 @@ class ITSPController extends \BaseController {
 			}
 			echo "<br>\n";
 		}
+
 
 	}
 
