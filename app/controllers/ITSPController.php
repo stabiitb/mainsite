@@ -682,7 +682,8 @@ class ITSPController extends \BaseController {
 	}
 
 	public function test(){
-		$users=ITSP::where('status','=','Selected')->get()->toArray();
+		// $users=ITSP::where('status','=','Selected')->get()->toArray();
+		$users=ITSP::where('completed','=','1')->get()->toArray();
 		foreach($users as $team){
 			$user1=$team['user_id'];
 			$user2=$team['user_id2'];
