@@ -697,20 +697,21 @@ class ITSPController extends \BaseController {
 
 			echo $team['id'].',';
 			if($user1!=NULL){
-				echo $user1->name.','.$user1->roll.',';
+				echo $user1->name.','.$user1->roll_no.',';
 			}
 			if($user2!=NULL){
-				echo $user2->name.','.$user2->roll.',';
+				echo $user2->name.','.$user2->roll_no.',';
 			}
 			if($user3!=NULL){
-				echo $user3->name.','.$user3->roll.',';
+				echo $user3->name.','.$user3->roll_no.',';
 			}
 			if($user4!=NULL){
-				echo $user4->name.','.$user4->roll.',';
+				echo $user4->name.','.$user4->roll_no.',';
 			}
 			if($user5!=NULL){
-				echo $user5->name.','.$user5->roll.',';
+				echo $user5->name.','.$user5->roll_no.',';
 			}
+			echo '\n';
 		}
 
 	}
