@@ -688,9 +688,20 @@ class ITSPController extends \BaseController {
 <html>
 <head>
 <style>
-table, th, td {
-    border: 1px solid black;
+table, td {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
 }
+th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+
 </style>
 </head>
 <body>";
