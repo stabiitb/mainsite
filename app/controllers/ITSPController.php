@@ -734,13 +734,13 @@ th {
 				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
 			}
 			if($user3!=NULL){
-				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
+				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>'.$user3->want_room.'</td><td>';
 			}
 			if($user4!=NULL){
-				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
+				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>'.$user4->want_room.'</td><td>';
 			}
 			if($user5!=NULL){
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>'.$user2->want_room.'</td><td>';
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>'.$user5->want_room.'</td><td>';
 			}
 			echo "</tr>";
 		}
