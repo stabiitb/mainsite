@@ -32,6 +32,7 @@ Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links'));
 
 
 Route::get('Status_of_teams','ITSPController@test');
+Route::get('final_teams','ITSPController@final_teams');
 Route::group(array('prefix'=>'PoR'),function()
 {
     Route::get('/',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
