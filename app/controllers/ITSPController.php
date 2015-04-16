@@ -760,7 +760,87 @@ th {
 
 
 }
-	public function test(){
+
+
+public function selected_students(){
+
+		echo "<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+table, td {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+}
+th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+
+</style>
+</head>
+<body>";
+
+		echo "Those who want room retention.";
+
+
+		$users=ITSP::where('status','=','selected')->get()->toArray();
+		echo "<table >";
+		foreach($users as $team){
+			$user1=$team['t1_name'];
+			$user1r=$team['t1_roll'];
+			$user2=$team['t2_name'];
+			$user2r=$team['t2_roll'];
+			$user3=$team['t3_name'];
+			$user3r=$team['t3_roll'];
+			$user4=$team['t4_name'];
+			$user4r=$team['t4_roll'];
+			/*$user2=$team['user_id2'];
+			$user3=$team['user_id3'];
+			$user4=$team['user_id4'];
+			$user5=$team['user_id5'];
+			/*$user1=User::find($user1);
+			$user2=User::find($user2);
+			$user3=User::find($user3);
+			$user4=User::find($user4);
+			$user5=User::find($user5);*/
+
+			echo "<tr><th>".$team['id'].'</th><td>';
+			if($user1!="" ){
+				// if($user1->want_room!="No")
+				echo $user1.'</td><td>'.$user1r.'</td><td>';//.$user1->want_room.'</td><td>';
+			}
+			if($user2!=""){
+				// if($user2->want_room!="No")
+				echo $user2.'</td><td>'.$user2r.'</td><td>';//.$user2->want_room.'</td><td>';
+			}
+			if($user3!=""){
+				// if($user3->want_room!="No")
+				echo $user3.'</td><td>'.$user3r.'</td><td>';//.$user3->want_room.'</td><td>';
+			}
+			if($user4!=""){
+				// if($user4->want_room!="No")
+				echo $user4.'</td><td>'.$user4r.'</td><td>';//.$user4->want_room.'</td><td>';
+			}
+			// if($user5!=NULL){
+			// 	if($user5->want_room!="No")
+			// 	echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>'.$user5->want_room.'</td><td>';
+			// }
+			echo "</tr>";
+		}
+
+		echo "</table>";
+				echo "</body>
+</html>
+";}
+
+public function test(){
 		echo "<!DOCTYPE html>
 }
 <html>
