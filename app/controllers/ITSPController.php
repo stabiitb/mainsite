@@ -787,11 +787,48 @@ th {
 </head>
 <body>";
 
-		echo "Those who want room retention.";
+		echo "All the teams which were selected";
+		echo "<table >";
+
+$users=ITSP::where('completed','=','1')->get()->toArray();
+		foreach($users as $team){
+			$user1=$team['user_id'];
+			$user2=$team['user_id2'];
+			$user3=$team['user_id3'];
+			$user4=$team['user_id4'];
+			$user5=$team['user_id5'];
+			$user1=User::find($user1);
+			$user2=User::find($user2);
+			$user3=User::find($user3);
+			$user4=User::find($user4);
+			$user5=User::find($user5);
+
+			echo "<tr><th>".$team['id'].'</th><td>';
+			if($user1!=NULL ){
+				if($user1->want_room!="No")
+				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>';//.$user1->want_room.'</td><td>';
+			}
+			if($user2!=NULL){
+				if($user2->want_room!="No")
+				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>';//.$user2->want_room.'</td><td>';
+			}
+			if($user3!=NULL){
+				if($user3->want_room!="No")
+				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>';//.$user3->want_room.'</td><td>';
+			}
+			if($user4!=NULL){
+				if($user4->want_room!="No")
+				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>';//.$user4->want_room.'</td><td>';
+			}
+			if($user5!=NULL){
+				if($user5->want_room!="No")
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>';//.$user5->want_room.'</td><td>';
+			}
+			echo "</tr>";
+		}
 
 
 		$users=ITSP::where('status','=','selected')->where('completed','=',NULL)->get()->toArray();
-		echo "<table >";
 		foreach($users as $team){
 			$user1=$team['t1_name'];
 			$user1r=$team['t1_roll'];
@@ -834,6 +871,7 @@ th {
 			// }
 			echo "</tr>";
 		}
+
 
 		echo "</table>";
 				echo "</body>
