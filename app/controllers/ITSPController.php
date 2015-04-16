@@ -711,7 +711,7 @@ th {
 </head>
 <body>";
 
-		echo "Those who completely registered their team and added all the members.<br>'Yes' / 'No' means that you want room retention or not. It has nothing to do with ITSP registration or team registration.";
+		echo "Those who want room retention.";
 
 
 		$users=ITSP::where('completed','=','1')->get()->toArray();
@@ -747,7 +747,7 @@ th {
 			}
 			if($user5!=NULL){
 				if($user5->want_room!="No")
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td>'.$user5->want_room.'</td><td>';
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>'.$user5->want_room.'</td><td>';
 			}
 			echo "</tr>";
 		}
