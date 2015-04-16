@@ -790,7 +790,7 @@ th {
 		echo "Those who want room retention.";
 
 
-		$users=ITSP::where('status','=','selected')->get()->toArray();
+		$users=ITSP::where('status','=','selected')->where('completed','!=','1')->get()->toArray();
 		echo "<table >";
 		foreach($users as $team){
 			$user1=$team['t1_name'];
