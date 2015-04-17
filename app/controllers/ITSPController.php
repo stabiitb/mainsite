@@ -688,34 +688,11 @@ class ITSPController extends \BaseController {
 
 public function final_teams(){
 
-		echo "<!DOCTYPE html>
 
-<html>
-<head>
-<style>
-table, td {
-    font-size: 1em;
-    border: 1px solid #98bf21;
-    padding: 3px 7px 2px 7px;
-}
-th {
-    font-size: 1.1em;
-    text-align: left;
-    padding-top: 5px;
-    padding-bottom: 4px;
-    background-color: #A7C942;
-    color: #ffffff;
-}
-
-</style>
-</head>
-<body>";
-
-		echo "Those who want room retention.";
+		echo "Those who want room retention.<br>";
 
 
 		$users=ITSP::where('completed','=','1')->get()->toArray();
-		echo "<table >";
 		foreach($users as $team){
 			$user1=$team['user_id'];
 			$user2=$team['user_id2'];
@@ -728,38 +705,31 @@ th {
 			$user4=User::find($user4);
 			$user5=User::find($user5);
 
-			echo "<tr><th>".$team['id'].'</th><td>';
 			if($user1!=NULL ){
 				if($user1->want_room!="No")
-				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>'.$user1->want_room.'</td><td>';
-			}
+				echo $user1->name.', '.$user1->roll_no.', '.$team['alloted_slot'].', '.$user1->department.', '.$user1->facad.', '.$user1->facad_ldap.', <br>';
+		}
 			if($user2!=NULL){
 				if($user2->want_room!="No")
-				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>'.$user2->want_room.'</td><td>';
+				echo $user2->name.', '.$user2->roll_no.', '.$team['alloted_slot'].', '.$user2->department.', '.$user2->facad.', '.$user2->facad_ldap.', <br>';
 			}
 			if($user3!=NULL){
 				if($user3->want_room!="No")
-				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>'.$user3->want_room.'</td><td>';
+				echo $user3->name.', '.$user3->roll_no.', '.$team['alloted_slot'].', '.$user3->department.', '.$user3->facad.', '.$user3->facad_ldap.', <br>';
 			}
 			if($user4!=NULL){
 				if($user4->want_room!="No")
-				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>'.$user4->want_room.'</td><td>';
+				echo $user4->name.', '.$user4->roll_no.', '.$team['alloted_slot'].', '.$user4->department.', '.$user4->facad.', '.$user4->facad_ldap.', <br>';
 			}
 			if($user5!=NULL){
 				if($user5->want_room!="No")
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>'.$user5->want_room.'</td><td>';
+				echo $user5->name.', '.$user5->roll_no.', '.$team['alloted_slot'].', '.$user5->department.', '.$user5->facad.', '.$user5->facad_ldap.', <br>';
 			}
-			echo "</tr>";
 		}
-
-		echo "</table>";
-				echo "</body>
-</html>
-";
-
 
 
 }
+
 
 
 public function selected_students(){
