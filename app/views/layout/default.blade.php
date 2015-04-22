@@ -150,18 +150,28 @@
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
 								
-								<li><a href="http://www.stab-iitb.org/technovation">Technovation</a></li>
 
-
-								 <li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">Tinkerers’ Lab</a>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle js-activated">Technovation</a>
 									
 									<ul class="dropdown-menu">
 										
-										<li><a href="http://stab-iitb.org/tinkerers-lab/">Visit Site</a></li>
+										<li><a href="http://stab-iitb.org/technovation/">Visit Site</a></li>
 										
 									</ul> <!-- /.dropdown-menu -->
-								 </li> <!-- /.dropdown -->
+								</li> <!-- /.dropdown -->
+
+
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle js-activated">Initiatives</a>
+									
+									<ul class="dropdown-menu">
+										<li><a href="http://techgsr.com/">TechGSR</a></li>
+										<li><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerer's Lab</a></li>
+									</ul><!-- /.dropdown-menu -->
+								</li><!-- /.dropdown -->
+
+								
 								
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Technical Teams</a>
