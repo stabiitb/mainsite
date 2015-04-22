@@ -67,6 +67,7 @@ Route::post('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=
 // Vision , Reports , Lightsaber
 Route::get('vision-of-stab-team-2014-15',array('as'=>'vision','uses'=>'HomeController@vision'));
 Route::get('InstiReview-HobbyClubs-TechTeams',array('as'=>'institute_review_2013','uses'=>function(){return View::make('institute_review_2013');}));
+Route::get('annual_report_2014_2015',array('as'=>'annual_report_2014_2015','uses'=>function(){return View::make('annual_report_2014_2015');}));
 Route::get('lightsaber',array('as'=>'lightsaber','uses'=>function(){return View::make('lightsaber');}));
 
 // Team 

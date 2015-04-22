@@ -115,6 +115,9 @@
 																<li>
 																	<a href="{{URL::Route('institute_review_2013')}}">Institute Review 2013</a>
 																</li>
+																<li>
+																	<a href="{{URL::Route('annual_report_2014_2015')}}">Annual Reposrt 2015-2015</a>
+																</li>
 															</ul>
 														</li>
 													</ul><!-- /.circled -->
