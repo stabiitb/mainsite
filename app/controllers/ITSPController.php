@@ -707,23 +707,23 @@ public function final_teams(){
 
 			if($user1!=NULL ){
 				if($user1->want_room!="No")
-				echo $user1->name.', '.$user1->roll_no.', '.$team['alloted_slot'].', '.$user1->department.', '.$user1->facad.', '.$user1->facad_ldap.', <br>';
+				echo $user1->name.', '.$user1->roll_no.', '.$user1->hostel.', '.$team['alloted_slot'].', '.$user1->department.', '.$user1->facad.', '.$user1->facad_ldap.', <br>';
 		}
 			if($user2!=NULL){
 				if($user2->want_room!="No")
-				echo $user2->name.', '.$user2->roll_no.', '.$team['alloted_slot'].', '.$user2->department.', '.$user2->facad.', '.$user2->facad_ldap.', <br>';
+				echo $user2->name.', '.$user2->roll_no.', '.$user1->hostel.', '.$team['alloted_slot'].', '.$user2->department.', '.$user2->facad.', '.$user2->facad_ldap.', <br>';
 			}
 			if($user3!=NULL){
 				if($user3->want_room!="No")
-				echo $user3->name.', '.$user3->roll_no.', '.$team['alloted_slot'].', '.$user3->department.', '.$user3->facad.', '.$user3->facad_ldap.', <br>';
+				echo $user3->name.', '.$user3->roll_no.', '.$user1->hostel.', '.$team['alloted_slot'].', '.$user3->department.', '.$user3->facad.', '.$user3->facad_ldap.', <br>';
 			}
 			if($user4!=NULL){
 				if($user4->want_room!="No")
-				echo $user4->name.', '.$user4->roll_no.', '.$team['alloted_slot'].', '.$user4->department.', '.$user4->facad.', '.$user4->facad_ldap.', <br>';
+				echo $user4->name.', '.$user4->roll_no.', '.$user1->hostel.', '.$team['alloted_slot'].', '.$user4->department.', '.$user4->facad.', '.$user4->facad_ldap.', <br>';
 			}
 			if($user5!=NULL){
 				if($user5->want_room!="No")
-				echo $user5->name.', '.$user5->roll_no.', '.$team['alloted_slot'].', '.$user5->department.', '.$user5->facad.', '.$user5->facad_ldap.', <br>';
+				echo $user5->name.', '.$user5->roll_no.', '.$user1->hostel.', '.$team['alloted_slot'].', '.$user5->department.', '.$user5->facad.', '.$user5->facad_ldap.', <br>';
 			}
 		}
 
