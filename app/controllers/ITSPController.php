@@ -776,23 +776,23 @@ $users=ITSP::where('completed','=','1')->get()->toArray();
 			echo "<tr><th>".$team['id'].'</th><td>';
 			if($user1!=NULL ){
 				if($user1->want_room!="No")
-				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>';//.$user1->want_room.'</td><td>';
+				echo $user1->name.'</td><td>'.$user1->roll_no.'</td><td>'.$user1->hostel.'</td><td>';//.$user1->want_room.'</td><td>';
 			}
 			if($user2!=NULL){
 				if($user2->want_room!="No")
-				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>';//.$user2->want_room.'</td><td>';
+				echo $user2->name.'</td><td>'.$user2->roll_no.'</td><td>'.$user1->hostel.'</td><td>';//.$user2->want_room.'</td><td>';
 			}
 			if($user3!=NULL){
 				if($user3->want_room!="No")
-				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>';//.$user3->want_room.'</td><td>';
+				echo $user3->name.'</td><td>'.$user3->roll_no.'</td><td>'.$user1->hostel.'</td><td>';//.$user3->want_room.'</td><td>';
 			}
 			if($user4!=NULL){
 				if($user4->want_room!="No")
-				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>';//.$user4->want_room.'</td><td>';
+				echo $user4->name.'</td><td>'.$user4->roll_no.'</td><td>'.$user1->hostel.'</td><td>';//.$user4->want_room.'</td><td>';
 			}
 			if($user5!=NULL){
 				if($user5->want_room!="No")
-				echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>';//.$user5->want_room.'</td><td>';
+				echo $user5->name.'</td><td>'.$user5->roll_no.'</td><td>'.$user1->hostel.'</td><td>';//.$user5->want_room.'</td><td>';
 			}
 			echo "</tr>";
 		}
@@ -802,12 +802,16 @@ $users=ITSP::where('completed','=','1')->get()->toArray();
 		foreach($users as $team){
 			$user1=$team['t1_name'];
 			$user1r=$team['t1_roll'];
+			$user1h=$team['t1_hostel'];	
 			$user2=$team['t2_name'];
 			$user2r=$team['t2_roll'];
+			$user2h=$team['t2_hostel'];	
 			$user3=$team['t3_name'];
 			$user3r=$team['t3_roll'];
+			$user3h=$team['t3_hostel'];	
 			$user4=$team['t4_name'];
 			$user4r=$team['t4_roll'];
+			$user4h=$team['t4_hostel'];	
 			/*$user2=$team['user_id2'];
 			$user3=$team['user_id3'];
 			$user4=$team['user_id4'];
@@ -821,19 +825,19 @@ $users=ITSP::where('completed','=','1')->get()->toArray();
 			echo "<tr><th>".$team['id'].'</th><td>';
 			if($user1!="" ){
 				// if($user1->want_room!="No")
-				echo $user1.'</td><td>'.$user1r.'</td><td>';//.$user1->want_room.'</td><td>';
+				echo $user1.'</td><td>'.$user1r.'</td><td>'.$user1h.'</td><td>';//.$user1->want_room.'</td><td>';
 			}
 			if($user2!=""){
 				// if($user2->want_room!="No")
-				echo $user2.'</td><td>'.$user2r.'</td><td>';//.$user2->want_room.'</td><td>';
+				echo $user2.'</td><td>'.$user2r.'</td><td>'.$user2h.'</td><td>';//.$user2->want_room.'</td><td>';
 			}
 			if($user3!=""){
 				// if($user3->want_room!="No")
-				echo $user3.'</td><td>'.$user3r.'</td><td>';//.$user3->want_room.'</td><td>';
+				echo $user3.'</td><td>'.$user3r.'</td><td>'.$user3h.'</td><td>';//.$user3->want_room.'</td><td>';
 			}
 			if($user4!=""){
 				// if($user4->want_room!="No")
-				echo $user4.'</td><td>'.$user4r.'</td><td>';//.$user4->want_room.'</td><td>';
+				echo $user4.'</td><td>'.$user4r.'</td><td>'.$user4h.'</td><td>';//.$user4->want_room.'</td><td>';
 			}
 			// if($user5!=NULL){
 			// 	if($user5->want_room!="No")
