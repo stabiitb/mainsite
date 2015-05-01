@@ -509,6 +509,11 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.discuss');
 	}
 
+	public function reviews()
+	{
+		return $this->review('all');
+	}
+
 	public function review($club)
 	{	if(Auth::check()){
 			if(Auth::User()->mentor==1 || Auth::User()->admin==1 || true){
