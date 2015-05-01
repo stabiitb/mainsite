@@ -511,7 +511,7 @@ class ITSPController extends \BaseController {
 
 	public function review($club)
 	{	if(Auth::check()){
-			if(Auth::User()->mentor==1 || Auth::User()->admin==1){
+			if(Auth::User()->mentor==1 || Auth::User()->admin==1 || true){
 				$users="yo";
 				if($club=="mnp"){
 					global $users;
