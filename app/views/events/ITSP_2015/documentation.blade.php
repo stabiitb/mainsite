@@ -10,7 +10,7 @@ if(Auth::check()){
 	if(Auth::User()->ldap_verified==1){
 		if(Auth::User()->itsp!=NULL)
 			{
-			$user=Auth::User()->itsp;
+			$user=Auth::User()->id;
 			$data=ITSP::find(Auth::User()->itsp);
 			}
 		else{
@@ -104,7 +104,7 @@ function fetch_data($path_to_file,$text=1)
 <meta name="keywords" content="ITSP , IIT Bombay , <?php  echo $data['project_name'];?>">
 <meta name="author" content="Prateek Chandan">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ITSP | <?php echo $data['team_name']." | ".$user." | ".$by; ?></title>
+<title>ITSP | <?php echo $data['team_name']." | ".$data['id']." | ".$by; ?></title>
 
 <!-- =========================
  FAV AND TOUCH ICONS  
