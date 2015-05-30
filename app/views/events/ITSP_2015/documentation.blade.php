@@ -26,7 +26,7 @@ else{
 }		
 
 if(isset($_GET['id']))
-{	
+{		
 	$data=ITSP::find($_GET['id']);
 	if($data==NULL)
 		return Redirect::to('/');
