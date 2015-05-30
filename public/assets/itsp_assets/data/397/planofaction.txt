@@ -1,0 +1,27 @@
+<h3>Week 1 </h3><ul>
+<li>Planned
+<ul>
+<li>In the weeks before 15th may(start of slot2) and the first week we plan to complete all study related work-which controller should we go with, learn about softwares like eagle, also practise some more solid works, also learn about receiverswhich can interact with apps on windows as well as the bot. Also, we plan to think over different possible ways of making the circuit in such a way that we can optimize on use of minimal motors for moving in a particular direction efficiently. (Additionally, move the motors in such a way that the body remains steady).</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>After studying and learning about many octapods/hexaods on the internet we decided to use an arduino as a microcontroller and as the Arduino Uno cant control 18 servos we decided to go with a polulu board along with the Arduino. Also we learnt that an octapod does not have many advantages over a hexapod(in the context of our project) so we decidedto change our project to a hexapod with jaws from the original octapod.We started building some simple CADS on solidworks to learn more about it.We also learnt that for the app to get integrated with the arduino we need an additionalboard which is bluetooth module .</li></ul></li></ul><h3>Week 2</h3><ul>
+<li>Planned
+<ul>
+<li>With all the information with us we plan to start working on the bot’s prototype on solid works, its circuit on eagle and then move towards the building of bot. We have divided our work such that two of us would start on thinking over the logic of the actual code which would control the controller and thus the bot, and the other 2 will start getting the mechanical and electrical work ready to go-like buying the materials required, giving it for fabrication,  buying components like controller, wires, motors, etc.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>We started designing the actual bot on solidworks.After discussing with some seniors we realized that an ArduinoMegga is a better option over anArduino with the Pololu board.We got most components-servos,ArduinoMegga,wires,etc. and started working on the Arduinocode.We also started learning about how to make the app.</li></ul></li></ul><h3>Week 3 &amp; Week 4 </h3><ul>
+<li>What we had planned ?:
+<ul>
+<li>In these two weeks we plan to complete the designing of the bot, the circuit of the bot and assembling all this together, by the end of these 2 weeks we will also have the actual code ready. Thus the whole bot will be ready to be controlled and tested. Also, when we will be nearing the end of third week one of us will start thinking over to app’s code which will control the bot and get its pseudo code ready by end of fourth week as we will have to make the connections accordingly.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>We have learnt much more about  gaits and other concepts which will be required in the code. The basic app is ready,and waiting for the code to get completed once that is done we can integrate both.The CAD of the bot is finalized and will soon be fabricated. We will get all the remaining components in a day or two.</li></ul></li></ul><h3></h3><h3>Week 5 </h3><ul>
+<li>What you have planned ?</li><li>Making the app actually for Android, and finishing the bot completely,
+ with all kind of minor work left-like some assembly work, or soldering work, etc.</li></ul><ul>
+<li>What you have accomplished?</li><li>The app is completely ready,and has been sucessfully able to connect with the bot
+and send signals to it.
+The body has been assembled completely from the mechanical point of view.
+Some electrical connections are yet to be done.</li></ul><h3>Week 6</h3><ul>
+<li>What you have planned ?:</li><li>We plan to keep this week for debugging the code for efficiency and also check all possible 
+codes to check what the best for our bot is. Also, work on the documentation, images and poster.</li></ul><ul>
+<li>What you have accomplished? : </li><li>All the electrical connections have been made.The bot once given power sucessfully goes to rest position by moving all the necessary servos by necessary angles.The bot has started sucessfully interacting with the app after solving some glitches.We are now in the final phase of testing that is our code effecient enough to run the bot in anydirection chosen.Due to excessive heating of the voltage regulator on the day before submission,we haven't been able to complete the final phase of testing.</li></ul>

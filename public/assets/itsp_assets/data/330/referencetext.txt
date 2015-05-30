@@ -1,0 +1,2 @@
+<p>For the completion of your project , We are strongly thankful to TEAM STAB</p><p>In particular I would like to thank some of our seniors who helped us </p><p>-manmohan (mentor)</p><p>-sachin garg</p><p>-ashay tejwani</p><p>-riddhish<br><br>We also referred to the following sources :</p><ul>
+<li><a href="http://www.goggle.com">GOOGLE</a></li><li>STACK OVERFLOW</li><li>ANDROID DEVELOPERS site</li></ul>

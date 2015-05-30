@@ -1,0 +1,4 @@
+<ul><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Arduino UNO  - <strong>Rs 900</strong></span></li><li><span style="color: rgb(0, 0, 0);">3 Ultrasonic sensors - <strong>Rs 630 ( Rs 210 each )</strong></span></li><li><span style="color: rgb(0, 0, 0);">Jumper wires - <inline style="color: rgb(0, 0, 0);">Rs 40</inline></span></li></ul></li></ul><ul>
+<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 1570</span></strong></li></ul>

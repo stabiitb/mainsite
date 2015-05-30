@@ -1,0 +1,27 @@
+<h3><p style="margin-left: 440px;"><u>TECHNICAL OVERVIEW</u></p><pre>The Harmon Model’s circuit diagram can be seen from the references.
+We implemented the circuit using BJTs on a bread-board, supplied the input
+pulses from a 555 timer and measured the output using an oscilloscope.</pre><pre>For the McCulloch-Pitts model, on the breadboard we used a
+741 op-amp as an inverting adder and the same as a comparator. However, the 741
+requires a dual supply of +-15V which we did not have, so we used the LM324
+op-amp for our line follower. Also, for the LM324 we used a non-inverting adder
+rather than an inverting one.</pre><pre>The following was the adder circuit that we used, modifying
+it to have six inputs at the + terminal while V<sub>3</sub> was grounded and no
+other inputs were supplies to the – terminal. The 100k resistors at the inputs
+were replaced by 100k pots.</pre><pre>We used the following circuit as a comparator with
+hysteresis, the output of the adder going in at V<sub>REF</sub>, and the
+threshold voltage at V<sub>IN</sub>. We also used pots to achieve a variable
+threshold to be supplied to the comparator.</pre><pre>We chose V<sub>CC</sub>=12V for the LM-324.Since the IC
+cannot drive a motor, the output is passed to IC7805 and then to the motor
+driver IC L-293D.  </pre><p><img width="319" height="154" src="file:///C:/Users/vishrant/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" v:shapes="Picture_x0020_5"></p><pre>Thus, the adder and comparator completed our neurons for the
+line follower.</pre><pre>We also explored the programming of neural networks on
+computers for simulation to some extent in MATLAB as well as C++.</pre><pre>We built two 6 input McCulloch-Pitts neurons on a PCB, one
+to control the left motor and the other for the right motor. We used 6 IR LEDs
+as our inputs and the weights were implemented using mechanical pots which were
+rotated by us during the training process to achieve the right combination such
+that the bot could follow a line.</pre><pre>Finding the right weighing mechanism was our biggest problem
+throughout the project, we tried all possibilities such as simulating the
+neurons on a computer to find the weights and then just placing these weights
+on a circuit to programming digital potentiometers to find the optimum weights
+on their own.  </pre><pre>Major difficulties faced were that of putting together all
+components on a PCB, soldering and unavailability of digipots. Debugging the
+circuit took up a lot of time and effort as did the training process.</pre></h3>

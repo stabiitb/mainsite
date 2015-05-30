@@ -1,0 +1,8 @@
+<p>We are planning to make something like below.</p><p>
+	<embed width="420" height="345" src="https://www.youtube.com/v/F1LV50viR8M" type="application/x-shockwave-flash"></p><ul>
+<li>We planned on making a single player
+checkers playing bot for ITSP, implementing the following. </li><li>·Write the AI code for the game of checkers.</li><li>·Learn about Arduino and use it in the working of
+the bot.</li><li>·Using sensors or any other method like image
+processing to detect movement of the game coins.</li><li>·Play the moves of the computer using a framework
+of rods and an electromagnet to shift the magnetic game coins. The player plays
+his moves manually.  </li></ul>

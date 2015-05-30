@@ -1,0 +1,10 @@
+<p>The significance of this project is to help the visually impaired people with appropriate voice
+commands that are played through the speaker.</p><p>The paper proposed the design and architecture of a new concept of Smart Electronic Guiding
+Stick for blind people. The advantage of the system lies in the fact that it can prove to be very
+low cost solution to millions of blind person worldwide. The proposed combination of various
+working units makes a real-time system that monitors position of the user and provides dual
+feedback making navigation more safe and secure.</p><p>
+	<strong><br>
+	</strong></p><p>
+	<strong><br>
+	</strong></p>

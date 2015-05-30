@@ -1,0 +1,12 @@
+<p><inline style="color: rgb(227, 108, 9);">Our project is about making a spherical mobile robot which can be controlled using a bluetooth application. Spherical robot is the most preferred design due 
+to its easy maneuverability, holonomic nature, 
+omnidirectional movement. As a result the robot can 
+navigate around any object easily and the chance of getting 
+stuck in corners is reduced. Due to its shape there is no 
+question of overturning as often found in case of 
+traditional wheeled robots. This feature also allows them to 
+be thrown or dropped. A spherical robot would 
+be appropriate for many different mobile robotics 
+applications such as surveillance, reconnaissance, 
+hazardous environment assessment, search and rescue, as 
+well as planetary exploration.</inline></p><p><img src="http://www.technologyreview.com/files/81304/Sphero_x900.jpg"></p>

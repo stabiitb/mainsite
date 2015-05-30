@@ -1,0 +1,2 @@
+<p>
+	The basic motivation  for the project was to make the flying of an RC plane more intuitive.  We were also motivated by a similar project called PowerUp 3.0 in which a paper plane is flown using a mobile. The project can modified and extended to put a camera on it which will send the images back to the mobile and these can be seen in the application.</p>

@@ -1,0 +1,8 @@
+<pre>After initial 2 to 3 weeks of searching and unerstanding we actually started building the ornithopter.
+
+we started with the making of fuselage with a shape similar to the the airfoil.
+
+after that we made the calculations for the sizes
+
+
+&lt;br&gt;</pre>

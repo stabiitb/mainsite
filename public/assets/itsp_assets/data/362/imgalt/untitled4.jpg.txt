@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The eroded image, 'eyes open' state output</h5>
+									<div class="details white-text">
+										image erosion is applied to the thresholded image, now this image is used as the 'eyes open' state output
+									</div>
+								</div>

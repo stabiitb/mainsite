@@ -1,0 +1,14 @@
+<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned<ul><li>Install Ubuntu, SolidWorks and OpenCV libraries on our systems.</li><li>Make a rough sketch of the model on paper and try to find out different challenges.<br><p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul><li>Accomplished<ul><li>SolidWorks is installed and design is ready on the same.</li><li>Rough sketch is made too.</li><li>However we could not install ubuntu on our PC.</li></ul></li></ul><h3>Week 2 (May 25th- 31st )</h3><ul><li>Planned<ul><li>Purchase the required materials and start working on the model.</li><li>Try to install ubuntu.</li><li>Buy the Arduino and start learning the basics.</li></ul></li><li>Accomplished<ul><li>Most of the components brought.</li><li>Started working on the model.</li><li>Ubuntu still not installed. Thanks to windows 8 boot options.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul><li>Planned<br>
+<ul>
+</ul></li></ul><ul><li>Achieved
+<ul>
+<li> <br>
+<ul>
+</ul></li></ul></li></ul><h3>Week 4 (June 8th - 14th)</h3><ul><li>Planned</li></ul><ul><li>Accomplished
+</li></ul><h3>Week 5 (June 15th - 21st)</h3><ul><li>Planned
+<ul>
+<li> </li></ul></li></ul><ul><li>Accomplished
+</li></ul><h3>Week 6 (June 22nd - 29th)</h3><ul><li>Planned
+<ul>
+<li> </li></ul></li></ul><ul><li>Accomplished
+</li></ul>

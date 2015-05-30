@@ -1,0 +1,1 @@
+<p>The list of items that we used to build this project are as follows-</p><ul><li>Chassis(1)</li><li>Wheels(4)</li><li>Motors(4)</li><li>PCB(1)</li><li>L293D (1)</li><li>IC7805 (2)</li><li>IC7809(1)</li><li>Heat Sinks</li><li>Arduino(1)</li><li>Xbee Modules(2)</li><li>Xbee USB Adaptor(1)</li><li>LiPo Battery(1)</li></ul><strong></strong>

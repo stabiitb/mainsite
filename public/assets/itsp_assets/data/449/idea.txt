@@ -1,0 +1,8 @@
+<ul>
+	
+<li><strong>Android Mobile:</strong></li></ul><p style="margin-left: 40px;">To move the plane according to the tilt of the mobile, we used the in-built accelerometer in the mobile. We made an android application which takes the values from the accelerometer and calculates the tilt of the phone and sends these readings through Bluetooth to the Arduino which does the remaining work. It also has a slider to give the value for throttle. This value is also sent along with the previous readings.</p><ul><strong></strong></ul><ul>
+	
+<li><strong>Arduino:</strong></li></ul><p style="margin-left: 40px;">
+	The Arduino (we used an Arduino Uno) is connected to a Bluetooth module (a HC-05 module). The Bluetooth module is connected to the mobile and receives the readings sent by the mobile and passes them to the Arduino. The Arduino takes the readings and generates a PPM signal according to these readings and sends it through the output pin assigned to it. The output pin is connected to the trainer port of a RC transmitter (via a trainer cord). The transmitter transmits the PPM signals sent by the Arduino.</p><p style="margin-left: 40px;"></p><ul>
+	
+<li><strong>RC plane:</strong></li></ul><p style="margin-left: 40px;">We used a normal RC plane having two ailerons (one for each wing) and an elevator. It has three servo motors one for each aileron and one for the elevator. The propeller is controlled by a motor which is connected to an ESC (electronic speed controller), which makes it behave like a servo motor.</p>

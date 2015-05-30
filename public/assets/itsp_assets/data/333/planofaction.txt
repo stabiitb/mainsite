@@ -1,0 +1,65 @@
+<ul>
+	
+<h3><strong><span style="color: rgb(192, 80, 77);">Week 1</span></strong> (May 5th -11th)</h3><ul>
+		
+<li>Planned
+		
+<ul>
+			
+<li>Gathering resources.                                                                                                                                                </li>			
+<li>Study related theory.</li>		</ul></li>		
+<li>Accomplished
+		
+<ul>
+			
+<li>gathered important resources</li>			
+<li>studied SONAR,RADAR and working of SR04.                                                                        </li>		</ul></li>		
+<h3>Week 2 (May 12th- 18th )</h3><ul>
+			
+<li>Planned
+			
+<ul>
+				
+<li>Start to work on microcontroller.</li>				
+<li>Start to learn processing.</li>				
+<li>Start work on the main code.</li>				
+<li>Search for legged bot moving mechanisms.</li>			</ul></li>			
+<li>What you have accomplished?
+			
+<ul>
+				
+<li>Theory was complete.</li>				
+<li>studying arduino and processing was done.</li>				
+<li>Algorithms to be used in the code were ready.</li>			</ul></li>		</ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+			
+<li>What you have planned ?:
+			
+<ul>
+				
+<li>Complete the coding.</li>				
+<li>Test the coding by building simple model.</li>				
+<li>Complete RADAR part.</li>			</ul></li>		</ul><ul>
+			
+<li>What we achieved
+			
+<ul>
+				
+<li>Coding was done.</li>				
+<li>Tested the work done so far by building a bot as we did in XLR8.</li>			</ul></li>		</ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+			
+<li>What you have you planned ?</li>			
+<ul>
+				
+<li>Work on the mechanical part of the bot i.e. fabrication of the bot..</li>			</ul><li>What you have accomplished?</li>			
+<ul>
+<li>All parts of the bot ready to assemble</li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+				
+<li>What you have planned ?</li>			</ul><p>Assembling of all parts to make bot ready.</p><p>Testing the mechanical model.</p><ul>
+				
+<li>What you have accomplished?</li>			</ul><p>Done assembly.
+			</p><p>Started testing.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+				
+<li>What you have planned ?:</li>			</ul><p>Debugging and making the model perfect.
+			</p><ul>
+				
+<li>What you have accomplished? : Tell us what you are up to.</li>			</ul></ul></ul></ul>

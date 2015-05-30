@@ -1,0 +1,16 @@
+<ul>
+	<li><strong>Mechanical System</strong></li></ul><p>This bot will be made of 2 normal motors, 1 electromagnet and a solid structure. The motion in X &amp; Y direction are driven by the motors and threaded rod.</p><ul><li><strong>Electrical Part</strong></li></ul><p>The motors were controlled by the Arduino with the LM 293D
+and 7805 circuit based on the move played the computer as input received by it. We used two motors for motion in two
+perpendicular directions, enabling the magnet to move all over the board. The
+magnet was also </p><ul>	<li><strong>Sensing the moves</strong></li></ul><ul>
+</ul><p>In the start, our idea was to make use of
+sensors (Piezo) to detect the position and movement of the player’s active
+coins. But we couldn’t use them because the particular coin on the board had to
+be tapped very hard in order for the coin to be detected by the sensor as the
+active piece, which was not very feasible. So we decided to use detection by
+image processing instead.</p><ul>
+	<li><strong>AI Checkers Code</strong></li></ul><p><strong></strong></p><p>We implemented the minimax algorithm in writing the code for
+the game. In short it is maximizing the advantage of our move while minimizing the
+favor it gives to the opponent.</p><ul><li><strong>Gobetwino</strong></li></ul><p>We tried importing libraries into arduino but because of that there was some problem with the serial function we had to use another software called go betwino which could link with the code and with arduino through text and different types of commands.There was another problem when doing this that we couldnt use more than one serial inputs so we had to send everything through only one string. </p><ul><li><strong>Arduino</strong></li></ul><p>We used Arduino programming to interface and control our
+bot. The Arduino codes run the motor and the electromagnet, which
+is responsible for the computer moves.</p>

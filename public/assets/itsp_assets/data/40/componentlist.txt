@@ -1,0 +1,5 @@
+<ul><li>Purchased from Lamington road :-</li></ul><ol>
+<li>iball C20.0 20 Mpixel web camera. - <span style="color: rgb(128, 100, 162);">Rs. 1050</span></li><li>Stepper motors from Servo Electronics (2) </li><li>Atmega-128 from Gala Electronics</li><li>Programmer and motor driver board from Gala Electronics</li></ol><ul>
+<li>Purchased from Nagdevi Road, Masjid:-</li></ul><ol>
+<li><span style="font-size: 14px;">Two aluminium bars</span></li><li>Two pairs of drawer sliders.</li><li>Thin aluminium sheet.</li></ol><ul><li>Purchased from MangalDeep, Powai :-</li></ul><ol><li>L clamps (small and big)</li><li>Acrylic Sheets</li><li>Rack and pinion</li><li>2m long screw</li><li>Araldite</li><li>DC motor</li><li>Atmega ic holder</li><li>Male and female berg pins</li></ol><ul><li>Purchased from WEL, electrical department:-</li></ul><ol><li>L293D</li></ol><ul>
+<li><span style="font-size: 14px;"></span></li></ul>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Eyes closed grayscale image</h5>
+									<div class="details white-text">
+										The detected area of the eyes are cropped and then grayscaled
+									</div>
+								</div>

@@ -1,0 +1,9 @@
+<ul>
+	<li><strong>Suction Pump</strong></li></ul><p>
+	We have used Air compressor for suction pump. We opened the pump and attached a inlet to the pump through which the air is sucked in. </p><ul>
+	<li><strong>Movement</strong></li></ul><p>
+	The bot is driven by two 10 RPM Johnson motor. Each motor is attached to a  cup. Only one cup can sustain the total weight of the bot. When a cup holds the entire weight of the bot, the two motor undergoes 180 degrees rotation. This bring both the cup along the plane of the surface. Then the solenoid valve attached to the moving cup is switched on and that of the fixed cup is switched off. This attaches the 2nd cup to surface and the procedure is repeated. </p><ul>
+	<li><strong>Remote</strong></li></ul><p>The remote operates the two motors and the two valves. </p><p>
+	<br>
+	<br>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p>

@@ -1,0 +1,46 @@
+<div>
+	<strong>
+	The project is largely based on image processing.</strong>
+</div><div>
+	<strong>A seqeunce of images is captured and each image is processed.</strong>
+</div><div>
+	<hr>
+</div><div>
+	For separating the required object, color detection method is used which uses 
+	<a href="" http:="" en.wikipedia.org="" wiki="" hsl_and_hsv="">HSV color model</a>.
+</div><div>
+	<strong><u>HSV Color Model</u></strong>
+</div><div>
+	HSV is a cylindrical co-ordinate system representation of the RGB color system. 
+	<strong style="font-size: 14px;">HSV stands for
+	</strong>
+</div><p>
+	<strong style="font-size: 14px;">
+	</strong></p><ul>
+	<strong style="font-size: 14px;">
+	
+<li><strong style="font-size: 14px;"></strong>Hue : 0 - 179</li>	
+<li>Saturation : 0 - 255</li>	
+<li>Value : 0 - 255</li>	</strong>
+</ul><hr>
+<strong style="font-size: 14px;"><p>
+	Another part is to reduce noise in the image which is done by erosion,dilation and blur.</p><p>
+	<a href="http://docs.opencv.org/doc/tutorials/imgproc/shapedescriptors/find_contours/find_contours.html#find-contours">Contours</a> of the image are drawn.</p><p>
+	<strong><u>Image Contours</u></strong></p><p>
+	Mathematically, a contour line(also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value. These are useful for shape analysis or object detection.</p><hr>
+<div>
+	<strong>Next part is getting the co-ordinates.This is done using <a href="http://docs.opencv.org/doc/tutorials/imgproc/shapedescriptors/moments/moments.html#moments">image moments</a>.</strong>
+</div><div>
+	<strong><u>Image Moments</u></strong>
+</div></strong>
+<div>
+	<strong style="font-size: 14px;">
+	Finding image moments is like finding centre of mass of an image.</strong>The function computes moments, up to the 3rd order, of a vector shape or a rasterized shape. <strong style="font-size: 14px;">The current xy co-ordinates of the object are given by this function.
+	</strong>
+</div><strong style="font-size: 14px;">
+<div>
+	<hr id="horizontalrule">
+</div><ol>
+</ol></strong><p><strong style="font-size: 14px;"></strong></p><p>
+	<strong style="font-size: 14px;"></strong></p><p>
+	<strong style="font-size: 14px;"></strong></p>

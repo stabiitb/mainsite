@@ -1,0 +1,8 @@
+<p>
+	<a href="http://assets.hardwarezone.com/images/wireless-power-7.jpg"></a></p><ul>
+	
+<li><strong>electrodynamic induction:</strong></li></ul><p><strong>Resonant inductive coupling</strong> or <strong>electrodynamic induction</strong> is the near field wireless transmission of electrical energy between two coils that are tuned to resonate at the same frequency. the primary coil will be connected to the source of current and the secondary coil will be connected to the device which is to be charged. using inductive coupling, we try to tranfer the electrical enegery wirelessly.</p><p>electrodynamic induction is the basic concept behind the working of our project.</p><ul>
+	</ul><ul>
+	
+</ul><p>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p><p><img src="http://assets.hardwarezone.com/images/wireless-power-7.jpg"></p>

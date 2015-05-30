@@ -1,0 +1,7 @@
+<p>The project
+consists of real time, 2D tracking of the plane’s latitude and longitude on
+Gymkhana grounds. The plane used
+is an RC scale model of the Extra 300 plane, made of
+balsa wood, and carries the multiple GPS modules. It uses high
+performance components to test the tracking potentials of the plane
+in both the dimensions.</p>

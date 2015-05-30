@@ -1,0 +1,9 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	
+<li><strong>wing flapping</strong></li></ul><p>it is entirely based on the flapping mechanism of the bird . the wing flapping is supported by the motor and gear assembly and the shaft which joins it with the gear assembly.</p><ul>
+	
+<li><strong>fuselage</strong></li></ul><p>it is made of ply wood , it is lighter. It supports  battery, receiver , ESC , motor etc. it is cut in the shape of bird to ease the resistance of air.</p><ul>
+	</ul><p>
+	         <strong>tail</strong><br> it can help in changing the direction of the flying  ornithopter . it is controlled by two servos to facilitate it up - down and sideways movement. </p><p>GEARS:<br>
+	           In order to achieve enough torque required to move the wings we had to increase the gear ratio.<br></p>

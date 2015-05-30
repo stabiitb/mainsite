@@ -1,0 +1,3 @@
+<ul><li>Electrical Components
+<ul>
+<li>12 Tower Pro MG995 servos (and the accompanying accessories)</li><li>6 Futaba S3003 servos (and the accompanying accessories)</li><li>1 Arduino Mega 2560</li><li>1 11.1 Volt 2200mA Li-Po battery</li><li>1 DC-DC Voltage Buck</li><li>Male - Male Jumper cables, wires, a PCB, floor solders and floor stilts.</li></ul></li><li>Mechanical Components<ul><li>2mm Nut Bolts</li><li>5mm Nut Bolts and Screws</li><li>5 Acrylic Sheets of 5mm and 3mm thckness</li></ul></li></ul>

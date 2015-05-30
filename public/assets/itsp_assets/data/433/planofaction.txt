@@ -1,0 +1,36 @@
+<ul><h3><span style="color: rgb(255, 255, 0);">Week 1 (May 5th -11th)</span></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>Planned</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Finalize the most feasible model from among the ones thought over.</inline></li><li><inline style="color: rgb(155, 187, 89);">Think of a way to procure the ball required as per model.<br></inline></li></ul></li></ul><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>Accomplished</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Finalized a model.</inline></li><li><inline style="color: rgb(155, 187, 89);">Bought  an inter-locking gems ball.</inline></li></ul></li></ul><h3><span style="color: rgb(255, 255, 0);">Week 2 (May 12th- 18th )</span></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>Planned</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Get all other requisites like motors,spring,caster ball,wheels,Arduino Uno,etc.</inline></li><li><inline style="color: rgb(155, 187, 89);">As we noticed the required components would require more space,decided to get a different idea for acquiring the ball.</inline></li></ul></li><li><span style="color: rgb(155, 187, 89);"><inline>What you have accomplished?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Purchased motors,wheels,caster balls,rod,spring,battery,etc.</inline></li><li><inline style="color: rgb(155, 187, 89);">Arranged to get the metal disc to be put inside the ball.</inline></li><li><inline style="color: rgb(155, 187, 89);">Got an idea to prepare the ball in the Plastic Studio of IDC.</inline></li></ul></li></ul><h3><span style="color: rgb(255, 255, 0);">Week 3 (May 19th - 25th)</span></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have planned ?:</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Buy new motors having larger torque as the previously bought motors did not provide enough torque to run the robot.</inline></li><li><inline style="color: rgb(155, 187, 89);">Assemble all the components. </inline></li></ul></li></ul><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What we achieved</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Started working on the plastic ball in the Plastic Studio of IDC.</inline></li><li><inline style="color: rgb(155, 187, 89);">Joined the motors and rod to the metal disc.</inline></li></ul></li></ul><h3><span style="color: rgb(255, 255, 0);">Week 4 (May 26th - June 1)</span></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have planned ?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Give a final touch to the mechanical part of the project.</inline></li></ul></li></ul><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have accomplished?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Stopped working at IDC as we got the idea of using a globe as a ball.</inline></li><li><inline style="color: rgb(155, 187, 89);">Got a globe of exactly required size from the market.</inline></li><li><inline style="color: rgb(155, 187, 89);">Completed the mechanical part of the project.</inline> </li></ul></li></ul><h3><span style="color: rgb(255, 255, 0);">Week 5 (June 2nd - June 8th)</span></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have planned ?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Buy Arduino Uno,JY-MCU bluetooth module and start working on the coding part of the project.</inline></li></ul></li></ul><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have accomplished?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Bought the above materials.</inline></li></ul><p><inline style="color: rgb(155, 187, 89);">         Completed a fair amount of coding work.</inline></p></li></ul><h3></h3><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have planned ?</inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Debug the code.</inline></li><li><inline style="color: rgb(155, 187, 89);">Bring out the finished product.</inline></li></ul></li></ul><ul>
+<li><span style="color: rgb(155, 187, 89);"><inline>What you have accomplished? </inline></span>
+<ul>
+<li><inline style="color: rgb(155, 187, 89);">Got the robot ball ready.Worked on making it more presentable.</inline></li></ul></li></ul></ul>

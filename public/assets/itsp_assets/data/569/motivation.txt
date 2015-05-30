@@ -1,0 +1,17 @@
+<h1><span style="color: rgb(0, 0, 0);">Just wanted to do some technical stuff.  So  why not self balancing bike bot ?</span></h1><p>
+	At the JEE times , most of the students got fear after watching the rotation problems .</p><p>
+	They were just trying the methods to escape from the rotational mechanics.</p><p>
+	Students found difficulty to understand the principles of rotation.</p><p>
+	So, we thought that let us make a project so that student can learn the rotation principles . practically.</p><p>
+	The one more factor is that we were discussing that what project should we take to tlearn and teach the principles of the rotation technically.</p><p>
+	So suddenly , one of our team mate told that at the  XLR8 , we made a car , so why not this time  bike .</p><p>
+	So , we are partially agreed to him.</p><h3>
+	But after watching this video , we decided that we would try to make the  <span style="color: rgb(0, 0, 0);">self balancing bike bot</span> </h3><h3>that would be  controlled manually by us .</h3><h3><a href="https://www.youtube.com/watch?v=0312BNqIBFI">Motor Bike Robot</a></h3><h2><span style="color: rgb(0, 0, 0);">Further modification :</span></h2><h4>This technology can be extended to make a self balancing unicycle which
+is much more better in terms of space and steerability. </h4><h4>Due to its low weight and greater steer ability, it can be made faster
+than a humanoid bot. <br><inline style="color: rgb(242, 242, 242);">This bot might be useful for transportation in research areas or mines
+where man or four wheeled bot cannot reach.</inline></h4><h5>
+	<strong><inline style="color: rgb(242, 242, 242);">On a more practical level, a device such as this could be used to help teach children to ride
+bicycles. If the idea was developed further for a larger scale, it could also possibly allow
+partially paralyzed or low-motor-control persons to ride bicycles themselves, because they
+would only need to operate the buttons on a remote control.</inline><br>
+	</strong></h5>

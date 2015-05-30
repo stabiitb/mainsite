@@ -1,0 +1,27 @@
+<h1>
+<span style="color: rgb(247, 150, 70);"><u>ITSP-ELECTRONIC MODELLING OF THE NEURON</u></span>
+<span style="color: rgb(84, 141, 212);"></span></h1><h5><span style="color: rgb(84, 141, 212);">
+AND CREATING A LINE FOLLOWER USING THESE NEURONS</span>
+</h5><p>By-     <strong>Vishrant Tripathi</strong></p><p><strong>        N. Krishna
+Vamsi</strong></p><p><strong>        Rana Ranvir</strong>  </p><p>
+	<u>INTRODUCTION</u></p><ul>
+	<li>·We got the idea for this project from the
+introductory courses on biology and electronics we had in the second semester. 
+	</li>	<li>·We researched the topic further and came to the
+conclusion that 
+	<strong><em>artificial neural networks</em></strong> would be far more interesting to
+model rather than single neurons due to a large number of practical
+applications and lots of reference material to read further. It seems that most
+of the literature related to neural networks deals with computer modelling
+rather than hardware, although hardware implementations have been realised. 
+	</li>	<li>·We understood the basic element of all neural
+networks called the Threshold Logic Unit (TLU) or the McCulloch Pitt's Neuron
+and how it works. We also understood how some analog models of neurons worked,
+specifically the 
+	<strong><em>Harmon Model.</em></strong></li>	<li>·We implemented the Harmon Model on a bread-board
+to achieve the action potential curves. Also, we completed the McCulloch Pitt's
+Neuron on a bread-board using an adder and a comparator.
+	</li>	<li>· The next
+step was to find a suitable application for our simplistic neuron model, and we
+came up with the idea to make a line follower using these neurons. 
+	</li></ul>

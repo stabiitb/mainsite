@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Eyes Detected</h5>
+									<div class="details white-text">
+										The Eyes are detected by using the computervision toolbox of MATLAB
+									</div>
+								</div>

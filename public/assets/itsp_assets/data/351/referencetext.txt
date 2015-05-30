@@ -1,0 +1,4 @@
+<p> For the completion of your project , We are thankful to all who supported us all the way.<br>
+	<br>We are also thankful to our mentor Yash Agrawal and Chetan Agrawal.</p><p><br>
+	We also referred to the following sources :</p><ul>
+	<li>Google</li>	<li>Stack Overflow</li>	<li><a href="http://www.instructables.com">www.instructables.com</a></li></ul>

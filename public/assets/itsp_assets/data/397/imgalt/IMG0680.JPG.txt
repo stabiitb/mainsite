@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Leg Prototype</h5>
+									<div class="details white-text">
+										A prototype of the leg showing the femur and tibia along with the attached servos
+									</div>
+								</div>

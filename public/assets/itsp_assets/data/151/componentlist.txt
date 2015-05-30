@@ -1,0 +1,22 @@
+<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.nex-robotics.com/">http://www.nex-robotics.com/</a> - amounting to <strong>Rs 658.8</strong> : <br>
+	</span>
+	
+<ul>
+		
+<li><span style="color: rgb(0, 0, 0);">ATMEGA32 Development Board</span></li>	</ul></li><li><span style="color: rgb(0, 0, 0);">Components  from <strong>Robosoft system </strong><a href="www.robosoftsystems.co.in/">www.robosoftsystems.co.in/</a>, amounting to <strong>Rs 1980 (including 12.5% VAT)</strong>:</span><ul>
+	
+<li><span style="color: rgb(0, 0, 0);">omni wheels <strong> 4 piece</strong></span> </li></ul></li><li><span style="color: rgb(0, 0, 0);">Components  from MAC-NET TECHNOLOGY (Lamington Road), amounting to <strong>Rs 2076(including  12.5 % VAT)</strong>:</span><ul>
+	
+<li><span style="color: rgb(0, 0, 0);">200 RPM 6mm Motor   <strong>4 piece               4x130= Rs520</strong></span></li>	
+<li><span style="color: rgb(0, 0, 0);">USBasp   -<strong>Rs 300</strong> </span></li>	
+<li><span style="color: rgb(0, 0, 0);">HC-05 Bluetooth module -<strong>Rs 500</strong></span></li>	
+<li><span style="color: rgb(0, 0, 0);">11.1v Li-ion battery -<strong>Rs 525</strong></span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components  from<strong> VEGAKIT Pvt. Ltd. </strong>(Lamington road), amounting to <strong>Rs 231(including 5% VAT)</strong>:</span><ul>
+	
+<li><span style="color: rgb(0, 0, 0);">L293D <strong>2 piece  2x40=Rs 80</strong></span></li>	
+<li><span style="color: rgb(0, 0, 0);">Bread Board <strong>Rs 140 </strong></span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components  from <strong>MANGALDEEP</strong> (Shop in IIT Market),amounting to<strong> Rs 537</strong>:</span><ul>
+	
+<li><span style="color: rgb(0, 0, 0);">Acryclic sheet,L Clamp, Nuts and Bolts,stand - <strong>Rs 190</strong></span></li>	
+<li><span style="color: rgb(0, 0, 0);">Connecting wires, LEDs, Insulating Tape,Double sided Tape, Resistor, capacitor  - <strong>Rs 87</strong></span></li>	
+<li><span style="color: rgb(0, 0, 0);">Jumper wires, Berg Strips, PCB =<strong>Rs 260</strong></span></li></ul><ul>
+	
+<li><strong><span style="color: rgb(0, 0, 0); background-color: rgb(118, 146, 60);">Final total - Rs 5482.8</span></strong></li></ul></li>

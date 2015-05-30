@@ -1,0 +1,1001 @@
+<h3>Accelerometer Setup:</h3><p>As the accelerometer is low power we had to use a logic level converter to convert 5v from arduino to 3.3 v and vice versa,</p><p>                                        We will be using accelerometer adxl345 which is basically a digital accelerometer</p><p>#include &lt;Wire.h&gt;</p><p>
+#include &lt;ADXL345.h&gt;</p><p>
+int offset_x,offset_y,offset_z;</p><p>ADXL345 adxl; //variable adxl is an instance of the ADXL345 library</p><p>void setup(){</p><p>
+  Serial.begin(9600);</p><p>
+  adxl.powerOn();</p><p> adxl.readAccel(&amp;offset_x, &amp;offset_y, &amp;offset_z);</p><p>
+}</p><p>void loop()</p><p>{ </p><p>int x,y,z; </p><p> 
+  adxl.readAccel(&amp;x, &amp;y, &amp;z); //read the accelerometer values and store them in variables  x,y,z</p><p> Serial.print(x-offset_x);</p><p>Serial.print(" ");</p><p>
+  Serial.print(y-offset_y);</p><p>Serial.print(" "); </p><p>  Serial.println(z-offset_z-9);</p><p>
+  delay(50);</p><p> }</p><p>The following code was implemented after importing the arduino drivers for adxl345 ,</p><p>A glimpse of the <a data-text="driver" id="cr_it_item_3" class="cr_it_item">driver</a> code </p><p>#include "Arduino.h"
+#include "ADXL345.h"
+#include <wire.h>
+#define ADXL345_DEVICE (0x53)    // ADXL345 device address
+#define ADXL345_TO_READ (6)      // num of bytes we are going to read each time (two bytes for each axis)
+ADXL345::ADXL345() {
+status = ADXL345_OK;
+error_code = ADXL345_NO_ERROR;</wire.h></p><p>gains[0] = 0.00376390;
+gains[1] = 0.00376009;
+gains[2] = 0.00349265;
+}
+void ADXL345::powerOn() {
+Wire.begin();        // join i2c bus (address optional for master)
+//Turning on <span class="cm_word" style="border-bottom: 1px solid #0000FF !important;text-decoration:underline !important;color:#0000FF !important">the ADXL345</span>
+writeTo(ADXL345_POWER_CTL, 0);      
+writeTo(ADXL345_POWER_CTL, 16);
+writeTo(ADXL345_POWER_CTL, 8); 
+}
+// Reads the acceleration into three variable x, y and z
+void ADXL345::readAccel(int *xyz){
+readAccel(xyz, xyz + 1, xyz + 2);
+}
+void ADXL345::readAccel(int *x, int *y, int *z) {
+readFrom(ADXL345_DATAX0, ADXL345_TO_READ, _buff); //read the acceleration data from the ADXL345</p><p>// each axis reading comes in 10 bit resolution, ie 2 bytes.  Least Significat Byte first!!
+// thus we are converting both bytes in to one int
+*x = (((int)_buff[1]) &lt;&lt; 8) | _buff[0];  
+*y = (((int)_buff[3]) &lt;&lt; 8) | _buff[2];
+*z = (((int)_buff[5]) &lt;&lt; 8) | _buff[4];
+}
+void ADXL345::get_Gxyz(double *xyz){
+int i;
+int xyz_int[3];
+readAccel(xyz_int);
+for(i=0; i&lt;3; i++){
+xyz[i] = xyz_int[i] * gains[i];
+}</p><h5>Also the communication between the Xbees was checked using the XCTU software ,</h5><p>To make the sensor more compact Pcb was designed in Eagle ,</p><h4><strong>Here is the processing code for the game:</strong></h4><p>import processing.opengl.*;
+import processing.serial.*;
+Serial sp;
+byte[] buff; //buff input String read from serial com port
+float[] r;
+Ball theBall;
+int doshit;
+boolean lvlspdinc, lvlspddec;
+DropDown fag;
+Ball dball;
+Paddle thePaddle;
+Bullet theBullet;
+Brickg theBrickg[] = new Brickg[15];
+int rchance;
+Brickb theBrickb[] = new Brickb[15];
+Brickr theBrickr[] = new Brickr[15];
+Special eff;
+boolean lvltemp;
+String powername;
+int effState[] = new int[4];
+boolean pcatch;
+int effTime[]=new int[4];
+int second, pdisptime;
+int numColors = 100; // the number of different random colors
+color[] colors = new color[numColors];
+int current;
+int count;
+import processing.opengl.*;
+PImage bg;//PFont font;
+PImage gl, gm, gd, bl, bm, bd, ol, om, od;
+void setup()
+{ 
+  size(400, 500, P3D);
+  gl=loadImage("gl.jpg");
+  gm=loadImage("gm.jpg");
+  gd=loadImage("gd.jpg");
+  bl=loadImage("bl.jpg");
+  bm=loadImage("bm.jpg");
+  bd=loadImage("bd.jpg");
+  ol=loadImage("ol.jpg");
+  om=loadImage("om.jpg");
+  od=loadImage("od.jpg");
+  lvlspdinc=false;
+  lvlspddec=false;
+  lvltemp=true;
+  sp = new Serial(this, "COM6", 9600); //creating new serial communication port
+  buff = new byte[128];
+  r = new float[5];
+  smooth();
+  fag = new DropDown();
+  fag.dshow=false;
+  doshit=1;
+  bg=loadImage("imagefile1.jpg");
+  frameRate(80);
+  second = 80;
+  pcatch=false;
+  for (int i=0; i&lt;colors.length; i++) 
+  {
+    colors[i] = color(random(255), random(255), random(255));
+  }
+  for (int i =0;i&lt;4;i++)
+  {
+    effTime[i] = 30*second;
+    effState[i] = 0;
+  }
+  pdisptime=2000;
+  thePaddle = new Paddle();
+  theBall = new Ball();
+  dball=new Ball();
+  theBullet =new Bullet();
+  dball.act=false;
+  bg = loadImage("imagefile1.jpg");
+  eff = new Special();
+  for (int i = 0;i&lt;15;i++)
+  {
+    theBrickg[i] = new Brickg(i);
+  }
+  for (int i = 0;i&lt;15;i++)
+  {
+    theBrickb[i] = new Brickb(i);
+  }
+  for (int i = 0;i&lt;15;i++)
+  {
+    theBrickr[i] = new Brickr(i);
+  }
+  count = 0;
+  for (int i = 0;i&lt;4;i++)
+  {
+    effState[i] = 0;
+    effTime[i] =  30*second;
+  }
+}
+void draw()
+{ 
+  increaseLvl();
+  image(bg, 0, 0);
+  pushMatrix();
+  translate(0, 100);
+  boolean gstate=false;
+  boolean b1=false, b2=false, b3=false;
+  theBall.drive();
+  theBall.display();
+  dball.display();
+  thePaddle.drive();
+  thePaddle.display();
+  thePaddle.getVel();
+  fag.display();
+  fag.drive();
+  if (effState[0] == 1 &amp;&amp; effTime[0] &gt;0)
+  {
+    eff.gunMode();
+    effTime[0]--;
+  }
+  if (effTime[0] == 0)
+  {  
+    effState[0] = 0;
+    doshit=1;
+    fag.xpos = 0;
+    fag.ypos = 0;
+    pcatch = false;
+    fag.dshow = false;
+    effTime[0]=30*second;
+  }
+  if (effState[1] == 1 &amp;&amp; effTime[1] &gt; 0)
+  {
+    eff.PaddleSizeInc();
+    effTime[1]--;
+  }
+  if (effTime[1] == 0)
+  {
+    eff.resetPaddle();
+    doshit=1;
+    fag.xpos = 0;
+    fag.ypos = 0;
+    fag.dshow = false;
+    effState[1] = 0;
+    effTime[1]=30*second;
+  }
+  if (effState[2]==1 &amp;&amp; effTime[2]&gt;0) 
+  {
+    eff.sball();
+    effTime[2]--;
+  }
+  if (effTime[2] == 0 )
+  {
+    theBall.sstate=false;
+    doshit=1;
+    fag.xpos = 0;
+    fag.ypos = 0;
+    fag.dshow = false;
+    theBall.c =  color(200, 30, 30);
+    effState[2]=0;
+    effTime[2]=30*second;
+  }
+  if (effState[3]==1 &amp;&amp; effTime[3]&gt;0) 
+  {
+    eff.dualBall(); 
+    dball.drive();
+    if (count ==0 )
+    {
+      dball.xpos = theBall.xpos;
+      dball.ypos = theBall.ypos;
+      dball.xvel=-theBall.xvel;
+      dball.yvel=-theBall.yvel;
+    }
+    count++;
+    effTime[3]--;
+  }
+  if (effTime[3] == 0)
+  { 
+    effState[3]=0;
+    doshit=1;
+    dball.act=false;
+    effTime[3]=30*second;
+    fag.xpos = 0;
+    fag.ypos = 0;
+    fag.dshow = false;
+  }
+  int i;
+  int c1=0, c2=0, c3=0;
+  for (i=0;i&lt;10;i++) 
+  { 
+    if (theBrickg[i].brs)break;
+    c1++;
+  }
+  if (c1==10) {
+    b1=true;
+  }
+  for (i=0;i&lt;10;i++) 
+  { 
+    if (theBrickb[i].brs)break;
+    c2++;
+  }
+  if (c2==10) {
+    b2=true;
+  }
+  for (i=0;i&lt;10;i++) {
+    if (theBrickr[i].brs)break;
+    c3++;
+  }
+  if (c3==10) {
+    b3=true;
+  }
+  if (b1 &amp;&amp; b2 &amp;&amp; b3) 
+  {
+    gstate=true;
+  }
+  float err = sqrt((theBall.xvel * theBall.xvel + theBall.yvel * theBall.yvel)/2);
+  thePaddle.display();
+  // FOR PRIMARY BALL  
+  for (i=0;i&lt;10;i++)
+  {
+    if ((((theBall.xpos &gt;= theBrickg[i].xpos - err - theBall.rad &amp;&amp; theBall.xpos &lt;= theBrickg[i].xpos + err - theBall.rad )|| (theBall.xpos &gt;= theBrickg[i].xpos + theBrickg[i].wdth -1.5 &amp;&amp; theBall.xpos &lt;= theBrickg[i].xpos + theBrickg[i].wdth + 1.5 )) &amp;&amp; (theBall.ypos &gt;= theBrickg[i].ypos &amp;&amp; theBall.ypos &lt;=theBrickg[i].ypos+theBrickg[i].heit))&amp;&amp; (theBrickg[i].brs)&amp;&amp;(theBall.act==true))
+    { 
+      theBall.xvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickg[i].b=4;
+      } else {
+        theBrickg[i].b++;
+      }
+    }
+    if ((((theBall.ypos &gt;= theBrickg[i].ypos - err - theBall.rad &amp;&amp; theBall.ypos&lt;= theBrickg[i].ypos + err - theBall.rad)|| (theBall.ypos &gt;= theBrickg[i].ypos + theBrickg[i].heit -1.5 &amp;&amp; theBall.ypos &lt;= theBrickg[i].ypos + theBrickg[i].heit + 1.5 )) &amp;&amp; (theBall.xpos &gt;= theBrickg[i].xpos &amp;&amp; theBall.xpos &lt;=theBrickg[i].xpos+theBrickg[i].wdth))&amp;&amp; (theBrickg[i].brs)&amp;&amp;(theBall.act==true))
+    {
+      theBall.yvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickg[i].b=4;
+      } else {
+        theBrickg[i].b++;
+      }
+    }
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    theBrickg[i].display();
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    if ((((theBall.xpos &gt;= theBrickb[i].xpos - err - theBall.rad &amp;&amp; theBall.xpos &lt;= theBrickb[i].xpos + err - theBall.rad )|| (theBall.xpos &gt;= theBrickb[i].xpos + theBrickb[i].wdth -1.5 &amp;&amp; theBall.xpos &lt;= theBrickb[i].xpos + theBrickb[i].wdth + 1.5 )) &amp;&amp; (theBall.ypos &gt;= theBrickb[i].ypos &amp;&amp; theBall.ypos &lt;=theBrickb[i].ypos+theBrickb[i].heit))&amp;&amp; (theBrickb[i].brs)&amp;&amp;(theBall.act==true))
+    {
+      theBall.xvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickb[i].b=4;
+      } else {
+        theBrickb[i].b++;
+      }
+    }
+    if ((((theBall.ypos &gt;= theBrickb[i].ypos - err - theBall.rad &amp;&amp; theBall.ypos&lt;= theBrickb[i].ypos + err - theBall.rad)|| (theBall.ypos &gt;= theBrickb[i].ypos + theBrickb[i].heit -1.5 &amp;&amp; theBall.ypos &lt;= theBrickb[i].ypos + theBrickb[i].heit + 1.5 )) &amp;&amp; (theBall.xpos &gt;= theBrickb[i].xpos &amp;&amp; theBall.xpos &lt;=theBrickb[i].xpos+theBrickb[i].wdth))&amp;&amp; (theBrickb[i].brs)&amp;&amp;(theBall.act==true))
+    {
+      theBall.yvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickb[i].b=4;
+      } else {
+        theBrickb[i].b++;
+      }
+    }
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    theBrickb[i].display();
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    if ((((theBall.xpos &gt;= theBrickr[i].xpos - err - theBall.rad &amp;&amp; theBall.xpos &lt;= theBrickr[i].xpos + err - theBall.rad )|| (theBall.xpos &gt;= theBrickr[i].xpos + theBrickr[i].wdth -1.5 &amp;&amp; theBall.xpos &lt;= theBrickr[i].xpos + theBrickr[i].wdth + 1.5 )) &amp;&amp; (theBall.ypos &gt;= theBrickr[i].ypos &amp;&amp; theBall.ypos &lt;=theBrickr[i].ypos+theBrickr[i].heit))&amp;&amp; (theBrickr[i].brs)&amp;&amp;(theBall.act==true))
+    {
+      theBall.xvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickr[i].b=4;
+      } else {
+        theBrickr[i].b++;
+      }
+    }
+    if ((((theBall.ypos &gt;= theBrickr[i].ypos - err - theBall.rad &amp;&amp; theBall.ypos&lt;= theBrickr[i].ypos + err - theBall.rad)|| (theBall.ypos &gt;= theBrickr[i].ypos + theBrickr[i].heit -1.5 &amp;&amp; theBall.ypos &lt;= theBrickr[i].ypos + theBrickr[i].heit + 1.5 )) &amp;&amp; (theBall.xpos &gt;= theBrickr[i].xpos &amp;&amp; theBall.xpos &lt;=theBrickr[i].xpos+theBrickr[i].wdth))&amp;&amp; (theBrickr[i].brs)&amp;&amp;(theBall.act==true))
+    {
+      theBall.yvel *= -1;
+      if (theBall.sstate==true) {
+        theBrickr[i].b=4;
+      } else {
+        theBrickr[i].b++;
+      }
+    }
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    theBrickr[i].display();
+  }
+  //FOR DUAL BALL
+  for (i=0;i&lt;15;i++)
+  {
+    if ((((dball.xpos &gt;= theBrickg[i].xpos - err - dball.rad &amp;&amp; dball.xpos &lt;= theBrickg[i].xpos + err - dball.rad )|| (dball.xpos &gt;= theBrickg[i].xpos + theBrickg[i].wdth -1.5 &amp;&amp; dball.xpos &lt;= theBrickg[i].xpos + theBrickg[i].wdth + 1.5 )) &amp;&amp; (dball.ypos &gt;= theBrickg[i].ypos &amp;&amp; dball.ypos &lt;=theBrickg[i].ypos+theBrickg[i].heit))&amp;&amp; (theBrickg[i].brs)&amp;&amp;(dball.act==true))
+    { 
+      dball.xvel *= -1;
+      if (dball.sstate==true) {
+        theBrickg[i].b=4;
+      } else {
+        theBrickg[i].b++;
+      }
+    }
+    if ((((dball.ypos &gt;= theBrickg[i].ypos - err - dball.rad &amp;&amp; dball.ypos&lt;= theBrickg[i].ypos + err - dball.rad)|| (dball.ypos &gt;= theBrickg[i].ypos + theBrickg[i].heit -1.5 &amp;&amp; dball.ypos &lt;= theBrickg[i].ypos + theBrickg[i].heit + 1.5 )) &amp;&amp; (dball.xpos &gt;= theBrickg[i].xpos &amp;&amp; dball.xpos &lt;=theBrickg[i].xpos+theBrickg[i].wdth))&amp;&amp; (theBrickg[i].brs)&amp;&amp;(dball.act==true))
+    {
+      dball.yvel *= -1;
+      if (dball.sstate==true) {
+        theBrickg[i].b=4;
+      } else {
+        theBrickg[i].b++;
+      }
+    }
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    if ((((dball.xpos &gt;= theBrickb[i].xpos - err - dball.rad &amp;&amp; dball.xpos &lt;= theBrickb[i].xpos + err - dball.rad )|| (dball.xpos &gt;= theBrickb[i].xpos + theBrickb[i].wdth -1.5 &amp;&amp; dball.xpos &lt;= theBrickb[i].xpos + theBrickb[i].wdth + 1.5 )) &amp;&amp; (dball.ypos &gt;= theBrickb[i].ypos &amp;&amp; dball.ypos &lt;=theBrickb[i].ypos+theBrickb[i].heit))&amp;&amp; (theBrickb[i].brs)&amp;&amp;(dball.act==true))
+    {
+      dball.xvel *= -1;
+      if (dball.sstate==true) {
+        theBrickb[i].b=4;
+      } else {
+        theBrickb[i].b++;
+      }
+    }
+    if ((((dball.ypos &gt;= theBrickb[i].ypos - err - dball.rad &amp;&amp; dball.ypos&lt;= theBrickb[i].ypos + err - dball.rad)|| (dball.ypos &gt;= theBrickb[i].ypos + theBrickb[i].heit -1.5 &amp;&amp; dball.ypos &lt;= theBrickb[i].ypos + theBrickb[i].heit + 1.5 )) &amp;&amp; (dball.xpos &gt;= theBrickb[i].xpos &amp;&amp; dball.xpos &lt;=theBrickb[i].xpos+theBrickb[i].wdth))&amp;&amp; (theBrickb[i].brs)&amp;&amp;(dball.act==true))
+    {
+      dball.yvel *= -1;
+      if (dball.sstate==true) {
+        theBrickb[i].b=4;
+      } else {
+        theBrickb[i].b++;
+      }
+    }
+  }
+  for (i=0;i&lt;15;i++)
+  {
+    if ((((dball.xpos &gt;= theBrickr[i].xpos - err - dball.rad &amp;&amp; dball.xpos &lt;= theBrickr[i].xpos + err - dball.rad )|| (dball.xpos &gt;= theBrickr[i].xpos + theBrickr[i].wdth -1.5 &amp;&amp; dball.xpos &lt;= theBrickr[i].xpos + theBrickr[i].wdth + 1.5 )) &amp;&amp; (dball.ypos &gt;= theBrickr[i].ypos &amp;&amp; dball.ypos &lt;=theBrickr[i].ypos+theBrickr[i].heit))&amp;&amp; (theBrickr[i].brs)&amp;&amp;(dball.act==true))
+    {
+      dball.xvel *= -1;
+      if (dball.sstate==true) {
+        theBrickr[i].b=4;
+      } else {
+        theBrickr[i].b++;
+      }
+    }
+    if ((((dball.ypos &gt;= theBrickr[i].ypos - err - dball.rad &amp;&amp; dball.ypos&lt;= theBrickr[i].ypos + err - dball.rad)|| (dball.ypos &gt;= theBrickr[i].ypos + theBrickr[i].heit -1.5 &amp;&amp; dball.ypos &lt;= theBrickr[i].ypos + theBrickr[i].heit + 1.5 )) &amp;&amp; (dball.xpos &gt;= theBrickr[i].xpos &amp;&amp; dball.xpos &lt;=theBrickr[i].xpos+theBrickr[i].wdth))&amp;&amp; (theBrickr[i].brs)&amp;&amp;(dball.act==true))
+    {
+      dball.yvel *= -1;
+      if (dball.sstate==true) {
+        theBrickr[i].b=4;
+      } else {
+        theBrickr[i].b++;
+      }
+    }
+  }
+  if (theBall.ypos &gt; 400+5) 
+  {
+    if (dball.act==true) 
+    {
+      dball=theBall;
+    }
+    else
+    {
+       theBall.ypos=200;
+      thePaddle.lives--;  
+    }
+  }
+  if (dball.ypos &gt; 400+5) {
+    count=0;
+    effState[1]=0;
+   // println("*");
+  }
+  if (thePaddle.lives==0) {
+    fill(color(255, 0, 0));
+    rect(100, 175, 200, 50);
+    fill(color(0, 0, 255));
+    text("Game over\nYou lose", 175, 200, 100, 100);
+    noLoop();
+  }
+  if (gstate==true) {
+    fill(color(0, 250, 0));
+    rect(100, 150, 200, 50);
+    fill(color(0, 0, 255));
+    text("You Win!", 175, 170, 100, 100);
+    noLoop();
+  }
+  fill(color(0, 0, 350));
+  rect(5, -50, 80, -25);
+  fill(color(0, 350, 350));
+  text("Lives= "+thePaddle.lives, 10, -50, 95, -25);
+  fill(color(0, 350, 350));
+  rect(315, -50, 80, -25);
+  popMatrix();
+  if (theBall.ypos &gt; 400+5) {
+    thePaddle.lives--;
+    if (dball.act==true) {
+      dball=theBall;
+    }
+    theBall.ypos=200;
+  }
+  if (dball.ypos &gt; 400+5) {
+    count=0;
+    effState[3]=0;
+  }
+  if (effState[0]==1) {
+    powername="Bullets";
+  }
+  if (effState[1]==1) {
+    powername="Paddle Size";
+  }
+  if (effState[2]==1) {
+    powername="Ball Split";
+  }
+  if (effState[3]==1) {
+    powername="Fire Ball";
+  }
+  if ((effState[0]==1||effState[1]==1||effState[2]==1||effState[3]==1)&amp;&amp;pdisptime&gt;0) {
+    fill(color(0, 0, 355));
+    rect(100, 10, 100, 60);
+    fill(color(0, 250, 0));
+    text("Power: "+powername, 50, 5, 105, 10);
+    pdisptime--;
+  }
+  if (pdisptime&lt;0) {
+    pdisptime=30*second;
+  }
+  if ((theBall.ypos &gt;= 400 - thePaddle.heit &amp;&amp; theBall.ypos &lt;= 400) &amp;&amp; (theBall.xpos &gt;= thePaddle.xpos &amp;&amp; theBall.xpos &lt;= thePaddle.xpos + thePaddle.wdth) &amp;&amp; theBall.yvel &gt;0)
+  {
+    theBall.yvel *= -1;
+    if (thePaddle.xpos - thePaddle.prevxpos &gt;0) theBall.xvel+= .25;
+    if (thePaddle.xpos - thePaddle.prevxpos &lt;0) theBall.xvel-= .25;
+  }
+  if ((dball.ypos &gt;= 400 - thePaddle.heit &amp;&amp; dball.ypos &lt;= 400) &amp;&amp; (dball.xpos &gt;= thePaddle.xpos &amp;&amp; dball.xpos &lt;= thePaddle.xpos + thePaddle.wdth) &amp;&amp; dball.yvel &gt;0)
+  {
+    dball.yvel *= -1;
+    if (thePaddle.xpos - thePaddle.prevxpos &gt;0) dball.xvel+= .25;
+    if (thePaddle.xpos - thePaddle.prevxpos &lt;0) dball.xvel-= .25;
+  }
+  if (frameCount % 60 == 0) {
+    current++;
+  }
+  if (current&gt;100) {
+    current=0;
+  }
+  if (lvlspdinc==true &amp;&amp; lvltemp==true) {
+    theBall.xvel+=0.5;
+    thePaddle.xvel+=0.5;
+    theBall.yvel+=0.5;
+    lvltemp=false;
+  }
+  if (lvlspddec==true&amp;&amp;lvltemp==true) {
+    theBall.xvel-=0.5;
+    thePaddle.xvel+=0.5;
+    theBall.yvel-=0.5;
+    lvltemp=false;
+  }
+}
+class Ball
+{
+  color c;
+  float xpos;
+  float ypos;
+  boolean act;
+  float xvel;
+  float yvel;
+  boolean sstate;
+  float rad;
+  Ball()
+  {
+    c = color(200, 30, 30);
+    xpos = random(0, 100);
+    ypos = 200;
+    act=true;
+    xvel =1;
+    sstate=false;
+    yvel = -1;
+    rad = 5;
+  }
+  void display()
+  { 
+    if (act==true) {
+      fill(c);
+      ellipse(xpos, ypos, 2*rad, 2*rad);
+    }
+  }
+  void drive()
+  {
+    xpos = xpos + xvel;
+    ypos = ypos + yvel;
+    if (xpos  &gt; 400 || xpos - 5 &lt; 0)
+    {
+      xvel *= -1;
+    }
+    if ( ypos - 5 &lt; 0)
+    {
+      yvel *= -1;
+    }
+  }
+}
+class Brickg
+{
+  //color c, e, f;
+  float rnum;
+  float xpos;
+  boolean brs;
+  float ypos;
+  int temp;
+  float heit;
+  float wdth;
+  int b;
+  Brickg(int i)
+  {
+    //c = getColor(current);//color(0, 250, 0);    
+    //e = getColor(current+1);
+    //f= getColor(current+2);
+    rnum=int(random(1, 10)%2);
+    xpos = i*30;
+    ypos = 100;
+    temp=0;
+    heit = 10;
+    wdth = 30;
+    b = 1;
+    brs=true;
+  }
+  void display()
+  { 
+    if (b&gt;3) { //if(this.rnum==0)
+      brs=false;
+      temp++;
+    }
+    if (temp==1) {
+      if (rnum==1 &amp;&amp; doshit==1) {
+        fag.dshow=true;
+        fag.xpos=this.xpos;
+        fag.ypos=this.ypos+((this.wdth)/2);
+        fag.display();
+        fag.drive();
+      }
+    }
+    if (brs==true) {
+      if (b==1)
+      {
+        //fill(c);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(gl);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==2)
+      {
+        //fill(e);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(gm);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==3)
+      {
+        //fill(f);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(gd);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+    }
+  }
+}
+class Brickb 
+{
+  //color c, e, f;
+  float xpos;
+  float rnum;
+  boolean brs;
+  float ypos;
+  float heit;
+  int temp;
+  float wdth;
+  int b;
+  Brickb(int i) 
+  { 
+    //c = getColor(current+1);//color(0, 0, 250);
+    rnum=1;//int(random(1, 10)%2);
+    //e = getColor(current+2);//color(0, 0, 150);
+    //f= getColor(current+3);//color( 0, 0, 50);
+    temp=0;    
+    rnum=int(random(1, 10)%2);
+    xpos = i*30;
+    ypos = 160;
+    temp=0;
+    heit = 10;
+    wdth = 30;
+    b = 1;
+    brs=true;
+  }
+  void display()
+  { 
+    if (b&gt;3) { //if(this.rnum==0)
+      brs=false;
+      temp++;
+    }
+    if (temp==1) 
+    {
+      if (rnum==1 &amp;&amp; doshit==1) {
+        fag.dshow=true;
+        fag.xpos=this.xpos;
+        fag.ypos=this.ypos+((this.wdth)/2);
+        fag.display();
+        fag.drive();
+      }
+    }
+    if (brs==true) {
+      if (b==1)
+      {
+        //fill(c);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(bl);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==2)
+      {
+        //fill(e);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(bm);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==3)
+      {
+        //fill(f);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(bd);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+    }
+  }
+}
+class Brickr
+{
+  //color c, e, f;
+  float xpos;
+  boolean brs;
+  float ypos;
+  float heit;
+  int temp;
+  float wdth;
+  float rnum;
+  int b;
+  Brickr(int i)
+  {
+    //c = getColor(current+4);//color(250, 0, 0);
+    rnum=1;//int(random(1, 10)%2);
+    //e = getColor(current+5);//color(150, 0, 0);
+    //f= getColor(current+6);//color( 50, 0, 0);
+    temp=0;
+    xpos = i*30;
+    ypos = 130;
+    heit = 10;
+    wdth = 30;
+    b = 1;
+    brs=true;
+  }
+  void display()
+  { 
+    if (b&gt;3) { //if(this.rnum==0)
+      brs=false;
+      temp++;
+    }
+    if (temp==1) 
+    { 
+      if (rnum==1 &amp;&amp; doshit==1) {
+        fag.dshow=true;
+        fag.xpos=this.xpos;
+        fag.ypos=this.ypos+((this.wdth)/2);
+        fag.display();
+        fag.drive();
+      }
+    }
+    if (brs==true) {
+      if (b==1)
+      {
+        //fill(c);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(ol);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==2)
+      {
+        //fill(e);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(om);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+      if (b==3)
+      {
+        //fill(f);
+        rect(xpos, ypos, wdth, heit);
+        beginShape();
+        texture(od);
+        vertex(xpos, ypos, xpos, ypos);
+        vertex(xpos+wdth, ypos, xpos+wdth, ypos);
+        vertex(xpos+wdth, ypos+heit, xpos+wdth, ypos+heit);
+        vertex(xpos, ypos+heit, xpos, ypos+heit);
+        endShape();
+      }
+    }
+  }
+}
+class Paddle 
+{ 
+  int lives;
+  color c;
+  float xpos, prevxpos;
+  float xvel;
+  float heit;
+  float wdth;
+  Paddle()
+  {
+    c = getColor(current);//color(0, 255, 255);
+    xpos = 0;
+    lives=3;
+    prevxpos = 0;
+    xvel = 3;
+    wdth = 50;
+    heit = 5;
+  }
+  void display()
+  {
+    fill(c);
+    rect(xpos, 400 - heit, wdth, heit, 10, 10, 10, 10);
+  }
+  void getVel()
+  {
+    int bytes = sp.readBytesUntil((byte)10, buff); //receiving the input String from the serial port
+    String mystr = (new String(buff, 0, bytes)).trim();
+    if (mystr.split(" ").length != 3) 
+    {
+      return;
+    }
+    setVals(r, mystr);
+    xvel = -r[1]/50;
+  }
+  void drive()
+  { 
+    prevxpos = xpos; 
+    if ((xpos + wdth &gt; 400  &amp;&amp; xvel &gt; 0)|| (xpos &lt;0 &amp;&amp; xvel&lt;0))
+      xvel = 0;
+    xpos = xpos + xvel;
+  }
+}
+class Bullet extends Paddle 
+{
+  color d;
+  boolean touch;
+  boolean bstate;
+  float bshit;
+  float bxpos, bypos;
+  float byvel;
+  float blen, bwdth;
+  Bullet() 
+  {
+    d = color(0, 0, 255);
+    bxpos =thePaddle.xpos+(wdth/2);
+    bypos=600-heit;
+    bstate=false;
+    bwdth=1;
+    byvel=2;
+    blen=3;
+  }
+  void reset() {
+    bxpos =thePaddle.xpos+(wdth/2);
+    bypos=600-heit;
+    bstate=false;
+  }
+  boolean btouchb(int i) {
+    if ((bypos&lt;theBrickg[i].ypos)&amp;&amp;(theBrickg[i].brs)&amp;&amp;(bxpos&gt;theBrickg[i].xpos)&amp;&amp;(bxpos&lt;theBrickg[i].xpos+theBrickg[i].wdth))
+    {
+      theBrickg[i].b++;
+      return true;
+    }
+    if ((bypos&lt;theBrickb[i].ypos)&amp;&amp;(theBrickb[i].brs)&amp;&amp;(bxpos&gt;theBrickb[i].xpos)&amp;&amp;(bxpos&lt;theBrickb[i].xpos+theBrickb[i].wdth))
+    {
+      theBrickb[i].b++;
+      return true;
+    }
+    if ((bypos&lt;theBrickr[i].ypos)&amp;&amp;(theBrickr[i].brs)&amp;&amp;(bxpos&gt;theBrickr[i].xpos)&amp;&amp;(bxpos&lt;theBrickr[i].xpos+theBrickr[i].wdth))
+    {
+      theBrickr[i].b++;
+      return true;
+    }
+    return false;
+  }
+  void bdrive(int i) {
+    { 
+      touch = false;
+      touch = btouchb(i);
+      if ((bypos&lt;0)||touch) {
+        reset();
+      } else bypos-=byvel;
+    }
+  }
+  void bdisplay(int i) {
+    bshit=r[0];
+    if (bshit&gt;60) 
+    {
+      fill(d);
+      rect(bxpos, bypos, bwdth, blen);
+      bdrive(i);
+    }
+  }
+}
+class DropDown
+{
+  float xpos;
+  float ypos;
+  int a;
+  float yvel;
+  color c;
+  boolean dshow;
+  DropDown()
+  {
+    xpos = 0;
+    a=10;
+    dshow=false;
+    c= color(0, 255, 255);
+    ypos = 0;
+    yvel = .5;
+  }
+  void display()
+  {
+    if (dshow == true)
+    {
+      fill(c);
+      rect(xpos, ypos, a, a);
+    }
+    if(ypos &gt;500)
+    {
+      xpos = 0;
+      ypos = 0;
+      dshow = false;
+    }
+  }
+  void drive()
+  { 
+    if (pcatch==false &amp;&amp; dshow==true) {
+      ypos = ypos + yvel;
+    }
+    println(xpos,thePaddle.xpos,thePaddle.xpos+thePaddle.wdth,ypos,500-a-thePaddle.wdth);
+    if (xpos&gt;thePaddle.xpos &amp;&amp; xpos&lt;thePaddle.xpos+thePaddle.wdth &amp;&amp; ypos&gt;=400-a-thePaddle.wdth &amp;&amp; ypos&lt;400) 
+    { 
+      getPower();
+      pcatch=true;
+      dshow=false;
+    }
+  }
+}
+class Special
+{
+  void resetPaddle()
+  {
+    thePaddle.wdth = 50;
+  }
+  void PaddleSizeInc()
+  {
+    thePaddle.wdth = 100;
+  }
+  void gunMode()
+  {
+    for (int i=0;i&lt;10;i++)
+      theBullet.bdisplay(i);
+  }
+  void sball() {
+    theBall.c=color(255, 204, 0);
+    theBall.sstate=true;
+  }
+  void dualBall() {
+    dball.act=true;
+  }
+}
+color getColor(int index) {
+  if (index &gt;= 0 &amp;&amp; index &lt; colors.length) {
+    return colors[index];
+  } else {
+    return color(255);
+  }
+}
+void setVals(float[] r, String s)
+{
+  int i = 0;
+  try
+  {
+    String x[] = split(s, ' ');
+    r[0] = (float)(Float.parseFloat(x[0]));
+    r[1] = (float)(Float.parseFloat(x[1]));
+    r[2] = (float)(Float.parseFloat(x[2]));
+  }
+  catch(NumberFormatException e)
+  {
+    r[0] = 0.0;
+    r[1] = 0.0;
+    r[2] = 0.0;
+  }
+}
+void increaseLvl()
+{  
+  float fuckthisx=r[0], fuckthisy=r[1], fuckthisz=r[2];
+  if (fuckthisx&lt;-130) {
+    if (fuckthisy&lt;-150) {
+      lvlspdinc=true;
+    }
+    if (fuckthisy&gt;150) {
+      lvlspddec=true;
+    }
+  } else {
+    lvlspdinc=false;
+    lvlspddec=false;
+    lvltemp=true;
+  }
+}
+void getPower()
+{  
+  if (doshit==1) {
+    int rand = int(random(0, 3.999999));
+    if (rand == 0) {effState[0] = 1;doshit=0;}
+    if (rand == 1) {effState[1] = 1;doshit=0;}
+    if (rand == 2) {effState[2] = 1;doshit=0;}
+    if (rand == 3) {effState[3] = 1;doshit=0;}
+  }
+}</p><h4><strong></strong></h4>

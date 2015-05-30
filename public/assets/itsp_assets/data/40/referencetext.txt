@@ -1,0 +1,1 @@
+<p>For the completion of your project , We are strongly thankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul><li><a href="http://www.google.com/">GOOGLE</a></li><li>STACK OVERFLOW</li><li><strong>OPENCV</strong>-SRF.BLOGSPOT.COM</li><li>docs.<strong>opencv</strong>.org/doc/<strong>tutorials</strong>/<strong>tutorials</strong>.html</li></ul>

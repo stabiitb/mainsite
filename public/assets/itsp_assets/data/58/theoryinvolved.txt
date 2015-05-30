@@ -1,0 +1,4 @@
+<ul>
+<li>Our Approach for voice recognition</li></ul><p><strong>We are using a voice recognition module to process the voice commands . Voice recognition module is connected with arduino(UNO) which further process it control the motion of pet. </strong><strong>
+</strong></p><p><strong>Our voice recognition module has three sets of command groups which can have a maximum of five commands each which should be recorded first. We have coded each command to perform a specific function . Voice recognition module get commands through a mic which is attached to it , after recognizing that command micro controller operate the system.  </strong></p><ul>
+<li>Concept of following </li></ul><p>We have to use a sensor which detect any thing in front of it which is mounted over a servo motor for surveillance . According to the reading receive from sensor micro controller operate the system.   </p><p><strong></strong><strong></strong><strong></strong></p>

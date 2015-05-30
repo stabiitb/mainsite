@@ -1,0 +1,7 @@
+<p>
+	For the completion of our project , We are strongly thankful to TEAM STAB </p><p>	and our mentor Riddhish Bhalodia<br>
+	<br>
+	We also referred to the following sources :</p><ul>
+	<li><u><a href="https://www.google.co.in/"><span style="color: rgb(63, 49, 81);">Google</span></a></u></li>	<li><u><a href="http://opencv.org/"><span style="color: rgb(63, 49, 81);">OpenCV tutorials</span></a></u></li>	<a href="http://opencv.org/">
+	<li><span style="color: rgb(73, 68, 41);">Stack overflow</span></li>		</a>
+</ul>

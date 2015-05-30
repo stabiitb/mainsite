@@ -1,0 +1,5 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; width: 461px; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Laws of nature for flying.</strong></li><li><strong>Android app.</strong></li></ul><ul>
+	<li><strong> Bluetooth communication and Arduino.</strong></li></ul><ul><li><strong>IMU and PID control brushless motor.</strong></li></ul><h3>
+	<br><strong>Our ideas behind doing the project </strong></h3><p><strong>  Learning android development.</strong></p><p><strong>  Learning about arduino.</strong></p><p><strong>  Understanding of P.I.D controller.</strong></p><p><strong>  Application of gyro and accelerometer.</strong></p><p><strong>  Development of technical skills.</strong></p><h3> </h3><p><strong><br></strong></p>

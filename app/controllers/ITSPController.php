@@ -228,6 +228,10 @@ class ITSPController extends \BaseController {
 
 	}
 
+	public function documentation(){
+		return View::make('events.ITSP_2015.documentation');
+	}
+
 	public function want_room(){
 		if(Input::has('want_room')){
 			Auth::User()->want_room=Input::get('want_room');
@@ -513,6 +517,135 @@ class ITSPController extends \BaseController {
 	{
 		return $this->review('all');
 	}
+
+	public function documentation_img_upload()
+	{
+
+		$uploaddir = public_path().'/assets/itsp_assets/data/'.Input::get("by").'/';
+		$uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
+		if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
+		return "done";
+		} else {
+   	 		echo "Possible file upload attack!\n";
+		}
+
+	}
+
+public function documentation_projectimg_upload()
+	{
+
+function clean($string) {
+   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+   return preg_replace('/[^A-Za-z0-9\-.]/', '', $string); // Removes special chars.
+}
+	
+$uploaddir = public_path().'/assets/itsp_assets/data/'.$_GET['uploadedby'].'/images/';
+if( is_dir($uploaddir) === false )
+{
+    mkdir($uploaddir);
+}
+$uploadfile = $uploaddir . basename(clean($_FILES['img']['name']));
+if(( ($_FILES["img"]["type"] != "image/gif")
+&&   ($_FILES["img"]["type"] != "image/jpeg")
+&& ($_FILES["img"]["type"] != "image/jpg")
+&& ($_FILES["img"]["type"] != "image/pjpeg")
+&& ($_FILES["img"]["type"] != "image/x-png")
+&& ($_FILES["img"]["type"] != "image/png"))
+|| ($_FILES["img"]["size"] > 3*1024*1024)
+)
+{
+	return  "File not an image of less than 3MB";
+}
+else if (move_uploaded_file($_FILES['img']['tmp_name'],$uploadfile )) {
+    echo "done";
+} else {
+    	return  "File not an image of less than 3MB";
+
+}
+
+$txt='<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									'.$_GET['heading'].'</h5>
+									<div class="details white-text">
+										'.$_GET['detail'].'
+									</div>
+								</div>';
+
+
+$uploaddir = public_path().'/assets/itsp_assets/data/'.$_GET['uploadedby'].'/imgalt/';
+$path= $uploaddir.basename(clean($_FILES['img']['name'])).".txt";
+
+if( is_dir($uploaddir) == false )
+{	
+    mkdir($uploaddir);
+}
+$file = fopen($path, "w");
+            fwrite($file,$txt);
+            fclose($file);
+
+	}
+	public function documentation_savefile()
+	{
+
+		if(isset($_GET['by']))
+    	{
+
+        	$by=$_GET['by'];
+    	}
+    else
+    {
+        die("error");
+    }
+
+	$path_chk=public_path()."/assets/itsp_assets/data/".$by."/";
+$file="";
+if(file_exists($path_chk."intro.txt")){
+	
+}
+if(isset($_POST['intro'])){
+  $file = fopen($path_chk."intro.txt", "w");
+         		fwrite($file,$_POST['intro']);
+         		fclose($file);
+}
+if(isset($_POST['motivation'])){
+  $file = fopen($path_chk."motivation.txt", "w");
+            fwrite($file,$_POST['motivation']);
+            fclose($file);
+}
+if(isset($_POST['referencetext'])){
+  $file = fopen($path_chk."referencetext.txt", "w");
+            fwrite($file,$_POST['referencetext']);
+            fclose($file);
+}
+if(isset($_POST['idea'])){
+  $file = fopen($path_chk."idea.txt", "w");
+            fwrite($file,$_POST['idea']);
+            fclose($file);
+}
+if(isset($_POST['planofaction'])){
+  $file = fopen($path_chk."planofaction.txt", "w");
+            fwrite($file,$_POST['planofaction']);
+            fclose($file);
+}
+if(isset($_POST['theoryinvolved'])){
+  $file = fopen($path_chk."theoryinvolved.txt", "w");
+            fwrite($file,$_POST['theoryinvolved']);
+            fclose($file);
+}
+if(isset($_POST['projectdetailstext'])){
+  $file = fopen($path_chk."projectdetailstext.txt", "w");
+            fwrite($file,$_POST['projectdetailstext']);
+            fclose($file);
+}
+if(isset($_POST['componentlist'])){
+  $file = fopen($path_chk."componentlist.txt", "w");
+            fwrite($file,$_POST['componentlist']);
+            fclose($file);
+}
+echo $file;
+	}
+
+
 
 	public function review($club)
 	{	if(Auth::check()){

@@ -1,0 +1,6 @@
+<p>Write in brief what motivated to do your project.<br><strong>You may write the future scope of the project over here</strong></p><p><strong><br></strong></p><iframe width="660" height="415" src="//www.youtube.com/embed/ReN2l816L8k" frameborder="0" allowfullscreen=""></iframe><p>Possible Uses of Voice recognition 
+As extension to our project 
+The model which we have used is basically developed for four basic commands but it can be 
+extended to many more systems. It is a robust model which can be used for even more than 
+100 words which sound dissimilar. And using this we can build A voice controlled home, Tvs , 
+washing machines etc all controlled by voices. Imagine How good it will be. </p><p><strong><br></strong></p>

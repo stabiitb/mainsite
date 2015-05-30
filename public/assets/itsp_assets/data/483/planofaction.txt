@@ -1,0 +1,15 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>to search algorithm online</li><li>and to optimise the result (such that cube required minimum steps to solve)</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>finally we ended up writing algo on our own(basic plus method)</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>
+We thought of the basic structure of the bot. The mechanical requirements and the electrical <br>components required.</li><li>We made the algorithm required for the coding of the bot. Writing down all the cases, we went <br>stage by stage for solving the cube. Chose the face to be solved first and accordingly solved the cube.Decided the programming language for the coding.</li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Completed the algorithm and started coding.</li><li>Checking of the algorithm started, ensuring there has been no error and changing it wherever found.</li><li>Started the mechanical part of the bot using metal pieces and wood.Planned the electrical part, decided motors, types of motors and microcontrollers required.</li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Visited Lamengton road and bought the required components that we had decided earlier.</li><li>Started working on the mechanical model and completed the entire structure as planned.</li><li>Started working on the electrical components, made all the connections. Close to complete work <br>done.</li><li>Continued working on the coding and it has approached the latter half and will be completed soon.</li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li></ul><p>Complete the programme for 2 cameras. Find out possible bugs</p><ul>
+<li>What you have accomplished?</li></ul><p>Completed the programme. There are some bugs. Bit of flickering is there. Also some angles arent detected properly.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Sort out the bugs. Prepare video, posters etc.</p><ul>
+<li>What you have accomplished? : Tell us what you are up to.</li></ul>

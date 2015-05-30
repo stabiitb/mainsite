@@ -1,0 +1,1 @@
+<h3><strong>Lockitron is basically a bluetooth controlled door handle which'll allow users to open door locks without keys( Especially if you are lazy enough to walk and open it yourself :P )</strong></h3><h3><strong>Users basically 've to type a 4 digit key in your smartphone which'll open the lock and it 'll automatically lock after few minutes.</strong></h3>

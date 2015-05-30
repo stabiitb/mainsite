@@ -1,0 +1,25 @@
+<h3>Week 1 (May 19th -25th)</h3><ul>
+<li>Planned
+<ul>
+<li>Learning basic Opencv codes.</li><li>Getting Raspberry Pi and other mechanical components.<br>
+<p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Bought almost all mechanical and electrical stuff and Raspberry Pi</li><li>Installed Opencv on our system(quite troublesome it was ;) )</li></ul></li></ul><h3>Week 2 (May 26th - June 1)</h3><ul>
+<li>Planned
+<ul>
+<li>Start work on the mechanical design.</li><li>Preparing the Raspberry Pi board.</li><li>Start work on the main code</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Mechanical differential mechanism bot ready. Given the proper input to L293D we could control the bot movement easily.</li><li>Main code ready. Testing to be done.</li><li>SD card for Raspberry Pi prepared. Faced problem in accessing the R-Pi.</li></ul></li></ul><h3>Week 3 (June 2nd - June 8th)</h3><ul>
+<li> Planned :
+<ul>
+<li>Testing the main code on Laptop. Recognising green coloured ball and tracking it.</li><li>Completing the R-Pi setup including installing opencv in it. Testing the code on R-Pi environment.</li></ul></li></ul><ul>
+<li>What we achieved :
+<ul>
+<li>Main code worked successfully on laptop. Basic tracking achieved. Optimisation required. Working on finding better ways to find the co-ordinates of the centre of Ball. Right now we are picking up the pixels differentiated through their Hue, Saturation and Value. (HSV values).</li><li>R-Pi setup and its control achieved through wifi router and ssh on ubuntu (using laptop). Opencv and main code installed in R-Pi. </li></ul></li></ul><h3>Week 4 (June 9th - June 15th)</h3><ul>
+<li>Planned :<ul><li>Assembling the complete bot.</li><li>Using windows rather than ubuntu to connect to Raspberry Pi through ssh because ubuntu was not supporting vnc required for display.</li><li>Finding a way to compile Wiring Pi and opencv libraries within the same file in R-Pi.</li></ul></li></ul><ul>
+<li>What we achieved :
+<ul>
+<li>Mechanical Body of bot completed.</li><li>Used Putty software for ssh connection to R-Pi in windows. Successfully compiled the opencv and wiringPi code together with g++ compiler.</li><li>Bot Ready for complete function.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>Planned:</li></ul><p>Find possible bugs in mechanical as well as coding part. Preparing poster and other final stuff.</p><ul>
+<li>What we achieved:</li></ul><p>Almost all discrepancies sorted out. Final run successfully demonstrated. </p>

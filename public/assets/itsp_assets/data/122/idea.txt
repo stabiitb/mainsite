@@ -1,0 +1,8 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	
+<li><strong>Image Processin</strong></li></ul><p>an input will be taken from the webcam and the laptop will calculate the co ordinates of the thresholded object .It will give the input to the arduino. </p><ul>
+	
+<li><strong>The RF bot </strong></li></ul><p>
+	This is the simple Remote controlled bot which is four wheeled.</p><br><p>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p>

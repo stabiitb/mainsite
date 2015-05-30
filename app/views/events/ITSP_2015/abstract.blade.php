@@ -7,7 +7,7 @@
      $curtime = time();
      //echo $closetime."  ".$curtime."\n";
 ?>
-@if($curtime < $closetime)
+@if($curtime > $closetime)
     @if(Auth::check())
         @if(Auth::User()->ldap_verified==1)
     <h4> Deadline for abstract submission is 10th April 2015, 11:59:59 pm.</h4>     

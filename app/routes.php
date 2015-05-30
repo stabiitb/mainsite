@@ -28,6 +28,10 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('want_room',array('as'=>'events.ITSP_2015.want_room','uses'=>'ITSPController@want_room'));
     Route::get('edit_team',array('as'=>'events.ITSP_2015.edit_team','uses'=>'ITSPController@edit_team'));
     Route::get('selected_students',array('as'=>'events.ITSP_2015.selected_students','uses'=>'ITSPController@selected_students'));
+    Route::get('documentation',array('as'=>'events.ITSP_2015.documentation','uses'=>'ITSPController@documentation'));
+    Route::any('documentation/img-upload',array('as'=>'events.ITSP_2015.documentation.img-upload','uses'=>'ITSPController@documentation_img_upload'));
+    Route::any('documentation/projectimg-upload',array('as'=>'events.ITSP_2015.documentation.projectimg-upload','uses'=>'ITSPController@documentation_projectimg_upload'));
+    Route::any('documentation/savefile',array('as'=>'events.ITSP_2015.documentation.savefile','uses'=>'ITSPController@documentation_savefile'));
 });
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 

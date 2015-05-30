@@ -1,0 +1,16 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Procured materials</li><li>Procured plans
+and started basic construction</li></ul><ul>
+</ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Construction of structure of fuselage and aerofoil</li><li>Ordered
+electric components</li></ul><ul>
+</ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>Assembly of
+plane parts</li><li>Procured
+electric components<br></li><li>Started coding
+Arduino<br></li></ul><ul>
+</ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>Final assembly
+of plane including finishing touches</li><li>Testing of
+flying capabilities of the plane<br></li></ul><ul>
+</ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>Completed the
+coding</li><li>Testing of GPS<br></li></ul><h3>Week 6 (June 9nd - June 15th)</h3><ul><li>Final testing
+and adjustments</li></ul>

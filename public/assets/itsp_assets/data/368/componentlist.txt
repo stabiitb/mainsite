@@ -1,0 +1,2 @@
+<div>The main components that will be required are as follows :</div><ul>
+<li>Arduino UNO </li><li>A Glove</li><li>Flex Sensors- 2.2" and 4.5"</li><li>Resistors</li><li>RF Modules/Zigbee </li><li>9V Battery</li><li>IC 7805</li></ul>

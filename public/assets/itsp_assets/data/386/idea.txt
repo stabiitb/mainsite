@@ -1,0 +1,4 @@
+<ul>
+	<li><strong>Bluetooth control<br></strong></li></ul><p>
+	For controlling the lock using bluetooth we connected adruino with a bluetooth module and used an app called Bluetooth SPP as an interface between them.The input will be taken from the phone.</p><ul>
+	<li><strong>The Locking mechanism </strong></li></ul><p>  We used a230V  solenoid and door handle so that it can be easily connected to any door and used electronically. Springs would keep it locked and on receiving signal solenoid would activate which would open the lock.<br><strong></strong></p>

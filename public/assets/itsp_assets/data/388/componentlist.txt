@@ -1,0 +1,5 @@
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.flipkart.com"> http://www.flipkart.com </a> - amounting to <strong>Rs 806 </strong>: <br></span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Logitech C170 Webcam</span></li></ul></li><li>IR LEDs from Mangaldeep - amounting to<strong> Rs 175</strong></li></ul><ul>
+<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 981<br></span></strong></li></ul>

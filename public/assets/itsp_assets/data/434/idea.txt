@@ -1,0 +1,11 @@
+<ul>
+	
+<li><strong>The RF bot </strong></li></ul><p>
+	This is the simple Remote controlled bot which is two  wheeled.</p><ul>
+	
+<li><strong>Biped</strong></li></ul><p>
+	<br>
+	This bot will be made of three servos and a wooden structure. The three servos will drive the bot.</p><p>
+	<br>
+	<br>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p>

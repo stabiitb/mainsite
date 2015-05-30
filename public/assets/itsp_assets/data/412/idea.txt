@@ -1,0 +1,4 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Gesture Recognition</strong></li></ul><p>Gesture recognition is implemented by OpenCV libraries in C++ language. The input is taken from a camera mounted on the top of the lamp which is processed in the laptop and then the data is send to the microcontroller for controlling motors..</p><ul>
+	<li><strong>The Assembly</strong></li></ul><p>A simple assembly mainly built of acrylic and aluminium</p>

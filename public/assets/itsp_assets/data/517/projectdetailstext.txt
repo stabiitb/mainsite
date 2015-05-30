@@ -1,0 +1,51 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';">Write how you achieved to your project in detail</span></strong> :</h3><pre>//function to make motor move forward
+int motorForward(int pin1,int pin2)
+{
+digitalWrite(pin1, HIGH);
+digitalWrite(pin2, LOW);
+}
+
+//function to make motor stop
+int motorStop(int pin1,int pin2)
+{
+digitalWrite(pin1,HIGH);
+digitalWrite(pin2,HIGH);
+}
+
+//function to make motor move backward
+int motorBackward(int pin1,int pin2)
+{
+digitalWrite(pin1, LOW);
+digitalWrite(pin2, HIGH);
+}
+
+// code to make the motors work.
+void loop() 
+{ 
+
+press1 = digitalRead(switch1);
+press2 = digitalRead(switch2);
+press3 = digitalRead(switch3);
+press4 = digitalRead(switch4);
+
+// if 1 is pressed on the number box.
+if(press1==HIGH)
+{
+motorForward(0,1);
+delay(); // time to be set 
+motorForward(12,13);
+delay(); // time to be set
+motorStop(0,1);
+motorStop(12,13);
+motorForward(12,13);
+motorbackward(0,1);
+delay(); // time to be set
+motorStop(12,13);
+motorStop(0,1);
+delay();
+motorBackward(12,13);
+delay();
+motorStop(12,13);
+}&lt;br&gt;</pre><p>
+		The project looked a bit daunting at first but we launched a prolonged assault on electronics front.</p><h3>Electronics Approach</h3><p>The circuit of 7805 and L293D is as follows:</p><p><a href="https://www.google.co.in/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;docid=62SkiIUmY8-oBM&amp;tbnid=9piEmvlbNtS8jM:&amp;ved=0CAUQjRw&amp;url=http%3A%2F%2Fwww.aishack.in%2F2010%2F08%2Fsimple-motor-driver-circuit%2F&amp;ei=mLGvU9rQBcK8ugTWkYHgBw&amp;bvm=bv.69837884,d.c2E&amp;psig=AFQjCNFCsXTAwtcdOWg22_hyrg_Bxki8SA&amp;ust=1404109590585941"><img src="http://www.aishack.in/wp-content/uploads/2010/08/l293d_power_connections.gif" alt=""></a></p><p>L293D and arduino circuit :</p><p><img src="http://learning.grobotronics.com/wp-content/uploads/2013/07/L293D_Circuit.jpg"></p>

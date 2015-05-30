@@ -1,0 +1,88 @@
+<ul>
+	<li><u><strong><span style="color: rgb(23, 54, 93); background-color: rgb(255, 255, 255);">IMAGE PROCESSING</span></strong></u></li>
+	<ul>
+		<li><u><strong><span style="background-color: rgb(255, 255, 255);"><inline><inline>Capturing images</inline></inline></span><strong></strong></strong></u></li>
+		<strong><span style="background-color: rgb(255, 255, 255);">
+		<p>
+			<inline>Images are captured continuously through Laptop's inbuilt webcam as video is nothing but a sequence of images.
+			
+		</inline></p>
+		<li><u><strong>Object detection</strong></u></li>
+		<p>
+			HSV (Hue,Saturation,Value) is the color system used for filtering the image so that we only get the required object for further processing.
+		</p>
+		<li><u><strong>Tracking</strong></u></li>
+		<p>
+			Moments of the object(these are like centre of mass) give a point that acts as the co-ordinates.
+		</p>
+		</span></strong>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<strong></strong>
+		</p>
+		<p>
+			<span style="background-color: rgb(255, 255, 255);"><strong></strong>
+			</span>
+		</p>
+		<p>
+			<span style="background-color: rgb(255, 255, 255);"><strong></strong></span>
+		</p>
+	</ul>
+	<li><u><strong><span style="color: rgb(23, 54, 93); background-color: rgb(255, 255, 255);">SYSTEM COMMANDS</span></strong></u></li>
+	<p>
+		<span style="color: rgb(79, 97, 40); background-color: rgb(255, 255, 255);"><strong>Some algebra is performed on the co-ordinates and they are fed to the system. 'xdotool' is used for carrying out required action in ubuntu.</strong></span>
+	</p>
+</ul>

@@ -1,0 +1,25 @@
+<p>
+	<em style="color: inherit; font-family: inherit; font-size: 17px; font-variant: inherit; font-weight: inherit;"><span style="color: rgb(227, 108, 9);">An object moving in the real world to a pointer moving with it in a virtual world! This is how its done:</span></em></p><ul>
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Image capture</span></em></li>					An image is captured by the default webcam in the laptop. Class <code>VideoCapture</code> is used for that purpose. A sequence of images is thus taken and each image is processed to analyze movement.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Flipping</span></em></li>				We need the screen to function as a mirror so that the mouse moves to the right as our hand moves to the right which is not the case normally. So we use the <code>flip()</code> function that flips the imsge from left to right.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Colour detection</span></em></li>				To track just the required object by its colour <code>color()</code> function is made which makes use of the pre-defined <code>inRange()</code> function.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Colour adjustment</span></em></li>				The <code>setColor()</code> function has a code to create trackbars for adjusting the HSV minimum and maximum values.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Noise removal</span></em></li>		The <code>erode_dilate()</code> function is made to apply erosion and dilation. The pre-defined functions <code>blur()</code> and <code>threshold()</code> are also used.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Finding contours</span></em></li>		The vector 'contours' has the image contours given by the function <code>findContours</code>. The largest contour in the image is supposed to be formed due to the object that we need and that is found using <code>findBiggestContour()</code> function that uses the inbuilt function <code>size()</code> to find the size of a contour.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Locating image centre</span></em></li>		This is done with the help of image moments. The moments corresponding to biggest contour are used to fix the X and Y co-ordinates.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Getting the co-ordinates</span></em></li>		Some algebra is performed on the points obtained through moments so that our cursor covers the entire screen.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Mouse actions</span></em></li>		The final co-ordinates are fed to the <code>mousemove()</code> funtion which converts them in a form that can be provided as an input to the system.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Clicking</span></em></li>		Clicking by the <code>mouse_click()</code> function is made by calculating the change in area of the object. If the change is above a certain limit the click is performed.
+	
+<li><em style="font-size: 14px;"><span style="color: rgb(227, 108, 9);">Scrolling</span></em></li>		The <code>scroll_up</code> and <code>scroll_down</code> functions are made for scrolling. These functions track the dispalcement of the cursor in y-direction with the constraint that movement in x-direction is very less.
+</ul>

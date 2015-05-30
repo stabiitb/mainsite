@@ -1,0 +1,6 @@
+<p>
+		<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Gesture recognition</strong></li></ul><p>
+	For gesture recognition , the input will be taken from the accelerometer as acceleration values along the 3 axes . These values will be processed and detected in Arduino IDE and then  will be passed to Processing which will use these values in the game</p><ul>
+	<li><strong>Wireless communication</strong></li></ul><p>For separating the sensor  from the circuitry we will be using Xbee modules to communicate wirelessly between sensor and the laptop.</p><ul>
+	<li><strong>Processing  </strong></li></ul><p>Processing is an extremely powerful language for designing games and a lot of options for graphics. A simple model of DX ball game was first made for the basic level of the project.</p>

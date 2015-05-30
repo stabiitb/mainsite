@@ -1,0 +1,8 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Magnetic attraction</strong></li></ul><p>
+	The metal token of the player on the board can easily move with a strong magnetic attraction from a magnet beneath the board </p><ul>
+	<li><strong> Stepper motors<br></strong></li></ul><p>
+	Stepper motors can move in precise incremental steps. They will be used to control the motion of the magnet in the xy plane.</p><ul><li><strong>Arduino<br></strong></li></ul><p>
+	Based on the input, this micro controller will make the motors to move the required number of steps.</p><p>
+	<strong><br></strong></p>

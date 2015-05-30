@@ -1,0 +1,13 @@
+<p style="text-align: center;"><em>The motivation for our project is to make transportation
+between small to medium distances such as the distance between our hostels to
+the academic area faster, eco-friendly and portable. Let’s face it would you
+rather prefer walking to a Monday morning class or skating to it. Cycles and
+ordinary roller skates are not portable. aYou need to park your cycle in a cycle
+stand which may not be exactly where you want to be going whereas ordinary
+roller-blades are bulky and you cannot carry them along with you. The solution
+to the problem is quite simple. You take the shoe away from the ordinary
+roller-blade leaving the framework, wheels, axle intact and attach a few straps
+to the sides so that your footwear can be attached firmly to the framework
+thereby making the rollerblade lighter, detachable and easier to carry. As most
+novice skaters have some difficulties in braking, an additional feature in our
+project is that we will be having hand-controlled braking.</em></p>

@@ -1,0 +1,7 @@
+<h2><span style="font-family: Georgia;">What
+is SteadiCam?</span></h2><ul>
+<li>
+<h2 style="background-color: transparent; color: rgb(128, 128, 128);"></h2><p>SteadiCam is a mechanism having gimbal configuration which will minimise disturbances caused
+by human motion during shooting(video).
+</p></li><li>Earlier(still in use) they used mechanical gimbal arrangement to
+minimise the disturbances.</li></ul>

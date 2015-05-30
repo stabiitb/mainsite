@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Wing</h5>
+									<div class="details white-text">
+										This is the wing of the plane. We shall attach fuselage to it later
+									</div>
+								</div>

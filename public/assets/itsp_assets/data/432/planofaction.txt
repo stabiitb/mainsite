@@ -1,0 +1,14 @@
+<h3></h3><div>Week 1:<br></div><p>19th May-25th May</p><ul><li>We decided the
+structure and extent of our project </li><li>We started to
+look through pros and cons of MATLAB and OpenCv </li><li>We decided on OpenCv and
+downloaded it </li><li>We decided our
+timeline</li></ul><p>Week 2: </p><p>
+
+26th May-1st June</p><ul><li>We assigned
+and distributed the work among ourselves </li><li>We learnt
+basic Image Processing using OpenCv and how to code </li><li>We got the camera</li></ul><p>Week 3:</p><p>2nd June-8th June</p><ul><li>We learnt how to assign 2-D
+co-ordinates to the video space using OpenCV </li><li>We coded for the detection
+of colors </li></ul><p>Week 4:</p><p>9th June-15th June</p><ul><li>We got a basic idea on the British sign language </li><li>We coded for
+the detection and display of co-ordinates of more than one color </li><li>We decided the
+location of
+the glove with respect to these co-ordinates </li><li>We decided words to be coded</li></ul>

@@ -1,0 +1,6 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Hovercraft</strong></li></ul><p>Single motor is used to run hovercraft.Some part of thrust generated is used for lift and remaining for propelling.</p><p>This hovercraft is capable of hovering both forward and backward.This is achieved by putting a curved structure which is capable of reversing the direction of flow.</p><p>It performs sharp turns by the same thrust reverser.</p><p>
+	<br>
+	<br>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p>

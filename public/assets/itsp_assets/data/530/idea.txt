@@ -1,0 +1,4 @@
+<ul><li>The propellers rotate when motors attached to it rotate.</li><li>The propellers provide the thrust to lift the copter.</li><li>The movement of the copter can be controlled by certain speed changes in the rotation of motors.</li><li>The command given by the transmitter alters the  speed of motors suitably.</li><li>For this the receiver controls the four motors by ESC(Electronic Speed Controller) through a Flight Controller Board.</li><li>The basic idea involved designing frame which is physically strong and light weight providing easy lift and studying electrical connections which makes our copter feasible.</li></ul><p>
+	
+	<br>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong></p>

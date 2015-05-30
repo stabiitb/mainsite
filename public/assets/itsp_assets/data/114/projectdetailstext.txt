@@ -1,0 +1,71 @@
+<h3><strong>Mechanical Design</strong></h3><p>We fixed two drawer bearings on an 18"x18" Acrylic board.  We made a wooden mount to  hold the stepper. This mount was fixed on the rail, and racks were attached parallel to it.</p><p>Similarly, we attached a drawer bearing perpendicularly atop the wooden mount. Racks and gears were also installed. Another acrylic board was used on top, on which the actual game was pasted. Magnets were attached to a servo, which was pasted on the top stepper motor.</p><pre>// Code snippets used
+
+#include&lt;Stepper.h&gt;
+#include&lt;Servo.h&gt;
+Stepper X(200,10,11);
+Stepper Y(800,5,6);
+Servo magneto;
+_______________________________________________________________________________________________________________________________
+
+void setup()
+{                              //initialise the pins
+   pinMode(10, OUTPUT);
+   pinMode(11, OUTPUT);
+   pinMode(5, OUTPUT);
+   pinMode(6, OUTPUT);
+   magneto.attach(3);
+     while(!Serial);
+     Serial.begin(9600);
+     
+   X.setSpeed(20);
+   Y.setSpeed(20);
+________________________________________________________________________________________________________________________________
+   
+void loop()
+{  magneto.write(active);
+   delay(1000);
+ 
+   while(Serial.available()==0);                   // Take an input from the keyboard
+   val=Serial.parseInt();
+   Serial.println(val);
+   
+   if(row==1)					
+   px+=val*hz;
+   else
+   px-=val*hz;                              
+    if(row==1&amp;&amp;px&gt;hztotal)				// Change positive direction for motors according to row
+     {py+=vz; px=2*hztotal-px+hz;Serial.println("Changing row from 1 to 2");
+      row=2;
+     }
+    else
+      {if(px&lt;0)
+      {py+=vz; px=-px-hz;Serial.println("Changing row from 2 to 1");
+       row=1;}}
+       
+   delay(2000);    
+   Serial.println("Moving");  			// Move steppers to required position
+   X.step(X_pos-px);Serial.println(X_pos-px);delay(1000);
+   y=py-Y_pos;
+   if(y!=0)
+   Y.step(y);
+   Serial.println(y);
+   delay(1000);                              
+   X_pos=px;
+   Y_pos=py;
+__________________________________________________________________________________________________________________________________
+ if(px==(hz*2)&amp;&amp;py==0)              	 // Check for ladder(snake)
+           {px+=hz;py+=vz*2;
+            Serial.println("Moving");  
+            X.step(X_pos-px);Serial.println(X_pos-px);delay(1000);
+            y=py-Y_pos;
+            if(y!=0)
+            Y.step(y);
+            Serial.println(y);row=1;
+            X_pos=px;Y_pos=py;}
+
+__________________________________________________________________________________________________________________________________
+ delay(1000);
+  magneto.write(passive);
+</pre><h3>Coding Approach</h3><p>
+	We did the coding in the arduino programming environment, which is fairly simple to use. The code involved a bit of mathematics with the positions on the game and the distances to be moved. </p><h3>Electronics Approach</h3><p>
+	We used uln2003 ic to drive our stepper motors. We used this circuit :-</p><p><img src="http://arduino.cc/en/uploads/Reference/unipolar_stepper_two_pins.png" alt="" title="" height="305px" width="550px" style="width: 796px;"></p>

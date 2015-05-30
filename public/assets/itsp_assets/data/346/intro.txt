@@ -1,0 +1,15 @@
+<p>Vision is the most important part of human physiology as 83% of information human
+being gets from the environment is via sight. The 2011 statistics by the World Health
+Organization (WHO) estimates that there are 285 billion people in world with visual impairment,
+39 billion of which are blind and 246 with low vision . The traditional and oldest mobility aids
+for persons with visual impairments are the walking cane (also called white cane or stick) and
+guide dogs. The most important drawbacks of these aids are necessary skills and training phase,
+range of motion and very little information conveyed. With the rapid advances of modern
+technology, both in hardware and software front has brought potential to provide intelligent
+navigation capabilities. Recently there has been a lot of Electronic Travel Aids (ETA) designed
+and devised to help the blind navigate independently and safely. Also high-end technological
+solutions have been introduced recently to help blind persons navigate independently .Many
+blind guidance systems use ultrasound because of its immunity to the environmental noise.
+Another reason why ultrasonic is popular is that the technology is relatively inexpensive, and
+also ultrasound emitters and detectors are small enough to be carried without the need for
+complex circuit.</p>

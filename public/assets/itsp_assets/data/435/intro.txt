@@ -1,0 +1,2 @@
+<p style="margin-left: 20px;">•  Holographic keyboard is a virtual keyboard which  optically detects and analyses human hand and finger motions and interprets them
+as operations on virtual keys.</p><p style="margin-left: 20px;"></p><p><img src="http://www.markpascua.com/wp-content/bluetooth-virtual-keyboard-2.jpg" style="width: 346px;"></p>

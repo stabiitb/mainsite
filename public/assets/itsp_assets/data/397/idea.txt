@@ -1,0 +1,5 @@
+<ul>
+	
+<li><strong>The basic design of the leg.<br></strong><p><img src="http://blog.oscarliang.net/wp-content/uploads/2013/03/1201201213621.jpg"></p></li><li><strong>In<p style="display: inline !important;"><strong>verse Kinematics</strong></p></strong></li><li>The computations required required to determine the gait shall be carried out before hand and the resultant angles will be programmed directly into the code running the bot.</li><li><strong>Bluetooth Control via Android App</strong></li></ul><p>The control of the bot will be by a bluetooth connection that will send data regarding direction from the mobile phone to a receiver module on the bot.</p><ul>
+	
+<li><strong>Hexapedal</strong></li></ul><p>The bot will have a total of 18 servos powering it. With there being 3 servos in each leg. The direction of movement will determine the angles at which each of the servos have to move in order to achieve that motion.</p>

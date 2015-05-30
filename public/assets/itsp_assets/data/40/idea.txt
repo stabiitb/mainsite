@@ -1,0 +1,16 @@
+<ul><ul>
+<ul>
+	<li>Here are three basic blocks of our
+project:-<br><p>1)<strong>Image
+Processing and text to speech conversion</strong>:-</p><p>  Image processing
+is the aspect of our project in order to make bot recognize text in an image
+and extract it. We are using OpenCV for this part. For converting text extracted into
+speech we will be using software in laptop. Image processing will use webcam
+mounted on a mechanical structure giving it freedom to move in horizontal plane
+in order to read each line on a page. In order to make reading independent of the font size, we have divided the page into 15 parts. Camera will go to each of this part and capture image. Then these images are joined including some error reduction. Then some image processing is done on complete page to remove some noise. Then text is extracted from text using software tesseract. Extracted text is processed to make it able to translate or directly to speaking using software called espeak.  </p><p>2)<strong>Atmega-32 coding
+(AVR)</strong>:-</p><p>We need the
+webcam to move according to reading speed of image processing code. So,
+atmega-32 provides the outputs according to code to move webcam under different
+circumstances. By coding atmega, stepper motor will rotate through certain angle
+depending upon reading speed.</p><p>3)<strong> Mechanical Structure</strong>:-</p><p>Mechanical
+structure includes a base, two sliders, rack and pinion systems, screw and nut system,  stepper and dc motors and webcam. The rack and pinion is used to mobilize camera along horizontal plane. While screw and nut is used to move camera along vertical plane. Mechanical structure basically configures motion of camera.</p></li></ul></ul></ul>

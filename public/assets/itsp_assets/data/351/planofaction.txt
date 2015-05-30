@@ -1,0 +1,25 @@
+<div><h3>Week 1 (May 18th - 24th)</h3></div><ul>
+<li>Planned
+<ul>
+<li>Code for single player checkers.</li><li>Make a note of things to buy.</li><li>Think about possible flaws that would result in the working of the system and correct it.</li></ul></li><li>Accomplished<ul><li>Learnt Arduino Coding.</li><li>Thought on electrical and mechanical part.</li></ul></li></ul><h3>Week 2 (May 25th - 31th)</h3><ul>
+<li>Planned
+<ul>
+<li>Work on mechanical and electrical part of the bot.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Made a structure for gameplay and started writing checkers code.</li><li>Ordered the things required for the same.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Learn Arduino coding.</li><li>Start assembling mechanical structure.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Start assembling mechanical structure.</li><li>Start coding for the AI of checkers.</li></ul></li></ul><h3>Week 4 (June 8th - June 14th)</h3><ul>
+<li>What you have planned ?<ul><li>Test, debug and calibrate mechanical part.</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Work on image processing part.</li></ul></li></ul><h3>Week 5 (June 15th - June 21th)</h3><ul>
+<li>What you have planned ?<ul><li>Complete Mechanical Assembly.</li></ul></li></ul><ul>
+<li>What you have accomplished?
+<ul><li>Complete Mechanical Assembly.</li></ul></li></ul><h3>Week 6 (June 22nd - June 28th)</h3><ul>
+<li>What you have planned ?
+<ul>
+<li>Final Test, debug and calibrate.</li><li>Prepare video</li></ul></li></ul><ul>
+<li>What you have accomplished?
+<ul><li>Final Test, debug and calibrate.</li><li>Complete image processing.</li></ul></li></ul>

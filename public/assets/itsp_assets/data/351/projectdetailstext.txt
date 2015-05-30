@@ -1,0 +1,8 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';"></span></strong><p>Web/Coding Approach</p></h3><pre>If you want to include your code snippets use the code button above tag.
+#include something
+main()
+{
+   doSomething();
+}&lt;br&gt;</pre><h3></h3><h3>Electronics Approach</h3><p>
+	Once we got our statuses, we wrote a python script to process the statement. We parsed the user's status to get the time it was updated and generated a logic bit from it and sent the information to the Arduino using the pyserial library. We connected the Arduino to a simple circuit:</p><p><a href="https://drive.google.com/file/d/0B68THwGaO5uQcnRnWHItNzk1WjA/edit?usp=sharing" target="_blank"><img src="https://drive.google.com/file/d/0B68THwGaO5uQdU1GbXRRa1lIdTA/edit?usp=sharing" alt=""></a></p><p><img src="https://drive.google.com/file/d/0B68THwGaO5uQcnRnWHItNzk1WjA/edit?usp=sharing"></p>

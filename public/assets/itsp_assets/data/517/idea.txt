@@ -1,0 +1,9 @@
+<p>
+	<a href="http://arduino.cc/en/uploads/Main/ArduinoUno_r2_front450px.jpg"></a></p><ul>
+<li><strong>The Car Drive Mechanism:<br></strong></li></ul><p><strong></strong></p><p>
+	These are the starting point of the system. It consists of box shaped structures (car) mounted on rails which are attached to the walls of the device. The box contains holes through which pinions are connected to the motors lying on the box. The pinions  are driven using motors controlled by Arduino. These are used to transport the item to the delivery box which then brings them up to the user. The car returns back to its starting point using reversal of motor movement.</p><p>//  video  of car and rails.</p><p style="margin-left: 300px;"></p><p style="margin-left: 280px;"></p><p style="margin-left: 280px;"></p><ul><li><strong>The String Pulley Mechanism</strong>:</li></ul><p>
+	This is used to bring the item contained in the delivery box to the user. There are pulleys attached to the top of the walls of the device which are used to pull the delivery box upwards and brings the item contained inside to the user.   </p><p>
+	                    // video of  mechanism.</p><ul>
+<li><strong>Number Box and Arduino:</strong></li></ul><p>
+	The device contains an externally mounted number box. There is a manual indicating the item corresponding to a number. On making the choice the Arduino relays the command signal to the circuit inside which causes the movement of the delivery box and the corresponding car drive.</p><p>// photo of no. box and arduino.</p><p style="margin-left: 300px;"></p><p>
+	<br>The Body of the device is made up of aluminium frame and bears external semblance to a cuboid.</p>

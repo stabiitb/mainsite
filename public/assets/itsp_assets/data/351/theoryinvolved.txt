@@ -1,0 +1,22 @@
+<ul><li><strong>Our Approach for image processing</strong></li></ul><ul>
+</ul><p>In the start, our idea was to make use of
+sensors (Piezo) to detect the position and movement of the player’s active
+coins. But we couldn’t use them because the particular coin on the board had to
+be tapped very hard in order for the coin to be detected by the sensor as the
+active piece, which was not very feasible. So we decided to use detection by
+image processing instead.</p><p>We used OpenCV software for this purpose.
+Initially, we tried using color detection of the pieces by tracking the
+movement of a particular color object on the board. But we faced problems in
+the color and HSV matching, so we made use of shape recognition for detection
+of the circular pieces. Before that, we found out the corners and the centers
+of the squares of the checkers’ board and then went on to identify the pieces
+based on the distance between the centers of the squares and the centers of the
+pieces.</p><p>We grabbed a series of images of the board using
+the webcam with the pieces and checked for those pieces which appeared most in
+all the images. Using this, a blue piece moved by the player was tracked
+between the squares by the images. Since the computer’s pieces were white and
+transparent, they were either not detected or barely detected as circular
+pieces on the board(once in series of 10 images), and only the player’s blue
+coins were recognized distinctly by the program.</p><p>Once this was done, we collected the data of
+motion of the pieces using the squares along which the movement was done,
+giving us the move played by the player.</p><pre>cvContour was used to find the contours to find corners.<br>Then we found the centers of corresponding squares taking into account that camera was angled in a way that y -coordinate remained same more or less.<br>To find contours we first blurred the image and then applied erode and dilate in the right order to make it more smooth for better corner detection.<br>After the centers were stored in a vector,we used hough circle detection and calibrated it accordingly to our piece size and also to make sure that white pieces were not detected.(We also had to use cvCanny to make sure we were detecting full circles and not just outlines)<br>Then we used a probabilistic approach to determine which circle corresponded to which center and later made many more assertions as to wether the determined image was right or wrong.In case it was wrong,it was discarded.<br>Basically the only functions of opencv used were cvCanny houghcircle and cvContour. Rest was implemented in c++ from basics learnt in class.<br></pre>

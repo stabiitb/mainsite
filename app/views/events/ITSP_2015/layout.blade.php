@@ -25,6 +25,7 @@
 							<li><a href="{{URL::Route('events.ITSP_2015.mentor')}}">Mentor Registration</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2015.abstract')}}">Abstract Submission</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2015.final_reviews')}}">Final Reviews</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}">Documentation</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

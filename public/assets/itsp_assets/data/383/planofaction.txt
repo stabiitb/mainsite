@@ -1,0 +1,16 @@
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned<ul><li>Research on how its made.</li><li>Research on what components are required .                                                                                                                                                                                                                            </li></ul></li></ul><ul><li>Accomplished<ul><li>Made the list of parts required.</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned<ul><li>Discussions with mentor , manager and previous teams.</li><li>Order parts online.</li></ul></li><li>What we have accomplished?<ul><li>Ordered parts required.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What we have planned ?
+<ul>
+<li>Design Skeleton.</li><li>Further research.</li></ul></li></ul><ul><li>What we achieved?
+<ul><li>Designed skeleton.</li><li>Scope for GPS and wireless Camera.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What we have planned ?
+<ul>
+<li>Preparing Skeleton.</li></ul></li></ul><ul><li>What we have accomplished?
+<ul>
+<li>Prepared skeleton.</li></ul></li></ul><p>Week 5 (June 2nd - June 8th)</p><ul><li>What we have planned ?
+<ul>
+<li>Completing the Project.</li></ul></li></ul><ul><li>What we have accomplished?
+<ul>
+<li>Project completed.</li></ul></li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul><li>What we have planned ?
+<ul>
+<li>Flying the tricopter.</li></ul></li></ul><ul><li>What we have accomplished? 
+<ul>
+<li>Enjoyed flying it.</li></ul></li></ul>

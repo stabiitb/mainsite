@@ -1,0 +1,21 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Straight line following using sharp sensor</li><li>Making basic Electrical Structure</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Straight line following accomplished</li><li>Basic electronic amplification circuit is ready</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>Plan out voice recognition module</li><li>Make basic try model</li><li>Start coding for surveillance</li></ul></li><li>What we have accomplished?
+<ul>
+<li>Voice recognition module first choice easyVR2.0</li><li>Voice recognition module second choice VM208 - Voice Recognition Module</li><li>Basic try model ready</li><li>Coding for surveillance. bugs found.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li> Planned <br><ul>
+<li>Make solidworks Mechanical model</li><li>Start Coding for Voice recognition module</li><li>Get missing components</li><li>Make eagle PCB design</li></ul></li></ul><ul>
+<li>What we have achieved 
+<ul><li>PCB design is complete </li><li>Mechanical model is complete </li><li>Coding for voice recognition module is done</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><p>   Planned</p><ul><li>Making  PCB </li><li>Voice recognition module Coding testing</li><li>Servo motor and surveillance testing </li></ul><ul>
+<li>What you have accomplished?<ul><li>Voice recognition module test is successfully done</li><li>Electric circuit is complete</li><li>servo motor is tested </li><li>surveillance is not working properly </li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li> Planned <ul><li>Assemble all components to chassis </li><li>Test voice recognition and surveillance after assembly </li><li>Debug any fault </li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Assembly is complete</li><li>Voice recognition module is working perfectly </li><li>surveillance is still not working</li></ul></li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned <ul><li>debug the problems </li><li>Final review preparation</li><li>Making video ,poster etc </li></ul></li></ul><ul>
+<li>What you have accomplished<ul><li>project is working perfectly</li><li>final review material is prepared </li></ul></li></ul>

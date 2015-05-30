@@ -1,0 +1,9 @@
+<p>In order to achieve the goal of this project the work has been categorised as follows:</p><p>
+• Study of Arduino Uno </p><p>• Study of Ultrasonic Sensors</p><p>
+• Incorporation of audio in SD card flash memory</p><p>
+• Designing of the stick </p><p>Basic principle :-</p><p>Proximity Detection
+An object passing anywhere within the preset range will be detected and generate an output
+signal. The detect point is independent of target size, material, or degree of reflectivity.</p><p> Ranging Measurement</p><p>
+Precise distance(s) of an object moving to and from the sensor are measured via time intervals
+between transmitted and reflected bursts of ultrasonic sound.. The distance change is continuously
+calculated and respective result is outputted.</p>

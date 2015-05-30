@@ -1,0 +1,1 @@
+<p>These are our purchased components. </p><p>    1)camera -RS550</p><p>   2)zigbee components -3900</p><p>   3)requirements for bot-Rs 300</p>

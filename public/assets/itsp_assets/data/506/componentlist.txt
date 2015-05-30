@@ -1,0 +1,14 @@
+<ul>
+<li>components that we have used are as
+follows:<br><p>    1. Acrylic
+chasis</p><p>  2
+.Omni wheels(2 in quantity)</p><p>  3.
+Castor wheels(4 in quantity)</p><p>  4.
+Motors(two 30 rpm motors and four 300 rpm motors)</p><p>  5.
+Circular brooms(4 in quantity)</p><p>  6.
+Arduino</p><p> 7.<span class="cm_word" style="border-bottom: 1px solid #0000FF !important;text-decoration:underline !important;color:#0000FF !important">Electrical</span> and electronic components like
+L293d,ic 7805,ic 7809  ,  </p><p>  heat
+sink,pcb,battery(12V and 5V),resistors,</p><p>push button  switches</p><p>  8. <span class="cm_word" style="border-bottom: 1px solid #0000FF !important;text-decoration:underline !important;color:#0000FF !important">Cardboard boxes</span> with magnets
+as removable dustbins</p><p>9.Miscellaneous
+stuff like wood pieces and nuts and bolts,L clamps,steel grip tapes,double
+sided tapes.</p></li></ul><p>The total cost was approximately 5,500 rupees</p>

@@ -1,0 +1,1 @@
+<p>The project is aimed at making a gesture-controlled robotic arm. The bot will be controlled by particular movements of the hand, and these will be detected by an accelerometer and linear pots and sent to the robotic arm using arduino and robotic arm moves accordingly.</p>

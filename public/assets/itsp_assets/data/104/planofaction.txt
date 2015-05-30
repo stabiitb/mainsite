@@ -1,0 +1,4 @@
+<h3></h3><p><strong>Week 1</strong></p><ul><li><strong></strong>Started learning about OpenCV from <a href="http://opencv-srf.blogspot.in/"> http://opencv-srf.blogspot.in/</a></li><li>Completing the mechanical part of the bot.</li></ul><p><strong>Week 2 </strong></p><ul>
+<li><strong></strong>Completing the electrical part of the bot.</li><li>Starting the basic OpenCV coding.</li></ul><p><strong>Week 3</strong></p><ul>
+<li><strong></strong>Complete the OpenCV coding.</li><li>Making the header file for transferring the commands to the serial port.</li><li>Configuring the Xbee module for wireless communication.</li></ul><p><strong>Week 4</strong></p><ul>
+<li>Making the GUI using Pyhton.</li><li>Try to use  ASK module instead of Xbee (this will help to reduce the cost of any project involving wireless communication)</li></ul><p><strong>Week 5</strong></p><ul><li>Working on the aesthetics of the product.</li></ul>

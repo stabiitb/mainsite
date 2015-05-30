@@ -1,0 +1,18 @@
+<div class="container">
+		
+		<!-- SECTION HEADER -->
+	<div class="section-header">
+		
+		<!-- SECTION TITLE -->
+		<h2 class="dark-text">Project Details</h2>
+		
+		<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+		<h6>
+			Here we present all the details of how we achieved to this project
+		</h6>
+	</div>	<!-- / END SECTION HEADER -->
+	<div class="row editable" id="projectdetails">
+		
+			Click here to edit this section		
+	</div>
+</div>

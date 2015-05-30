@@ -1,0 +1,50 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li> start learning HTML, CSS ,Start learning basic Java script</li>		
+<li> Android Basic programming    Advanced Android programming ; </li>		
+<li>Start learning Microcontroller programming</li>		
+</ul></li></ul><ul>
+	
+<li>Accomplished
+	
+<ul>
+		
+<li>completion of web server </li>	</ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Advanced Android programming </li>		
+<li>Decide about which MCU, Programmer, motors, etc. to use</li><li>complete learning micro-controller coding</li>	</ul></li>	
+<li>Accomplished<br><ul>
+		
+<li>Manuel part of android completed </li>		
+<li>micro-controller learning completed</li>	</ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+	
+<li>Planned<br><ul>
+		
+<li>Purchase and order components.</li>		
+<li>Building of bot</li><li>program for AVR</li>	</ul></li></ul><ul>
+	
+<li>Achieved <br><ul>
+		
+<li>building of bot completed</li>	</ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+	
+</ul><ul><li> Planned<br><ul><li>debugging AVR program </li><li> interfacing avr with bluetooth module.</li><li> interface between web server and android app</li><li> interface between android app and bluetooth module</li></ul></li><li> Accomplished
+<ul>
+<li>interfacing between websever and androidapp</li><li>android app completed</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+	
+<li> planned <ul><li>interface between android app and bluetooth module</li><li>interfacing avr with bluetooth module</li><li>image processing </li></ul></li></ul><ul>
+	
+<li>accomplished
+<ul>
+<li>interfacing between AVR and bluetooth completed</li><li>interfacing between bluetooth and mobile completed</li></ul></li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul>
+	
+<li>Planned<ul><li>prepare video</li><li>poster</li><li>power point presentation </li><li>completion of project  </li></ul></li></ul><ul>
+	
+<li>accomplished<ul><li>project completed </li><li>poster ,video and power point presentation </li></ul></li></ul>

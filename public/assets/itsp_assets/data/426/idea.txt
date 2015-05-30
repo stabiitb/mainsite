@@ -1,0 +1,1 @@
+<p><span style="color: rgb(0, 0, 0);">Android programming</span> is used.</p><p><span style="color: rgb(0, 0, 0);">Layouts</span> are done via<span style="color: rgb(0, 0, 0);"> XML</span> and inner algorithm is via <span style="color: rgb(0, 0, 0);">Java</span>.</p>

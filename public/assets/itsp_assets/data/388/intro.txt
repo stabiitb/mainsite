@@ -1,0 +1,8 @@
+<p>As the computer mouse has remained largely unchanged over the last 
+decades, 
+					we have become increasingly proficient at operating the two-button 
+mouse. Recently, various multitouch and gestural interaction 
+technologies have been explored as means to implement alternative 
+methods to interact with a computer. Despite these advances in computing
+ hardware technologies, the two-button computer mouse has remained the 
+predominant means to interact with a computer.</p>

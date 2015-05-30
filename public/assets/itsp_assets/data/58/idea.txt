@@ -1,0 +1,8 @@
+<ul>
+	
+<li><strong>Voice Recognition</strong></li></ul><p style="margin-left: 20px;">Listens to voice command like run,walk, follow etc. Using VM208 - Voice Recognition Module </p><ul>
+	
+<li><strong>Human following</strong></li></ul><p style="margin-left: 20px;">Has feature of following human beings.</p><ul>
+	
+<li><strong>Surveillance using servo motor</strong></li><li><strong>Ultrasonic Distance Sensor
+HC-SR04 handling using Arduino</strong></li><li><strong>Arduino coding </strong></li></ul>

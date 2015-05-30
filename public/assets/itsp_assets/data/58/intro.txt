@@ -1,0 +1,1 @@
+<p>Zaviar is a robot pet dog which is supposed to Follow voice commands and perform basic tasks.</p><p>It has features like:</p><ul><li>Voice command receiving</li><li>Human following</li><li>Interactive features (Basic)</li><li>Remote Commands (Advanced)</li></ul>

@@ -1,0 +1,1 @@
+<p>The bot that will be made after completion of the project will be able to play with a human. The human will be giving voice input in a particular way and reading that signals the bot will make its move accordingly using an inbuilt algorithm developed by us.</p>

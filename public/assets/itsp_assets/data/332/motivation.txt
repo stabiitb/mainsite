@@ -1,0 +1,1 @@
+<p>We all being CS student were intrigued by the idea of developing a chess AI so that someday we would lose to our own coded intelligence.<br>But thinking it wouldnt be so much fun just seeing stuff move on a computer we decided we would make it  move in front of us :)</p><p><strong><br></strong></p>

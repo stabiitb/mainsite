@@ -1,0 +1,8 @@
+<p>
+		For controlling Bot , the input will be taken from t<span style="background-color: rgb(255, 255, 255);">he web server</span> . The comment(in form of a string)  will be processed and detected in Android app through internet and then  will be passed to Bluetooth module through Bluetooth. Bluetooth module pass data to AVR ATMEGA32  which will have the codes to drive the bot.</p><ul>
+	
+<li><strong>Structure of bot</strong><br>
+	
+<ul>
+		
+<li>omni wheels are used for move bot in any direction and also for rotation about axis.</li>	</ul></li></ul>

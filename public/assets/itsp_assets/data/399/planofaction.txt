@@ -1,0 +1,81 @@
+<h3>Week 1 (May 5th -11th)</h3>
+<ul>
+	<li>Planned
+	<ul>
+		<li>Learning android programming/ Java/XML</li>
+	</ul>
+	</li>
+</ul>
+<ul>
+	<li>Accomplished
+	</li>
+</ul>
+<h3>Week 2 (May 12th- 18th )</h3>
+<ul>
+	<li>Planned
+	<ul>
+		<li>Making a basic WiFi file transfer app</li>
+	</ul>
+	</li>
+	<li>Accomplished
+	<ul>
+		<li>Two apps one that could send file and other which could receive were made.</li>
+	</ul>
+	</li>
+</ul>
+<h3>Week 3 (May 19th - 25th)</h3>
+<ul>
+	<li>Planned<br>
+	<ul>
+		<li>Combining the two apps into one.</li>
+		<li>Coding for the main app &amp; deciding upon network optimization (Reducing data duplicacy)</li>
+	</ul>
+	</li>
+</ul>
+<ul>
+	<li>Accomplished<br>
+	<ul>
+		<li>Apps combined successfully.</li>
+		<li>Coding on main app started.</li>
+	</ul>
+	</li>
+</ul>
+<h3>Week 4 (May 26th - June 1)</h3>
+<ul>
+	<li>Planned</li>
+	<ul>
+		<li>Completing main code.</li>
+	</ul>
+</ul>
+<ul>
+	<li>Accomplished</li>
+	<ul>
+		<li>Most of the coding done.</li>
+	</ul>
+</ul>
+<p>
+	Found out a much better way of getting the centres of the LED's and differentiating them. Very good results from the testing. Recognised the problems. Working on solving them
+</p>
+<h3>Week 5 (June 2nd - June 8th)</h3>
+<ul>
+	<li>Planned</li>
+	<ul>
+		<li>Complete the remaining part of main code.</li>
+	</ul>
+</ul>
+<ul>
+	<li>Accomplished</li>
+	<ul>
+		<li>Main code completed</li>
+	</ul>
+</ul>
+<p>
+	Completed the programme. There are some bugs. Bit of flickering is there. Also some angles arent detected properly.
+</p>
+<h3>Week 6 (June 9th - June 15th)</h3>
+<ul>
+	<li>Planned</li>
+	<ul>
+		<li>Sorting out bugs.</li>
+	</ul>
+</ul>

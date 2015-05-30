@@ -1,0 +1,11 @@
+<ul><li>We
+are aware that there are many blind and illiterate people across the world.
+Using this bot these people will be able to read books that normal people read.
+Braille books are available but are limited. </li><li>This
+bot will be able to read daily newspaper for those having problems in reading. </li><li>It
+can be used in office to scan and translate scanned document in order to handle
+documents written in foreign languages. </li><li>In
+India, there are many problems due to different languages, this robot can read
+many Indian regional languages, and translate and speak in hindi
+or english.
+</li><li>It can be used in schools for checking objective exam's papers. Or in banks for reading cheques and passbooks and store extracted data in database.</li></ul><p><strong><br></strong></p><p><strong><br></strong></p>

@@ -1,0 +1,10 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	
+<li><strong>Image Recognition</strong></li></ul><p>
+	For image recognition , the input will be taken from the webcam mounted on robot . The image will be processed and detected in Opencv and then the output will be passed to Raspberry pi board which will have the codes to drive the bot.</p><ul>
+	
+<li><strong>The follower</strong></li></ul><p>
+	This is the simple two simple and one castor wheeled bot which is driven using differential mechanism.</p><ul>
+	
+<li><strong>Wirin Pi</strong></li></ul><p>This is the library installed in Raspberry Pi processor so as to control the digital outputs of GPIO pins on raspberry pi board in accordance with processed image.</p>

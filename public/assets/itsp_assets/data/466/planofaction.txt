@@ -1,0 +1,24 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>we planned to study autonomous partfor the project during the first week as none of has any earlier experience of making any robotic project.</li><li><p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>we studied . the autonomous part.</li><li>we also planned the making of the mechanical design for the bot.</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>we planned our work on making a robotic bot that gives us the control on direction of motion and speed.</li><li>we planned to make the speed control part of it.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>the speed control part was ready. we got control on the speed control.</li><li>we were half way in making the rack and pinion.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>we planned to make the surrounding object distance determination.</li><li>complete the rack and pinion.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>we made the module to determine the distances of the objects nearby.</li><li>then we tried the rack and pinion part but it didn't worked out. we tried a lot during the whole week but the rack and pinion didn't worked.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>first we changed the plan of making the rack and pinion and decided to use differential mechanism.</li><li>next we planned to code all the responses of the bot.</li></ul><ul>
+<li>What you have accomplished?</li><li>we made the bot completely which gave us control over the speed and direction and then we combined the two parts and the code.</li><li>then a problem cropped up because of our inexperience.  we discovered that the arduino doesn't supply sufficient current to drive the motor.</li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li></ul><p>we planned to remove the last week's problem of current supply.</p><p>we also planned to do aim determination.</p><ul>
+<li>What you have accomplished?</li></ul><p>we completed the bot. we made the mapping part and also current amplification part  and combining them all together we completed the project.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Sort out the bugs. Prepare video, posters etc.</p><ul>
+<li>What you have accomplished? : Tell us what you are up to.</li></ul>

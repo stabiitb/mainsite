@@ -1,0 +1,11 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';">Write how you achieved to your project in detail</span></strong> :</h3><pre>If you want to include your code snippets use the code button above tag.
+#include something
+main()
+{
+   doSomething();
+}<br></pre><p>
+		The project looked a bit daunting at first but we launched a two pronged assault on the Coding and Electronic fronts.</p><h3>Web/Coding Approach</h3><p>
+	We puzzled over the problem of retrieving the required status, with all the security that Facebook now has, given it's privacy settings. In the end, we decided to go ahead and use the Facebook API, which made this infinitely easier. This app was used to enable a secure login to Hats-Off through Facebook. Google App Engine was a good place to host the app, being easy to talk to with Python 2.7 and also, free to use.</p><h3>Electronics Approach</h3><p>
+	Once we got our statuses, we wrote a python script to process the statement. We parsed the user's status to get the time it was updated and generated a logic bit from it and sent the information to the Arduino using the pyserial library. We connected the Arduino to a simple circuit:</p><p>
+	<img src="http://www.stab-iitb.org/resources/images/4/47/CD1.jpg"></p>

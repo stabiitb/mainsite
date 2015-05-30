@@ -1,0 +1,377 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';">Write how you achieved to your project in detail</span></strong> :</h3><pre>//our aurduino code
+
+ #include &lt;SoftwareSerial.h&gt;
+
+
+SoftwareSerial data(10,11);      // RX, TX
+int motor1a = 6;                // pwm pin
+int motor1b = 7;
+int motor2a = 9;               // pwm pin
+int motor2b = 8;
+int motor3a = 5;               //pwm pin
+int motor3b = 4;
+int value;
+int i=5;
+int val[3];
+float pi=3.14159265;
+void setup()
+  { 
+   data.begin(9600);
+   data.println("Hello");
+   pinMode(6,OUTPUT);
+   pinMode(7,OUTPUT);
+   pinMode(9,OUTPUT);
+   pinMode(8,OUTPUT);
+   pinMode(5,OUTPUT);
+   pinMode(4,OUTPUT);
+   pinMode(12,OUTPUT);
+   digitalWrite(12,HIGH); 
+   digitalWrite(motor1b,LOW);
+   analogWrite(motor1a,0);
+   digitalWrite(motor2b,LOW);
+   analogWrite(motor2a,0);
+   digitalWrite(motor3b,LOW);
+   analogWrite(motor3a,0);  
+   
+  } 
+   
+  
+ 
+void rest()
+   {  
+    digitalWrite(motor1b,LOW);
+    analogWrite(motor1a,0);
+    digitalWrite(motor2b,LOW);
+    analogWrite(motor2a,0);
+    digitalWrite(motor3b,LOW);
+    analogWrite(motor3a,0);
+   }
+void clockwise()
+   {
+    digitalWrite(motor1b,HIGH);
+    analogWrite(motor1a,0);
+    digitalWrite(motor2b,HIGH);
+    analogWrite(motor2a,0);
+    digitalWrite(motor3b,HIGH);
+    analogWrite(motor3a,0); 
+   }
+void counter_clockwise()
+   {
+    digitalWrite(motor1b,LOW);
+    analogWrite(motor1a,255);
+    digitalWrite(motor2b,LOW);
+    analogWrite(motor2a,255);
+    digitalWrite(motor3b,LOW);
+    analogWrite(motor3a,255); 
+   }
+ 
+ void loop()
+ {
+  if (data.available()) {i=0;}
+     while(i&lt;=2)
+      {if (data.available())
+       {                            
+        val[2-i]=(data.read());      
+        data.write(val[2-i]);      
+        i++;  
+       }
+      }   
+   value = (((val[2])-48)*100)+((val[1]-48)*10)+((val[0])-48);
+   data.print(value); 
+      
+ 
+if (value==444)
+   {
+    rest();
+   }
+ if (value==555)
+   {
+    clockwise();
+   }
+ if (value==666)
+   {
+    counter_clockwise();
+   }  
+   
+   
+   
+   
+if (value&gt;=0 &amp;&amp; value&lt;30)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255/2));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*(((sqrt(3)*tan((value*pi)/180.0))+1)/4))));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*(1-((sqrt(3)*tan((value*pi)/180.0))))/4)));
+   } 
+if (value&gt;=30 &amp;&amp; value&lt;60)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255/2));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*(((sqrt(3)*tan((value*pi)/180.0))+1)/4))));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, ((255*(((sqrt(3)*tan((value*pi)/180.0))-1)/4))));
+   }   
+if (value&gt;=60 &amp;&amp; value&lt;90)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255*(((sqrt(3)*tan(((value-120)*pi)/180.0))+1)/4)));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4))));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, (255/2)); 
+   }
+if (value&gt;=90 &amp;&amp; value&lt;120)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*(((sqrt(3)*tan(((value-120)*pi)/180.0))+1)/4))));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4))));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, (255/2)); 
+   }
+if (value&gt;=120 &amp;&amp; value&lt;150)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*(((sqrt(3)*tan(((value-120)*pi)/180.0))+1)/4))));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4))));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, (255/2)); 
+   }
+if (value&gt;=150 &amp;&amp; value&lt;180)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*(((sqrt(3)*tan(((value-120)*pi)/180.0))+1)/4))));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4)));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, (255/2));
+   }
+if (value&gt;=180 &amp;&amp; value&lt;210)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*((1-(sqrt(3)*tan(((value-240)*pi)/180.0)))/4))));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255/2));
+    digitalWrite(motor3b, LOW);
+    analogWrite(motor3a, (255*(((sqrt(3)*tan(((value-240)*pi)/180.0))+1)/4))); 
+   } 
+if (value&gt;=210 &amp;&amp; value&lt;240)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4))));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255/2));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*(((sqrt(3)*tan(((value-240)*pi)/180.0))+1)/4)))); 
+   } 
+if (value&gt;=240 &amp;&amp; value&lt;270)
+   {
+    digitalWrite(motor1b, HIGH);
+    analogWrite(motor1a, (255-(255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4))));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255/2));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*(((sqrt(3)*tan(((value-240)*pi)/180.0))+1)/4)))); 
+   } 
+if (value&gt;=270 &amp;&amp; value&lt;300)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255*((1-(sqrt(3)*tan(((value-120)*pi)/180.0)))/4)));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255/2));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*(((sqrt(3)*tan(((value-240)*pi)/180.0))+1)/4)))); 
+   } 
+if (value&gt;=300 &amp;&amp; value&lt;330)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255/2));
+    digitalWrite(motor2b, LOW);
+    analogWrite(motor2a, (255*(((sqrt(3)*tan((value*pi)/180.0))+1)/4)));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*((1-(sqrt(3)*tan((value*pi)/180.0)))/4)))); 
+   } 
+if (value&gt;=330 &amp;&amp; value&lt;=360)
+   {
+    digitalWrite(motor1b, LOW);
+    analogWrite(motor1a, (255/2));
+    digitalWrite(motor2b, HIGH);
+    analogWrite(motor2a, (255-(255*(((sqrt(3)*tan((value*pi)/180.0))+1)/4))));
+    digitalWrite(motor3b, HIGH);
+    analogWrite(motor3a, (255-(255*((1-(sqrt(3)*tan((value*pi)/180.0)))/4)))); 
+   }    
+   
+  }
+ 
+// our html code
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; INTERNET CONTROLLED BOT &lt;/title&gt;
+&lt;style&gt;
+body
+{
+background-color:#000000;
+}
+h1
+{
+font-family:"Verdana";
+color:blue;
+font-size:40px;
+border-bottom;
+}
+h2
+{
+font-family:"Arial";
+color:brown;
+font-size:25px;
+border-bottom;
+}
+h3
+{
+font-family:"Bradley Hand ITC";
+color:green;
+font-size:20px;
+}
+h4
+{
+font-family:"Arial";
+color:brown;
+font-size:25px;
+border-bottom;
+}
+h5
+{
+font-family:"Bradley Hand ITC";
+color:green;
+font-size:20px;
+}
+form
+{
+font-size:20px;
+}
+#forward {  
+    margin-left: 620px;
+    margin-top: 0px;
+    width: 85px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#clockwise
+{  
+    margin-left: 360px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#left
+{  
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 84px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#stop
+{  
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 85px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#right
+{  
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 84px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#counter_clockwise
+{  
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 210px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#backward
+{  
+    margin-left: 620px;
+    margin-top: 10px;
+    width: 85px;
+    height: 40px;   
+    color: black;   
+    font-size:14px;
+    font-weight:700;
+}
+#all
+{
+
+
+background-color: #c0c0c0;
+border-radius: 40px 40px 40px 40px;
+}
+
+
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+&lt;div id="all"&gt;
+&lt;h1 style="text-align:center;"&gt; INTERNET CONTROLLED BOT &lt;/h1&gt;
+&lt;h2 style="text-align:center;"&gt; Button Control &lt;/h2&gt;
+&lt;div id="move_forward"&gt;           
+&lt;button id="forward"&gt;Forward&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id="controls"&gt; 
+&lt;button id="clockwise"&gt;Rotate_Clockwise&lt;/button&gt;
+&lt;button id="left"&gt;Left&lt;/button&gt;
+&lt;button id="stop"&gt;Stop&lt;/button&gt;
+&lt;button id="right"&gt;Right&lt;/button&gt;
+&lt;button id="counter_clockwise"&gt;Rotate_Counter_Clockwise&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id="move_backward"&gt; 
+&lt;button id="backward"&gt;Backward&lt;/button&gt;
+&lt;/div&gt;
+&lt;h3 style="text-align:center;"&gt; *please click on any button &lt;/h3&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;h4 style="text-align:center;"&gt; Command Control &lt;/h4&gt;
+&lt;form style="text-align:center;"  action="demo_form.asp"&gt;
+  Angle: &lt;input type="number" name="angle"&gt;&lt;br&gt;
+  &lt;input type="submit" value="Execute"&gt;
+&lt;/form&gt;
+&lt;h5 style="text-align:center;"&gt; *please enter a value between 0 and 360 &lt;/h5&gt;
+&lt;/div&gt;
+
+
+&lt;body&gt;
+&lt;html&gt;
+
+// android part
+you have to make that app to send numbers whatever you typed ..
+or you have to send a particular number when a certain button is pressed.</pre>

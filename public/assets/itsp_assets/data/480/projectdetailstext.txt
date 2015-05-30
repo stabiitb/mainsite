@@ -1,0 +1,10 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';">Write how you achieved to your project in detail</span></strong> :</h3><pre>If you want to include your code snippets use the code button above tag.
+#include something
+main()
+{
+   doSomething();
+}&lt;br&gt;</pre><p>
+		The project looked a bit daunting at first but we launched a two pronged assault on the Coding and Electronic fronts.</p><h3>Web/Coding Approach</h3><p>
+	We puzzled over the problem of controlling R-Pi's GPIO pins, given its complexity. But in the end, we decided to go ahead and use the wiringPi library, which made this infinitely easier. This library simply specified the outputs of the pins using some simple set of commands. Another problem was to integrate the opencv and wiringPi code within the same cpp file and to complie it, which was further sorted out using some simple terminal command line and g++ compiler.</p><h3>Electronics Approach</h3><p>
+	Once we got our image through camera and the coordinates through opencv, wiringPi simply alter the outputs of GPIO pins to implement the required movement of bot with differential mechanism. Standard GPIO pin diagram of Raspberry Pi is as follows. We used 0,1 3 and 4 no. pins for our work. </p><p><img src="http://pi4j.com/images/p1header-large.png"></p>

@@ -1,0 +1,1 @@
+<p>We are making a bot which goes to an object in the room based on input given to the laptop.There is a camera which is connected to the laptop and the laptop gives the coordinates of the object to the bot and the bot goes there.</p>

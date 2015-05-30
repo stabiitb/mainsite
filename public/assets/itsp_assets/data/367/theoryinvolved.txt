@@ -1,0 +1,24 @@
+<ul>
+<li><strong>Measuring
+Airspeed using pitot tubes:</strong><br><p>We decided
+to use a differential pressure transducer to find the difference in total and
+static pressure across the plane.  </p><p>A pitot tube
+will be protruding through the nose of the plane which gives the total
+pressure. The other will be vertical through the fuselage, giving the static
+pressure. These two will be connected to the two inlets of the pressure sensor
+which outputs their difference.</p><p>If
+d=density, v=airspeed;</p><p>0.5*d*v<sup>2</sup>=
+total pressure – static pressure</p><p>From above,
+we calculate airspeed v.</p><p><strong><br></strong></p></li><li><strong>Measuring
+Altitude and Temperature:</strong><br><p>For
+altitude, we use a sensitive Barometric Pressure Sensor. We can calibrate
+altitude according to variation in barometric pressure. </p><p>A lot of
+Barometric Pressure sensors also are inbuilt to measure temperatures.</p></li></ul><ul>
+<li><strong>Data Acquisition:</strong></li></ul><p><strong></strong>We use an Arduino (Uno, here) to gather the data from these
+sensors and print it to an SD Card in-flight, using an SD Card Shield. After
+the flight lands, the SD Card is removed and the Data read, which will be
+stored as “.csv” file.</p><p> The Pressure Sensor is an analog sensor, so we connect it
+one of the analog inputs of the Arduino.</p><p>The BMP085 uses I2C interface, so it’s pins are connected
+to the respective pins on the Arduino.</p><p>The SD Card Shield uses SPI Interface, and is connected to
+Digital pins 8~13.</p><p>The Arduino
+program is written in C language.</p>

@@ -1,0 +1,6 @@
+<p style="text-align: justify;">
+	<span style="color: rgb(128, 100, 162);"><inline style="background-color: rgb(229, 224, 236);"><strong>    The idea of <inline style="background-color: rgb(229, 224, 236);">the project is to control some actions performed in the computer by gestures performed by the user. The actions we are controlling are the ones that require the use of  a mouse, eg. cursor movement, click, scrolling. These are made to work in ubuntu. <em>No special equipment is required for this project</em>. The webcam that is already present in the laptop does the needful.</inline></strong></inline></span></p><p style="text-align: justify;">
+	<span style="color: rgb(128, 100, 162); background-color: rgb(216, 216, 216);"><strong>
+	The major part of this project is image processing which we have done by using OpenCV  with C++. Any ordinary object can be tracked with the help of laptop's camera and its movement controls the movement of cursor. The colour values in the code can always be adjusted to suit your object's colour(unless you have object and background of same or very similar colour).</strong></span></p><p style="text-align: center;">
+	<marquee>
+	<img src="http://www.computershopper.com/var/ezwebin_site/storage/images/media/images/microsoft-sculpt-mobile-mouse3/1101952-1-eng-US/microsoft-sculpt-mobile-mouse.jpg"></marquee></p>

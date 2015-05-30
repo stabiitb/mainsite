@@ -1,0 +1,69 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Getting acquainted with properties of image processing.</li>		
+<li>Try out some functions from OpenCV tutorials
+		
+</li>	</ul></li></ul><ul>
+	
+<li>Accomplished
+	
+<ul>
+		
+<li>We searched the OpenCV tutorials for the functions that may be helpful for the project.</li>	</ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Detecting objects using color detection , thresholding ,background subtraction.</li>	</ul></li>	
+<li>What you have accomplished?
+	
+<ul>
+		
+<li>Successful in detecting objects</li>		
+<li>Color detector not accurate as it is dependent on light </li>	</ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+	
+<li>What you have planned <ul>
+		
+<li>Get contours and image moments</li>	</ul></li></ul><ul>
+	
+<li>What we achieved
+	
+<ul>
+		
+<li>Successful in drawing contours and finding image centres</li>	</ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+	
+<li>What you have planned <ul>
+		
+<li>Skin detection using histogram</li>		
+<li>Synchronizing with system for controlling cursor</li>	</ul></li></ul><ul>
+	
+<li>What you have accomplished<ul>
+		
+<li>Found the functions for synchronization</li>		
+<li>Skin detector still not accurate</li>	</ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+	
+<li>What you have planned <ul>
+		
+<li>Making the code work for any color by adjusting the color detector values</li>		
+<li>Mousse movement</li>	</ul></li></ul><ul>
+	
+<li>What you have accomplished<ul>
+		
+<li>Created the set color funtion</li>		
+<li>Started working on mouse events</li>	</ul></li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul>
+	
+<li>What you have planned <ul>
+		
+<li>Debugging and adding mouse actions</li>	</ul></li></ul><ul>
+	
+<li>What you have accomplished.. Tell us what you are up to.
+	
+<ul>
+		
+<li>Made the mouse cover entire screen</li>		
+<li>Made the code work for clicking and scrolling</li>	</ul></li></ul>

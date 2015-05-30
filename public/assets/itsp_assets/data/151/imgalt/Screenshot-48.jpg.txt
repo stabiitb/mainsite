@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									L293D_F_B</h5>
+									<div class="details white-text">
+										Motor driver circuit for front tyre and back tyre
+									</div>
+								</div>

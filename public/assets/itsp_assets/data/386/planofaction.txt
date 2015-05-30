@@ -1,0 +1,28 @@
+<h3>Week 1 (May 18th -24th)</h3><ul>
+<li>Planned
+<ul>
+<li>We planned to study various types of locking mechanisms which were used and study the best possible mechanism for our project.<br><p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>We found that using a solenoid would be the best and efficient way to operate a door lock electronically.</li><li>It's called the Deadbolt Locking mechanism.</li></ul></li></ul><h3>Week 2 (May 25th- 31st )</h3><ul>
+<li>Planned
+<ul>
+<li>Start work on the Electrical part searching for what all 'll be required for the project.</li><li>Look for different possible ways to control our lock.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>We found that you've to use relays to control power which'll in turn control the solenoid.</li><li>Now we knew what all parts were needed for our circuit.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Assemble the circuit.</li><li>Thinking on what to use as locking part for final.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Completed multiple testings on the circuit.</li><li> Working on finding better ways to make lock easier to use. Right now we are thinking of directly using a door handle and attaching it with solenoid.</li></ul></li></ul><h3>Week 4 (June 8th - June 14th)</h3><ul>
+<li>What you have planned ?
+<ul>
+<li>Planning to assemble complete mechanical and electrical part on a support.</li><li>Do arduino coding.</li></ul></li></ul><ul>
+<li>What you have accomplished?
+<ul>
+<li>Managed assembly and sorted them on plywood.</li><li>Coding completed.</li></ul></li></ul><h3>Week 5 (June 15th - June 21st)</h3><ul>
+<li>What you have planned ?</li></ul><p style="margin-left: 40px;">Try to control arduino using bluetooth module.</p><ul>
+<li>What you have accomplished?</li></ul><p style="margin-left: 20px;">Bluetooth app allowed to control Led but we are having troubles controlling the adruino remotely. </p><h3>Week 6 (June 22nd - June 28th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Sort out the bugs. </p><ul>
+<li>What you have accomplished? : </li><li>Bluetooth problem solved.</li></ul>

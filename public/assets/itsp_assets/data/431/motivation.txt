@@ -1,0 +1,4 @@
+<iframe src="//www.youtube.com/embed/ReN2l816L8k" allowfullscreen="" frameborder="0" height="415" width="660">
+</iframe><strong>Our project is motivated by the growing demand for humanoid robots. The human arm is a very complex organ and replicating it's functions effectively is a very interesting and challenging problem.  This motivated us to take a step into this world and make an arm capable of elementary sketching.<br></strong><p>
+	<strong><br>
+	</strong></p>

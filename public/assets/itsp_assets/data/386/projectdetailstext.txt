@@ -1,0 +1,77 @@
+<h3>
+<strong><span style="font-family: 'Times New Roman';">Write how you achieved to your project in detail</span></strong> :</h3><p>
+		The project looked a bit daunting at first but we launched a two pronged assault on the Coding and Electronic fronts.</p><h3>Web/Coding Approach</h3><pre>                                                                     
+                                                                     
+                                                                     
+                                             
+// ITSP
+#include &lt;SoftwareSerial.h&gt;
+SoftwareSerial mySerial(10,11); //rx, tx
+int lock = 9;          //pin 9 on Arduino
+char final[4];         //Characters the Arduino will receive
+char correct[4] = {'A','B','C','D'};    //User-Defined Password
+int pass_correct = 0;          //Does Password match, 0=false 1=true
+
+void setup()
+{
+pinMode(lock, OUTPUT);
+Serial.begin(9600);
+digitalWrite(lock, HIGH);  //By default, lock is active(locked)
+while (!Serial) {
+    ; // wait for serial port to connect. Needed for Leonardo only
+  }
+
+
+  Serial.println("Goodnight moon!");
+
+  // set the data rate for the SoftwareSerial port
+  mySerial.begin(9600);
+  mySerial.println("Hello, world?");
+}
+
+void loop()
+{
+  
+if(mySerial.available()) 
+{
+  for(int i=0; i&lt;4; i++)   //While data is available read 4 bytes
+  {
+   final[i] = mySerial.read();  //Read 4 bytes into the array labled "final"
+   //Serial.println(final[i]);
+  }
+}
+  pass_correct = 1;
+  
+  for(int i=0; i&lt;4; i++)
+  {
+    if(final[i]!=correct[i]) //Compare each char received to each car in our password in order
+    pass_correct = 0;   //If we compare two chars and they match, set the pass_correct variable to true(1)
+    break;
+  }
+
+if(pass_correct==1)  //If all chars compared match, deactivate(unlock) the lock for 5 seconds
+{
+  Serial.println("Unlocked");
+  digitalWrite(lock, LOW);
+  delay(5000);
+  Serial.println("Locked");
+  pass_correct = 0;
+}
+else
+{
+digitalWrite(lock, HIGH); //Else if there was not a complete match, keep the lock high(locked)
+}
+
+/* FOR TESTING
+Serial.print(final[0]);Serial.print(final[1]);Serial.print(final[2]);Serial.print(final[3]);
+Serial.print(" | ");
+Serial.print(correct[0]);Serial.print(correct[1]);Serial.print(correct[2]);Serial.print(correct[3]);
+Serial.print(" ");
+Serial.print(pass_correct);
+Serial.println("");
+*/
+delay(500);
+
+
+}
+&lt;br&gt;</pre><h3>Electronics Approach</h3><p><img style="margin-top: 122px;" src="http://www.hobbyist.co.nz/sites/default/files/pictures/dancing-lights/dancinglights_step1b.png" id="irc_mi" height="184" width="196">We used a 5 pin relay of which 2 NO and COM are connected with the power supply and NC is not connected. Rest two pins are connected to the arduino for signalling.</p><p>Here's how to connect bluetooth module with adruino.</p><p><img data-notes-lookup-id="FBVDN56H0OIV63M-0" alt="Picture of Adding Bluetooth" src="http://cdn.instructables.com/FBV/DN56/H0OIV63M/FBVDN56H0OIV63M.MEDIUM.jpg" style="height: 600px;"></p><p>Herre</p>

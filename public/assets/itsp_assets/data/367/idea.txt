@@ -1,0 +1,6 @@
+<ul>
+	
+<li><strong>Airspeed measurement</strong></li></ul><p>The difference in Total Pressure and Static Pressure over the wing of a plane gives the dynamic pressure, which is 0.5*(density)*(velocity)^2.</p><p>From these, we can calculate velocity.</p><p>To measure the difference between total and static pressure, we decided to use a differential pressure transducer, which outputs the difference. </p><p>We shall use two pitot tubes - for total pressure one will be protuding through the nose, and for static the other will be vertical through the fuselage/wing.</p><p><img src="http://upload.wikimedia.org/wikipedia/commons/b/bf/Pitot_tube_diagram.png"></p><ul>
+	
+<li><strong>Altitude</strong></li></ul><p>
+	We will use a barometric pressure sensor. Barometric pressure decreases as altitude increases. We can calibrate accordingly.</p>

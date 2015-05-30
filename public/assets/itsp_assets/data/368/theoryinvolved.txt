@@ -1,0 +1,11 @@
+<p>
+	The only theory involved in our project is that of Flex Sensors.</p><p>
+	Flex Sensors are like variable resistances. They change their resistance according to the amount of bend. Greater the bend, greater the resistance.</p><p>
+	One side of the sensor is printed with a polymer ink that has conductive particles embedded in it. When the sensor is straight, the particles give the ink a resistance of about 30k Ohms. When the sensor is bent away from the ink, the conductive particles move further apart, increasing this resistance (to about 50k Ohms when the sensor is bent to 90º, as in the diagram below). When the sensor straightens out again, the resistance returns to the original value. By measuring the resistance, you can determine how much the sensor is being bent.</p><p>
+	<img alt="" src="https://www.sparkfun.com/tutorial/Flex-sensor-retail/flex-sensor-how2.jpg" style="width: 400px; height: 501px; float: right; margin: 0px 0px 10px 10px;"></p><p>
+	Here is the basic flex sensor circuit :</p><p>
+	Flat (nominal resistance)</p><p>
+	45˚ Bend (increased resistance)</p><p>
+	90˚ Bend (resistance increased further)</p><p>
+	<img src="http://itp.nyu.edu/physcomp/sensors/uploads/Reports/flex-circuit.gif" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+</ul>

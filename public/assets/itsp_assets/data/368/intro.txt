@@ -1,0 +1,6 @@
+<p style="text-align: center;">
+	This project was originally aimed at making a glove that recognizes gestures and converts it it into speech.</p><p style="text-align: center;">
+	But due to time and knowledge constraints it has been reduced to the following : A glove that recognizes gestures and converts them into the corresponding letters which will be displayed on the screen.</p><p style="text-align: center;"></p><p style="text-align: center;">
+	The '
+	<strong>gestures</strong>' that we are talking about here refer to the <strong>ASL - American Sign Language</strong>.</p><p style="text-align: center;"></p><p style="text-align: center;">
+	The aim of our project was to make a glove for the mute, thus enabling them to communicate easily with others.</p>

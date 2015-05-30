@@ -1,0 +1,33 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Learn
+image processing and ensure precise gesture recognition from webcam.</li><li><ins>Buy all the
+electronic components require for the project.</ins></li><li><p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Dis what was intended</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li><ins>learn the working of
+IR sensors as to how will collision be avoided using them.</ins></li></ul></li><li>What you have accomplished?
+<ul>
+<li>could not learn it due to some unforeseen reasons but continued working on image processing.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Build <ins>the skeletal
+structure of the </ins><del>a </del>car <ins>i.e.
+the chassis along </ins>with <ins>the motors and the
+wheels.</ins></li><li><ins>Also, in this
+duration work on the image processing part i.e. how will the webcam </ins>recognise <ins>our hand gestures?</ins></li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Completed all that was decided</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Code the chip and map <ins>different
+hand gestures to the outputs to be produced by the car.</ins></li><li><ins>Also, add</ins> the <ins>IR/Ultrasonic </ins>sensors <ins>whichever
+may seem appropriat to the whees </ins>.</li></ul><ul>
+<li>What you have accomplished?</li></ul><p>Found out a much better way of getting the centres of the LED's and differentiating them. Very good results from the testing. Recognised the problems. Working on solving them</p><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li></ul><p>Complete the programme for 2 cameras. Find out possible bugs</p><ul>
+<li>What you have accomplished?</li></ul><p>Completed the programme. There are some bugs. Bit of flickering is there. Also some angles arent detected properly.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Sort out the bugs. Prepare video, posters etc.</p><ul>
+<li>What you have accomplished? : Tell us what you are up to.</li></ul>

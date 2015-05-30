@@ -1,0 +1,5 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Installation of OpenCV</li><li>Got The webcam</li><li>Convert it into IR</li></ul><h3>Week 2 (May 12th- 18th )</h3><ul><li>Making IR LED array</li><li>Gaining basic knowledge of OpenCV</li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Backgroung subtraction of the  image from webcam</li><li>Thresholding of the background subtracted image</li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Find the fingers in the thresholded image using contours</li><li>Removal of noise and  small blobs</li><li>Tracking of centroid of index fingers</li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>Use of xdotool library to move the mouse</li><li>Left click</li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul><li>Right click by tapping two fingers</li></ul>

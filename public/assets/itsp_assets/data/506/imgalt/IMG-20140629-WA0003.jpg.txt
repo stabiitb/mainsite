@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Top of the bot </h5>
+									<div class="details white-text">
+										This shows the sensing switches, electrical connections etc
+									</div>
+								</div>

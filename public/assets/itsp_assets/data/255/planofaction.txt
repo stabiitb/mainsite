@@ -1,0 +1,23 @@
+<h3>Week 1 (May 18th -25th)</h3><ul>
+<li><strong>Planned</strong>
+<ul>
+<li> Acquisition of components</li><li> Starting the coding part of the game and getting familiarized with accelerometer.</li></ul></li><li><strong>Accomplished</strong></li><li><strong></strong>completed the coding of the basic model of the game</li><li>coding for the calibration fo the accelerometer complete</li><li>communication between the Xbees established.</li><li>acquired components like the arduino,Xbees ,accelerometer and the connection stuff.</li><li>ordered for the logic level converter for the accelerometer online.</li><li>learned eagle software</li></ul><ul>
+</ul><h3>Week 2 (May 26th- June 1st )</h3><ul>
+<li>Planned
+<ul>
+<li>Starting the coding part of arduino.</li><li>Looking into the coding and working related to the accelerometer.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Basic code of the game ready.</li><li>Analysed the readings coming from the accelerometer.</li></ul></li></ul><h3>Week 3 (June 2nd - June 9th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Complete the basic model of accelerometer sensor.</li><li>Analyse the data conversion model regarding the FtDI chip and the Xbee modules.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Tested the XCTU software with Xbee modules but encountered some bugs.</li><li>Started designing the PCB design for making the sensor circuit compact.</li><li>Tried syncing the accelerometer with the Xbee Modules but encountered bugs again.</li></ul></li></ul><h3>Week 4 (June 10th - June 17th)</h3><ul>
+<li>What you have planned ?</li></ul><p style="margin-left: 20px;">Complete the basic model of our project using the dx ball game by coding for left-right movement.</p><p style="margin-left: 20px;">starting to work on improvisation of the project.</p><ul>
+<li>What you have accomplished?</li></ul><ul>
+<li>Fixed the bugs regarding the Xbee modules.</li><li>Final design of PCB ready.</li><li>Basic model of the game control ready for left right movement of the paddle.</li></ul><h3>Week 5 (June 18th - June 25th)</h3><ul>
+<li>What you have planned ?</li></ul><p>Improvising the game and getting the pcb ready.</p><ul>
+<li>What you have accomplished?</li></ul><p>The sensor circuit transferred from the breadborad to the PCB..</p><p>Added some power ups to the game like bullets and fire ball.</p><h3>Week 6 (June 26th - June 29th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>-Providing final touches to the project</p><ul>
+<li>What you have accomplished? : </li><li>Added gesture for increasing or decreasing the <a data-text="speed" id="cr_it_item_0" class="cr_it_item">speed</a> of the ball</li><li>Assembled the complete sensor.</li></ul>

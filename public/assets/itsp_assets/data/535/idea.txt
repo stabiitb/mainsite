@@ -1,0 +1,27 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;">
+</p>
+<ul>
+	<li><strong>Voice Recognition</strong></li>
+</ul>
+<p>
+	For voice recognition , the input will be taken from the laptop's microphone . The voice will be processed and detected in Matlab and then the output will be passed to Arduino which will have the codes to drive the bot.
+</p>
+<ul>
+	<li><strong>The RF bot </strong></li>
+</ul>
+<p>
+	This is the simple Remote controlled bot which is four wheeled.
+</p>
+<ul>
+	<li><strong>Biped</strong></li>
+</ul>
+<p>
+	<br>
+	This bot will be made of three servos and a wooden structure. The three servos will drive the bot.
+</p>
+<p>
+	<br>
+	<br>
+	<strong>Write what are your ideas behind doing the project how are you going to achieve it and all those stuff</strong>
+</p>

@@ -1,0 +1,24 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Study of image processing, it's principles and working.</li><li><p>Trying out simple examples of image processing.</p><p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>learned how to capture and manipulate an image in MATLAB </li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>Working out an algorithm for detection of face and then eyes of a person in MATLAB</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Tried out different examples of object detection in MATLAB by surfing on net, and eventually came across the Computer Vision toolbox that can be used directly for detection of eyes of a person.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Manipulation of a single image captured through webcam to bring out two distinguished output images for 'eye closed' and 'eye opened' state of the person.</li><li>Removing the noises from the images by sorting out a good algorithm for it.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Cropping out the eye area from the image of a person and then  doing the same from a live video taken by the webcam of the person.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Achieving the goals that were decided in the previous week.</li></ul><ul>
+<li>What you have accomplished?</li><li>successfully bringing out the distinguished images by thresholding them and then using the 'filling of holes' i.e. the imfill function of MATLAB to remove the noises.</li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li><li>The function used before to remove noises needs to be changed everytime with changing environment of the person where he is in, so searching for a new algorithm that could successfully remove the noises from the thresholded image in any lighting conditions and environment was planned.</li></ul><ul>
+<li>What you have accomplished?</li><li>Using of the image erosion algorithm to remove the noises which was better then the previously used imfill function.</li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>Play and stop an audio file by using the two distinguished images 'eye closed' and 'eye open' as input.</li><li>A major problem faced here was, if a person shakes or doesn't maintain a constant distance from the webcam then the program stops with a series of errors, so eradicating this problem was planned in this week too.</li></ul><ul>
+<li>What you have accomplished? : Tell us what you are up to.</li><li>1st objective was accomplished which is stated above but the 2nd one persisted in it still creates problem :(</li></ul>

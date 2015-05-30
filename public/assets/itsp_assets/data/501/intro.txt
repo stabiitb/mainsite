@@ -1,0 +1,1 @@
+<p>We plan to make a gesture controlled robotic arm.This arm imitates the  gesture of arm  of the operator.</p>

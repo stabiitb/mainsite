@@ -1,0 +1,1 @@
+<p style="text-align: center;">We planned to make an RC plane which can be controlled using an Android mobile. Basically, we wanted to make the plane move in the direction in which we tilt the phone. If we tilt the phone to the right, the plane will take a right turn and tilting the phone upwards will make the plane move upwards and so on.</p>

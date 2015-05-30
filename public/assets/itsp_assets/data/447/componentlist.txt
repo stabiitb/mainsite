@@ -1,0 +1,11 @@
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.</a><u>rcdhamaka.com</u>- amounting to <strong>Rs 1917</strong> (including shipping but excluding customs): <br></span>
+<ul>
+<li>carbon rods 3mm and 2mm</li><li>ESC</li></ul></li></ul><ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from Silikon electronics at Lamington</span><ul>
+<li>motor(brushless outrunner)</li><li>servos</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Gala electronics  at Lamington</span><ul>
+<li>spur gear and worm gear</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Videoton electronic  at Lamington</span><ul>
+<li>LiPo  2S battery</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
+<ul>
+<li>plywood</li><li>ball bearings</li></ul></li></ul><ul>
+<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 4608</span></strong></li></ul>

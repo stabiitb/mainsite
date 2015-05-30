@@ -1,0 +1,118 @@
+<h4><strong><span style="font-family: Arial;">Pressure Sensor:</span></strong></h4><div><p>We decided
+to use MPX10DP Differential Pressure Sensor. This is a silicon piezoresistive
+sensor. The sensing material in a
+piezoresistive pressure sensor is a diaphragm formed on a silicon substrate,
+which bends with applied pressure. A deformation occurs in the crystal lattice
+of the diaphragm because of that bending. This deformation causes a change in
+the band structure of the piezoresistors that are placed on the diaphragm,
+leading to a change in the resistivity of the material. This change can be an
+increase or a decrease according to the orientation of the resistors.</p><h4><strong>Altitude Sensor</strong></h4><h4></h4><h4>We use BMP085 sensor. It is also based on piezo-resistive technology. It supports I2C communication.</h4><h4></h4><h4>It also senses the temperature.</h4></div><h4></h4><h4>Plane:</h4><p>We decided
+to produce a (5 mm Styrofoam) replica of Sukhoi Su-37, with thrust vectoring
+capabilities.</p><p>We
+downloaded the dimensions and designs from the internet. The plane consists of
+: Delta shaped Wing, Fuselage, four nacelles (to be stuck on the bottom), two
+vertical tails and two tailerons (stabilators).</p><p><strong>Details
+of the Plane:</strong></p><p>Wing area: 360 sq
+in</p><p>Span: 30.0”</p><p>Length: 47.5”</p><p>Two Motors:
+Turnigy 2217 16turn 1050kv 23A </p><p>Two ESC’s: Turnigy AE 30A brushless</p><p>One Battery: Turnigy 2200mAh 3S 25C</p><p>Four Servos: HXT900 microservo</p><p><strong>Wing:</strong></p><p>Cut the Styrofoam according to the dimensions
+given. Reinforce it with 5 or 6mm carbon fibre tube for extra strength.</p><p><strong>Fuselage</strong>:</p><p>Cut the Styrofoam in the required shapes and
+assemble the doublers. Glue it to the wing using epoxy glue/Bondtite.</p><p><strong>Nacelles</strong>:</p><p>Cut out four nacelles. The outer two will be
+used for mounting the motors. Between an outer and an inner, we will mount the
+servos needed for the tailerons and thrust vectoring.</p><p><strong>Tailerons:</strong></p><p>For the motion of Tailerons which enable
+turning of the craft, we use a carbon fibre tube that runs from the taileron
+and is rotated using a servo mounted between the nacelles.</p><p><strong>Thrust vectoring system:</strong></p><p>The plane is elevated by changing the direction
+of thrust, i.e. vertically downwards will make the plane climb while upwards
+will make it descend.</p><p><strong><em>“Thrust vectoring</em></strong><em>, also<strong>thrust
+vector control</strong>or<strong>TVC</strong>, is the ability of an</em><em>aircraft,rocket, or other vehicle to manipulate the direction of thethrustfrom itsengine(s) or motor in order tocontroltheattitudeorangular
+velocityof the vehicle.”</em></p><p>To achieve this we constructed motor mounts
+that could be moved using a servo via pushrods. The mounts were made of metal
+(to be bolted with the motor) glued to wood which were joined to two more
+parts. This whole was pivoted through a wooden piece embedded in the end of
+outer nacelle. A pushrod connected it to the servo.</p><h4>The Final Code:</h4><pre>#include &lt;SD.h&gt;         //SD Card Library
+#include &lt;Wire.h&gt;       //I2C Library
+#include &lt;Adafruit_BMP085.h&gt;
+
+
+Adafruit_BMP085 bmp;
+//SPI SD Card Pins
+  //MOSI = Pin 11
+  //MISO = Pin 12
+  //SCLK = PIN 13
+  int CS_pin = 10;
+  int pow_pin = 8;
+
+
+  
+//Pressure Sensor Pin
+  int mpx = 0;
+long id = 1;                //Use this to store the id # of our reading.
+
+
+void setup()
+{
+  Wire.begin();
+  Serial.begin(9600);
+  Serial.println("Initializing Card");
+  //CS Pin is an output
+  pinMode(CS_pin, OUTPUT);
+  
+  //SD Card will Draw Power from Pin 8, so set it high
+  pinMode(pow_pin, OUTPUT);  
+  digitalWrite(pow_pin, HIGH);
+  
+  //Initialize Card
+  if (!SD.begin(CS_pin))
+  {
+      Serial.println("Card Failure");
+      return;
+  }
+  Serial.println("Card Ready");
+  
+  //Write Log File Header
+  File logFile = SD.open("LOG.csv", FILE_WRITE);
+  if (logFile)
+  {
+    logFile.println(", , , ,");
+    String header = "ID, Airspeed, Altitude, Pitot Tube, Barometric Pressure, Temp";
+    logFile.println(header);
+    logFile.close();
+    Serial.println(header);
+  }
+  else
+  {
+    Serial.println("Couldn't open log file");
+  }
+  
+}
+
+
+void loop()
+{
+  //Read the pressure from pitot tubes
+  int pitot = analogRead(mpx);
+  float airspeed = sqrt(2*pitot/1.225);
+  
+  //Create Data string for storing to SD card
+  //We will use CSV Format
+  String dataString = String(id) + ", " + String(airspeed) + ", " + String(bmp.readAltitude(100500)) + ", " + String(pitot) + ", " + String(bmp.readPressure()) + "," + String(bmp.temperature()); 
+  
+  //Open a file to write to
+ 
+  File logFile = SD.open("LOG.csv", FILE_WRITE);
+  if (logFile)
+  {
+    logFile.println(dataString);
+    logFile.close();
+    Serial.println(dataString);
+  }
+  else
+  {
+    Serial.println("Couldn't open log file");
+  }
+  
+  //Increment ID number
+  id++;
+  
+  delay(500);
+}
+&lt;br&gt;</pre>

@@ -1,0 +1,1 @@
+<ol><li>Acrylic sheets</li><li>Wooden board</li><li>Servo motors </li><li>Stepper motors (will replace servo due to poor performance by the latter)</li><li>Arduino</li><li>Steel clamps</li><li>Screws</li><li>Nuts</li><li>Castor wheel with ball bearing</li><li>Breadboard</li><li>Aluminium frame</li><li>Battery</li><li>Voltage regulators</li><li>Capacitors</li></ol>

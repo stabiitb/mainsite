@@ -1,0 +1,19 @@
+<div><strong><br></strong><p><u>LOGICAL OVERVIEW</u></p><p>We needed to do the following major tasks to complete the
+project: -</p><ul>
+<li>To Build a single neuron  (Either a McCulloch Pitt model or an analogue
+model like the Harmon Model) 
+</li><li>To create a neural network of some sort from
+these neurons (of a feasible size for a practical application) </li><li>Find an application for our neural network and
+implement it successfully.</li></ul><p>The first part was quite easy and we completed the circuits
+of both the models on bread-boards quite comfortably.</p><p>The major problem that we had with the construction of a
+neural network using TLU’s was to find a mechanism that could dynamically
+change the weights and find the optimum weights on its own. We came up with the
+solution that we could use digipot ICs (digital potentiometers) which are
+essentially variable resistors that can change their values in a programmable
+way.  However, these ICs were not
+available in the market which forced us to complete the design using mechanical
+pots.  </p><p>The next challenge was to find a suitable application for
+these neurons. </p><p>As we had attempted to make line followers in our first semester
+using an Arduino microcontroller, we decided to make a line follower with these
+neurons doing away with the need for a microcontroller, since it seemed like an
+ideal application requiring only 2 neurons. </p></div>

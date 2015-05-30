@@ -1,0 +1,9 @@
+<ul>
+	
+<li><strong>Android Programming (Java, XML)<br></strong></li></ul><p>Android programming is done using java and XML. Broadly speaking, XML is used to define appearance and layout of the app whereas java is used to define functioning of app.</p><ul>
+	
+<li><strong>Network architecture </strong></li></ul><p>Various aspects of networking is involved in this project. We will not create a permanent network for devices. Whenever there</p><p> is a new message, it is sent to the users directly in the range of sender. Then, these receivers send it to the</p><p>users who are not in direct range of sender.</p><p><img style="float: right; margin: 0px 0px 10px 10px;" alt="http://www.alltechtricks.com/wp-content/uploads/2014/03/wifi-on-android.jpg" src="http://www.alltechtricks.com/wp-content/uploads/2014/03/wifi-on-android.jpg"></p><ul>
+	
+</ul><ol>
+</ol><ul>
+<li><strong>Software development</strong></li></ul><p>Software development for this app involves implementation of touch screen based GUI for the app and development of a mechanism for sending and receiving messages.</p>

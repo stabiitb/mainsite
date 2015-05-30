@@ -1,0 +1,117 @@
+<h3><strong>THE FOLLOWING STEPS WERE TAKEN :</strong></h3><ol><li><strong>IMAGE ACQUISITION: </strong>opening the webcam and initialisation of the video player interface using appropriate MATLAB functions.</li><li><strong>COMPUTERVISION TOOLBOX: </strong>Used for detecting the face area of the person's image and inserting a boundary box around it.</li><li><strong style="font-size: 14px;">IMAGE PROCESSING: </strong>It involved the following steps:</li></ol><ul>
+<li><span style="font-size: 14px;"> cropping the eye part from the image obtained in the previous step and further grayscaling it.</span></li><li>thresholding of the grayscaled image manually.</li><li>use of the image erosion algorithm to remove the noises from the thresholded image thus creating two distinguished images for 'eye closed' and 'eye open' states.</li></ul><p>  4.<strong> CONTROLLING THE AUDIO FILE:   Us</strong>ing the two ouput images obtained in the previous step as input and then manipulating them to play, pause, resume or stop an audio file.</p><p>  THE SOURCE CODE IS GIVEN BELOW:</p><pre>%open the video device(webcam)
+obj = imaq.VideoDevice('winvideo',1);
+%open the video player of matlab
+hVideoIn = vision.VideoPlayer;
+count = 0;
+s = 0;
+ec = 0;
+ec1 = 0;
+
+
+while(1)
+%To detect Eyes
+EyeDetect = vision.CascadeObjectDetector('EyePairSmall');
+
+
+%Read the input Image
+
+
+videoframe = step(obj);
+BB=step(EyeDetect,videoframe);
+
+
+videoOut = insertObjectAnnotation(videoframe,'rectangle',BB,'eyes');
+
+
+Eyes=imcrop(videoframe,BB);
+
+
+EyesGray = rgb2gray(Eyes);
+
+
+Eyesthresh = imadjust(EyesGray);
+
+
+Eyesthresh = imresize(Eyesthresh, [56 227]);
+
+
+my_image = Eyesthresh(:,:,1);
+% allocate space for thresholded image
+image_thresholded = zeros(size(my_image));
+% loop over all rows and columns
+for ii=1:size(my_image,1)
+    for jj=1:size(my_image,2)
+        % get pixel value
+        pixel=my_image(ii,jj);
+          % check pixel value and assign new value
+          if pixel&lt;0.2
+              new_pixel=255;
+          elseif pixel&gt;0.2
+              new_pixel=0;
+          else
+              new_pixel = pixel;
+          end
+          % save new pixel value in thresholded image
+          image_thresholded(ii,jj)=new_pixel;
+      end
+end
+  
+              
+  %image erosion for removing noises
+se = strel('disk',10);
+erodedBW = imerode(image_thresholded,se);
+
+
+  %run the loop over the image matrix to find out any white pixel
+  for ii=1:size(erodedBW,1)
+    for jj=1:size(erodedBW,2)
+        pixel = erodedBW(ii,jj);
+        if pixel &gt; 0;              %if white pixel found increase the count by 1
+         count  = count + 1 ;
+        end
+    end
+  end
+ 
+ %output video
+ step(hVideoIn,erodedBW);
+
+
+ if count &gt; 1
+     display('EyesOpen');
+     ec = 1;
+ else display('EyesClose');                            
+      R = rem(s,2);
+      if R == 1 &amp;&amp; ec ~= 0
+          pause(player);                   %pause the playing file
+      end
+      if  ec == 0 &amp;&amp; ec1 == 0      
+          stop(player);                    %stop the playing file
+          ec1 = 1;
+      end
+      if s == 0
+      [y,Fs] = audioread('Let Me Be Myself.mp3');   
+      player = audioplayer(y,Fs); 
+      play(player);                         %play the file loaded
+      ec1 = 0;
+      if ec == 0 &amp;&amp; ec1 == 1
+          [y,Fs] = audioread('Let Me Be Myself.mp3');
+          player = audioplayer(y,Fs);
+          play(player);
+          ec1 = 0;
+      end
+          
+      end
+      if s &gt; 0 &amp;&amp; R == 0 &amp;&amp; ec ~= 0
+          resume(player);                  %resume the paused file
+      end
+      s = s + 1;
+      ec = 0;
+ end
+  
+  count = 0;                     %put back the initial value of count before the next frame processes
+  close(gcf);
+ release(hVideoIn);
+  release(obj);
+end
+&lt;br&gt;</pre>

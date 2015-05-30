@@ -1,0 +1,8 @@
+<h3>Week 1 </h3><ul>
+<li>planned to familiarize with  the different kinds of ornithopters already available.</li><li>understood the designs of various ornithopters.</li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>accomplishment:<br>
+<ul>
+<li>Build the mathematical model.</li><li>designing the various mechanisms like gears,wings,tail etc.</li></ul></li></ul><h3>Week 3 :</h3><h3>achievements:</h3><h3>searching for the components along with further understanding of alternate mechanisms for the same parts.</h3><h3></h3><h3>Week 4 :</h3><ul>
+<li>accomplishment:</li><li>got some of the components from the lamington.</li><li>made the rough shape of the fuselage.</li><li>WEEK 5:</li></ul><ul>
+<li>making all the small and large parts needed to actuate various mechanisms like flapping,tail motion etc</li><li>this was the most important part of the project as we had to spend a lot of time cutting,drilling,filing etc.</li><li>weight reduction is a very important factor so all the parts are made keeping this in mind.</li><li>WEEK 6 :</li></ul><ul>
+<li>after we finished making the components all the week was spent in assembling the components and debugging the various components for their mechanical strength so that they could sustain the forces during the flight.</li></ul>

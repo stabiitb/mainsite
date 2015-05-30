@@ -1,0 +1,9 @@
+<ul>
+	
+<li>Motivation</li>	The motivation behind the project was the concept of virtual mouse - controlling every mouse action with just hand gestures recorded by laptops's webcam.<br>
+	
+<p>
+		<strong><br>
+		</strong>
+	</p><li>Future of the project</li>	The code can be improved so that cursor could be moved by our bare hands. 3D gestures can also be recognized by getting depth perception by using two cameras.
+</ul>

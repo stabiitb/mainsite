@@ -1,0 +1,19 @@
+<h3>Week 1-2 (May 5th -18th)</h3><ul>
+<li>Planned
+<ul>
+<li>To find a mechanism to stick a suction cup to a surface.</li><li><p>o study R-pi.</p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Made a model which could be attached on moderately smooth surface.</li><li>Not much progress in R-pi.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Which camera to use</li><li>Transmission process</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>The camera idea seemed to simple to move with. So we decided to move to wall climbing bot. We made a proper movement model and design for the bot.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?</li></ul><p>Buy the components required and start building assemblies. </p><ul>
+<li>What you have accomplished?</li></ul><p>We bought many components</p><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li></ul><p>To complete the structure of the bot and have the test run of the same.</p><ul>
+<li>What you have accomplished?</li></ul><p>We made the structure. The bot didn't work with the motor bought. So we got another pair of motors, that too failed. Finally, we got the johnson motors which was adequate for our purpose.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Build the remote for project. Make the complete bot with all the assemblies combined.</p><ul>
+<li>What you have accomplished? </li></ul><p>We made the remote. One of the design in a PVC box failed to work as it lacked balance. So we mounted the entire components on piece of wood which is relatively much balanced and moreover, its working..!! :)</p>

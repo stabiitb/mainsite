@@ -1,0 +1,290 @@
+<p>1.The OpenCV code for image processing is as follows(auto calibration to be added)</p><pre>#include &lt;iostream&gt;
+#include "serial.h"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include &lt;math.h&gt;
+#include &lt;unistd.h&gt;
+using namespace cv;
+using namespace std;
+
+
+float dist(Point center1, Point center2){
+	float dist;
+	dist= sqrt((center1.x-center2.x)*(center1.x-center2.x)+(center1.y-center2.y)*(center1.y-center2.y));
+	return dist;
+	}
+
+
+ int main( int argc, char** argv )
+ {
+	char c;
+	serial_device arduino; 
+	arduino.initialize("/dev/ttyUSB1");
+    VideoCapture cap(0); //capture the video from webcam
+
+
+    if ( !cap.isOpened() )  // if not success, exit program
+    {
+         cout &lt;&lt; "Cannot open the web cam" &lt;&lt; endl;
+         return -1;
+    }
+	
+    namedWindow("Control", CV_WINDOW_AUTOSIZE); //create a window called "Control"
+
+
+int iLowH = 170;
+int iHighH = 179;
+
+
+int iLowS = 150; 
+int iHighS = 255;
+
+
+int iLowV = 60;
+int iHighV = 255;
+
+
+//Create trackbars in "Control" window
+createTrackbar("LowH", "Control", &amp;iLowH, 179); //Hue (0 - 179)
+createTrackbar("HighH", "Control", &amp;iHighH, 179);
+
+
+createTrackbar("LowS", "Control", &amp;iLowS, 255); //Saturation (0 - 255)
+createTrackbar("HighS", "Control", &amp;iHighS, 255);
+
+
+createTrackbar("LowV", "Control", &amp;iLowV, 255);//Value (0 - 255)
+createTrackbar("HighV", "Control", &amp;iHighV, 255);
+
+
+int iLastX = -1; 
+int iLastY = -1;
+
+
+int width= cap.get(CV_CAP_PROP_FRAME_WIDTH);
+int height=cap.get(CV_CAP_PROP_FRAME_HEIGHT);
+cout&lt;&lt;width&lt;&lt;endl;
+cout&lt;&lt;height&lt;&lt;endl;
+
+
+float c1x=width/2, c1y=0;
+float c2x=0, c2y=height/2;
+float c3x=width/2, c3y=height;
+float c4x=width, c4y=height/2;
+
+
+
+
+//Capture a temporary image from the camera
+Mat imgTmp;
+cap.read(imgTmp); 
+
+
+//Create a black image with the size as the camera output
+Mat imgLines = Mat::zeros( imgTmp.size(), CV_8UC3 );;
+
+
+
+
+    while (true)
+    {
+        Mat imgOriginal;
+
+
+        bool bSuccess = cap.read(imgOriginal); // read a new frame from video
+
+
+
+
+         if (!bSuccess) //if not success, break loop
+        {
+             cout &lt;&lt; "Cannot read a frame from video stream" &lt;&lt; endl;
+             break;
+        }
+
+
+Mat imgHSV;
+
+
+cvtColor(imgOriginal, imgHSV, COLOR_BGR2HSV); //Convert the captured frame from BGR to HSV
+
+
+Mat imgThresholded;
+
+
+inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgThresholded); //Threshold the image
+      
+//morphological opening (removes small objects from the foreground)
+erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)) );
+dilate( imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)) ); 
+
+
+//morphological closing (removes small holes from the foreground)
+dilate( imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)) ); 
+erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)) );
+
+
+//Calculate the moments of the thresholded image
+Moments oMoments = moments(imgThresholded);
+
+
+double dM01 = oMoments.m01;
+double dM10 = oMoments.m10;
+double dArea = oMoments.m00;
+
+
+// if the area &lt;= 10000, I consider that the there are no object in the image and it's because of the noise, the area is not zero 
+if (dArea &gt; 10000)
+{
+//calculate the position of the ball
+int posX = dM10 / dArea;
+int posY = dM01 / dArea;        
+        
+if (iLastX &gt;= 0 &amp;&amp; iLastY &gt;= 0 &amp;&amp; posX &gt;= 0 &amp;&amp; posY &gt;= 0)
+{
+//Draw a red line from the previous point to the current point
+
+
+circle(imgOriginal,Point(iLastX, iLastY),10	, Scalar(0,0,255),-1);
+}
+
+
+iLastX = posX;
+iLastY = posY;
+}
+else{
+	iLastX = -1; 
+    iLastY = -1;
+}
+
+
+imshow("Thresholded Image", imgThresholded); //show the thresholded image
+
+
+imgOriginal = imgOriginal + imgLines;
+imshow("Original", imgOriginal); //show the original image
+if(dist(Point(iLastX, iLastY),Point(c1x,c1y))&lt;=160)
+{
+	cout&lt;&lt;"Region 1"&lt;&lt;endl;
+	c='a';
+	arduino.write_byte(c);
+	
+}
+else if(dist(Point(iLastX, iLastY),Point(c2x,c2y))&lt;=160)
+{
+	cout&lt;&lt;"Region 2"&lt;&lt;endl;
+	c='b';
+	arduino.write_byte(c);
+}
+ else if(dist(Point(iLastX, iLastY),Point(c3x,c3y))&lt;=160)
+{
+	cout&lt;&lt;"Region 3"&lt;&lt;endl;
+	c='c';
+	arduino.write_byte(c);
+}
+ else if(dist(Point(iLastX, iLastY),Point(c4x,c4y))&lt;=160)
+{
+	cout&lt;&lt;"Region 4"&lt;&lt;endl;
+	c='d';
+	arduino.write_byte(c);
+}
+else
+{
+	cout&lt;&lt;"Do nothing"&lt;&lt;endl;
+	c='o';
+	arduino.write_byte(c);
+}
+   
+    
+        if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
+       {
+            cout &lt;&lt; "esc key is pressed by user" &lt;&lt; endl;
+            break; 
+       }
+    }
+   
+   return 0;
+   
+}
+</pre><p>2. You may have noticed that we have included the serial.h in the beginning of the OpenCV code. </p><p>The header file for writing on the serial port is given below.</p><pre>#include &lt;stdio.h&gt;      // standard input / output functions
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;     // string function definitions
+#include &lt;unistd.h&gt;     // UNIX standard function definitions
+#include &lt;fcntl.h&gt;      // File control definitions
+#include &lt;errno.h&gt;      // Error number definitions
+#include &lt;termios.h&gt;    // POSIX terminal control definitions
+#include &lt;time.h&gt;
+#include &lt;string.h&gt;
+
+
+using namespace std;
+
+
+class serial_device {
+	private:
+		int USB;
+
+
+	public:
+		void initialize(char* port);
+		void write_bytes(char*, int);
+		void write_byte(char);
+};
+
+
+void serial_device::initialize(char* port) {
+	USB = open(port, O_RDWR | O_NOCTTY );
+	struct termios tty;
+	struct termios tty_old;
+	memset (&amp;tty, 0, sizeof(tty));
+
+
+	/* Error Handling */
+	if ( tcgetattr ( USB, &amp;tty ) != 0 )
+	{
+	//cout &lt;&lt; "Error " &lt;&lt; errno &lt;&lt; " from tcgetattr: " &lt;&lt; strerror(errno) &lt;&lt; endl;
+	}
+
+
+	/* Save old tty parameters */
+	tty_old = tty;
+
+
+	/* Set Baud Rate */
+	cfsetospeed (&amp;tty, (speed_t)B9600);
+	cfsetispeed (&amp;tty, (speed_t)B9600);
+
+
+	/* Setting other Port Stuff */
+	tty.c_cflag     &amp;=  ~PARENB;        // Make 8n1
+	tty.c_cflag     &amp;=  ~CSTOPB;
+	tty.c_cflag     &amp;=  ~CSIZE;
+	tty.c_cflag     |=  CS8;
+
+
+	tty.c_cflag     &amp;=  ~CRTSCTS;       // no flow control
+	tty.c_cc[VMIN]      =   1;                  // read doesn't block
+	tty.c_cc[VTIME]     =   5;                  // 0.5 seconds read timeout
+	tty.c_cflag     |=  CREAD | CLOCAL;     // turn on READ &amp; ignore ctrl lines
+
+
+	/* Make raw */
+	cfmakeraw(&amp;tty);
+
+
+	/* Flush Port, then applies attributes */
+	tcflush( USB, TCIFLUSH );
+	if ( tcsetattr ( USB, TCSANOW, &amp;tty ) != 0) {
+//		cout &lt;&lt; "Error " &lt;&lt; errno &lt;&lt; " from tcsetattr" &lt;&lt; endl;
+	}
+}
+
+
+void serial_device::write_bytes(char* str, int len) {
+	write(USB, str, len);
+}
+
+
+void serial_device::write_byte(char str) {
+	write(USB, &amp;str, 1);
+}&lt;br&gt;</pre>

@@ -1,0 +1,6 @@
+<h3 style="text-align: center;"><u></u><u></u><u><span style="color: rgb(255, 255, 255);">SOUND SOURCE LOCALIZATION</span></u></h3><p style="text-align: justify;">
+	Sound signals travel as longitudinal waves from one point to the other. Two sound detectors placed nearby are expected to receive identical sound signals but with a time delay. Knowing this delay and using the approximation of parallel incidence of waves on mics (in case of far away source), one can easily calculate the angle of arrival of signals at the detectors.</p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><p style="text-align: justify;">
+<p style="text-align: justify;">
+	</p><p style="text-align: justify;">
+		</p><p style="text-align: justify;">
+		</p>

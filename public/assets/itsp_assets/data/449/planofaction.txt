@@ -1,0 +1,24 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Talk to seniors and decide the final working plan.</li><li>Decide and buy the required components.</li><li>Start learning the required coding (Arduino and Android).</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Talked to seniors and mentor and decided the plan of action.</li><li>Decided the components to be bought.</li><li>Started learning Arduino and  Android coding.</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>Learn Android and Arduino coding.</li><li>Build parts of the RC plane (wings, ailerons, tail etc.).</li></ul></li><li>Accomplished
+<ul>
+<li>Learnt Android and Arduino coding</li><li>Bought the required components.</li><li>Built the RC plane parts.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Planned<ul>
+<li>Start working on the coding part.</li><li>Learn flying the RC plane on a flight simulator.</li></ul></li></ul><ul>
+<li>Accomplished<ul>
+<li>Started the Arduino Code to generate the PPM signal.</li><li>Completed the Bluetooth part of the Android application to send data.</li><li>Assembled the RC plane.</li><li>Started learning to fly the plane on a flight simulator.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Planned
+<ul><li>Complete the coding and debug the code.</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Completed the sensor part of Android code and sent the correct values to the Arduino.</li><li>Completed the Arduino code to generate PPM signals.</li><li>Debugged the Arduino code to generate the correct PPM signals using a  digital oscilloscope.</li><li>Gave the demonstration of the project on 3rd June.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+</ul><ul><li>Planned</li></ul><ul><li>Accomplished</li></ul><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>Planned<ul><li>Documenting the project, making posters etc., for final demonstration</li></ul></li></ul><ul>
+<li>Accomplished<ul><li>Completed documentation, made poster, presentation and final report.</li></ul></li></ul>

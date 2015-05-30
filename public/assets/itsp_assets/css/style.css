@@ -1,0 +1,36 @@
+ol {
+display: block;
+list-style-type: decimal;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+ul, menu, dir {
+display: block;
+list-style-type: disc !important;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+.row{
+	margin: 0px;
+}
+.editable{
+	text-align:left;
+}
+.team{
+	width: 25%;
+}
+td{
+padding: 5px;
+border: 1px solid #ddd;
+vertical-align: top;
+}
+.inputimg{
+	width:70%;
+	margin:auto;
+	margin-bottom: 5px;
+}

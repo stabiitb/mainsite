@@ -1,0 +1,1 @@
+<p>Our project did not require much theory. The only main part for which theory was required was Atmega progamming. We got great help from <a href="http://www.arduino.cc"> www.arduino.cc </a> for that part</p>

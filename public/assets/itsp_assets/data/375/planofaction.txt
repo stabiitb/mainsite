@@ -1,0 +1,24 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Learn image processing in OpenCV </li><li> decide and finalise the working principle  of the mouse and think about a prototype</li><li>finalise the  components to be used to build  the mouse</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Decided how the mouse will be working</li><li>learnt basics of opencv but still need more knowledge to apply for the project</li><li>components to be finalised once knowledge of image processing sufficient to be utilised in the project is obtained</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>complete learning the required image processing </li><li>finalise the components to be used and think about where to purchase them from and what models</li></ul></li><li>What you have accomplished?
+<ul>
+<li>completed learning the required image processing that could have been done without the components</li><li>decided the components </li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>get the components</li><li>develope the code using the components for the prototype</li><li>try to complete the prototype</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>tried to get the components in nearby areas but search in vain</li><li>searching and trying to order online</li><li>decided to make some changes in principle/components if the initialy decided components cannot be found</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?</li></ul><p>Find out a better method to get the co-ordinates of the LED's. Do testing the find out the problems.</p><ul>
+<li>What you have accomplished?</li></ul><p>Found out a much better way of getting the centres of the LED's and differentiating them. Very good results from the testing. Recognised the problems. Working on solving them</p><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?</li></ul><p>Complete the programme for 2 cameras. Find out possible bugs</p><ul>
+<li>What you have accomplished?</li></ul><p>Completed the programme. There are some bugs. Bit of flickering is there. Also some angles arent detected properly.</p><h3>Week 6 (June 9th - June 15th)</h3><ul>
+<li>What you have planned ?:</li></ul><p>Sort out the bugs. Prepare video, posters etc.</p><ul>
+<li>What you have accomplished? : Tell us what you are up to.</li></ul>

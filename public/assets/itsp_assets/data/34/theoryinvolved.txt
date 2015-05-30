@@ -1,0 +1,22 @@
+Theoretically our project is similar to a roller-blade the
+only difference being the braking system.<br>
+
+We have short-listed on 2 braking systems which are as
+follows-<br>
+
+1)Disc brake mechanism- It uses the same mechanism as used
+by bikes. On pressing a button on the remote-control held in our hands, brake
+pads press onto the disc which will be attached to the back-wheel of our skates
+mounted on the same axle as the wheels slowing the speed of rotation of the
+wheels without causing much wear and tear to the wheels. This can be achieved
+both wired and wirelessly. Wired mechanism is the same as that of a bike. To
+make it wireless we need to broadcast Bluetooth signals when we press the
+button on the hand-held controller which will be received by the brake pads and
+causes them to press against the disc.<br><p>
+
+2) The cycle brake mechanism- It uses exactly the same
+mechanism as used in cycles. On pressing a button on our controller, brake pads
+present on the wheels will press against the wheels, slowing the speed of rotation.
+This will be easier to make but will cause more damage to the wheels because of
+wear and tear. Even this can be achieved both wired and wirelessly in a
+mechanism similar to the disc brake mechanism as discussed above. </p>

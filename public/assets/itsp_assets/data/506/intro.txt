@@ -1,0 +1,3 @@
+<p>We have made a robotic sweeper ( <strong>the former plan was follower umbrella but we changed it due to a number of anomalies like high cost, low stability etc.</strong>) which is
+autonomous and can also avoid obstacles on its way. It is not the same as the
+vacuum cleaners . It uses normal brooms and dustbins.</p>

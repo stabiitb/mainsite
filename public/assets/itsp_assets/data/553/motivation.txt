@@ -1,0 +1,6 @@
+<p><strong>Wanted to make a demonstrative project on basic science.</strong></p><p><strong>Scope of the model is to be modified to detect products of various radioactive decays,pair production,etc.</strong><br><strong></strong></p><p><strong><br></strong></p><iframe replaced="true" s3055857632596092664="true" src="//www.youtube.com/embed/ReN2l816L8k" allowfullscreen="" frameborder="0" height="415" width="660"></iframe><p>Possible Uses of Voice recognition 
+As extension to our project 
+The model which we have used is basically developed for four basic commands but it can be 
+extended to many more systems. It is a robust model which can be used for even more than 
+100 words which sound dissimilar. And using this we can build A voice controlled home, Tvs , 
+washing machines etc all controlled by voices. Imagine How good it will be. </p><p><strong><br></strong></p>

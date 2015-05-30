@@ -1,0 +1,23 @@
+<h3><p><span style="font-family: 'Times New Roman';">Note:our project was initially follower
+umbrella which we had to change because of its high cost and no proper
+mechanism for obstacle detection.</span></p><p><span style="font-family: 'Times New Roman';">Week
+1:Met the mentor and discussed our project with him.</span></p><p><span style="font-family: 'Times New Roman';">  Also
+learnt solid works properly.</span></p><p><span style="font-family: 'Times New Roman';"><br></span></p><p><span style="font-family: 'Times New Roman';">Week
+2:Discussed 
+various possible designs and finalised design for making it fly.</span></p><p><span style="font-family: 'Times New Roman';">  We
+had decided to make it fly using Quadcopter and hence we searched about
+quadcopter and studied how to build it.</span></p><p><span style="font-family: 'Times New Roman';"><br></span></p><p><span style="font-family: 'Times New Roman';">Week
+3:Discussed with mentor about quadcopter and went to
+purchase the components.</span></p><p><span style="font-family: 'Times New Roman';">  Those
+components which did not yet include stuff to be used for Obstacle detection
+costed around Rs.13500 which was very costly and hence decide to change the
+p[roject on mentor’s advice and finally decided to make a robotic sweeper.</span></p><p><span style="font-family: 'Times New Roman';"><br></span></p><p><span style="font-family: 'Times New Roman';">Week
+4:Discussed about the deisgn for robotic sweeper and
+its mechanism for obstacle detection.</span></p><p><span style="font-family: 'Times New Roman';">  Finalised
+the design and push button switches for obstacle detection.</span></p><p><span style="font-family: 'Times New Roman';">  Bought
+The components and began building the robotic sweeper</span></p><p><span style="font-family: 'Times New Roman';"><br></span></p><p><span style="font-family: 'Times New Roman';">Week
+5:Wrote the algorithm for the code.  </span></p><p><span style="font-family: 'Times New Roman';">  Did
+30% of both mechanical and electrical work</span></p><p><span style="font-family: 'Times New Roman';"><br></span></p><p><span style="font-family: 'Times New Roman';">Week
+6:wrote the final code for bot.</span></p><p><span style="font-family: 'Times New Roman';">  It
+being the last week we had to complete the bot which we did at the eleventh
+hour.</span></p></h3>

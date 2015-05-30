@@ -1,0 +1,8 @@
+<p>
+	<img src="http://www.creativereview.co.uk/images/uploads/2012/09/ks_williams_svart_ljosabox_and_raudbedur_1_0.jpg" alt="" style="float: right; margin: 0px 0px 10px 10px;"></p><ul>
+	<li><strong>Image processing</strong></li></ul><p>
+	For image processing , we are using open CV. We process the visual input given to the webcam via hand gestures to send different commands to the car. Edge detection is used to recognise the number of fingers shown at a given point of time thereby giving different commands.</p><ul>
+	<li><strong>The bot</strong></li></ul><p>
+	This is the simple car which is four wheeled with arduino to translate the command received from the laptop</p><ul>
+	<li><strong>Interface</strong></li></ul><p>To receive the signals given by the laptop on th bot side to
+execute the commands we will use XBEE.</p>

@@ -1,0 +1,1 @@
+<ul><li>Our Approach for power </li></ul><p>For controlling the power supply to the solenoid we decided that we'll use a Relay. Relay basically acts as  a switch which can be electronically controlled using a adruino. On receiving a signal from the bluetooth module adruino sets the pin attached to the relay and it flips.</p>

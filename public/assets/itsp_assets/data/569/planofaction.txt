@@ -1,0 +1,25 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
+<ul>
+<li>Make a 3D model on Solidworks.</li><li>Do calculation regarding the balancing of the bot.<br>
+<p><img src="http://www.stab-iitb.org/resources/images/f/f7/Logical_structure.png" style="width: 513px; float: right; margin: 0px 0px 10px 10px;" alt=""></p></li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Learned solidworks.</li><li>Made a paper layout of the bike bot.</li><li>Made a list of major parts and their cost.</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned
+<ul>
+<li>Start working on mechanical model.</li><li>Interpret  gyro sensor and accelerometer.</li></ul></li><li> Accomplished
+<ul>
+<li>Completed 3D model.</li><li>Bought parts.</li><li>Encountered that dc motor for flywheel used against stepper motor.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Planned :
+<ul>
+<li>Start calculation regarding the filter of the tilt angle.</li><li>Tune the pid controller.</li></ul></li></ul><ul>
+<li>Accomplished
+<ul>
+<li>Completed mechanical model.</li></ul></li></ul><h3>Coding was in progress.</h3><h3></h3><h3>Week 4 (May 26th - June 1)</h3><h3>   </h3><h3></h3><h3></h3><h3></h3><ul>
+<li><strong>Planned :</strong></li><li>Start testing.</li><li>Making two flywheels  :</li><li>100 gram ,radius 3 cm</li><li>350 gram ,radius 7.5 cm </li></ul><ul>
+<li>Accomplished:</li><li>Code completed.</li><li>Made electrical connections on breadboard.</li><li>Ordered the flywheels.</li></ul><p>We had  a  johnson dc motor rated 8 -12 kg cm torque , but we did not have idea about flywheel dimensions . We were going for hit and trial.</p><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li> planned :</li></ul><p>Complete testing.</p><ul>
+<li>Accomplished:</li></ul><p>Experiments Done !!but failed. Thinking about the combination  of  dc motor(how much torque) and flywheel (how much mass and radius)</p><p>Week 6 (June 9th - June 15th)</p><ul>
+<li>Planned :</li></ul><p>Testing with the another flywheel(500 gram and radius 4.5 cm) .If done ,go for the steering and driving system.</p><ul>
+<li>Accomplished : </li><li>Testing with that flywheel also failed .</li><li>Did matlab simulink </li><li>Result : flywheel should be 500 gram and 6 cm radius </li><li>and motor torque should be 30 kgcm.</li></ul>

@@ -1,0 +1,72 @@
+<h3>Web Server</h3>
+<ul>
+	<li> Web Server provides an interface to the user to control the bot remotely from any place in the world.</li>
+	<li>It has basic commands of movement for bot in front, back, right and back and also the its movement at any desired angle.</li>
+	<li>it has basic commands of rotation in anticlockwise or clockwise.</li>
+</ul>
+<h3>Android programming</h3>
+<ul>
+	<li>Making the app is probably the toughest part of the project</li>
+	<li>App has two mode.
+	<ul>
+		<li>Manuel Mode :-    user can control the bot directly using the mobile phone via bluetooth.</li>
+		<li>Automatic mode :- user control the  bot using web server. also user click picture . </li>
+	</ul>
+	</li>
+</ul>
+<h3>AVR Coding</h3>
+<ul>
+	<li>We are using ATMEGA32 Development board to control bot</li>
+	<li>interfacing between avr and bluetooth module is toughest  part </li>
+	<li>AVR coding  is simple.</li>
+	<li>AVR CODE :-
+	<ul>
+		<li><a href="https://dl.dropboxusercontent.com/s/rszm7jo31tnpsz9/1RE25.c?dl=1&amp;token_hash=AAH193Q-DZrjRjt62vet9QMOmpUfhtVT7h8mFJLbwfdYcw&amp;expiry=1402764781"> Project Code In C Formate </a></li>
+		<li><a https:="" dl.dropboxusercontent.com="" s="" 48liyp5kmkud8t5="" makefile.pdf?dl="1&amp;token_hash=AAHCb_Aj9GgtqAcQlRkfbAUlW2vJFxtyI9G9GkqpunmIKQ&amp;expiry=1402764752&quot;"> Makefile </a></li>
+		<li><a href="https://dl.dropboxusercontent.com/s/0bgg4ych64hc7qh/puneet%20%282%29.oxps?dl=1&amp;token_hash=AAHJxmFEvHt8V4SSg92JsDxLUuY-bL9h7BCxmpbhIi5QbQ&amp;expiry=1402764556"> Project Code </a></li>
+	</ul>
+	<ul>
+		<br>
+	</ul>
+	<ul>
+		<br>
+	</ul>
+	</li>
+</ul>
+<h3>Electronics/Mechanical Approach</h3>
+<ul>
+	<li>The chassis is made up of Acrylic sheet.</li>
+	<li>Bot can rotate on its own axis.</li>
+</ul>
+<p>
+	<img border="5" src="http://www.dropbox.com/s/quec4eefpd8w7sg/Bot.jpg" alt="Click on Bot image" width="600" height="480" ;style="float:left;"><span style="color: rgb(227, 108, 9);">
+	<a href="https://www.dropbox.com/s/quec4eefpd8w7sg/Bot.jpg"> Bot image </a> image shows the alignment of the wheels</span>
+</p>
+<ul>
+	<li>circuit diagram</li>
+</ul>
+<p>
+	<img border="5" src="https://www.dropbox.com/s/iibg1o4otmboecq/Screenshot%20%2848%29.jpg" alt="click on L293D_F_B" width="400" height="300" ;style="float:left;">
+	<img border="5" src="https://www.dropbox.com/s/wdw46fc9gcql7ax/Screenshot%20%2847%29.jpg alt=" click="" on="" l293d_f_b"="" width="400" height="300" style="float:right;">
+</p>
+<p float="float:left;">
+	<a href="https://www.dropbox.com/s/iibg1o4otmboecq/Screenshot%20%2848%29.jpg">L293D_F_B </a>
+	<span style="color: rgb(227, 108, 9);">Motor driver circuit for front tyre and back tyre</span>
+</p>
+<p style="float:right">
+	<a href="https://www.dropbox.com/s/wdw46fc9gcql7ax/Screenshot%20%2847%29.jpg"> L293D_R_L </a>
+	<span style="color: rgb(227, 108, 9);">Motor driver circuit for Right tyre and left tyre</span>
+</p>
+<p>
+	<br>
+	<br>
+	<img border="5" src="https://www.dropbox.com/s/uc9on8uh276whaq/Screenshot%20%2849%29.jpg" alt="click on LM1117" width="400" height="300"><a href="https://www.dropbox.com/s/uc9on8uh276whaq/Screenshot%20%2849%29.jpg">LM1117 </a><span style="color: rgb(227, 108, 9);">LM1117 circuit for converting 12v to 3.3v and 5v.</span>
+</p>
+<p>
+	<span style="color: rgb(227, 108, 9);"><br>
+	</span>
+</p>
+<h3><inline><inline style="color: rgb(165, 165, 165);">Video</inline></inline></h3>
+<ul>
+	<li> <a href="https://www.dropbox.com/s/pbu9likck47yvad/ITSP.mp4"> Project Video </a></li>
+</ul>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The thresholded image of the eyes</h5>
+									<div class="details white-text">
+										Thresholding is done manually here of the grayscaled image
+									</div>
+								</div>

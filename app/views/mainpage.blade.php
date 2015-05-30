@@ -22,8 +22,12 @@
 							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
 
 							 @endif
-							@endif 		
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.final_reviews')}}" class="btn">ITSP 2015 Reviews &nbsp</a> </li>
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
+							 <li class="single-block">Only the team leader can document.</li>
+							 @else
+							 <li class="single-block">Login to document your ITSP project. Only the team leader can document.</li>
+							@endif
+
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>

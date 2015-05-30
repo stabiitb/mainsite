@@ -1,0 +1,1 @@
+<p>The main motivation behind our project is that we are using the visual input for controlling a bot for the first time.The bot in the more advanced form can be used in rescue operations where instead of giving Artificial Intelligence we can control it by our own body movements.</p><p><strong><br></strong></p>

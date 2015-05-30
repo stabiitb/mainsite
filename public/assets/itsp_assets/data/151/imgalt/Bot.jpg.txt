@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Bot Structure</h5>
+									<div class="details white-text">
+										 alignment of the wheels
+									</div>
+								</div>
