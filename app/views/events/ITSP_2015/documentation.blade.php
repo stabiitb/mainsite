@@ -747,10 +747,15 @@ function fetch_data($path_to_file,$text=1)
 	
 	<!-- COMPANY PHONE NUMBER -->
 	<div class="col-md-2 company-details">
-		Design and Developed by 
+		Designed and developed by 
 		<a href="http://www.cse.iitb.ac.in/~prateekchandan" target=_blank>
 		Prateek Chandan
+		</a><br>
+		Maintained by 
+		<a href="https://www.facebook.com/siddharth.bulia" target=_blank>
+		Siddharth Bulia
 		</a>
+
 	</div>
 	
 	<!-- SOCIAL ICON AND COPYRIGHT -->
@@ -760,7 +765,7 @@ function fetch_data($path_to_file,$text=1)
 			<li><a href="https://www.youtube.com/user/STABiitb"><i class="icon-youtube"></i></a></li>
 			<li><a href="https://github.com/wncc"><i class="icon-github"></i></a></li>
 		</ul>
-		 ©2014 <a href="http://itsp.stab-iitb.org" target=_blank> ITSP </a> ,<a href="http://www.stab-iitb.org" target=_blank> STAB </a>,
+		 ©2015 <a href="http://itsp.stab-iitb.org" target=_blank> ITSP </a> ,<a href="http://www.stab-iitb.org" target=_blank> STAB </a>,
 		 <a href="http://www.iitb.ac.in" target=_blank> IIT Bombay </a>
 	</div>
 </div> <!-- / END CONTAINER -->
