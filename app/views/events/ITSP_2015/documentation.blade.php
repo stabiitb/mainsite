@@ -36,7 +36,7 @@ if(isset($_GET['id']))
 		$auth=1;
 	else 
 		$auth=0;
-	echo $auth."  sfsdfs";
+	echo $auth." ".$by." ".$user;
 }
 else
 {
