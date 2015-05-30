@@ -1,2 +1,0 @@
-<ul>
-<li>Android developer tutorials</li><li>The New Boston Video</li><li>Help via Stack Overflow and  you tube</li></ul>
