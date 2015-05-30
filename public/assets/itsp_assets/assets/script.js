@@ -65,6 +65,9 @@ $(document).on('click', '#projectdetailstext', function (e) {
 $(document).on('click', '#componentlist', function (e) {
       exampleClickToEdit('componentlist');
 });
+$(document).on('click', '#projectdesc', function (e) {
+      exampleClickToEdit('projectdesc');
+});
 jQuery(function ($) {
     $('body').click(function (e) {
         //alert(e.target.className==='redactor_toolbar');

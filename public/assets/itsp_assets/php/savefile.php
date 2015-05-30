@@ -15,6 +15,11 @@ if(isset($_POST['intro'])){
          		fwrite($file,$_POST['intro']);
          		fclose($file);
 }
+if(isset($_POST['projectdesc'])){
+  $file = fopen($path_chk."projectdesc.txt", "w");
+            fwrite($file,$_POST['projectdesc']);
+            fclose($file);
+}
 if(isset($_POST['motivation'])){
   $file = fopen($path_chk."motivation.txt", "w");
             fwrite($file,$_POST['motivation']);

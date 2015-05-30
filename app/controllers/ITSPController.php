@@ -600,7 +600,7 @@ $file = fopen($path, "w");
 	$path_chk=public_path()."/assets/itsp_assets/data/".$by."/";
 $file="";
 if(file_exists($path_chk."intro.txt")){
-	
+
 }
 if(isset($_POST['intro'])){
   $file = fopen($path_chk."intro.txt", "w");
@@ -615,6 +615,11 @@ if(isset($_POST['motivation'])){
 if(isset($_POST['referencetext'])){
   $file = fopen($path_chk."referencetext.txt", "w");
             fwrite($file,$_POST['referencetext']);
+            fclose($file);
+}
+if(isset($_POST['projectdesc'])){
+  $file = fopen($path_chk."projectdesc.txt", "w");
+            fwrite($file,$_POST['projectdesc']);
             fclose($file);
 }
 if(isset($_POST['idea'])){

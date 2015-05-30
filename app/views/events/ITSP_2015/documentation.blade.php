@@ -102,7 +102,7 @@ function fetch_data($path_to_file,$text=1)
 <meta charset="UTF-8">
 <meta name="description" content="<?php echo $data['project_desc']; ?>">
 <meta name="keywords" content="ITSP , IIT Bombay , <?php  echo $data['project_name'];?>">
-<meta name="author" content="Prateek Chandan">
+<meta name="author" content="Siddharth Bulia">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ITSP | <?php echo $data['team_name']." | ".$data['id']." | ".$by; ?></title>
 
@@ -188,17 +188,23 @@ function fetch_data($path_to_file,$text=1)
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
         <div class="row bottom-message-section">
-			<div class="col-lg-4 col-sm-4">
+			<div class="col-lg-2 col-sm-2">
 				<div class="short-text">
 					<?php //<i class="icon icon-fontawesome-webfont-358"></i> Fixed price for packages ?>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-4">
+			<div class="col-lg-8 col-sm-8">
 				<div class="short-text">
-					Club : <?php echo $data['club']; ?>
+					Club : <?php echo $data['club'];
+					 ?>
+		</div>
+						<div class="row editable" id="projectdesc" style="text-align:center">
+				<?php 
+					echo fetch_data(public_path()."/assets/itsp_assets/data/".$by."/projectdesc.txt");
+				?>
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-4">
+			<div class="col-lg-2 col-sm-2">
 				<div class="short-text">
 					<?php //<i class="icon-fontawesome-webfont-347"></i> Satisfaction guranteed ?>
 				</div>
