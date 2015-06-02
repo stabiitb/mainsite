@@ -7,10 +7,9 @@ $data=NULL;
 
 if(Auth::check()){
 	if(Auth::User()->ldap_verified==1){
-		if(Auth::User()->itsp!=NULL)
+		if(Auth::User()->itsp!=NULL || Auth::User()->admin ==1)
 			{
 			$user=Auth::User()->id;
-			$data=ITSP::find(Auth::User()->itsp);
 			}
 		else{
 			echo "ITSP team details missing. Fill it up and come back.";
