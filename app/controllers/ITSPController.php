@@ -612,8 +612,8 @@ $file = fopen($path, "w");
 
 			$extension = $bills->getClientOriginalExtension();
 			if($extension=="zip"){
-				$webpath="http://stab-iitb.org/assets/itsp_assets/data/".Auth::User()->itsp;
-				$dest=public_path()."/assets/itsp_assets/data/".Auth::User()->itsp;
+				$webpath="http://stab-iitb.org/assets/itsp_assets/data/".Auth::User()->id;
+				$dest=public_path()."/assets/itsp_assets/data/".Auth::User()->id;
 				$fileName=strval((intval(Auth::User()->itsp)*100)%57).".zip";
 				$destName=$dest."/".$fileName;
 				$newTeam->project_desc=$webpath.'/'.$fileName;
