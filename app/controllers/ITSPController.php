@@ -584,6 +584,57 @@ $file = fopen($path, "w");
             fclose($file);
 
 	}
+
+	public function documentation_savezip()
+	{
+		if (Auth::check()){
+			if (Auth::User()->itsp!=NULL){
+
+			}
+			else{
+				return "Invalid Access";
+			}
+		}
+		else{
+			return "Invalid Access";
+		}
+
+		$bills=Input::file("bills");
+		$newTeam=ITSP::find(Auth::User()->itsp);
+		if(!Input::hasFile("bills")){
+
+			$messageBag = new MessageBag;
+			$messageBag->add('message',"Bills not attached" );
+
+			return Redirect::back()->with('messages', $messageBag)->withInput();
+		}
+
+
+			$extension = $bills->getClientOriginalExtension();
+			if($extension=="zip"){
+				$webpath="http://stab-iitb.org/assets/itsp_assets/data/".Auth::User()->itsp;
+				$dest=public_path()."/assets/itsp_assets/data/".Auth::User()->itsp;
+				$fileName=strval((intval(Auth::User()->itsp)*100)%57).".zip";
+				$destName=$dest."/".$fileName;
+				$newTeam->project_desc=$webpath.'/'.$fileName;
+
+				$newTeam->save();
+
+
+				if(!file_exists($dest)){
+					mkdir($dest,0777,true);
+				}
+				$destinationPath=$dest."/";
+				$bills->move($destinationPath, $fileName);
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Bills successfully submitted." );
+				return Redirect::back()->with('messages', $messageBag)->withInput();
+			}
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Submission failed. Submit bills in zip format." );
+				return Redirect::back()->with('messages', $messageBag)->withInput();
+	}
+
 	public function documentation_savefile()
 	{
 

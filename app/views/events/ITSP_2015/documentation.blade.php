@@ -1,5 +1,4 @@
 <?php
-
 $auth=0;
 $user=NULL;
 $by=1;
@@ -22,17 +21,20 @@ if(Auth::check()){
 	}		
 	}
 else{
-	echo "Please login to continue";
+	echo  "Please login to continue";
+	return;
 }		
 
 if(isset($_GET['id']))
 {		
 	$data=ITSP::find($_GET['id']);
-	if($data==NULL)
-		return Redirect::to('/');
+	if($data==NULL){
+		echo "No team found";
+		return;
+	}
 	$data=$data->toArray();
 	$by=$data['user_id'];
-	if($by==$user)		
+	if($by==$user || Auth::User()->admin==1)		
 		$auth=1;
 	else 
 		$auth=0;
@@ -40,6 +42,7 @@ if(isset($_GET['id']))
 }
 else
 {
+	echo "invalid url. Try www.stab-iitb.org/itsp/documentation?id={your itsp id}";
 	return Redirect::to('/');
 }
 
@@ -100,7 +103,6 @@ function fetch_data($path_to_file,$text=1)
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
-<meta name="description" content="<?php echo $data['project_desc']; ?>">
 <meta name="keywords" content="ITSP , IIT Bombay , <?php  echo $data['project_name'];?>">
 <meta name="author" content="Siddharth Bulia">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -181,9 +183,7 @@ function fetch_data($path_to_file,$text=1)
 	<div class="container">
 		
 		<!-- HEADING -->
-		<h1 class="intro"><?php  echo $data['project_name']; ?></h1>
-		<h5 class="intro" style="margin-top:0px;line-height:25px;"><?php  echo $data['project_desc']; ?></h5>
-		
+		<h1 class="intro"><?php  echo $data['project_name']; ?></h1>		
 		
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
@@ -194,7 +194,7 @@ function fetch_data($path_to_file,$text=1)
 				</div>
 			</div>
 			<div class="col-lg-8 col-sm-8">
-				<div class="short-text">
+				<div class="short-text" style="text-align:center">
 					Club : <?php echo $data['club'];
 					 ?>
 		</div>
@@ -203,10 +203,29 @@ function fetch_data($path_to_file,$text=1)
 					echo fetch_data(public_path()."/assets/itsp_assets/data/".$by."/projectdesc.txt");
 				?>
 				</div>
+				    @if (Session::get('messages') != null && Session::get('messages')->has('message'))
+        <div class="col-md-12">
+            <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            {{ Session::get('messages')->first('message') }}
+            </div>
+        </div>
+    @endif
+
+					@if ($auth==1)
+						<form action="{{URL::route('events.ITSP_2015.documentation.savezip')}}" method="post" enctype="multipart/form-data">
+						    <p style="text-align:center;color:rgb(255, 255, 0)">Zip all your bills and submit it here. Only zip format is allowed.</p>
+						    <input style="text-align:center;" type="file" name="bills" id="fileToUpload">
+						    <input style="text-align:center;" type="submit" value="Upload Bills" name="submit">
+						</form>
+						@if(ITSP::find(Auth::User()->itsp)->project_desc!=NULL)
+							<p>Your bills are <a href="{{ITSP::find(Auth::User()->itsp)->project_desc}}">here</a></p>
+						@endif	
+					@endif
+
 			</div>
 			<div class="col-lg-2 col-sm-2">
 				<div class="short-text">
-					<?php //<i class="icon-fontawesome-webfont-347"></i> Satisfaction guranteed ?>
 				</div>
 			</div>
 		</div>
