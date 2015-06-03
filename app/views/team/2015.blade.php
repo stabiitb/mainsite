@@ -31,7 +31,7 @@
 							</figure>
 						</div><!-- /.col -->
 
-						<div class="gitcol-sm-6  inner-left inner-right" >
+						<div class="col-sm-6  inner-left inner-right" >
 							<figure class="member">
 								<div class="icn-link">
 									<!-- <span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/apurv.jpg')}}" class="img-circle"> -->
