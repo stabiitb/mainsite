@@ -273,6 +273,64 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
+								<h3>Technovation</h3>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row  text-center">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/umang.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Umang Chhaparia
+										<span><i class="icon-phone">9967346106</i></span>
+										<span><i class="icon-mail">umang147@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
+						
+					</div><!-- /.row -->
+
+					<hr>
+					<div class="row">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
+							<header>
+								<h3>TechGSR</h3>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row  text-center">
+						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/anisha.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Anisha Bajaj
+										<span><i class="icon-phone">7506144450</i></span>
+										<span><i class="icon-mail">bajajaisha50@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
+						
+					</div><!-- /.row -->
+
+					<hr>
+					<div class="row">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
+							<header>
 								<h3>Web Manager</h3>
 							</header>
 						</div><!-- /.col -->
@@ -307,7 +365,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/rituparn.jpg')}}" class="img-circle">
@@ -324,7 +382,7 @@
 							</figure>
 						</div><!-- /.col -->
 
-						<!-- <div class="col-sm-6 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/shashanka.jpg')}}" class="img-circle">
@@ -339,7 +397,7 @@
 								</figcaption>
 								
 							</figure>
-						</div> -->
+						</div>
 						<!-- /.col -->
 
 					</div><!-- /.row -->
