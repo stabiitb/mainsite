@@ -33,7 +33,11 @@ if(isset($_GET['id']))
 	}
 	$data=$data->toArray();
 	$by=$data['user_id'];
-	if($by==$user || Auth::User()->admin==1)		
+	$by2=$data['user_id2'];
+	$by3=$data['user_id3'];
+	$by4=$data['user_id4'];
+	$by5=$data['user_id5'];
+	if($by==$user || $by2==$user || $by3==$user || $by4==$user || $by5==$user ||  Auth::User()->admin==1)		
 		$auth=1;
 	else 
 		$auth=0;
