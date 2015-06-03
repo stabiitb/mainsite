@@ -13,7 +13,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 inner-left inner-right" >
+						<div class="col-sm-12 inner-left inner-right" >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/chirag.jpg')}}" class="img-circle">
@@ -31,11 +31,10 @@
 							</figure>
 						</div><!-- /.col -->
 
-						<div class="col-sm-6  inner-left inner-right" >
+<!-- 						<div class="col-sm-6  inner-left inner-right" >
 							<figure class="member">
 								<div class="icn-link">
-									<!-- <span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/apurv.jpg')}}" class="img-circle"> -->
-								</div><!-- /.icon-overlay -->
+								</div>
 								
 								<figcaption>
 									<h2> 
@@ -48,8 +47,8 @@
 								
 								
 							</figure>
-						</div><!-- /.col -->
-
+						</div>
+ -->
 					</div><!-- /.row -->
 					<hr>
 					<div class="row">

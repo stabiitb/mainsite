@@ -116,7 +116,7 @@
 																	<a href="{{URL::Route('institute_review_2013')}}">Institute Review 2013</a>
 																</li>
 																<li>
-																	<a href="{{URL::Route('annual_report_2014_2015')}}">Annual Reposrt 2015-2015</a>
+																	<a href="{{URL::Route('annual_report_2014_2015')}}">Annual Report 2014-2015</a>
 																</li>
 															</ul>
 														</li>
@@ -127,7 +127,7 @@
 													<h4>Contacts</h4>
 													
 													<ul class="circled">
-														<li><a href="{{URL::Route('team_2014')}}">Team 2014-15</a></li>
+														<li><a href="{{URL::Route('team_2015')}}">Team 2015-16</a></li>
 														<li><a href="{{URL::Route('alumni')}}">Alumni</a></li>
 														<li><a href="{{URL::Route('facad')}}">Faculty Advisors/Mentors</a></li>
 													</ul><!-- /.circled -->
