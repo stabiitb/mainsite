@@ -27,7 +27,6 @@
 						
 						<section id="contact-form">
 						
-							<h3><a href="{{URL::Route('team_2015')}}">Stab Team 2015</a></h3>
 							<h3><a href="{{URL::Route('team_2014')}}">Stab Team 2014</a></h3>
 							<h3><a href="{{URL::Route('team_2013')}}">Stab Team 2013</a></h3>
 							<h3><a href="{{URL::Route('team_2012')}}">Stab Team 2012</a></h3>
