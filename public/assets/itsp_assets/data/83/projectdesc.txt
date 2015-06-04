@@ -1,0 +1,2 @@
+<p><em><span style="color: rgb(247, 150, 70);">A software to convert sign language (ASL) into Text using image processing techniques</span></em></p><p>
+<span style="color: rgb(247, 150, 70);"></span></p>

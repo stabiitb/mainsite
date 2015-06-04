@@ -1,0 +1,1 @@
+<p>A Django powered website which detects mood of the user and plays music accordingly</p>

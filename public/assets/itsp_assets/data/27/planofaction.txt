@@ -1,0 +1,13 @@
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 20px;">The main aim was to somehow upload a file to google drive using python code.</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        We were able to upload a file to google drive using google  client library.</p><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned                                                     <ul><li>Making the process of authorization user friendly.</li><li>Code to download a file to google drive</li><li>Code to upload and download files to dropbox</li><li>Code to upload and download file to onedrive.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>The process of authorization was made user friendly using selenium.</li><li>Code to download to google drive was complete.</li><li>Code to upload and download to dropbox was complete.</li><li>Code for onedrive was partially complete.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Processing addresses of files and folders to convert them into proper directory file structure for use in GUI.</li><li>Make a file browser to browse through the data present in cloud storages.</li><li>Provide a cut-paste operation.</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Made a function makebrowser to process the addresses of files</li><li>Made a file browser with basic operations like cut-paste.</li><li>Code for onedrive was complete</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>Making a new folder in GUI.</li><li>Making a system to store data.</li><li>Splitting of files to upload large files.</li><li>Making a system to download and upload large files.</li><li>Making the process of authorization even better.</li></ul></li><li>What you have accomplished?<ul><li>Managed to make a new folder in gui.</li><li>Data persistence was ensured using pickle.</li><li>Splitting of files and downloading and uploading big files complete.</li><li>The process of authorization was improved using PhantomJS.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?<ul><li>Merging different branches of the project.</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Not yet accomplished.</li></ul></li></ul>

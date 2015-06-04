@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Counting</h5>
+									<div class="details white-text">
+										Count increased by 1
+									</div>
+								</div>
