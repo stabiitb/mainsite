@@ -1,0 +1,14 @@
+<p>
+	The project basically uses APIs to upload and download files. APIs need authorization before being used. All the three cloud storages use the same standard for authorization, i.e., 
+	<a href="http://en.wikipedia.org/wiki/OAuth#OAuth_2.0" target="_blank">OAUTH 2.0</a>. The user has to provide his account information. In return, OAUTH provides authorization token to avail the API services. Authorization token is long string of numbers and letters which is used to access the cloud storages. The user has to feed the authorization token to the application.</p><p>
+	Although the process seems easy but it is not user friendly. Hence, most part of this process was automated. Libraries used for this purpose are 
+	<a href="https://selenium-python.readthedocs.org/installation.html#introduction" target="_blank">Selenium</a></p><p>
+	and 
+	<a href="http://phantomjs.org/" target="_blank">PhantomJS</a></p><p>
+	Installation instructions for selenium and PhantomJS are as follows:</p>
+<pre>pip install selenium
+</pre><pre>npm -g install phantomjs
+</pre><p>
+The next step in the project was to build GUI. 
+	<a href="http://pyqt.sourceforge.net/Docs/PyQt4/" target="_blank">PyQt4</a> was used to build GUI.</p><p>
+	 GUI consists of folder and file structure. The addresses of different folders and files present in the cloud storages were processed through recursion to provide a proper user interface.</p><p>Some operations in GUI like moving a file or making a new folder require data persistence. After all we don't want that at each new session, the changes made in the previous session are all removed and we have to start everything from beginning. In order to save these changes, <a href="https://docs.python.org/2/library/pickle.html#id11" target="_blank">Pickle</a> library of python was used.</p><p>Finally comes the big job of splitting files</p>

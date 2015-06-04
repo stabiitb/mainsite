@@ -1,0 +1,1 @@
+<p>We had planned to make a traffic signal controller that would adjust traffic signal duration according to the current vehicle density. This would ensure that roads with heavy traffic are given priority and avoid the traffic jams.We basically used image processing to achieve the target.</p>

@@ -1,0 +1,24 @@
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
+<ul>
+<li>
+<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
+<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
+<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
+<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
+<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
+</li><li>
+<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
+<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
+<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
+<ul>
+<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
+<ul>
+<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
+<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
