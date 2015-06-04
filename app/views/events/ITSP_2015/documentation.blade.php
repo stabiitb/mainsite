@@ -41,7 +41,7 @@ if(isset($_GET['id']))
 		$auth=1;
 	else 
 		$auth=0;
-	echo $auth." ".$by." ".$user;
+//	echo $auth." ".$by." ".$user;
 }
 else
 {
@@ -77,11 +77,13 @@ function copyfolder($source, $destination)
 $path_chk=public_path()."/assets/itsp_assets/data/".$by;
 if(!file_exists($path_chk.'/')){
 	copyfolder(public_path()."/assets/itsp_assets/data/template",$path_chk);
+}
 
+if(!file_exists($path_chk.'/projectdetailstext.txt')){
+    copy(public_path()."/assets/itsp_assets/data/template/projectdetailstext.txt",$path_chk.'/projectdetailstext.txt'); 
 }
 
 function fetch_data($path_to_file,$text=1)
-
 {
   $str="";
     if(file_exists($path_to_file))
@@ -94,11 +96,9 @@ function fetch_data($path_to_file,$text=1)
       fclose($file);
       $str=trim($str);
      }
-     global $auth;
-
-    if($str==''&&$text==1&&$auth==1)
-    	$str="Click here to edit this section";
-
+    if($str==""&&$text==1)
+    	$str="Clich here to edit it";
+    
     return $str;
 }
 ?>

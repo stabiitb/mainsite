@@ -520,7 +520,21 @@ class ITSPController extends \BaseController {
 
 	public function documentation_img_upload()
 	{
+ 		if (Auth::check()){
+			if (Auth::User()->itsp!=NULL){
 
+			}
+			else{
+				return "Invalid Access";
+			}
+		}
+		else{
+			return "Invalid Access";
+		}
+
+		if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
+			return "Error";
+		}
 		$uploaddir = public_path().'/assets/itsp_assets/data/'.Input::get("by").'/';
 		$uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
 		if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
@@ -533,6 +547,21 @@ class ITSPController extends \BaseController {
 
 public function documentation_projectimg_upload()
 	{
+ 		if (Auth::check()){
+			if (Auth::User()->itsp!=NULL){
+
+			}
+			else{
+				return "Invalid Access";
+			}
+		}
+		else{
+			return "Invalid Access";
+		}
+
+		if (Input::get("uploadedby")!=ITSP::find(Auth::User()->itsp)->user_id){
+			return "Error";
+		}
 
 function clean($string) {
    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
@@ -598,6 +627,11 @@ $file = fopen($path, "w");
 		else{
 			return "Invalid Access";
 		}
+
+		if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
+			return "Error";
+		}
+
 
 		$bills=Input::file("bills");
 		$newTeam=ITSP::find(Auth::User()->itsp);
