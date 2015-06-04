@@ -681,7 +681,9 @@ $file = fopen($path, "w");
     {
         die("error");
     }
-
+	if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
+		return "Error";
+	}
 	$path_chk=public_path()."/assets/itsp_assets/data/".$by."/";
 $file="";
 if(file_exists($path_chk."intro.txt")){
