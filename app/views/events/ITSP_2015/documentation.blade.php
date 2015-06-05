@@ -186,7 +186,12 @@ function fetch_data($path_to_file,$text=1)
 	<div class="container">
 		
 		<!-- HEADING -->
-		<h1 class="intro"><?php  echo $data['project_name']; ?></h1>		
+		<h1 class="intro"><?php  echo $data['project_name']; 
+		if ($auth=1 && $data['completed']!=1){
+			echo "Please Complete your team first. Go to ITSP profile and fill up all team member details.";
+			$auth=0;
+		}
+			?></h1>		
 		
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
@@ -445,8 +450,20 @@ function fetch_data($path_to_file,$text=1)
 					$email=User::find($data['user_id'])->email;
 				}
 				else{
-					$name=User::find($data['user_id'.$i])->name;
-					$email=User::find($data['user_id'.$i])->email;					
+					$name=User::find($data['user_id'.$i]);
+					if ($name!=NULL){
+						$name=User::find($data['user_id'.$i])->name;
+					}
+					else{
+						$name="";
+					}
+					$email=User::find($data['user_id'.$i]);					
+					if($email!=NULL){
+						$email=User::find($data['user_id'.$i])->email;
+					}
+					else{
+						$email="";
+					}
 				}
 				if($data['user_id']!=NULL)
 				{
