@@ -186,12 +186,13 @@ function fetch_data($path_to_file,$text=1)
 	<div class="container">
 		
 		<!-- HEADING -->
-		<h1 class="intro"><?php  echo $data['project_name']; 
+		<h1 class="intro"><?php  echo $data['project_name']; ?></h1>
+		<?php		<h2>
 		if ($auth=1 && $data['completed']!=1){
-			echo "Please Complete your team first. Go to ITSP profile and fill up all team member details.";
+			echo "<h2>Please Complete your team first. Go to ITSP profile and fill up all team member details.</h2>";
 			$auth=0;
 		}
-			?></h1>		
+			?>	
 		
 		
 		<!-- 3 SHORT MESSAGE ABOUT COMPANY -->
