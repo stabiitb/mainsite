@@ -22,15 +22,14 @@
 							<div class="tabs tabs-top tab-container">
 								
 								<ul class="etabs text-center">
-									<li class="tab"><a href="#tab-0" class="active">All</a></li>
-									<li class="tab"><a href="#tab-1" class="">Aeromodelling Club</a></li>
-									<li class="tab"><a href="#tab-2" class="">Electronics Club</a></li>
-									<li class="tab"><a href="#tab-3" class="">TechGSR</a></li>
-									<li class="tab"><a href="#tab-4" class="">Krittika</a></li>
-									<li class="tab"><a href="#tab-5" class="">Maths and Physics Club</a></li>
-									<li class="tab"><a href="#tab-6" class="">Robotics Club</a></li>
-									<li class="tab"><a href="#tab-7" class="">Technovation</a></li>
-									<li class="tab"><a href="#tab-8" class="">Web and Coding Club</a></li>
+									<li class="tab"><a href="#tab-0" class="">Aeromodelling Club</a></li>
+									<li class="tab"><a href="#tab-1" class="">Electronics Club</a></li>
+									<li class="tab"><a href="#tab-2" class="">TechGSR</a></li>
+									<li class="tab"><a href="#tab-3" class="">Maths and Physics Club</a></li>
+									<li class="tab"><a href="#tab-4" class="">Robotics Club</a></li>
+									<li class="tab"><a href="#tab-5" class="">Technovation</a></li>
+									<li class="tab"><a href="#tab-6" class="">Web and Coding Club</a></li>
+									<li class="tab"><a href="#tab-7" class="">All</a></li>
 								</ul><!-- /.etabs -->
 								
 								<div class="panel-container">
@@ -57,9 +56,6 @@
 															Project Name
 														</th>
 														<th>
-															Project Description
-														</th>
-														<th>
 															Slot
 														</th>
 														<th>
@@ -80,9 +76,8 @@
 														<td>{{$project->id}}</td>
 														<td>{{$project->team_name}}</td>
 														<td calss="title">
-															<a href="http://www.stab-iitb.org/itsp/documentation?id={{$project->id}}">{{$project->project_name}}</a>
+															<b><a href="http://www.stab-iitb.org/itsp/documentation?id={{$project->id}}">{{$project->project_name}}</a></b>
 														</td>
-														<td><div class="desc">{{ $project->project_desc }}</div></td>
 														<td>{{$project->slot}}</td>
 														<td>{{$project->club}}</td>
 														<td>
@@ -100,12 +95,14 @@
 															@endif
 															<br>
 															Contact: {{$project->t1_contact}}
+															<br>
+															Email: {{$project->t1_email}}
 														</td>
 														<td>
 															@if($project->abstract == '')
 															No Abstract
 															@else
-															<a href="{{$project->abstract}}" target="_blank">See Here</a>
+															<b><a href="{{$project->abstract}}" target="_blank">See Here</a></b>
 															@endif
 														</td>
 														

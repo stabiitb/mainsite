@@ -739,15 +739,15 @@ echo $file;
 
 	public function projects(){
 		
-		$mnp=ITSP::where('club','LIKE','%Maths%')->get();
-		$krittika=ITSP::where('club','LIKE','%ttika%')->get();
-		$wncc=ITSP::where('club','LIKE','%WnCC%')->get();
-		$robo=ITSP::where('club','LIKE','%Robo%')->get();
-		$elec=ITSP::where('club','LIKE','%tronics%')->get();
-		$gsr=ITSP::where('club','LIKE','%GSR%')->get();
-		$techno=ITSP::where('club','LIKE','%vation%')->get();
-		$aero=ITSP::where('club','LIKE','%model%')->get();
-		$all=ITSP::get();
+		$mnp=ITSP::where('club','LIKE','%Maths%')->where('status','=','Selected')->get();
+		// $krittika=ITSP::where('club','LIKE','%ttika%')->where('status','=','Selected')->get();
+		$wncc=ITSP::where('club','LIKE','%WnCC%')->where('status','=','Selected')->get();
+		$robo=ITSP::where('club','LIKE','%Robo%')->where('status','=','Selected')->get();
+		$elec=ITSP::where('club','LIKE','%tronics%')->where('status','=','Selected')->get();
+		$gsr=ITSP::where('club','LIKE','%GSR%')->where('status','=','Selected')->get();
+		$techno=ITSP::where('club','LIKE','%vation%')->where('status','=','Selected')->get();
+		$aero=ITSP::where('club','LIKE','%model%')->where('status','=','Selected')->get();
+		$all=ITSP::where('status','=','Selected')->get();
 
 		// $mnp=$mnp->toArray();
 		// $krittika=$krittika->toArray();
@@ -759,7 +759,7 @@ echo $file;
 		// $aero=$aero->toArray();
 		// $all=$all->toArray();
 
-		$clubs=[$all,$aero,$elec,$gsr,$krittika,$mnp,$robo,$techno,$wncc];
+		$clubs=[$aero,$elec,$gsr,$mnp,$robo,$techno,$wncc,$all];
 
 	//	return View::make('events.ITSP_2015.projects',compact('all','clubs','aero','elec','gsr','krittika','mnp','robo','techno','wncc'));
 		return View::make('events.ITSP_2015.projects',compact('clubs'));
