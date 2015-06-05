@@ -177,7 +177,7 @@ class CompleteDatabases extends Migration {
 	public function down()
 	{
 		//
-		Schema::drop('Users');
+		//Schema::drop('Users');
 	}
 
 }

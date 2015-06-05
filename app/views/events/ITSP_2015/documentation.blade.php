@@ -430,15 +430,25 @@ function fetch_data($path_to_file,$text=1)
 	<div class="row" data-scrollreveal="enter left after 0s over 2s" data-sr-init="true" data-sr-complete="true"  style="text-align:center">
 		<!-- MEMBER -->
 		<?php
-			$tot=0;
-			for ($i=1; $i < 5; $i++) { 
-				if($data['t'.$i.'_name']!='')
-				{
-					$tot++;
+			$tot=$data['number'];
+			// for ($i=1; $i < 5; $i++) { 
+			// 	if($data['t'.$i.'_name']!='')
+			// 	{
+			// 		$tot++;
+			// 	}
+			// }
+			for ($i=1; $i < $tot+1; $i++) { 
+				$name="";
+				$email="";
+				if($i==1){
+					$name=User::find($data['user_id'])->name;
+					$email=User::find($data['user_id'])->email;
 				}
-			}
-			for ($i=1; $i < 5; $i++) { 
-				if($data['t'.$i.'_name']!='')
+				else{
+					$name=User::find($data['user_id'.$i])->name;
+					$email=User::find($data['user_id'.$i])->email;					
+				}
+				if($data['user_id']!=NULL)
 				{
 					if(file_exists(public_path()."/assets/itsp_assets/data/".$by."/t".$i.".png"))
 						$img=URL::asset("/assets/itsp_assets/data/".$by."/t".$i.".png");
@@ -459,9 +469,9 @@ function fetch_data($path_to_file,$text=1)
 							
 							echo '</figure>
 							<div class="member-details">
-								<h5 class="dark-text red-border-bottom">'.$data['t'.$i.'_name'].'</h5>
+								<h5 class="dark-text red-border-bottom">'.$name.'</h5>
 								<div class="position">
-									'.$data['t'.$i.'_email'].'
+									'.$email.'
 								</div>
 							</div>
 						</div>
