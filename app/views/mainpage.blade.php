@@ -82,7 +82,7 @@
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-sm-6 inner-left-xs">
-												<h3><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling CLub</a></h3>
+												<h3><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></h3>
 												<p>The Aeromodelling Club, IIT-Bombay envision the club becoming open to more people through activities that are fun to perform and require minimal input .Club also want the entry barrier – both financial and otherwise -for participating in aero modelling events to be reduced, so that a lot more people can participate. Apart from increasing participation, Club desire to encourage people to innovate a lot by extending all possible help to them.
 												</p>
 												<a href="{{URL::Route('aeromodelling-club')}}" class="btn btn-blue">Visit WebPage</a>

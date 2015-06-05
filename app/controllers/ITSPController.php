@@ -737,7 +737,34 @@ if(isset($_POST['componentlist'])){
 echo $file;
 	}
 
+	public function projects(){
+		
+		$mnp=ITSP::where('club','LIKE','%Maths%')->get();
+		$krittika=ITSP::where('club','LIKE','%ttika%')->get();
+		$wncc=ITSP::where('club','LIKE','%WnCC%')->get();
+		$robo=ITSP::where('club','LIKE','%Robo%')->get();
+		$elec=ITSP::where('club','LIKE','%tronics%')->get();
+		$gsr=ITSP::where('club','LIKE','%GSR%')->get();
+		$techno=ITSP::where('club','LIKE','%vation%')->get();
+		$aero=ITSP::where('club','LIKE','%model%')->get();
+		$all=ITSP::get();
 
+		// $mnp=$mnp->toArray();
+		// $krittika=$krittika->toArray();
+		// $wncc=$wncc->toArray();
+		// $robo=$robo->toArray();
+		// $elec=$elec->toArray();
+		// $gsr=$gsr->toArray();
+		// $techno=$techno->toArray();
+		// $aero=$aero->toArray();
+		// $all=$all->toArray();
+
+		$clubs=[$all,$aero,$elec,$gsr,$krittika,$mnp,$robo,$techno,$wncc];
+
+	//	return View::make('events.ITSP_2015.projects',compact('all','clubs','aero','elec','gsr','krittika','mnp','robo','techno','wncc'));
+		return View::make('events.ITSP_2015.projects',compact('clubs'));
+	
+	}
 
 	public function review($club)
 	{	if(Auth::check()){

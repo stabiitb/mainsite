@@ -33,6 +33,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::any('documentation/projectimg-upload',array('as'=>'events.ITSP_2015.documentation.projectimg-upload','uses'=>'ITSPController@documentation_projectimg_upload'));
     Route::any('documentation/savefile',array('as'=>'events.ITSP_2015.documentation.savefile','uses'=>'ITSPController@documentation_savefile'));
     Route::any('documentation/savezip',array('as'=>'events.ITSP_2015.documentation.savezip','uses'=>'ITSPController@documentation_savezip'));
+    Route::get('projects',array('as'=>'events.ITSP_2015.projects','uses'=>'ITSPController@projects'));
 });
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
