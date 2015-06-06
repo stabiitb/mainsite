@@ -221,10 +221,11 @@ function fetch_data($path_to_file,$text=1)
         </div>
     @endif
 
-					@if ($auth==1 && $data['user_id']==Auth::User()->id)
+					@if ($auth==1)
 						<form action="{{URL::route('events.ITSP_2015.documentation.savezip')}}" method="post" enctype="multipart/form-data">
 						    <p style="text-align:center;color:rgb(255, 255, 0)">Zip all your bills and submit it here. Only zip format is allowed.</p>
 						    <input style="text-align:center;" type="file" name="bills" id="fileToUpload">
+						    <input style="text-align:center;display:none" type="text" value="{{$by}}" name="by" id="byuser">
 						    <input style="text-align:center;" type="submit" value="Upload Bills" name="submit">
 						</form>
 						@if(ITSP::find(Auth::User()->itsp)->project_desc!=NULL)
