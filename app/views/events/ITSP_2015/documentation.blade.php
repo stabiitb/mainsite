@@ -228,9 +228,11 @@ function fetch_data($path_to_file,$text=1)
 						    <input style="text-align:center;display:none" type="text" value="{{$by}}" name="by" id="byuser">
 						    <input style="text-align:center;" type="submit" value="Upload Bills" name="submit">
 						</form>
+						@if(ITSP::find(Auth::User()->itsp)!=NULL)
 						@if(ITSP::find(Auth::User()->itsp)->project_desc!=NULL)
 							<p>Your bills are <a href="{{ITSP::find(Auth::User()->itsp)->project_desc}}">here</a></p>
 						@endif	
+						@endif
 					@endif
 
 			</div>
