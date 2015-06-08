@@ -1259,6 +1259,16 @@ th {
 		return Redirect::back();
 	}
 
+	public function documentation_links(){
+		$team=ITSP::find((Auth::User()->itsp));
+		$team->yotubeLink1=Input::get('youtubeLink1');
+		$team->yotubeLink2=Input::get('youtubeLink2');
+		$team->presentationLink=Input::get('presentationLink');
+		$team->githubLink=Input::get('githubLink');
+		$team->save();
+		return Redirect::back();
+	}
+
 	/*public function signup(Request $request)
 	{
 

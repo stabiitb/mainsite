@@ -6,18 +6,7 @@ $data=NULL;
 
 
 if(Auth::check()){
-	if(Auth::User()->ldap_verified==1){
-		if(Auth::User()->itsp!=NULL || Auth::User()->admin ==1)
-			{
-			$user=Auth::User()->id;
-			}
-		else{
-			echo "ITSP team details missing. Fill it up and come back.";
-		}	
-		}
-	else{
-		echo "Account not verified. Verify your account";
-	}		
+	$user=Auth::User()->id;
 	}
 else{
 	echo  "Please login to continue";
@@ -222,16 +211,83 @@ function fetch_data($path_to_file,$text=1)
     @endif
 
 					@if ($auth==1)
+						
+						<form action="{{URL::route('events.ITSP_2015.documentation.links')}}" method="post">
+					@endif	<table class="table" style="color:white">
+								<tr>
+									<td>YouTube Video Link 1</td>
+									<td>
+									@if($data['yotubeLink1']!=NULL)
+									{{$data['yotubeLink1']}}
+									@endif
+									</td>
+					@if ($auth==1)
+									<td>
+										<input style="color:black" type="text" name="youtubeLink1">
+									</td>	
+					@endif
+								</tr>
+								<tr>
+									<td>YouTube Video Link 2</td>
+									<td>
+									@if($data['yotubeLink2']!=NULL)
+									{{$data['yotubeLink2']}}
+									@endif
+									</td>
+					@if ($auth==1)
+									<td>
+										<input style="color:black" type="text" name="youtubeLink2">
+									</td>	
+					@endif
+								</tr>
+								<tr>
+									<td>Final Presentation Link</td>
+									<td>
+									@if($data['presentationLink']!=NULL)
+									{{$data['presentationLink']}}
+									@endif
+									</td>
+					@if ($auth==1)
+									<td>
+										<input style="color:black" type="text" name="presentationLink">
+									</td>	
+					@endif
+								</tr>
+								<tr>
+									<td>Github Repository Link</td>
+									<td>
+									@if($data['githubLink']!=NULL)
+									{{$data['githubLink']}}
+									@endif
+									</td>
+					@if ($auth==1)
+									<td>
+										<input style="color:black" type="text" name="githubLink">
+									</td>	
+					@endif
+								</tr>
+					@if ($auth==1)
+								<tr>
+									<td>Submit</td>
+									<td></td>
+									<td>
+										<input style="color:black" type="submit" name="submit" value="Submit">
+									</td>
+								</tr>		
+					@endif
+							</table>	
+					@if ($auth==1)
+						</form>
+					@endif
+					@if($auth==1)
 						<form action="{{URL::route('events.ITSP_2015.documentation.savezip')}}" method="post" enctype="multipart/form-data">
 						    <p style="text-align:center;color:rgb(255, 255, 0)">Zip all your bills and submit it here. Only zip format is allowed.</p>
 						    <input style="text-align:center;" type="file" name="bills" id="fileToUpload">
 						    <input style="text-align:center;display:none" type="text" value="{{$by}}" name="by" id="byuser">
 						    <input style="text-align:center;" type="submit" value="Upload Bills" name="submit">
 						</form>
-						@if(ITSP::find(Auth::User()->itsp)!=NULL)
-						@if(ITSP::find(Auth::User()->itsp)->project_desc!=NULL)
-							<p>Your bills are <a href="{{ITSP::find(Auth::User()->itsp)->project_desc}}">here</a></p>
-						@endif	
+						@if($data['project_desc']!=NULL)
+							<p>Your bills are <a href="{{$data['project_desc']}}">here</a></p>
 						@endif
 					@endif
 

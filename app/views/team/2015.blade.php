@@ -22,7 +22,7 @@
 								<figcaption>
 									<h2>
 										Chirag Shetty
-										<span>Overall Cordinator</span>
+										<span>Overall Coordinator</span>
 										<span><i class="icon-phone">9892611771</i></span>
 										<span><i class="icon-mail">chiragcshetty@gmail.com</i></span>
 									</h2>
@@ -62,7 +62,7 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
-								<h3>Aermodelling Club</h3>
+								<h3>Aeromodelling Club</h3>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
