@@ -206,7 +206,7 @@
 
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
-										<li><a href="{{URL::Route('calender')}}">Tech Calendar</a></li>
+										<li><a href="{{URL::Route('calendar')}}">Tech Calendar</a></li>
 										<!-- <li><a href="">STAB in media</a></li> -->
 										<!-- <li><a href="http://techid.stab-iitb.org">Tech ID</a></li> -->
 									</ul>
