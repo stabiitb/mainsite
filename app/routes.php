@@ -113,9 +113,9 @@ Route::get('faculty-advisor-and-mentor',array('as'=>'facad','uses'=>function ()
 }));
 
 // Calender
-Route::get('calendar',array('as'=>'calender','uses'=>function ()
+Route::get('calendar',array('as'=>'calendar','uses'=>function ()
 {
-    return View::make('calender');
+    return View::make('calendar');
 }));
 
 // Events
