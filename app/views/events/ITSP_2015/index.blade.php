@@ -1,7 +1,10 @@
 @extends('events.ITSP_2015.layout')
 @section('inner-content')
 	<h1>Welcome to ITSP 2015</h1>
-	<h3>Abstract Submission link is <a href="{{URL::route('events.ITSP_2015.abstract')}}">here</a>.</h3>
+	<!-- <h3>Abstract Submission link is <a href="{{URL::route('events.ITSP_2015.abstract')}}">here</a>.</h3> -->
+
+	<br>
+	<h3 class="text-center"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">Browse ITSP 2015 Projects</a></h3>
 	<!-- <h3>For registration, click <a href="{{URL::Route('events.ITSP_2015.form')}}" class="btn">here</a></h3>
 	<ul>
 		<li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
