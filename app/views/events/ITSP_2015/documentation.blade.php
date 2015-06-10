@@ -814,7 +814,7 @@ function fetch_data($path_to_file,$text=1)
 			
 			<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
 
-			@if($data['m1_name']==NULL)
+			@if($data['mentor1']==NULL)
 			<h6>
 				Plese provide Feedback regarding your Mentors
 			</h6>
@@ -829,7 +829,7 @@ function fetch_data($path_to_file,$text=1)
 				<div class="panel-body">
 					<h3 class="thin text-center">Feedback Form</h3>
 
-					@if($data['m1_name']!=NULL)
+					@if($data['mentor1']!=NULL)
 					<br>
 					<p class="text-center text-muted">You have already Submitted Feedback before! Resubmitting will OVERWRITE previous submission.</p>
 					@endif
@@ -844,26 +844,18 @@ function fetch_data($path_to_file,$text=1)
 					<form id="feedback" action="{{URL::Route('events.ITSP_2015.feedback')}}">
 						
 						<div class="row">
-							<div class="col-md-6">
 								<div class="top-margin">
 									<label>Name of Mentor 1<span class="text-danger">*</span></label>
 									<input type="text" class="form-control" name="m1"  maxlength="49" required>
 								</div>
-								<div class="top-margin">
-									<label>Feedback for Mentor 1<span class="text-danger">*</span></label>
-									<input type="text" class="form-control" name="feedback1" maxlength="499" required>
-								</div>
-							</div>
-							
-							
-							<div class="col-md-6">
+								
 								<div class="top-margin">
 									<label>Name of Mentor 2<span class="text-danger">*</span></label>
 									<input type="text" class="form-control" name="m2"  maxlength="49" required>
 								</div>
 								<div class="top-margin">
-									<label>Feedback for Mentor 2<span class="text-danger">*</span></label>
-									<input type="text" class="form-control" name="feedback2" maxlength="499" required>
+									<label>Feedback for Mentors<span class="text-danger">*</span></label>
+									<input type="text" class="form-control" name="mentor_feedback" maxlength="499" required>
 								</div>
 							</div>
 						</div>

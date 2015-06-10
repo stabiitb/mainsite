@@ -93,6 +93,7 @@ class ITSPController extends \BaseController {
 		return View::make('events.ITSP_2015.form');
 	}
 	public function feedback(){
+
 		if(!Auth::check()){
 			$messageBag = new MessageBag;
 			$messageBag->add('message','Please Login First' );
@@ -111,18 +112,16 @@ class ITSPController extends \BaseController {
 		}
 		$mentor1 = Input::get('m1');
 		$mentor2 = Input::get('m2');
-		$feedback1 = Input::get('feedback1');
-		$feedback2 = Input::get('feedback2');
+		$mentor_feedback = Input::get('mentor_feedback');
 
 		// $mentor1=clean($mentor1);
 		// $mentor2=clean($mentor2);
 		// $feedback1=clean($feedback1);
 		// $feedback2=clean($feedback2);
 
-		$team->m1_name = $mentor1;
-		$team->m2_name = $mentor2;
-		$team->m1_feedback = $feedback1;
-		$team->m2_feedback = $feedback2;
+		$team->mentor1 = $mentor1;
+		$team->mentor2 = $mentor2;
+		$team->mentor_feedback = $mentor_feedback;
 		$team->save();
 
 		$messageBag = new MessageBag;
