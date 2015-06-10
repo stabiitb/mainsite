@@ -218,7 +218,7 @@ function fetch_data($path_to_file,$text=1)
 									<td>YouTube Video Link 1</td>
 									<td>
 									@if($data['yotubeLink1']!=NULL)
-									{{$data['yotubeLink1']}}
+									<a href="{{$data['yotubeLink1']}}">{{$data['yotubeLink1']}}</a>
 									@endif
 									</td>
 					@if ($auth==1)
@@ -231,7 +231,7 @@ function fetch_data($path_to_file,$text=1)
 									<td>YouTube Video Link 2</td>
 									<td>
 									@if($data['yotubeLink2']!=NULL)
-									{{$data['yotubeLink2']}}
+									<a href="{{$data['yotubeLink2']}}">{{$data['yotubeLink2']}}</a>
 									@endif
 									</td>
 					@if ($auth==1)
@@ -244,7 +244,7 @@ function fetch_data($path_to_file,$text=1)
 									<td>Final Presentation Link</td>
 									<td>
 									@if($data['presentationLink']!=NULL)
-									{{$data['presentationLink']}}
+									<a href="{{$data['presentationLink']}}">{{$data['presentationLink']}}</a>
 									@endif
 									</td>
 					@if ($auth==1)
@@ -257,7 +257,7 @@ function fetch_data($path_to_file,$text=1)
 									<td>Github Repository Link</td>
 									<td>
 									@if($data['githubLink']!=NULL)
-									{{$data['githubLink']}}
+									<a href="{{$data['githubLink']}}">{{$data['githubLink']}}</a>
 									@endif
 									</td>
 					@if ($auth==1)

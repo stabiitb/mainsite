@@ -240,7 +240,7 @@
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::Route('stab.home')}}">Home</a></li>
-						<li><a href="{{URL::Route('team_2014')}}">Contact</a></li>
+						<li><a href="{{URL::Route('team_2015')}}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->
