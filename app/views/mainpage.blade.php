@@ -29,6 +29,7 @@
 							 <li class="single-block">Login to document your ITSP project. Any team member can document.</li>
 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
 							 @endif
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.final_team_verification')}}" class="btn">Final Team Verification Form &nbsp</a> </li>
 
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>

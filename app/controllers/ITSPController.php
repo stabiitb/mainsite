@@ -1306,6 +1306,9 @@ th {
 		return Redirect::back();
 	}
 
+	public function final_team_verification(){
+		return View::make('events.ITSP_2015.final_team_verification');
+	}
 	/*public function signup(Request $request)
 	{
 

@@ -22,9 +22,10 @@
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.index')}}">Archive</a></li> -->
 							<li><a href="{{URL::Route('events.ITSP_2015.about')}}">About</a></li>
 							<!-- <li><a href="{{URL::Route('events.ITSP_2015.form')}}">Register</a></li> -->
-							<li><a href="{{URL::Route('events.ITSP_2015.mentor')}}">Mentor Registration</a></li>
-							<li><a href="{{URL::Route('events.ITSP_2015.abstract')}}">Abstract Submission</a></li>
-							<li><a href="{{URL::Route('events.ITSP_2015.final_reviews')}}">Final Reviews</a></li>
+							<!-- <li><a href="{{URL::Route('events.ITSP_2015.mentor')}}">Mentor Registration</a></li> -->
+							<!-- <li><a href="{{URL::Route('events.ITSP_2015.abstract')}}">Abstract Submission</a></li> -->
+							<!-- <li><a href="{{URL::Route('events.ITSP_2015.final_reviews')}}">Final Reviews</a></li> -->
+							<li><a href="{{URL::Route('events.ITSP_2015.final_team_verification')}}">Final Team Verification</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

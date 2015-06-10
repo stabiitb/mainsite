@@ -36,6 +36,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::any('documentation/links',array('as'=>'events.ITSP_2015.documentation.links','uses'=>'ITSPController@documentation_links'));
     Route::get('projects',array('as'=>'events.ITSP_2015.projects','uses'=>'ITSPController@projects'));
     Route::get('feedback',array('as'=>'events.ITSP_2015.feedback','uses'=>'ITSPController@feedback'));
+    Route::get('final_team_verification',array('as'=>'events.ITSP_2015.final_team_verification','uses'=>'ITSPController@final_team_verification'));
 });
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
