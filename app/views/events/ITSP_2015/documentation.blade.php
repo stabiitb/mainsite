@@ -795,6 +795,87 @@ function fetch_data($path_to_file,$text=1)
 </div>
 </section> 
 
+
+<!-- =========================
+   FEEDBACK        
+============================== -->
+
+
+@if($auth==1)
+<section class="features" id="feedbackform">
+	<div class="container">
+			
+			<!-- SECTION HEADER -->
+		<div class="section-header">
+			
+			<!-- SECTION TITLE -->
+			<h2 class="dark-text">Feedback</h2>
+			
+			<!-- SHORT DESCRIPTION ABOUT THE SECTION -->
+
+			@if($data['mentor1']==NULL)
+			<h6>
+				Plese provide Feedback regarding your Mentors
+			</h6>
+			@endif
+
+		</div>
+		<!-- / END SECTION HEADER -->
+
+		<div class="row" data-scrollreveal="enter left after 0s over 1s" >
+			
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h3 class="thin text-center">Feedback Form</h3>
+
+					@if($data['mentor1']!=NULL)
+					<br>
+					<p class="text-center text-muted">You have already Submitted Feedback before! Resubmitting will OVERWRITE previous submission.</p>
+					@endif
+					
+
+					<hr>
+					<div class="alert alert-danger alert-dismissable" style="display:none" id="log-alert">
+				        <button type="button" class="close"onclick="$(\'#log-alert\').css(\'display\',\'none\')">×</button>
+				        <div id="log-alert-text">Invalid Input</div>
+				    </div>
+
+					<form id="feedback" action="{{URL::Route('events.ITSP_2015.feedback')}}">
+						
+						<div class="row">
+								<div class="top-margin">
+									<label>Name of Mentor 1<span class="text-danger">*</span></label>
+									<input type="text" class="form-control" name="m1"  maxlength="49" required>
+								</div>
+								
+								<div class="top-margin">
+									<label>Name of Mentor 2<span class="text-danger">*</span></label>
+									<input type="text" class="form-control" name="m2"  maxlength="49" required>
+								</div>
+								<div class="top-margin">
+									<label>Feedback for Mentors<span class="text-danger">*</span></label>
+									<input type="text" class="form-control" name="mentor_feedback" maxlength="499" required>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-8 text-right">
+								<button class="btn btn-action" type="submit">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div> 
+	</div> 
+</section> 
+
+@endif
+
+
+
 <!-- =========================
    CONTACT US         
 ============================== -->

@@ -92,6 +92,43 @@ class ITSPController extends \BaseController {
 	{
 		return View::make('events.ITSP_2015.form');
 	}
+	public function feedback(){
+
+		if(!Auth::check()){
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Please Login First' );
+			return Redirect::back()->with('messages', $messageBag);	
+		}
+
+		$team=ITSP::find(Auth::User()->itsp);
+		
+		
+		if($team==NULL){
+
+			$messageBag = new MessageBag;
+			$messageBag->add('message','Team Not Found' );
+
+			return Redirect::back()->with('messages', $messageBag);
+		}
+		$mentor1 = Input::get('m1');
+		$mentor2 = Input::get('m2');
+		$mentor_feedback = Input::get('mentor_feedback');
+
+		// $mentor1=clean($mentor1);
+		// $mentor2=clean($mentor2);
+		// $feedback1=clean($feedback1);
+		// $feedback2=clean($feedback2);
+
+		$team->mentor1 = $mentor1;
+		$team->mentor2 = $mentor2;
+		$team->mentor_feedback = $mentor_feedback;
+		$team->save();
+
+		$messageBag = new MessageBag;
+		$messageBag->add('message','Submitted Feedback Successfully' );
+		return Redirect::back()->with('messages', $messageBag);	
+	}
+
 	public function team_update()
 	{
 		$team=ITSP::find(Auth::User()->itsp);
