@@ -195,20 +195,20 @@ function fetch_data($path_to_file,$text=1)
 				<div class="short-text" style="text-align:center">
 					Club : <?php echo $data['club'];
 					 ?>
-		</div>
+				</div>
 						<div class="row editable" id="projectdesc" style="text-align:center">
 				<?php 
 					echo fetch_data(public_path()."/assets/itsp_assets/data/".$by."/projectdesc.txt");
 				?>
 				</div>
 				    @if (Session::get('messages') != null && Session::get('messages')->has('message'))
-        <div class="col-md-12">
+       		<div class="col-md-12">
             <div class="alert alert-success alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             {{ Session::get('messages')->first('message') }}
             </div>
-        </div>
-    @endif
+        	</div>
+   			@endif
 
 					@if ($auth==1)
 						
@@ -290,7 +290,6 @@ function fetch_data($path_to_file,$text=1)
 							<p>Your bills are <a href="{{$data['project_desc']}}">here</a></p>
 						@endif
 					@endif
-
 			</div>
 			<div class="col-lg-2 col-sm-2">
 				<div class="short-text">
