@@ -1,0 +1,9 @@
+<p>Considering the increase in number of online 
+drives but for all ,a different account and 
+comparitively smaller offered storage 
+individually, this program is an effort to solve
+problems of multiple storage and no 
+universal access to them.  One more problem being faced is the limit of 
+size of file to be uploaded. Combining the 
+spaces of different drives can solve this 
+purpose.</p>

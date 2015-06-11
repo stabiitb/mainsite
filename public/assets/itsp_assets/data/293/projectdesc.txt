@@ -1,0 +1,1 @@
+<p><em><inline style="color: rgb(238, 236, 225);">The Project includes a basic robot which can be controlled by voice commands over bluetooth using an Android mobile or a PC. The bot will be able to capture images and if prompted, process them to identify basic Shapes adn Colours.</inline></em></p>

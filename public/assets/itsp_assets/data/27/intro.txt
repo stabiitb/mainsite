@@ -1,7 +1,4 @@
 <p>
 	Syncitall basically provides a common interface for most common cloud storages. The aim of the project is to sync all the data present in your favourite cloud storages. This project presently merges three cloud storages namely:</p><ol>
-	
-<li>Google Drive</li>	
-<li>OneDrive</li>	
-<li>Dropbox</li></ol><p>
+	<li>Google Drive</li>	<li>OneDrive</li>	<li>Dropbox</li></ol><p>
 	Entire project is coded in python. Graphical interface has been provided using <a href="http://pyqt.sourceforge.net/Docs/PyQt4/" target="_blank">PyQt4.</a></p>

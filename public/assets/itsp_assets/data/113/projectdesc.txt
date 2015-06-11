@@ -1,2 +1,1 @@
-<p></p><p><em><span style="color: rgb(247, 150, 70);">Click here to write the project desciption.</span></em></p><p>
-<span style="color: rgb(247, 150, 70);"></span></p><p><em><span style="color: rgb(247, 150, 70);">To edit any section, click on the text of that section.</span></em></p>
+<p><span style="font-style: italic; color: rgb(247, 150, 70);">PROBLEM STATEMENT:The bot as the name suggests is an automated bot which moves on the ground without changing the direction and also climb stairs of a favourable</span><em><span style="color: rgb(247, 150, 70);"> height and width </span></em><em>by detecting them on it's own.</em><em><span style="color: rgb(247, 150, 70);"> </span></em></p>

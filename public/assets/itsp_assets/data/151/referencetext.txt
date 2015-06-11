@@ -1,0 +1,1 @@
+<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul><li><a href="http://www.goggle.com">GOOGLE</a></li><li>Developers.android.com</li><li>Oracle java tutorials</li><li>sparkfun</li></ul>

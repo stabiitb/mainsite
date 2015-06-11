@@ -1,0 +1,10 @@
+<p>Our plan was to make the project in 2 prototypes to be completed in a 4 week span. ( Since there were time constraints for some team members )</p><p><strong>First Week -</strong></p><p><strong><br></strong></p><p>Learning the basic Communication protocols and buying all the necessary components for the project.</p><p><strong>Second Week - </strong></p><p><strong><br></strong></p><p>To complete our first prototype consisting of the following features-</p><ul>
+<li>Connection to
+server via Ethernet </li><li>Interface the
+LED , LCD and buzzer </li><li>RFID module to
+be used </li></ul><p>We completed everything we planned :)</p><p><strong>Third Week - </strong></p><p><strong><br></strong></p><p>Debugging the Biometric module ( Turned out the that the problem was with the library and not with the module used ) and rewriting the code again for implementation of multi modularity</p><p><strong>Fourth Week - </strong></p><p><strong><br></strong></p><p>To complete our second prototype consisting of the following features-</p><ul>
+<li>Addition of
+Biometric module </li><li>Addition of
+GSM module </li><li>GPS
+module addition </li><li>SD card for
+cache memory buffer in case of communication failure</li></ul><p>We could not add the GSM module as a public server was required which we could get in the given timeframe. SD card functionality was also not added due to time constraints </p><p>(Though the code has been written for it, and a very simple implementation is possible with it) </p>

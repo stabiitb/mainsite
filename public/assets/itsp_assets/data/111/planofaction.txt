@@ -1,13 +1,18 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th-11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">To study about the project and it's base we were making (i.e. to study about the hovercraft and quad copter).</p><ul><li>Accomplished<p style="margin-left: 20px;">Understood the mechanisms and the theories involved in making of hovercraft and quad copter. </p></li></ul><h3></h3><h3>Week 2 (May 11th-16th )</h3><ul>
+<li>Planned<p style="margin-left: 20px;">To create a design which is fit for the problem statement with which we have come forth for the project.</p></li></ul><ul><li>Accomplished<ul>
+</ul><p style="margin-left: 20px;">We crated a design which would be good during it's flight time.</p></li></ul><h3></h3><h3>Review Meet - 1(May 17th)</h3><p>Came to know that the design and the project we have chosen has many difficulties like:-</p><ol>
+<li>Weight Issue - The weight would be much more than that off hovercraft which would be requiring high kv motor.</li><li>Landing Issue - During its landing from the sky the hovercraft may break off.</li><li>Torque Issue - If the C.O.M. of the hovercraft and the C.O.M. of the quad copter aren't placed correctly then there would be torque effect about it's center.</li></ol><h3>Week 3 (May 18th-23rd)</h3><ul>
+<li>What you have planned ?
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>We researched a alternative way of our project such that our project statement and to understand about it in detail.</li></ul></li></ul><ul>
+<li>What we achieved ?
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
+<li>We found a alternate with the help of mentor and manager of our club, that is hydrofoam which fits our problem statement perfectly.</li><li>We didn't got the enough time to go in depth about the project.</li><li>We ordered the electrical things needed from the online website (Hobby-King).</li></ul></li></ul><h3>Week 4 (May 24th-30th)</h3><ul>
+<li>What you have planned ?<ul><li>Need to completely understand about the hydro-foam.</li><li>To start making the parts needed to build the hydrofoam.</li></ul></li><li>What you have accomplished?<ul><li>Came to completely know about the hydro-foam.</li><li>Got the Styrofoam sheet from the market.</li><li>Made the parts out of the Styrofoam for it.</li></ul></li></ul><h3>Review Meet - 2(May 31st)</h3><p>We discussed about the project with rest of the teams, and cleared their doubts which they had about our project.<br>It went excellently and gave us a hope hat we could do it within the required time.</p><h3>Week 5 (June 1st-6th)</h3><ul>
+<li>What you have planned ?<ul><li>To order the remaining components and to making it flowing with ease.</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>We have ordered the remaining things with the help of our manager on online.</li><li>We have made the parts perfect to the shape such that they would fit into one other when once the remaining parts arrive.</li></ul></li></ul><h3>Week 6 (June 7th-13th)</h3><ul>
+<li>What you have planned for ?<br>
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>We have planned for completing the construction of the project by Tuesday and making the first take off on Wednesday.</li><li>After the first take off ends, need to make the necessary final adjustments so that it would fly with ease.</li></ul></li><li>What we have accomplished in ?<br>
+<ul>
+<li>The materials which were supposed to be delivered on Monday were delivered to us Wednesday.</li><li>We have completed the making of the project by Saturday</li></ul></li></ul>

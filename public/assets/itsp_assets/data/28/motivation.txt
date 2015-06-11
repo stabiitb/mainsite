@@ -1,1 +1,21 @@
-<p>Planes with VTOL need very less space for take off and landing. Thus with proper use of VTOL planes we can decrease the size of airports in cities.</p><iframe width="560" height="315" src="//www.youtube.com/embed/e7QNbU71lsA" frameborder="0" allowfullscreen=""></iframe><p><strong><br></strong></p>
+<p>
+	The bot must give a tough time to the human player and try its best 
+to win/draw the game. If the human plays perfectly, lose the game after 
+maximum number of moves (when Bot is second player). The bot must play 
+according to the difficulty level set by the player.
+</p>
+<p>
+	The project is aimed at equipping us with the basic rudimentary knowledge of a variety of issue specific skills. Through the implementation of the project we would be learning the basic skills of image processing, electronics and mechanical mobility. We will also be learning more about coding algorithms (MinMax) which we will be using to execute our designs.
+</p>
+<p>
+	We have also been motivated by a past attempt of  a similar project, link to which has been provided: 
+	<br>
+	<a href="http://www.stab-iitb.org/wiki/2RE31_Connect-4"></a>
+</p>
+<p>
+	<a href="http://www.stab-iitb.org/wiki/2RE31_Connect-4">http://www.stab-iitb.org/wiki/2RE31_Connect-4</a> in ITSP-2013
+</p>
+<p>
+	Here is a link to a Connect Four Robot made at MIT: 
+	<a href="https://www.youtube.com/watch?v=7uiPhECQtrs">https://www.youtube.com/watch?v=7uiPhECQtrs</a>
+</p>

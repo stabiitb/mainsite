@@ -1,0 +1,53 @@
+<table>
+ <colgroup></colgroup><tbody><tr>
+  <td>ITEM</td>
+  <td>COST</td>
+ </tr>
+ <tr>
+  <td>RFID</td>
+  <td>700</td>
+ </tr>
+ <tr>
+  <td>Biometric Sensor</td>
+  <td>2500</td>
+ </tr>
+ <tr>
+  <td>Arduino Shield</td>
+  <td>1600</td>
+ </tr>
+ <tr>
+  <td>SIM300 GSM Module</td>
+  <td>1000</td>
+ </tr>
+ <tr>
+  <td>LCD 16*2</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>Buzzer</td>
+  <td>20</td>
+ </tr>
+ <tr>
+  <td>RGB LED</td>
+  <td>15</td>
+ </tr>
+ <tr>
+  <td>Cache Memory (SD Card)</td>
+  <td>300</td>
+ </tr>
+ <tr>
+  <td>External Clock</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>GPS Module</td>
+  <td>2000</td>
+ </tr>
+ <tr>
+  <td>Microcontroller Board ( Arduino )</td>
+  <td>1100</td>
+ </tr>
+ <tr>
+  <td>TOTAL</td>
+  <td>9635</td>
+ </tr></tbody></table>

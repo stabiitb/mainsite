@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Module - RFID</h5>
+									<div class="details white-text">
+										The whole attendance system with the RFID Module
+									</div>
+								</div>

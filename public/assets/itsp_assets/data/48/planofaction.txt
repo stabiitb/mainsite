@@ -1,0 +1,13 @@
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>

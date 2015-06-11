@@ -1,0 +1,1 @@
+<div>The accelerometers sense the movement and through arduino we can see the acceleration values on our screen. These acceleration values we have integrated into velocity which finally determines the cursor movement. </div><div>The push buttons when pressed send HIGH value as an output in an arduino which results in a click.</div>

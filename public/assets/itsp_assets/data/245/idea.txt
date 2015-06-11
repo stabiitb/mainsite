@@ -1,0 +1,17 @@
+<div><ol>
+</ol><p>The glove that will control
+the mechanical assembly was equipped with flex
+sensors and accelerometers.</p><p>Flex sensors-They are analog resistors. They
+work as analog voltage dividers. Inside the flex sensors are carbon resistive
+elements within a thin flexible substrate (more carbon means less resistance).When
+the substrate is bent, the sensor produces a resistance output relative to the
+bend radius.</p><p>Thus bending of flex sensors which are
+attached rigidly to the fingers of our glove will rotate the respective servo
+and consequently will give the motion to the finger of our mechanical arm.</p><p>Accelerometers-An <strong>accelerometer</strong> is a device that measures proper acceleration("g-force"). Proper acceleration is not the same as
+coordinate acceleration (rate of change of velocity). </p><p>Some smartphones, digital audio players and personal digital assistants contain accelerometers for user interface
+control; often the accelerometer is used to present landscape or portrait views of the device's screen, based on the way the device is being held.</p><p>Thus, when they are tilted
+they give different output values which are then synchronized with the servos
+and consequently produces motion. We are using accelerometers for controlling
+the palm’s and elbow’s motion.</p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></p><p>Problems Faced:</p><p>Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</p><p>Model 2:</p><iframe width="560" height="315" src="//www.youtube.com/embed/_EoRfX4KBD8" frameborder="0" allowfullscreen=""></iframe></div><iframe width="560" height="315" src="//www.youtube.com/embed/OmetQEKIyfk" frameborder="0" allowfullscreen=""></iframe>
+<div><iframe width="560" height="315" src="//www.youtube.com/embed/5HJ5QXE1sdM" frameborder="0" allowfullscreen=""></iframe>
+</div><ol><br></ol>

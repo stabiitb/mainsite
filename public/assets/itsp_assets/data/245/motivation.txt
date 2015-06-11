@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=YwClOdjBQnc<p>Robotics is technology that
+deals with the design, construction and operation of robots that are
+used in numerous applications is called robotics. It has become an unstoppable
+force in the development of modern machinery as they make life easier. It is an
+interesting topic to dwell in as it is the future of mankind. Although we know
+them as recent inventions, the idea of automated or controlled machines has
+fascinated humans. With this fascination it motivated me to work on this
+project, building and programming a mobile robotic arm. It is my hunger to
+learn and attain knowledge that drives me towards this field of study for my
+project.</p><iframe width="560" height="315" src="//www.youtube.com/embed/e7QNbU71lsA" frameborder="0" allowfullscreen="">
+</iframe><p>
+	<strong><br>
+	</strong></p>

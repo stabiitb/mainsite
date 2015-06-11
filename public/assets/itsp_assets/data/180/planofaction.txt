@@ -1,0 +1,9 @@
+<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the circuit design of Android app</p><ul><li>Accomplishment</li></ul><p style="margin-left: 40px;">Started Android app development classes</p><h3>Week 2 (May 25th- 31st )</h3><ul>
+<li>Planned<ul><li>Basic circuit design of the Arduino part of the system</li></ul></li><li>Accomplishment<ul>
+<li>Learnt basic Android  and Arduino coding</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
+<li>Planned<ul>
+</ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (June 8th-14th)</h3><ul>
+<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 15th - 21st)</h3><ul><li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul><h3>Week 6 (June 22nd - 28th)</h3>

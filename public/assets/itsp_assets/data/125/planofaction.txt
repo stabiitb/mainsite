@@ -1,0 +1,10 @@
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned about ArduIMU quadcopter researched about it , later figured  out was not worth doing  </p><ul><li>Not accomplished :( </li></ul><p style="margin-left: 20px;">        Moved on to using KK2.1 flight controller board . </p><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned                                                     <ul><li>learn how to code arduino and integrating IR sensors with </li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>Learnt all of it !!</li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>Do all the coding part </li><li>configure the flight control board(KK 2.1.5).</li><li>Order the components.</li></ul></li></ul><ul>
+<li>achievement stats <ul>
+<li>done all the coding part and configured it well .</li><li>ordered all the components.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>improve our code ( i.e apply filter  mechanism for sensing obstacles ) </li><li>to check our code and mechanism on a sample quadcopter</li></ul></li><li>What you have accomplished?<ul><li>improved the code !!</li><li>checked it on a sample quadcopter . Encountered various problems like KK2.1 used to auto reboot  itself. Thought it was the problem of our code but was pain of sample KK2.1 board we used . **sigh** </li></ul></li></ul><h3>Week 5 (June 2nd - June 8th) Components finally arrived :D</h3><ul>
+<li>What you have planned ?<ul><li>assemble the quadcopter.</li><li>test it !!</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Tested it and it worked finally . We succeeded .. YEAH !!!!</li></ul></li></ul>

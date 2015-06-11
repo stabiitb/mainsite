@@ -1,0 +1,13 @@
+<h3>Week 1 (May 18th -24th)</h3><ul>
+<li>Planned</li></ul><p style="margin-left: 40px;">To research about various accelerometers and arduino boards. To learn basic arduno coding and to buy the components.</p><ul>
+<li>Accomplished</li></ul><p style="margin-left: 20px;">    Researched about the accelerometers and bought some components.</p><h3>Week 2 (May 25th- May 31st)</h3><ul><li>Planned                                                     
+<ul>
+<li>To test the accelerometers</li><li>To begin coding for movement of cursor.</li></ul></li><li>Accomplished    - Tested the accelerometers and began coding</li></ul><p>Week 3 (June 1st - June 7th)</p><ul><li>Planned<ul><li>To complete the code for cursor movement</li><li>To code for clicking with the help of push buttons</li><li>To research about power supply that can be used to make our glove wireless </li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the code for clicking</li><li>Coded for the movement of cursor though it is not working smoothly</li><li>Researched about power boosters and batteries that can be used as a power supply</li></ul></li></ul><h3>Week 4 (June 8th - June 14th)</h3><ul><li>What you have planned ?
+<ul>
+<li>To perfectly code for cursor movement</li><li>To code for scrolling of the mouse</li><li>To decide on what power supply we would finally use</li></ul></li><li>What you have accomplished?
+<ul>
+</ul></li></ul><h3>Week 5 (June 15th - June 21st)</h3><ul><li>What you have planned ?
+<ul>
+<li>To complete coding</li><li>To fit the accelerometers and the push buttons, etc. on to the glove</li><li>To install the power booster/ battery for making it wireless</li></ul></li></ul><ul><li>What you have accomplished?
+<ul>
+</ul></li></ul><h3>Week 6 (June 22nd - June 28th)</h3><ul><li>What have you planned?<ul><li>Debugging of the code</li><li>To look into the aesthetics</li><li>To fix any glitch</li></ul></li><li>What have you accomplished?<ul><li><br></li></ul></li></ul>

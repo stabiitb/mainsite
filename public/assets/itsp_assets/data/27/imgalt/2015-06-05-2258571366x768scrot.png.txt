@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Main Window</h5>
+									<div class="details white-text">
+										The file browser where all the files present in cloud storage are shown.
+									</div>
+								</div>

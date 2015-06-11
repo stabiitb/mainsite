@@ -1,2 +1,1 @@
-<p></p><p><em><span style="color: rgb(247, 150, 70);">Click here to write the project desciption.</span></em></p><p>
-<span style="color: rgb(247, 150, 70);"></span></p><p><em><span style="color: rgb(247, 150, 70);">To edit any section, click on the text of that section.</span></em></p>
+<p><strong><span style="color: rgb(255, 255, 255);">The aim of the project is to build  a device (chip-kind) that helps to find lost objects</span></strong></p><p><strong><span style="color: rgb(255, 255, 255);"> easily using an android application.</span></strong></p>

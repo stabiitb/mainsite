@@ -1,16 +1,7 @@
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
-<ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
+<li><span style="color: rgb(0, 0, 0);"></span>
+<p>Our bot has </p><ul>
+<li>2 wheels,</li><li>a rack and pinion system,</li><li> 3 dc motors,</li><li> 2 UV sensors, </li><li>a case for the rack and pinion, </li><li>rubber studs attached to the case through hinges,</li><li>chassis, L clamps, screws etc. </li></ul></li><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
 <ul>
 <li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
 <ul>

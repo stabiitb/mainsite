@@ -1,0 +1,11 @@
+<ul><li>Mainly our project is divided into three parts they are coding mechanical and electrical parts and their coding</li><li>coding of AI for chess<ul><li>A code for single player chess using negamax with alpha beta pruning along with the help of transposition tables. Briefly speaking Negamax algorithm is a variant form of minimax algorithm. This algorithm relies on the fact that <em>max(a, b) = −min(−a, −b)</em> to simplify the implementation of the minimax algorithm.Minimax is a decision rule for <em>minimising</em> the possible loss for a worst case (<em>max</em>imum loss) scenario.</li></ul></li><li>voice recognition
+<ul>
+<li>We are using voice recognition module version 3 for this purpose it would be linked with Arduino.</li><li>It is used to take input from the user for example if he want to move the coin from b8-c6 he had to speak this or he had to say undo.</li></ul></li><li>Mechanical System
+<ul>
+<li>This bot will be made of 2 motors(stepper or servo or dc motor) , 1 electromagnet and a solid structure.</li><li>The motion in x and y direction are driven by motors with the help rack and pinion.</li></ul></li><li>Electrical Part
+<ul>
+<li>The motors, electromagnet are controlled with Arduino with the help of motor shield/L293D.</li><li>The power supply required for Arduino is from the computer through USB cable and for shield is through ac to dc convertor</li></ul></li><li>Arduino
+<ul>
+<li>we are using the Arduino programming to interface and control our bot.</li><li>The Arduino code runs the motors which in turn moves the coins on the board.</li><li>It takes input from computer through Gobetwino and from user through voice recognition module and moves the motors respectively.</li></ul></li><li>Gobetwino<br>
+<ul>
+<li>Gobetwino is a Windows-based program that acts as an interface for the Arduino.</li></ul></li></ul>

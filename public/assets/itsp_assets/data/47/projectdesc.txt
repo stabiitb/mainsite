@@ -1,0 +1,1 @@
+<p><span style="color: rgb(247, 150, 70);"><em>We are making a RC car which can be controlled using Laptop or Mobile through a wifi network. Further this car will alsoo have a camera fitted so that a real time video is transmitted to the user.</em></span></p>

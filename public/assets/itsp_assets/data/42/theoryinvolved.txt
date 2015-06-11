@@ -1,0 +1,3 @@
+<ul>
+<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
+<li>Guide to KK 2.1.5</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>

@@ -1,0 +1,1 @@
+<p>Autonomous robots are very useful but one of its flaws could be crashing into other objects. Hence we wanted to use ultrasonic waves to avoid the obstacles, as it is not very costly and is reliable.</p>

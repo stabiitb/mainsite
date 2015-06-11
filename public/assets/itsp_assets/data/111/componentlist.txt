@@ -1,24 +1,4 @@
+<h4><strong>Components which are ordered from Hobby King website :-(without shipment and custom charges)</strong></h4><ol><li>AX 2306N 1300kv Brushless Bell Motor - 1 - $ 7.55</li><li>Hobbywing X rotor ESC 10amp - 1 - $ 8.39</li><li>Turnigy 1500mAh 2S 25C Lipoly battery - 1 - $ 8.97</li><li>Turnigy MX331S 17g Analog Mini Servo - 3 - $ 5.76* 3 - $ 17.28</li><li>1.0mm diameter Carbon rods - 2 - $ 1.71* 2 - $ 3.42</li><li>3.0mm diameter Carbon tube - 1 - $ 1.69</li><li>8.0mm diameter Carbon tube - 1 - $ 2.92</li><li>1.0mm thickness carbon sheet - 1 - $ 13.00</li><li>Glass Fiber Tape - 1 - $ 2.44</li></ol><p><strong>Net cost of the components bought by us from hobby king = $ 65.66 =<span style="color: rgb(151, 72, 6);"> </span><span style="color: rgb(151, 72, 6);">₹ 4192</span> </strong></p><p><strong><br></strong></p><h4><strong>Components which were bought offline:-</strong></h4><ol><li>Styrofoam - 1 - ₹ 150</li><li>Thermocol - 3 - ₹ 50*2 + ₹ 18 - ₹ 118</li><li>Bond-tite glue - 1 - ₹ 90</li><li>Fevicol - 1 - ₹ 40</li><li>Sand Paper - 2- ₹ 10*2 - ₹ 20</li></ol><p><strong>Net cost of the components bought offline = <span style="color: rgb(151, 72, 6);"></span><span style="color: rgb(151, 72, 6);">₹ 268</span></strong></p><p><strong><span style="color: rgb(151, 72, 6);"><br></span></strong></p><h4><strong>The Net cost of the total Components = </strong><strong>₹ </strong><b style="color: inherit; font-family: inherit; font-style: inherit; font-variant: inherit;">4460</b></h4><ul>
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
 <ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
-<ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
-<ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+</ul></ul></ul>

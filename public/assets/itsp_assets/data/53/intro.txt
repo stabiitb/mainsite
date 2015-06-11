@@ -1,0 +1,1 @@
+<p>As the name suggests the project is about creating a virtual keyboard. Since the use of projector is just to generate the image , we used the printed image of keyboard directly as our keyboard...  </p>

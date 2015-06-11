@@ -1,6 +1,11 @@
-<div><ol>
-</ol><p>Flight Control Board( KK 2.1.5): This board helps to stabilise the plane. It has gyrometer and accelerometer in it.</p><p>It also helps in the transition from one mode to the other mode.</p><p>Motor tilting mechanism:<img src="http://fpvcentral.net/wp-content/uploads/2014/03/kk215.jpg" alt="" style="width: 199px; float: right; margin: 0px 0px 10px 10px;"></p><p>Actually we tried 3 tilting machanisms but each one had its own drawbacks.Model 1:</p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></p><p>Problems Faced:</p><p>Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</p><p>Model 2:</p><iframe width="560" height="315" src="//www.youtube.com/embed/_EoRfX4KBD8" frameborder="0" allowfullscreen=""></iframe></div><iframe width="560" height="315" src="//www.youtube.com/embed/OmetQEKIyfk" frameborder="0" allowfullscreen=""></iframe>
-<div>Problems Faced:</div>
-<div>To increase the strength of this mechanism we had to use small pieces of ply which increased the weight of the plane. The big compartments used in this mechanism also decreased the exposure value of propellers. Hence the 4 motors were not able to lift up the plane. </div>
-<div>Model 3:<br><iframe width="560" height="315" src="//www.youtube.com/embed/5HJ5QXE1sdM" frameborder="0" allowfullscreen=""></iframe>
-</div><ol>Problems Faced:<br> Since the whole body was handmade it was unsymmetrical. The plane was not stable in hover mode </ol>
+<ol>
+</ol><p>
+	In this project we aimed at the testing A new type of the suspension</p><p>
+	We gave the car a positive camber angle</p><p>
+	Camber angle alters the handling qualities of a particular suspension design</p><p>
+	Off-road vehicles such as agricultural tractors generally use positive camber. In such vehicles, the positive camber angle helps to achieve a lower steering effort. Also, some single-engined general aviation aircraft that are primarily meant to operate from unimproved surfaces, such as bush planes and cropdusters, have their taildragger gear's main wheels equipped with positive-cambered main wheels to better handle the deflection of the landing gear, as the aircraft settles on rough, unpaved airstrips.</p><p>
+	<img src="http://s5.postimg.org/5tt701kc7/camber.jpg"></p><p>
+	So you can see that our car have the positive one</p><p>
+	he another part which we have taken is that Bluetooth module</p><p>
+	<img src="http://s5.postimg.org/5wd2mvnzr/download.jpg">this have four pins of our use .namely RX,TX,VCC,ground </p><p>
+	the another thing which we have used is L293D</p><p><img src="http://s5.postimg.org/j606egrhz/L293_D_connections.jpg">here we have used three L293d as one supports two motors and we have 6 whee drive </p><p>We have used the nylon thread to support the two tyres in same row </p><p><img src="http://s5.postimg.org/6giwy32gn/IMG_20150610_WA0008.jpg"></p><p style="margin-left: 660px;"></p>

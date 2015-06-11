@@ -1,0 +1,18 @@
+<ul>
+	
+<li><span style="color: rgb(0, 0, 0);">Components purchased from <strong>Macnet Technology </strong>(lamington road) costs Rs <strong>8087</strong> :<br>
+	</span>
+	
+<ul>
+		
+<li>
+		
+<h5>Arduino x1</h5></li>		
+<li>Vo150 servo motor  x1</li>		
+<li>voo90  servo motor  x4</li>		
+<li>Arduino cable  x1</li>		
+<li>4.5'' flex sensor x1</li>		
+<li>accelarometer  x2</li>	</ul></li>	
+<li><span style="color: rgb(0, 0, 0); background-color: transparent;">Component ordered from Visha world <u> (Lamington Road)</u> <strong>Rs 1575</strong></span></li></ul><p>                    4.5'' flex sensor  x2</p><ul>
+<li>components bought from <strong>Mangaldeep</strong> (IIT Bombay):</li></ul><ol>
+<li> nuts and bolts      x(20+20+8)</li><li>Drill bit    x1</li><li>Hand gloves  x1 set</li><li>9v adapter x1</li><li>Bredboard  x 1</li><li>PCB  x1</li><li>bergs  pin x20</li><li>Bondtite  x1</li><li>spring  x2</li><li>wires  x 10 meter</li><li>7805 ic x2</li><li>piping </li><li>9v battery x1</li><li>Jumper wires x20</li><li>pulleys x2 </li></ol>

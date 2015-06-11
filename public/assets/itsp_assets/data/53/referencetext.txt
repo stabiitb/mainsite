@@ -1,0 +1,1 @@
+<p>For the completion of your project , We are strongly thankful to Sai Charitha Akula who guided us.......<br><br>We also referred to the following source :</p><ul><li>http://opencv-python-tutroals.readthedocs.org/en/latest/</li></ul>

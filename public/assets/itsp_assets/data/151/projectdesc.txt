@@ -1,0 +1,10 @@
+<p>ITSP documentation
+Project Name ‐ App controlled power management.
+Team Id ‐ 108
+We have to learn java programming for our app development.
+We have done halfway and developed basic summing app on android
+and learnt basics of networking to communicate between two devices.
+We have ordered our Electronics that is comprised of
+1.raspberry pi
+2.USB wifi adapter
+3.Relay switches</p>

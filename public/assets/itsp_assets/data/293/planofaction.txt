@@ -1,0 +1,7 @@
+<p>As
+proposed in the abstract, our timeline plan is as follows:</p><p>Week 1: Research, study and hardware analysis to
+develop the bot.</p><p>Week 2: Basic bot development; wireless study and
+setup.</p><p>Week
+3: Voice
+control and image processing implementation.</p><p>Week 4: Test runs on prototype and completion of basic
+Project.</p>

@@ -1,0 +1,3 @@
+<p><span style="color: rgb(0, 0, 0);">Components bought till now - amounting to <strong>Rs</strong><strong> 1350 ($ 21.06)</strong> (excluding shipping &amp; customs): <br></span></p><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>Mangaldeep Hardwares</u> <strong>Rs 1350</strong>:</span>
+<ul>
+<li>Bluetooth Module</li><li>Arduino UNO</li></ul></li></ul>

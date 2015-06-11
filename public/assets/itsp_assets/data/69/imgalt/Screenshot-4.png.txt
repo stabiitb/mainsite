@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Module - Biometric</h5>
+									<div class="details white-text">
+										The whole attendance system with Biometric Module. ( The ethernet cable is not seen in the picture
+									</div>
+								</div>

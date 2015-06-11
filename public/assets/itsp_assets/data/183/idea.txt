@@ -1,0 +1,7 @@
+<p>The object is detected using an ultrasound sensor .The
+sensor sends a burst of ultrasound which eventually hits the object in path and
+then returns back to the source .The sensor then calculates the time taken by
+these bursts to come back and estimate it’s distance from the bot.</p><p>The sensor will be rotated in a field of 180  ̊. This information is then passed on to the
+micro-controller which then sends command to the motors on the wheels to turn
+accordingly.</p><p>The wheels will be
+attached with DC Motors</p>

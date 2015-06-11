@@ -1,13 +1,7 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Decided the mechanical design of our bot</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">FInalised the mechanical design ( one with the four arms). Ordered the cube so as to test its weight.</p><p style="margin-left: 20px;">Week 2 (May 25th- 31st  )</p><ul>
+<li>Planned                                                     <ul><li>finalising the algorithm</li><li>learn how to operate the Arduino Uno</li></ul></li><li>What you have accomplished?
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Decided to used Kociemba's Algorithm to solve the cube</li><li>learnt how to use servo motors using Arduino UNO.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
 <li>What you have planned ?:
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
-<ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>To make an arm of wood for testing motors</li><li>Learning the use of stepper motors using Arduino UNO</li></ul></li></ul><ul><li><ul><li>What we achieved?</li><li>Made an arm of wood with proper dimension.</li><li>Found a software which provides Kociemba's algorithm for any position of the cube</li><li>Tested Servo motors for some angular movements.</li></ul></li></ul><ul><li><ul></ul></li></ul>

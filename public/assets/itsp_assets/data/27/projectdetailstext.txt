@@ -1,0 +1,239 @@
+<p>
+	Syncitall syncs all the cloud storages using the APIs provided by them. APIs provide various functionalities like donwloading, uploading  or deleting files or retrieving quota information , etc.</p><p>
+	Here are installation instructions for various APIs used in the project:</p><ul>
+	
+<li><span style="background-color: rgb(255, 255, 255);">For Google Drive:</span></li></ul>
+<pre>easy_install --upgrade google-api-python-client
+</pre><ul>
+	
+<li>
+	For Dropbox:
+	</li></ul>
+<pre>pip install dropbox
+</pre><ul>
+	
+<li>
+	For OneDrive:
+	</li></ul>
+<pre>pip install onedrive
+</pre><p>
+	After installing APIs, the next job is authorization using OAUTH 2.0. Users give the account information of their cloud storages and in return OAUTH generates authorization token. This authorization token is used by the application as a pass to avail the API services. The program is made such that user has to do least amount of work. Therefore libraries like selenium and phantomjs are used to automate web-browser related functions.</p><p>
+	Here are the installation instructions for selenium and phantomjs:</p>
+<pre>pip install selenium
+</pre><pre>npm -g install phantomjs
+</pre><p>
+	Selenium does the major work of browser automation.Automatic opening and closing of web browsers, automatic button press etc. may be awkward to some users. The user can also halt the process by pressing some "unwanted" button or clicking at wrong place.Therefore it has to be ensured that browser automation runs as a background process to ensure that user doesn't halt the process. PhantomJS is used to hide the web browser windows while selenium performs its work. It is just to ensure the smooth working of the program.</p><p>
+	The project consists of class file. file is an abstract class from which three classes have been derived: gdrivefile, odrivefile and dropboxfile.</p><p>
+	Each derived class has methods named upload, download, authorize, quota and makefinallist.</p><h3 id="alpha-beta" style="margin-bottom: 0px; color: black; text-align: center;"><strong>Google Drive</strong></h3><p>
+The class 
+	<strong>gdrivefile</strong> consists of the following function:</p><ol>
+	
+<li><span style="color: rgb(155, 187, 89);">authorize:
+	</span>
+<ul>
+		
+<li>
+		authorize function requires CLIENT_ID and CLIENT_SECRET to get authorization token. Developers provide the CLIENT_ID and SECRET received from Google Developer Console.</li>		
+<li>OAUTH_SCOPE is also fed to the function to specify the scope of app</li>		
+<li>Authorization URL is obtained using CLIENT_ID and SECRET. </li>		
+<li>Once connected to authorization url, the user has to provide his username and password to get authorization token.</li>		
+<li>Selenium and PhantomJS() do the remaining duty of getting authorization token and feeding it to the application. Using authorization token, the <strong>credentials</strong> for the app are built.</li>	</ul></li>	
+<li>
+	<span style="color: rgb(155, 187, 89);">upload:
+	</span>
+<ul>
+		
+<li>
+		upload function retrieves the the file to uploaded using MediaFileUpload function. This function takes the address of the file as one of its parameters.
+The file is then uploaded using further instructions.
+		</li>	</ul></li></ol><h3 id="alpha-beta" style="margin-bottom: 0px; color: black; text-align: center;"><strong>Dropbox</strong></h3><p>
+The class 
+	<strong>dropboxfile</strong> consists of the following function:</p><ol>
+	
+<li><span style="color: rgb(155, 187, 89);">authorize:</span>
+	
+<ul>
+		
+<li>
+		authorize function requires app_key and app_secret to get authorization token. Developers provide the app_key and app_secret received from Dropbox Developer Console.</li>		
+<li>Authorization URL is obtained using app_key and app_secret. </li>		
+<li>Once connected to authorization url, the user has to provide his username and password to get authorization token.</li>		
+<li>Selenium and PhantomJS() do the remaining duty of getting authorization token and feeding it to the application. Using authorization token, the <strong>DropboxClient</strong> for the app are built.</li>	</ul></li>	
+<li>upload:</li>	
+<li>
+	<span style="color: rgb(155, 187, 89);">download:
+	</span>
+<ul>
+		
+<li>
+		download function retrieves the filename from the address of the file to be downloaded.The address of the file is contained in address member variable of class <strong>file</strong>.
+		</li>		
+<li>The file to be downloaded and its metadata is retrieved using <strong>get_file_and_metadata</strong> function of <strong>DropboxClient</strong>. </li>	</ul></li>	
+<li>
+	<span style="color: rgb(155, 187, 89);">makefilelist:
+	</span>
+<ul>
+		
+<li>makefilelist retrieves the metadata of files stored in dropbox using their addresses.The metadata is a <strong>json</strong> file.Files can be present in various folders. Folders can further contain files as well as other folders within them. Recursive implementation is therefore used in order to obtain files from different directories.</li>		
+<li>
+		A dropboxfile instace is created for all the files obtained and is stored in the <strong>finallist</strong>.
+		</li>	</ul></li>	
+<li><span style="color: rgb(155, 187, 89);">quota:</span>
+	
+<ul>
+		
+<li>quota function retrieves information like free space, shared space, and total space using <strong>account</strong> instace of <strong>DropboxClient.</strong></li>	</ul></li>	
+<li><span style="color: rgb(155, 187, 89);">printlist:
+</span>	
+<ul>
+		
+<li>Prints all the files present in dropbox.</li>	</ul></li></ol><h3 id="alpha-beta" style="margin-bottom: 0px; color: black; text-align: center;"><strong>OneDrive</strong></h3><p>
+The class 
+	<strong>odrivefile</strong> consists of the following function:</p><ol>
+	
+<li><span style="color: rgb(155, 187, 89);">authorize:
+	</span>
+<ul>
+		
+<li>
+		authorize function specifies the scope of the application. The application requires read-write permission as its scope.</li>		
+<li>Authorization is automated through selenium and phantomjs.</li>	</ul></li>		
+<li>
+	<span style="color: rgb(155, 187, 89);">download:
+	</span>
+<ul>
+		
+<li>
+		download function retrieves the filename from the address of the file to be downloaded.The address of the file is contained in address member variable of class <strong>file</strong>.
+		</li>		
+<li>The file is downloaded using <strong>getstatusoutput</strong> function.</li>		
+<li>The file is moved to desired download location using <strong>os.rename</strong> function.</li>	</ul></li>		
+<li><span style="color: rgb(155, 187, 89);">onedrivequota:
+	</span>
+<ul>
+		
+<li>onedrivequota extracts quota information using the function <strong>getstatusoutput</strong>. It calculates free space and total space from retrieved data.</li>	</ul></li>	
+<li><span style="color: rgb(155, 187, 89);">printfilelist:
+	</span>
+<ul>
+		
+<li>Prints all the files present in onedrive.</li>	</ul></li></ol><h3 id="alpha-beta" style="margin-bottom: 0px; color: black; text-align: center;"><strong>Graphic User Interface<br>
+</strong></h3><p>
+Graphic User Interface is provided using <a href="http://pyqt.sourceforge.net/Docs/PyQt4/" target="_blank">PyQt4</a>. PyQt4 is a comprehensive set of Python bindings for Digia's 
+	<a href="http://www.qt.io/developers/" target="_blank">Qt</a> cross platform GUI toolkit.</p><p>
+	PyQt4 can be installed from 
+	<a href="http://www.riverbankcomputing.com/software/pyqt/download" target="_blank">here</a>.</p><p>
+	Major components of PyQt4 are:</p><ol>
+	
+<li><span style="color: rgb(155, 187, 89);">QWidget
+	
+</span><ul>
+		
+<li>
+		It is the most basic gui element. Most of the gui components are derived classes of <span style="color: rgb(155, 187, 89);">QWidget</span>.</li>	</ul></li>	
+<li>
+	<span style="color: rgb(155, 187, 89);">QLabel
+	
+</span><ul>
+		
+<li>
+		This class provides features like inserting an image or text in GUI. It is derived from <span style="color: rgb(155, 187, 89);">QWidget</span></li>	</ul></li>	
+<li>
+	<span style="color: rgb(155, 187, 89);">QLayout</span>
+	
+<ul>
+		
+<li>This class basically acts as a container for various GUI elements.It decides how different element in GUI should be placed.It consists of three classes:
+		
+<ol>
+			
+<li><strong>QGridLayout:</strong>This layout provides a grid in which various GUI elements can be placed. It is most suitable layout for placing different icons in file browser.</li>			
+<li><strong>QHBoxLayout:</strong> This layout adds elements in a horizontal fashion. Elements are added from left to right.</li>			
+<li>
+			<strong>QVBoxLayout:</strong>This layout adds elements in vertical fashion. Elements are added from top to bottom.
+			</li>		</ol></li>	</ul></li>	
+<li><span style="color: rgb(155, 187, 89);">QPushButton
+	
+</span><ul>
+		
+<li>It provides buttons for GUI.</li>	</ul></li></ol><p>
+		Major components of  GUI used in the application are as follows:</p><ol>
+	
+<li><strong><span style="color: rgb(155, 187, 89);">page</span></strong>
+	
+<ul>
+		
+<li>
+		It consists of features associated with pages in file browser. Its member variables include <strong>address</strong> which is the address of the current page.It also contains list named <strong>iconlist</strong> which contains all the icons associated with the current page.
+		</li>		
+<li>
+		It consists of function <strong>newfolder</strong> which is responsible for making a new folder in file browser.
+		</li>		
+<li>
+		It consists of functions cut which appends the cut file icons in <strong>movelist</strong> removes the cut icon from current page. It also consist of paste function which pastes the cut icon to current page.
+		</li>		
+<li>
+		It consists of two more functions: delete and deletef. delete is resposible for deleting files and deletef deletes folders.
+		</li>	</ul></li>	
+<li><span style="color: rgb(155, 187, 89);">yo</span> function updates present screen using address as parameter</li>	
+<li><strong><span style="color: rgb(155, 187, 89);">Trash</span></strong>
+	
+<ul>
+		
+<li>It is recycle bin of GUI. All the deleted files and folders exist here which can be restored. It is derived class of page.</li>		
+<li>It consists of list named <strong>page_list</strong> which stores all the deleted pages. </li>		
+<li>It consists of functions <strong>restore</strong> and <strong>restoref</strong>. restore is responsible for restoring files while restoref restores deleted folders. </li>	</ul></li>	
+<li>
+	<span style="color: rgb(155, 187, 89);"></span><strong><span style="color: rgb(155, 187, 89);">icon
+	</span></strong>
+<ul>
+		
+<li>
+		This class consists of all the attributes of an icon like icon name, icon image, address of the page of icon,etc.
+		</li>		
+<li><strong>new_fol</strong> function is responsible for naming a new folder. It uses <strong>QLineEdit</strong> object to give name to a new folder.</li>		
+<li><strong>gotclickedevent</strong> is an overridden function of the default mousePressEvent of <span style="color: rgb(155, 187, 89);">QLabel</span> class. This function is responsible for keeping track of different mouse events.</li>		
+<li>This function consists of two derived classes:
+		
+<ol>
+			
+<li>foldericon:
+			
+<ul>
+				
+<li><strong>doubleclickevent</strong> function takes care of updating the main window when a folder icon is double clicked.</li>				
+<li><strong>contextMenuEvent:</strong> It is responsible to show a context menu when folder icon is right clicked and then executes the corresponding functions.</li>			</ul></li>			
+<li>fileicon:
+			
+<ul>
+				
+<li>It consists of function contextMenuEvent to show a context menu after right clicking a file. It include cut, past, download, delete and restore action.</li>			</ul></li>		</ol></li>	</ul></li>	
+<li><strong><span style="color: rgb(155, 187, 89);">makebrowser</span></strong>
+	
+<ul>
+		
+<li>This function is responsible to create file and directory structure using file addresses for use in GUI.It takes care of three cases.</li>		
+<li>In the first case, if the number of '/' in a file address is 0 or 1 then it is simply file name. For this case a new <strong>fileicon</strong> is made and appended to current page of evaluation.</li>		
+<li>If number of '/' is greater than 1 then it is a dirctory. Correspondingly a new page is made and appended in <strong>folderpagelist</strong>. makebrowser function is recursively implemented in the newly created page. A new foldericon is also made for the corresponding directory</li>	</ul></li>	
+<li><strong><span style="color: rgb(155, 187, 89);">Main</span></strong>
+	
+<ul>
+		
+<li>This is the main window of the GUI. It consists of all the layouts used in the GUI. The main window consists of the main screen where all files and folders present in cloud storages. The home button, back button and trash button.</li>		
+<li>update function updates the screen whenever back button is pressed or a folder is double clicked. It calculates the positions of various icons using <strong>folderpagelist</strong>. <strong>folderpagelist</strong> is list which contains all the pages which correspond to all the directories present in cloud storage. The screen has a grid layout on which icons are placed orderwise using the postions calculated earlier. Before placing icon in particular grid box it is checked whether the icon is new or not as icons are different for the two cases.</li>		
+<li>The main screen consists of QScrllLayout element to add scroll bars. <strong>mainLayout</strong> consists of all the four elements, the main screen with scroll bar, the home button, the trash button and the back button.</li>		
+<li><strong>homef</strong> and <strong>trashf</strong> function are resposible to show the homescreen and trash respectively. lp function coordinates with back button to navigate backwards in the screen.</li>		
+<li><strong>clear</strong> function removes all the widgets from mainLayout so that a new screen can be made whenever a folder is double clicked or back button is pressed.</li>		
+<li>contextMenuEvent is overridden function. It provides paste option in the context menu of the main window.</li>	</ul></li>	
+<li><strong><span style="color: rgb(155, 187, 89);">Welcome</span>:</strong> This class is responsible for providing the welcome screen of the application. It uses combination of <span style="color: rgb(155, 187, 89);">QLayout</span> and<span style="color: rgb(155, 187, 89);"><inline style="background-color: rgb(255, 255, 255);"> <inline>QLabel</inline></inline></span> to show text on screen in an organized way. It uses QLineEdit to provide textboxes to enter username and password for corresponding cloud storages.
+	
+<p>
+						It consists of insert function. It reads the  username and password from the textboxes and updates the corresponding information in the account class. The authorization function of correspondig cloud services take their username and password from this account class.
+	</p></li></ol><p>
+					Some features in GUI require data persistence. Python's Pickle is used to solve this purpose. Features like cut, paste, delete or making a new folder require that the changes are saved forever no matter when or how many times we start the application.</p><p>
+					Everytime any change is made in the file system by moving a file, deleting a file or making a new folder, those changes are saved in<strong> saved_list </strong>using corresponding function responsible to execute those changes. For example,  when moving a file, the corresponding changes in file system are saved in <strong>saved_list</strong> when the paste function of page class is called.</p><p>
+					Two functions are responsible to keep these changes at each new session:</p><ol><li>
+<strong><span style="color: rgb(155, 187, 89);">process_list</span></strong>: This function is responsible for keeping track of new files uploaded in cloud storages. This function updates the <strong>saved_list</strong> to include all the new files present in cloud storages.
+</li><li><strong><span style="color: rgb(155, 187, 89);">process_folderpagelist</span></strong><span style="color: rgb(155, 187, 89);"></span>: This function is responsible to modify the <strong>folderpagelist </strong>according to <strong>saved_list</strong>. <p>Every element of<strong> saved_list</strong> consists of two elements. The first element contains the address of the original file or folder on which changes are to be applied. The second element is different for different changes. </p><p>If a file has to be moved then the second element of the <strong>saved_list</strong> contains the address to which the file has to be moved. If a file has to be deleted, then the second element contains the string '*trashed#'. 
+If a folder has to be deleted then the second element of <strong>saved_list</strong> contains the string '*trashedf#'. If a new folder has to be made then the first element of the<strong> saved_list</strong> contains a '/' at the end.</p><p>
+<strong>process_folderpagelist</strong> function takes care of these cases to make changes to <strong>folderpagelist.</strong></p></li></ol><h3 style="margin-left: 480px;">     <strong> UPLOAD</strong></h3><p style="margin-left: 380px;"><span style="color: rgb(0, 0, 0);"><br></span></p><p style="margin-left: 20px;">1. <span style="color: rgb(155, 187, 89);">splitsizef</span> :This function is reponsible to decide the size in which the file of larger would be splitted.</p><p style="margin-left: 20px;">2. <span style="color: rgb(155, 187, 89);">splitfile</span>:This function is responsible for splitting the file into chunks of size as specified by function splitsizef.</p><p style="margin-left: 20px;">3. <span style="color: rgb(155, 187, 89);">upload</span>:This is the recursive function and does the main job of getting the file size ,splitting them,and finally uploading individual chunk to</p><p style="margin-left: 40px;">to its destination.It is recursive so that if it happens oncea file splitted in large size,and one of its part cannot fit in present distribution of storage,it may further split</p><p style="margin-left: 40px;">it and make sure that file is uploaded to facilitate upload of files larger than individual sorages but smaller than sum of each.</p><p style="margin-left: 40px;"></p><p style="margin-left: 40px;"></p>

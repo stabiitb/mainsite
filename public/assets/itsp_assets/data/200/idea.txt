@@ -1,0 +1,23 @@
+<div><ol>
+</ol></div><ol>
+<p>·PROBLEM  :-1</p><p>·The first problem we faced was that the GSM module
+was drawing too much of current from the Arduino due to which the Arduino was
+not been able to light even an LED bulb. Then after some learning on the net we
+found out about transistors mosfets and relays as amplifiers. We successfully
+lit a LED with the help of mosfet and transistor. However the relay could not
+be activated by the Arduino signal. So in order to make the signal strong we
+first amplified it by passing it through a mosfet. Then the relay got
+sufficient current ie 5VDC and 55mA of current to activate. Once the relay went
+on not only small motors but even ac light bulbs and big thing could be
+implemented to the project.</p><p>·PROBLEM  :--2</p><p>·To detect the presence of people in the room we
+decided to use PIR sensor. However if a person is sleeping in the room the PIR
+sensor would give false reading. This led to our second and the most important
+problem. So we developed the LDR Laser sensor. We where to place two LDR with
+laser pointing on them, one outside and another inside the door . When a person
+would pass the LDR reading would drop suddenly. We named the outside as sensor
+1 and the inside one as sensor 2. When one person enter the room the sensor 1
+would first drop then after some time 2 would drop. We programmed a counter to
+take it as +1 similarly on second person does it counter goes +2.When people
+went out we did just the opposite.ie sensor 2 will become low first then the
+sensor 1.and we would decrement the counter. When the counter drops to 0 it
+means no person is in the room .</p></ol>

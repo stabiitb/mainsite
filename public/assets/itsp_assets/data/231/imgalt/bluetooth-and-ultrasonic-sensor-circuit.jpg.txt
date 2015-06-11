@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Bluetooth module and Ultrasound sensor circuit</h5>
+									<div class="details white-text">
+										This circuit enables the arduino to communicate wirelessly withthe laptop using a bluetooth module.Also,there is an ultrasonic sensor which measures the distance between the bot and obstacle in front of it.
+									</div>
+								</div>

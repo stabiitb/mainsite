@@ -1,0 +1,1 @@
+<p><span style="color: rgb(255, 255, 0);"><strong><inline><inline><inline style="color: rgb(247, 150, 70);">The aim of our team was to create a Centralized Attendance System, easy to configure and use with the use of more than one modules.</inline></inline></inline></strong></span></p>

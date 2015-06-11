@@ -1,0 +1,22 @@
+<p><strong><em>Learning and Experiences</em></strong></p><p>One sentence, "You have no better option than ITSP to spend
+your freshie year summers!!". The positives which one can take from doing
+ITSP is something which can't be compared with anything else. This had been a
+vast learning experience for all of us. The best part was that one had to start
+from literally zero to make the project.</p><p>The main things we learnt in this project are- Team-spirit, Work discipline,
+softwares, about new sensors, to make mechanical design properly after many
+attempts of failures</p><p>But that one line said by Edison was our motivation-</p><p>"I have not failed.
+I've just found 10000 ways that won't work.</p><p><strong>Lesson Learnt</strong>: The lesson which we learnt which is so obvious but we often tend
+to forget it : "You will be able to scorch out more and more
+earthworms the deeper and deeper you will dig into the soil!!". One pain
+doesn't ends while you realise the other one is waiting there on the door but
+this is what life is all about. </p><p><strong><em>Problems Faced</em></strong></p><p>·Choosing the right Servo
+Motors.·Doing proper mapping for
+flex sensors and accelerometers.</p><p>·Material for arm</p><p>·After looking at various
+options such as acrylic, aluminium , we finally settled for a design that has
+different parts of different components. The components used  are acrylic for aelbow, plastic for palm,
+tubing for fingers, wood and aluminium for support and hinge. </p><p>·We used a hand drill to
+drill holes in aluminium ,acrylic, fans of servos</p><p>·The code we wrote gave
+multiple angles for a given set of x,y,z coordinates during simulation stage
+itself (which is a big benefit, had it been tested directly on the equipment,
+the arm would have dismantled due to the rapid changes in position)</p><p>·Code algorithm improved
+and constraints on angles put to give a single solution.</p>

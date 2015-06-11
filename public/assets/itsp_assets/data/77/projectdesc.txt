@@ -1,0 +1,1 @@
+<p>our project is we are going to design a robot that would play chess with an opponent by talking input through the voice commands and moving his coin and there by robot itself analyses the best possible move according to chess rules and places it. </p>

@@ -1,0 +1,1 @@
+<p>We aim to create a home automation system</p><p>1. An android application will be used for controlling the state of the switches</p><p>2. There will also be external switches present for turning them on/off without the android app</p><p>3. Continuous synchronization between app and the switch state in the app</p><p>4. The switches can also be controlled by voice commands</p>

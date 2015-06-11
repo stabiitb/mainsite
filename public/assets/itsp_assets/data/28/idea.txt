@@ -1,6 +1,86 @@
-<div><ol>
-</ol><p>Flight Control Board( KK 2.1.5): This board helps to stabilise the plane. It has gyrometer and accelerometer in it.</p><p>It also helps in the transition from one mode to the other mode.</p><p>Motor tilting mechanism:<img src="http://fpvcentral.net/wp-content/uploads/2014/03/kk215.jpg" alt="" style="width: 199px; float: right; margin: 0px 0px 10px 10px;"></p><p>Actually we tried 3 tilting machanisms but each one had its own drawbacks.Model 1:</p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></p><p>Problems Faced:</p><p>Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</p><p>Model 2:</p><iframe width="560" height="315" src="//www.youtube.com/embed/_EoRfX4KBD8" frameborder="0" allowfullscreen=""></iframe></div><iframe width="560" height="315" src="//www.youtube.com/embed/OmetQEKIyfk" frameborder="0" allowfullscreen=""></iframe>
-<div>Problems Faced:</div>
-<div>To increase the strength of this mechanism we had to use small pieces of ply which increased the weight of the plane. The big compartments used in this mechanism also decreased the exposure value of propellers. Hence the 4 motors were not able to lift up the plane. </div>
-<div>Model 3:<br><iframe width="560" height="315" src="//www.youtube.com/embed/5HJ5QXE1sdM" frameborder="0" allowfullscreen=""></iframe>
-</div><ol>Problems Faced:<br> Since the whole body was handmade it was unsymmetrical. The plane was not stable in hover mode </ol>
+<span style="color: rgb(0, 0, 0);"></span>
+<div>
+	<ol>
+	</ol>
+	<span style="color: rgb(0, 0, 0);"><inline style="color: rgb(0, 0, 0);"><inline style="background-color: rgb(255, 255, 255);"></inline></inline></span>
+	<h3><span style="color: rgb(0, 0, 0);"><inline><inline style="background-color: rgb(255, 255, 255);"><inline>Artificial Intelligence</inline></inline></inline></span></h3>
+	<p style="margin-left: 20px;">
+	</p>
+	<p style="margin-left: 20px;">
+		MinMax Algorithm with alpha-beta pruning has been used for deciding the bot's next move. For Connect-4, we have achieved a depth of 10 using alpha-beta pruning. The heuristic function we have used is described as follows:
+	</p>
+	<p style="margin-left: 60px;">
+		1.
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><br>
+		</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><br>
+		</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><br>
+		</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><br>
+		</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><br>
+		</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Flight Control Board( KK 2.1.5): This board helps to stabilise the plane. It has gyrometer and accelerometer in it.</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">It also helps in the transition from one mode to the other mode.</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Motor tilting mechanism:<img src="http://fpvcentral.net/wp-content/uploads/2014/03/kk215.jpg" alt="" style="width: 199px; float: right; margin: 0px 0px 10px 10px;"></span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Actually we tried 3 tilting machanisms but each one had its own drawbacks.Model 1:</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);"><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Problems Faced:</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</span>
+	</p>
+	<p>
+		<span style="color: rgb(0, 0, 0);">Model 2:</span>
+	</p>
+	<span style="color: rgb(0, 0, 0);">
+	<iframe src="//www.youtube.com/embed/_EoRfX4KBD8" allowfullscreen="" frameborder="0" height="315" width="560">
+	</iframe>
+	</span>
+</div><p>
+	<span style="color: rgb(0, 0, 0);"></span></p><iframe src="//www.youtube.com/embed/OmetQEKIyfk" allowfullscreen="" frameborder="0" height="315" width="560">
+</iframe>
+<div>
+	<span style="color: rgb(0, 0, 0);">Problems Faced:</span>
+</div><span style="color: rgb(0, 0, 0);">
+</span>
+<div>
+	<span style="color: rgb(0, 0, 0);">To increase the strength of this mechanism we had to use small pieces of ply which increased the weight of the plane. The big compartments used in this mechanism also decreased the exposure value of propellers. Hence the 4 motors were not able to lift up the plane. </span>
+</div><span style="color: rgb(0, 0, 0);">
+</span>
+<div>
+	<span style="color: rgb(0, 0, 0);">Model 3:<br>
+	<iframe src="//www.youtube.com/embed/5HJ5QXE1sdM" allowfullscreen="" frameborder="0" height="315" width="560">
+	</iframe>
+	</span>
+</div><ol>
+	<span style="color: rgb(0, 0, 0);">Problems Faced:<br>
+	 Since the whole body was handmade it was unsymmetrical. The plane was not stable in hover mode 
+	</span>
+</ol>

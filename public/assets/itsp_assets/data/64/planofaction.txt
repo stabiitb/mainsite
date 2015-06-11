@@ -1,13 +1,34 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
-<ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
-<ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
-<ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<h3>Week 1: 18-25 May
+</h3><h4>Planned:</h4><p> We plan to make a precise formulation of the project, the material requirements,the estimated costs and learning needs.
+</p><p> We plan to make a basic version of the app, at least the design and basic
+coding.
+ </p><p>We plan to buy the components and decide upon the distribution of work.
+ </p><p>We plan to tinker around with the microcontrollers and get an idea about
+its functioning.  </p><h4>Done:</h4><p>Studied about Arduino, sensors that we would be needing and made a decision about what exactly we could do in the project.</p><p>Studied about app making and made a design for the app.</p><p>Went to Lamington road for purchasing required components. </p><p>Week 2: 25 May-1 June </p><p>Planned:</p><p>We plan to begin the first module,i.e., automated lighting system.
+ It will be based on both light intensity sensor as well as app-based control
+with possibility of manual override. </p><p>After deciding the mode of implementation we plan to at least build the
+basic circuitry for one light bulb. </p><p>The basic circuitry will also include input from the app which will be
+developed simultaneously and accordingly.</p><p>Done:</p><p>Light intensity was detected using LDR. Calibration was done in the room to see the reading at different times of the day.</p><p>Relay was used to connect a bulb powered by 220V AC which was controlled by Arduino.</p><p>We decided a webpage would be better than an app since it was cross platform and easier to connect to Arduino. So studied about making webpages.</p><p>Week 3: 2 June-8 June
+</p><p>Planned:</p><p> The testing and improvement of automated lighting system will continue. </p><p>In this week, we plan to include manual override and get ready a basic
+prototype so that more light bulbs can be added afterwards.
+ This will mark the end of our first module. </p><p>Done:</p><p>Dimming the bulb using a resistor network. </p><p>First version of the webpage and connecting it to Arduino through ethernet shield.</p><p>Week 4: 9 June-15 June
+ </p><p>We plan to start working on the second module, i.e., fan and ac automation
+and control by app and by input from temperature and humidity sensor.
+</p><p> We decide to find a way to control the speed of the fan based on the
+temperature and control it via the app.
+</p><p> At the same time in order to control the ac through the app, we need to
+build a kind of remote controlling device.
+ This will be challenging and getting the details together will take up most
+of the week. </p><p>Week 5: 16 June-22 June</p><p>
+Work continues on second module.
+</p><p> Hopefully, we will be able to implement through circuitry the things
+planned out in the last week.
+ </p><p>By the end of this week we aim to at least control both the fan and ac by
+app and if possible based on temperature input. </p><p>Week 6: 23 June- 30 June
+ </p><p>This last week we plan to tie up the loose ends.
+ </p><p>We hope to finalize the app and get a well working app based control on
+the room's lighting and cooling systems.
+It will be hard to test the sensor-based input, but we will try to debug it
+as well as we can.
+</p><p> It may be possible to set up a person detector and person recognition
+system in this week if time permits, although the work may only go till mid-way to completion.</p>

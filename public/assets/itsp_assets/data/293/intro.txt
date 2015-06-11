@@ -1,0 +1,5 @@
+<p style="text-align: center;">We planned on making a basic
+Voice-controlled bot which can be controlled using either a mobile phone or a
+laptop.</p><p style="text-align: center;">  For
+Wireless communication we have used Bluetooth as it is easily accessible and
+also easy to use.</p>

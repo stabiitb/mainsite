@@ -1,0 +1,8 @@
+<div><br>•DC
+Motors (2) </div><div>•180
+deg servo(1) </div><div>•Arduino UNO microcontroller </div><div> •Motor
+shield </div><div> •Mini
+breadboard </div><div>•Ultrasonic
+sensor </div><div>•Battery
+holder <p>GPS module and
+digital compass (*for the improvised version)</p></div>

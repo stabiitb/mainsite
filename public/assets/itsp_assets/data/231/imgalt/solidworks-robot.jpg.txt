@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									 model of robot</h5>
+									<div class="details white-text">
+										Structure of the bot was prepared in Solidworks
+									</div>
+								</div>
