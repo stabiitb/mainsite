@@ -1,7 +1,0 @@
-<div class="project-details" style="margin-top:-10%">
-									<h5 class="white-text red-border-bottom" >
-									The Head Mount</h5>
-									<div class="details white-text">
-										The Head Mount has to be worn on the head via tha 
-									</div>
-								</div>
