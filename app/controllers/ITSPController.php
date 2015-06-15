@@ -860,7 +860,7 @@ echo $file;
 						return;
 					};
 					$users=$users->toArray();
-					$attr = array('class'=>'table', 'id'=>'myTbl');
+					$attr = array('class'=>'table table-condensed table-hover table-striped table-bordered table-responsive', 'id'=>'myTbl');
 					$t = new Table($users, $attr);
 					$data= $t->build();
 					return View::make('events.ITSP_2015.review',compact('data'));

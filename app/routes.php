@@ -145,12 +145,19 @@ Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>
 Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'AppsController@interiit'));
 
 
+
+/* User */
 Route::any('logout',array('as'=>'logout' ,'before'=>'login', 'uses' => 'UserController@logout'));
 Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'UserController@profile'));
 Route::get('fblogin','UserController@fblogin');
 Route::post('ldap_verify',array('as'=>'user.verify','before'=>'login','uses'=>'UserController@verify'));
 Route::post('profile_update',array('as'=>'user.update','before'=>'login','uses'=>'UserController@update'));
 Route::get('profile_edit',array('as'=>'user.edit','before'=>'login','uses'=>'UserController@edit'));
+Route::get('show_users',array('as'=>'user.show','before'=>'login','uses'=>'UserController@show_users'));
+
+
+
+
 
 Route::get('sitemap', function(){
 
