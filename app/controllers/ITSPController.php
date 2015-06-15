@@ -1309,6 +1309,26 @@ th {
 	public function final_team_verification(){
 		return View::make('events.ITSP_2015.final_team_verification');
 	}
+
+	public function update_names(){
+		
+		$file = fopen(public_path()."/media/ITSP2015/final_team_details.csv","r");
+		
+		while(! feof($file))
+		  {
+		  $csv=fgetcsv($file);
+		  $team=ITSP::find($csv[1]);
+		  try{
+			  $team->team_name=$csv[2];
+			  $team->project_name=$csv[3];
+			  $team->save();
+			}
+			catch(Exception $e){
+				print( $csv[1]." ".$csv[2]." ".$csv[3]."<br>");
+			}
+		  }
+		  fclose($file);	
+	}
 	/*public function signup(Request $request)
 	{
 
