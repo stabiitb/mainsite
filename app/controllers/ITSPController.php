@@ -296,7 +296,7 @@ class ITSPController extends \BaseController {
 		}
 		else{
 			$team=ITSP::find(Auth::User()->itsp);
-			$user1=Auth::User();
+			$user1=User::find($team->user_id);
 			$user2=User::find($team->user_id2);
 			$user3=User::find($team->user_id3);
 			$user4=User::find($team->user_id4);
