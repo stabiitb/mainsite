@@ -76,7 +76,7 @@
 														<td>{{$project->id}}</td>
 														<td>{{$project->team_name}}</td>
 														<td calss="title">
-															<b><a href="http://www.stab-iitb.org/itsp/documentation?id={{$project->id}}">{{$project->project_name}}</a></b>
+															<b><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{$project->id}}">{{$project->project_name}}</a></b>
 														</td>
 														<td>{{$project->slot}}</td>
 														<td>{{$project->club}}</td>

@@ -9,8 +9,7 @@ if(Auth::check()){
 	$user=Auth::User()->id;
 	}
 else{
-	echo  "Please login to continue";
-	return;
+	$user="no user";
 }		
 
 if(isset($_GET['id']))
@@ -26,7 +25,7 @@ if(isset($_GET['id']))
 	$by3=$data['user_id3'];
 	$by4=$data['user_id4'];
 	$by5=$data['user_id5'];
-	if($by==$user || $by2==$user || $by3==$user || $by4==$user || $by5==$user ||  Auth::User()->admin==1)		
+	if($by==$user || $by2==$user || $by3==$user || $by4==$user || $by5==$user)		
 		$auth=1;
 	else 
 		$auth=0;
