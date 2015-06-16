@@ -18,7 +18,6 @@
 
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Abstracts</a> </li>		
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">Projects</a> </li>		
 
 							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
 
@@ -31,6 +30,7 @@
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
  -->					     @endif
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.final_team_verification')}}" class="btn">Final Team Verification Form &nbsp</a> </li>
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Slot 1 Projects</a> </li>		
 
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
