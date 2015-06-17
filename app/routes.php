@@ -38,6 +38,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('feedback',array('as'=>'events.ITSP_2015.feedback','uses'=>'ITSPController@feedback'));
     Route::get('final_team_verification',array('as'=>'events.ITSP_2015.final_team_verification','uses'=>'ITSPController@final_team_verification'));
     Route::get('update_names',array('as'=>'events.ITSP_2015.update_names','uses'=>'ITSPController@update_names'));
+    Route::get('tshirt',array('as'=>'events.ITSP_2015.tshirt','uses'=>'ITSPController@tshirt'));
 
 });
 

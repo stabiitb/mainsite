@@ -1310,6 +1310,10 @@ th {
 		return View::make('events.ITSP_2015.final_team_verification');
 	}
 
+	public function tshirt(){
+		return View::make('events.ITSP_2015.tshirt');
+	}
+
 	public function update_names(){
 		
 		$file = fopen(public_path()."/media/ITSP2015/final_team_details.csv","r");
