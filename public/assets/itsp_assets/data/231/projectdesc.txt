@@ -1,1 +1,1 @@
-<p>Clich here to edit it</p>
+<p><strong></strong><strong></strong><strong></strong><span style="font-family: Arial;"><strong><inline style="color: rgb(255, 255, 0);">BIBO stands for BIped roBOt. BIBO is a humanoid robot which can walk like a human and do other functions, including hands-motion and distance sensing. This project has a lot of future usage.</inline></strong></span> </p>

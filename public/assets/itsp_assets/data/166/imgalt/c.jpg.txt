@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Experimenting with R-R intervals!!</h5>
+									<div class="details white-text">
+										recording and plotting R-R intervlas
+									</div>
+								</div>

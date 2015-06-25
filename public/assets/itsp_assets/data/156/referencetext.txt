@@ -1,2 +1,1 @@
-<p>For the completion of your project , We are strongly thankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
-<li>Google</li><li>arduino.cc</li><li>youtube</li></ul>
+<p>For the completion of your project , We are strongly thankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul><li>Google</li><li>arduino.cc</li><li>youtube</li><li>instructables.com</li><li>jeremyblum arduino tutorials</li><li>learn.spakfun.com</li></ul>

@@ -1,1 +1,18 @@
-<p>We had planned to make a tilt rotor RC plane which will have two modes hover mode and rc mode. The basic idea of the project was to tilt the motors of the plane to achieve the thrust in different directions. The motors would be vertical in the hover mode which would lift the plane up and then the motors would tilt so that the direction of thrust would be in forward direction and then the plane would be like any other simple rc plane.</p><p><img src="http://i.ytimg.com/vi/e7QNbU71lsA/0.jpg"></p><p><img src="http://i.ytimg.com/vi/e7QNbU71lsA/1.jpg" style="width: 255px; float: left; margin: 0px 10px 10px 0px;" alt=""></p><p><img src="http://i.ytimg.com/vi/e7QNbU71lsA/3.jpg" style="width: 251px;"></p>
+<p>Gone
+are the days when you would look up and curse yourself for being out on a hot
+sunny day. Take pride, very soon you will be walking with energy station with
+people asking you to help them charge their batteries with your clothes. This
+is not a scene out of a Science-Fiction movie. It is the simple application of solar
+cells. They are only way we can convert sunlight into electricity directly and
+day by day they are getting better ,smaller , cheaper. Nothing can dare challenge the sun when
+it comes to radiant energy. Every hour
+the energy available from the sun is more than human’s requirement for an entire
+year . Petrol , diesel and all these fossil fuels are nothing but sun’s
+concentrated over year and years. This makes them very efficient in terms of
+energy per unit of the fuels . so why not tap it directly.</p><p><img src="http://www.deparsolar.com/images/data/solar-energy-panels-720.jpg"></p><p>Nowadays
+there is an increase in demand for battery backup as a power outage is highly
+not desirable. Recently
+there has been developments in this area and the market for power backup is
+growing quickly. Even
+though normal power backup is a good solution for preventing battery outage ,
+still they need to be recharge after sometime which limits their functionality. So in order to overcome this we did a solar mobile charger with automatic power backup. The power backup runs with a support of android application, that works in a such a way that there is always sufficient amount of charge in the mobile.</p>

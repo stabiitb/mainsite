@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Bot-Top View</h5>
+									<div class="details white-text">
+										Top-view of the bot is shown
+									</div>
+								</div>

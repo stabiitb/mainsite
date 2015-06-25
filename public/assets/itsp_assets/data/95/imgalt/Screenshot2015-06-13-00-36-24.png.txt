@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Standard Emergency Numbers cannot be deleted</h5>
+									<div class="details white-text">
+										Certain emergency contacts which have been added to the app beforehand like Women's Helpline Number cannot be  deleted from the list of emergency contacts.
+									</div>
+								</div>

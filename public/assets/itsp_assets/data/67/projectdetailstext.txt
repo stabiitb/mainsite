@@ -1,0 +1,76 @@
+<h3>
+Now lets see the details of this project :</h3>
+<h3>
+<span style="color: rgb(149, 55, 52);">Taking snapshot of the Text Document-</span></h3>
+<h5>The Text document will be divided into different part and then snapshot of each part will be taken individually. For taking pics of different parts of text document we have made a component.This component will make the webcam move in 2 dimensions step by step and at each step a pic will be taken.we used rack and pinion for one dimension and for timing belt for other dimension.Timing belt and rack were moved by DC motors which were themselves driven by raspberry pi.</h5>
+<center><img src="http://homepages.iitb.ac.in/~140100072/cam.jpg" width="400px" height="300px"></center>
+<h3>
+<span style="color: rgb(99, 36, 35);">Stitching the pics of different parts of a document into one pic-</span></h3>
+<h5>This is achieved by using a standard stitching code.The input to this code will be the pics of different parts of document and it will output a a single stitched image. We could have worked with a simple image also but we needed good quality image of our text so that converting it into text would be easy.</h5>
+<h3>
+<span style="color: rgb(99, 36, 35);">Converting a pic to a text file-</span></h3>
+<h5>After enhancing our image nest step is to convert this image to text file.</h5>
+<h5>To do this we are using tesseract library. When a image containing text is given to this library as input, it will output a text file which will consist the text which was on the image.</h5>
+<h3>
+<span style="color: rgb(99, 36, 35);">Interface between text file and mechanical braille display-</span></h3>
+<h5>A python code is used linear map the characters from the text file to the 3X2 matrices which represents the braille cells,this 3X2 matrix has 0 and 1 as its elements(where 0 represents pin down and 1 represents pin up).A sample of input .txt file is:</h5>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/Picture1.jpg">
+</p>
+<h5>and the output is:</h5>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/Picture2.jpg">
+</p>
+<h5>and now the next and most important job i.e. to convert this array into physical braille cell.</h5>
+<h3><span style="color: rgb(99, 36, 35);">The mechanical assembly:</span></h3>
+<h4><span style="color: rgb(95, 73, 122);">A brief over view:</span></h4>
+<p>
+	In our prototype we have 15 rows and 2 column of braille cells which means 180 pins. Now to actuate so many pins individually we would require large quantity of actuators.
+</p>
+<p>
+	so We designed our prototype as such to actuate as many pins with very less actuators and we were successful in actuating these 180 pins using just 1 stepper motor and 6 electromagnets. so what did we do??
+</p>
+<p>
+	we had 15 columns of braille cells which means 30 columns of pins and each columns has 6 pins. we set our display by actuating one column at a time. In a column we found out which pins has to go up and who has to be left. we then push the whole row of that pin and then lock them. using a different mechanism and once one column is done we pull the other pins of that row down and this process continues till 30 th column.Now look at each component closely.
+</p>
+<h4>
+<span style="color: rgb(95, 73, 122);">Pins:</span></h4>
+<p>
+	The design of pin is such that it can be locked in two positions. one when pin has to be up and another when it has to remain below the surface of braille cell.The drawing of pins are:
+</p>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/pins_2010.bmp">
+</p>
+<h4>	<span style="color: rgb(95, 73, 122);">The row setter:</span></h4>
+<p>
+	the row setter is made of Sofa foam  and acrylic sheet glued to each other.in our mechanism it is very important to use a soft material to push the pins up so that it can deform when the need arise. Foam part is in contact with the base of pin and acrylic side is attached to plunger of electromagnet.it can be made more efficient by cutting the foam into pieces so as each pin get its independent part of foam ;P. well lets see the pic :
+</p>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/IMG_20150616_012259.jpg">
+</p>
+<h4><span style="color: rgb(95, 73, 122);">locks:</span></h4>
+<p>
+	we made these using laser cut on .5 mm aluminium sheet. It keep the pins in position i.e it force particular pins to remain raised and at same time it keeps other pins pushed down.It has got rectangular holes allowing pins to pass in a particular position and stoppind them in another positions.lets see its pic:
+</p>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/IMG_20150617_050936.jpg" width="500px" height="250px">
+</p>
+<h4><span style="color: rgb(95, 73, 122);">Frames :</span></h4>
+<p>
+	yeah! frames are also a very important part of this assembly. we have 3 frames with rectangular holes in form of 30 braille cells. We attached 2 frames together and these resulting frames served many puspose like keeping pin straight , keeping pins enclosed between them. and assisting in locking mechanism. so here are our acrylic frames:
+</p>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/IMG_20150614_182747.jpg">
+</p>
+<h4><span style="color: rgb(95, 73, 122);">stepper motor, wedge rack and lock assembly:</span></h4>
+<p>
+	yeah this assembly helps in locking pins of a specific column we are able to use use just on stepper motor to lock 30 columns with help of this mechanism this mechanism is possible because the locking of columns takes place consecutively in a sequential manner and use of stepper motor help us to lock a specific lock by moving a specific angle.
+</p>
+<p>
+	the locks has a protrusion in which the wedge pass through and pushes it from non locking position locking position.let see the picture:
+</p>
+<p>
+	<img src="http://homepages.iitb.ac.in/~140100072/IMG_20150617_054427.jpg">
+</p>
+<h5></h5>
+<h3></h3>

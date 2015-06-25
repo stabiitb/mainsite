@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Horizontal Synchronization of the OV7670 module </h5>
+									<div class="details white-text">
+										The OV7670 sends the data in a parallel synchronous format. First of all, to get any data out of the OV7670, is necessary to supply a clock signal on the XCLK pin. After a clock signal has been applied to the XCLK pin, the OV7670 will start driving its VSYNC, HREF and D0-D7 pins.
+									</div>
+								</div>

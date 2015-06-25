@@ -1,24 +1,4 @@
+<ul><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 10700.00 ($ 167.08)</strong> (including shipping &amp; customs): <br></span><ul><li><h5>4 turnigy (TGY-9018MG) micro metal gear servo</h5></li><li>1 turnigy 3000 mah 3s 20-30c discharge lipo battery</li><li>2 turnigy 1100kv brushless motor</li><li>2 630-BMS servo</li><li>2 30amp hobbyking esc </li><li>2 10*4.5 propeller</li></ul></li></ul><ul>
+<li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 210</strong></span><ul><li>bullet connector</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Silicon Electronics (Lamington Road), amounting to <strong>Rs 1460</strong>:</span><ul><li>balsa wood(2mm and 3mm)</li></ul></li><li><span style="color: rgb(0, 0, 0);">laser cutting of balsa wood from P.K.International (ghatkopar), amounting to <strong>Rs 400</strong>:</span></li><li><span style="color: rgb(0, 0, 0);">Components ordered from local workshop in mashjid bazar (mashjid market), amounting to <strong>Rs 1100</strong>:</span><ul><li>carbon rod(6mm and 8mm)</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Shriram Stationary Mart(near dadar station) to Rs 150:<br></span>
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
-<ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
-<ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
-<ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<li>styrofoam sheet</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span><ul><li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 270</strong></span></li><li><span style="color: rgb(0, 0, 0);">sand paper- <strong>Rs 30</strong></span></li><li><span style="color: rgb(0, 0, 0);">jumper wire,acrylic sheet-<strong>Rs 130</strong></span></li></ul></li></ul><ul><li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 14450.00</span></strong></li></ul>

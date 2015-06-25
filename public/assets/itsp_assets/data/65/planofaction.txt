@@ -1,13 +1,105 @@
-<h3>Week 1 (May 5th -11th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul>
-<li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
 <ul>
-<li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?<ul><li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
-<ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
-<ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
-<ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
-<ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+	<ul>
+		<ul>
+			<ul>
+				<ul>
+					<ul>
+						<ul>
+							<h3>Week 1 (May 5th -11th)</h3><ul>
+								<li>Planned</li>							</ul><p style="margin-left: 40px;">
+								Discussion on principle of vacuum cleaner. Checking the
+working of vacuum fan by building a prototype.
+							</p><p style="margin-left: 40px;">
+Learning use of HC-SR04 sensor and raspberry-pi.
+							</p><ul>
+								<li>Accomplished</li>							</ul><p style="margin-left: 40px;">
+								Discussed about the structure of vacuum cleaner and built its prototype.
+							</p><p style="margin-left: 40px;">
+								Learnt the use of HC-SR04 sensor and raspberry-pi.
+							</p><p style="margin-left: 40px;">
+							</p><p style="margin-left: 20px;">
+							</p><p style="margin-left: 20px;">
+							</p><p style="margin-left: 20px;">
+							</p><h3>Week 2 (May 12th- 18th )</h3><ul>
+								<li>Planned</li>							</ul><p style="margin-left: 40px;">
+								     Selecting and buying all the components.
+							</p><p style="margin-left: 40px;">
+								Configure Raspberry-pi with laptop.
+							</p><p style="margin-left: 40px;">
+								Control HC-SR04,brushless motor using arduino for testing purpose.
+							</p><p style="margin-left: 40px;">
+								Developing the algorithm for the bot to cover the entire room.
+							</p><ul>
+								<li>Accomplished</li>							</ul><p style="margin-left: 40px;">
+								Selected and bought almost all the components.
+							</p><p style="margin-left: 40px;">
+								We faced problems in configuring Raspberry-pi with laptop.So,we configured it with the PC in Tinkerers Lab.
+							</p><p style="margin-left: 40px;">
+								Control HC-SR04,brushless motor using arduino for testing purpose.
+							</p><p style="margin-left: 40px;">
+								Developed the algorithm.
+							</p><p style="margin-left: 80px;">
+							</p><h3>Week 3 (May 19th - 25th)</h3><ul>
+								<li>Planned</li>							</ul><p style="margin-left: 40px;">
+								Constructing the centrifugal forward curved fan and motor holder using 3-d printing.
+							</p><p style="margin-left: 40px;">
+								Building the skeleton of the vacuum cleaner.
+							</p><p style="margin-left: 40px;">
+								Controlling the dc motors,sensors and brushless  motor using Raspberry-pi.
+							</p><ul>
+								<li>Accomplished</li>							</ul><p style="margin-left: 40px;">
+								Constructed the centrifugal forward curved fan and motor holder using 3-d printing.
+							</p><p style="margin-left: 40px;">
+								Built the basic structure of vacuum cleaner.
+							</p><p style="margin-left: 40px;">
+								We were able to control dc motors,sensors using R-pi. However,we faced difficulty in running brushless motor.
+							</p><p style="margin-left: 40px;">
+							</p><p style="margin-left: 40px;">
+							</p><h3>Week 4 (May 26th - June 1st)</h3></ul><ul>
+							<ul>
+								<li>Planned</li>							</ul><p style="margin-left: 40px;">
+								Construction of the chassis and structure regarding wiping mechanism.
+							</p><p style="margin-left: 40px;">
+								Writing the code in raspberry-pi using the algorithm.
+							</p><ul>
+								<li>Accomplished</li>							</ul><p style="margin-left: 40px;">
+								Constructed the chassis and the basic structure of wiping mechanism.
+							</p><p style="margin-left: 40px;">
+								Our Raspberry-pi got fried due to some unknown reasons while controlling brushless motor.
+							</p><p style="margin-left: 40px;">
+								So,we bought Arduino Mega 2560.
+							</p><h3>Week 5 (June 2nd - June 8th)</h3><li>  Planned          </li>						</ul><p style="margin-left: 60px;">
+							Writing the code in arduino.
+						</p><p style="margin-left: 60px;">
+							Control the motion of our bot using arduino.
+						</p><p style="margin-left: 60px;">
+							Assembly of all the components of the bot.
+						</p></ul><li>Accomplished</li>				</ul><p style="margin-left: 120px;">
+					Wrote the code and controlled the motion of our bot and brushless motor using Arduino.
+				</p><p style="margin-left: 120px;">
+					However,the Arduino also got fried in the process.So,we bought another Arduino.
+				</p><p style="margin-left: 60px;">
+				</p><ul>
+					<ul>
+						<ul>
+							<ul>
+								<h3>Week 6 (June 9th - June 15th)</h3></ul><ul>
+								<ul>
+									<li>Planned</li>								</ul><p style="margin-left: 40px;">
+									Circuit design and its assembly.
+								</p><p style="margin-left: 40px;">
+									Testing of the various functions of our code.
+								</p><p style="margin-left: 40px;">
+									Testing of final algorithm.
+								</p><ul>
+									<li>Accomplished</li>								</ul><p style="margin-left: 40px;">
+									Designed and assembled the circuit.
+								</p><p style="margin-left: 40px;">
+									We tested various functions of our code.
+								</p><p style="margin-left: 40px;">
+									Finally,we tested our final code.
+								</p></ul></ul><p style="margin-left: 60px;">
+						</p><ul>
+							<ul>
+								<ul>
+									<h3></h3></ul></ul></ul></ul></ul></ul></ul></ul></ul>

@@ -1,0 +1,13 @@
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned</li></ul><p style="margin-left: 40px;">Discuss the basic structure to support the required degrees of freedom.</p><ul>
+<li>Accomplished</li></ul><p style="margin-left: 20px;">Discuss the basic structure to support the required degrees of freedom.</p><p style="margin-left: 20px;">Week 2 (May 12th- 18th )</p><ul><li>Planned                                                     
+<ul>
+<li>Learn how to operate the arduino boards and motors.</li><li>Buy some equipmen to start our project.</li></ul></li><li>What you have accomplished?<ul><li>Secured arduino uno micro-controller, servos and a stepper motor.</li><li>Defined a specific mode of input to control our bot.</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>Design a linear actuator and manufacture it.</li><li>configure the control board.</li></ul></li></ul><ul><li>What we achieved<ul><li>Decided the model of the actuator.</li><li>installed the servos.</li><li>Were able to power Servos and Stepper through external Power Supply.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<ul>
+<li>Manufacture a working prototype for the linear actuator and rod rotation.</li><li>Test continuous use performance for one of the four actuators.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>We ran into some problems while trying to get some of the compoents of the actuator base with a 3D printer.</li><li>made a new Actuator making use of already available Parts and with a little trial and error, we were able to manufacture our first working linear actuator.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<ul>
+<li>Complete the Coding required to control the bot with a Game pad.</li><li>Code suitable instruction to obtain the required amount of linear as well as rotational motion.</li><li>Make another three of the same Liner actuators.</li></ul></li></ul><ul><li>What you have accomplished?
+<ul>
+<li>We were able to duplicate the the actuators.</li><li>we were able to control the linear motion adequately but were jnable to make use of the servos for rotation as we had hoped for.</li></ul></li></ul>

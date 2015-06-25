@@ -1,24 +1,10 @@
+<ul><li><span style="color: rgb(31, 73, 125);"><strong>Components ordered from Silikon(lamington road)</strong>- amounting to <strong style="color: rgb(0, 0, 0);">Rs 2200</strong></span><br>
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
+<li><span style="color: rgb(54, 96, 146);">Turnigy Lipo battery (3 cell, 11.1V , 2200mAh )</span></li><li><span style="color: rgb(54, 96, 146);">Propeller (8 inch..</span></li></ul></li><li><span style="color: rgb(54, 96, 146);"><inline style="color: rgb(0, 0, 0);"></inline></span><strong><span style="color: rgb(31, 73, 125);">Component bought from Masjid(Near CST )</span></strong>- Amounting to <strong style="font-family: inherit; font-style: inherit; font-variant: inherit; color: rgb(0, 0, 0);">Rs 100</strong>
 <ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
+<li><span style="color: rgb(54, 96, 146);">Skirt (Raincoat material ) :2x2 meter sq.</span></li><li><span style="color: rgb(54, 96, 146);">Styrofoam : 2 pieces</span></li></ul></li><li><span style="color: rgb(54, 96, 146);"><inline><inline><inline><inline><inline><inline><inline><strong>Component bought from Mangaldeep</strong> - Amounting <strong> </strong>to<strong> <inline style="color: rgb(0, 0, 0);">Rs 80</inline></strong></inline></inline></inline></inline></inline></inline></inline></span><br>
 <ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
-<ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<li><span style="color: rgb(54, 96, 146);">Bondtite</span></li><li><span style="color: rgb(54, 96, 146);">Double sided tape</span></li><li><span style="color: rgb(54, 96, 146);">Yellow tape</span></li></ul></li><li><span style="color: rgb(54, 96, 146);">
+<hr><strong>Components obtained from other sources (RC Plane friends, seniours, and Tinkers lab )</strong></span><ul>
+<li>2 Brushless Motors ( 1400 mAh each ) amounting to <inline style="color: rgb(149, 55, 52);"> 1200*2=2400</inline></li><li>2 ESC <span style="color: rgb(149, 55, 52);">amounting to 600*2=1200</span></li><li>2 Servo motors <span style="color: rgb(149, 55, 52);">amounting to 50*2=100</span></li><li><span style="color: rgb(54, 96, 146);">Cello Tape</span></li><li><span style="color: rgb(54, 96, 146);">Electric Tape </span></li><li><span style="color: rgb(54, 96, 146);">styrofoam </span></li><li><span style="color: rgb(54, 96, 146);">Chloroplast</span></li><li><span style="color: rgb(54, 96, 146);">Bondtide</span></li><li><span style="color: rgb(54, 96, 146);">light
+plywood stripes<br></span></li><li><span style="color: rgb(54, 96, 146);">Thermocol</span></li><li><span style="color: rgb(54, 96, 146);">Wires</span></li><li><span style="color: rgb(54, 96, 146);">Golden connecter</span></li></ul></li></ul><ul><li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 2380</span></strong></li></ul>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									1st 2D prototype</h5>
+									<div class="details white-text">
+										Metal frame and brushless motor
+									</div>
+								</div>

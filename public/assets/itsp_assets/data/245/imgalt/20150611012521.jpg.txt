@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The Gesture Glove</h5>
+									<div class="details white-text">
+										It is fitted with 3 flex sensors and 2 accelerometers, they will control our Mechanical hand with the help of servos and arduino.
+									</div>
+								</div>

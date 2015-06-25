@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									RGB color model</h5>
+									<div class="details white-text">
+										Any color can be decomposed in red, green and blue light at different intensities. This approach is known as the RGB color model. Using this model, each pixel must be stored as three intensities of these red, green and blue lights.
+									</div>
+								</div>

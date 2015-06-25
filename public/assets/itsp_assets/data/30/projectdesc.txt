@@ -1,2 +1,1 @@
-<p><em><span style="color: rgb(247, 150, 70);">Click here to write the project desciption.</span></em></p><p>
-<span style="color: rgb(247, 150, 70);"></span></p><p><em><span style="color: rgb(247, 150, 70);">To edit any section, click on the text of that section.</span></em></p>
+<p>DRIVE IT YOUR WAY</p>

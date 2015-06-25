@@ -1,0 +1,5 @@
+<p>
+	Basically our bot uses the differential mechanism to turn around</p><p>
+	the L293D have property that it will turn the motor depending on the voltages we give across the terminal</p><p>
+	_______________________________________________
+	<img src="http://s5.postimg.org/gx6f9xwzb/L293_D_pins.png">_____________________________________________________</p><p style="margin-left: 20px;">THE DIFFERENTIAL MECHANISM :</p><p style="margin-left: 20px;">In this tyoe of mechanism the one side of the two travels slower than the other while turning .</p><p style="margin-left: 20px;">usually the on road cars also have differential .</p><p style="margin-left: 20px;">ours is the most basic one </p><p style="margin-left: 20px;"></p><p style="margin-left: 20px;">when you turn , say right , the right side tyres stop and left side moves thus turns the bot right </p><p style="margin-left: 20px;"></p>

@@ -1,1 +1,2 @@
-<p>Planes with VTOL need very less space for take off and landing. Thus with proper use of VTOL planes we can decrease the size of airports in cities.</p><iframe width="560" height="315" src="//www.youtube.com/embed/e7QNbU71lsA" frameborder="0" allowfullscreen=""></iframe><p><strong><br></strong></p>
+<p>The Cubli is effectively a reaction wheel based 3D inverted pendulum. Inverted pendulum systems are an indispensable part of the controls
+community, and the Cubli's features make it unique compared to other 3D inverted pendulum test-beds.</p><iframe width="854" height="510" src="https://www.youtube.com/embed/n_6p-1J551Y" frameborder="0" allowfullscreen=""></iframe>

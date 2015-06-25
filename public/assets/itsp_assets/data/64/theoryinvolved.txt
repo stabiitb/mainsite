@@ -1,1 +1,2 @@
-<ul><li>-</li></ul>
+<ul>
+<li>Sensors give the input of current conditions.</li><li>Website, pushbutton gives the user input, if any.</li><li>Arduino receives all the inputs.</li><li>If the current mode is auto, it sets the state of the appliances automatically based on the sensor input. </li><li>Otherwise, it waits for an input by pushbutton or website and then sets the required state.</li><li>Once the mode is manual, user has to set it back to auto mode manually if required.</li><li>For setting the state of light/fan, relay is used. A dimmer circuit is added to control the light brightness/fan speed.</li><li>In case of air conditioner, an IR LED is used to send signals like its remote.</li></ul>

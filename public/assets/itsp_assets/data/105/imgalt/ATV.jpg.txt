@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									All terrain bot circuit</h5>
+									<div class="details white-text">
+										The circuit with arduino uno,xbee, breadboard and ic 7805 circuit board.
+									</div>
+								</div>

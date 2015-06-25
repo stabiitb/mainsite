@@ -1,1 +1,1 @@
-<ul><li><span style="color: rgb(0, 0, 0);">Components used :<br>     --&gt; Two cameras (of  logitech).... <br>     --&gt; And a printed keyboard ........<br><br></span></li></ul>
+<ul><li><span style="color: rgb(0, 0, 0);">Two cameras (of good quality) </span></li><li><span style="color: rgb(0, 0, 0);">Printed keyboard of blue colour<br>      We chose blue color to get perfect hand detection( 'coz its no where near skin color range).<br></span></li><li><span style="color: rgb(0, 0, 0);">A stand to hold the cameras fixed</span></li></ul>

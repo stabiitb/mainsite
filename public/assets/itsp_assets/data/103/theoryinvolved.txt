@@ -1,0 +1,2 @@
+<h3>Theory involved in OCR is:-</h3><ul>
+</ul><ul><li>Pre-processing :-     Binarization (local thresholding), erosion, dilation, matrix operations, edge detection, identifying words and sentences.</li><li>character recognition:-  weighted comparison.</li><li>Post-processing:-  dictionary implementation.</li></ul>

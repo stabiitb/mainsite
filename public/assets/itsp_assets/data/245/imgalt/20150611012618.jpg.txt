@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The complete project</h5>
+									<div class="details white-text">
+										This is our mechanical design along with the gesture glove, the main components of these are the flex sensors ,accelerometers and the servos.
+									</div>
+								</div>

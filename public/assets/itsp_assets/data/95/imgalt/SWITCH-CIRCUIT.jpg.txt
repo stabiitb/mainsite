@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Circuit Diagram for Button Trigger	</h5>
+									<div class="details white-text">
+										The trigger button has been added in proximity to the spray button of the actual spray and has so placed that pressing the spray also presses the button switch and triggers the whole mechanism of the device. The trigger pin has been connected to pin-12 of the Arduino board.
+									</div>
+								</div>

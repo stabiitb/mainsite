@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Final Robot.</h5>
+									<div class="details white-text">
+										This is the picture of the final sturcture of the robot.
+									</div>
+								</div>

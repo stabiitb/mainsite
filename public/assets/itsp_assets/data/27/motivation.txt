@@ -1,6 +1,6 @@
 <p>Considering the increase in number of online 
 drives but for all ,a different account and 
-comparitively smaller offered storage 
+comparatively smaller offered storage 
 individually, this program is an effort to solve
 problems of multiple storage and no 
 universal access to them.  One more problem being faced is the limit of 

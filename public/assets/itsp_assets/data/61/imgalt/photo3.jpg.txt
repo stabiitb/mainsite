@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Circuit Board</h5>
+									<div class="details white-text">
+										This is the circuit of the project consisting of ATMega2560, 7805 IC, switch, etc.
+									</div>
+								</div>

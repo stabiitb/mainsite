@@ -1,13 +1,38 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
-<ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
-<ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
-<ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<div><strong><em><br></em></strong><p><strong><em>Week 1 (May 5th -11th)</em></strong></p><ul>
+<li>•Project idea discussed in detail</li><li>•Features to be implemented decided</li><li>•Work distribution done</li></ul><p><strong><em>Week 2 (May 12th- 18th)</em></strong></p><ul>
+<li>•Component list decided</li><li>•Components procured</li><li>•Background reading on theory of OV7670 camera module
+and its functioning </li><li>•Background reading on functioning of Bluetooth modules</li><li>•Background reading on implementation of a remote
+trigger button via RF communication</li><li>•Preliminary code to read a byte from camera module
+written in Arduino</li></ul><p><strong><em>Week 3 (May 19th - 25th)</em></strong></p><p><strong>Software</strong></p><ul>
+<li>•Team members attended a workshop on Android
+development</li><li>•Work on Android app begun</li></ul><p><strong>Hardware</strong></p><ul>
+<li>•Remote triggering abandoned post Review meet 1 –
+decided that the button will be placed on the body of the device</li><li>•High power LED circuit designed and implemented</li></ul><p><strong><em>Week 4 (May 26th – June  1st)</em></strong></p><p><strong>Software</strong></p><ul>
+<li>•Basic GUI of the Android app completed</li><li>•Bluetooth code written for Android app; pairing,
+connection and data transfer between HC-05 Bluetooth module and Android phone
+successful</li><li>•Code written to convert a byte array to JPEG image on
+Android and save in a custom directory</li><li>•SMS sending feature implemented and tested; delay time
+studied and found negligible</li><li>•Usage History feature implemented in Android; ListView
+created with temporary sample images</li><li>•Emergency Contacts feature implemented in Android;
+Contacts application synced with PepperShield application to allow addition and
+deletion in the section of emergency contacts</li></ul><p><strong>Hardware</strong></p><ul>
+<li>•Input bytes received from camera module; single frame
+sampled in byte form </li><li>•Stream of bytes sent out from Bluetooth module and
+received by Android app</li><li>•Implementation of servo motor with rack and pinion
+mechanism to push the nozzle of the spray remotely</li></ul><p><strong><em>Week 5 (June 2nd - June 8th)</em></strong></p><p><strong>Software</strong></p><ul>
+<li>•Usage History feature completed</li><li>•Background service (that handles Bluetooth
+communication, data reception and storage, image processing and conversion)
+successfully completed</li><li>•Testing and debugging of image processing code
+(conversion of raw camera data to JPEG image)</li><li>•MMS sending initiated by generation of a custom
+multimedia message with the image just captured, along with a default help
+message</li></ul><p><strong>Hardware</strong></p><ul>
+<li>•Debugging of image code; camera failed to give a
+correct image output</li><li>•Bluetooth module configured in AT command mode; baud
+rate set to the maximum to reduce image transfer time to a minimum</li><li>•Servo mechanism for nozzle abandoned after Review meet
+2, in favour of direct spraying to eliminate any delay in response due to motor</li><li>•Trigger mechanism implemented and integrated with the
+nozzle of the spray</li></ul><p><strong><em>Week 6 (June 9<sup>th</sup> – June 15<sup>th</sup>)</em></strong></p><p><strong>Software</strong></p><ul>
+<li>•Location, date and time saved with every usage of the Android
+app service</li><li>•Location integrated into SMS sending feature</li><li>•Android app completed</li><li>•Exception handling of Java code</li></ul><p><strong>Hardware</strong></p><ul>
+<li>•Image successfully captured, transferred, processed
+and saved in under 30 seconds</li><li>•LED flash deprecated (found to blur the image by
+excessive brightness)</li><li>•Final product created as a single integrated module</li><li>•Successful testing of PepperShield device.</li></ul></div>

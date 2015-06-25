@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									VGA timing of the OV7670 camera module</h5>
+									<div class="details white-text">
+										The image above shows the signals for a "VGA" (640 x 480) frame. During HSYNC high state, we must capture 640 pixels, equivalent to a line. The 480 lines, equivalent to a frame, are captured during the low state of VSYNC. This means that the falling edge of VSYNC signals the start of a frame, and its rising edge signals the end of a frame.
+									</div>
+								</div>

@@ -1,0 +1,35 @@
+<h3>Week 1 (May 5th- 12th )</h3><ul>	
+<li>Planned<br>
+<ul>		
+<li>Implementing the 'Ball'.</li>		
+<li>Learning and implementation of Observer Patter</li>	</ul></li>	
+<li>Accomplished 	
+<ul>		
+<li>Implemented Observer Pattern successfully.</li>	</ul></li></ul><h3>Week 2 (May 13th- 18th )</h3><ul>	
+<li>Planned 	
+<ul>		
+<li>Implementing the 'Team' and 'TeamStrategy'.</li>		
+<li>Learning and implementation of Strategy Pattern</li>	</ul></li>	
+<li>Accomplished 	
+<ul>		
+<li>Implemented strategy Pattern successfully.</li>	</ul></li></ul><h3>Week 3 (May 19th- 25th )</h3><ul>	
+<li>Planned 	
+<ul>		
+<li>Implementing the 'Player'.</li>		
+<li>Learning and implementation of Decorator Pattern</li>	</ul></li>	
+<li>Accomplished 	
+<ul>		
+<li>Implemented Decorator Pattern successfully.</li>	</ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>	
+<li>Planned<br>
+<ul>		
+<li>Implement 'Playground'</li>	</ul></li>	
+<li>Accomplished
+<ul>		
+<li>We decided 'Playground' was a later worry, started working on the simulation algorithm.</li>	</ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>	
+<li>Planned 
+<ul>		
+<li>Interface the system</li>	</ul></li></ul><ul>	
+<li>Accomplished
+<ul>		
+<li>Finished implementation of simulation algorithm</li>		
+<li>The structure and algorithm yet to be interfaced</li>	</ul></li></ul>

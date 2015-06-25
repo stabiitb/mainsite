@@ -1,1 +1,15 @@
-<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul><li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li></ul>
+<p>
+	For the completion of your project , we are thankful to Team STAB and Electronics Club, IIT Bombay.
+	<br>
+	<br>
+	We referred to the following sources:
+</p>
+<ul>
+	<li><a href="http://www.arduino.cc/">Arduino</a></li>
+	<li><a href="http://www.atmel.com/tools/FLIP.aspx">Atmel Flip</a></li>
+	<li><a href="http://www.arduino.cc/en/Hacking/DFUProgramming8U2">DFU</a></li>
+	<li><a href="http://www.i2cdevlib.com/devices/mpu6050#source">I2C communication for MPU-6050 using Arduino UNO</a></li>
+	<li><a href="https://youtu.be/BUL1qDo5NYk">Binocular renering</a></li>
+	<li><a href="http://trinusvr.com/">Trinus Gyre VR</a></li>
+	<li><a href="https://developers.google.com/cardboard/">Google Cardboard</a></li>
+</ul>

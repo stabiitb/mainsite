@@ -1,1 +1,1 @@
-<p>We have made a website prototype that plays music according to your mood. A python script detects mood of the person by detecting facial expressions.Then music is played accordingly. For example if a person is sad, songs tagged 'motivational' will be played.</p>
+<p><strong>We have made a website prototype that plays music according to your mood. A python script detects mood of the person by detecting facial expressions. Then music is played accordingly. For example if a person is sad, songs tagged 'motivational' will be played.</strong></p>

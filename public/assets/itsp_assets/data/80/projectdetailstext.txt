@@ -1,1 +1,53 @@
-<p>Clich here to edit it</p>
+<ul>
+	
+<li>HOW WE REACHED TOWARDS OUR PROJECT:
+	
+<ul>
+		
+<li>Use the 3 axis gyroscope/accelerometer, MPU-6050 with an Arduino Uno and communicate via the I2C protocol to get the values of Roll, Pitch &amp; Yaw to be printed on the screen using Serial communication.</li>		
+<li>Coding the atmega16u2 on the Arduino Uno using DFU (Device Firmware Update) programming and replacing the original Arduino firmware with a Mouse firmware/Keyboard firmware using the library LUFA (Lightweight USB Framework for AVRs) and testing them with example codes.</li>		
+<li>Using the Yaw &amp; pitch values of the MPU-6050 with the Arduino Uno (with the mouse Firmware) for measuring the user's head movement and use it as movement for the mouse.</li>		
+<li>Using 2 buttons (1 for left and 1 for right click) and the head movement for motion, completed the mouse.</li>		
+<li>Using simple push buttons and an Arduino Uno (with the Keyboard firmware) completed a prototype for a keyboard.</li>		
+<li>Streaming the PC display to a mobile phone, applying binocular rendering using USB tethering and the application Trinus Gyre VR.</li>		
+<li>Fitted different kinds of switches at appropriate locations on the gun, the head-mount and the headphone and changed the code slightly according to the switches..</li>		
+<li>Fixed the Arduinos and the sensor on a PCB and made all the connections to the switches.</li>		
+<li>Fixed the head-mount (The Google Cardboard, The PCB and connections to the switches).</li>		
+<li>Completed the head mount using band and foam.</li>	</ul></li></ul><ul>
+	
+<li>HOW OUR FINAL PROJECT WORKS:
+	
+<ul>
+		
+<li>A MPU-6050 gyroscope is mounted inside the head mount and connected to an Arduino. It communicates with the Arduino using an I2C protocol. Using the sensor we get the values of Yaw, pitch and roll, and use them for recording the user's head movement.</li>		
+<li>The difference in the readings (in the current loop from the previous loop) is sent to the atmega16u2, properly calibrated (multiplied by appropriate constants so that the user's motion is exactly replicated in the game) using Serial communication.</li>		
+<li>Various buttons are connected all over the controller which are connected as inputs to the Arduinos ( 2 for mouse and 17 for keyboard). Whenever a switch is pressed the corresponding input pin is driven low and thus recorded by the Arduino.</li>		
+<li>The atmega16u2 takes inputs from the atmega328 of the Arduino via Serial communication. The atemga16u2 is coded with the firmware of a mouse and a keyboard instead of its original Arduino firmware. The computer interprets the Arduinos as a USB HID device (mouse &amp; keyboard) and thus the buttons of the controller act as key presses (of the keyboard and the mouse) and the head movement acts as the movement of the mouse.</li>		
+<li>The head mount also has a slot for a mobile phone to be placed. The mobile is connected to the PC via USB tethering. Using the app Trinus Gyre VR installed on both the PC and the phone, the PC display is streamed to the phone, applying binocular rendering, suitable for Google Cardboard 5.5".</li>		
+<li>Right in front of the phone, we have a Google Cardboard fitted, which has appropriate lenses so that the distance between the display and the eyes becomes more than the least for a disticnt vision and a 3-D effect is created for the display.</li>	</ul></li>		<br>
+	
+<li>HOW TO USE:
+	
+<ul>
+		
+<li>Install Trinus Gyre VR application in both pc and mobile.</li>		
+<li>Connect your mobile with the laptop via a USB cable.</li>		
+<li>Turn on USB tethering in your phone, turn on the application on both the PC and the phone and place it inside the head mount.</li>		
+<li>Make sure your pc settings for sleep is : do nothing.</li>		
+<li>Connect the head mount to the PC via 2 USB Cables and 1 AUX wire.</li>		
+<li>Start counter-strike and close the lid of the laptop, and put it inside your bag, with the cables out.</li>		
+<li>Wear the head-mount, hold the gun and enjoy the best Counter Strike experience ever.</li>	</ul></li>	<br>
+	
+<li>PROBLEMS FACED:
+	
+<ul>
+		
+<li>The MPU-6050 didn't give accurate readings all the time. We had a tough time calibrating it. Also once the controller is connected it gives random values for a few seconds and hence the mouse moves on its own.</li>		
+<li>The head-mount is slightly heavy and it itches in the nose because of lack of proper foaming and it is tough to wear it for more than 10 minutes.</li>	</ul></li><br>
+	
+<li>LIMITATIONS AND FUTURE DEVELOPMENTS:
+	
+<ul>
+		
+<li>The USB and audio cables restrict the free motion of the user. Making wireless communication between the PC, gun and headgear will make it easy for movement during the game.</li>		
+<li>Using techniques such as image processing, thus capturing what the player is actually doing and using it to control the game.</li>	</ul></li></ul><p style="margin-left: 20px;"></p>

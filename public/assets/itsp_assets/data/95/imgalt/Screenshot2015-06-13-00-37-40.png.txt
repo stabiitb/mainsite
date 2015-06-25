@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Emergency Contacts Button pressed </h5>
+									<div class="details white-text">
+										This ‘Emergency Contacts’ button allows the user to change the list of contacts he/she wants the app to send message to in case the PepperShield is used. This list can contain several emergency contacts (like 100, 181, etc which cannot be deleted ; here we have added 9969777888 as the emergency number for women’s safety) as well as some personal contacts (like family and friends) and these numbers can be chosen from the ‘Contacts’ of the android device of the user.
+									</div>
+								</div>

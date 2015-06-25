@@ -1,6 +1,16 @@
-<div><ol>
-</ol><p>Flight Control Board( KK 2.1.5): This board helps to stabilise the plane. It has gyrometer and accelerometer in it.</p><p>It also helps in the transition from one mode to the other mode.</p><p>Motor tilting mechanism:<img src="http://fpvcentral.net/wp-content/uploads/2014/03/kk215.jpg" alt="" style="width: 199px; float: right; margin: 0px 0px 10px 10px;"></p><p>Actually we tried 3 tilting machanisms but each one had its own drawbacks.Model 1:</p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></p><p><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></p><p>Problems Faced:</p><p>Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</p><p>Model 2:</p><iframe width="560" height="315" src="//www.youtube.com/embed/_EoRfX4KBD8" frameborder="0" allowfullscreen=""></iframe></div><iframe width="560" height="315" src="//www.youtube.com/embed/OmetQEKIyfk" frameborder="0" allowfullscreen=""></iframe>
-<div>Problems Faced:</div>
-<div>To increase the strength of this mechanism we had to use small pieces of ply which increased the weight of the plane. The big compartments used in this mechanism also decreased the exposure value of propellers. Hence the 4 motors were not able to lift up the plane. </div>
-<div>Model 3:<br><iframe width="560" height="315" src="//www.youtube.com/embed/5HJ5QXE1sdM" frameborder="0" allowfullscreen=""></iframe>
-</div><ol>Problems Faced:<br> Since the whole body was handmade it was unsymmetrical. The plane was not stable in hover mode </ol>
+<ol>
+</ol><p>
+	Our project has camera and gun controlled by android application. To implement this we need to the following things :-</p><p>
+	<strong>Pan-Tilt Mechanism :</strong></p><p>
+	To provide gun and camera two rotational degrees of freedom we implemented a pan-tilt mechanism. Pan-Tilt mechanism uses two servo motors for 360 degrees of rotational freedom.</p><p>
+	<img src="http://s3.postimg.org/gf5up2edf/image010.jpg" style="width: 324px;"></p><p>
+	Thus we mounted webcam and gun at axis of tilt in the following mechanism shown using laser cut clamps and servos :</p><p>
+	<img src="http://s4.postimg.org/vtxpyaje5/pan_tilt_assembeled.jpg" style="width: 335px;"></p><p>And for gun trigger we used an extra servo at its trigger .</p><p>
+	<strong>Image Processing :</strong></p><p>
+	Image processing is used to detect contour of ball (in our case) is done on laptop itself so as to have high fps(frames-per- seconds). Image processing is done on python which uses <a href="https://en.wikipedia.org/wiki/OpenCV">OpenCV</a> library to create a mask and then to detect the contour.</p><p>
+	<img src="http://s13.postimg.org/3ypkhysef/13832083755299209.jpg" style="width: 500px;"></p><p>
+	Masking and contour detection,then detection of its center</p><p>
+	<strong>Serial Communication and Bluetooth Module :</strong></p><p>
+Serial communication was incorporated to serially send data i.e coordinates of center of ball to Arduino Mega as detected by image processing code.</p><p>Bluetooth Module is needed to communicate between android application and system.</p><p><img src="http://s28.postimg.org/rstwqomhp/FM8_W4_A2_HKZAVRT9_LARGE.jpghttp://s28.postimg.org/rstwqomhp/FM8_W4_A2_HKZAVRT9_LARGE.jpg" style="width: 504px;"></p><p>
+Arduino Code uses a PID algorithm to make camera follow that object in which error is distance moved by center of ball.</p><p><strong>Server Setup :</strong></p><p>
+We created a server that continuously streams MJPEG images at high fps to our Android application . </p><p><img src="http://s3.postimg.org/sadhfdqdf/live_streaming.png" style="width: 395px;"></p><p><strong><br></strong></p><p><strong>Android Application :</strong></p><p>Also we created our own android application to show video which is streamed by server and to have two options of manual and automated gun con</p><p>In automated gun control webcam will follow object and in will shoot on pressing shoot button on android app whereas in manual control user will follow object shown on android application.</p><p><img src="http://s3.postimg.org/4jw0wv2rn/images.jpg"></p>

@@ -1,0 +1,5 @@
+<h5>
+Learning the various 
+<a href="https://en.wikipedia.org/wiki/Software_design_pattern">design patterns</a> in the software engineering world, implementing a few.  Maintaining  the system in Python.
+</h5><iframe width="420" height="345" src="http://www.youtube.com/embed/0mhntObOdt8">
+</iframe>

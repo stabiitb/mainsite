@@ -1,0 +1,2 @@
+<p><em><strong><span style="color: rgb(255, 255, 255);">Applying design patterns to solve various problems arising in designing football engine</span></strong></em></p><p>
+<span style="color: rgb(247, 150, 70);"></span></p>

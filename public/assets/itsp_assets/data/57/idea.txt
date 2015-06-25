@@ -1,0 +1,6 @@
+<p>
+	The design pattern that were learnt and implemented were 
+	<strong>Observer</strong>, <strong>Decorator </strong>and <strong>Strategy</strong>.</p><iframe width="420" height="345" src="http://www.youtube.com/embed/Ocqj4vyzeQQ">
+</iframe><iframe width="420" height="345" src="http://www.youtube.com/embed/UXvnO3LGC6c">
+</iframe><iframe width="420" height="345" src="http://www.youtube.com/embed/0PuxVZoQcKs">
+</iframe>

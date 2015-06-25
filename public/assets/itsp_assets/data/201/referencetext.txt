@@ -1,2 +1,1 @@
-<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
-<li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li></ul>
+<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul><li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li><li><a href="http://diydrones.com">DIY DRONES</a></li><li><a href="http://playground.arduino.cc/">ARDUINO PLAYGROUND</a></li><li><a href="http://forum.arduino.cc/">ARDUINO FORUM</a></li></ul>

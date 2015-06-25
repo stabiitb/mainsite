@@ -1,13 +1,16 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th -11th)</h3><p style="margin-left: 20px;"></p><p style="margin-left: 20px;">-&gt;Talk
+to seniors and mentor and decide plan of action and the required materials.</p><ul><li>Planned the materials required and bought it from the lamington road</li></ul><ul><li>Planned planned the distribution of the work among the team members distributing the coding, mechanical and electrical work separately among the individuals</li></ul><p style="margin-left: 40px;"></p><p style="margin-left: 40px;"></p><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Learned
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>the basic working of raspberry pi and installation of operating system on the raspberry piusing videos on the internet</li><li>using the raspberry pi camera using raspberry pi commands</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Done the installation of Operating system on the raspberry pi board and learned some LX terminal commands to operate raspberry pi board.</li><li>ensured the working of raspberry pi camera using terminal commands</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
 <li>What you have planned ?:
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
+<li>Learn coding in python and html </li><li>install and learn webiopi on the raspberry pi to operate raspberry pi through internet easily</li><li>configuring the camera to get live video feed of the outside door area</li></ul></li></ul><ul>
 <li>What we achieved
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Completed with getting the live video feed through internet</li><li>installed and learned webiopi and html and created the buttons for camera to get live video feed</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>learning the bread board connections for the motor with the gpio pins of the raspberry pi board</li><li>controlling the gpio pins of the raspberry through buttons created by html coding through internet</li></ul></li><li>What you have accomplished?<ul><li>motor running perfectly i.e. accomplished bread board conection of the motor</li><li>learned controlling the gpio pins easily through intenet</li><li>controlled motor through our website succesfully</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?<ul><li>installation of the lock and the door opening system ona door</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>Completed the installation of the system</li><li>ensured its working</li></ul></li></ul>

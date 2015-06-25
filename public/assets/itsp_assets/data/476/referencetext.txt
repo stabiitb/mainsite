@@ -1,0 +1,6 @@
+<p>
+	For the completion of your project , We are strongly thankful to MnP Club , Team STAB and IIT-Bombay
+	<br>
+	<br>
+	We also referred to the following sources :</p><ul>
+	<li><a href="http://www.google.co.in">Google</a></li>	<li><a href="http://www.amazon.in">Amazon</a></li>	<li><a href="http://www.youtube.com/watch?v=Q3oItpVa9fs">Cymatics</a></li></ul>

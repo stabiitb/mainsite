@@ -1,5 +1,1 @@
-<p>We
-aim to build an  obstacle avoiding bot that uses
-a (ultrasonic) sensor to detect obstacles and avoid them accordingly. In
-addition to this we wish to add a GPS system to this bot so that we can define a destination for the bot and hence the bot will avoid the
-obstacle on the way.</p>
+<p>The project involves developing a land robot which can find its way to a programmed final location. It takes the shortest possible path from its initial location, while avoiding any obstacles it might encounter on its way.</p>

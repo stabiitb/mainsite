@@ -1,13 +1,18 @@
-<h3>Week 1 (May 5th -11th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul>
-<li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
+<h3>Week 1 (May 5th -11th)</h3><ul><li>What you have planned ?<br><ul><li>The basic theory behind the project</li><li>Components required</li></ul></li></ul><ul><li>What you have accomplished?<br><ul><li>Complete theory was prepared</li><li>Some basic components were finalized</li></ul></li></ul><p style="margin-left: 20px;"></p><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>What you have planned ?<br><ul><li>Finalizing all the electrical components and buy it</li><li>Learn some basic softwares like Arduino, Eagle, AVR</li></ul></li><li>What you have accomplished?
 <ul>
-<li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?<ul><li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<li>Ordered all the electrical components and bought the basic stuff (wires, etc)</li><li>Learnt basic Arduino, Eagle, AVR (Atmega 32)</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
+<li>Buy the mechanical parts like plywood, nuts and bolts, etc</li><li>Start coding with the Ultrasonic Sensor and Piezo Sensor</li></ul></li></ul><ul>
+<li>What we achieved
 <ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<li>Bought plywood and gave the skateboard the desired shape and size</li><li>Ultrasonic Sensor successfully tested</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>Get the necessary strong (capable of bearing weight of a person) wheels</li><li>Fit the wheels with the skateboard</li><li>Study the connections (connectors) needed for series and parallel connections of the batteries</li><li>Program the ESC (Electronic Speed Controller)</li></ul></li><li>What you have accomplished?<ul><li>Got the desired wheels but not able to attach them with the skateboard :(</li><li>Connectors and necessary stuff were ordered</li><li>ESCs were ready</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?<ul><li>Attach the wheels, batteries and all the sensors with the skateboard</li><li>Make some way out to apply brakes to skateboard</li><li>Complete the electrical circuit on Arduino containing Piezo, Ultrasonic Sensors and ESCs</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>All parts were successfully attached</li><li>Circuit was ready but wires of that much capacity were not available</li><li>Brakes were still left</li></ul></li></ul><h3>Week 6 (June 9th - June 14th)</h3><ul>
+<li>What you have planned ?
 <ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
+<li>Make the brakes and start testing the skateboard</li><li>Debugging</li></ul></li><li>What you have accomplished?
 <ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Brakes were successfully finished</li><li>Skateboard was tested and debugged the bugs</li></ul></li></ul>

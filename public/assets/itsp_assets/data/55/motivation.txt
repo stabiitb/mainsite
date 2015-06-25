@@ -1,1 +1,1 @@
-<p>People need to walk some short distance to</p>
+<p>During any journey, people need to walk some short distance to either reach the place or change the mode of transportation (say train in most of the cases).</p><p>Even in some institutes where vehicles are not allowed, people either use cycles or go on foot. So this project can help most of these people as you just need to stand on it and use your gestures to reach the place.</p><p style="text-align: center;"><img src="http://www.iitbombay.org/news/Current/tumtum.jpg" style="width: 388px;"></p>

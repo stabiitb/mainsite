@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Complete Circuit Diagram</h5>
+									<div class="details white-text">
+										This image explains all the connections which have been made between the different components in a detailed manner
+									</div>
+								</div>

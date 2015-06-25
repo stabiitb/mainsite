@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									THE FINAL MODEL</h5>
+									<div class="details white-text">
+										the 2 dimensional model that will be used to find the books
+									</div>
+								</div>

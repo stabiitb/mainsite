@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Forward Current (mA) vs Forward Voltage (V) for the High Power Flash LED</h5>
+									<div class="details white-text">
+										The graph illustrates the nominal operating conditions of this LED in our device (3V forward voltage across the LED @ ~300mA, producing approximately 0.85 X (typical luminous flux = 105 lumens).
+									</div>
+								</div>

@@ -1,0 +1,46 @@
+<p> Commands are sent from computer to Arduino using Xbee to move the bot forward ,backward or to stop the bot.</p><p>The Arduino program:
+</p><p><strong><span style="color: rgb(118, 146, 60);">void setup()</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);"> {</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  Serial.begin(9600); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">pinMode(5,OUTPUT); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">digitalWrite(5,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+pinMode(6,OUTPUT);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+digitalWrite(6,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+pinMode(7,OUTPUT);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+digitalWrite(7,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+pinMode(9,OUTPUT);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+digitalWrite(9,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+pinMode(10,OUTPUT); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">digitalWrite(10,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+} </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">void loop() </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">{</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+}</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+void serialEvent()</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+{</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  while(Serial.available()&gt;0)</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+{ char c= Serial.read();</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+if(c=='w') </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">  {</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(7,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(6,HIGH); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(5,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(10,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(9,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">  }</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+ else </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);"> if(c=='s') </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);"> {</span></strong></p><p><span style="color: rgb(118, 146, 60);"><strong>  digitalWrite</strong><strong>(7,HIGH);</strong></span></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(5,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(6,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(9,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(10,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  }</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">else
+  if(c=='x')</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  {</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">digitalWrite(7,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(6,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(5,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(10,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(9,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  }</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  else
+  if(c=='a')</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  {</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">digitalWrite(7,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(6,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(5,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(10,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(9,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  }</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  else
+  if(c=='d')</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+  {</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">digitalWrite(7,HIGH);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(6,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(5,LOW);</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+    digitalWrite(10,HIGH); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">    digitalWrite(9,LOW); </span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">  }</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+}</span></strong></p><p><strong><span style="color: rgb(118, 146, 60);">
+}</span></strong></p>

@@ -1,3 +1,1 @@
-<ul>
-<li>Basics Of Arduino</li></ul><ul>
-<li>Guide for serial communnication between c++ and arduino.</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>
+<ul><li>Basics Of Arduino</li></ul><ul><li>Guide for serial communnication between c++ and arduino.</li><li>Coding involved in the functioning of servo and stepper motors.</li><li>Circuitry for the driver of stepper motors (DRV8825).</li><li>Mechanics involved in the dimensioning of mechanical arm.</li></ul>

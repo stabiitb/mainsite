@@ -1,1 +1,1 @@
-<p><span style="color: rgb(255, 255, 0); font-family: Arial;">Bot which avoids obstacles and avoids them.</span></p>
+<p><span style="color: rgb(255, 255, 0); font-family: Arial;">Bot which detects obstacles, avoids them and keeps moving.</span></p>

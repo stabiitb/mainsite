@@ -1,13 +1,51 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 18th -24th)</h3><ul>
+	</ul><ul>
+<li>What we have planned ?<br>
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>To do research on solar cells and solar panels for better understanding of them. Improved the project idea to wireless control of the motor.</li></ul></li><li>What we have accomplished?
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
+<li>Got some information about the solar panels and a clear plan of what we need in the project.</li></ul></li></ul><p>Week 2 (May 25th- 31st )</p><ul>
+	
+<li>What we have planned ?<br><ul>
+		
+<li>To acquire a perfect idea about solar panels.</li>		
+<li>Learn about various relays and other electronic components.</li>	</ul></li>	
+<li>What we have accomplished?
+	
+<ul>
+		
+		
+<li>Researched on how to enhance voltage using relays.</li><li>Discussed the idea of making a solar panel by assembling solar cells in series among the team members.</li>	</ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
+	
+<li>What we have planned ?<ul>
+		
+<li>To make an impeller design using solid works.</li>		
+<li>To get the required components to make a solar panel.</li>	</ul></li></ul><ul>
+	
 <li>What we achieved
+	
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+		
+<li>After consulting a member of Solar Module Laboratory, IIT Bombay, we had to step back on making a solar panel as solar cells are very sensitive to handle and they require a fully clean room.</li><li>Made a design of impeller with rough parameters.</li>	</ul></li></ul><h3>Week 4 (June 8th - June 14th)</h3><ul>
+	
+<li>What we have planned ?
+	
+<ul>
+		
+<li>To design the circuit for controlling the motor without bluetooth.</li>		
+<li>Outer structure of the water pump.</li>	</ul></li>	
+<li>What you have accomplished?
+<ul>
+<li>Made a design of pumping system using solid works.</li><li>Verified the circuit connections and controlled without using bluetooth.</li></ul></li></ul><p style="margin-left: 60px;"></p><h3>Week 5 (June 15th - June 21st)</h3><ul>
+	
+<li>What we have planned ?
+	
+<ul>
+		
+<li>To build circuit comprising solar panel, battery, charge controller and the motor including bluetooth module.</li><li>Look for appropriate materials to build the motor pump structure.</li>	</ul></li></ul><ul>
+	
+<li>What you have accomplished?
+	
+<ul>
+		
+<li>Successfully completed the circuit and operated motor using android app through bluetooth.</li><li>Decided to make the motor structure out of house-hold materials.</li></ul></li></ul><h3>Week 6 (June 22nd - June 28th)</h3>

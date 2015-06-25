@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The core of device</h5>
+									<div class="details white-text">
+										With 2 cameras embedded in plywood
+									</div>
+								</div>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Gesture Glove</h5>
+									<div class="details white-text">
+										Using external power supply
+									</div>
+								</div>

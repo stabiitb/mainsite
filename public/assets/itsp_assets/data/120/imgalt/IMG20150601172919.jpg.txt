@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Final Model</h5>
+									<div class="details white-text">
+										The happiness that we felt when our final working model was ready 
+									</div>
+								</div>

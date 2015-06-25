@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									HC-05 connections for AT Command mode</h5>
+									<div class="details white-text">
+										The module in this mode can be used to change the baud rate of transmission,the password of the device as well as the name of the device.
+									</div>
+								</div>

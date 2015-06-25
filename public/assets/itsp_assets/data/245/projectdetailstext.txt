@@ -19,4 +19,20 @@ drill holes in aluminium ,acrylic, fans of servos</p><p>·The code we wrote gave
 multiple angles for a given set of x,y,z coordinates during simulation stage
 itself (which is a big benefit, had it been tested directly on the equipment,
 the arm would have dismantled due to the rapid changes in position)</p><p>·Code algorithm improved
-and constraints on angles put to give a single solution.</p>
+and constraints on angles put to give a single solution.</p><p>Here is our code-</p><p>#include &lt;Servo.h&gt;</p><p> 
+Servo myservo; //palm</p><p>
+Servo myservo1;//elbow </p><p>Servo myservo2; //thumb </p><p>Servo myservo3; //first finger </p><p>Servo myservo4; // third finger </p><p>int pos=0; </p><p>int x=0; </p><p>int y=0; </p><p>const int xpin = A0; // x-axis// on A0 the x pin of accelerometer of palm </p><p>const int ypin = A1; // x-axis//on A1 the y pin of accelerometer of elbow </p><p>const int flexpin = A2; //thumb </p><p>const int flexpin1 = A3; //first finger </p><p>const int flexpin2 = A4; //third finger </p><p>void setup() </p><p>{
+  // put your setup code here, to run once: </p><p>   Serial.begin(9600); </p><p>     myservo.attach(9); </p><p>       myservo1.attach(10); </p><p>         myservo2.attach(11); </p><p>           myservo3.attach(12); </p><p>             myservo4.attach(13);</p><p>
+}</p><p>
+void loop() </p><p>{ </p><p>  // put your main code here, to run repeatedly: </p><p>   int flexposition; </p><p>   
+  int servoposition; </p><p>
+   int flexposition1; </p><p>   
+  int servoposition1; </p><p>
+   int flexposition2; </p><p>   
+  int servoposition2; </p><p>
+   flexposition = analogRead(flexpin); </p><p>    flexposition = analogRead(flexpin1); </p><p>     flexposition = analogRead(flexpin2); </p><p>     servoposition = map(flexposition, 460, 620, 0, 180); </p><p>  servoposition = constrain(servoposition, 0, 180); </p><p>  servoposition1 = map(flexposition1, 430, 550, 0, 180); </p><p>  servoposition1 = constrain(servoposition1, 0, 180); </p><p>  servoposition2 = map(flexposition2, 460, 680, 0, 180); </p><p>  servoposition2 = constrain(servoposition2, 0, 180);</p><p>
+  myservo2.write(servoposition); </p><p>  myservo3.write(servoposition1); </p><p>  myservo4.write(servoposition2); </p><p>  x = analogRead(xpin); </p><p>   pos = map(x,270,400,0,180); </p><p> 
+    pos = constrain(pos, 0, 110); </p><p>        myservo.write(pos); </p><p>   y =  analogRead(ypin); </p><p>   pos1 = map(x,270,400,0,180); </p><p> 
+    pos1 = constrain(pos1, 0, 110); </p><p>        myservo.write(pos); </p><p>myservo.write(pos1);</p><p>          Serial.print(x); </p><p>         Serial.print("    ");</p><p>
+         Serial.print(y); </p><p>         Serial.print("    "); </p><p>         Serial.print(flexposition);</p><p>
+         Serial.print("    "); </p><p>         Serial.print(flexposition1); </p><p>         Serial.print("    "); </p><p>         Serial.print(flexposition2); </p><p>         Serial.print("    "); </p><p>  delay(100); </p><p>}</p>

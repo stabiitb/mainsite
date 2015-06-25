@@ -1,0 +1,2 @@
+<p>For the completion of your project, we are strongly thankful to <strong>Web and Coding Club, STAB</strong><br><br>We also referred to the following sources:</p><ul>
+<li><a href="http://www.amazedsaint.com/">Amazed Saint Blogspot</a></li><li><a href="http://stackoverflow.com/">Stack Overflow</a></li></ul>

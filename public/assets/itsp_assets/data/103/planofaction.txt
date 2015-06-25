@@ -1,0 +1,15 @@
+<h3>Week 1 (May 6th -13th)</h3><ul>
+<li>Planned : - Getting the basic idea of OCR systems and analysing the steps involved. Reading basic image operations .</li></ul><ul>
+<li>Accomplished</li></ul><p style="margin-left: 20px;">Divided work among team members binarization , character recognition, word detection, dictionary, app making. Read material regarding dilation, erosion , edge detection and </p><p style="margin-left: 20px;">implemented them in programs.</p><p style="margin-left: 20px;"></p><h3>Week 2 (May 13th- 20th )</h3><ul><li>Planned                                                     
+<ul>
+<li>Write code for binarization and read about various methods.</li><li> Learning pattern recognition through various online+offline resources.</li><li>To read about making apps.</li></ul></li><li>What you have accomplished?<ul><li>wrote code for background deletion and global thresholding.(results not satisfactory).</li><li>started writing code for character recognition with basic model.</li></ul></li></ul><h3>Week 3 (May 20th - 27th)</h3><ul><li>What you have planned ?:<ul><li>Decide the best method for binarization. and code for word recognition.</li><li>write code for improved method.</li><li>Make basic app model.</li></ul></li></ul><ul><li>What we achieved<ul><li>Wrote code for niblacks method and iisc method.</li><li>Wrote code for basic character recognition method</li><li>Tried to learn anroid app development from video tutorials.</li></ul></li></ul><h3>Week 4 (May 27th - June 3)</h3><ul><li>What you have planned ?
+<ul>
+<li>word recognition and dictionary implementation.</li><li>finalize the code for character recognition.</li><li>start coding for the app.</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Wrote code for word recognition.</li><li>wrote code for improved character recognition.</li><li>Tried to learn anroid app development from video tutorials and write small codes.</li></ul></li></ul><h3>Week 5 (June 3nd - June 10th)</h3><ul><li>What you have planned ?<ul><li>Clean up the unnecessary code optimize if possible add comments.</li><li>code for the app.</li></ul></li><li>What you have accomplished?<ul><li>dictionary implementation.</li><li>debugged character recognition. Code integration and testing.</li><li>continued to learn anroid app development from video tutorials and write small codes.
+<h3>Week 6 (June 10nd - June 13th)</h3><ul>
+<li>What you have planned ?
+<ul>
+<li>Combining all the parts</li></ul></li><li>What you have accomplished?
+<ul>
+<li>cleaned up the code.</li><li>started writing code of application.</li><li>Few more improvements in the algorithm. + Documentation of the project</li></ul></li></ul></li></ul></li></ul>

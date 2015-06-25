@@ -1,1 +1,2 @@
-<p>We have planned to make a glove which when worn can be used as a mouse on any surface you place your palm on. It will have functions like clicking, cursor movement and scrolling.</p>
+<p>We have planned to make a glove which when worn can be used as a gesture
+controlled mouse. It will have functions like clicking, cursor movement, dragging and scrolling.</p>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Home Screen for the Application</h5>
+									<div class="details white-text">
+										The home screen of the application has three buttons- Enable Standby , Usage History and Emergency Contacts .The app is to be used when the HC-05 module is paired with the android device. 
+									</div>
+								</div>

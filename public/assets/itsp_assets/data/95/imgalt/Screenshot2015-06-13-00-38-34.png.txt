@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Adding Contacts to Emergency Contacts</h5>
+									<div class="details white-text">
+										Emergency Contacts can be added from the  Contacts directory of the android device
+									</div>
+								</div>

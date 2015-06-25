@@ -1,0 +1,12 @@
+<div>
+	The <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a> diagrams of the three patterns<br>
+</div><h3>
+	<strong>Observer Pattern</strong>
+</h3><p>
+	<img src="https://mydevelopedworld.files.wordpress.com/2013/03/observer-pattern-uml.png"></p><h3>
+	Strategy Pattern
+</h3><p>
+	<img src="http://upload.wikimedia.org/wikipedia/commons/3/39/Strategy_Pattern_in_UML.png"></p><h3>
+	Decorator Pattern
+</h3><p>
+	<img src="http://best-practice-software-engineering.ifs.tuwien.ac.at/patterns/images/decorator_simple.jpg"></p>

@@ -1,1 +1,1 @@
-<p>https://www.youtube.com/watch?v=srnhkefveOg</p>
+<p>This video is demonstration of a Gesture controlled bot project made by IIITDM students and they have used all wired connections. After watching this video we had a thought that along with learning new concepts we can take this idea even more further.</p><iframe src="https://www.youtube.com/embed/srnhkefveOg" allowfullscreen="" frameborder="0" height="510" width="854"></iframe>

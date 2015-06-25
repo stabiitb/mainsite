@@ -1,24 +1,13 @@
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
+<ul><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.rcbazaar.com"> http://www.rcbazaar.com </a> - amounting to <strong>Rs 10898.10 (631 AED)</strong> ( including shipping &amp; customs): <br></span><ul><li><h5>Avionic C5065 KV410 Brushless motor</h5></li><li><h5>Avionic White 50Amp ESC</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.rcdhamaka.com-">http://www.rcdhamaka.com- </a> amounting to <strong>Rs 10151.99 </strong>(including shipping and Octroi Charges):</span>
+<ul><li>2 XT60 Connectors- <strong>Rs 206.99</strong></li><li>IND- Power 2200mAH (3 cell) - 11.1 Volt (20C) Batteries (quantity- 8)<strong>- Rs 9945</strong></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.ebay.in">http://www.ebay.in</a> amounting to <strong>Rs 606 </strong>(including shipping):</span><ul><li><a href="http://rover.ebay.com/rover/0/e11400.m1842.l3160/7?euid=e3c084159c6847aab9629c11e3bde0cf&amp;loc=http%3A%2F%2Fcgi.ebay.in%2Fws%2FeBayISAPI.dll%3FViewItem%26item%3D191093560090%26ssPageName%3DADME%3AL%3AOC%3AIN%3A3160">12AWG Pure Silicone Flexible Wire Set (30cm Red + 30cm Black)</a></li><li><a href="http://rover.ebay.com/rover/0/e11400.m1842.l3160/7?euid=e3c084159c6847aab9629c11e3bde0cf&amp;loc=http%3A%2F%2Fcgi.ebay.in%2Fws%2FeBayISAPI.dll%3FViewItem%26item%3D201220372634%26ssPageName%3DADME%3AL%3AOC%3AIN%3A3160">EC3 Connectors (Premium Quality) - 2 Sets</a></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road)- amounting to <strong>Rs 105</strong> :<br></span>
 <ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
+<li>HCSR04 (Ultrasonic Sensor)</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market) amounting to <strong>Rs 1761</strong>:</span><ul><li><span style="color: rgb(0, 0, 0);">Arduino Board - <strong>Rs 800</strong></span></li><li>Mechanical Stripes- <strong>Rs 240</strong></li><li><span style="color: rgb(0, 0, 0);">Nut bolt and hinges- <strong>Rs 84</strong></span></li><li>Washer-<strong> Rs 15</strong></li><li>Push Switch- <strong>Rs 40</strong></li><li>Heat Shrink Tube (1 meter (4mm), 2.5 meter (8mm))-<strong> Rs 80</strong></li><li>6 mm wire-<b style="color: rgb(0, 0, 0);"> Rs 360</b></li><li>Spring-<b style="color: rgb(0, 0, 0);"> Rs 50</b></li><li>Piezo Sensors- <b style="color: rgb(0, 0, 0);">Rs 24</b></li><li>Resistors-<b style="color: rgb(0, 0, 0);"> Rs 18</b></li><li>Wires-<b style="color: rgb(0, 0, 0);"> Rs 50</b></li></ul></li><li>Components ordered from Swastik Aluminium and Hardware (Shop in IIT Market) amounting to <strong>Rs 146</strong>:
 <ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
+<li>L- Clamp- <strong>Rs 68</strong></li><li>Nuts and Bolts- <strong>Rs 78</strong></li></ul></li><li>Components ordered from Arihant Plywood and Laminate (Shop in IIT Market) amounting to <strong>Rs 450</strong>:
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
+<li>4*2 Plywood- <strong>Rs 450</strong></li></ul></li><li>Components ordered from Swastik Plywood and Laminates (Shop in IIT Market) amounting to <strong>Rs 250</strong>:
 <ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
+<li>Wooden Piece (7*4*3)- <strong>Rs 250</strong></li></ul></li><li>Components ordered from Dawoodi Hardware Mart amounting to <strong>Rs 450</strong>:
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<li>4 Caster Wheels- <strong>Rs 450</strong></li></ul></li></ul><ul><li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 24818.09</span></strong></li></ul></ul>

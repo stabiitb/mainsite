@@ -1,2 +1,14 @@
-<div><ol>
-</ol><p>-</p></div>
+<ol>
+</ol><h2>Sensors:</h2>
+<div>
+	<h2></h2>
+	<br>
+</div><h3>Light:</h3><ul>
+	
+<li>LDR - Light dependent resistor is a resistor whose resistance is dependent on the amount of light falling on it.</li>	
+<li>Photodiode - Photodiodes produce current when light falls on it.</li></ul><p>
+	Both of these help in sensing the light intensity but LDR gave a larger range of reading and hence we used it.</p><h3>Temperature and Humidity:</h3><p>DHT22 - A sensor module which gives temperature and humidity readings. A library is available (DHT library for Arduino) using which we can directly get the data in readable form. </p><h3>Laser system for entry/exit detection:</h3><p>
+	2 lasers are kept close to each other at the door. 2 LDRs are kept across which receive no light when the laser beam is broken and bright light when it is not. Using this, we can detect if someone enters or exits the room by checking the pattern of laser beam breaking.</p><h2>Microcontroller:</h2><ul>
+	
+<li>The data from the sensors, user input all go to a microcontroller which then takes required decisions. It then sends the output to the actual appliance to set it to the required state.</li>	
+<li>Arduino UNO was the first choice for microcontroller. While doing the project, we realised the amount of storage space in UNO was less than what we required. So we had to use Arduino MEGA.</li></ul><h2>Website:</h2><div>A simple HTML website is used for manually controlling the appliances. Also, there are websites to see the current status of the appliances, change the settings for auto mode. Arduino Ethernet shield is used to host the website. Hosting it on Ethernet shield makes it easier to transfer data from the website to Arduino or the other way round .</div><h2>Pushbutton:</h2><div>A pushbutton is kept as a replacement to a standard switch. It toggles the current state of the appliance. Some people might want to use switches for manual control or sometimes they may not have access to the website immediately. In such cases, we had to either control existing switches through mechanical method or make our own switches. Since a pushbutton input for toggling is much easier to handle than a normal switch and is not very uncomfortable for users, it was the best option that we had.</div><h2>Appliances:</h2><h3>Light bulb:</h3><ul><li>On/off - A relay is used to toggle the state of the bulb. A relay is like a 2 way key and depending on whether the input in high or low, it switches direction. This allows us to connect the bulb to the mains while controlling it with an Arduino. </li><li>Brightness - </li></ul><h3>Fan:</h3><h3>Air conditioner:</h3><p>Easiest way to control an air conditioner is by making our own remote for it which can be controlled by Arduino. To make a remote, first the codes sent by the original remote must be recorded and then it should be resent when required. TSOP1738 was used to receive the IR signal from the remote and IR LED was used to resend it. IRremote library for Arduino was useful in this regard.</p>

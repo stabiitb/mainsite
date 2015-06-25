@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									DC Motor and Servo Circuit</h5>
+									<div class="details white-text">
+										This is a picture of our circuit that is used for controlling the Servo and DC Motors using an Arduino.
+									</div>
+								</div>

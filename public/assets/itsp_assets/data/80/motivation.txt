@@ -1,1 +1,11 @@
-<p>Well, we all play games…</p><p>Consider an example: What do you prefer? Playing FIFA with a keyboard or with a gaming controller. Obviously, the general opinion is a gaming controller. Won’t it be awesome to have something which helps you to play games which doesn’t support a gaming controller. For example: Counter Strike.</p><p>Also, imagine yourself to be inside the game holding a gun and wearing a head mount. What if the display is right in front of your eyes? Now that is our project, <strong>Virtual Reality</strong>.</p>
+<br><p>
+	Well, we all play games…
+</p>
+<p>
+	Consider an example: What do you prefer? Playing FIFA with a keyboard or with a gaming controller. Obviously, the general opinion is a gaming controller. Won’t it be awesome to have something which helps you play games which doesn’t support a gaming controller? For example: Counter Strike.
+</p>
+<br>
+<p>
+	What if you feel as if you are actually inside the game in virtual reality? What if you are the terrorist in the game, planting the bomb and killing your opponents? Won't playing the game be a lot more fun? Now that is our project, 
+	<strong>Virtual Reality</strong>.
+</p>

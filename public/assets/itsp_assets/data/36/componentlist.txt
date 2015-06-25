@@ -1,24 +1,30 @@
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
-<ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
-<ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
-<ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<p>·</p><p><strong>Circuit Chips</strong><br>
+9x<a href="http://focus.ti.com/docs/prod/folders/print/tl072.html">TL072 IC Chip </a><br>
+3x<a href="http://focus.ti.com/docs/prod/folders/print/ina106.html">INA106 IC Chip</a></p><p><strong>Cables and Electrodes</strong><br>
+3x<a href="http://bio-medical.com/products/din-ekgemgeeg-snap-leads-24-inch.html">EMG Cables</a>(set of 3)<br>
+9x<a href="http://bio-medical.com/products/kendall-tyco-arbo-disposable-electrodes-50pkg-35mm.html">EMG Electrodes</a><br>
+<strong>Power</strong><br>
+6x 9V Battery<br>
+6x<a href="http://www.radioshack.com/product/index.jsp?productId=2062218">9V battery clips</a><br>
+<strong>Capacitors</strong><br>
+• 6x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&amp;lang=en&amp;site=us&amp;keywords=399-3529-ND&amp;x=0&amp;y=0">1.0 uF Tant </a><br>
+• 3x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&amp;lang=en&amp;site=us&amp;keywords=490-3812-ND&amp;x=0&amp;y=0">0.01 uF Ceramic Disc </a><br>
+• 3x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&amp;lang=en&amp;site=us&amp;keywords=399-4389-ND&amp;x=0&amp;y=0">1.0 uF Ceramic Disc </a><br>
+<strong>Resistors</strong><br>
+• 9x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=150KXBK-ND">150 kOhm 1% </a><br>
+• 6x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=RNF14FTD1M00CT-ND">1 MOhm 1% </a><br>
+• 6x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=RNF14FTD80K6CT-ND">80.6 kOhm 1%</a><br>
+• 18x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=10.0KXBK-ND">10 kOhm 1%</a><br>
+• 3x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&amp;lang=en&amp;site=us&amp;keywords=D4AA15-ND&amp;x=0&amp;y=0">100 kOhm Trimmer </a><br>
+• 3x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=RNF14FTD1K00CT-ND">1 kOhm 1%</a><br>
+<strong>Misc</strong><br>
+• 6x<a href="http://search.digikey.com/scripts/DkSearch/dksus.dll?WT.z_header=search_go&amp;lang=en&amp;site=us&amp;keywords=1N4148FS-ND&amp;x=0&amp;y=0">1N4148 Diode </a><br>
+•<a href="http://www.radioshack.com/product/index.jsp?productId=2103801">Jumper wires</a><br>
+• 9x<a href="http://www.sparkfun.com/products/8927">Alligator clip cables</a><br>
+<strong>Optional</strong><br>
+• 1x Oscilloscope<br>
+• 1x Multimeter</p><p>Components ordered from VEGAKIT and GALA ELECTRONICS, Lamington Road amounting
+to <strong>Rs 3459</strong></p><p>§<strong>Resistors</strong></p><p>§<strong>Ceramic Disc, Tantalum, Box Film Capacitors</strong></p><p>§<strong>Trim Potentiometer</strong></p><p>§<strong>Op Amp ICs TL072, INA 106</strong></p><p>§<strong>Screw Terminal</strong></p><p>§<strong>Battery</strong></p><p>§<strong>Jumper Wires</strong></p><p>§<strong>Berg Pins</strong></p><p>§<strong> Diode</strong></p><p><strong><br></strong></p><p><strong></strong>Components ordered
+     from MAC-NET TECHNOLOGY, Lamington Road amounting to Rs 1050</p><p>§<strong>Arduino 2560</strong></p><p><strong><br></strong></p><p>Components ordered from
+Headlines and Shree Siddhesh Distrubtor, Dawa Bazar amounting to Rs 1350</p><p><strong></strong>§<strong>ECG Cables</strong></p><p><strong><br></strong></p><p>Components ordered from Niyati
+Surgical, Dawa Bazar amounting to Rs 446</p><p><strong></strong>§<strong>ECG Electrode</strong></p><p><strong><br></strong></p><p><strong>Total Cost: Rs 6230</strong></p>

@@ -1,8 +1,63 @@
+<h5><p>
+	<span style="font-family: Arial;"></span>
+</p>
+<p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span>
+</p>
 <ul>
-<ul><li><span style="color: rgb(0, 0, 0);">Component ordered from<a href="http://www.hobbyking.com/"></a> <a href="http://www.amazon.in/">Amazon India</a> amounting to <strong>Rs 358.00</strong> :<br></span><ul>
-<li>Funskool Connect 4 - Rs 259.00</li><li>Shipping Charges - Rs 99.00</li></ul></li></ul><ul>
-<li><span style="color: rgb(0, 0, 0);">Components bought from Mangal Deep Electric &amp; Hardware Stores(Powai), amounting to <strong>Rs 677.00</strong> :</span><ul><li>6kg Servo Motor - Rs 450.00</li><li>Conveyor Belt - Rs 180.00</li><li>Gear - Rs 30.00</li><li>Misc Components with motor -Rs 15.00</li><li>Bolts - Rs 2.00</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components bought from Mac-Net Technology(Lamington Road), amounting to <strong>Rs 1632.00 </strong>:</span><ul>
-<li>Stepper Motors(2) - Rs 844.00</li><li>Arduino Uno - Rs 788.00</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components bought from Vegakit(India) Pvt. Ltd.(Lamington Road), amounting to <strong>Rs 332.00 </strong>:</span><ul><li>ULN 2004 IC(6) - Rs 84.00 </li><li>4051 IC - Rs 10.00</li><li>Male-Male jumper wire - Rs 20.00</li><li>Wire - Rs 30.00</li><li>Switch - Rs. 5.00</li><li>12V/1 Amp Adapter - Rs 100.00</li><li>DC Socket - Rs 5.00</li><li>Bread Board - Rs 60.00</li></ul></li><li> <span style="color: rgb(0, 0, 0);">Components bought from Gala Electronics(Lamington Road), amounting to <strong>Rs 219.00 </strong>:</span><ul>
-<li>IR LED-Sensor pair(10) - Rs 100.00</li><li>470 muF capacitor - Rs 6.00</li><li>Misc Components(Axle, Gear etc.,.) - Rs 107.00</li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">  Components bought from Zephyr Toys(Ghansoli), amounting to <strong>Rs 667.00 </strong>:</span>
-<ul>
-<li>All components are used in the mechanical frame of the project</li></ul></li><li><strong><span style="color: rgb(0, 0, 0);">Total - Rs 3885.00<br></span></strong></li></ul></ul>
+	<ul>
+		<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline>Component ordered from <a href="http://www.amazon.in/">Amazon India</a> amounting to <strong>Rs 358.00</strong> (inclusive of all taxes): <br>
+		</inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Funskool Connect 4 - Rs 259.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Shipping Charges - Rs 99.00</inline></span></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>
+		<li><span style="font-family: Arial;"><inline><inline><inline style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">Components bought from Mangal Deep Electric &amp; Hardware Stores(Powai), amounting to <strong>Rs 677.00</strong><inline style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"> </inline></inline></inline></inline></inline></inline></span><span style="font-family: Arial; color: rgb(0, 0, 0);">(inclusive of all taxes):</span><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline></inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">6kg Servo Motor - Rs 450.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Conveyor Belt - Rs 180.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Gear - Rs 30.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Misc Components with motor -Rs 15.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Bolts - Rs 2.00</inline></span></li>
+		</ul>
+		</li>
+		<li><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline><inline style="font-family: Arial;"><inline style="font-family: Arial;"><inline><inline>Components bought from Mac-Net Technology(Lamington Road), amounting to <strong>Rs 1632.00<inline style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"> </inline></inline></strong></inline></inline></inline></inline></inline></inline></span><span style="font-family: Arial; color: rgb(0, 0, 0);">(inclusive of all taxes):</span><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline><strong></strong></inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Stepper Motors(2) - Rs 844.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Arduino Uno - Rs 788.00</inline></span></li>
+		</ul>
+		</li>
+		<li><span style="font-family: Arial;"><inline><inline><inline style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">Components bought from Vegakit(India) Pvt. Ltd.(Lamington Road), amounting to <strong>Rs 332.00 </strong></inline></inline></inline></inline></span><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">(inclusive of all taxes):</inline></span><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline></inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">ULN 2004 IC(6) - Rs 84.00 </inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">4051 IC - Rs 10.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Male-Male jumper wire - Rs 20.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Wire - Rs 30.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Switch - Rs. 5.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">12V/1 Amp Adapter - Rs 100.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">DC Socket - Rs 5.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Bread Board - Rs 60.00</inline></span></li>
+		</ul>
+		</li>
+		<li><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"><inline><inline>Components bought from Gala Electronics(Lamington Road), amounting to <strong>Rs 219.00 </strong></inline></inline></inline></inline></span><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">(inclusive of all taxes):</inline></span><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline></inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">IR LED-Sensor pair(10) - Rs 100.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">470 muF capacitor - Rs 6.00</inline></span></li>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Misc Components(Axle, Gear etc.,.) - Rs 107.00</inline></span></li>
+		</ul>
+		</li>
+	</ul>
+	<ul>
+		<li><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"><inline><inline>Components bought from Zephyr Toys(Ghansoli), amounting to <strong>Rs 667.00 </strong></inline></inline></inline></inline></span><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">(inclusive of all taxes):</inline></span><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><inline></inline></inline></span>
+		<ul>
+			<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">All components are used in the mechanical frame of the project</inline></span></li>
+		</ul>
+		</li>
+		<li><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><strong><inline>Total - Rs 3885.00<br>
+		</inline></strong></inline></span></li>
+	</ul>
+</ul>
+</h5>

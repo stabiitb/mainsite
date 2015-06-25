@@ -1,3 +1,307 @@
-<ul>
-<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
-<li>Guide to KK 2.1.5</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>
+<p><strong><span style="font-family: 'Times New Roman'; color: rgb(0, 0, 0);">High power LED flash light-</span></strong></p><p>We chose power white LED, a solid-state lamp, from LUXEON®
+as the flash light that facilitates our camera operations. The graphs below
+illustrate the nominal operating conditions of this LED in our device (3V
+forward voltage across the LED @ ~300mA, producing approximately 0.85 X
+(typical luminous flux = 105 lumens). See reference for more information on
+power LEDs.</p><p>The
+total current budget of an I/O pin on the Arduinois 40mA, which is much lower than the
+300mA required to drivethe LED directly. Therefore, an LED
+driver or current limiter isnecessary. In order to trigger the LED
+with logic level signals (0V / 5V), weused an NPN bipolar junction transistor
+(BJT, Vth = 0.7V) to serveas a power switch for the power LED. The
+pull down current is limited by the resistor on the emitter. Its resistance is
+calculated by:</p><p>(V_B-0.7)
+/ R = 300mA</p><p>Here,
+a nominally high resistance (330 ohm) is used in order to avoid thermal
+runaway.</p><p>Since
+the LED has the largest instantaneous current consumption in our system, it is
+completely decoupled from the Arduino to maintain system stability and powered
+directly from the 9V main supply.</p><hr><p><span style="color: rgb(0, 0, 0);"><strong>Camera Module -OV7670</strong></span></p><p><strong><span style="color: rgb(31, 73, 125);">HARDWARE</span></strong></p><p>The camera
+module comes with a 9x2 header, the pin diagram is shown below:</p><table>
+ <tbody><tr>
+  <td>VDD</td>
+  <td>GND</td>
+ </tr>
+ <tr>
+  <td>SDIOC</td>
+  <td>SDIOD</td>
+ </tr>
+ <tr>
+  <td>VSYNC</td>
+  <td>HREF</td>
+ </tr>
+ <tr>
+  <td>PCLK</td>
+  <td>XCLK</td>
+ </tr>
+ <tr>
+  <td>D7</td>
+  <td>D6</td>
+ </tr>
+ <tr>
+  <td>D5</td>
+  <td>D4</td>
+ </tr>
+ <tr>
+  <td>D3</td>
+  <td>D2</td>
+ </tr>
+ <tr>
+  <td>D1</td>
+  <td>D0</td>
+ </tr>
+ <tr>
+  <td>RESET</td>
+  <td>PWDN</td>
+ </tr>
+</tbody></table><p>The meaning
+of these pins-</p><table>
+ <tbody><tr>
+  <td><strong>Pin</strong></td>
+  <td><strong>Type</strong></td>
+  <td><strong>Description</strong></td>
+ </tr>
+ <tr>
+  <td>VDD</td>
+  <td>Supply</td>
+  <td>Power supply</td>
+ </tr>
+ <tr>
+  <td>GND</td>
+  <td>Supply</td>
+  <td>Ground level</td>
+ </tr>
+ <tr>
+  <td>SDIOC</td>
+  <td>Input</td>
+  <td>SCCB clock</td>
+ </tr>
+ <tr>
+  <td>SDIOD</td>
+  <td>Input/Output</td>
+  <td>SCCB data</td>
+ </tr>
+ <tr>
+  <td>VSYNC</td>
+  <td>Output</td>
+  <td>Vertical synchronization</td>
+ </tr>
+ <tr>
+  <td>HREF</td>
+  <td>Output</td>
+  <td>Horizontal synchronization</td>
+ </tr>
+ <tr>
+  <td>PCLK</td>
+  <td>Output</td>
+  <td>Pixel clock</td>
+ </tr>
+ <tr>
+  <td>XCLK</td>
+  <td>Input</td>
+  <td>System clock</td>
+ </tr>
+ <tr>
+  <td>D0-D7</td>
+  <td>Output</td>
+  <td>Video parallel output</td>
+ </tr>
+ <tr>
+  <td>RESET</td>
+  <td>Input</td>
+  <td>Reset (Active low)</td>
+ </tr>
+ <tr>
+  <td>PWDN</td>
+  <td>Input</td>
+  <td>Power down (Active high)</td>
+ </tr>
+</tbody></table><p><br>
+In conclusion, for the same model we are using
+one can <em>safely</em> supply 3.3V (3.0V - 3.6V) to the OV7670
+VDD. (I used this configuration)</p><p>Image</p><p>A <strong>frame</strong> is a still image taken at an
+instant of time. A frame is compromised of<strong><em>lines</em></strong>,
+and a line is compromised of<strong><em>pixels</em></strong>.
+A pixel is the smallest part of a digital image, and it looks like a colored
+dot.</p><h4><strong><span style="color: rgb(31, 73, 125);">PIXEL FORMATS</span></strong></h4><p><br>
+<strong><span style="color: rgb(79, 97, 40);">Monochrome</span></strong></p><p>In monochromes images, each pixel is stored as 8 bits, representing gray scale levels from 0 to 255. Where 0 is black, 255 is white and the intermediate values are grays.</p><p><strong><span style="color: rgb(79, 97, 40);">RGB</span></strong></p><p>Is a fact
+that any color can be decomposed in red, green and blue light at different
+intensities. This approach is known as the RGB colour model. Using this model, each
+pixel must be stored as three intensities of these red, green and blue lights.</p><p><a href="http://upload.wikimedia.org/wikipedia/commons/2/28/RGB_illumination.jpg"><v>
+ <v>
+ <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  
+ <v>
+ <v>
+ <v>
+ </v></v></v></v></v></v></v></v></v></v></v></v></v></v></v></v></v></a></p><p>RGB
+color model. </p><p>The most
+common format is RGB888, in this format each pixel is stored in 24 bits, the
+red, green and blue channels are stored in 8 bits each. This means that the
+intensity of each light can go from 0 to 255, where 0 is the absence of light,
+and 255 is the maximum intensity.</p><p>The formats
+used by the OV7670 are the RGB565, RGB555 and RGB444. The difference with the
+RGB888 format, is the number of bits assigned to each channel. For example, in
+the RGB565 format, the red channel is stored as 5 bits, the green channel as 6
+bits and the blue channel as 5 bits. These formats take less memory when stored
+but in exchange sacrifice the number of colors available.</p><p><br>
+<strong><span style="color: rgb(79, 97, 40);">YCbCr</span></strong><strong></strong></p><p>YCbCr is a
+format in which a RGB color can be encoded. The Y or luminance component is the
+amount of white light of a color, and the Cb and Cr are the chroma components,
+which respectly encode the blue and red levels relative to the luminance
+component.</p><p>As the RGB
+format, the YCbCr also stores each channel as 8 bits (from 0 to 255) and we can
+convert from YCbCr to RGB using the following expression.</p><p><a href="http://upload.wikimedia.org/wikipedia/en/math/4/e/b/4ebf7992636ec7100e2f0f68a4f2c2ca.png"><v>
+ <v>
+ </v></v></a></p><p>The OV7670
+uses the YCbCr422 format, this format is stored as follows:</p><table>
+ <tbody><tr>
+  
+  <td>Byte 0</td>
+  <td>Byte 1</td>
+  <td>Byte 2</td>
+  <td>Byte 3</td>
+ </tr>
+ <tr>
+  <td>Word 0</td>
+  <td>Cb0</td>
+  <td>Y0</td>
+  <td>Cr0</td>
+  <td>Y1</td>
+ </tr>
+ <tr>
+  <td>Word 1</td>
+  <td>Cb2</td>
+  <td>Y2</td>
+  <td>Cr2</td>
+  <td>Y3</td>
+ </tr>
+ <tr>
+  <td>Word 2</td>
+  <td>Cb4</td>
+  <td>Y4</td>
+  <td>Cr4</td>
+  <td>Y5</td>
+ </tr>
+</tbody></table><p>Data
+stored as words (4 bytes)</p><p>Or
+equivalently, the data arrives in the following order:</p><table>
+ <tbody><tr>
+  <td>N</td>
+  <td>Byte</td>
+ </tr>
+ <tr>
+  <td>1st</td>
+  <td>Cb0</td>
+ </tr>
+ <tr>
+  <td>2nd</td>
+  <td>Y0</td>
+ </tr>
+ <tr>
+  <td>3rd</td>
+  <td>Cr0</td>
+ </tr>
+ <tr>
+  <td>4th</td>
+  <td>Y1</td>
+ </tr>
+ <tr>
+  <td>5th</td>
+  <td>Cb2</td>
+ </tr>
+ <tr>
+  <td>6th</td>
+  <td>Y2</td>
+ </tr>
+ <tr>
+  <td>7th</td>
+  <td>Cr2</td>
+ </tr>
+ <tr>
+  <td>8th</td>
+  <td>Y3</td>
+ </tr>
+ <tr>
+  <td>...</td>
+  <td>...</td>
+ </tr>
+</tbody></table><p>And the
+actual pixels are the following:</p><table>
+ <tbody><tr>
+  <td>Pixel 0</td>
+  <td>Y0 Cb0 Cr0</td>
+ </tr>
+ <tr>
+  <td>Pixel 1</td>
+  <td>Y1 Cb0 Cr0</td>
+ </tr>
+ <tr>
+  <td>Pixel 2</td>
+  <td>Y2 Cb2 Cr2</td>
+ </tr>
+ <tr>
+  <td>Pixel 3</td>
+  <td>Y3 Cb2 Cr2</td>
+ </tr>
+ <tr>
+  <td>Pixel 4</td>
+  <td>Y4 Cb4 Cr4</td>
+ </tr>
+ <tr>
+  <td>Pixel 5</td>
+  <td>Y5 Cb4 Cr4</td>
+ </tr>
+</tbody></table><p>Notice each
+pixel is 3 byte long (e.g. Y0, Cb0 and Cr0), as in the RGB format. But, in the
+YCbCr422 format, the Cb and Cr channels are shared between two consecutive
+pixels (e.g. pixels 0 and 1 share Cb0 and Cr0). Therefore two pixels are
+"compressed" into 4 bytes or 32 bits, this means that in average each
+pixel is stored as 2 bytes or 16 bits. From the example above, 3 words (12
+bytes) store 6 pixels.<br>
+<br>
+The extra advantage of YCbCr is that the Y channel is the grayscale image,
+whereas in RGB you'll need to average the 3 channels to get the grayscale
+image.</p><h3><strong><span style="color: rgb(31, 73, 125);">SIGNALING</span></strong></h3><p>The OV7670
+sends the data in a parallel synchronous format. First of all, to get any data
+out of the OV7670, is necessary to<strong><em>supply
+a clock signal on the XCLK pin</em></strong>. According to the datasheet, this clock
+must have a frequency between 10 and 48 MHz. However, I have successfully used
+a 8 MHz clock with some configuration via the SCCB.</p><p>If you are
+using a microcontroller that has clock output, you can use that to clock the
+OV7670, these can generally output their inner system clock prescaled by some
+factor. If your microcontroller doesn't have clock output capability, but
+you're using an external crystal, then you can connect the OSC_OUT pin to the
+OV7670.</p><p>After a clock
+signal has been applied to the XCLK pin, the OV7670 will start driving its
+VSYNC, HREF and D0-D7 pins.</p><p>First thing
+to notice, the D0-D7 must be sampled at the rising edge of the PCLK signal.
+Number two, D0-D7 must be sampled only when HREF is high. Also, the rising edge
+of HREF signals the start of a line, and the falling edge of HREF signals the
+end of the line.</p><p>All these
+bytes sampled when HREF was high, correspond to the pixels in one line. Note
+that<strong><em>one byte is not a
+pixel</em></strong>, it depends on the format chosen. By default, the format is
+YCbCr422, this means that in average two bytes correspond to a pixel.</p><p> During HSYNC
+high state, we must capture 640 pixels, equivalent to a line. The 480 lines,
+equivalent to a frame, are captured during the low state of VSYNC. This means
+that the falling edge of VSYNC signals the start of a frame, and its rising
+edge signals the end of a frame.</p><p>That covers
+all the process of obtaining one frame, the remaining question is how fast are
+frames sent. By default, the PCLK will have the same frequency of XCLK, however
+pre scalers and PPLs can be configured using the SCCB, to produce a PCLK of
+different frequency.</p><p>A PCLK of 24
+MHz will produce 30 fps, a PCLK of 12 MHz will produce 15 fps and so on. All
+this is independent of the format of the image (VGA, CIF, QCIF, etc).</p><p>[source : http://embeddedprogrammer.blogspot.com/2012/07/hacking-ov7670-camera-module-sccb-cheat.html] </p><p><v>
+ </v></p>

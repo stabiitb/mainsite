@@ -1,13 +1,20 @@
-<h3>Week 1 (May 5th -11th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul>
-<li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
+<h3></h3><div><h3>Week 1 (May 5th- 11th )</h3></div><ul><li>Planned :
+<ul><li>Paper work on what all to do.</li><li>Learn OpenCV and implement object detection and learn PID algorithm in depth .</li></ul></li><li>Accomplished :
+<ul><li>Completed paper work</li><li>Learnt OpenCV and implemented object detection</li></ul></li></ul><p>Week 2 (May 12th- 18th )</p><ul>
+<li>Planned                                                     <ul><li>Serial communication between Arduino and laptop</li><li>  Implementation of PID algorithm </li></ul></li><li>Accomplished :
 <ul>
-<li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?<ul><li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<li>Learnt PID algorithm in depth.</li><li> Succeeded in Serial communication</li><li>  Implemented PID code to follow object .</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>Planned :
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
+<li>Learn how to control speed of servo.</li><li>Prepare a pan-tilt Mechanism.</li><li> Calibrate PID code to make web-cam follow object .</li></ul></li></ul><ul>
+<li>Accomplished :<br>
 <ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
-<ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
-<ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Learnt how to control speed of servo.</li><li> Prepared a pan-tilt mechanism.</li><li>Calibrated PID code for object following.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Planned :
+<ul><li>Stream video captured by web-cam on mobile</li><li>Learn building Android Application </li></ul></li><li>Accomplished :
+<ul><li>Created a server to stream MJPEG images using wireless network</li><li>Started Android Application building</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>Planned :
+<ul><li>Figure out a way to stream video on Android Application</li><li>Learn Bluetooth communication </li><li>Incorporate Bluetooth communication in Android Application</li></ul></li></ul><ul>
+<li>Accomplished :
+<ul><li>Successfully streamed MJPEG images on Android Application</li><li>Learnt Bluetooth communication(HC-05)</li><li>Used Bluetooth in Android Application for communication</li></ul></li></ul><h3>Week 6 (June 9nd - June 14th)</h3><ul><li>Planned :<ul><li>Include Gun control </li><li>Integrate everything </li></ul></li></ul><ul><li>Accomplished :
+<ul><li>Gun control was included in Android Application and micro-controller code (even trigger was done using servo)</li><li>Integrated everything to have a manual and an automated control to follow object</li></ul></li></ul>

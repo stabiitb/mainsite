@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									HC-05 module in the regular transparent data transmission mode</h5>
+									<div class="details white-text">
+										For the device to be configured in the transparent data mode, the following connections are made as given in the figure provided. After this connection is made (it is preferable to use 3.3V from the Arduino to power the HC05 module as compared to the 5V) .The android device is to be turned on and the Bluetooth should be enabled. On searching for devices, this would appear by the name of “HC-05”. The password of the Bluetooth module as changed in the AT mode is to be entered into the android device to pair the device.
+									</div>
+								</div>

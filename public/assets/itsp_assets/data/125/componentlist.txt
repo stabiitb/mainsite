@@ -1,7 +1,21 @@
-<ul><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs <strong><p style="display: inline !important;">8533.98</p></strong><strong> ($ 133.38)</strong> (excluding shipping &amp; customs): <br></strong></span><ul><li><h5>F330 Glass Fiber MiniQuadcopter Frame 330mm </h5></li><li><h5>4 pc D2822/17 BrushlessOutrunner 1100kv</h5></li><li><h5>4 pc Hobby King 20A ESC 3AUBEC</h5></li><li><h5> Turnigy 3000mAh 3S 30CLipo Pack</h5></li><li><div><h5>Hobbyking KK2.1.5 Multi-
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs <strong>
+<p style="display: inline !important;">8533.98</p></strong></strong><p><strong><strong></strong></strong>
+</p><p><strong><strong></strong></strong></p><p><strong><strong></strong><strong> ($ 133.38)</strong> (excluding shipping &amp; customs): <br></strong></p><ul>
+<li>
+<h5>F330 Glass Fiber MiniQuadcopter Frame 330mm </h5></li><li>
+<h5>4 pc D2822/17 BrushlessOutrunner 1100kv</h5></li><li>
+<h5>4 pc Hobby King 20A ESC 3AUBEC</h5></li><li>
+<h5> Turnigy 3000mAh 3S 30CLipo Pack</h5></li>
+<li><div><h5>Hobbyking KK2.1.5 Multi-
 rotor LCD Flight Control
 Board With 6050MPU And
-Atmel 644PA</h5></div></li><li><h5>Slow Fly Electric Prop 8045SF (4 pc - Green LHRotation)</h5></li><li><h5>Slow Fly Electric Prop8045R SF (4 pc)</h5></li><li><h5>Hobby King QuadcopterPower Distribution Board</h5></li><li><p>PolyMax 3.5mm GoldConnectors 10 PAIRS(20PC)</p></li><li><p>HXT 4mm to XT-60 BatteryAdapter (2pcs/bag)</p></li></ul></li></ul><ul>
-<li><span style="color: rgb(0, 0, 0);">Component ordered from <u>e-bay.in</u> <strong>Rs 300</strong> :</span><ul><li>Arduino pro mini</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span><ul><li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span><ul><li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span><ul><li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span>
+Atmel 644PA</h5></div>
+</li><li>
+<h5>Slow Fly Electric Prop 8045SF (4 pc - Green LHRotation)</h5></li><li>
+<h5>Slow Fly Electric Prop8045R SF (4 pc)</h5></li><li>
+<h5>Hobby King QuadcopterPower Distribution Board</h5></li><li>PolyMax 3.5mm GoldConnectors 10 PAIRS(20PC)</li><li>HXT 4mm to XT-60 BatteryAdapter (2pcs/bag)</li></ul></span></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>e-bay.in</u> <strong>Rs 300</strong> :</span>
 <ul>
-<li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span><ul><li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul><li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<li>Arduino pro mini</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
+<ul>
+<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li>Components got from Mangal Deep electric and hardware stores in Rs 225<ul><li>Jumper wires</li><li>Double sided tape</li></ul></li><li>Components got from Bombay Electronics in Rs 210<ul><li>USB to TTL (Arduino pro mini programmer)</li></ul></li><li>Components got from Mac-Net Technology in Rs 2310<ul><li>4 sharp IR sensors.</li></ul></li></ul>

@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									keyboard </h5>
+									<div class="details white-text">
+										The image of keyboard used in place of projected image
+									</div>
+								</div>

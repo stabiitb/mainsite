@@ -1,0 +1,37 @@
+<iframe width="470" height="353" src="https://www.youtube.com/embed/YbvTlj0wzso?list=PLIavqukpOzO_0x82GyxBkUR9vdZ07fDFG" frameborder="0" allowfullscreen=""></iframe>
+<div><ol>
+</ol><p>Making a self-balancing robot is essentially solving the classic inverted pendulum problem. While the math is a bit complex, the essence is quite simple: the goal of the control loop is to adjust the wheels’ position so that the inclination angle remains stable at a pre-determined value (e.g. the angle when the robot is balanced). When the robot starts to fall in one direction, the wheels should move in the falling direction to correct the inclination angle. And heuristics tell us that when the deviation from equilibrium is small, we should move “gently” and when the deviation is large we should move more quickly.</p><p><strong>B</strong>oth wheels are moved at the same speed in the same direction. Under this restriction the calculations become much simpler as we only need to worry about sensor readings on a single plane. If you need to allow the robot to make turns, then you will have to control each wheel independently. The general principle remains the same nevertheless since the falling direction of the robot is still restricted to a single plane.</p></div>
+<div><p><img src="http://3.bp.blogspot.com/-J93T2SI_Bxg/ULCaRgHdmdI/AAAAAAAAAJc/IdyAyh_-0mo/s1600/block+diagram.jpg"></p><p><a href="http://3.bp.blogspot.com/-J93T2SI_Bxg/ULCaRgHdmdI/AAAAAAAAAJc/IdyAyh_-0mo/s1600/block+diagram.jpg"></a><a href="http://3.bp.blogspot.com/-J93T2SI_Bxg/ULCaRgHdmdI/AAAAAAAAAJc/IdyAyh_-0mo/s1600/block+diagram.jpg"></a></p><p>Sensor Fusion</p><p>To address the issue of measurement noises and the limitations of measurements by either the accelerometer or gyroscope alone, we will need to combine the readings from both the accelerometer and the gyroscope in a meaningful way so that we could use the strengths from both sensors to obtain a more accurate result than either measurement alone could provide. This is the classic application of sensor fusion. Since accelerometers can provide accurate angle calculations when there is no acceleration and gyroscope can provide accurate short-time angle measurements. These complementary traits are ideal candidates for sensor fusion.We have used complementary filter</p><p>Complementary filter is a combination of Low Pass and High Pass filers with same time constant. As accelerometer
+is susceptible to vibrations and gives rapidly changing values under external forces, it should be passed through a Low
+Pass Filter. On the other hand Gyroscope is immune to vibrations but it drifts over time and cannot be trusted after a
+period of time, it should be passed through a High Pass Filter.</p><p>Mathematical form of the Complementary Filter  can be expressed as:
+Θk = α × (θk−1 + θ˙gyro × δt ) + ( 1−α ) × θaccel  Where,
+Θk = Filtered angle at kth iteration
+α = Filter coefficient
+Θk-1= Filtered angle after k-1
+th iteration
+θ˙gyro = Angular rate (velocity) from gyroscope
+δt = Sampling period of sensors
+θaccel = Angle calculated from accelerometer</p><p>Tuning the filter</p><p>
+Tuning the filer includes determining the filter coefficient α for a particular IMU. The filter coefficient can be
+calculated from the given formula : alpha=tau/(tau+dt)</p><p>Where τ is time constant. Time constant of a filter is the relative duration of signal it will act on. For a low pass filter,
+signal much longer than time constant will pass through unaltered while signals shorter than time constant will get
+filtered out. The opposite is true for high pass filter. In this particular case time constant will define for how much time
+gyroscope’s measurements can be trusted or for how long the accelerometer’s measurement should be averaged. This
+value should be observed experimentally and its typical range is 0.5sec to 1 sec.</p></div><p>PID CONTROLLER :</p><p>Realize that the robot will have to balance itself by <em>driving out</em> - if it tips forward, the robot will have to accelerate forward at a sufficient rate to stop the tipping and vice versa.<br>This means that the simplest algorithm would be -</p><ul>
+<li>Drive the motors forward if the robot is tipping forward and vice versa;</li><li>Make the speed of the motors proportional to the robot tipping angle.</li></ul><p>The control algorithm that was used to maintain it balance on the autonomous self-balancing two wheel robot was the PID controller. The proportional, integral, and derivative (PID) controller, is well known as a three term controller.
+The input to the controller is the error from the
+system. The Kp, Ki, and Kd are referred as the
+proportional, integral, and derivative constants (the three terms get multiplied by these constants respectively). The closed loop control system is also
+referred to as a negative feedback system. The basic idea of a negative feedback system is that it measures the process output y from a sensor. The measured process output gets subtracted from the reference set-point value to produce an error. The error is then fed into the PID controller, where the error gets managed in three ways. The error will be used on the PID controller to execute the proportional term, integral term for reduction of steady state errors, and the derivative term to handle overshoots. After the PID algorithm processes the error, the controller produces a control signal u. The PID control signal then gets fed into the process under control.
+The process under PID control is the two wheeled
+robot. The PID control signal will try to drive the process to the desired reference setpoint value. In the case of the two wheel robot, the desired set-point value is the zero degree vertical position. The PID control algorithm can be modelled in a mathematical
+representation.
+PID is used to calculate the ‘correction’ term : </p><p>Correction = Kp*error + Ki* ∫error + Kd* d/dt(error);</p><p>
+Kp , Ki and Kd are constants which are set experimentally.
+If only the first term had been used to calculate the correction, the robot would have reacted in the same way as in the classical line following algorithm. The second term forces the robot to move towards the mean position faster. The third term resists sudden change in deviation.
+The integral term is simply the summation of all previous deviations. Call this integral- ‘totalerror’. The derivative is the difference between the current deviation and the previous deviation. Following is the code for evaluating the correction.
+These lines should run in each iteration :</p><p>
+correction = Kp*deviation + Ki*totalerror + Kd*(deviation - previousdeviation);
+totalerror += correction;
+previousdeviation = deviation.</p><ol><br></ol>

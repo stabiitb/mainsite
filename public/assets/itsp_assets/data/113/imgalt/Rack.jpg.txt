@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Rack</h5>
+									<div class="details white-text">
+										Shaped the rack to proper dimensions and fixed it in the metal case
+									</div>
+								</div>

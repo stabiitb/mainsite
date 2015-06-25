@@ -1,3 +1,26 @@
-<ul>
-<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
-<li>Guide to KK 2.1.5</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>
+<p>
+	Lets talk about some concpts involved in our project.
+</p>
+<p>
+	First lets talk about stepper motors .
+</p>
+<h4><span style="color: rgb(73, 68, 41);">Stepper motor's working:</span></h4>
+<p>
+	 A 
+	<strong>stepper motor</strong> is a brushless DC electric motor that divides a full rotation into a number of equal steps. The motor's position can then be commanded to move and hold at one of these steps.With proper code we can rotate our motor to specific angle. It consist of two coils one on another and we decide which coil to be magnetised and when.
+</p>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Stepper_motor.jpg/800px-Stepper_motor.jpg" width="200px" height="200px"></center>
+<h4><span style="color: rgb(73, 68, 41);">Electromagnets</span>:</h4>
+<p>
+	We also used electro magnets to push the pins.they require 12 volts and the reaction time is really less this made us to prefer
+</p>
+<p>
+	electomagnets to common actuators like DC motors.
+	<span style="background-color: rgb(238, 236, 225);"></span>
+</p>
+<center><span style="background-color: rgb(238, 236, 225);"><img src="http://www.electronics-tutorials.ws/io/io29.gif?81223b" bacground="yellow"></span></center>
+<h4><inline style="color: rgb(73, 68, 41);">Wedge:</inline></h4>
+
+<p>
+	we also used to push aluminium strips which acted like locks in our locking mechanism which is elaborated below.
+</p>

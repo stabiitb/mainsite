@@ -1,37 +1,25 @@
-<ul><li>In
-     this project a person on reaching his home will send message to the GSM
-     module a code. </li>
- <li>The
-     GSM module will supply the message and phone no. to the
+<h4>The project "Summer Automation" includes a fully fledged SMS controlled automated room.</h4><ul><li>The project features are as followed:</li><li>A person on reaching his home will send message "Open" to open his door. </li> <li>The
+     GSM module will supply the message and the phone no. to the
      microcontroller ie Arduino which will then verify whether it is from the
-     owner or not.</li>
- <li>If
+     owner or not.</li> <li>If
      it is from the owner then it will activate the door unlocking procedure
      which involves the Arduino supplying power to the door motor via a Mosfet
-     and Relay to turn on the motor for a specific time which will then unlock
-     the door via a rack and pinion mechanism. </li>
- <li>There
+     and Relay to turn on the motor for a specific time and will unlock
+     the door via a rack and pinion mechanism. </li> <li>There
      is one pair of Lazer LDR sensor outside and another pair inside the door. The
-     outside one is sensor 1 and the inside one is sensor 2.</li>
- <li>When a person enters the room he first crosses
+     outside one is sensor 1 and the inside one is sensor 2.</li> <li>When a person enters the room he first crosses
      sensor 1 then 2. The LDR in presence of Lazer light gives a constant Analog
-     Reading of 1023 however when the person passes the reading drops to 700 to
-     900.</li>
- <li>The Arduino has been programmed to detect changes
-     in sensor 1 when its reading drops below 1000 and subsequently wait for 2
-     secs and withing that time if the second sensor reading also falls below
-     1000 then there is a counter which counts the no of persons entering the
-     room and it increases as one by one persons enter the room. </li>
- <li>There is a LM-35 temperature sensor that is set
+     Reading of around 800-1023 however when the person passes the reading drops to 600 to 900.</li> <li>The Arduino has been programmed to detect changes
+     in sensor 1 when its reading drops and subsequently wait for 2
+     seconds and within that time if the second sensor reading also drops then there is a counter which counts the no of persons entering the
+     room and it increases as one as a person enters the room. </li> <li>There is a LM-35 temperature sensor that is set
       at 24 degree celsius. If the
      temperature is below 24 then only light is turned on else both fan and
      light is turned on automatically as soon as one person enters the room and
-     an sms is sent to his mobile if he wishes to turn on or off light fan or
-     close the door according to his convenience.these things can be done from
-     any mobile phone as long as at least one person is inside the room.</li>
- <li>However when the last person leaves the room
-     the door locking mechanism gets activated and hence the room locks
-     automatically. The room unlocking can only be done from a particular phone
+     an SMS is sent to his mobile if he wishes to turn on or off light fan or
+     close the door according to his convenience.These things can be done from
+     any mobile phone as long as at least one person is inside the room.</li> <li>However when the last person leaves the room
+     the door locking mechanism gets activated and hence the room locks and the lights and fan turns off automatically. The room unlocking can only be done from a particular phone
      only belonging to the owner of the house and if anybody else tries to open
      it a warning message would be sent to the owner supplying him with the phone
      no. of the person trying to open the house.</li></ul>

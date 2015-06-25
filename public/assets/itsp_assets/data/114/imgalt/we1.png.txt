@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									ANDROID APPLICATION</h5>
+									<div class="details white-text">
+										Permission for using bluetooth
+									</div>
+								</div>

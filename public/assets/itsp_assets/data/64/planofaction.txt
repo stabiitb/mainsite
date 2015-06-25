@@ -1,34 +1,40 @@
-<h3>Week 1: 18-25 May
-</h3><h4>Planned:</h4><p> We plan to make a precise formulation of the project, the material requirements,the estimated costs and learning needs.
-</p><p> We plan to make a basic version of the app, at least the design and basic
+<h2>Week 1: 18-25 May
+</h2><h3>Planned:</h3><ul>
+<li>We plan to make a precise formulation of the project, the material requirements,the estimated costs and learning needs.
+</li><li>We plan to make a basic version of the app, at least the design and basic
 coding.
- </p><p>We plan to buy the components and decide upon the distribution of work.
- </p><p>We plan to tinker around with the microcontrollers and get an idea about
-its functioning.  </p><h4>Done:</h4><p>Studied about Arduino, sensors that we would be needing and made a decision about what exactly we could do in the project.</p><p>Studied about app making and made a design for the app.</p><p>Went to Lamington road for purchasing required components. </p><p>Week 2: 25 May-1 June </p><p>Planned:</p><p>We plan to begin the first module,i.e., automated lighting system.
+</li><li>We plan to buy the components and decide upon the distribution of work.
+</li><li>We plan to tinker around with the microcontrollers and get an idea about
+its functioning.</li></ul><h3>Done:</h3><ul>
+<li>Studied about Arduino, sensors that we would be needing and made a decision about what exactly we could do in the project.</li><li>Studied about app making and made a design for the app.</li><li>Went to Lamington road for purchasing required components.</li></ul><h2>Week 2: 25 May-1 June </h2><h3>Planned:</h3><ul>
+<li>We plan to begin the first module,i.e., automated lighting system.
  It will be based on both light intensity sensor as well as app-based control
-with possibility of manual override. </p><p>After deciding the mode of implementation we plan to at least build the
-basic circuitry for one light bulb. </p><p>The basic circuitry will also include input from the app which will be
-developed simultaneously and accordingly.</p><p>Done:</p><p>Light intensity was detected using LDR. Calibration was done in the room to see the reading at different times of the day.</p><p>Relay was used to connect a bulb powered by 220V AC which was controlled by Arduino.</p><p>We decided a webpage would be better than an app since it was cross platform and easier to connect to Arduino. So studied about making webpages.</p><p>Week 3: 2 June-8 June
-</p><p>Planned:</p><p> The testing and improvement of automated lighting system will continue. </p><p>In this week, we plan to include manual override and get ready a basic
+with possibility of manual override.</li><li>After deciding the mode of implementation we plan to at least build the
+basic circuitry for one light bulb.</li><li>The basic circuitry will also include input from the app which will be
+developed simultaneously and accordingly.</li></ul><h3>Done:</h3><ul>
+<li>Light intensity was detected using LDR. Calibration was done in the room to see the reading at different times of the day.</li><li>Relay was used to connect a bulb powered by 220V AC which was controlled by Arduino.</li><li>We decided a webpage would be better than an app since it was cross platform and easier to connect to Arduino. So studied about making webpages.</li></ul><h2>Week 3: 2 June-8 June
+</h2><h3>Planned:</h3><ul><li>The testing and improvement of automated lighting system will continue.</li><li>In this week, we plan to include manual override and get ready a basic
 prototype so that more light bulbs can be added afterwards.
- This will mark the end of our first module. </p><p>Done:</p><p>Dimming the bulb using a resistor network. </p><p>First version of the webpage and connecting it to Arduino through ethernet shield.</p><p>Week 4: 9 June-15 June
- </p><p>We plan to start working on the second module, i.e., fan and ac automation
+ This will mark the end of our first module.</li></ul><h3>Done:</h3><ul><li>Dimming the bulb using a resistor network.</li><li>First version of the webpage and connecting it to Arduino through ethernet shield.</li></ul><h2>Week 4: 9 June-15 June
+ </h2><h3>Planned:</h3><ul>
+<li>We plan to start working on the second module, i.e., fan and ac automation
 and control by app and by input from temperature and humidity sensor.
-</p><p> We decide to find a way to control the speed of the fan based on the
+</li><li>We decide to find a way to control the speed of the fan based on the
 temperature and control it via the app.
-</p><p> At the same time in order to control the ac through the app, we need to
+</li><li>At the same time in order to control the ac through the app, we need to
 build a kind of remote controlling device.
  This will be challenging and getting the details together will take up most
-of the week. </p><p>Week 5: 16 June-22 June</p><p>
-Work continues on second module.
-</p><p> Hopefully, we will be able to implement through circuitry the things
+of the week.</li></ul><h3>Done:</h3><ul>
+<li>Fan control was similar to light control.</li><li>Light dimming/fan speed control using TRIACs were done (more efficient than resistors)</li><li>AC remote codes were decoded and hence, AC control was done.</li></ul><h2>Week 5: 16 June-22 June</h2><h3>Planned:</h3><ul>
+<li>Work continues on second module.
+</li><li>Hopefully, we will be able to implement through circuitry the things
 planned out in the last week.
- </p><p>By the end of this week we aim to at least control both the fan and ac by
-app and if possible based on temperature input. </p><p>Week 6: 23 June- 30 June
- </p><p>This last week we plan to tie up the loose ends.
- </p><p>We hope to finalize the app and get a well working app based control on
+</li><li>By the end of this week we aim to at least control both the fan and ac by
+app and if possible based on temperature input.</li></ul><h2>Week 6: 23 June- 30 June
+ </h2><h3>Planned:</h3><ul><li>This last week we plan to tie up the loose ends.
+</li><li>We hope to finalize the app and get a well working app based control on
 the room's lighting and cooling systems.
 It will be hard to test the sensor-based input, but we will try to debug it
 as well as we can.
-</p><p> It may be possible to set up a person detector and person recognition
-system in this week if time permits, although the work may only go till mid-way to completion.</p>
+</li><li>It may be possible to set up a person detector and person recognition
+system in this week if time permits, although the work may only go till mid-way to completion.</li></ul>

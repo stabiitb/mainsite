@@ -1,4 +1,5 @@
-<h4><strong>FoundYou Chip</strong>  can be stuck or attached to some
+<h4><strong>FoundYou Chip</strong>  can be stuck or tagged to some
 object which we think we can lose. When we are not able to find the
 object, we open the android application in our mobiles and it shows the signal of how near or far the object is . When  "Find" button  is pressed in the app , chip will start ringing so that we can follow the sound and
-pick up the object.</h4><p><img src="http://i.ytimg.com/vi/e7QNbU71lsA/1.jpg" alt="" style="width: 21px; float: left; opacity: 0.5;"></p>
+pick up the object.
+</h4><p>When the user wishes, he can press a button in the app to make the chip start ringing. the user can then follow the sound and pick up the object.</p>

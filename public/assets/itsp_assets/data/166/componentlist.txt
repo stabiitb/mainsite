@@ -1,1 +1,1 @@
-<p>1.Arduino Uno</p><p>2.Arduino Nano</p><p>3.Pulse Sensor</p><p>4.HC05 Bluetooth Modules</p><p>5.LCD</p><p>6.Buzzer</p>
+<p>1.Arduino Uno</p><p>2.Arduino Nano</p><p>3.Pulse Sensor</p><p>4.TCRT5000</p><p>4.HC05 Bluetooth Modules</p><p>5.LCD</p><p>6.Buzzer</p>

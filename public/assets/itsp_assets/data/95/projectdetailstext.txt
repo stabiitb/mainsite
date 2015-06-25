@@ -1,0 +1,52 @@
+<p><strong><span style="color: rgb(31, 73, 125);">Android Application</span></strong></p><p><strong><span style="color: rgb(31, 73, 125);"><br></span></strong></p><p><v>
+ <v>
+ <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  <v>
+  
+ <v>
+ <v>
+ </v></v></v></v></v></v></v></v></v></v></v></v></v></v></v></v></p><p>The home screen of the application has three
+buttons- Enable Standby, Usage History and Emergency Contacts .The app is to be
+used when the HC-05 module is paired with the android device.</p><p>On pressing the ‘<strong><em>Enable Standby</em></strong>’ button,
+the connection between the HC-05 and the android device is made and the android
+device can now start receiving data from the Bluetooth module if the
+PepperShield has been used. If the Bluetooth of the android device is not yet
+switched on, then the app asks for the permission to turn that on and then
+proceed.</p><p>A brief message stating “Standby enabled for
+emergencies" is seen on the android device informing us on whether the
+connection has been successfully made or not. Also after the connection has
+been made, this button is disabled and is removed from the home screen.</p><p>The ‘<strong><em>Emergency Contacts</em></strong>’ button allows
+the user to view and edit the list of contacts he/she wants the app to send
+message to in case the PepperShield is used. This list can contain several
+emergency contacts (like 100, 181, etc which cannot be deleted ; here we have
+added 9969777888 as the emergency number for women’s safety) as well as some
+personal contacts (like family and friends) and these numbers can be chosen
+from the ‘Contacts’ application of the android device of the user. The screen
+which appears on pressing the ‘Emergency Contacts’ button has two options- add
+and delete. Consequently, one can add and delete contacts (only the personal
+contacts) that he/she wishes to inform using those two options.</p><p>Previous usages of the app are stored under the ‘<strong><em>Usage
+History</em></strong>’ section of the app, which displays the photograph taken along
+with date, time and location at the moment of usage.</p><p><strong>Application flow
+at the moment of crisis</strong><strong> </strong></p><p>We assume that the user has enabled the standby
+feature prior. The app keeps listening for data from the connected Bluetooth
+module. On pressing the spray, the camera is triggered and the Bluetooth module
+starts transmitting data to the Android phone. On reception of the first set of
+bytes, the app immediately generates an SMS message with a call for help, and
+the location of the user at that instant. This SMS is sent to all contacts
+available under the Emergency Contacts section.</p><p>Once the complete image is received from the
+device, it is stored in a custom directory on the phone and MMS sending is
+initiated with the captured photograph automatically added to an app-generated
+multimedia message. On unlocking the phone next, the user may choose to send
+the photograph to her/his contacts simply by hitting the 'Send' button. This
+will go only to the custom emergency contacts added by the user, and not the
+default helpline numbers.</p><hr><p>Trigger button-</p><p>The trigger button has been added in proximity to the spray button of the actual spray and has so placed that pressing the spray also presses the button switch and triggers the whole mechanism of the device. The trigger pin has been connected to pin-12 of the Arduino board.</p><hr><p>Bluetooth Module HC-05</p><p>The Bluetooth module on the device can be paired with the Android phone by the following steps :</p><ol><li>Power on the PepperShield device</li><li>The LED will blink twice a second</li><li>Open Settings --&gt; Bluetooth in your Android phone</li><li>If Bluetooth is not already switched on, do so</li><li>Click on 'Search for devices' on the Android phone</li><li>HC-05 will appear under Available Devices</li><li>Click on it and enter a pairing passkey 1234</li><li>Pairing will be successful and the LED will begin to blink once per second</li><li>When Standby is enabled on the app and the device is powered on, the Bluetooth module will automatically connect to the phone and the LED will blink once very two seconds.</li><li>PepperShield is now ready to use.</li></ol>

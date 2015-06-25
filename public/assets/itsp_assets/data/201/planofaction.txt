@@ -1,2 +1,7 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>planned the dimension of RC plane and components to be used.</li></ul><ul><li>ordered the components available online.</li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>studied about arduino programming and IMU</li><li>designed the basic circuit of automated system of RC plane.</li></ul>
+<h3>Week 1 (May 6th -12th)</h3><ul>
+<li>planned the dimension of RC plane and components to be used.</li></ul><ul>
+<li>ordered the components available online.</li></ul><h3>Week 2 (May 13th- 19th )</h3><ul><li>studied about arduino programming and IMU</li><li>designed the basic circuit of automated system of RC plane</li></ul><h3>Week 3(May 20th- 26th )</h3><ul>
+<li>got the ordered components</li><li>started making the RC PLANE and completed it</li></ul><h3>Week 4(May 27th- June 3th )</h3><ul>
+<li>received IMU MPU-6050, started working on it</li><li>programmed the arduino to get raw reading and calculate the orientation of plane</li></ul><h3>Week 5(May 4th- June 10th)</h3><ul>
+<li>tried to add relay switch, to switch between manual and automated modes but it didn't worked well</li><li>used GATEs to solve the switching problem</li></ul><h3>Week 6(May 11th- June 17th)</h3><ul>
+<li>Did flight testing</li></ul><h3></h3>

@@ -1,4 +1,1 @@
-<h4 style="text-align: center;"><span style="color: rgb(255, 255, 255);">Unless</span> we are at home where our mom can find everything , it
-frequently happens that we forget where we just placed our things like keys , TV remote,wallet etc and
-have a hard time finding the same. This fact motivated us to build our
-FoundYou Chip project that helps us to find objects easily and quickly .</h4><h3 style="margin-left: 20px; text-align: center;"></h3>
+<h4 style="text-align: center;"></h4><h4 style="text-align: center;">Life's little inconveniences add up: the average person misplaces objects 3,000 times a year, and then spends another 60 hours a year searching for them. All told, our misplaced stuff adds up to a lot of rupees anually .</h4><h4 style="text-align: center;">Simple solutions, applied in a new way, can have powerful results and thus, make a happier, more efficient world.</h4><h4 style="text-align: center;">This fact motivated us to build our FoundYou Chip project that helps us to find objects easily and quickly </h4><p style="text-align: center;"></p><h3 style="margin-left: 20px; text-align: center;"></h3>

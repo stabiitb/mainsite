@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Permission to activate the Bluetooth of the android device if it is off</h5>
+									<div class="details white-text">
+										On pressing the ‘Enable Standby’ button, the connection between the HC-05 and the android device is made and the android device can now start receiving data from the Bluetooth if the PepperShield has been used. If the Bluetooth of the android device is not yet switched on, then the app asks for the permission to turn that on and then proceed.
+									</div>
+								</div>

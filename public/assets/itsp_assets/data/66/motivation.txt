@@ -1,0 +1,1 @@
+<p><strong>YouTube recently introduced a new autoplay feature which automatically plays a video depending on the current video. However this doesn't take into consideration the current mood of the user. Our project aims at designing a system where autoplay would consider mood of the user before playing the next song.</strong></p>

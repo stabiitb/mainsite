@@ -1,13 +1,18 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><ol>
+<li>Researching about various equipment that can be used in our project like rotation to linear motion conversion mechanisms,Various methods for image processing,overall design of the bot etc.</li></ol><p style="margin-left: 40px;"></p><ul>
+</ul><ul>
+<li>Accomplished</li></ul><ol>
+<li>We were able to find many useful items which could be used in our project. </li></ol><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned</li></ul><ol>
+<li> Writing code for image processing in  MATLAB.</li><li>Code for storing coordinates of boundary points of an image.</li></ol><ul>
+<li>Accomplished</li></ul><ol><li>Tasks accomplished</li></ol><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li> Planned :</li></ul><ol><li>Buying hardware parts like plywood,lead screws,clamps,rods etc.</li><li>Making basic structure and components of the bot.</li><li>Writing code for GUI in MATLAB for ease of operation for user.</li></ol><ul>
+<li> Achieved</li></ul><ol><li>We were able to buy many components like rods,plywood etc, we had to place a special order for lead screws with cenon systems as they weren't readily available.</li><li>Major part of GUI was finished with minor errors </li></ol><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>Planned 
+</li></ul><ol><li>Cutting and drilling various components,starting assembly of bot</li><li>Coding for character searching mechanism in txt file</li></ol><ul><li>What you have accomplished
+</li></ul><ol><li>Assembly was started</li><li>coding for mentioned part was also finished</li></ol><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>We started facing many problems in synchronizing the hardware and the software together so we were planning to solve them. </li></ul></li></ul><ul>
+<li>What you have accomplished?
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
-<ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>We have finally made the connection and the motors have started rotating on our command but we are still facing some random errors . </li></ul></li></ul>

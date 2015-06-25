@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Decomposition of an image into its Y, Cb and Cr components</h5>
+									<div class="details white-text">
+										YCbCr is a format in which a RGB color can be encoded. The Y or luminance component is the amount of white light of a color, and the Cb and Cr are the chroma components, which respectly encode the blue and red levels relative to the luminance component.
+									</div>
+								</div>

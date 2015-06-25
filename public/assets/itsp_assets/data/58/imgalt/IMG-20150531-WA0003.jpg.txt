@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									 the electrical part</h5>
+									<div class="details white-text">
+										the part that is responsible for the proper timed movements of the motors
+									</div>
+								</div>

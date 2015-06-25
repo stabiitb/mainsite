@@ -1,22 +1,18 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p>Read the basics of our
-project.</p><p style="margin-left: 40px;"></p><p>Started learning arduino coding</p><p style="margin-left: 40px;"></p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">All Basic reading was done and we got a brief glimpse about arduino</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>·To learn Solid Works<br>
-
-·Design mechanically a
-model of robotic arm<br>
-
-·Searching for the appropriate
-parts and getting them(info about various servos....)<br></li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned</li></ul><p>Read the basics of our
+project.</p><p style="margin-left: 40px;"></p><p>Started learning arduino coding</p><p style="margin-left: 40px;"></p><ul>
+<li>Accomplished</li></ul><p style="margin-left: 20px;">All Basic reading was done and we got a brief glimpse about arduino</p><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
 <ul>
-<li>Fixed a design which we will be making in future.</li><li>Made a cardboard model of robotic arm (for joint constraints)</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>·To learn Solid Works<br><p>·Design mechanically a
+model of robotic arm</p><p>·Searching for the appropriate
+parts and getting them(info about various servos....)</p></li></ul></li><li>What you have accomplished?<ul><li>Fixed a design which we will be making in future.</li><li>Made a cardboard model of robotic arm (for joint constraints)</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>·To test working of
+servos.</li><li>To test torque specifications of servo.</li><li>·Since we could not get acrylic parts done in last week we would include that too</li><li>·Started learning in detail about the flex sensors and accelerometers</li></ul></li></ul><ul><li>What we achieved<ul><li>Learned about flex sensors and accelerometers</li><li>Practised different codes in arduino</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
 <ul>
-<li>·To test working of
-servos.</li><li>To test torque specifications of servo.</li><li>·Since we could not get acrylic parts done in last week we would include that too</li><li>·Started learning in detail about the flex sensors and accelerometers<br></li></ul></li></ul><ul>
-<li>What we achieved
+<li>Finishing the coding part. </li><li>Tested the flex sensors and accelerometer individually.</li><li>Working on the mechanical part was continued. <br></li></ul></li><li>What you have accomplished?
 <ul>
-<li>Learned about flex sensors and accelerometers</li><li>Practised different codes in arduino</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>Finishing the coding part. </li><li>Tested the flex sensors and accelerometer individually.</li><li>Working on the mechanical part was continued. <br><br></li></ul></li><li>What you have accomplished?<ul><li>The flex sensors were working properly</li><li>Accelerometer were not working properly</li><li>The mechanical assembly was ready</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Mounting the components on
-Glove</li><li>Running all servos by sensors attached to gloves</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>The glove and the mechanical assembly was ready</li></ul></li></ul>
+<li>The flex sensors were working properly</li><li>Accelerometer were not working properly</li><li>The mechanical assembly was ready</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<ul>
+<li>Mounting the components on
+Glove</li><li>Running all servos by sensors attached to gloves</li></ul></li></ul><ul><li>What you have accomplished?
+<ul>
+<li>The glove and the mechanical assembly was ready</li><li>They were in an appropriate sync. also , the mechanical assembly and the gesture glove.</li></ul></li></ul>

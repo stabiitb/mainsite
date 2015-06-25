@@ -1,0 +1,53 @@
+<p>
+	<strong>
+	</strong></p>
+<div>
+	<p>
+		During the course of our project, we tried numerous attempts with varied results, as detailed below.
+	</p>
+	<ul>
+		<li><strong>Attempts with metal frame and brushless motor:</strong> Our first attempt was using a metal frame and a BLDC (brushless DC motor). It had the appropriate specs needed. However we only knew how to control it via an ESC and could find no other feasible way.
+		<ul>
+			<li><strong>ESC coding:</strong> To control the ESC using an arduino was challenging. We needed to calibrate it before using it. This is done by first giving maximum throttle i.e. writing 180 to the ESC, then min throttle i.e. 0, and then giving throttle at 90 deg i.e. writing 90. Followed by some random value and again writing 90. This completes the calibration and exits the ESC from programming mode. Then, we could adjust the speed of the motor above a threshold value by writing values from 11 to 20. Above and below these ESC cut off the connection.</li>
+			<li><strong>Motor specifications:</strong> The motor that we were using till now was controlled with an ESC. However it was not possible to rotate the motor in both the directions, in any way except physically changing the connections of the wire. Also the motor couldn’t rotate at a small enough speed that we required, so we had to look for alternate motors.</li>
+		</ul>
+		</li>
+	</ul>
+	<p>
+		<img src="https://lh3.googleusercontent.com/SFJjQui0gOtSGYWNAcAjv-ct8Yp-gEZtaYfgCn7lV9mMZZHcF_eLxwJAsUF4GHCS-9N7IlsG3cmY7i28GBJv0zKpQgbTpnCz1o5DPnIlXufWD1Z1GY0mGmAJGlJo_w-g2B76b_WMdA" width="338px;" height="260px;" alt="D2826-101400(2).jpg"><img src="http://cdn3.volusion.com/lctho.wfrjz/v/vspfiles/photos/ESC-001-2.jpg?1320940194">
+	</p>
+	<ul>
+		<li><strong>Attempts with acrylic frame and stepper motor:</strong> Initially we had used another motor and so we have made to 2-D aluminium prototype according to the dimensions of that motor. However since we changed the motor, we also had to make a new prototype. We made it out of acrylic, getting it laser cut according to the dimensions of the new motor.The stepper motor divides each rotation into a number of equal steps and also allows us to specify the angular speed of rotation. By varying the angular speed, according to the torque required to balance, we planned to apply PID algorithm, thus making the wheel rotate, to provide torque to the body, in the opposite direction making it balance.
+		<ul>
+			<li><strong>Problems with this design:</strong>
+			<ul>
+				<li>Stepper motors are quite heavy and going for a heavy duty one increased the weight of the cubli beyond the capacity of the motor itself. Whereas a low torque one is not powerful to rotate our wheel at high RPMs unless very high input voltage is given.</li>
+				<li>We couldn’t afford to have a heavier motor of similar specs. But the current one was unable to take the wheel at speed &gt;60 rpm.</li>
+			</ul>
+			</li>
+			<li><strong>Coding for motor calibration:</strong> For the code to calibrate and test the stepper motor, we needed to specify the steps per revolution and the speed of the motor, by varying which we could vary the torque provided by the motor.</li>
+			<li><strong>Calibrating the sensor values and obtaining angles, angular velocity and acceleration from them:</strong> As with any sensor, the MPU6050 needed to be calibrated before initial use. Ideally, we wished to remove the zero error, for which the sensor is kept as level as possible. The offset values are then calculated and modified accordingly. Then, by manipulating the raw values given by the sensor, we managed to get the angle tilted from the equilibrium/balance position, its angular velocity at any instant and also its acceleration. Using these values to find the net torque required to be generated to rotate the wheel in the opposite direction, and hence, make the body stay balanced.</li>
+		</ul>
+		</li>
+	</ul>
+	<p>
+		<img src="https://lh4.googleusercontent.com/BI02roxfnK7Zwd_gOvXMweQXe66hye2kONb_ZMXUZ7HLOdNJwjpU6nEP_x0FShBjBzwjh-xCuU7Gkfb1YlyE969IVksZDI7pJ6s7rjeMU6VqH7-xx912PwPlhnpZYobVABgqnHmD3w" width="409px;" height="332px;"><img src="https://lh3.googleusercontent.com/dqQ-LAA-xDWxxvH2-yeMYB9wAL_iOm8eYGLq-rTbwFp3hsDG-4brgpauC4r-yodTayzR-dQOsl6Xqyigh0xX34Byth3lkI_XHmneA-MIa7gRQnGpvPD_45dSgpN6SvpHunPCHQG04Q" width="437px;" height="332px;">
+	</p>
+	<ul>
+		<li><strong>Attempts with acrylic frame and brushed DC motor of 12000 rpm:</strong> Since the stepper motor couldn’t provide the speed or the torque required to lift the frame, we switched to a high speed brushed DC motor, with a maximum rpm of about 12000. Brushed DC motors use physical contact to transfer power from the motor terminals through the coil.
+		<ul>
+			<li><strong>Problems with this motor:</strong> The downside of the motor being high speed was that it could not provide the required torque to lift the frame significantly. Even despite our attempts to reduce the minimum torque necessary, the motor still couldn’t provide it. Also there was no visible braking mechanism.We had to wait till the rotation stopped on its own before turning in the opposite direction.</li>
+		</ul>
+		</li>
+	</ul>
+	<p>
+		<img src="https://lh6.googleusercontent.com/4xvfvDZIdXD5-ZSz7jTFV4BSDSgx5OO7xH9shDwZDPc63RC80Wsr2m512aJPKRQ6x2KlWnxSZ2wc4uLqEY58guq2CsVJF9B-E3RxQ4FPn8A9dk27W1Ib8nqjadi_5GU3udaFn7k" width="300px;" height="300px;" style="border-style: none; border-width: initial; transform: rotate(0rad); -webkit-transform: rotate(0rad);">
+	</p>
+	<ul>
+		<li><strong>Attempts with acrylic frame and brushed DC motor of 1000 rpm: </strong>After our attempts with a high speed, low torque brushed DC motor, to no avail, we finally realised that we needed torque more than a higher speed, and switched to a low speed, high torque brushed DC motor with an rpm of 1000. This motor gave us the required torque, and when attached to the reaction wheel, we were able to lift the frame by as much as 15 degrees. Even the direction of the motor was changed quickly as per the commands given to it, and we could control the speed well enough to suit our purpose. Thus, we decided on this motor.</li></ul><p><img src="https://lh5.googleusercontent.com/T3wkfmGtwod4d6H18lEA23usuAetA9oJDop7sbkgfCDWLoU5J1zZeFP5E230Rd6MCiFM_sX2LKj-hpLn0bN7Bszm0sWEsCScAspLEeLFntGu8q-7AHhbBOJafJs20wgJTKtzuTI" width="300px;" height="300px;" style="border-style: none; border-width: initial; transform: rotate(0rad); -webkit-transform: rotate(0rad);"></p><ul>
+		<li><strong>Fluctuations in sensor readings when sensor is in motion:</strong> Whenever the frame move to and fro in the sideways direction, the vibrations of the motor along with the movement of the wheel caused it to vibrate heavily, which in turn caused massive fluctuations in the sensor readings, up to even 100 degrees at a time. Changes in the sensor code brought the fluctuations down, but not by much. Due to the fluctuations, abrupt values are written to the motor causing a jerky motion. To reduce the fluctuations, we incorporated the gyroscope readings as well, instead of only the accelerometer readings, i.e. we calculated the angle by an alternate method, integrating the velocity values as well and then taking a weighted mean of the two, one by the accelerometer and the other by the gyroscope. After that, taking an average over 10 observations, we finally reset the value whenever there was some stability to remove the drift in angle due to gyroscope. We were successful in reduction to some extent, but fluctuations up to +-10 degrees remain, and therefore we cannot stabilize it at zero degrees, as the sign of rotation keeps changing abruptly. Vibrations from the system are also attributing a lot to fluctuations. If they are removed, we believe the error might possibly come down to +-2 degrees.</li>
+	</ul>
+	<p>
+		<img src="https://lh3.googleusercontent.com/7vBbX_cdIQpGlEyBfBmu2dZ-XoeX--x3oZqZddREzujco-XDpum1-xMKORCo7J6VgB1vYL5id1Xxp2npkUvEPjuFx3XQNfFJrjFSYA9UwR_rnFg8FTH45ARc8XFNlr0UntwttAezO3E7-EMb" width="196px;" height="257px;" alt="image_mpu6050.jpg" style="border-style: none; border-width: initial; transform: rotate(0rad); -webkit-transform: rotate(0rad);">
+	</p><p><a href="https://drive.google.com/file/d/0BxCTxbKq30wGdkhVY09RVDl6aFk/view?usp=sharing" target="_blank">Datasheet of the MPU6050 sensor</a></p>
+</div>

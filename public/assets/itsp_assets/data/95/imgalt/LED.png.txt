@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The connections are made according to the above circuit diagram (As were not able to find a 300ohm resistor, we used two 150 ohm resistors in series)</h5>
+									<div class="details white-text">
+										The total current budget of an I/O pin on the Arduino is 40mA, which is much lower than the 300mA required to drive the LED directly. Therefore, an LED driver or current limiter is necessary. In order to trigger the LED with logic level signals (0V / 5V), we used an NPN bipolar junction transistor (BJT, Vth = 0.7V) to serve as a power switch for the power LED. The pull down current is limited by the resistor on the emitter. Its resistance is calculated by: (V_B-0.7) / R = 300mA Here, a nominally high resistance (330 ohm) is used in order to avoid thermal runaway. Since the LED has the largest instantaneous current consumption in our system, it is completely decoupled from the Arduino to maintain system stability and powered directly from the 9V main supply.
+									</div>
+								</div>

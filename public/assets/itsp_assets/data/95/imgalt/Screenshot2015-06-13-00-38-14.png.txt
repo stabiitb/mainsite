@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Choosing contacts to be deleted from the list</h5>
+									<div class="details white-text">
+										The contacts which are to be deleted  are first selected by clicking the checkbox and then pressing the delete button.
+									</div>
+								</div>

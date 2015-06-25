@@ -1,13 +1,63 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th -11th)</h3><ul>
+	
+<li>Planned</li></ul><p style="margin-left: 40px;">
+	Developing the required skill set for the project</p><p style="margin-left: 40px;">
+	procuring items to be used</p><ul>
+	
+<li>Accomplished</li></ul><p style="margin-left: 20px;">
+	        Learnt Atmel coding to code our ATmega32.</p><p style="margin-left: 20px;">
+	        Bought Servo motors and stuff to make Electromagnets</p><h3>Week 2 (May 12th- 18th )</h3><ul>
+	
+<li>Planned
+	
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+		
+<li>finalising the actuation mechanism</li>		
+<li>Making the mechanical part of our bot</li>	</ul></li>	
+<li>Accomplished
+	
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
+		
+<li>Made the System.</li>		
+<li>Saw that Electromagnets won't work and the system made by servos is too  large</li>	</ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+	
+<li>Planned
+	
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+		
+<li>Plan a new mwthod to do our work</li>		
+<li>Complete the Design</li>		
+<li>Meanwhile Start the coding part</li>	</ul></li></ul><ul>
+	
+<li>Accomplished
+	
+<ul>
+		
+<li>Found out about Flexinol actuators.</li>		
+<li>Made our prototype.</li>		
+<li>Started coding for pin actuation.</li>	</ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Make Electrical system for the project</li>		
+<li>Test the code for actuation</li>		
+<li>Write code for audio output</li>	</ul></li>	
+<li>Accomplished
+	
+<ul>
+		
+<li>made circuit for interfacing our SD card(</li>		
+<li>Actuation Code worked.</li>	</ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>To complete the system and debug</li>	</ul></li></ul><ul>
+	
+<li>Accomplished<br><ul>
+		
+<li>System completed</li>		
+<li>But our casing melted( made of PVC) due to Flexinol</li>	</ul></li></ul>

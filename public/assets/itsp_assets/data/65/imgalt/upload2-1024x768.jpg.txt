@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Brushless DC Motor Holder</h5>
+									<div class="details white-text">
+										This holder has been 3-D printed.It was designed and built to hold the brushless DC motor which drove our vacuum fan.
+									</div>
+								</div>

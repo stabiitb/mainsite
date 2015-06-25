@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The box and the board insides </h5>
+									<div class="details white-text">
+										The insides of the final box
+									</div>
+								</div>

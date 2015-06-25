@@ -1,11 +1,76 @@
-<ul><ul><ul><ul><h3>Week 1 (May 5th -11th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;"></p><ul>
-<li>Accomplished<ul><li>Researching about various topics required for the project</li><li>Learning basics of android application and trying it out.</li></ul></li></ul><p style="margin-left: 20px;"></p><h3>Week 2 (May 12th- 18th)</h3><ul><li>Accomplished<ul><li>Completed basic user interface of the android application.</li><li>Bought required parts .</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>Accomplished<br>
-<ul><li>Written android code for interfacing of bluetooth with bluetooth of mobile .</li><li>Written avr code for avr ATtiny2313A</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<h3>Week 1 (May 5th -11th)</h3><ul>
+	
+<li>Planned
+	
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>Accomplished <br>
+		
+<li>Researching about various topics required for the project.</li>		
+<li>Getting required parts.</li>	</ul></li>	
+<li>Accomplished
+	
 <ul>
-<li>Debugging of android code and successfully connecting to bluetooth module using the android app</li><li>Debugging of avr code . </li><li>Making prototype with arduino and successfully interfacing arduino with bluetooth module .</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+		
+<li>Researching about various topics required for the project</li>		
+<li>Learning basics of android application and trying it out.</li>	</ul></li></ul><h3>Week 2 (May 12th- 18th)</h3><ul>
+	
+<li>Planned
+	
 <ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>Accomplished<br><ul>
-<li>Successfully operating buzzer with android application and arduino .</li><li>AVR code written correctly but problem with baud rate of matching of avr and bluetooth module</li><li>Built circuit</li></ul><h3>Week 6(June 9th- June 16th)</h3></li><li>Accomplished</li><li><p style="margin-left: 20px;">Debugging of circuit</p></li><li><p style="margin-left: 20px;">Making outside cover of the chip</p></li><li><p style="margin-left: 20px;">Giving final touches to the android app and chip.</p></li></ul></ul></ul></ul></ul>
+		
+<li>Writing the android code and avr code.</li>	</ul></li>	
+<li>Accomplished
+	
+<ul>
+		
+<li>Completed basic user interface of the android application.</li>		
+<li>Bought required parts .</li>	</ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Designing the circuit</li>		
+<li>Designing the outer case of the chip.</li>	</ul></li>	
+<li>Accomplished<br>
+	
+<ul>
+		
+<li>Written android code for interfacing of bluetooth with bluetooth of mobile .</li>		
+<li>Written avr code for avr ATtiny2313A</li>	</ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Testing and debugging.</li>		
+<li>Ensuring proper coordination on android application with bluetooth module.</li>	</ul></li>	
+<li>Accomplished <br>
+	
+<ul>
+		
+<li>Debugging of android code and successfully connecting to bluetooth module using the android app</li>		
+<li>Debugging of avr code . </li>		
+<li>Making prototype with arduino and successfully interfacing arduino with bluetooth module .</li>	</ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+	
+<li>Planned
+	
+<ul>
+		
+<li>Giving final touches to the project.</li>	</ul></li>	
+<li>Accomplished<br>
+	
+<ul>
+		
+<li>Successfully operating buzzer with android application and arduino .</li>		
+<li>AVR code written correctly but problem with baud rate of matching of avr and bluetooth module</li>		
+<li>Building and debugging of circuit</li>	</ul></li></ul><h3>Week 6(June 9th- June 16th)</h3><ul>
+		
+<li>Planned
+		
+<ul>
+			
+<li>Final testing of the project.</li>		</ul></li>		
+<li>Accomplished
+<ul>			
+<li>Making outer case of the chip</li>			
+<li>Giving final touches to the chip and the android app.</li>		</ul></li>	</ul>

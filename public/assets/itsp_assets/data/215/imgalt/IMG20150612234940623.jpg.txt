@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									wing with tilt rotor</h5>
+									<div class="details white-text">
+										tilt rotor connected with BMS620 servo
+									</div>
+								</div>

@@ -1,13 +1,16 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 5th -11th)</h3><ul>
+<li>Planned
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>searching about the theory involved, sensors required<br>and<br>detailed study on stabilization of Quad-copter .</li></ul></li></ul><p style="margin-left: 40px;"></p><p style="margin-left: 40px;"></p><ul>
+<li>Accomplished
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
+<li>Got the idea how Quad-copter works</li><li>learnt the use of different components involved in Quad-copter and connections too</li><li>realize the necessity of flight controller board</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>finalising the components required</li></ul></li><li>What you have accomplished?<ul><li>finalised ArduiPilot over arduino + kk 2.1 flight controller board </li><li>finalised the Quad-copter components too</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>During review meet-1 mentors told us to use Arduino+ KK 2.1 instead of ArduiPilot </li><li>So we planned to understand the KK 2.1 configurations and Arduino programming </li></ul></li></ul><ul><li>What we achieved<ul><li>understood basic Arduino programming</li><li>studied the different configurations and calibrations  of KK 2.1 </li><li>purchased the Ultra-sonic sensor and Arduino UNO board  </li></ul></li></ul><p>Week 4 (May 26th - June 1)</p><ul>
+<li>What you have planned ?
+<ul>
+<li>Order the necessary components of Quad-copter</li><li>Assembling the Quad-copter components</li><li>To start work on Coding</li></ul></li><li>What you have accomplished?
+<ul>
+<li>Received the Quad-copter components</li><li>Successfully assembled it</li><li>After lot of errors and pain we successfully accomplished the code of Auto take off and altitude hold without errors</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<ul>
+<li>To test the Code on flight</li><li>Include GPS module</li></ul></li></ul><ul><li>What you have accomplished ?<ul><li>Tested the code and found code works fine</li><li>Ordered the GPS module PA6E</li><li>Tried to include it but could not succeded</li></ul></li></ul>

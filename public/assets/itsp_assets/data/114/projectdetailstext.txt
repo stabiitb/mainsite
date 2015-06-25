@@ -1,0 +1,14 @@
+<p>
+	The project looked a bit daunting at first but we launched a two pronged assault on the Coding and Electronic fronts.</p><p>
+	<strong>WEB/CODING APPROACH:</strong></p><p>
+	We all were android coding beginners,so we started with learning of how to make Bluetooth  interfaced Android Application.There are two aspects of our app development:</p><p>
+	<strong>1. User interfacing:</strong>Includes welcome screen of the app,switches to two more screens,which includes image button toggling between on/off images of buzzer for the user to switch on/off the buzzer.</p><p>
+	<strong>2. </strong><strong>Bluetooth interfacing:</strong></p><p style="margin-left: 20px;">
+	Includes,</p><p>
+	<strong></strong>                  a. Measuring the signal strength of Bluetooth module to know how much near or far it is.</p><p>
+	                  b. Connection with Bluetooth module.</p><p>
+	                  c. Sending data to Bluetooth module.</p><p>
+	<strong><br>
+	</strong></p><p>
+	<strong>ELECTRONICS APPROACH</strong>:</p><p>
+	We aimed at using the hardware as small as possible,we started with ATtiny2313a microcontroller (which has only 20 pins).But this didn`t work may be because of not matching of baud rate.Finally we ended up with Arduino Uno and Bluetooth module HC-05.Our main motto was to interface bluetooth module and buzzer with microcontroller. We used a 9V battery to power the whole device . The battery, if used completely, can be replaced.</p><h3 style="text-align: center;"></h3><p style="margin-left: 420px;"></p><p style="margin-left: 420px;"></p>

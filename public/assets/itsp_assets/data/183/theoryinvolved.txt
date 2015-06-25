@@ -1,4 +1,1 @@
-<p>The object is detected using a ultrasound sensor .The
-sensor sends a burst of ultrasound which eventually hits the object in path and
-then returns back to the source .The sensor then calculates the time taken by
-these bursts to come back and estimate it’s distance from the bot.</p>
+<p>The GPS system will inform the bot of its current location. The digital compass will align the bot in the direction of the target.</p><p>The obstacles will be detected by the ultrasound sensors. There are two sensors, one which is always pointed towards the target, on the servo motor and the other always pointed ahead of the bot. When the senor pointed towards the target senses an obstacle, the bot turns till the fixed sensor does not detect any obstacle and moves forward. Then, when both the sensors are clear, the bot will move towards the target. The bot will keep moving till it reaches the destination.t it</p>

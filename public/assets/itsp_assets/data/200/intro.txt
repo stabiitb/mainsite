@@ -1,1 +1,1 @@
-<p>We had planned to make an automated room facility which will be governed by SMS service which can used by everyone without hastle. The project features the controlling of basic safety and appliances such as digital door lock mechanism and amenities like fans, lights etc. </p>
+<p>We had planned to make an automated room facility which will be governed by SMS service which can used by everyone without hastle. The project features the controlling of basic safety appliances such as digital door lock mechanism and amenities like fans, lights etc. </p>

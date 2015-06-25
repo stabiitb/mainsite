@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									electromagnets</h5>
+									<div class="details white-text">
+										electromagnets being controlled by Raspberry Pi.
+									</div>
+								</div>

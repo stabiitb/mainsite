@@ -1,0 +1,7 @@
+<ol>
+<ol>
+<p><strong>  ABOUT DEVICE:</strong><br>        Our device has two cameras(logitech).</p><p>    One camera gives the front view of keyboard and the other one gives the top view.</p><p><strong>PROCESSING THE IMAGES:</strong></p><ol>
+<li>From the image we get directly from webcams we removed the non keyboard areas by selecting the coordinates required.</li><li>We used a color filter for detecting the hands or skin color precisely.</li><li>After the hand detection is done we did edge detection for edges of hands.</li></ol><p><strong>WORKING OF BOTTOM CAMERA:</strong></p><ol>
+<li>The image is searched by the processor to find first white pixel of the finger tip.<p>Now this location (x-coordinate) is passed to the top camera. </p></li></ol><p><strong>WORKING OF THE TOP CAMERA:</strong></p><ol>
+<li>The location given from bottom camera is used to get the y coordinate of the finger tip.</li><li>Now since we have both the coordinates we can know the key pressed...</li></ol></ol><ul>
+<li><a href="https://github.com/Achyuth1/ITSP_Final-demo" target="_blank">Link to our code on github</a></li><li><a href="https://www.youtube.com/watch?v=Ed5cSTf-SMI" target="_blank">Link to our video on youtube</a></li></ul></ol><p>Clich here to edit it</p>

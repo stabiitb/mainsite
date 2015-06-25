@@ -1,0 +1,20 @@
+<p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	The project formed is a result of many night outs ,hardwork and desire to do something new</span></p><p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	first of all we started from scratch and made the aluminium chassi and the slots for the tyre</span></p><p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	then we made some adjustments and fixed the tires</span></p><p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	then we started making the circuit which took 2-3 days of searching and researching</span></p><p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	we learned about the basics of all the elements used in our circuit</span></p><p>
+	<span style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+	we used breadboard as easy to handle .</span></p><p>
+	                                                                                                           <img src="http://s5.postimg.org/xjje5a0jb/IMG_20150613_180933.jpg" align="centre"></p><p>
+	then we coonnected the circuit but it took a lot of time to find out that the circuit was not able to get enough</p><p>
+	 power from one battery so i decided to attach one more battery .</p><p>
+	<strong></strong><em><strong>BATTERY 1   </strong></em></p><p>
+	<img src="http://s5.postimg.org/vg8yxm0qf/IMG_20150613_182221.jpg"></p><p>
+	<strong><em>      BATTERY 2 </em></strong></p><p>
+	<img src="http://s5.postimg.org/9v3wa03zr/IMG_20150613_182230.jpg"></p><p>We also learned the arduino coding which you can learn very easily via youtube </p><p>IN THE VIDEO BELOW YOU CAN SEE THE  INSTANTS WHERE WE GIVE SIGNAL THROUGH OUR MOBILE PHONE </p><iframe width="560" height="315" src="https://www.youtube.com/embed/FJ9q1bdE9Vc" frameborder="0" allowfullscreen=""></iframe>

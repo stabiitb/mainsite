@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Select Sketcher/Pen Plotter</h5>
+									<div class="details white-text">
+										Here,the user can choose if he/she wants to operate on the Sketcher or the Pen Plotter
+									</div>
+								</div>

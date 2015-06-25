@@ -1,16 +1,8 @@
-<ul>
-<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
-<li>Guide to KK 2.1.5</li></ul><p><em><span style="font-family: Arial;">A <strong>robotic arm</strong> is a type of<a href="http://en.wikipedia.org/wiki/Machine_(mechanical)#Linkages">mechanical arm</a>, usually<a href="http://en.wikipedia.org/wiki/Program_(machine)">programmable</a>, with similar functions to a human<a href="http://en.wikipedia.org/wiki/Arm">arm</a>; the arm may be the sum total of the mechanism
-or may be part of a more complex<a href="http://en.wikipedia.org/wiki/Robot">robot</a>. The links of such a manipulator are connected
-by joints allowing either rotational motion (such as in an<a href="http://en.wikipedia.org/wiki/Articulated_robot">articulated robot</a>) or translational (linear) displacement.<sup><a href="http://en.wikipedia.org/wiki/Robotic_arm#cite_note-1">[1]</a><a href="http://en.wikipedia.org/wiki/Robotic_arm#cite_note-2">[2]</a></sup>The links of the manipulator can be considered
-to form a<a href="http://en.wikipedia.org/wiki/Kinematic_chain">kinematic chain</a>. The terminus of the kinematic chain of the
-manipulator is called the<a href="http://en.wikipedia.org/wiki/End_effector">end effector</a>and it is analogous to the human<a href="http://en.wikipedia.org/wiki/Hand">hand</a></span></em></p><p><em><span style="font-family: Arial;"><a>Thedegrees of freedom, or DOF, is
-a very important term to understand. Each degree of freedom is a joint on the
-arm, a place where it can bend or rotate or translate. You can typically
-identify the number of degrees of freedom by the number of actuators on the
-robot arm. Now this is very important - when building a robot arm you want as
-few degrees of freedom allowed for your application!!! Why? Because each degree
-requires a</a><a href="http://www.societyofrobots.com/actuators_dcmotors.shtml"><strong>motor</strong></a>, often an<a href="http://www.societyofrobots.com/sensors_encoder.shtml"><strong>encoder</strong></a>.</span></em></p><p><em><span style="font-family: Arial;">The palm and elbow have one each
+<div><p> <img src="http://s9.postimg.org/8bpznjhwf/flex_sensor_glove.jpg" style="width: 308px;">                                                                          <img src="http://s21.postimg.org/om2apcb5j/In_Moov_3d_printed_printer_robot_open_source_Gael.jpg" style="width: 257px;"></p></div><p><em><span style="font-family: Arial;">A <strong>robotic arm</strong> is a type of mechanical arm, usually </span>programmable</em><em><span style="font-family: Arial;">, with similar functions to a human arm; the arm may be the sum total of the mechanism
+or may be part of a more complex robot. The links of such a manipulator are connected
+by joints allowing either rotational motion (such as in an articulated robot) or translational (linear) displacement. The links of the manipulator can be considered
+to form a kinematic chain. The terminus of the kinematic chain of the
+manipulator is called the end effevtor and it is analogous to the human hand.</span></em></p><p><em><span style="font-family: Arial;"><br></span></em></p><p><em><span style="font-family: Arial;"><br></span></em></p><p>The degrees of freedom, or DOF, is a very important term to understand. Each degree of freedom is a joint on the arm, a place where it can bend or rotate or translate. You can typically identify the number of degrees of freedom by the number of actuators on the robot arm. Now this is very important - when building a robot arm you want as few degrees of freedom allowed for your application!!! Why? Because each degree requires amotor, often an encoder.</p><p><em><span style="font-family: Arial;">The palm and elbow have one each
 RTOF(rotational degree of freedon).And the fingers have coiling motion (in one
 direction.).In total there are total 5 degrees of freedom .</span></em></p><p><em><span style="font-family: Arial;">Robotic glove houses the circuitry
 which controls the robotic arm. It consists of Arduino Uno which is programmed

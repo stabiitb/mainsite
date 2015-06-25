@@ -1,1 +1,1 @@
-<h3><inline style="color: rgb(247, 150, 70);">THE AIM OF THIS PROJECT IS TO MAKE A ATTITUTE HOLDING RC PLANE.</inline></h3><h3><inline style="color: rgb(247, 150, 70);">ATTITUTE OF A PLANE MEANS ITS STABILITY AND HEADING.</inline></h3>
+<h3><span style="color: rgb(247, 150, 70);">THE AIM OF THIS PROJECT IS TO MAKE A ATTITUTE HOLDING RC PLANE.</span></h3><h3><span style="color: rgb(247, 150, 70);">ATTITUTE OF A PLANE MEANS ITS STABILITY AND HEADING.</span></h3>

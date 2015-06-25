@@ -1,13 +1,23 @@
+<ul>
 <h3>Week 1 (May 5th -11th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul>
-<li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
+<li>Made changes in the problem statement and planned the design of the bot and the electrical components to be used to control the bot.</li></ul><h3>Week 2 (May 12th- 18th )</h3><ul><li>Planned                                                     
 <ul>
-<li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?<ul><li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<li>finalising the usage of rack and pinion in the design. </li><li>designing the bot in solid works.</li></ul></li><li>What you have accomplished?<ul><li>learnt solid works and designed bot in solidworks. </li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul><li>What you have planned ?:<ul><li>learn the electrical connections for arduino with motors and sensors.</li><li>simulate the bot in solidworks.</li><li>code for the arduino.</li></ul></li></ul><ul><li>What we achieved<ul><li>learnt about the connections of the arduino to sensors and motors.</li><li>done with the coding.</li><li>procured all the components for building the bot.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
+<li>build prototype of the bot.</li><li>check the working of the code.</li></ul></li><li>What you have accomplished?
 <ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<li>could not complete the prototype as we needed many self designed parts.</li><li>So we had to search for places that would build our design as we wanted, but failed to find them.</li><li>so we had to redesign the bot to the simplest possible mechanism which we con build on our own using the institute's machinery.</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
 <ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
+<li>What you have planned ?
 <ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>build prototype of the bot.</li></ul></li></ul><ul>
+<li>What you have accomplished?
+<ul>
+<li>could complete building of prototype successfully.</li><li>we also made required changes to the code according to the new design.</li></ul></li></ul></ul><p>Week 6 (June 9th - June 16th)</p><ul>
+<ul>
+<li>What you have planned ?
+<ul>
+<li>attach the electrical parts to the prototype.</li><li>debugging</li></ul></li></ul><ul>
+<li>What you have accomplished?
+<ul>
+<li>we had tried out the code on the arduino connecting the motors and the sensors,but two arduinos could'nt handle the load and got spoilt.</li><li>so we had to buy a new one and repeat the whole process again and again.</li></ul></li></ul></ul></ul>

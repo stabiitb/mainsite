@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									sound detection circuit</h5>
+									<div class="details white-text">
+										the additional circuit where the clap sound is recognized and makes the energy to flow as per the requirements
+									</div>
+								</div>

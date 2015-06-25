@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									andoid app which we made</h5>
+									<div class="details white-text">
+										used to convert speech into text signals and send in through HC-05. 
+									</div>
+								</div>

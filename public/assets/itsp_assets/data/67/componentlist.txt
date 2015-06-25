@@ -1,24 +1,23 @@
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
+	<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.flipkart.com</a> - amounting to <strong>Rs 4554</strong> : <br>
+	</span>
+	<ul>
+		<li>
+		<h5>Robokits Raspberry pi 2, Mode B ,1 gb ram,ethernet 6x faster</h5></li>		<li>
+		<h5>Iball face2face chd12.0 webcam</h5></li>	</ul></li></ul><ul>
+	<li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 150:</strong></span><ul>		<li>Stepper Motor</li>	</ul></li><li>Components ordered from Dream Images (Mulund) <strong>Rs 1170</strong>:
 <ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
+<li>Laser Cutting </li></ul></li><li>Components ordered from Mangaldeep (Powai) <strong>Rs 1045</strong> ;
 <ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
+<li>Nuts</li><li>Nutbolt </li><li>Rack and Pinion</li><li>L-Clamp</li><li>D C Motor</li><li>L293D</li><li>Breadboard</li></ul></li><li>Components ordered from Patel Electric and Hardware Ganeral Stores(Powai) <strong>Rs 80</strong>:
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
+<li>Nutbolt</li></ul></li><li>Components ordered from S. V. Enterprises (Bhandup) <strong>Rs 1040</strong>:
 <ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
+<li>Pulley</li><li>Belt</li><li>Spring</li></ul></li><li>Components ordered from Swastik (Powai) <strong>Rs 420</strong>:<ul>
+<li>Acrylic sheet</li></ul></li><li>Components ordered from Kiran Traders (Bhandup) <strong>Rs 150</strong>:
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
+<li>Copper Wire </li></ul></li><li>Components ordered from Suresh Metal (Bhandup) <strong>Rs 1050</strong>:
 <ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<li>Aluminium Rod</li><li>Acrylic Sheet</li></ul></li><li>Components ordered from Visha World (Lamington) <strong>Rs 2332</strong> :
+<ul>
+<li>Electromagnet Lock</li><li>Electromagnet Kit</li></ul></li><li>Components ordered from Power Beam Technology (Vikroli) <strong>Rs 1961</strong>:<ul><li>Laser Cutting</li></ul></li><li>Components ordered from P.P. Enterprises () <strong>Rs 144</strong>;<ul><li>6mm Stud with 15 Nuts</li><li>Nut</li><li>Vitra</li></ul></li><li>FINAL COST: <strong>14096 INR</strong></li></ul>

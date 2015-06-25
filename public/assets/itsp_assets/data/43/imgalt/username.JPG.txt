@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Enter Username </h5>
+									<div class="details white-text">
+										Here the user enters his/her username and from the username, we decide whether the user is an old or a new user
+									</div>
+								</div>

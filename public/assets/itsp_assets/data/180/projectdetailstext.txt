@@ -1,1 +1,9 @@
-<p>Clich here to edit it</p>
+<p><strong>WORK DISTRIBUTION</strong></p><ol><li>
+
+ANDROID APP DEVELOPMENT – Aman and Nischal</li><li>
+ARDUINO CODING – Ritvik and Shantanu</li><li>
+HARDWARE DESIGNING – Swapnil</li><li>
+VOICE PROCESSING – Aman, Ritvik and Shantanu</li><li>
+INTERNET CONNECTION – Nischal and Swapnil
+
+</li></ol>

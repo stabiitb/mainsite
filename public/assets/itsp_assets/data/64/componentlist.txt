@@ -1,1 +1,5 @@
-<div>-</div>
+<ul>
+<li>Arduino MEGA 2560 R3</li><li>Arduino Ethernet Shield</li></ul><p>Sensors:</p><ul>
+<li>LDR - 5mm</li><li>Resistor</li><li>DHT 22</li><li>Laser</li></ul><p>Appliances:</p><ul>
+<li>Light bulb</li></ul><p>Switching/Dimmer:</p><ul>
+<li>Relay</li><li>Pushbutton</li></ul><p>Air conditioner control:</p><ul><li>TSOP 1738</li><li>IR LED</li><li>Resistor - 330 ohms</li></ul>

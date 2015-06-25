@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Main road</h5>
+									<div class="details white-text">
+										General Traffic On Main Road
+									</div>
+								</div>

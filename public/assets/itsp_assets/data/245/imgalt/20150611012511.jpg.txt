@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Mechanical Design</h5>
+									<div class="details white-text">
+										This hand will replicate the motion performed by the person wearing our gesture glove
+									</div>
+								</div>

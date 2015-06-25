@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Enable standby button action</h5>
+									<div class="details white-text">
+										A toast stating “Standby enabled for emergencies" is seen on the android device informing us on whether the connection has been successfully made or not. Also after the connection has been made, this button is disabled and is removed from the home screen.
+									</div>
+								</div>

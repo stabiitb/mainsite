@@ -1,0 +1,4 @@
+<ul><li>Electrical Components
+<ul>
+<li>Arduino UNO</li><li>USB cable</li><li>L293D and IC holder</li><li>9DOF IMU (GY 80)</li><li>Voltage regulator 7805 (12 V to 5 V)</li><li>PCB, Berg strips, Jumper wires, bread board</li><li>12 V 2700 mA battery</li><li>Multi meter</li><li>DC motors (12 V, 150 rpm )</li><li> L clamps and wheels</li><li>DST, insulation tap, switch etc...</li></ul></li><li>Mechanical components : <ul><li>12mm Plywood</li><li>20m wire</li><li>Thread Rods, nuts and bolts, washer</li></ul></li></ul><ul>
+<li>Final Amount:<strong> Rs 8141</strong></li></ul>

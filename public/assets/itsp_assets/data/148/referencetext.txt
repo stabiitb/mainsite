@@ -1,2 +1,2 @@
-<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
-<li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li></ul>
+<p>For the completion of your project, we are highly grateful to the entire team of STAB, some friends with technical knowledge and Tinkerer's Lab team.<br><br>We also referred to the following websites which proved to be very useful:</p><ul>
+<li><a href="http://www.goggle.com">GOOGLE</a> - general info</li><li><a href="https://en.wikipedia.org/wiki/Main_Page">WIKIPEDIA</a> - general info</li><li><a href="http://www.arduino.cc/">ARDUINO</a> - learning the coding language of arduino and the electronics part</li></ul>

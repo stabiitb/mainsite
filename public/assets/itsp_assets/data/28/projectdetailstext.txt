@@ -1,1 +1,95 @@
-<p>Clich here to edit it</p>
+<p>
+	<span style="font-family: Arial;"></span></p><h5><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	The aim of our project was to build a fully automated robot that could play the game connect 4 against a human. At the very outset, we recognised that our project could be modulated into three discrete components which could be integrated finally – the artificial intelligence, the image processing, the robotic components to execute mechanical motions.</inline></span></p><p>
+	<br>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><u>
+	Artificial Intelligence:</u></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	The idea behind the artificial intelligence is to have the
+computer play in response to the move executed by the player. This is done as follows.
+	</inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	First we evaluate the current board situation, by assigning
+values for each coin on the board. Naturally, the score is exponentially higher
+when there are multiple coins of the same colour in sequence. Arriving at such
+a present “score” gives us our heuristic function. This heuristic is used as a measure to calculate the most
+effective move to be played. All possible alternatives are evaluated. The
+highest heuristic would be the most favourable move for the 'Max' player and lowest heuristic for the 'Min' player.
+	</inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	The introduction of levels is then done by using the concept
+of depth of the AI. Depth is the number of moves that the AI is predicting
+ahead to. We have naturally given greater importance to a greater heuristic
+value obtained at a lower depth since it leads to a more advantageous situation
+faster. A greater depth
+would mean a better move and thus the gradation of levels.
+	</inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	In conclusion:</inline></span></p><p style="margin-left: 20px;">
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	• Heuristic
+is directly indicative of the current state of the board
+	</inline></span></p><p style="margin-left: 20px;">
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	• We
+can calculate and predict all possibilities for up to five moves to play the
+most accurate move
+	</inline></span></p><p style="margin-left: 20px;">
+	<br>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><p style="margin-left: 20px;"></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><u>
+	Image Processing/IR:</u></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	The idea was to design a system to obtain the current board
+situation which can be processed appropriately. We had a two pronged approach towards this. This could be
+resolved through infrared sensors and through image processing. We decided to
+approach and work on both alternatives. Worked with IR sensors in conjugation with the Arduino. The work
+undertaken suggested efficacy, but it still needed to be integrated into
+complete automation. Another challenge with IR sensors was the fact that they
+may not be able to consistently detect every passing coin, for smaller
+intervals of time. Also using the USB serial port for two way communication,
+both input from the IR sensor and output for the mechanical execution was not
+something we were totally convinced with.
+	</inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	We ended up using IP to determine the board’s current
+situation. We were able to obtain thresholded images using filters for the two
+colours. We were successfully able to recreate the board digitally. The major
+obstacle was for the image processing to determine when a move has been played
+and to integrate the image processing code with the AI.
+	</inline></span></p><p>
+	<br>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><u>
+	Mechanical and Electrical components:</u></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	We used an Arduino to carry out the entire operation of
+dispensing coins. We extensively worked out the mechanism for the movement of
+the stepper and the servo independently. We initially used the stepper to carry
+out translational movement and we used the servo motor to dispense the coins. The servo mechanism worked satisfactorily after some effort
+but we ran into several problems with the stepper motor. The stepper could not
+get affixed firmly to the axle using the screws. With continued use there was
+always a tendency for the rotation to become non uniform with the continued
+loosening of the screws. Also, the stepper motion on the conveyor belt was
+ridden with problems. The stepper motor was unable to generate enough torque to move the conveyor belt. Continued efforts on the stepper still did not lead to
+any concrete efforts. We then decided to use a 300RPM DC motor in place of the stepper motor.
+	</inline></span></p><p>
+	<span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">We used Mechanix Spare Parts for constructing the frame that holds the DC motor, the coin-dispenser and the conveyor b<inline style="font-family: Arial;"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif">elt. The model was first constructed in Solidworks and then the spares were bought. </inline></inline></span></p><p>  <br><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"></inline></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><u>Integration of all the three components:</u></inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">We have used &lt;SerialStream.h&gt; for serial port communication. The AI code, after calculating the next move, sends the column number through a serial port to the arduino. This established integration of AI with Electronics. </inline></span></p><p>
+	<span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">The IP code waits until the user makes a move. Once a move is made, the AI code is run. This integration has been established by the usage of header files and direct function calls.</inline></span></p><p>
+	 <br>
+	<span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"></inline></inline></span></p><p>
+	<span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><u>Final Working:</u></inline></span></p><p>
+	<span style="font-family: Arial; color: rgb(0, 0, 0);">The computer waits till the user makes a move. The AI code is run when the user finally makes his/her first move. The column number where the bot must play is calculated by the AI code and sent to the Arduino through Serial Port Communication. The bot then drops the coin in the column as explained. The 
+code first asks the DC Motor to rotate at a certain fixed speed for a 
+fixed time (which is a function of the column number). Then the Servo motor is rotated by a fixed angle to 
+drop the chip and rotated back to its initial position. The DC Motor is 
+then rotated in the reverse direction to attain the initial position. After this, the computer waits for the user move. This process is repeated until the end of the game. 
+	</span></p></h5><h5><p>
+	<span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"></inline></inline></span></p><p>
+	<span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;"><inline style="font-family: Arial;"><br>
+	</inline></inline></span></p></h5>

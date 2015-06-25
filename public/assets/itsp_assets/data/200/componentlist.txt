@@ -1,291 +1,374 @@
-<ul>
-<li><table>
+<table>
  <tbody><tr>
-  <td>
-  Sr.
-  </td><td>
-    NAME
-  </td><td>
-  QUANTITY
-  </td><td>
-  PRICE
- </td></tr><tr>
-  <td>
-  1
-  </td><td>
-  12 volt 1 amps adapter  
-  </td><td>
-    2
-  </td><td>
-  160
- </td></tr><tr>
-  <td>
-  2
-  </td><td>
-    LED
-  </td><td>
-  <ul><li>12</li></ul>
-  </td>
-  <td>
-  15
- </td></tr><tr>
-  <td>
-  3
-  </td><td>
-  LM-35 Temp. Sensor
-  </td><td>
-    2
-  </td><td>
-  80
- </td></tr><tr>
-  <td>
-  4
-  </td><td>
-  Laser
-  </td><td>
-    2
-  </td><td>
-   90
- </td></tr><tr>
-  <td>
-  5
-  </td><td>
-  LDR
-  </td><td>
-    4
-  </td><td>
-  60
- </td></tr><tr>
-  <td>
-  6
-  </td><td>
-  Resistors
-  </td><td>
-  
-  </td><td>
-  12
- </td></tr><tr>
-  <td>
-  7
-  </td><td>
-  Jumper wires
-  </td><td>
-  
-  </td><td>
-  128
- </td></tr><tr>
-  <td>
-  8
-  </td><td>
-  BreadBoard
-  </td><td>
-    2  
-  </td><td>
-  120
- </td></tr><tr>
-  <td>
-  9
-  </td><td>
-  Push Button
-  </td><td>
-    6 
-  </td><td>
-  12
- </td></tr><tr>
-  <td>
-  10
-  </td><td>
-  1.5V Battery
-  </td><td>
-    4
-  </td><td>
-  36
- </td></tr><tr>
-  <td>
-  11
-  </td><td>
-  9V Battery
-  </td><td>
-    2
-  </td><td>
-  30
- </td></tr><tr>
-  <td>
-  12
-  </td><td>
-  Tape
-  </td><td>
-    1
-  </td><td>
-  10
- </td></tr><tr>
-  <td>
-  13
-  </td><td>
-  9V Connector
-  </td><td>
-    2 
-  </td><td>
-  8
- </td></tr><tr>
-  <td>
-  14
-  </td><td>
-  Multi Meter
-  </td><td>
-    1
-  </td><td>
-  425
- </td></tr><tr>
-  <td>
-  15 
-  </td><td>
-  Arduino uno
-  </td><td>
-    1 
-  </td><td>
-  1340
- </td></tr><tr>
-  <td>
-  16
-  </td><td>
-  GSM Module
-  </td><td>
-    1
-  </td><td>
-  900
- </td></tr><tr>
-  <td>
-  17 
-  </td><td>
-  Motor
-  </td><td>
-    2
-  </td><td>
-  40
- </td></tr><tr>
-  <td>
-  18
-  </td><td>
-  Relay
-  </td><td>
-    1
-  </td><td>
-  30
- </td></tr><tr>
-  <td>
-  19
-  </td><td>
-  Transistor
-  </td><td>
-    5
-  </td><td>
-  25
- </td></tr><tr>
-  <td>
-  20
-  </td><td>
-  12V 2 amps adapter
-  </td><td>
-    1
-  </td><td>
-  200
- </td></tr><tr>
-  <td>
-  21
-  </td><td>
-  Battery Holders
-  </td><td>
-    2
-  </td><td>
-  40
- </td></tr><tr>
-  <td>
-  22
-  </td><td>
-  Battery Holders
-  </td><td>
-    2
-  </td><td>
-  30
- </td></tr><tr>
-  <td>
-  23
-  </td><td>
-  Solder Wire
-  </td><td>
-    1
-  </td><td>
-  60
- </td></tr><tr>
-  <td>
-  24
-  </td><td>
-  Mosfet
-  </td><td>
-    2
-  </td><td>
-  40
- </td></tr><tr>
-  <td>
-  25
-  </td><td>
-  Battery
-  </td><td>
-    4
-  </td><td>
-  48
- </td></tr><tr>
-  <td>
-  26
-  </td><td>
-  Jumperwire
-  </td><td>
-    10
-  </td><td>
-  50
- </td></tr><tr>
-  <td>
-  27
-  </td><td>
-  LED
-  </td><td>
-    6
-  </td><td>
-  18
- </td></tr><tr>
-  <td>
-  28
-  </td><td>
-  Wire
-  </td><td>
-    5mts
-  </td><td>
-  50
- </td></tr><tr>
-  <td>
-  
-  </td><td>
-  
-  </td><td>
-  
-  </td><td>
-  
- </td></tr><tr>
-  <td>
-  
-  </td><td>
-  
-  </td><td>
-  VAT
-  </td><td>
-  223
- </td></tr><tr>
-  <td>
-  
-  </td><td>
-  TOTAL
-  </td><td>
-  
-  </td><td>
-  4350 </td></tr></tbody></table></li></ul>
+  <td>NAME</td>
+  <td>QUANTITY</td>
+  <td>RATE(INR)</td>
+  <td style="text-align: center;">AMOUNT(INR)</td>
+ </tr>
+ <tr>
+  <td>Breadboard</td>
+  <td>2                                               </td>
+  <td>60                                             </td>
+  <td>120                                          </td>
+ </tr>
+ <tr>
+  <td>LED</td>
+  <td> 
+  12</td>
+  <td>1.25</td>
+  <td>15</td>
+ </tr>
+ <tr>
+  <td>LM-35 Temp. Sensor</td>
+  <td>2</td>
+  <td>40</td>
+  <td>80</td>
+ </tr>
+ <tr>
+  <td>Laser</td>
+  <td>2</td>
+  <td>45</td>
+  <td>90</td>
+ </tr>
+ <tr>
+  <td>LDR</td>
+  <td>4</td>
+  <td>15</td>
+  <td>60</td>
+ </tr>
+ <tr>
+  <td>Resistors</td>
+  <td>24</td>
+  <td>0.50</td>
+  <td>12</td>
+ </tr>
+ <tr>
+  <td>Jumper Wires</td>
+  <td>32</td>
+  <td>4</td>
+  <td>128</td>
+ </tr>
+ <tr>
+  <td>Push Button</td>
+  <td>6</td>
+  <td>2</td>
+  <td>12</td>
+ </tr>
+ <tr>
+  <td>12V/1A Adapter</td>
+  <td>2</td>
+  <td>80</td>
+  <td>160</td>
+ </tr>
+ <tr>
+  <td>1.5V Battery</td>
+  <td>4</td>
+  <td>9</td>
+  <td>36</td>
+ </tr>
+ <tr>
+  <td>9V Battery</td>
+  <td>2</td>
+  <td>15</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>Black Tape</td>
+  <td>1</td>
+  <td>10</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>9V Clamper</td>
+  <td>2</td>
+  <td>4</td>
+  <td>8</td>
+ </tr>
+ <tr>
+  <td>Multi Meter</td>
+  <td>1</td>
+  <td>425</td>
+  <td>425</td>
+ </tr>
+ <tr>
+  <td>Arduino Uno</td>
+  <td>1</td>
+  <td>1340</td>
+  <td>1340</td>
+ </tr>
+ <tr>
+  <td>GSM Sim 900A Module                         </td>
+  <td>1</td>
+  <td>900</td>
+  <td>900</td>
+ </tr>
+ <tr>
+  <td>Motor</td>
+  <td>1</td>
+  <td>20</td>
+  <td>20</td>
+ </tr>
+ <tr>
+  <td>Transistor</td>
+  <td>5</td>
+  <td>5</td>
+  <td>25</td>
+ </tr>
+ <tr>
+  <td>Wire</td>
+  <td>2m</td>
+  <td>5</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>5V Relay</td>
+  <td>1</td>
+  <td>30</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>2-Cell Battery Holders</td>
+  <td>2</td>
+  <td>15</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>LED</td>
+  <td>6</td>
+  <td>3</td>
+  <td>18</td>
+ </tr>
+ <tr>
+  <td>12V/2A Adapter</td>
+  <td>1</td>
+  <td>200</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>Wire</td>
+  <td>2m</td>
+  <td>10</td>
+  <td>20</td>
+ </tr>
+ <tr>
+  <td>Solder Iron 25W</td>
+  <td>1</td>
+  <td>200</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>Nut-Bolt</td>
+  <td>6</td>
+  <td>2</td>
+  <td>12</td>
+ </tr>
+ <tr>
+  <td>PCB</td>
+  <td>1</td>
+  <td>70</td>
+  <td>70</td>
+ </tr>
+ <tr>
+  <td>Wire</td>
+  <td>4m</td>
+  <td>10</td>
+  <td>40</td>
+ </tr>
+ <tr>
+  <td>Pen Knife</td>
+  <td>1</td>
+  <td>10</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>Bread Board</td>
+  <td>1</td>
+  <td>90</td>
+  <td>90</td>
+ </tr>
+ <tr>
+  <td>Motor</td>
+  <td>1</td>
+  <td>25</td>
+  <td>25</td>
+ </tr>
+ <tr>
+  <td>Mosfet</td>
+  <td>2</td>
+  <td>20</td>
+  <td>40</td>
+ </tr>
+ <tr>
+  <td>4-Cell Battery Holders</td>
+  <td>2</td>
+  <td>20</td>
+  <td>40</td>
+ </tr>
+ <tr>
+  <td>Solder Wire</td>
+  <td>1</td>
+  <td>60</td>
+  <td>60</td>
+ </tr>
+ <tr>
+  <td>AA Battery</td>
+  <td>4</td>
+  <td>12</td>
+  <td>48</td>
+ </tr>
+ <tr>
+  <td>Jumper wire</td>
+  <td>10</td>
+  <td>5</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>Marker Pen</td>
+  <td>1</td>
+  <td>15</td>
+  <td>15</td>
+ </tr>
+ <tr>
+  <td>Bond-Tite</td>
+  <td>1</td>
+  <td>40</td>
+  <td>40</td>
+ </tr>
+ <tr>
+  <td>Switch</td>
+  <td>4</td>
+  <td>8</td>
+  <td>32</td>
+ </tr>
+ <tr>
+  <td>Female Connector Strip</td>
+  <td>1</td>
+  <td>10</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>Double Sided Tape</td>
+  <td>1</td>
+  <td>30</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>12 V Female Jack</td>
+  <td>1</td>
+  <td>10</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>Led Strip</td>
+  <td>0.25m</td>
+  <td>60</td>
+  <td>15</td>
+ </tr>
+ <tr>
+  <td>2N 2222</td>
+  <td>2</td>
+  <td>6</td>
+  <td>12</td>
+ </tr>
+ <tr>
+  <td>2N 7000</td>
+  <td>5</td>
+  <td>6</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>Female Connector Strip</td>
+  <td>1</td>
+  <td>6</td>
+  <td>6</td>
+ </tr>
+ <tr>
+  <td>5V Relay</td>
+  <td>8</td>
+  <td>20</td>
+  <td>160</td>
+ </tr>
+ <tr>
+  <td>LED Holder</td>
+  <td>2</td>
+  <td>5</td>
+  <td>10</td>
+ </tr>
+ <tr>
+  <td>PCB</td>
+  <td>1</td>
+  <td>30</td>
+  <td>30</td>
+ </tr>
+ <tr>
+  <td>LDR</td>
+  <td>2</td>
+  <td>10</td>
+  <td>20</td>
+ </tr>
+ <tr>
+  <td>Motor 45 rpm</td>
+  <td>1</td>
+  <td>125</td>
+  <td>125</td>
+ </tr>
+ <tr>
+  <td>Rack</td>
+  <td>2</td>
+  <td>40</td>
+  <td>80</td>
+ </tr>
+ <tr>
+  <td>Gear</td>
+  <td>3</td>
+  <td>30</td>
+  <td>90</td>
+ </tr>
+ <tr>
+  <td>Gear Big</td>
+  <td>1</td>
+  <td>40</td>
+  <td>40</td>
+ </tr>
+ <tr>
+  <td>Angle Bracket</td>
+  <td>5</td>
+  <td>3</td>
+  <td>15</td>
+ </tr>
+ <tr>
+  <td>Solder Iron 35W</td>
+  <td>1</td>
+  <td>195</td>
+  <td>195</td>
+ </tr>
+ <tr>
+  <td>Wood &amp; Plywood</td>
+  <td>1</td>
+  <td>200</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>Sharp Solder Head </td>
+  <td>1</td>
+  <td>36</td>
+  <td>36</td>
+ </tr>
+ <tr>
+  <td>TOTAL</td>
+  <td></td>
+  <td></td>
+  <td>5665</td>
+ </tr>
+ <tr>
+  <td>VAT</td>
+  <td></td>
+  <td></td>
+  <td>284</td>
+ </tr>
+ <tr>
+  <td>FINAL AMOUNT</td>
+  <td></td>
+  <td></td>
+  <td>5949</td>
+ </tr></tbody></table>

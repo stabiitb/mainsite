@@ -1,1 +1,1 @@
-<p>The ultrasonic sensor used(hc-sro4) will detect the obstacles in its pathway.With the help of imu(mpu6050) and pid controller the bot will find the exact direction where there is no obstacles and moves acccordingly.  </p>
+<p>The ultrasonic sensor used(HC-SRO4) will detect the obstacles in its pathway. With the help of IMU (MPU6050) and PID controller the bot will find the exact direction where there are no obstacles and then move acccordingly.  </p>

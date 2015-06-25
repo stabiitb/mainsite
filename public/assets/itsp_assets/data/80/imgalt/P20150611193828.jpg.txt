@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The Phone display</h5>
+									<div class="details white-text">
+										The PC display is streamed to a phone, via USB tethering, applying binocular rendering. The head mount has a slot for the phone to be placed.
+									</div>
+								</div>

@@ -1,0 +1,15 @@
+<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned<ul><li>study the basic components to be used
+in our  project </li><li>finalised the components required</li></ul></li><li>Accomplished<ul><li>Learned the use of Arduino and IMU and ordered the required components</li></ul></li></ul><h3>Week 2 (May 12th- 18th )</h3><ul>
+<li>Planned                                                     <ul><li>connect the circuit </li><li>reading angle from accelerometer</li></ul></li><li>What you have accomplished?
+<ul>
+<li>connection is done</li><li>able to obtain correct reading </li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>What you have planned ?:
+<ul>
+<li>obtain data from gyrometer as well </li><li>fuse the two angle coming from accelerometer and gyrometer through filter</li><li>find initial error</li><li>move the wheels according proportional to the angle</li></ul></li></ul><ul>
+<li>What we achieved
+<ul>
+<li>Angle measured correctly after fusion of two angle and filter was working perfectly</li><li>initial error was removed</li><li>successfully motors was working proportional to the angel obtained </li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
+<li>What you have planned ?<ul><li>integrate all the components and make mechanical model</li><li>find the value of Kp (proportional constant)</li><li>read about PID</li></ul></li><li>What you have accomplished?<ul><li>mechanical model was ready</li><li>due to some circuit problem Arduino got damaged </li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
+<li>What you have planned ?<ul><li>try to find Kp</li><li>after Kp , try to find Ki and Kd also</li></ul></li></ul><ul>
+<li>What you have accomplished?<ul><li>work with new Arduino</li><li>New problem - One of the two motors getting slow randomly</li><li>Changed the whole circuit and soldered again</li><li>Still not able to balance, so lower the center of mass</li><li>then able to balance around 6-7 seconds</li></ul></li></ul><h3>Week 6 (June 9th - June 13th)</h3><ul><li>What you have planned ?<ul><li>try to find Ki and Kd to balance</li></ul></li></ul><ul><li>What you have accomplished?
+<ul><li>the platform was unstable because when it returns back, it falls down due to overshooting</li><li>Dc motors are not well synchronized due to which there is reaction lag.</li><li>we are trying to overcome it</li></ul></li></ul><h3></h3>

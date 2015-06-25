@@ -1,2 +1,3 @@
-<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
-<li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li></ul>
+<p>For the completion of your project, we are strongly thankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
+<li><a href="http://www.goggle.com">GOOGLE</a></li></ul><p>The following are the links to the external code libraries we used:</p><ul>
+<li><a href="https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050">https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050</a></li><li><a href="https://github.com/jrowberg/i2cdevlib/blob/master/Arduino/I2Cdev/I2Cdev.h">https://github.com/jrowberg/i2cdevlib/blob/master/Arduino/I2Cdev/I2Cdev.h</a></li></ul>

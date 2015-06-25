@@ -1,21 +1,17 @@
-<p>
+<h5><p>
+	<span style="font-family: Arial;"></span></p><p>
+	<span style="font-family: Arial;"></span></p></h5><h5><p>
+	<span style="font-family: Arial;">
 	The bot must give a tough time to the human player and try its best 
 to win/draw the game. If the human plays perfectly, lose the game after 
 maximum number of moves (when Bot is second player). The bot must play 
-according to the difficulty level set by the player.
-</p>
-<p>
-	The project is aimed at equipping us with the basic rudimentary knowledge of a variety of issue specific skills. Through the implementation of the project we would be learning the basic skills of image processing, electronics and mechanical mobility. We will also be learning more about coding algorithms (MinMax) which we will be using to execute our designs.
-</p>
-<p>
+according to the difficulty level set by the player. 
+	</span></p></h5><h5><span style="font-family: Arial;">The design of the dispensing mechanism utilises knowledge of various electrical and mechanical implements.</span></h5><h5></h5><h5><span style="font-family: Arial;"><inline style="font-family: Arial;"></inline></span><span style="font-family: Arial;">The reason behind the project was to learn skills that could be considered beneficial and valuable, in a structured approach. To that extent, this project is multidimensional and is an effective mixture of multiple skills. Towards an approach of coding, extensive coding has been applied for the AI and the IP.</span><p>
+	<span style="font-family: Arial;">
 	We have also been motivated by a past attempt of  a similar project, link to which has been provided: 
 	<br>
-	<a href="http://www.stab-iitb.org/wiki/2RE31_Connect-4"></a>
-</p>
-<p>
-	<a href="http://www.stab-iitb.org/wiki/2RE31_Connect-4">http://www.stab-iitb.org/wiki/2RE31_Connect-4</a> in ITSP-2013
-</p>
-<p>
+	</span></p><p>
+	<span style="font-family: Arial;"><a href="http://www.stab-iitb.org/wiki/2RE31_Connect-4">http://www.stab-iitb.org/wiki/2RE31_Connect-4</a> in ITSP-2013</span></p><p>
+	<span style="font-family: Arial;">
 	Here is a link to a Connect Four Robot made at MIT: 
-	<a href="https://www.youtube.com/watch?v=7uiPhECQtrs">https://www.youtube.com/watch?v=7uiPhECQtrs</a>
-</p>
+	<a href="https://www.youtube.com/watch?v=7uiPhECQtrs">https://www.youtube.com/watch?v=7uiPhECQtrs</a></span></p></h5>

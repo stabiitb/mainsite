@@ -1,0 +1,22 @@
+<ul><ul>
+	
+<li>
+	
+<h3><strong>Discussion</strong></h3></li></ul><h5>We had a brief discussion about the working of vacuum cleaner.We learnt the principle of vacuum. We decided to use forward curved centrifugal fan for vacuum.</h5><p>
+	<img src="http://www.iforgeiron.com/uploads/2/8/3/6/5177.attach"></p><h5>We were in a dilemma whether to use raspberry pi or an arduino. After taking into consideration the storage,RAM required,we decided to go with Raspberry pi!.</h5><p>
+	(Note:Our raspberry pi got fried,so finally we have used arduino mega 2560.)</p><h5>We discussed the algorithm for the bot to cover the whole room.We decided to use zig zag path to cover the whole room. The bot also stores the location of the obstacles to ensure that it covers the whole room.</h5><ul>
+	
+<li>
+	
+<h3><strong>Learning</strong></h3></li></ul><h5>We learnt about the use of HC-SR04 sensor using arduino Uno. One of us learnt python coding for programming in raspberry pi.</h5><h5>We also controlled brushless motor using arduino Uno. Thus,while testing various electronic items,we were able to learn coding for raspberry pi as well as arduino! </h5><h5>We aso learnt the functioning of the 3-d printer.We have 3-d printed the fan and the motor holder.</h5><p>
+	<img src="http://thisiswhatiamlookingfor.com/wp-content/uploads/2013/11/41PJIhHwW0L-300x168.jpg"></p><h5></h5><ul>
+	
+<li>
+	
+<h3><strong>Prototype and Testing</strong></h3></li></ul><h5>We built a prototype of vacuum cleaner using 3-d printed centrifugal fan. It tests whether the waste particles move from inlet to the outlet or not.</h5><iframe src="https://www.youtube.com/embed/73gs5uSJmZs" allowfullscreen="" frameborder="0" height="315" width="560">
+</iframe><p>
+	<br>
+	We also controlled and tested sensors,dc motors,brushless motor using Raspberry-pi.</p><ul>
+	
+<li>
+<h3>Problems Faced</h3></li></ul><p>Our Raspberry pi got fried while controlling brushless motor.So,we bought Arduino MEGA 2560.</p><p><img src="https://lh3.googleusercontent.com/ZERdKISs45lMdvofYw6qdPdN1etkgXwKZ5Gx499d8Xs=w426-h240-p-no"></p><p>However,that arduino also got fried! Thus,we were forced to buy another Arduino MEGA 2560!</p><p> Fortunately,it did not fry till the end of our project!</p><h3 style="margin-left: 20px;"></h3><h3></h3></ul>

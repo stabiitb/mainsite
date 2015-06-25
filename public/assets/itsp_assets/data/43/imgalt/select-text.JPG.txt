@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Selecting Text File</h5>
+									<div class="details white-text">
+										This is the file selection dialog box which opens when one clicks on the "Select Document" in the Pen Plotter GUI 
+									</div>
+								</div>

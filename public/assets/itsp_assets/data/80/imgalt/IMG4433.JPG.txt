@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									The Complete Controller</h5>
+									<div class="details white-text">
+										The final product of our project is this controller. It has 3 parts - a head mount, a gun and a headphone. 
+									</div>
+								</div>

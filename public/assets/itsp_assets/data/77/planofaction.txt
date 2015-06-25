@@ -1,15 +1,10 @@
-<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Start coding chess engine.</p><p style="margin-left: 40px;">Building a solidworks model.</p><ul><li>Accomplished</li></ul><p style="margin-left: 40px;">Started coding chess engine.</p><p style="margin-left: 40px;">Learnt and started building solidworks model.</p><p style="margin-left: 20px;"></p><h3>Week 2 (May 25th -31st)</h3><ul>
-<li>Planned                                                     <ul><li>complete coding the chess engine</li><li>build the mechanical framework of bot</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 18th -24th)</h3><ul>
+<li>Planned</li></ul><p style="margin-left: 40px;">Start coding chess engine.</p><p style="margin-left: 40px;">Building a solidworks model.</p><ul>
+<li>Accomplished</li></ul><p style="margin-left: 40px;">Started coding chess engine.</p><p style="margin-left: 40px;">Learnt and started building solidworks model.</p><p style="margin-left: 20px;"></p><h3>Week 2 (May 25th -31st)</h3><ul><li>Planned                                                     
 <ul>
-<li>completed coding the chess engine</li><li>completed solidworks model.</li><li>read about gobetwino.</li></ul></li></ul><h3>Week 3 (June 1st - June 7th)</h3><ul>
-<li>What you have planned ?:
+<li>complete coding the chess engine</li><li>build the mechanical framework of bot</li></ul></li><li>What you have accomplished?<ul><li>completed coding the chess engine</li><li>completed solidworks model.</li><li>read about gobetwino.</li></ul></li></ul><h3>Week 3 (June 1st - June 7th)</h3><ul><li>What you have planned ?:<ul><li>understanding electronics part.</li><li>start working on voice recogniton.</li></ul></li></ul><ul><li>What you have accomplished ?:<ul><li>debugging and improving chess engine.</li><li>built the basic mechanical framework.</li><li>reading about other mechanical and electrical components.</li></ul></li></ul><h3>Week 4 ( June 8th - June 14th )</h3><ul><li>What you have planned ?
 <ul>
-<li>understanding electronics part.</li><li>start working on voice recogniton.</li></ul></li></ul><ul>
-<li>What you have accomplished ?:
+<li>finish electronics part.</li><li>integrating mechanical parts , chess engine and electronics</li></ul></li><li>What you have accomplished?<ul><li>finished electronics part.</li><li>finished integrating mechanical electronics and AI parts.</li></ul></li></ul><h3>Week 5 (June 15th - June 21th)</h3><ul><li>What you have planned ?
 <ul>
-<li>debugging and improving chess engine.</li><li>built the basic mechanical framework.</li><li>reading about other mechanical and electrical components.</li></ul></li></ul><h3>Week 4 ( June 8th - June 14th )</h3><ul>
-<li>What you have planned ?<ul><li>finish electronics part.</li><li>integrating mechanical parts , chess engine and electronics</li></ul></li><li>What you have accomplished?
-</li></ul><h3>Week 5 (June 15th - June 21th)</h3><ul>
-<li>What you have planned ?<ul><li>Debugging and buffer week.</li></ul></li></ul><ul>
-<li>What you have accomplished?
+<li>Debugging and buffer week.</li></ul></li></ul><ul><li>What you have accomplished?
 </li></ul>

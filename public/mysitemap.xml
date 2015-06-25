@@ -1,14 +1,2538 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>http://localhost:8088</loc>
-		<priority>1.0</priority>
-		<lastmod>2012-08-25T18:10:00+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-  </url>
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.stab-iitb.org/</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/WELpermission.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/STAB%202014-15%20vision.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/InstiReview_HobbyClubs&amp;TechTeams.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/Aero_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/Elec_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/Krittika_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/MnP_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/Robotics_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/WnCC_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/Technovation_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/annual_report/TL_Annual_report_2014_2015.pdf</loc>
+  <lastmod>2015-04-22T15:15:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/team-stab-2014</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/team-stab-2013</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/team-stab-2012</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/club-initiatives</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/home</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2013/Lightsaber_Issue1.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/timeline</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/frequently-asked-questions</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/discuss</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/about</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=52</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=82</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=83</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=96</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=125</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=147</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=18</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=20</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=31</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=32</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=33</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=37</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=39</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=44</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=47</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=48</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=51</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=54</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=55</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=65</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=68</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=69</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=72</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=78</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=80</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=105</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=106</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=111</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=130</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=136</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=143</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=153</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=35</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=131</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=156</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=12</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=24</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=40</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=41</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=43</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=46</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=58</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=63</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=66</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=81</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=97</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=99</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=102</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=109</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=121</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=132</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=138</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=146</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=148</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=149</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=152</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=30</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=38</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=57</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=11</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=13</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=16</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=28</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=29</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=36</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/documentation?id=134</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/TechGSR.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/healthCare.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/cnc.pdf</loc>
+  <lastmod>2015-01-12T20:06:48+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/dut1.pdf</loc>
+  <lastmod>2015-01-12T20:06:48+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/braille%20display.pdf</loc>
+  <lastmod>2015-03-03T17:16:42+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/tilt-rotor.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/blind.pdf</loc>
+  <lastmod>2015-01-12T20:06:48+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/campusTransport.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/parinat.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/artificial.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/skate-board.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/peapod.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/roboticChess.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/nonContact.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/bookBot.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/ornithopter.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/mentors1.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/contacts.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/team-stab-2014</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/team-stab-2013</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/team-stab-2012</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/club-initiatives</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/math-and-physics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/math-and-physics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/math-and-physics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/home</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/web-and-coding-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/web-and-coding-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/web-and-coding-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/timeline</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/frequently-asked-questions</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/discuss</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/about</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=52</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=82</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=83</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=96</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=125</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=147</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=18</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=20</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=31</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=32</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=33</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=37</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=39</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=44</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=47</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=48</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=51</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=54</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=55</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=65</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=68</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=69</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=72</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=78</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=80</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=105</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=106</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=111</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=130</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=136</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=143</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=153</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=35</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=131</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=156</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=12</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=24</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=40</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=41</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=43</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=46</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=58</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=63</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=66</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=81</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=97</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=99</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=102</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=109</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=121</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=132</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=138</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=146</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=148</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=149</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=152</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=30</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=38</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=57</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=11</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=13</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=16</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=28</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=29</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=36</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/itsp/documentation?id=134</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/blog-post.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/CMOS_Design_Challenge.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/event/CMOS-Design-Challenege-solution</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/line-follower-registration</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/the-cosmic-ladder-distance</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/blog-post.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/astronomy-demystified</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/robo/ImageProcessing.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/assets/images/gripper.pptx</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/assets/images/Productdevelopment.pdf</loc>
+  <lastmod>2015-03-20T11:20:48+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/assets/images/xlr8ps.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/assets/images/XLR8%20mech%20final.pdf</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/assets/images/XLR8%20Electrical%20session.pdf</loc>
+  <lastmod>2015-03-20T11:20:48+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/xlr8-registration</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/teams-and-mentors-xlr8-2014</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/robo/Lamington%20Visit%20Handouts.docx</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/wiki/2RE31_Connect-4</loc>
+  <lastmod>2015-03-21T15:52:08+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/assets/Emergency%20and%20Trauma%20Needs%20List.pdf</loc>
+  <lastmod>2015-01-12T20:06:47+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/technovation/assets/ENT%20Needs%20List%20.pdf</loc>
+  <lastmod>2015-01-12T20:06:47+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/aeromodelling-club/blog-post.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/event/CMOS-Design-Challenege-solution</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/electronics-club/line-follower-registration</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/the-cosmic-ladder-distance</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/blog-post.html</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/krittika/astronomy-demystified</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/math-and-physics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/xlr8-registration</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/robotics-club/teams-and-mentors-xlr8-2014</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/index.php/web-and-coding-club/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/aeromodelling-club/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/event/index.php</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/electronics-club/event/CMOS-Design-Challenege-solution/all</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/krittika/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/krittika/CosmicDistanceLadder.pptx</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/media/2014/krittika/Astronomy%20Demystified%202014.pptx</loc>
+  <lastmod>2015-03-20T11:20:49+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/math-and-physics-club/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/robotics-club/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/vision-of-stab-team-2014-15</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/hall-of-fame</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/InstiReview-HobbyClubs-TechTeams</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/annual_report_2014_2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/team-stab-2015</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/stab-alumni</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/faculty-advisor-and-mentor</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/aeromodelling-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/electronics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/krittika</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/math-and-physics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/robotics-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/web-and-coding-club</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/lightsaber</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/tech-gc-points</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/calendar</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/itsp/final_team_verification</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/itsp/projects</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/itsp/tshirt</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/index.php/technovation</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/web-and-coding-club/www.igvc.org</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/team-stab-2014</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/team-stab-2013</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/team-stab-2012</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/aeromodelling-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/aeromodelling-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/aeromodelling-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/electronics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/electronics-club/club-initiatives</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/electronics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/krittika/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/krittika/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/krittika/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/math-and-physics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/math-and-physics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/math-and-physics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/robotics-club/home</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/robotics-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/robotics-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/robotics-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/web-and-coding-club/vision</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/web-and-coding-club/event</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/web-and-coding-club/team</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/timeline</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/frequently-asked-questions</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/discuss</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/about</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=52</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=82</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=83</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=96</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=125</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=147</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=18</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=20</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=31</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=32</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=33</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=37</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=39</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=44</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=47</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=48</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=51</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=54</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=55</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=65</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=68</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=69</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=72</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.stab-iitb.org/itsp/index.php/itsp/documentation?id=78</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
 </urlset>

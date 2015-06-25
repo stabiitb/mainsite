@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									our circuit</h5>
+									<div class="details white-text">
+										the circuit includes connection to  SD card , actuation part and earphone jack
+									</div>
+								</div>

@@ -1,3 +1,49 @@
 <ul>
-<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
-<li>Guide to KK 2.1.5</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>
+	
+<li>
+	
+<h3>Basics Of Vacuum Cleaner</h3></li></ul><p>
+	<img src="https://osjmtio.files.wordpress.com/2014/01/picture11.png" style="width: 252px;"></p><ol>
+	
+<li>The Electronic Speed Controller operates our brushless motor. The motor is attached to the <strong>fan</strong>, which has forward curved blade.</li>	
+<li>As the fan blades turn,they force air into the collecting bag at high speed.The collecting bag is porous which allows only the air to pass through.</li>	
+<li>This creates a pressure difference between the fan and the dust particles at the collecting end.The inlet and the outlet are designed in such a  way so as to ensure the flow of dust particles in the correct direction.</li></ol><ul>
+	
+<li>
+	
+<h3>Brushless Motor</h3></li></ul><p>
+	<img src="http://rcdn-1.fishpond.co.nz/0054/972/702/109306980/6.jpeg" style="width: 237px;"></p><ol>
+	
+<li>We are using a 1100KV Outrunner Brushless Motor to control the fan used for vacuuming.</li>	
+<li>We used Brushless motor instead of normal brushed dc motor as it has high RPM,high torque to weight ratio,more torque per watt,reduction of EMI,etc.</li>	
+<li>Electronic Speed Controller i.e. ESC is an electronic circuit used to control the speed,direction of Brushless motor.</li>	
+<li>We are using rechargeable Lithium Ion battery to provide power to the brushless motor.</li></ol><ul>
+	
+<li><span style="background-color: rgb(0, 0, 0);"></span>
+	
+<h3>Proximity Sensor</h3><p>
+		<span style="background-color: rgb(0, 0, 0);"></span>
+	</p></li></ul><p>
+	<img src="http://www.ezdenki.com/graphics/hc-sr04-s.jpg" style="width: 273px;"></p><ol>
+	
+<li>Ultrasonic ranging module HC - SR04 provides 2cm - 400cm non-contact measurement function, the ranging accuracy can reach to 3mm.</li>	
+<li>The transmitter sends sound wave to an obstacle and calculates the time required by the receiver to receive the reflected sound wave.</li>	
+<li>The distance between the sensor and the obstacle thus can be calculated by using the speed of sound and the time required.</li></ol><ul>
+	
+<li>
+	
+<h3>Arduino</h3></li></ul><p>
+	<img src="https://lh3.googleusercontent.com/proxy/LrrUXUFJGjqHTzfUjowrtlVfGfk83z6DzDVJw5KU3s9J6XGbEhvfmOCrrG1TyrUsYbt-N7iA776ffXoJOx87PZOPC0BvTZuMc5xk48MzCMdiYBb5p7mKXV7PPS0=w426-h280" style="width: 313px;"></p><ol>
+	
+<li>We are using Arduino Mega 2560.</li>	
+<li>Arduino Mega 2560 is a microcontroller which has 54 digital input/output pins(of which 15 can be used as PWM outputs),16 analogs inputs,4 UARTs,a 16 MH zcrystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button.</li>	
+<li>We are controlling brushless motor,DC motors,ultrasonic sensors using the Arduino.</li></ol><ul>
+	
+<li>
+	
+<h3>Other Electronic Equipments</h3></li></ul><ol>
+	
+<li>L293D : It is a 16 pin motor driver IC which can control a set of two DC motors simultaneously in any direction.</li>	
+<li>MOSFET BS-170 : It acts as a switch to start and stop the motors when supplied with a signal from the Arduino.</li>	
+<li>7805 IC : It is a voltage regulator IC which converts the voltage from 12V to 5V.</li>	
+<li>7809 IC : Similar to 7805 IC,it is used to step down the voltage from 12V to 9V.</li></ol>

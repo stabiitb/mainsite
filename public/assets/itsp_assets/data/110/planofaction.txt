@@ -1,13 +1,22 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Week 1 (May 4th -10th)</h3><ul><li>Design of the prototype<br>
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
-<li>What you have planned ?:
+<li>We planned to make the model of the reaction wheel and the frame keeping in mind the constraints of the dynamics equations</li><li>We made the model in SolidWorks of the frame and the reaction wheel and began gathering material for making the protoype</li></ul></li></ul><h3>Week 2 (May 11th -17th) </h3><ul>
+<li>Fabrication of the frame and wheel.</li><li> Ordering the equipment.
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
-<li>What we achieved
+<li>Making the frame and wheel using aluminium by cutting and filing it</li></ul></li><li>Accomplished
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Since no machines were available for cutting aluminium, we had to do it manually </li><li>Got brushless dc motors and the ESC for them.</li><li>Obtained the sensor</li></ul></li></ul><h3>Week 3 (May 18th -24th)</h3><ul>
+<li>Fabrication of the wheel</li><li>Using the motor and sensor<br>
+<ul><li>Obtain values from the sensor</li><li>Finish fabrication of the wheel</li><li>Control the brushless dc motor with arduino</li></ul></li><li>Accomplished<ul>
+<li>Finished making the reaction wheel </li><li>Obtained values from sensors</li><li>Controlled the rpm of the motor using an arduino</li></ul></li></ul><h3>Week 4 (May 25th -  31st)</h3><ul>
+<li>Making a new acrylic frame</li><li>Buying the stepper motor and the motor driver</li><li>Controlling the stepper motor<br>
+<ul>
+<li>Make a new frame that suits the new motor</li><li>Decide on the specs of the motor</li><li>Control the stepper using an arduino</li></ul></li><li>Made a new frame</li><li>Bought stepper motor and ULN2003A</li><li>Controlled the stepper using the arduino</li></ul><h3>Week 5 (June 1st -  7th)</h3><ul>
+<li>Decide a dc motor with high speed and buy it</li><li>Control this motor using arduino</li><li>Code the final part
+<ul>
+<li>Use a brushled dc motor</li><li>Code and debug the project</li></ul></li><li>Accomplished
+<ul>
+<li>Bought the motor, controlled it and started coding</li></ul></li></ul><h3>Week 6 (June 8th - 14th)</h3><ul>
+<li>Buy a low speed higher torque brushed dc motor</li><li>Complete the code</li><li>Accomplished
+<ul>
+<li>Bought the motor and controlled it</li><li>Finished the coding of the project</li></ul></li></ul>

@@ -1,86 +1,17 @@
-<span style="color: rgb(0, 0, 0);"></span>
-<div>
-	<ol>
-	</ol>
-	<span style="color: rgb(0, 0, 0);"><inline style="color: rgb(0, 0, 0);"><inline style="background-color: rgb(255, 255, 255);"></inline></inline></span>
-	<h3><span style="color: rgb(0, 0, 0);"><inline><inline style="background-color: rgb(255, 255, 255);"><inline>Artificial Intelligence</inline></inline></inline></span></h3>
-	<p style="margin-left: 20px;">
-	</p>
-	<p style="margin-left: 20px;">
-		MinMax Algorithm with alpha-beta pruning has been used for deciding the bot's next move. For Connect-4, we have achieved a depth of 10 using alpha-beta pruning. The heuristic function we have used is described as follows:
-	</p>
-	<p style="margin-left: 60px;">
-		1.
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><br>
-		</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><br>
-		</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><br>
-		</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><br>
-		</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><br>
-		</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Flight Control Board( KK 2.1.5): This board helps to stabilise the plane. It has gyrometer and accelerometer in it.</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">It also helps in the transition from one mode to the other mode.</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Motor tilting mechanism:<img src="http://fpvcentral.net/wp-content/uploads/2014/03/kk215.jpg" alt="" style="width: 199px; float: right; margin: 0px 0px 10px 10px;"></span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Actually we tried 3 tilting machanisms but each one had its own drawbacks.Model 1:</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474331-12-thumb-IMG_0756.jpg?d=1358992156" alt="" style="float: left; margin: 0px 10px 10px 0px;"></span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);"><img src="http://static.rcgroups.net/forums/attachments/1/2/6/4/5/6/t5474332-78-thumb-IMG_0754.jpg?d=1358992156"></span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Problems Faced:</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Since all the aluminium clamps used were handmade they were not exactly alike. We planned on using one servo to tilt two motors. Hence with one servo the motors did not rotate by 90 degree simultaneously. Hence this mechanism could not be used.</span>
-	</p>
-	<p>
-		<span style="color: rgb(0, 0, 0);">Model 2:</span>
-	</p>
-	<span style="color: rgb(0, 0, 0);">
-	<iframe src="//www.youtube.com/embed/_EoRfX4KBD8" allowfullscreen="" frameborder="0" height="315" width="560">
-	</iframe>
-	</span>
-</div><p>
-	<span style="color: rgb(0, 0, 0);"></span></p><iframe src="//www.youtube.com/embed/OmetQEKIyfk" allowfullscreen="" frameborder="0" height="315" width="560">
-</iframe>
-<div>
-	<span style="color: rgb(0, 0, 0);">Problems Faced:</span>
-</div><span style="color: rgb(0, 0, 0);">
-</span>
-<div>
-	<span style="color: rgb(0, 0, 0);">To increase the strength of this mechanism we had to use small pieces of ply which increased the weight of the plane. The big compartments used in this mechanism also decreased the exposure value of propellers. Hence the 4 motors were not able to lift up the plane. </span>
-</div><span style="color: rgb(0, 0, 0);">
-</span>
-<div>
-	<span style="color: rgb(0, 0, 0);">Model 3:<br>
-	<iframe src="//www.youtube.com/embed/5HJ5QXE1sdM" allowfullscreen="" frameborder="0" height="315" width="560">
-	</iframe>
-	</span>
-</div><ol>
-	<span style="color: rgb(0, 0, 0);">Problems Faced:<br>
-	 Since the whole body was handmade it was unsymmetrical. The plane was not stable in hover mode 
-	</span>
-</ol>
+<p><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><h3><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Artificial Intelligence</inline></span></h3><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">We have used MinMax algorithm with alpha-beta pruning for our project. The heuristic function has been designed as explained :</inline></span></h5><h5 style="margin-left: 40px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	1. The heuristic function is 
+proportional to the power of number of chips that are continuous in a 
+row/column/diagonal. This is added up for every row,column and diagonal.</inline></span></h5><h5 style="margin-left: 40px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Note: The value calculated for each 
+row/column/diagonal has a positive or negative sign depending on which 
+coloured chips are present consecutively in that row or column.</inline></span></h5><h5 style="margin-left: 40px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">
+	2. The heuristic function gives a very high value(like INT_MAX) to 4 chips continuous in a row/column/diagonal.</inline></span></h5><p style="margin-left: 40px;">     </p><p style="margin-left: 40px;"><br><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><p style="margin-left: 40px;"> </p><p style="margin-left: 40px;"> </p><h3><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Image Processing</inline></span></h3><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><a href="https://en.wikipedia.org/wiki/OpenCV" target="_blank">OpenCV</a> is used for Image Processing.</inline></span></h5><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"><a href="http://docs.opencv.org/modules/highgui/doc/reading_and_writing_images_and_video.html#videocapture" target="_blank">VideoCapture()</a> class is used to get a continuous stream of the image (of the 
+board) using laptop webcam. This image of the board is first reduced to 
+7:6 ratio since the board has the same ratio of dimensions. The <a href="http://docs.opencv.org/modules/core/doc/operations_on_arrays.html#inrange" target="_blank">inRange()</a> method is used on image matrix( <a href="http://docs.opencv.org/modules/core/doc/basic_structures.html#mat" target="_blank">Mat</a> ) to filter colors. We need only yellow and red colors, hence inRange() is 
+correspondingly used. The range we used is in terms of the HSV values. 
+Hence, red and yellow colors separate into binary images. Using the binary images, current state of board is obtained.</inline></span></h5><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Once the board is confirmed to be valid, game proceeds accordingly.</inline></span></h5><p style="margin-left: 20px;"></p><p style="margin-left: 20px;">    <br><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"></inline></span></p><h3><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Electronic/Mechanics</inline></span></h3><h5 style="margin-left: 20px;"><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">The coin-dispensing mechanism was probably the most challenging part of the project. By using a vertical stack of horizontally kept coins, it was very difficult to design a simple mechanism to drop only one coin at a time. Hence, we used a vertical stack of vertically kept coins for this purpose.</inline></span></h5><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);"> A Servo 
+motor is used for dispensing of coins. A DC motor is used for running a 
+conveyor belt that holds the dispenser and Servo Motor. The Arduino code first asks
+ the DC Motor to rotate at a certain fixed speed for a fixed time (which
+ is a function of the column number). Then the Servo motor is rotated by a fixed angle to 
+drop one chip and rotated back to its initial position. The DC Motor is 
+then rotated in the reverse direction to attain the initial position. </inline></span></h5><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">Initially, we used a Stepper Motor instead of the DC Motor. This was because a Stepper Motor gives higher accuracy than a DC Motor. Unfortunately, this didn't work out because the Stepper wasn't giving enough torque to move the conveyor belt along with the dispenser-servo. The Stepper was running at a maximum speed of 60RPM, but we required greater speeds and torques. </inline></span></h5><h5 style="margin-left: 20px;"><span style="font-family: Arial;"><inline style="color: rgb(0, 0, 0);">The DC motor also has its own limitations. We have observed that the DC motor is not very accurate, especially at high speeds. While using the DC motor at 200 RPM, we have seen significant inaccuracies.This is one of the limitations of our project. <br></inline></span></h5>

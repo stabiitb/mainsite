@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Waveform on fire Flames</h5>
+									<div class="details white-text">
+										Effect of sound passed through gas pipe
+									</div>
+								</div>

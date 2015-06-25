@@ -2,8 +2,12 @@
 <li>Planned<ul><li>Basic circuit design of the Arduino part of the system</li></ul></li><li>Accomplishment<ul>
 <li>Learnt basic Android  and Arduino coding</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
 <li>Planned<ul>
-</ul></li></ul><ul>
-<li>What we achieved
+<li>First basic model plan of the system controlled by Android app via Bluetooth</li></ul></li><li>
+Accomplishment
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (June 8th-14th)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 15th - 21st)</h3><ul><li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul><h3>Week 6 (June 22nd - 28th)</h3>
+<li>Worked on the First model and completed it with the exclusion of the bluetooth module part of the system</li><li>Made the complete Arduino code for the First model, only testing remains</li><li>Completed the basic Android app for the bluetooth model, only testing remains</li></ul></li></ul><h3>Week 4 (June 8th-14th)</h3><ul>
+<li>Planned<ul><li>Second Model of the system, consisting of Android app communication through internet</li><li>Adding the voice commands in the Second Model and how to go about it <ul>
+</ul></li></ul></li><li>Accomplishment<ul><li>First model complete with testing</li><li>Started working on the Second Model</li></ul></li></ul><h3>Week 5 (June 15th - 21st)</h3><ul><li>Planned
+<ul>
+<li>Inclusion of voice commands in the Second Model</li><li>Constructing better design for the Android app</li></ul></li></ul><ul><li>Accomplishment
+<ul><li>Voice command app completed</li><li>Started designing the final android app</li></ul></li></ul><h3>Week 6 (June 22nd - 28th)</h3>

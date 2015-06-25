@@ -1,0 +1,1 @@
+<p>We first removed noise from the signals we received and then the signal was amplified using the amplifier (INA106).</p>
