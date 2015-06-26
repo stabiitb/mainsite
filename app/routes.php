@@ -168,6 +168,7 @@ Route::get('sitemap', function(){
     // add items to the sitemap (url, date, priority, freq)
     $sitemap->add(URL::to('/'), '2012-08-25T20:10:00+02:00', '1.0', 'weekly');
     $sitemap->add(URL::route('vision'), '2012-08-25T20:10:00+02:00', '0.8', 'monthly');
+    $sitemap->add(URL::route('events.ITSP_2015.itsp'),'2015-06-15T20:10:00+02:00','0.8','weekly');
 
     $clubs=['aeromodelling-club'=>['about','team','vision','event']
     ,'electronics-club'=>['about','team','event'],
