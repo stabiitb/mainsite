@@ -1,6 +1,0 @@
-<ul><ul><div><br><ul>
-<li>Components ordered from Paras Electronics (Sakinaka) amounting  Rs. 110.00<ul>
-<li>Condenser Mic</li><li>Resistors(22kohm,470ohm,1kohm,10kohm)</li><li>LED</li><li>Battery(9volts)</li><li>IC741</li><li>CD4017</li><li>BC547 Transistors</li></ul></li></ul></div><ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from Mangal Deep (Opposite to IIT Main Gate) amounting of Rs.97.00</span></li><li>
-<ul><li>Screw Driver</li><li>Relay switch</li><li>Variable Resistor</li><li>LED's</li></ul></li></ul><ul>
-<li>Components ordered from Lamington Road amounting of Rs.240<ul><li>100<strong>μF capacitor</strong></li><li>100nF capacitor</li><li>connecting wires</li><li>4.8 volts battery</li><li>LM7805</li><li>PCB's</li><li>USB Female connector</li><li>diode</li></ul></li><li>Components ordered from <a href="http://www.ebay.com"> www.ebay.com</a> amounting of Rs.530.00-Solar panel of 6 Volts.</li></ul><p><strong>     Total amount of the project is Rs.977.00</strong></p></ul></ul>
