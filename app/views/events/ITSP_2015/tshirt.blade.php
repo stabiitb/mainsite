@@ -2,7 +2,7 @@
 @section('inner-content')
 <?php
      date_default_timezone_set('Asia/Kolkata');
-     $closetime=strtotime("2015:06:25 23:59:59 "); 
+     $closetime=strtotime("2015:07:15 23:59:59 "); 
      $curtime = time();
      //echo $closetime."  ".$curtime."\n";
 ?>
