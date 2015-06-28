@@ -1298,14 +1298,10 @@ th {
 
 	public function documentation_links(){
 		$team=ITSP::find((Auth::User()->itsp));
-		if Input::get('youtubeLink1')!="":
-			$team->yotubeLink1=Input::get('youtubeLink1');
-		if Input::get('youtubeLink2')!="":
-			$team->yotubeLink2=Input::get('youtubeLink2');
-		if Input::get('presentationLink')!="":
-			$team->presentationLink=Input::get('presentationLink');
-		if Input::get('githubLink')!="":
-			$team->githubLink=Input::get('githubLink');
+		$team->yotubeLink1=Input::get('youtubeLink1');
+		$team->yotubeLink2=Input::get('youtubeLink2');
+		$team->presentationLink=Input::get('presentationLink');
+		$team->githubLink=Input::get('githubLink');
 		$team->save();
 		return Redirect::back();
 	}
