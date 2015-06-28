@@ -1,0 +1,7 @@
+<div class="project-details" style="margin-top:-10%">
+									<h5 class="white-text red-border-bottom" >
+									Remote Circuit</h5>
+									<div class="details white-text">
+										This circuit includes arduino UNO with accelerometer and R433A transmitter.
+									</div>
+								</div>

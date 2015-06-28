@@ -1,13 +1,17 @@
-<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the circuit design of Android app</p><ul><li>Accomplishment</li></ul><p style="margin-left: 40px;">Started Android app development classes</p><h3>Week 2 (May 25th- 31st )</h3><ul>
-<li>Planned<ul><li>Basic circuit design of the Arduino part of the system</li></ul></li><li>Accomplishment<ul>
-<li>Learnt basic Android  and Arduino coding</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
-<li>Planned<ul>
-<li>First basic model plan of the system controlled by Android app via Bluetooth</li></ul></li><li>
-Accomplishment
+<h3>Week 1 (May 18th -24th)</h3><ul>
+<li>Planned</li></ul><p style="margin-left: 40px;">Planned the circuit design of Android app</p><ul>
+<li>Accomplishment</li></ul><p style="margin-left: 40px;">Started Android app development classes</p><h3>Week 2 (May 25th- 31st )</h3><ul><li>Planned
 <ul>
-<li>Worked on the First model and completed it with the exclusion of the bluetooth module part of the system</li><li>Made the complete Arduino code for the First model, only testing remains</li><li>Completed the basic Android app for the bluetooth model, only testing remains</li></ul></li></ul><h3>Week 4 (June 8th-14th)</h3><ul>
-<li>Planned<ul><li>Second Model of the system, consisting of Android app communication through internet</li><li>Adding the voice commands in the Second Model and how to go about it <ul>
-</ul></li></ul></li><li>Accomplishment<ul><li>First model complete with testing</li><li>Started working on the Second Model</li></ul></li></ul><h3>Week 5 (June 15th - 21st)</h3><ul><li>Planned
+<li>Basic circuit design of the Arduino part of the system</li></ul></li><li>Accomplishment
+<ul><li>Learnt basic Android  and Arduino coding</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul><li>Planned
+<ul><li>First basic model plan of the system controlled by Android app via Bluetooth</li></ul></li><li>
+Accomplishment<ul><li>Worked on the First model and completed it with the exclusion of the bluetooth module part of the system</li><li>Made the complete Arduino code for the First model, only testing remains</li><li>Completed the basic Android app for the bluetooth model, only testing remains</li></ul></li></ul><h3>Week 4 (June 8th-14th)</h3><ul><li>Planned
 <ul>
-<li>Inclusion of voice commands in the Second Model</li><li>Constructing better design for the Android app</li></ul></li></ul><ul><li>Accomplishment
-<ul><li>Voice command app completed</li><li>Started designing the final android app</li></ul></li></ul><h3>Week 6 (June 22nd - 28th)</h3>
+<li>Second Model of the system, consisting of Android app communication through internet</li><li>Adding the voice commands in the Second Model and how to go about it 
+<ul>
+</ul></li></ul></li><li>Accomplishment
+<ul>
+<li>First model complete with testing</li><li>Started working on the Second Model</li></ul></li></ul><h3>Week 5 (June 15th - 21st)</h3><ul>
+<li>Planned<ul><li>Inclusion of voice commands in the Second Model</li><li>Constructing better design for the Android app</li></ul></li></ul><ul>
+<li>Accomplishment<ul>
+<li>Voice command app completed</li><li>Started designing the final android app</li><li>Completed Second model</li></ul></li></ul><h3>Week 6 (June 22nd - 28th)</h3><ul><li> Accomplishment  <ul><li>Reduction in Power consumption of circuits </li><li>Designed app finally</li><li>Established internet connection between the Arduino and App</li><li>Completed final model</li></ul></li></ul>

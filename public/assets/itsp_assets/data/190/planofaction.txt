@@ -1,13 +1,13 @@
 <h3>Week 1 (May 18th -24th)</h3><ul>
-<li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul>
-<li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 25th- 31st )</h3><ul><li>Planned                                                     
+<li>Planned</li></ul><p style="margin-left: 40px;">Deciding the final problem statement and distributing the work accordingly.(Note : A lot of research went into deciding what is to be done)</p><ul>
+<li>Accomplished</li></ul><p style="margin-left: 20px;">    Goal accomplished.</p><h3>Week 2 (May 25th- 31st )</h3><ul><li>Planned                                                     
 <ul>
-<li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?<ul><li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul><li>What you have planned ?:<ul><li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul><li>What we achieved<ul><li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (June 8th - 14th)</h3><ul><li>What you have planned ?
+<li>Deciding what modules are to be used for communication , distance measuring , data storage.</li><li>Learn to use Stepper Motors , Python for making plots.</li></ul></li><li>What you have accomplished?<ul><li>Communication module finalised as nRF24L01 </li><li>Distance measuring module finalised as hc sr 04</li><li>SD card module for data storage.</li><li>Stepper usage and python learned.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul><li>What you have planned ?:<ul><li>Finalise the size of the bot. </li><li>Establish communication between two modules.</li></ul></li></ul><ul><li>What we achieved<ul><li>To reduce the size of the bot , decided to print PCB</li><li>Communication module failed. So found new module , XBee.</li></ul></li></ul><h3>Week 4 (June 8th - 14th)</h3><ul><li>What you have planned ?
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
+<li>Making the PCB . If fails , start making the bot .</li><li>Get the acryllic laer cutting done.</li><li>Make one bot atleast.</li><li>Learn to use XBee.</li></ul></li><li>What you have accomplished?
 <ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 15th - June 21st)</h3><ul><li>What you have planned ?
+<li>PCB printing failed. </li><li>Acrylic cutting done.</li><li>One bot completed.</li></ul></li></ul><h3>Week 5 (June 15th - June 21st)</h3><ul><li>What you have planned ?
 <ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
+<li>Making the second bot.</li><li>Wrtting the final complete code for two bots.</li></ul></li></ul><ul><li>What you have accomplished?
 <ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again<br><br></li></ul></li></ul>
+<li>Two bots completed. </li><li>80% of the code complete.<br><br><strong>Week 6 (June 22nd - June 28th)<br></strong></li><li><strong>What we planned?<br>Completing the code. Start debugging.<br></strong></li><li><strong>What we accomplished?<br>Code complete. Debugging under progress.</strong></li></ul></li></ul>

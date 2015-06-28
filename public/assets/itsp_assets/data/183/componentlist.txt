@@ -1,8 +1,1 @@
-<div><br>•DC
-Motors (2) </div><div>•180
-deg servo(1) </div><div>•Arduino UNO microcontroller </div><div> •L293D
-Motor driver, 7805 IC </div><div>•Mini
-breadboard </div><div>•Ultrasonic
-sensor </div><div>•Lead
-acid battery </div><div>•GPS
-module and digital compass </div>
+<p><strong> ULTRASONIC SENSOR</strong> (2)-300/-</p><p> <strong>7805IC</strong> (5)-47/-</p><p><strong>5V RELAY</strong>-30/-</p><p><strong>JUMPWIRE</strong></p><p><strong>HEATSINK</strong>-6/-</p><p><strong>IC HOLDER</strong> (2)-10/-</p><p><strong>SERVO MOTOR</strong>-330/-</p><p><strong>BATTERY HOLDER</strong>-15/-</p><p><strong>SMALL BREADBOARD</strong>-50/-</p><p><strong>LEAD ACID BATTERY</strong>-350/-</p><p><strong>ARDUINO UNO</strong>-750/-</p><p><strong>GEAR MOTOR</strong> (2)-260/-</p><p><strong>CHASSIS</strong>-75/-</p><p><strong>HCSR04</strong>-200/-</p><p><strong>WHEELS</strong>-60/-</p><p><strong>GPS RECEIVER MODULE</strong>-1199/-</p><p><strong>HMC5883L</strong>-280/-</p><p><strong>IC 7805</strong>-7/-</p><p><strong>L293d</strong>-48/-</p><p><strong>MOTOR CONTROL SHIELD</strong>-390/-</p>

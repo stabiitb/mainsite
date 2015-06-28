@@ -1,1 +1,34 @@
-<p>We initially thought of making the bot first but realized that we might need to make structural changes to the bot. so we first started with the back end programming. Initially we had no clue how the Arduino would work so we first wrote simple programs to get ourselves acquainted to the Arduino. Step by step we progressed and got acclimatized to Arduino. This took us about a week or so. We then started our research on the actual project. We had divided the project into sub parts and decided that it was important to do voice processing first. </p><p>//add about voice processing</p><p>After we had initiated ourselves into voice processing we side by side started on image processing. We have been able to recognize a square and our working on being able to recognize other objects.</p><p>                //thinking of adding the slides from 2nd rev meet which give a compact view of what we have done</p>
+<p><strong>Working of our project :-</strong></p><p><strong><br></strong></p><p><img src="https://cdn.pbrd.co/images/1xEYcy3i.png"></p><p><img src="https://cdn.pbrd.co/images/1xETMRFV.png"></p><p><strong>Communication :-</strong></p><p>For communication between
+the Bot and PC/Android device Bluetooth Module HC-05 has been used. The
+communication is at 9600 baud. The Bluetooth communication can be started from
+PC Software as well as from Android Application. (The PC must have a Bluetooth
+Driver and Hardware installed).</p><p><strong>About Bluetooth Module ‘HC-05’
+:</strong><img src="https://alselectro.files.wordpress.com/2014/10/ard.png"></p><p>For Connection of Bluetooth
+Module with Arduino UNO :</p><p>a. Add a Supply of 5V to
+HC-05 VCC port from Arduino UNO 5V Pin.</p><p>b. TX pin from the module
+is connected to RX pin of Arduino (Important).</p><p>c. RX pin from the module
+is connected to TX pin of Arduino (Important).</p><p>d. Provide GND to the
+module from Arduino UNO GND.</p><p>The Pins at both ends in
+the module are not used in our project.</p><p><strong>Important Notices :</strong></p><ul>
+ <li>Please ensure that TX and RX of
+     BT Module is connected to RX and TX of Arduino resp.</li> <li>Ensure that Bluetooth of phone
+     should be turned ON before starting a connection or the list will appear blank.
+     </li> <li>The voice input commands may
+     have some delay in Android App due to time required for voice processing.
+     In PC you are already provided only one second window.</li> <li>The Bluetooth Connection is
+     stopped in Android App when one leaves the control page. Hence Bluetooth
+     has to be connected every time you visit the Voice control or Manual
+     Control page.</li></ul><p><strong>Future Work :</strong></p><ul>
+ <li>Currently our project has a
+     very limited number of commands that it can process. We can extend it
+     further with greater number of commands. The bot may have a lot more
+     functions that it could perform.</li> <li>The Image Processing can be
+     enhanced and can be used for analyzing the Arena and identify the
+     obstacles.</li></ul><p><strong>Problems faced :</strong></p><ul>
+ <li>The PCB that we tried to make
+     could not be completed because of some loose connections. The bot is
+     currently fitted with a bread board to run the Motors.</li> <li>The Android App was not closing
+     on Exit button press, we sorted that out. Currently, when the mobile can’t
+     search for the device it keeps giving errors for no devices found. This
+     may happen even when both devices are on. Sometimes after disconnection,
+     reconnection may give errors. </li></ul>

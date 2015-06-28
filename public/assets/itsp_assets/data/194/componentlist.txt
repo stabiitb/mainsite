@@ -1,24 +1,2 @@
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.hobbyking.com/">http://www.hobbyking.com</a> - amounting to <strong>Rs 8359.54 ($ 141.28)</strong> (excluding shipping &amp; customs): <br></span>
-<ul>
-<li>
-<h5>3 pc HXT900 9g / 1.6kg / .12sec Micro Servo</h5></li><li>
-<h5>Hobbyking KK2.1.5 Multi-rotor LCD Flight Control Board With 6050MPU And Atmel 644PA</h5></li><li>
-<h5>4 pc Hobby King 20A ESC 3A UBEC</h5></li><li>
-<h5>4 pc D2822/14 Brushless Outrunner 1450kv</h5></li>
-<li><div><h5>2 pc HXT 6.9kg / 39.2g / .16sec Twin bearing servo</h5></div>
-</li><li>
-<h5>Hobby King Quadcopter Power Distribution Board</h5></li><li>
-<h5>Turnigy 3000mAh 3S 20C Lipo Pack</h5></li><li>
-<h5>2 packs 8X4R Propellers (Standard and Counter Rotating) (6pc)</h5></li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>BombayElectronics (Lamington Road)</u> <strong>Rs 84</strong> :</span>
-<ul>
-<li>Gears</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Puja Electric &amp; Hardware (Shop in IIT Market), amounting to <strong>Rs 130</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondtite</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Khirani Stores (Lamington road), amounting to <strong>Rs 135</strong>:</span>
-<ul>
-<li>Aluminium pipe</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from National Electric &amp; Hardware (opp main gate), amounting to <strong>Rs 45</strong>:</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Sandpaper</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mac-net technology(lamington road):<br></span><ul><li><span style="color: rgb(0, 0, 0);">servo V3006_ Rs 450</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep (Shop in IIT Market):</span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Bondite - <strong>Rs 150</strong></span></li><li><span style="color: rgb(0, 0, 0);">nut bolt and hinges- <strong>Rs 60</strong></span></li><li><span style="color: rgb(0, 0, 0);">aluminium strip,bending wire,fevikwik, circular rivet and zip tie-<strong>Rs 140</strong></span></li></ul></li></ul><ul>
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 9553</span></strong></li></ul>
+<ul><li><span style="color: rgb(0, 0, 0);">Components ordered from <a href="http://www.amazon.com/">http://www.amazon.com/</a> - amounting to <strong>Rs 330.00</strong> (including shipping): <br></span><ul><li><h5>One Rubik's Cube.</h5></li></ul></li></ul><ul>
+<li><span style="color: rgb(0, 0, 0);">Component ordered from Visha <u>Electronics (Lamington Road)</u> <strong>Rs 2587</strong> :</span><ul><li>Stepper Motors with Driver x 1</li><li>Servo Motors x 2</li><li>Jumping Wires.</li></ul></li><li>Component ordered from Bombay <u>Electronics (Lamington Road) </u>Rs 1365.<ul><li>DRV8825 Stepper Motors drivers x 4.</li></ul></li><li>Component ordered from Servo <u>Electronics (Lamington Road) </u>Rs 945.<ul><li>Stepper Motors x 3</li></ul></li><li>Component ordered from Eveltra <u>Electronics (Lamington Road) </u>Rs 1323.<ul><li>Servo Motors x 2</li></ul></li><li>Component ordered from Toyo Connectors<u> (Lamington Road) </u>Rs 38<ul><li>Connectors of Stepper Motors.</li></ul></li><li>Component ordered from Macnet <u>Electronics (Lamington Road) </u>Rs 40<ul><li>Side wheels for servo motor.</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Swastik Hardware (Shop opp. IIT Main Gate), amounting to <strong>Rs 37</strong>:</span><ul><li>Nut Bolts for prototype.-Rs. 37</li><li>Nut Bolts and Aluminium strips- Rs 70</li><li>Nut Bolts -Rs 70.</li></ul></li><li>Components from Arihant Plywood <ul><li>Plywood(2x3 in feet)- Rs 337 </li></ul></li><li>Components ordered from Mangaldeep (Shop in IIT Market):</li><li><ul><li><span style="color: rgb(0, 0, 0);">Arduino UNO-Rs 800</span></li><li><span style="color: rgb(0, 0, 0);">Jumper Wires,Single Stranded Wires -  Rs. 110</span></li><li><span style="color: rgb(0, 0, 0);">Bread Board-Rs. 90</span></li><li>DST, Insulation Tape, Fevikwik, Single Stranded(3 mtr)- Rs.94.</li><li>Bond Tite- Rs 40</li><li>Rod-Rs 20</li><li>Jumper wire-Rs 50</li><li>Insulation Tape-Rs 10.</li></ul></li></ul><ul><li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs </span></strong></li></ul>

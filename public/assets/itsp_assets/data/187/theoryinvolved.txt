@@ -1,0 +1,11 @@
+<p>Reed Switch : It is an
+apparatus that allows current to pass through whenever it is in the vicinity of
+a magnet. Thus the circuit is completed and it will be recorded. A magnet is
+attached to a spoke of the wheel and reed switch to the cycle. Hence we obtain
+the rpm. Using radius of the wheel we can obtain the speed of bicycle.</p><p><img width="316" height="312" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" v:shapes="Picture_x0020_1"></p><p><img width="322" height="228" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" v:shapes="Picture_x0020_6"><img width="322" height="96" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png" v:shapes="Picture_x0020_5"></p><p>ADXL 345 3-Axis
+Accelerometer</p><p>•The ADXL345 is a small, thin, low power, 3-axis
+accelerometer with high resolution (13-bit) measurement at up to ±16<em>g</em>.
+Digital output data is formatted as 16-bit twos complement and is accessible
+through either a SPI (3- or 4-wire) or I<sup>2</sup>C digital interface.</p><p>We
+used the acceleration along the three axis to find out pitch of the cycle.</p><p><img width="335" height="204" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png" v:shapes="_x0000_i1028"><img width="207" height="80" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png" v:shapes="Picture_x0020_3"></p><p>We used a combination of
+servo motor and rack pinion to pull the wire that changes the gear</p><p><img width="379" height="284" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" v:shapes="Content_x0020_Placeholder_x0020_8"><img width="379" height="284" src="file:///C:/Users/Shravan/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" v:shapes="Picture_x0020_9"></p>

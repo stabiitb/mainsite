@@ -1,7 +1,6 @@
-<h3>
-<p>Week 1:</p><p>Learnt how to use Arduino and finding appropriate parts
-required</p><p>Week 2:</p><p>Bought the parts and found an unused cycle in our hostel for
-us to work on.</p><p>Week 3:</p><p>Started making the circuit using the parts we had on
-breadboard. We tried to figure out a way to change gear using servo motor.</p><p>Week 4:</p><p>We started making the mechanical setup. Started writing the
-program.</p><p>Week 5:</p><p>Transferred the circuit onto a pcb and soldered it. We tried
-to fit all the parts into a compact box.</p></h3>
+<h3></h3><h5>Week 1:</h5><h5>Learnt how to use Arduino and finding appropriate parts
+required</h5><h5>Week 2:</h5><h5>Bought the parts and found an unused cycle in our hostel for
+us to work on.</h5><h5>Week 3:</h5><h5>Started making the circuit using the parts we had on
+breadboard. We tried to figure out a way to change gear using servo motor.</h5><h5>Week 4:</h5><h5>We started making the mechanical setup. Started writing the
+program.</h5><h5>Week 5:</h5><h5>Transferred the circuit onto a pcb and soldered it. We tried
+to fit all the parts into a compact box.</h5>

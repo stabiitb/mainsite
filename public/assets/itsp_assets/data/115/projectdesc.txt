@@ -1,2 +1,1 @@
-<p><em><span style="color: rgb(247, 150, 70);">Click here to write the project desciption.</span></em></p><p>
-<span style="color: rgb(247, 150, 70);"></span></p><p><em><span style="color: rgb(247, 150, 70);">To edit any section, click on the text of that section.</span></em></p>
+<p>Our project is based on the concept of navigation as desired by the user. The bot will be guided along the said path (as drawn by the user on a interactive interface) and then will return to the starting point along the shortest route.</p>

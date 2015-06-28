@@ -1,13 +1,12 @@
-<h3>Week 1 (May 5th -11th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Planned the dimensions of fuselage, tail wing, vertical stabiliser and wing</p><p style="margin-left: 40px;">finalised the components required</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">        Made the fuselage and vertical stabiliser and ordered the components</p><h3>Week 2 (May 12th- 18th )</h3><ul>
-<li>Planned                                                     <ul><li>finalising the tilt mechanism</li><li>learn how to operate the flight control board(KK 2.1.5)</li></ul></li><li>What you have accomplished?
+<h3>Started the project on June 1st due to unavailability of team members.</h3><h3>Week 1 (June 1st - June 7th)</h3><ul><li>Planned
+<ul><li> finalize an optics systems</li><li>complete the Infrared Sensor Frame to a basic working level, multiplexing</li><li>decide on an LCD screen to use</li></ul></li></ul><ul><li>Accomplished<ul><li>Worked on the Infrared Sensor Frame</li><li>completed the programming part to detect finger's position</li><li>planned the IR circuit, soldered three of four boards, multiplexing circuit</li><li>Optics system was finalized in the review meet.</li></ul></li></ul><h3>Week 2 (June 8th - June 14th )</h3><ul>
+<li>Planned                                                     <ul><li>To complete the IR Sensor frame</li><li>Decide the LCD screen and program it</li><li>Start making the optics system</li></ul></li><li>What you have accomplished?
 <ul>
-<li>Made the wing.</li><li>learnt how to operate the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 3 (May 19th - 25th)</h3><ul>
+<li>completed the IR sensor frame strips, wired the multiplexer circuit</li><li>failed to use the 128x64 LCD correctly</li><li>gave measurements of Parabolic Moulds to Plastic Studio, Industrial Design Centre</li></ul></li></ul><h3>Week 3 (June 15th - June 21th)</h3><ul>
 <li>What you have planned ?:
 <ul>
-<li>install all the servos</li><li>make the tilt machamism</li><li>configure the flight control board(KK 2.1.5).</li></ul></li></ul><ul>
+<li>Develop a mechanical frame for the IR Sensor Frame</li><li>program another LCD</li><li>Make the parabolic mirrors</li></ul></li></ul><ul>
 <li>What we achieved
 <ul>
-<li>Completed the tilt mechanism.</li><li>installed the servos.</li><li>configured the flight control board(KK 2.1.5).</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul>
-<li>What you have planned ?<ul><li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?<ul><li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul>
-<li>What you have planned ?<ul><li>Check the new tilt mechanism.</li></ul></li></ul><ul>
-<li>What you have accomplished?<ul><li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Made a rudimentary cardboard frame, which failed to give good results due to interference between adjacent sensors</li><li>Changed the IR Sensor model. Made 4 new strips with this new model.</li><li>Procured the Parabolic moulds via Plastic Studio, Industrial Design Centre. Couldn’t complete mirrors due to delay in Mylar Sheets.</li><li>Decided to use a 16x2 LCD display with a paper calculator grid. Learnt how to operate it.</li></ul></li></ul><h3>Week 4 (June 22nd - June 28th)</h3><ul>
+<li>What you have planned ?<ul><li>Develop a mechanical frame for the new model</li><li>complete mirrors using Mylar sheets</li><li>final calibration, spatial arrangement, programming the calculator</li></ul></li><li>What you have accomplished?<ul><li>Made a new stable working mechanical frame using rubber bands and Styrofoam</li><li> Used Mylar sheets but failed to get good results.</li><li>Changed to a simple glass reflection based hologram</li><li>Programmed the 16x2 LCD, calculator, mechanical aspects of the project.</li></ul></li></ul>

@@ -1,0 +1,44 @@
+<h3>Arduino:</h3>
+<p>
+	We spent the first week studying about Arduino since none of us had worked with it before. It was fairly easy to understand so we could concentrate on the main parts of our project. We only faced the problem of storage space on UNO and so replacing it with MEGA was necessary.
+</p>
+<h3>Sensors:</h3>
+<p>
+	Our first step in the main part of the project was seeing what data was given by the sensors. We kept the sensors in the room for a day and plotted the results. The results were fairly predictable. But LDR readings, though of the same form, did not give the same value due to their different resistances. Since SL-HS-220 was a last minute replacement, we don't have a graph for it.
+</p>
+<p>
+	<img src="http://i.imgur.com/eLhcaoa.jpg" style="width: 577px;">
+</p>
+<p>
+	<img src="http://i.imgur.com/QRDI4B0.jpg" style="width: 549px;">
+</p>
+<h3>Website:</h3>
+<p>
+	Website part was something that we hadn't worked on before. We first thought about doing an app but later realized that for communicating through the internet, we needed to make a web server and program it. So it was better to just create a web page instead of an app. Next, we had to study about how to make a website and further how to make it communicate with Arduino. One idea was to use laptop as a server and communicate with Arduino using serial communication, other was Arduino Ethernet shield. Ethernet shield was a better option since we could use it as a web server and it had direct communication with Arduino. Since so many new things had to be learnt for this part, it took almost 2 weeks to study and another week to implement.
+</p>
+<h3>Light/fan on/off:</h3>
+<p>
+	Lights and fan use AC current from the main power supply to run whereas all other parts of our project ran only in low DC voltages. Separating these was crucial for smooth working. Relays helped in this. Since relays switch when ~5V is given while being able to handle 220V AC supply, we could connect the AC supply to the light and fan and use relays as their switch. Relays would then be controlled by Arduino when light and fan had to be controlled. Working with 220V AC is always dangerous and we had to be extremely careful with insulation. Still we had a few cases where the main switch board dripped or a component burned.
+</p>
+<h3>Dimming:</h3>
+<p>
+	Dimming was necessary to control fan speed as well as light brightness. Even the simple method of putting resistors in series was not so simple since the resistors had to be of high wattage type. When we decided to do TRIAC dimmer circuit to make it more efficient, we had learn what a TRIAC is and how it cuts off part of the supply. After a few days of studying, and a few trips to the shop to buy the components, we were finally able to get it right. Some of the components were either too expensive or hard to get since they are rarely used in projects. This was the module which taught us what we feel as easy in theory is not always easy to implement practically.
+</p>
+<h3>Air Conditioner control:</h3>
+<p>
+	We had seen a guide on how to control an AC using Arduino. It looked very simple since all we had to do was record what the original remote was sending and send the same things. Since there was a library to receive and send IR signals, it seemed like an easy task. But when we actually started doing it, we got to know that different ACs had different protocols with which the signal was sent and if the library doesn't automatically detect it, we need to decode the signal manually and see which is the closest standard protocol and send it using that protocol. Almost everyday it was a case of so close yet so far since we had started with only limited knowledge and relied on the library to do the job. After controlling TV, and then 2 ACs in the house, we learnt a lot of things about IR signals and hence were able to control the AC in the lab where we had the final demonstration.
+</p>
+<h3>Laser module:</h3>
+<p>
+	This was a part where we didn't find any guide. So we first tested it separately and found that they were working well. The only problem was that the room had to be dark, otherwise LDR couldn't detect the change easily. We covered the LDR with a cardboard box and got it in working condition.
+</p>
+<h3>Pushbutton:</h3>
+<p>
+	Pushbutton feature was the simplest of all features that we planned to do. On button press, the state of the appliance had to be toggled. It was an Arduino example on its own.
+</p>
+<h3> Integrating laser and pushbutton in main program:</h3>
+<p>
+	This is written separately since a lot of additional stuff had to be done while integrating. We didn't know how fast the main loop was running. So we couldn't just read their state in every loop like in a separate program since there was a chance of missing a signal if the main loop was slow. So we had to use interrupts so that any change would be immediately reported. When we added them to the main program, they didn't work as expected. There were some noises which caused random triggering of interrupts. It took us a while to overcome the problem and in the end, we only had interrupt for laser and read the state of pushbutton in main loop (the loop was actually faster than the time a person takes to press the pushbutton, so every change was recorded).
+</p>
+<h3> Making the project demo ready:</h3>
+<p>Once we were done with testing everything, we had to make it neat to demonstrate it. Since we couldn't actually replace the existing circuitry of a room, we took a piece of plywood and mounted a light bulb and a fan on it along with our circuits. </p>

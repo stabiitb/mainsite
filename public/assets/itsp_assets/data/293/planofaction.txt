@@ -1,7 +1,28 @@
-<p>As
-proposed in the abstract, our timeline plan is as follows:</p><p>Week 1: Research, study and hardware analysis to
-develop the bot.</p><p>Week 2: Basic bot development; wireless study and
-setup.</p><p>Week
-3: Voice
-control and image processing implementation.</p><p>Week 4: Test runs on prototype and completion of basic
-Project.</p>
+<p><strong>Week 1 </strong></p><p><strong>Planned :</strong></p><ul>
+<li>·Planning the course of Project.</li><li>·Learn basics of Voice Processing and Image
+Processing </li></ul><p><strong>Accomplished :</strong></p><ul>
+<li>·Completed Project Plan. Learnt Image Processing
+concepts and MFCC and DTW concepts for Voice Processing.</li></ul><p><strong>Week 2 </strong></p><p><strong>Planned</strong></p><ul>
+<li>·Figuring out what to use for Serial
+Communication between Arduino and PC/Andriod Device.</li><li>·Figuring out how to make Android Application.</li></ul><p><strong>Accomplished : </strong></p><ul>
+<li>·Decided upon using Bluetooth.</li><li>·Successful communication between Arduino and PC
+(MATLAB) via Bluetooth.</li><li>·Found MIT App Inventor to develop Android App.</li></ul><p><strong>Week 3</strong></p><p><strong>Planned :</strong></p><ul>
+<li>·Development of basic Image and Voice Processing
+codes.</li><li>·Developing a working Android App (decided to use
+Google API)</li></ul><p><strong>Accomplished:</strong></p><ul>
+<li>·Basic Image Processing Accomplished.</li><li>·Voice Processing Partly completed.</li><li>·A stable working Android App version built.</li></ul><p><strong>Week 4</strong></p><p><strong>Planned :</strong></p><ul>
+<li>·Completion of Voice Processing in MATLAB.</li><li>·Basic Image Processing Algorithm to identify
+shapes.</li></ul><p><strong>Accomplished :</strong></p><ul>
+<li>·Completed Voice Signal Processing using MFCC</li><li>·Image Processing code to identify a square
+completed.</li><li>·Added Shake to Input feature in Android App.</li></ul><p><strong>Week 5</strong></p><p><strong>Planned :</strong></p><ul>
+<li>·Development of Android App for better user
+interface.</li><li>·Completion of Speech Recognition using DTW.</li></ul><p><strong>Accomplished :</strong></p><ul>
+<li>·Successfully completed Speech Recognition in
+MATLAB.</li><li>·A better user Interface for Android Application
+developed.</li></ul><p><strong>Week 6</strong></p><p><strong>Planned :</strong></p><ul>
+<li>·Building of the bot.</li><li>·Developing a GUI and executable file for MATLAB
+code.</li><li>·Making Android App ready for publishing.</li></ul><p><strong>Accomplished :</strong></p><ul>
+<li>·Bot design and building completed. Working
+Prototype tested.</li><li>·A user friendly GUI for both Voice and Manual
+control developed for PC.</li><li>·Android App v2.0.8 tested and published. With
+Multiple Screens and both Manual and Voice Controls.</li></ul>

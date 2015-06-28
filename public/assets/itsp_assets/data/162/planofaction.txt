@@ -1,11 +1,22 @@
-<h3>Week 1 (May 18th -24th)</h3><ul>
-<li>Planned<ul><li>Learn about accelerometer and decide which components to use.</li></ul></li></ul><ul>
-<li>Accomplished<ul><li>Research done on accelerometer. Decided to use ADXL335 as accelerometer and an Arduino.</li></ul></li></ul><p style="margin-left: 20px;"> </p><h3>Week 2 (May 25th- 31st )</h3><ul><li>Planned<ul><li>Finalizing the mode of transfer of data from device to computer.</li><li>Learn Arduino coding.</li></ul></li></ul><ul><li>What you have accomplished?<ul><li>Mode of transfer finalized as usb cable.</li><li>Started learning Arduino coding.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul><li>What you have planned?<ul><li>Order the components.</li><li>Learn further about arduino coding.<br></li></ul></li></ul><ul><li>What you have accomplished?<br><ul><li>We figured out that normal Arduino (uno) can't act as a serial port, so we decided to use ATMEGA32u4 (Teensy) for solve our problems.</li><li>We have ordered our components.</li><li>As coding ATMEGA32u4 coding is similar to Arduino coding, we continue to learn further in it.</li></ul></li></ul><h3>Week 4 (May 26th - June 1)</h3><ul><li>What you have planned ?
+<h3>Week 1 (May 18th -24th)</h3><ul><li>Planned
 <ul>
-<li>assemble everything and do hover testing.</li><li>check the tilt mechanism.</li></ul></li><li>What you have accomplished?
+<li>Learn about accelerometer and decide which components to use.</li></ul></li></ul><ul><li>Accomplished
 <ul>
-<li>checked the tilt mechanism. It was not perfect :-(</li><li>made a new tilt mechanism.</li></ul></li></ul><h3>Week 5 (June 2nd - June 8th)</h3><ul><li>What you have planned ?
+<li>Research done on accelerometer. Decided to use ADXL335 as accelerometer and an Arduino.</li></ul></li></ul><p style="margin-left: 20px;"> </p><h3>Week 2 (May 25th- 31st )</h3><ul>
+<li>Planned
 <ul>
-<li>Check the new tilt mechanism.</li></ul></li></ul><ul><li>What you have accomplished?
+<li>Finalizing the mode of transfer of data from device to computer.</li><li>Learn Arduino coding.</li></ul></li></ul><ul>
+<li>What you have accomplished?
 <ul>
-<li>Checked the new tilt mechanism. It was perfect but was ver heavy.</li><li>Made a new tilt mechanism again</li></ul></li></ul>
+<li>Mode of transfer finalized as usb cable.</li><li>Started learning Arduino coding.</li></ul></li></ul><h3>Week 3 (June 1st - 7th)</h3><ul>
+<li>What you have planned?
+<ul>
+<li>Order the components.</li><li>Learn further about arduino coding.</li></ul></li></ul><ul>
+<li>What you have accomplished?<br>
+<ul>
+<li>We figured out that normal Arduino (uno) can't act as a serial port, so we decided to use ATMEGA32u4 (Teensy) for solve our problems.</li><li>We have ordered our components.</li><li>As coding ATMEGA32u4 coding is similar to Arduino coding, we continue to learn further in it.</li></ul></li></ul><h3>Week 4 (June 8th - 14th )</h3><ul>
+<li>What you have planned ?<ul><li>Complete the code.</li><li>Assemble everything and test our mouse.</li></ul></li><li>What you have accomplished?<ul><li>Teensy not available, so we decided to use Arduino Pro Micro (much similar).</li><li>Error in code , could not figure out what's wrong.</li><li>Made a new code from scratch. </li></ul></li></ul><h3></h3><h3>Week 5 (June 15th - 21st)</h3><ul><li>What you have planned ?
+<ul><li>Implement the new code and and test it on Arduino Pro Micro.</li><li>Setup the whole thing on a glove.</li></ul></li></ul><ul><li>What you have accomplished?<br>
+<ul><li>Arduino Pro Micro got bricked. </li><li>We decided to use Ardunio Leonardo instead.</li></ul></li></ul><h3><br>Week 6 (June 22nd - 27th)</h3><ul>
+<li>What you have planned ?<ul><li>Test the code on Arduino Leonardo and setup the mouse.</li><li>Setup the whole thing on a glove.</li></ul></li></ul><ul>
+<li>What you have accomplished?<br><ul><li>Code worked perfectly.</li><li>Project setup on glove.</li></ul></li></ul>

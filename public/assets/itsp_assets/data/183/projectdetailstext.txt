@@ -1,0 +1,212 @@
+<p>We spent our first week gathering components for the bot. Once that was done, we went on to study how the individual components worked and how to code for them.The<strong> GPS</strong> module uses<strong> serial communication with arduino and transfers standard NMEA data at an update rate of 1 second</strong>. To interpret this data, we found a <strong>parser library tinygps</strong> which made the job quiet easy. We then discovered several drawbacks of the gps module, one of which was accuracy. According to specs, it supposedly had an position accuracy of 3m radius, which was by itself quiet large. On running numerous tests on the module with sample codes, we unearthed an enduring inaccuracy of about 10m. We realized we would need to set the destination at a considerable distance for the bot's location for it to work plausibly.</p><p>The compass(HMC5883L) communicates with arduino using I2C protocol, which requires pins A4 and A5 on arduino uno. We initially faced a lot of difficulty in making it work because of standard data protocol and after a lot of searching we stumbled upon a few libraries that did the job. We'll leave links below. The data from compass was satisfyingly accurate.</p><p>Moving on to ultrasonic sensors, we found that they got hanged whenever the distances drifted out of range. We contacted numerous people for help with it, but the problem persisted for about a week after which we bought a relay to restart the sensor every time it hanged. It worked initially, but after we assembled the bot we realized that with the algorithm we were using, the bot's becoming vulnerable to collision in the duration it took for the sensor to restart( 5 to 15 secs) wouldn't do. In the end, we bought new sensors after testing for hanging. </p><p>We used a library NewPing for ultrasonic sensors, as it was much faster than the pulseIn() function.</p><p>
+	<strong><em>CODE :</em></strong></p><pre>#include &lt;SoftwareSerial.h&gt;
+#include &lt;TinyGPS.h&gt;
+#include "Wire.h"
+#include "I2Cdev.h"
+#include "HMC5883L.h"
+#include &lt;Servo.h&gt; 
+#include &lt;NewPing.h&gt;
+int vcc = 3; 
+int trig1 = 8; 
+int echo1 = 9; 
+int trig2 = 11; 
+int echo2 = 10; 
+int gnd = 4; 
+long cm1,cm2;
+int i=0;
+NewPing sonar(trig1,echo1,250);
+NewPing sonar2(trig2,echo2,250);
+int f1=0;
+float heading;
+TinyGPS gps;
+SoftwareSerial ss(6, 5);
+void gpshead();
+void stopp();
+void rightturn();
+void gostraight();
+void leftturn();
+void turn();
+Servo myservo;
+float x2lon=radians(72.9154815673),x2lat=radians(19.1287288665);
+HMC5883L mag;
+int16_t mx, my, mz;
+float head,distance=0.0;
+void setup() {
+ Wire.begin();
+ mag.initialize();
+ ss.begin(9600);
+ pinMode (vcc,OUTPUT);
+ pinMode (gnd,OUTPUT);
+ pinMode (A0,OUTPUT);
+ pinMode (A1,OUTPUT);
+ pinMode (12,OUTPUT);
+ pinMode (2,OUTPUT);
+ myservo.attach(7);
+}
+void loop() {
+  if(f1!=0)
+   gostraight();
+ cm1=sonar.ping_cm();
+ delay(50);
+ cm1=sonar.ping_cm();
+if(cm1&lt;20&amp;&amp;cm1&gt;0)
+{
+ mag.getHeading(&amp;mx, &amp;my, &amp;mz);
+   heading = atan2(my, mx);
+    if(heading &lt; 0)
+      heading += 2 * M_PI;
+    heading=heading*180/M_PI;
+  if((i%2)==0)
+ {head=heading+110;
+ if (head&gt;360)
+ head=head-360;
+ /*leftturn();
+ myservo.write(180); 
+ delay(2000);*/
+  myservo.write(180); 
+ i++;}
+else
+ {head=heading-110;
+ if (head&lt;0)
+ head=head+360;
+/* rightturn();
+ myservo.write(0); 
+ delay(1000);*/
+  myservo.write(0); 
+ i++;
+}
+  while((heading&gt;head+5) || (heading&lt;head-5))
+  {
+   turn();
+   delay(5);
+   mag.getHeading(&amp;mx, &amp;my, &amp;mz);
+   heading = atan2(my, mx);
+   if(heading &lt; 0)
+   heading += 2 * M_PI;
+   heading=heading*180/M_PI;
+   }
+stopp();
+delay(100);
+cm2=sonar2.ping_cm();
+delay(50);
+cm2+=sonar2.ping_cm();
+cm2=cm2/2;
+while((cm2&lt;50)&amp;&amp;(cm2&gt;0))
+{gostraight();
+delay(50);
+cm2=sonar2.ping_cm();
+delay(50);
+cm2+=sonar2.ping_cm();
+cm2=cm2/2;}
+delay(500);
+stopp();
+}
+ do{
+   gpshead();} while(distance==0.0);
+  if(distance&lt;20)
+  while(1)
+   stopp();
+  if(f1==0)
+   {mag.getHeading(&amp;mx, &amp;my, &amp;mz);
+   heading = atan2(my, mx);
+    if(heading &lt; 0)
+      heading += 2 * M_PI;
+    heading=heading*180/M_PI;
+
+
+  while((heading&gt;head+5) || (heading&lt;head-5))
+  {
+   turn();
+   delay(5);
+   mag.getHeading(&amp;mx, &amp;my, &amp;mz);
+   heading = atan2(my, mx);
+   if(heading &lt; 0)
+   heading += 2 * M_PI;
+   heading=heading*180/M_PI;
+   }
+   f1=4;
+   }
+ f1--;
+}
+void turn()
+{float tur=heading-head;
+  if(tur&lt;0.0)
+  {if(tur&gt;-180.0)
+  leftturn();
+  else
+  rightturn();}
+  else
+  {if(tur&lt;180.0)
+  rightturn();
+  else leftturn();}
+}
+void gostraight()
+{ digitalWrite(A0,LOW);
+  digitalWrite(A1,HIGH);
+  digitalWrite(12,LOW);
+  digitalWrite(2,HIGH);
+}
+void stopp()
+{
+  digitalWrite(A0,LOW);
+  digitalWrite(A1,LOW);
+  digitalWrite(12,LOW);
+  digitalWrite(2,LOW);
+}
+void rightturn()
+{ digitalWrite(A0,LOW);
+  digitalWrite(A1,HIGH);
+  digitalWrite(12,LOW);
+  digitalWrite(2,LOW);
+}
+void leftturn()
+{ digitalWrite(A0,LOW);
+  digitalWrite(A1,LOW);
+  digitalWrite(12,LOW);
+  digitalWrite(2,HIGH);
+}
+void gpshead()
+{ 
+bool newData = false;
+for (unsigned long start = millis(); millis() - start &lt; 1000;)
+  {
+    while (ss.available())
+    {
+      char c = ss.read();
+      // Serial.write(c); // uncomment this line if you want to see the GPS data flowing
+      if (gps.encode(c)) // Did a new valid sentence come in?
+        newData = true;
+    }
+  }
+if (newData)
+{
+float flat1, flon1;
+unsigned long age;
+gps.f_get_position(&amp;flat1, &amp;flon1, &amp;age);
+flon1 = radians(flon1);  //also must be done in radians
+flat1 = radians(flat1);  //also must be done in radians
+head = atan2(sin(x2lon-flon1)*cos(x2lat),cos(flat1)*sin(x2lat)-sin(flat1)*cos(x2lat)*cos(x2lon-flon1)),(2*3.1415926535);
+head = head*180/3.1415926535;  // convert from radians to degrees
+float dist_calc=0;
+float diflat=0;
+float diflon=0;
+diflat=x2lat-flat1;  //notice it must be done in radians
+diflon=(x2lon)-(flon1);   //subtract and convert longitudes to radians
+distance = (sin(diflat/2.0)*sin(diflat/2.0));
+dist_calc= cos(flat1);
+dist_calc*=cos(x2lat);
+dist_calc*=sin(diflon/2.0);                                      
+dist_calc*=sin(diflon/2.0);
+distance +=dist_calc;
+distance=(2*atan2(sqrt(distance),sqrt(1.0-distance)));
+distance*=6371000.0; //Converting to meters
+if(head&lt;0){
+ head+=360;   //if the heading is negative then add 360 to make it positive
+}
+}
+else
+{
+  head=0.0;
+  distance=0.0;
+ }
+}&lt;br&gt;</pre>

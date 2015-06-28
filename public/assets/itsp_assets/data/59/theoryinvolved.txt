@@ -1,3 +1,61 @@
-<ul>
-<li>Basics Of Quacopter</li></ul><p><img src="https://lh3.googleusercontent.com/-YwsLlaRpb4A/U5JL-CiWZFI/AAAAAAAAAEk/BtXLN-baubQ/w346-h192/itsp1.png" style="width: 1071px;"></p><ul>
-<li>Guide to KK 2.1.5</li></ul><p>First of all when we bought our KK we flashed it with OpenAero 2.0. For this go through <a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero_User_Guide">this</a> link.</p><p>Now it is also required to read the<a href="https://code.google.com/p/nextcopterplus/wiki/OpenAero2_Getting_Started"> OpenAero 2.0 manual</a></p>
+<div style="margin-left: 20px;">
+	Here we describe the theory behind the points mentioned in the 
+	<strong>Concepts </strong>section. Pictures are also provided.</div><h4><strong>TOUCHSCREEN MODULE</strong></h4><ol><li>Infrared Sensor Pairs :- <p><img src="http://www.pages.drexel.edu/~pyc23/IR_proximity_sensor.jpg" style="width: 684px;">         </p><p><img src="https://iamzxlee.files.wordpress.com/2014/01/ir-led-pair.jpg" style="width: 294px;"><br><br>The IR receiver/LED pairs work on the above circuit. The receiver displays a change of voltage across of terminals when infrared rays hit it. This voltage change can be used to detect interference between the LED / receiver pathway, or its presence via reflection.</p></li><li>Newton's Polynomial :- Due to sheer proximity of the sensors in our touch screen strips, a mathematical model can be adopted to determine the position of the finger. In the mathematical field of numerical analysis, a <strong>Newton polynomial</strong>, named after its inventor Isaac Newton, is the interpolation polynomial for a given set of data points in the <strong>Newton form</strong>. The Newton polynomial is sometimes called <strong>Newton's divided differences interpolation polynomial</strong> because the coefficients of the polynomial are calculated using divided differences.<br>A guide on how to use it can be found <a href="http://mathfaculty.fullerton.edu/mathews/n2003/NewtonPolyMod.html">here</a> </li><li>Analog Multipexing :-  In electronics, a <strong>multiplexer</strong> (or mux) is a device that selects one of several analog or digital input signals and forwards the selected input into a single line. A <strong>multiplexer</strong> of 2<sup>n </sup>inputs has n select lines, which are used to select which input line to send to the output. We use the integrated circuit 4051 to carry out multiplexing of analog signals.<br>Hence a multiplexer enables you to expand the input on your Arduino board. The 4051 is an 8 channel analog multiplexer / demultiplexer, thus:
+<ul><li>If you use the 4051 as a Multiplexer: You can choose between 8 different inputs and select just one you want to read at the time.</li><li>If you use the 4051 as a Demultiplexer you can choose between 8 different outputs and select just one you want to write at the time.</li></ul><p><br><img src="http://playground.arduino.cc/uploads/Learning/4051_what.jpg" alt="" title="" style="display: inline-block;"><br>To select the Pin we would like to read or write, we have to use the three Select Pins (S0, S1 and S2). Each of these pins have to be connected to one digital out pin on the Arduino. Every pin is representing a number (S0 = 1; S1 = 2; S2 = 4) and if we set one of these Select pins to HIGH, the number the pin is representing will be transmitted to the 4051. For example:</p><ul><li>If S0 and S1 are HIGH and S2 is LOW pin y3 is selected (1+2+0 = 3).</li><li>If S0 and S2 is HIGH and S1 LOW pin y5 is selected (1+0+4 = 5).</li></ul><p>It is not possible to read or write more than one pin on the 4051 at the same time, because you can only select one pin at a time. But you can read and write to the pins quite fast. There is no delay needed between selecting and read or writing the pin.<br><img src="http://playground.arduino.cc/uploads/Learning/4051_pins.jpg" alt="" title="" style="display: inline-block;"></p><ul><li>Z ----- common input/output (connected to Arduino Input/Output)</li><li>E ----- enable input (active LOW) (connected to ground (gnd))</li><li>Vee --- negative supply voltage (connected to ground (gnd))</li><li>gnd --- ground (0 V)</li><li>S0-S2 - select inputs (connected to three arduino digitalOut Pins)</li><li>y0-y7 - independent inputs/outputs</li><li>Vcc --- positive supply voltage (5v)</li></ul></li></ol><h4><strong>OPTICS MODULE</strong></h4><ol>
+	
+<li>Holography :- Holography is "lensless photography" in which an image is captured not as an image focused on film, but as an interference pattern at the film. Typically, coherent light from a laser is reflected from an object and combined at the film with light from a reference beam. This recorded interference pattern actually contains much more information that a focused image, and enables the viewer to view a true three-dimensional image which exhibits parallax. That is, the image will change its appearance if you look at it from a different angle, just as if you were looking at a real 3D object. In the case of a transmission hologram, you look through the film and see the three dimensional image suspended in midair at a point which corresponds to the position of the real object which was photographed.<br>
+	The below image was taken through a transmission hologram. The hologram was illuminated from behind by a helium-neon laser which has been passed through a diverging lens to spread the beam over the hologram.
+	<br>
+	
+<p>
+		<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/optmod/imgopm/chesr21.jpg" style="width: 219px;">
+	</p></li>	
+<li>
+	
+<p>
+		Parabolic Mirror Approach :-
+		<br>
+		<img src="http://www.optigone.com/mirage_images/mirage_specs22.jpg">           <img src="http://demos.smu.ca/images/stories/Pics/optics/mirage_mirror/focal_points.gif">               <img src="http://www.optigone.com/mirage_images/how_it_works.gif" style="width: 252px;"><br>
+	</p>
+	<table>
+	<tbody>
+	<tr>
+		<td>
+			Diameter
+		</td>
+		<td>
+			Opening
+		</td>
+		<td>
+			Height
+		</td>
+	</tr>
+	<tr>
+		<td>
+			22"
+		</td>
+		<td>
+			6"
+		</td>
+		<td>
+			8"</td></tr></tbody></table><p>To achieve holographic effects, this technology consists of two concealed, opposing parabolic mirrors. In overall appearance, it resembles a UFO Spacecraft with a 6-inch circular opening in the top. The physical object to be converted to a hologram is placed in the concave center of the bottom mirror. A hologram<strong> instantly</strong> projects up through this aperature, appearing to the viewer as a truly <strong>solid</strong> object – viewable from 360˚. A video of the same has been shown in the <strong>Motivation</strong> section.</p></li><li>Car HUD type hologram :- <br><p><img src="http://images.thetruthaboutcars.com/2012/03/headsup.jpg" style="width: 296px;"></p><p><br>Details on how to make this hologram can be found <a href="http://bwongtech.blogspot.in/2013/02/how-to-build-hud-for-your-car.html">here</a></p></li></ol><h4><strong>LCD SCREEN</strong></h4><ol>
+	
+<li>128x64 Graphic LCD Screen ( jhd12864e ) :- The JHD12864e is a Graphics LCD screen. This LCD has a display format of 128x64 dots and has yellow-green colour backlight. Each LCD needs a controller to execute its internal operations. This LCD uses two KS0108 controllers..<br>
+	Its datasheet can be found 
+	<a href="http://ablab.in/wp-content/uploads/2013/08/JHD12864E.pdf">here</a> <br>
+	Tutorial on coding it :- 
+	<a href="http://exploreembedded.com/wiki/Interfacing_KS0108_based_JHD12864E_Graphics_LCD_with_Atmega32">http://exploreembedded.com/wiki/Interfacing_KS0108_based_JHD12864E_Graphics_LCD_with_Atmega32<br>
+	</a> <img src="https://www.pjrc.com/tech/8051/board5/lcd_128x64_1.jpg" style="width: 348px;"></li>	
+<li>16x2 LCD Screen :- A 16x2 LCD display is very basic module and is very commonly used in various devices and circuits. These modules are preferred over seven segments and other multi segment LEDs. The reasons being: LCDs are economical; easily programmable; have no limitation of displaying special &amp; even custom characters (unlike in seven segments), animations and so on.<br>
+	A Arduino Library to program it can be found here :- 
+	<a href="https://www.arduino.cc/en/Tutorial/LiquidCrystal">https://www.arduino.cc/en/Tutorial/LiquidCrystal</a> <br>
+	<img src="http://www.engineersgarage.com/sites/default/files/Lcd_0.jpg" style="width: 369px;"><br>
+	<strong style="color: inherit; font-family: inherit; font-size: 18px; font-style: inherit; font-variant: inherit;">BACKEND</strong></li></ol><ol>
+	
+<li>Arduino Mega 2560 :- The Arduino Mega 2560 is a microcontroller board based on the ATmega2560 (<a href="http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf">datasheet</a>). It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. The Mega is compatible with most shields designed for the Arduino Duemilanove or Diecimila.<br>
+	A reference on Arduino programming can be found on its official website 
+	<a href="https://www.arduino.cc/en/Reference/HomePage">https://www.arduino.cc/en/Reference/HomePage<br>
+	</a><img src="https://www.arduino.cc/en/uploads/Main/ArduinoMega2560_R3_Front_450px.jpg" style="width: 391px;"></li>	
+<li>Atmega32 :- ATmega32(<a href="http://www.atmel.com/images/doc2503.pdf">datasheet</a>) is an 8-bit high performance microcontroller of Atmel’s Mega AVR family. Atmega32 is based on enhanced RISC (Reduced Instruction Set Computing) architecture with 131 powerful instructions. Most of the instructions execute in one machine cycle. Atmega32 can work on a maximum frequency of 16MHz<br>
+	A guide to AVR Atmega32 programming can be found here 
+	<a href="https://www.newbiehack.com/MicrocontrollerTutorial.aspx">https://www.newbiehack.com/MicrocontrollerTutorial.aspx</a></li></ol>

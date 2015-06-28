@@ -1,2 +1,2 @@
-<p><span style="color: rgb(255, 242, 202);"><inline><strong>PROBLEM STATEMENT</strong> :</inline></span><span style="font-weight: bold; font-family: Georgia;"><em>Building a prototype  which could move on mutiple surfaces(grass,concrete,water etc) as well as fly in air.</em></span><strong> </strong></p><p>
+<p><span style="color: rgb(255, 242, 202);"><inline><strong>PROBLEM STATEMENT</strong> :</inline></span><span style="font-weight: bold; font-family: Georgia;"><em>Building a RC-vehicle  which could move on multiple surfaces(grass,concrete,water etc) as well as fly in air.</em></span><strong> </strong></p><p>
 	<span style="color: rgb(255, 242, 202);"></span></p>

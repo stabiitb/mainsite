@@ -1,1 +1,40 @@
-<ul><li>The MATLAB Voice processing used MFCC and DTW to correctly execute voice processing and Speech Recognition.<p><img src="http://www.hindawi.com/journals/ijrc/2011/420369.fig.002.jpg"></p></li></ul>
+<p><strong>Hardware:</strong></p><p>The Circuit for building the bot uses Arduino UNO as
+Microcontroller, Bluetooth Module, ON/OFF Switch, 9V battery to power Arduino,
+12V Battery to power motors and L293D dual H Bridge to run the DC Motors.</p><p>Use of L293D:</p><iframe width="854" height="510" src="https://www.youtube.com/embed/5nDaHJqruq0" frameborder="0" allowfullscreen=""></iframe><p>L293D Circuit:</p><p><img src="https://cdn.pbrd.co/images/1xH9bu60.jpg"></p><p><strong><br></strong></p><p><strong>Bluetooth Setup in
+MATLAB:</strong></p><p>LINK: <a href="http://www.mathworks.com/help/instrument/bluetooth-communication.html">http://www.mathworks.com/help/instrument/bluetooth-communication.html</a></p><p>Since HC-05 is actually a BT SPP device, so we
+CANNOT use traditional serial function in MATLAB, because its only support
+"real" COM port.</p><p>However, MATLAB give us a similar lib named
+"Bluetooth", this is pre-included in MATLAB R2012b:</p><p>1. We need to first make sure that device name
+by default is "HC-05", (Can check it at your Bluetooth Properties
+menu in Control Panel)</p><p>2. The Code for the Connection is:</p><p style="margin-left: 80px;">% Create a Bluetooth object</p><p style="margin-left: 80px;">% HC-05 channel default is 1</p><p style="margin-left: 80px;">b = Bluetooth('HC-05',1);</p><p style="margin-left: 80px;">fopen(b);</p><p style="margin-left: 80px;">% Write function</p><p style="margin-left: 80px;">fwrite(b,Bluetooth_Write,'uchar');</p><p style="margin-left: 80px;">% Here we sent char for ’0’,’8’,’4’,’6’ and ‘5’.</p><p style="margin-left: 80px;">% To close Bluetooth connection </p><p style="margin-left: 80px;">fclose(b); </p><p style="margin-left: 80px;"></p><p><strong>Image processing :</strong></p><p>We have done Image processing using MATLAB.</p><p style="margin-left: 20px;"> Step 1: Read-in Image</p><p style="margin-left: 20px;"> Step 2: Convert image
+from RGB to gray </p><p style="margin-left: 20px;"> Step 3: Threshold the
+image</p><p style="margin-left: 20px;"> Step 4: Invert the
+Binary Image</p><p style="margin-left: 20px;"> Step 5: Find the
+boundaries Concentrate</p><p style="margin-left: 20px;"> Step 6: Determine
+Shapes properties</p><p style="margin-left: 20px;"> Step 7: Classify
+Shapes according to properties</p><p> Square 
+  = 3</p><p> Rectangular     = 2</p><p> Circle 
+  = 1</p><p> UNKNOWN 
+    =
+0</p><p><strong>Voice Processing and
+Speech Recognition:</strong></p><p>LINK to PDF: <a href="file:///D:\Google%20Drive\ITSP%20NDSM\IJEST10-02-12-198.pdf">file:///D:/Google%20Drive/ITSP%20NDSM/IJEST10-02-12-198.pdf</a></p><p>LINK to PDF: <a href="http://www.ijareeie.com/upload/2013/august/20P_ISOLATED.pdf">http://www.ijareeie.com/upload/2013/august/20P_ISOLATED.pdf</a></p><p>We implemented the method of finding the MFCC (Mel-Frequency
+Cepstral Coefficients) for Voice Processing and DTW (Dynamic Time Warping) for
+Speech Recognition:</p><p><img src="https://cdn.pbrd.co/images/1xIf1DpC.png"></p><p>The flow chart for MFCC is as follows: </p><p><img src="https://cdn.pbrd.co/images/1xI50PKF.png"></p><p><strong><br></strong></p><p><strong>Android Application :</strong></p><p>Online Support used: <a href="http://appinventor.mit.edu/explore/">MIT App Inventor</a></p><p>Features :-</p><p>1. Front Page for Navigation to desired Control.</p><p>2. Connection to bluetooth by listing history of bluetooth
+devices connected to in previous bluetooth sessions.</p><ul><li>·Data is sent as uint16 format.</li><li>·The char values corresponding to the Numbers is
+sent.</li></ul><p>3. Voice Processing/Speech Recognition :</p><ul><li>·THE APP NEEDS INTERNET CONNECTION TO PROCESS
+VOICE USING GOOGLE API.</li><li>·The App includes Speech recognition using Google
+Voice Input API.</li><li>·The App is user friendly and provides an easy
+Shake to input feature.</li><li>·The App also has a panel to print the processed
+speech. This helps in cases where wrong Speech is recognized (For eg: Rather
+than ‘Forward’ sometimes App may process ‘Walmart’ or ‘top’ in place of ‘stop’)</li><li>·There is also a stop button provided to quickly
+stop the bot, as voice processing may take time.</li></ul><p>4. Manual Control:</p><ul><li>·The Manual control is faster and responds
+quickly.</li><li>·It has proper arrow keys and stop buttons to
+control bot easily.</li></ul><p><strong>PC Software :</strong></p><p>Features :-</p><p>1. Direct connection to bluetooth on just a Click. (May take
+some time ~15 seconds)</p><ul><li>·Data is sent as uint16 format.</li><li>·The char values corresponding to the Numbers is
+sent.</li></ul><p>2. Voice Processing/Speech Recognition :</p><ul><li>·The Software uses MFCC and DTW algorithm written
+in MATLAB.</li><li>·The Software is user friendly and provides an
+easy Interface.</li><li>·The Software has a panel to help with Voice
+Input. </li><li>·The Software has a panel to print the processed
+speech. </li></ul><p>4. Manual Control:</p><ul><li>·The Manual control is faster and responds
+quickly.</li><li>·It has properly marked buttons to control bot easily.</li><li>·The Software has a panel to print the processed command.
+</li></ul>

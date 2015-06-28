@@ -1,9 +1,6 @@
-<p><strong>WORK DISTRIBUTION</strong></p><ol><li>
-
-ANDROID APP DEVELOPMENT – Aman and Nischal</li><li>
+<p><strong>WORK DISTRIBUTION</strong></p><ol>
+<li>ANDROID APP DEVELOPMENT – Aman and Nischal</li><li>
 ARDUINO CODING – Ritvik and Shantanu</li><li>
 HARDWARE DESIGNING – Swapnil</li><li>
 VOICE PROCESSING – Aman, Ritvik and Shantanu</li><li>
-INTERNET CONNECTION – Nischal and Swapnil
-
-</li></ol>
+INTERNET CONNECTION OF APP – Nischal and Swapnil</li><li>FINAL DESIGNING OF THE ANDROID APP - Nischal and Ritvik</li></ol>

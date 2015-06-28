@@ -1,1 +1,6 @@
-<p>Planes with VTOL need very less space for take off and landing. Thus with proper use of VTOL planes we can decrease the size of airports in cities.</p><iframe width="560" height="315" src="//www.youtube.com/embed/e7QNbU71lsA" frameborder="0" allowfullscreen=""></iframe><p><strong><br></strong></p>
+<p>An automaticgear
+changing bicycle will be useful for users who aren't well acquainted with the gear
+changing process in bicycles. The bicycle will be set to the most appropriate
+gear according to the conditions. This will help the rider drive at an optimal
+gear combination without getting into the trouble of the process, thereby facilitating
+the ride.</p>

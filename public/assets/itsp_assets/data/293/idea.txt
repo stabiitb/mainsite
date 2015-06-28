@@ -1,12 +1,20 @@
-<ol>
-</ol><p>We
-have done basic Image processing
-using MATLAB. The program can identify Square, Rectangle and Circle in
-any provided image file! It can identify these even when multiple figures are
-present in an Image.
-We
-have been able to do voice processing using Google API on an Android mobile
-device.
-Voice processing on MATLAB is complete too.</p><p>The
-basic method of voice processing is being used. We are using MFCC and DTW
-methods for basic Voice processing. A part of MFCC is already done.</p>
+<p>Our Project
+mainly works at Software end. We had to develop a Speech Recognition system in
+PC. For the IDE we chose MATLAB. The basic Concept was to develop a decent
+enough Speech Recognition system so that we may be able to identify single word
+commands.</p><p><strong><br></strong></p><p><strong>Voice
+Processing:</strong></p><p>The voice Processing had two parts. One for
+PC and one for Android device.</p><p>  In
+case of Android device we directly used Google API to process the voice and
+give commands.</p><p>  But
+for PC we had to develop the algorithm to calculate MFCC (Voice Processing) and
+DTW (Speech Recognition).</p><p><strong><br></strong></p><p><strong>Image
+Processing :</strong></p><p>For Image Processing we used the basic algorithm to first reduce
+the Image to smaller array in order to be able to compare the pre-defined
+properties for shape identification.</p><p><strong><br></strong></p><p><strong>Bluetooth Module :</strong></p><p>Serial communication was incorporated to serially send data i.e commands
+for executing the motions in bot.</p><p>Bluetooth Module is needed to communicate between Android
+application/PC Software and Arduino.</p><p><strong><br></strong></p><p><strong>Android
+Application :</strong></p><p>We also developed our own android application to control the Bot.
+This app was developed using <a href="http://appinventor.mit.edu/explore/">MIT
+App Inventor</a>. The application contains options for both Manual as well as
+Voice Controls.</p><p><img src="http://appinventor.mit.edu/explore/sites/all/themes/appinventor/logo.png"></p>

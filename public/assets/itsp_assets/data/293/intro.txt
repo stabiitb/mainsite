@@ -1,5 +1,3 @@
-<p style="text-align: center;">We planned on making a basic
-Voice-controlled bot which can be controlled using either a mobile phone or a
-laptop.</p><p style="text-align: center;">  For
-Wireless communication we have used Bluetooth as it is easily accessible and
-also easy to use.</p>
+<p style="text-align: center;">We planned on making a basic <strong>Wireless Voice Controlled bot</strong> which can be controlled using either an Android Device or PC. For
+Wireless communication we have used Bluetooth as it is easily accessible, cheap and
+also easy to use. The bot can follow basic commands like 'forward', 'backward', 'left', 'right' and 'stop'. The design of bot is simple too. It is powered by 2 300 RPM motors controlled by Arduino UNO via L293D dual H Bridge.</p>

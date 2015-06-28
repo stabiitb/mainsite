@@ -1,17 +1,3 @@
-<ul>
-<li>Components ordered from HobbyKing <strong>Rs 4800</strong>
-<ul>
-<li>70mm Hobbyking EDF with ESC</li><li>4S Lipo battery</li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Component ordered from <u>Servo electronics ( Lamington road ) </u><strong>Rs 1150</strong> :</span>
-<ul>
-<li>15 kg cm Servo</li></ul></li></ul><ul><li><span style="color: rgb(0, 0, 0);">Components ordered from Swastik Aluminium and Hardware <strong>Rs 230</strong></span>
-<ul>
-<li><span style="color: rgb(0, 0, 0);">Aluminium sheets and bars</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Suresh metal <strong>Rs 495</strong></span>
-<ul>
-<li>Stainless steel pipes</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Swastik Plywood and laminates <strong>Rs 135</strong></span>
-<ul>
-<li>Plywood</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep <strong>Rs 416</strong></span>
-<ul>
-<li>Hinges and L-brackets</li><li>Screws</li><li>Batteries</li><li>Bondtite</li><li>Pulleys</li></ul></li><li>Components ordered from P.P. Enterprises <strong>Rs 405</strong>
-<ul>
-<li>Butane cans</li><li>Copper pipes and connectors</li></ul></li></ul><ul>
-<li><strong>Total to date: Rs 7231</strong></li></ul>
+<ul><li>Components ordered from HobbyKing <strong>Rs 4800</strong><ul><li>70mm Hobbyking EDF with ESC</li><li>4S Lipo battery</li></ul></li></ul><ul>
+<li><span style="color: rgb(0, 0, 0);">Component ordered from <u>Servo electronics ( Lamington road ) </u><strong>Rs 1150</strong> :</span><ul><li>15 kg cm Servo</li></ul></li></ul><ul>
+<li><span style="color: rgb(0, 0, 0);">Components ordered from Swastik Aluminium and Hardware <strong>Rs 230</strong></span><ul><li><span style="color: rgb(0, 0, 0);">Aluminium sheets and bars</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Suresh metal <strong>Rs 825</strong></span><ul><li>Stainless steel pipes</li><li>Steel workpieces</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Swastik Plywood and laminates <strong>Rs 135</strong></span><ul><li>Plywood</li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep <strong>Rs 606</strong></span><ul><li>Hinges and L-brackets</li><li>Screws</li><li>Batteries</li><li>Bondtite</li><li>Pulleys</li></ul></li><li>Components ordered from P.P. Enterprises <strong>Rs 405</strong><ul><li>Butane cans</li><li>Copper pipes and connectors</li></ul></li><li>Murali welding works <strong>Rs 500</strong></li><li>Sanjay Engineers <strong>Rs 400</strong></li></ul><ul><li><strong>Total to date: Rs 9051</strong></li></ul>

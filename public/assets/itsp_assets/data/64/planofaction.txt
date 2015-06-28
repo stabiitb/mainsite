@@ -25,16 +25,17 @@ temperature and control it via the app.
 build a kind of remote controlling device.
  This will be challenging and getting the details together will take up most
 of the week.</li></ul><h3>Done:</h3><ul>
-<li>Fan control was similar to light control.</li><li>Light dimming/fan speed control using TRIACs were done (more efficient than resistors)</li><li>AC remote codes were decoded and hence, AC control was done.</li></ul><h2>Week 5: 16 June-22 June</h2><h3>Planned:</h3><ul>
+<li>Light dimming using TRIACs were done (more efficient than resistors)</li><li>AC remote codes were decoded and hence, AC control was done.</li></ul><h2>Week 5: 16 June-22 June</h2><h3>Planned:</h3><ul>
 <li>Work continues on second module.
 </li><li>Hopefully, we will be able to implement through circuitry the things
 planned out in the last week.
 </li><li>By the end of this week we aim to at least control both the fan and ac by
-app and if possible based on temperature input.</li></ul><h2>Week 6: 23 June- 30 June
+app and if possible based on temperature input.</li></ul><h3>Done:</h3><ul>
+<li>Main program was written.</li><li>Dimming circuit was improved and more brightness levels were added.</li><li>Fan control was tested.</li></ul><h2>Week 6: 23 June- 30 June
  </h2><h3>Planned:</h3><ul><li>This last week we plan to tie up the loose ends.
 </li><li>We hope to finalize the app and get a well working app based control on
 the room's lighting and cooling systems.
 It will be hard to test the sensor-based input, but we will try to debug it
 as well as we can.
 </li><li>It may be possible to set up a person detector and person recognition
-system in this week if time permits, although the work may only go till mid-way to completion.</li></ul>
+system in this week if time permits, although the work may only go till mid-way to completion.</li></ul><h3>Done:</h3><ul><li>Circuits were made ready for final demo. </li><li>Laser module and pushbutton part was added to the main program using interrupts.</li><li>Program debugging was done.</li><li>Video of the working project was taken.</li></ul>

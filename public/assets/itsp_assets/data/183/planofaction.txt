@@ -1,11 +1,18 @@
-<h3>Week 1 (may 18th -24th)</h3><ul><li>Planned</li></ul><p style="margin-left: 40px;">Made an exhaustive list of materials needed.</p><ul><li>Accomplished</li></ul><p style="margin-left: 20px;">Bought all the required material.</p><h3>Week 2 (May 25th- June 1)</h3><ul>
+<h3>Week 1 (may 18th -24th)</h3><ul><li>Planned
+<ul>
+<li>Made an exhaustive list of materials needed.</li></ul></li><li>Accomplished
+<ul>
+<li>Bought all the required material.</li></ul></li></ul><p style="margin-left: 40px;"><ul>
+</ul><h3>Week 2 (May 25th- June 1)</h3><ul>
 <li>Planned                                                     <ul><li>testing of arduino, ultrasonic sensor </li><li>learn coding for arduino</li></ul></li><li>What you have accomplished?
 <ul>
 <li>tested arduino and ultrasonic sensor with sample codes</li><li>learnt coding for arduino</li></ul></li></ul><h3>Week 3 (June 2nd- 7th)</h3><ul>
 <li>What you have planned ?:
 <ul>
 <li>learn using shield </li><li>testing motors</li></ul></li></ul><ul>
-<li>What we achieved                        </li><li>soldering job on PCB completed</li><li>tested motors</li></ul><h3>Week 4 (June 8th- June 14th)</h3><ul>
+<li>What we achieved                        
+<ul>
+<li>soldering <span class="ethsaiz" id="ethsaiz_4" style="height: 14px;">job</span> on PCB completed</li><li>tested motors</li></ul></li></ul><h3>Week 4 (June 8th- June 14th)</h3><ul>
 <li>Planned
 <ul>
 <li>testing of digital compass, gps module</li><li>coding of arduino</li></ul></li><li>What you have accomplished?

@@ -1,56 +1,28 @@
 <ul>
-	
-<li><span style="color: rgb(0, 0, 0); font-family: Arial;">Complete list of components required is below - amounting to <strong>Rs 3780</strong> : </span>
-	
-<ul>
-		
-<li>
-		
-<h5>Arduino</h5></li>		
-<li>
-		
-<h5>l293d IC</h5></li><li><h5>Bluetooth Module HC05</h5></li>		
-<li>
-		
-<h5>12 volt 500 rpm BLDC motor</h5></li>
-		
-<li>
+	<li><span style="color: rgb(0, 0, 0);"><inline style="font-family: Arial;">Complete list of components required is below - amounting to <strong>Rs 5040</strong> : </inline></span>
+	<ul>
+		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Arduino</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">l293d IC</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Bluetooth Module HC05</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">12 volt 500 rpm BLDC motor</span></h5></li>		<li>
 		<div>
-			<h5>12 volt Lead-Acid Battery</h5>
-		</div></li>		
-<li>
-		
-<h5>Solar Panel</h5></li>		
-<li>
-		
-<h5>Breadboard</h5></li>		
-<li>
-		
-<h5>Solar Charge Controller</h5></li>		
-<li>
-		
-<h5>Impeller (Using Solid Works)</h5></li>		
-<li>
-		
-<h5>Jumper Wires</h5></li>	</ul></li>	
-<li>Component ordered from <u style="color: rgb(0, 0, 0);">Bombay Electronics (Lamington Road):</u> <strong style="color: rgb(0, 0, 0);">Rs 1770</strong>
-	
+			<h5><span style="color: rgb(0, 0, 0);">12 volt Lead-Acid Battery</span></h5>
+		</div>
+</li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Solar Panel</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Breadboard</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Solar Charge Controller</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Impeller (Using Solid Works)</span></h5></li>		<li>
+		<h5><span style="color: rgb(0, 0, 0);">Jumper Wires</span></h5></li>	</ul></li>	<li><span style="color: rgb(0, 0, 0);">Component ordered from <u style="color: rgb(0, 0, 0);">Photon Impex(Lamington Road):</u> Rs 500
+</span><ul>
+<li><span style="color: rgb(0, 0, 0);">bluetooth module- Rs 450</span></li><li><span style="color: rgb(0, 0, 0);">jumper wires- Rs 50</span></li></ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from Roshni Enterprises(Lamington Road): Rs 1350<br>
+	<strong style="color: rgb(0, 0, 0);"></strong>
+	</span><ul>
+		<li><span style="color: rgb(0, 0, 0);">solar panel- Rs 900</span></li>		<li><span style="color: rgb(0, 0, 0);">charge controller- Rs 450</span></li>	</ul></li></ul><ul>
+	<li><span style="color: rgb(0, 0, 0);"><inline>Components ordered from Mangaldeep Electronics (Shop in IIT Market): Rs 2166</inline></span>
 <ul>
-		
-<li>solar panel- Rs 900</li>		
-<li>charge controller- Rs 450</li>		
-<li>bluetooth module- Rs 420</li>	</ul></li></ul><ul>
-	
-<li><span style="color: rgb(0, 0, 0);">Components ordered from Mangaldeep Electronics (Shop in IIT Market): Rs 2010</span>
-	
-<ul>
-		
-<li><span style="color: rgb(0, 0, 0);">jumper wires- <strong>Rs 50</strong></span></li>		
-<li><span style="color: rgb(0, 0, 0);">bluetooth module- <strong>Rs 450</strong></span></li>		
-<li>l293d- Rs 50</li>		
-<li>12 volt DC motor- Rs 150</li>		
-<li>bread board- Rs 90</li>		
-<li>arduino- Rs 830</li>		
-<li>12 volt lead acid battery- Rs 390</li>	</ul></li></ul><ul>
-	
-<li><strong><span style="color: rgb(0, 0, 0);">Final total - Rs 3780</span></strong></li></ul>
+		<li><inline style="color: rgb(0, 0, 0);">jumper wires- Rs 50</inline></li>		<li><inline style="color: rgb(0, 0, 0);">bluetooth module- <inline>Rs 450</inline></inline></li>		<li><span style="color: rgb(0, 0, 0);">l293d- Rs 50</span></li>		<li><span style="color: rgb(0, 0, 0);">12 volt DC motor- Rs 150</span></li>		<li><span style="color: rgb(0, 0, 0);">bread board- Rs 90</span></li>		<li><span style="color: rgb(0, 0, 0);">arduino- Rs 830</span></li>		<li><span style="color: rgb(0, 0, 0);">12 volt lead acid battery- Rs 390</span></li>		<li><span style="color: rgb(0, 0, 0);">9 volt battery- Rs 26</span></li>		<li><span style="color: rgb(0, 0, 0);">Bondtite 13g- Rs 40</span></li>		<li><span style="color: rgb(0, 0, 0);">Bondtite 36g- Rs 90</span></li>	</ul></li><li><span style="color: rgb(0, 0, 0);">Components ordered from ED lab(Engineering drawing lab-IIT bombay): Rs 1024
+</span><ul>
+<li><span style="color: rgb(0, 0, 0);">impeller(14.03 cc) 3d printing- Rs 1024</span></li></ul></li></ul><ul>
+	<li><strong><inline style="color: rgb(0, 0, 0);">Final total - Rs 5040</inline></strong></li></ul>

@@ -1,2 +1,2 @@
-<p>For the completion of your project , We are strongly tankful to TEAM STAB<br><br>We also referred to the following sources :</p><ul>
-<li><a href="http://www.goggle.com">GOOGLE</a></li><li><a href="http://www.rcgroups.com/forums/showthread.php?t=1814667">RC Groups</a></li></ul>
+<p>For the completion of your project , We are strongly tankful to TEAM STAB</p><p>we are thankful to our mentor aishwary joshi for guiding us in the right direction at the right time<br><br>We also referred to the following sources :</p><ul>
+<li><a target="_blank" href="http://www.google.com/">Google</a></li><li><a target="_blank" href="https://www.arduino.cc/en/Tutorial/HomePage">Arduino</a></li></ul>

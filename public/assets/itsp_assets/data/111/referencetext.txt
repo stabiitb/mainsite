@@ -1,1 +1,14 @@
-<p>The general references of this project were the following:-</p><ol><li>Wikipedia</li><li>RC groups</li><li>Parkjets</li><li>Wattflyer forums</li><li><a href="http://uscaero77.free.fr/_avion/hyfo/">http://uscaero77.free.fr/_avion/hyfo/</a></li></ol><p>We thank the S.T.A.B. team for providing the opportunity to make our project and make us develop some knowledge about the world of the type of project we made. </p>
+<p>The general references of this project were the following:-</p><ol>
+<li>Wikipedia</li><li>RC groups</li><li>Parkjets</li><li>Wattflyer forums</li><li>USC aero 77 site</li></ol><p>Right now, the drift is more and long runway is needed
+for this vehicle to make lift o and land on. The speed could be
+improved more by using the dual-propeller motor system. We
+could also reduce the weight and drift of the system. We could
+also improve the thrust versus weight ratio by two motor system.
+We could use Depron or lightweight-plastic material instead of
+Styrofoam. The energy needed for this system is more compared
+to the future-thought system.</p><p>We sincerely thank S.T.A.B. for letting us to do the project
+with the idea we came front. I also thank all my mentors and
+other related members of I.T.S.P. for understanding our idea
+and we all hope that it would be a great success by completing
+and presenting the project and hope that other team in the mere
+future would develop it and take it to an higher level. </p>

@@ -1,1 +1,9 @@
-<h5>The basic motivation  behind the project is the present working hovercraft model.The difference is the model which we planned can obtain heights unlike hovercraft.The motivation link is : <a href="https://www.youtube.com/watch?v=VRy9a_Vonww" style="font-size: 14px;">video link</a></h5><h5></h5><p><a href="https://www.youtube.com/watch?v=VRy9a_Vonww"></a></p>
+<p>
+	As stated above, our dream of this project was to build a
+RC-vehicle which could move on any surfaces like grass, plain
+road, concrete surface, water, ice, etc. and also can fly in the
+air like a plane.</p><p>
+	Initially we thought of combining the concepts of hovercraft
+and Quadcopter but after going through the concept of other we
+thought that the hydrofoam would suit our project statement for
+the best of anyone.</p><p><a href="https://www.youtube.com/watch?v=CfGD9se32MI">https://www.youtube.com/watch?v=CfGD9se32MI</a></p>

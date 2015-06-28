@@ -1,8 +1,4 @@
-<p>The GPS system will inform the bot of its current location. The  digital compass will align the bot in the direction of the target. </p><p>The
-object is detected using an ultrasound sensor. The sensor sends a burst of
+<p>The<strong> GPS <span class="ethsaiz" id="ethsaiz_2" style="height: 14px;">system</span></strong> will inform the bot of its <strong>current location</strong>. The <strong> digital compass</strong> will <strong>align</strong> the bot in the <strong><span class="ethsaiz" id="ethsaiz_1" style="height: 14px;">direction</span> of the target</strong>. </p><p>Any<strong> obstacle</strong> is <strong>detected</strong> using an <strong>ultrasound sensor</strong>. The sensor sends a burst of
 ultrasound which eventually hits an object in path and then returns back to the
 source .The sensor then calculates the time taken by these bursts to come back
-and estimate it’s distance from the bot. The sensor will be rotated in a field
-of 180  ̊. This information is then passed on to the
-micro-controller which then sends command to the motors on the wheels to turn
-accordingly.</p><p>  The wheels will be attached with 360  ̊ servos.</p>
+and estimate it’s distance from the bot. There is a <strong>primary sensor which is fixed</strong> and always <strong>faces the direction</strong> in which the <strong>bot moves</strong>. In the event of obstacle detection, the <strong>bot turns till this sensor is clear</strong>. A <strong>secondary sensor</strong> mounted on a servo <strong>turns to face the obstacle</strong>. The <strong>bot then moves forward  till the secondary sensor is clear</strong>, after which it <strong>reorients</strong> itself towards the <strong>destination with a new set of GPS and compass <span class="ethsaiz" id="ethsaiz_3" style="height: 14px;">data</span></strong>.The above is repeated every time an obstacle is detected.</p>

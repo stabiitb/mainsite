@@ -1,1 +1,3 @@
-<ul><li>Basics Of Arduino</li></ul><ul><li>Guide for serial communnication between c++ and arduino.</li><li>Coding involved in the functioning of servo and stepper motors.</li><li>Circuitry for the driver of stepper motors (DRV8825).</li><li>Mechanics involved in the dimensioning of mechanical arm.</li></ul>
+<ul>
+<li>Basics Of Arduino</li></ul><ul>
+<li>Guide for serial communnication between c++ and arduino.</li><li>Coding involved in the functioning of servo and stepper motors.</li><li>Circuitry for the driver of stepper motors (DRV8825).</li><li>Mechanics involved in the dimensioning of mechanical arm.</li><li>Opening the Serial Port using c++ code.</li></ul>
