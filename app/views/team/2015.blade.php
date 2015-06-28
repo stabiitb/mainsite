@@ -310,14 +310,14 @@
 						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
-									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/anisha.jpg')}}" class="img-circle">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/chetan.jpg')}}" class="img-circle">
 								</div><!-- /.icon-overlay -->
 								
 								<figcaption>
 									<h2>
-										Anisha Bajaj
-										<span><i class="icon-phone">7506144450</i></span>
-										<span><i class="icon-mail">bajajaisha50@gmail.com</i></span>
+										Chetan Agarwal
+										<span><i class="icon-phone">9167469004</i></span>
+										<span><i class="icon-mail"></i></span>
 									</h2>
 								</figcaption>
 								
