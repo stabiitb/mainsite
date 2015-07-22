@@ -13,6 +13,8 @@
 					<div class="row">
 						<div class="col-sm-10 center-block text-center">
 							<ul>
+							<!-- <li class="single-block">Welcome!!</li>
+ -->
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
 
@@ -26,10 +28,9 @@
 							 <li class="single-block">Any team member can document.</li>
 							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
 							 @else
-							 <li class="single-block">Login to document your ITSP project. Any team member can document.</li>
+							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
  -->					     @endif
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.final_team_verification')}}" class="btn">Final Team Verification Form &nbsp</a> </li>
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>		
 							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li>
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->

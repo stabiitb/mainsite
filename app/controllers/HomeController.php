@@ -132,4 +132,56 @@ class HomeController extends BaseController {
 	{
 		return View::make('home.techgc');
 	}
+
+	public function update_script($club)
+	{
+		
+		$file = fopen(public_path()."/assets/team_details.csv","r");
+		while(!feof($file)){
+			$csv = fgetcsv($file);
+			if($csv[0]==$club){
+				break;
+			}
+		}
+
+		//return $csv[0];
+
+		$managers = array();
+		$conveners =array();
+
+		$csv = fgetcsv($file);
+		if($csv[0]!="Manager"){
+			return 'Error';
+		}
+
+		$csv = fgetcsv($file);
+		while ($csv[0]!="Conveners") {
+			# code...
+			$managers[] = $csv;
+
+			if(!feof($file)){
+				$csv = fgetcsv($file);
+			}
+			else{
+				break;
+			}
+		}
+
+
+		if(!feof($file)){
+			$csv = fgetcsv($file);
+			while ($csv[1]!="") {
+				# code...
+				$conveners[] = $csv;
+				if(!feof($file)){
+					$csv = fgetcsv($file);
+				}
+				else{
+					break;
+				}
+			}
+		}
+
+		return View::make('update_script',compact('managers','conveners'));
+	}
 }

@@ -42,6 +42,9 @@ Route::group(array('prefix' => 'itsp'),function()
 
 });
 
+//======/script Under Progress=========//
+Route::get('script/{club}',array('as'=>'update_script','uses'=>'HomeController@update_script')); 
+
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 
 
