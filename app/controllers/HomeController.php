@@ -29,8 +29,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.aero.home');
-		else if($page=='team')
-			return View::make('club.aero.team');
+		else if($page=='team'){
+			$data = $this->update_script("Aeromodelling Club");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'aero';
+			return View::make('update_script',compact('cl','managers','conveners'));
+		}
 		else if($page=='vision')
 			return View::make('club.aero.vision');
 		else if($page=='event')
@@ -42,8 +47,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.elec.home');
-		else if($page=='team')
-			return View::make('club.elec.team');
+		else if($page=='team'){
+			$data = $this->update_script("Electronics Club");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'elec';
+			return View::make('club.club_team',compact('cl','managers','conveners'));
+		}
 		else if($page=='event')
 			return View::make('club.elec.event');
 		else if($page=='line-follower-registration')
@@ -57,8 +67,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.krittika.home');
-		else if($page=='team')
-			return View::make('club.krittika.team');
+		else if($page=='team'){
+			$data = $this->update_script("Krittika");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'krittika';
+			return View::make('club.club_team',compact('cl','managers','conveners'));
+		}
 		else if($page=='vision')
 			return View::make('club.krittika.vision');
 		else if($page=='event')
@@ -75,8 +90,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.mnp.home');
-		else if($page=='team')
-			return View::make('club.mnp.team');
+		else if($page=='team'){
+			$data = $this->update_script("MnP Club");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'mnp';
+			return View::make('club.club_team',compact('cl','managers','conveners'));
+		}
 		else if($page=='vision')
 			return View::make('club.mnp.vision');
 		else if($page=='event')
@@ -89,8 +109,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.robo.home');
-		else if($page=='team')
-			return View::make('club.robo.team');
+		else if($page=='team'){
+			$data = $this->update_script("Robotics Club");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'robo';
+			return View::make('club.club_team',compact('cl','managers','conveners'));
+		}
 		else if($page=='vision')
 			return View::make('club.robo.vision');
 		else if($page=='event')
@@ -108,8 +133,13 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('club.wncc.home');
-		else if($page=='team')
-			return View::make('club.wncc.team');
+		else if($page=='team'){
+			$data = $this->update_script("WnCC");
+			$managers = $data[0];
+			$conveners = $data[1];
+			$cl = 'wncc';
+			return View::make('club.club_team',compact('cl','managers','conveners'));
+		}
 		else if($page=='vision')
 			return View::make('club.wncc.vision');
 		else if($page=='event')
@@ -143,7 +173,6 @@ class HomeController extends BaseController {
 				break;
 			}
 		}
-
 		//return $csv[0];
 
 		$managers = array();
@@ -167,7 +196,6 @@ class HomeController extends BaseController {
 			}
 		}
 
-
 		if(!feof($file)){
 			$csv = fgetcsv($file);
 			while ($csv[1]!="") {
@@ -181,7 +209,6 @@ class HomeController extends BaseController {
 				}
 			}
 		}
-
-		return View::make('update_script',compact('managers','conveners'));
+		return [$managers,$conveners];
 	}
 }
