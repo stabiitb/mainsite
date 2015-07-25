@@ -202,7 +202,8 @@ $('.window').hide();
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
  -->					     @endif
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>		
-							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li>
+							<!--
+							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li> -->
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>
