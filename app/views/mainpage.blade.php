@@ -2,11 +2,181 @@
 
 @section('content')
 <style type="text/css">
+	#mask {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  z-index: 9000;
+
+  background-color: #000;
+
+  display: none;
+
+}
+
+ 
+
+#boxes .window {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 440px;
+
+  height: 200px;
+
+  display: none;
+
+  z-index: 9999;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+}
+
+ 
+
+#boxes #dialog {
+
+  width: 750px;
+
+  height: 300px;
+
+  padding: 10px;
+
+  background-color: #ffffff;
+
+  font-family: 'Segoe UI Light', sans-serif;
+
+  font-size: 15pt;
+
+}
+
+ 
+
+#popupfoot {
+
+  font-size: 16pt;
+
+  position: absolute;
+
+  bottom: 0px;
+
+  width: 250px;
+
+  left: 250px;
+
+}
 	
 </style>
 		<!-- ============================================================= MAIN ============================================================= -->
 		
 		<main>
+		<!-- ====================================================popup======================================================-->
+		
+		<div id="boxes">
+
+  <div id="dialog" class="window">
+
+    Hello Freshmen!
+    <br>
+    <br>
+    Your Intro:
+    <br>
+    <br>
+    <input type="text" style="height: 150px" id="special_box">
+    <button class="btn" onclick="hideMask()">Submit</button>
+	
+    <div id="popupfoot">
+     <a href="#" class="close agree"></a>
+       
+      <a class="agree"style="color:red;" href="#">
+      </a> 
+      </div>
+
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script >
+	function hideMask(){
+		$('#mask').hide();
+		$('.window').hide();
+	}
+
+$(document).ready(function() { 
+
+ 
+
+var id = '#dialog';
+
+//Get the screen height and width
+
+var maskHeight = $(document).height();
+
+var maskWidth = $(window).width();
+
+   
+
+//Set heigth and width to mask to fill up the whole screen
+
+$('#mask').css({'width':maskWidth,'height':maskHeight});
+
+//transition effect
+
+$('#mask').fadeIn(500);
+
+$('#mask').fadeTo("slow",0.9); 
+
+//Get the window height and width
+
+var winH = $(window).height();
+
+var winW = $(window).width();
+
+               
+
+//Set the popup window to center
+
+$(id).css('top',  winH/2-$(id).height()/2);
+
+$(id).css('left', winW/2-$(id).width()/2);
+
+   
+
+//transition effect
+
+$(id).fadeIn(2000);  
+
+
+//if mask is clicked
+
+$('#mask').click(function () {
+
+$(this).hide();
+
+$('.window').hide();
+
+});
+
+});
+
+</script>
+		<!-- ====================================================popup======================================================-->
+
 			
 			<section id="buy-template" class="tint-bg">
 				<div class="container inner-xs">
@@ -32,7 +202,8 @@
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
  -->					     @endif
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>		
-							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li>
+							<!--
+							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li> -->
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
 							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
 													 2) You need not necessarily have a team while registering now.<br>
