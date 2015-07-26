@@ -90,11 +90,10 @@
 
     Hello Freshmen!
     <br>
-    <br>
     Your Intro:
     <br>
-    <br>
-    <input type="text" style="height: 150px" id="special_box">
+    <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='100'></textarea> 
+    Length <span id="counter"></span>
     <button class="btn" onclick="hideMask()">Submit</button>
 	
     <div id="popupfoot">
@@ -174,6 +173,14 @@ $('.window').hide();
 
 });
 
+</script>
+<!--minor change needed in the below script to show the welcome message -->
+<script>
+
+function count_it() {
+    document.getElementById('counter').innerHTML = document.getElementById('special_box').value.length;
+}
+count_it();
 </script>
 		<!-- ====================================================popup======================================================-->
 
