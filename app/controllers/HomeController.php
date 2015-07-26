@@ -40,6 +40,9 @@ class HomeController extends BaseController {
 			return View::make('club.aero.vision');
 		else if($page=='event')
 			return View::make('club.aero.event');
+		else if ($page=='gallery') {
+			return View::make('club.aero.gallery');
+		}
 		else
 			return View::make('club.aero.home');
 	}

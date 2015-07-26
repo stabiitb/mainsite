@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*
+Template Name: PhotoBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Navigation CSS
+*/
+
+#header ul#topnav{display:block; float:right; width:650px; margin:25px 0 0 0; padding:0; list-style:none; font-size:16px;}
+#header ul#topnav ul, #header li{float:right; list-style:none; margin:0; padding:0;}
+#header li a:link, #header li a:visited, #header li a:hover{display:block; margin:0; padding:5px 20px; color:#585858; background-color:#000000; border-right:2px solid #272727;}
+#header ul#topnav ul li a:link, #header ul#topnav ul li a:visited{border:none;}
+#header ul#topnav li.last a{margin-right:0;}
+#header li a:hover, #header ul#topnav li.active a{color:#FFFFFF; background-color:#000000;}
+#header li li a:link, #header li li a:visited{width:150px; float:none; margin:0; padding:7px 10px; font-size:12px; font-weight:normal; font-family:Verdana, Arial, Helvetica, sans-serif; color:#585858; background-color:#171E24;}
+#header li li a:hover{color:#FFFFFF; background-color:#323639;}
+#header li ul{background:#FFFFFF; z-index:9999; position:absolute; left:-999em; height:auto; width:170px;}
+#header li ul a{width:140px;}
+#header li ul ul{margin:-32px 0 0 0;}
+#header li:hover ul ul{left:-999em;}
+#header li:hover ul, #header li li:hover ul{left:auto;}
+#header li:hover{position:static;}
+
+/* ----------------------------------------------Column Navigation------------------------------------- */
+
+#column .subnav{display:block; width:250px; padding:25px; background-color:#161616; margin-bottom:30px;}
+#column .subnav h2{margin:0 0 20px 0; padding:0 0 14px 0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; color:#666666; background-color:#161616; line-height:normal; border-bottom:1px dashed #666666;}
+#column .subnav ul{margin:0; padding:0; list-style:none;}
+#column .subnav li{margin:0 0 3px 0; padding:0;}
+#column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
+#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#666666; background-image:url("images/lime_file.gif"); background-position:10px center; background-repeat:no-repeat; background-color:#161616; text-decoration:none; border-bottom:1px dotted #666666;}
+#column .subnav a:hover{color:#99CC00; background-color:#161616;}
+#column .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a{background:url("images/black_file.gif") no-repeat #161616;}
+#column .subnav ul ul a{padding-left:40px; background-position:30px center;}
+#column .subnav ul ul ul a{padding-left:50px; background-position:40px center;}
+#column .subnav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+#column .subnav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}

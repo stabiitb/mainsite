@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*
+Template Name: PhotoBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Gallery CSS
+*/
+
+#gallery{padding:30px 0;}
+#gallery ul{display:block; width:960px; height:500px; margin:0; padding:0; list-style:none;}
+#gallery li{display:block; float:left; width:184px; height:110px; margin:10px 10px 0 0; padding:0;}
+#gallery li.last{margin-right:0;}
+#gallery .placeholder{display:block; float:left; width:950px; height:370px; margin:0; padding:4px; border:1px solid #666666; text-indent:-9999px; background:4px 4px no-repeat;}
+
+#gallery a.swap:link, #gallery a.swap:visited, #gallery a.swap:hover{display:block; width:174px; height:100px; margin:0; padding:4px; text-align:center; border:1px solid #666666;}
+#gallery a.swap img{width:174px; height:100px;}
+#gallery a.swap span img{width:950px; height:370px;}
+a.swap:hover{white-space:normal;}
+a.swap:link span, a.swap:visited span, a.swap:active span{visibility:hidden; position:absolute; top:35px; left:5px; width:950px; height:370px;}
+a.swap:active span, a.swap:hover span, a.swap:focus span{visibility:visible;}
+a.swap:active img, a.swap:focus img{position:relative; z-index:50;}

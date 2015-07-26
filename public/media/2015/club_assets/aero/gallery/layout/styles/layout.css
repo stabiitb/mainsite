@@ -1,0 +1,153 @@
+@charset "utf-8";
+/*
+Template Name: PhotoBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+@import url("gallery.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-size:12px; font-family:verdana, Arial, Helvetica, sans-serif; color:#CCCCCC; background-color:#2E2E2E;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{margin:0; padding:0; border:0;}
+.imgl, .imgr{border:1px solid #666666; padding:5px;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 20px 0; padding:0 0 8px 0; font-size:22px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; border-bottom:1px dashed #DDDDDD;}
+.col1{color:#333333; background-color:#000000;}
+.col2{color:#DBDBDB; background-color:#000000; border-bottom:1px solid #3B3B3B;}
+.col3{color:#DBDBDB; background-color:#000000; border-bottom:1px solid #3B3B3B;}
+.col4{color:#DBDBDB; background-color:#000000; border-bottom:1px solid #3B3B3B;}
+.col5{color:#CCCCCC; background-color:#000000; border-bottom:1px solid #3B3B3B;}
+.col5 a{color:#99CC00; background-color:#000000;}
+.col6{color:#FFFFFF; background-color:#1B1B1B; border-bottom:1px solid #3B3B3B;}
+.col7, .col7 a{color:#CCCCCC; background-color:#2E2E2E;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#topbar, #header, #gallery, #services, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+
+/* ----------------------------------------------TopBar------------------------------------- */
+
+#topbar{height:25px; padding:10px 0;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header{z-index:1000; padding:0 0 20px 0; font-family:Georgia, "Times New Roman", Times, serif;}
+#header #logo{display:block; float:left; width:300px;}
+#header h1, #header p{margin:0; padding:0; border:none; clear:left; font-size:16px;}
+#header h1{margin-bottom:5px; font-size:36px;}
+#header h1 a{color:#DBDBDB; background-color:#000000;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#services{padding:20px 0 0 0; text-transform:uppercase; font-size:24px; font-family:Georgia, "Times New Roman", Times, serif;}
+#services img{margin:0; padding:0; line-height:normal;}
+#services ul{display:block; width:960px; margin:0; padding:0; list-style:none; overflow:hidden;}
+#services li{display:block; float:left; width:234px; height:210px; margin:0 8px 8px 0; padding:0; overflow:hidden;}
+#services li.last{margin-right:0;}
+#services a strong{display:none; width:100%; margin:0; padding:15px 0; font-weight:normal; text-align:center; color:#5B5B5B; background-color:#232323;}
+#services a:hover strong{display:block;}
+
+/* ----------------------------------------------BreadCrumb------------------------------------- */
+
+#breadcrumb{padding:15px 0;}
+#breadcrumb a{color:#99CC00; background-color:#000000;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Content------------------------------------- */
+
+#container{padding:15px 0;}
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{margin:0 0 15px 0; padding:0 0 8px 0; color:#CCCCCC; background-color:#000000; border-bottom:1px solid #CCCCCC;}
+#content{display:block; float:left; width:600px;}
+
+/* Comments */
+
+#comments{margin-bottom:40px;}
+#comments .commentlist{margin:0; padding:0;}
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments .commentlist li.comment_odd a{color:#3E7060; background-color:#F7F7F7;}
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#3E7060; background-color:#E8E8E8;}
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column------------------------------------- */
+
+#column{display:block; float:right; width:300px;}
+.flickrbox ul{margin:0; padding:0; list-style:none;}
+.flickrbox li{display:block; float:left; width:80px; height:80px; margin:0 15px 15px 0; padding:4px; border:1px solid #666666;}
+.flickrbox li.last{margin-right:0;}
+#column .holder, #column #featured{display:block; width:300px; margin-bottom:20px;}
+#column .holder p{line-height:1.6em;}
+#column h2{font-size:20px;}
+#column .holder h2.title{display:block; width:100%; height:65px; margin:0; padding:15px 0 0 0; font-size:20px; line-height:normal; border-bottom:1px dashed #666666;}
+#column .holder h2.title img{float:left; margin:-15px 8px 0 0; padding:5px; border:1px solid #666666;}
+#column .holder p.readmore{display:block; width:100%; font-weight:bold; text-align:right; line-height:normal;}
+#column div.imgholder{display:block; width:290px; margin:0 0 10px 0; padding:4px; border:1px solid #666666;}
+
+/* Featured Block */
+
+#column #featured a{color:#99CC00; background-color:#161616;}
+#column #featured ul, #column #featured h2, #column #featured p{margin:0; padding:0; list-style:none;}
+#column #featured li{display:block; width:250px; margin:0; padding:20px 25px; color:#666666; background-color:#161616;}
+#column #featured li p{line-height:1.6em;}
+#column #featured li p.imgholder{display:block; width:240px; height:90px; margin:20px 0 15px 0; padding:4px; color:#666666; background-color:#333333; border:1px solid #666666;}
+#column #featured li h2{margin:0; padding:0 0 14px 0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; color:#666666; background-color:#161616; line-height:normal; border-bottom:1px dashed #666666;}
+#column #featured p.more{display:block; width:100%; margin-top:15px; font-weight:bold; text-align:right; line-height:normal;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:20px 0;}
+#footer a{color:#99CC00; background-color:#1B1B1B;}
+#footer h2{margin:0 0 15px 0; padding:0 0 8px 0; font-size:22px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; color:#CCCCCC; background-color:#1B1B1B; line-height:normal; border-bottom:1px dashed #CCCCCC;}
+#contactform{display:block; float:left; width:350px;}
+
+/* Company Details */
+
+#compdetails{display:block; float:right; width:550px;}
+#compdetails ul{margin:0; padding:0; list-style:none;}
+#compdetails li{margin:0 0 12px 0;}
+#compdetails li.last{margin:0;}
+#officialdetails{float:left}
+#officialdetails li.last{margin-bottom:20px;}
+#contactdetails{float:right}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{padding:20px 0;}
+#copyright p{display:block; float:right; text-align:right; margin:0; padding:0; width:200px;}
+#copyright ul{display:block; float:left; margin:0; padding:0; width:700px;}
+#copyright li{display:inline; margin-right:8px; padding-right:10px; border-right:1px solid #CCCCCC;}
+#copyright li.last{margin-right:0; padding-right:0; border-right:none;}
