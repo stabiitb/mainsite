@@ -211,4 +211,5 @@ class HomeController extends BaseController {
 		}
 		return [$managers,$conveners];
 	}
+
 }
