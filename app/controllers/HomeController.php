@@ -40,11 +40,11 @@ class HomeController extends BaseController {
 			return View::make('club.aero.vision');
 		else if($page=='event')
 			return View::make('club.aero.event');
-		else if ($page=='gallery') {
+		else if ($page=='gallery') 
 			return View::make('club.aero.gallery');
-		}
-		else
-			return View::make('club.aero.home');
+		else if ($page=='video')
+			return View::make('club.aero.video');
+		else return View::make('club.aero.home');
 	}
 	public function electronics_club($page="about")
 	{
