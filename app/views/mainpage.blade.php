@@ -92,8 +92,7 @@
     <br>
     Your Intro:
     <br>
-    <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='100'></textarea> 
-    Length <span id="counter"></span>
+    <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='110'></textarea> 
     <button class="btn" onclick="hideMask()">Submit</button>
 	
     <div id="popupfoot">
@@ -174,11 +173,11 @@ $('.window').hide();
 });
 
 </script>
-<!--minor change needed in the below script to show the welcome message -->
 <script>
-
+var str="Welcome to STAB! We wish you a very Techy year ahead and hope that you find yourself overwhelmed by Tech@IITB."
 function count_it() {
-    document.getElementById('counter').innerHTML = document.getElementById('special_box').value.length;
+ 
+document.getElementById('special_box').value = str.substr(0,document.getElementById('special_box').value.length);
 }
 count_it();
 </script>
