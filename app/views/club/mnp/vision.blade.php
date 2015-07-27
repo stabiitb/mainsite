@@ -5,7 +5,16 @@
 			<section>
 				<h2>Vision of Club</h2>
 				<p>
-					Students after coming to IIT and studying engineering tend to forget why they were fascinated by math and physics in their childhood and why they chose it. The documentaries, scientific phenomena happening around and interesting chats with elders were those things which had attracted us in our childhood towards our current field of studies. The aim of the club is to bring back that feeling of fascination inside students by showing them similar interesting scientific phenomenon and discussing about them in experimental demonstrations, lectures and group discussions. People should regain their enthusiasm about learning physics and mathematics and should like to come again and again in scientific gatherings for the same. There are many such facts which need college level understanding and are yet unexplored; We just need to start scratching the surface.
+					In this competitive system of grades and marks and CPI, we have to some extent, forsaken ourselves. 
+				We have forgotten to enjoy a subject’s beauty, we have forgotten to relish enthralling concepts that 
+				form a base for a subject. Our purpose is to rekindle that feeling of enjoying Physics and Maths. 
+				Through the events of Maths and Physics Club, people should find that lost desire to be intellectually 
+				stimulated by the beauty of Maths and Physics. MnP Club is a community of people from different walks
+				of life all driven by their curiosity for Maths and Physics. A community that is as passionate about 
+				Maths and Physics as Michael Jordan is for Basketball. To quote Tyrrion Lannister “A mind needs books
+				 as a sword needs a whetstone” and we, the MnP club intends to provide that metaphorical whetstone to 
+				 the student community of IIT Bombay. Through our events, we will provide you a platform to explore and 
+				 delve deeper into this awe-inspiring realm of Maths and Physics.
 				</p>
 			</section>
 			

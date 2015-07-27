@@ -59,6 +59,8 @@ class HomeController extends BaseController {
 		}
 		else if($page=='event')
 			return View::make('club.elec.event');
+		else if ($page=='gallery') 
+			return View::make('club.elec.gallery');
 		else if($page=='line-follower-registration')
 			return View::make('club.elec.lf-register');
 		else if($page=='club-initiatives')
@@ -83,6 +85,8 @@ class HomeController extends BaseController {
 			return View::make('club.krittika.event');
 		else if($page=='the-cosmic-ladder-distance')
 			return View::make('club.krittika.events.cosmic_ladder');
+		else if ($page=='gallery') 
+			return View::make('club.krittika.gallery');
 		else if($page=='astronomy-demystified')
 			return View::make('club.krittika.events.astronomy-demystified');
 		else
@@ -102,6 +106,8 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.mnp.vision');
+		else if ($page=='gallery') 
+			return View::make('club.mnp.gallery');
 		else if($page=='event')
 			return View::make('club.mnp.event');
 		else
@@ -121,6 +127,8 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.robo.vision');
+		else if ($page=='gallery') 
+			return View::make('club.robo.gallery');
 		else if($page=='event')
 			return View::make('club.robo.event');
 		else if($page=="xlr8-registration")
@@ -145,6 +153,8 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.wncc.vision');
+		else if ($page=='gallery') 
+			return View::make('club.wncc.gallery');
 		else if($page=='event')
 			return View::make('club.wncc.event');
 		else
