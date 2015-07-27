@@ -108,7 +108,7 @@
 													<h4></h4>
 													
 													<ul class="circled">
-														<li><a href="{{URL::Route('vision')}}">Vision</a></li>
+														<!-- <li><a href="{{URL::Route('vision')}}">Vision</a></li> -->
 														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
 														<li>Reports
 															<ul>
