@@ -248,6 +248,7 @@ class HomeController extends BaseController {
 			  }
 		      $message=shell_exec($code);
       		  echo ($message);
+      		  echo "yo";
 			}
 			else{
      		  echo "who the hell are you";
