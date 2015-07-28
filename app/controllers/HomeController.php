@@ -240,6 +240,12 @@ class HomeController extends BaseController {
 	function update_server($code){
 		if (Auth::check() ){
 			if(Auth::User()->admin==1){
+			  if ($code=="gpl"){
+			  	$code ="git pull origin master";
+			  }
+			  if ($code=="gps"){
+			  	$code ="git push origin master";
+			  }
 		      $message=shell_exec($code);
       		  echo ($message);
 			}
