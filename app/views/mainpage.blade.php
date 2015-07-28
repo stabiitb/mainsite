@@ -88,9 +88,9 @@
 
   <div id="dialog" class="window">
 
-    Hello Freshmen!
+    Hello Freshie !
     <br>
-    Your Intro:
+    Feel free to introduce yourself :)
     <br>
     <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
     <button class="btn" onclick="hideMask()">Submit</button>
