@@ -237,4 +237,17 @@ class HomeController extends BaseController {
 		return [$managers,$conveners];
 	}
 
+	function update_server($code){
+		if (Auth::check() ){
+			if(Auth::User()->admin==0){
+		      $message=shell_exec("gpl");
+      		  echo ($message);
+      		  echo "yo";
+			}
+		}
+		else{
+			echo "Please login.";
+		}
+	}
+
 }

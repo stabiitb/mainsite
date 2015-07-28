@@ -1,5 +1,6 @@
 <?php
 
+Route::get('update_server/{code}',array('as'=>'update_server','uses'=>'HomeController@update_server'));
 
 //ITSP - 2015 URL
 Route::group(array('prefix' => 'itsp'),function()

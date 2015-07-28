@@ -92,7 +92,7 @@
     <br>
     Feel free to introduce yourself :)
     <br>
-    <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
+    <textarea onKeyUp="count_it()" onKeyDown="count_it()" style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
     <button class="btn" onclick="hideMask()">Submit</button>
 	
     <div id="popupfoot">
