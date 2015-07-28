@@ -240,6 +240,8 @@ class HomeController extends BaseController {
 	function update_server($code){
 		if (Auth::check() ){
 			if(Auth::User()->admin==1){
+			  
+			  shell_exec($code);
 			  if ($code=="gpl"){
 			  	$code ="git pull origin master";
 			  }
