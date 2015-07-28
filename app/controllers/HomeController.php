@@ -239,10 +239,12 @@ class HomeController extends BaseController {
 
 	function update_server($code){
 		if (Auth::check() ){
-			if(Auth::User()->admin==0){
-		      $message=shell_exec("gpl");
+			if(Auth::User()->admin==1){
+		      $message=shell_exec($code);
       		  echo ($message);
-      		  echo "yo";
+			}
+			else{
+     		  echo "who the hell are you";
 			}
 		}
 		else{
