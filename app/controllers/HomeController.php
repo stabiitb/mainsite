@@ -59,6 +59,8 @@ class HomeController extends BaseController {
 			$cl = 'elec';
 			return View::make('club.club_team',compact('cl','managers','conveners'));
 		}
+		else if($page=='vision')
+			return View::make('club.elec.vision');
 		else if($page=='event')
 			return View::make('club.elec.event');
 		else if ($page=='gallery') 
@@ -249,6 +251,9 @@ class HomeController extends BaseController {
 			  	$code ="git push origin master";
 			  }
 			  echo $code;
+		      $message=shell_exec("ls");
+      		  echo ($message);
+
 		      $message=shell_exec($code);
       		  echo ($message);
       		  echo "yo";

@@ -16,6 +16,7 @@
 							
 						<ul class="sidenav">
 							<li><a href="{{URL::Route('electronics-club')}}">Home</a></li>
+							<li><a href="{{URL::Route('electronics-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('electronics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('electronics-club')}}/club-initiatives">Club Initiatives</a></li>
 							<li><a href="{{URL::Route('electronics-club')}}/team">Team</a></li>

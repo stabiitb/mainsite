@@ -6,13 +6,5 @@
 </figure>
 <h1>MATH AND PHYSICS CLUB</h1>
 <p>
-	This is IIT Bombay’s hobby club for students who are interested in the Philosophiæ Naturalis, Maths and Physics. It is a platform for students to fulfill their desire to unlock the mysteries and the laws of NATURE! Whether it be thoughts on fibonacci sequence in flower petals or dark matter in the huge Universe- It Lies Here!
-</p>
-<p>
-	The club's activities include lectures by eminent speakers, quizzes and puzzle solving sessions, some cool demonstrations based on simple laws of physics and maths etc.
-</p>		
-<p>
-	
-The essence of Maths and Physics to discover the "Ordo ab chaos-Order within chaos." It is right there in front of us, we are just too blind to see it. The mysteries of the universe are waiting to be unraveled. The question is are you ready to open your eyes?
-</p>
+ Maths and Physics Club conducts several events throughout the semester. Our events vary from casual events such as movie screenings, demonstrations of physical phenomenon and quizzes to formal events such as lectures and Olympiad level paper solving. We have always motivated students to explore Physics and Maths, we also fund students for making their own demonstrations and experiments. Our flagship event, Bazinga, is a quiz that relies solely on your concepts rather than the dry and conventional algorithmic procedure of solving questions with pre-defined methods. We also conduct Group Discussions (popularly known as GDs) where everyone is invited to discuss Physics and Maths and go out as a more learned person than they were when they came in. Apart from this, we host lectures from eminent researchers and students alike and we also screen inspiring documentaries and movies based on Maths and Physics. All in all, we are a self-sustaining community of intellectuals, students & professors, across ages and departments, who enjoy sharing knowledge through platforms provided by our club​ and if you talk Physics and Maths, there is no better place for you than the Maths and Physics Club IIT Bombay. </p>
 @endsection
