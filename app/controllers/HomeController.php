@@ -246,6 +246,7 @@ class HomeController extends BaseController {
 			  if ($code=="gps"){
 			  	$code ="git push origin master";
 			  }
+			  echo $code
 		      $message=shell_exec($code);
       		  echo ($message);
       		  echo "yo";
