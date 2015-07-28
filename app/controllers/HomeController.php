@@ -241,7 +241,7 @@ class HomeController extends BaseController {
 		if (Auth::check() ){
 			if(Auth::User()->admin==1){
 			  
-			  shell_exec($code);
+			  shell_exec("cd ..");
 			  if ($code=="gpl"){
 			  	$code ="git pull origin master";
 			  }
