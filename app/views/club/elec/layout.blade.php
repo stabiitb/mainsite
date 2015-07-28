@@ -19,6 +19,8 @@
 							<li><a href="{{URL::Route('electronics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('electronics-club')}}/club-initiatives">Club Initiatives</a></li>
 							<li><a href="{{URL::Route('electronics-club')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('electronics-club')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('electronics-club')}}/video">Videos</a></li>-->
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

@@ -42,6 +42,8 @@ class HomeController extends BaseController {
 			return View::make('club.aero.event');
 		else if ($page=='gallery') 
 			return View::make('club.aero.gallery');
+		else if ($page=='video') 
+			return View::make('club.aero.video');
 		else if ($page=='video')
 			return View::make('club.aero.video');
 		else return View::make('club.aero.home');
@@ -61,6 +63,8 @@ class HomeController extends BaseController {
 			return View::make('club.elec.event');
 		else if ($page=='gallery') 
 			return View::make('club.elec.gallery');
+		else if ($page=='video') 
+			return View::make('club.elec.video');
 		else if($page=='line-follower-registration')
 			return View::make('club.elec.lf-register');
 		else if($page=='club-initiatives')
@@ -87,6 +91,8 @@ class HomeController extends BaseController {
 			return View::make('club.krittika.events.cosmic_ladder');
 		else if ($page=='gallery') 
 			return View::make('club.krittika.gallery');
+		else if ($page=='video') 
+			return View::make('club.krittika.video');
 		else if($page=='astronomy-demystified')
 			return View::make('club.krittika.events.astronomy-demystified');
 		else
@@ -108,6 +114,8 @@ class HomeController extends BaseController {
 			return View::make('club.mnp.vision');
 		else if ($page=='gallery') 
 			return View::make('club.mnp.gallery');
+		else if ($page=='video') 
+			return View::make('club.mnp.video');
 		else if($page=='event')
 			return View::make('club.mnp.event');
 		else
@@ -129,6 +137,8 @@ class HomeController extends BaseController {
 			return View::make('club.robo.vision');
 		else if ($page=='gallery') 
 			return View::make('club.robo.gallery');
+		else if ($page=='video') 
+			return View::make('club.robo.video');
 		else if($page=='event')
 			return View::make('club.robo.event');
 		else if($page=="xlr8-registration")
@@ -155,6 +165,8 @@ class HomeController extends BaseController {
 			return View::make('club.wncc.vision');
 		else if ($page=='gallery') 
 			return View::make('club.wncc.gallery');
+		else if ($page=='video') 
+			return View::make('club.wncc.video');
 		else if($page=='event')
 			return View::make('club.wncc.event');
 		else
