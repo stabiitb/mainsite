@@ -42,6 +42,7 @@ Route::group(array('prefix' => 'itsp'),function()
 
 });
 
+
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 
 
