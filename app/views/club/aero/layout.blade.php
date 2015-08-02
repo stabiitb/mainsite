@@ -19,6 +19,8 @@
 							<li><a href="{{URL::Route('aeromodelling-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('aeromodelling-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('aeromodelling-club')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('aeromodelling-club')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('aeromodelling-club')}}/video">Videos</a></li>-->
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

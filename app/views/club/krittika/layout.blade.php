@@ -16,9 +16,11 @@
 							
 						<ul class="sidenav">
 							<li><a href="{{URL::Route('krittika')}}">Home</a></li>
-							<li><a href="{{URL::Route('krittika')}}/vision">Vision</a></li>
+							<!-- <li><a href="{{URL::Route('krittika')}}/vision">Vision</a></li> -->
 							<li><a href="{{URL::Route('krittika')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('krittika')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('krittika')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('krittika')}}/video">Videos</a></li>-->
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

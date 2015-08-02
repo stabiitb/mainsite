@@ -8,6 +8,9 @@
 							<header>
 								<h2>Welcome , {{$user->name}}</h2>
 								<h3>Your Stab id is {{$user->id}}</h3>
+								@if($user->ldap_verified == 1)
+	                            <h3>GPO mail : {{$user->ldap_email}}</h3>
+	                            @endif	
 							</header>
 						</div><!-- /.col -->
 					</div><!-- ./row -->
@@ -36,11 +39,7 @@
 							<input name="gpo_id" type="text" placeholder="gpo Id">
 							<input type="submit" value="verify">
 							</form>
-						@elseif($user->facad==NULL)
-							<h3>Only for students applying for ITSP</h3>
-							<h3 style="color:red">Dont include @iitb.ac.in in ldap id of your facad</h3>
-							<h3>Fill this form form positively by 14th Nov. This is very important for room retention</h3>
-							<form action="{{URL::Route('user.update')}}" method="post">
+<!-- 							<form action="{{URL::Route('user.update')}}" method="post">
 							<input name="name" type="text" placeholder="Full Name">
 							<input name="roll_no" type="text" placeholder="IITB Roll Number">
 							<input name="hostel" type="text" placeholder="Hostel Allotted for the next year (Give only hostel number eg. if your hostel is 6 , write only '6')">
@@ -51,11 +50,10 @@
 							<input name="facad_ldap" type="text" placeholder="Ldap Id of Faculty Advisor (Only ldap id, do not include '@iitb.ac.in'">
 							<input type="submit" value="Update Profile">
 							</form>				
-							<br>
-							<br>
-						GPO email : {{$user->ldap_email}}
+ -->							<br>
+							<br> 
 						@else
-						@if($user->want_room==NULL)
+<!-- 						@if($user->want_room==NULL)
 								<form class="form-horizontal" action="{{URL::route('events.ITSP_2015.want_room')}}" method="get">
 								<table>
 								<tr>
@@ -73,9 +71,9 @@
 								</form>
 								<br>
 								<br>
-						@endif
-							<i><u><a href="{{URL::route('user.edit')}}"> Delete your entire info and refill it</a></u></i>
-							<table class="table">
+						@endif -->
+							<!-- <i><u><a href="{{URL::route('user.edit')}}"> Delete your entire info and refill it</a></u></i> -->
+<!-- 							<table class="table">
 							<tr>
 								<td>Name</td>
 								<td>{{$user->name}}</td>
@@ -107,10 +105,6 @@
 							<tr>
 								<td>ITSP team Id</td>
 								<td>{{$user->itsp}}</td>
-							</tr>	
-							<tr>
-								<td>Want Room</td>
-								<td>{{$user->want_room}}</td>
 							</tr>								
 							<tr>
 								<td>Faculty Advisor</td>
@@ -123,7 +117,7 @@
 							</table>
 							<br>
 							<br>
-							@if($user->room_retained==0 && $user->want_room=='yes')
+ --><!-- 							@if($user->room_retained==0 && $user->want_room=='yes')
 								<form action="{{URL::route('events.ITSP_2015.room_retained')}}" method="get">
 								<table>
 								<tr>
@@ -138,7 +132,7 @@
 								</form>
 							@elseif($user->room_retained==1)
 							<h4>Your room has been retained</h4>
-							@endif
+							@endif -->
 						@endif
 						</div>
 					</div><!-- ./row -->

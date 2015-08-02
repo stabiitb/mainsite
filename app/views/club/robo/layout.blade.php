@@ -19,6 +19,8 @@
 							<li><a href="{{URL::Route('robotics-club')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('robotics-club')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('robotics-club')}}/video">Videos</a></li>-->
 						
 
 						</ul><!-- /.sidenav -->

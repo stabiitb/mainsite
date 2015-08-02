@@ -55,7 +55,7 @@
 						
 						<ul class="pull-right" style="margin:3px">
 							@if(Auth::check())
-							<li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li> 
+							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
 							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
 							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
 							</li>	
@@ -108,9 +108,15 @@
 													<h4></h4>
 													
 													<ul class="circled">
+<<<<<<< HEAD
 														<li><a href="{{URL::Route('vision')}}">VISION</a></li>
 														<li><a href="{{URL::Route('halloffame')}}">HALL OF FAME</a></li>
 														<li>REPORTS
+=======
+														<!-- <li><a href="{{URL::Route('vision')}}">Vision</a></li> -->
+														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
+														<li>Reports
+>>>>>>> cc954e70b5f62258e2683ce478176c36b128dc40
 															<ul>
 																<li>
 																	<a href="{{URL::Route('institute_review_2013')}}">INSTITUTE REVIEW 2013</a>

@@ -19,6 +19,8 @@
 							<li><a href="{{URL::Route('wncc')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('wncc')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('wncc')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('wncc')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('wncc')}}/video">Videos</a></li>-->
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

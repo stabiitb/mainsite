@@ -19,6 +19,8 @@
 							<li><a href="{{URL::Route('MnP')}}/vision">Vision</a></li>
 							<li><a href="{{URL::Route('MnP')}}/event">Events</a></li>
 							<li><a href="{{URL::Route('MnP')}}/team">Team</a></li>
+							<!--<li><a href="{{URL::Route('MnP')}}/gallery">Gallery</a></li>
+							<li><a href="{{URL::Route('MnP')}}/video">Videos</a></li>-->
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

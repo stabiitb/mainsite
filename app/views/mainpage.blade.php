@@ -14,6 +14,7 @@
 @endsection
 
 @section('content')
+<<<<<<< HEAD
 
 <style>
 	#myDIV {
@@ -25,13 +26,236 @@
 	    right : 0px;
 	    top: 20%;
 	}
+=======
+<style type="text/css">
+	#mask {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  z-index: 9000;
+
+  background-color: #000;
+
+  display: none;
+
+}
+
+ 
+
+#boxes .window {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 440px;
+
+  height: 200px;
+
+  display: none;
+
+  z-index: 9999;
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+}
+
+ 
+
+#boxes #dialog {
+
+  width: 750px;
+
+  height: 300px;
+
+  padding: 10px;
+
+  background-color: #ffffff;
+
+  font-family: 'Segoe UI Light', sans-serif;
+
+  font-size: 15pt;
+
+}
+
+ 
+
+#popupfoot {
+
+  font-size: 16pt;
+
+  position: absolute;
+
+  bottom: 0px;
+
+  width: 250px;
+
+  left: 250px;
+
+}
+	
+>>>>>>> cc954e70b5f62258e2683ce478176c36b128dc40
 </style>
 		<!-- ============================================================= MAIN ============================================================= -->
 		
 		<main>
+<<<<<<< HEAD
 			<div class="row">
 			<div class="col-xs-9">
 			
+=======
+		<!--====================================================popup======================================================-->
+		
+		<div id="boxes">
+
+  <div id="dialog" class="window">
+
+    Hello Freshie !
+    <br>
+    Feel free to introduce yourself :)
+    <br>
+    <textarea onKeyUp="count_it()" onKeyDown="count_it()" style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
+    <button class="btn" onclick="hideMask()">Submit</button>
+	
+    <div id="popupfoot">
+     <a href="#" class="close agree"></a>
+       
+      <a class="agree"style="color:red;" href="#">
+      </a> 
+      </div>
+
+  </div>
+
+  <div id="mask"></div>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script >
+	function hideMask(){
+		$('#mask').hide();
+		$('.window').hide();
+	}
+
+$(document).ready(function() { 
+
+ 
+
+var id = '#dialog';
+
+//Get the screen height and width
+
+var maskHeight = $(document).height();
+
+var maskWidth = $(window).width();
+
+   
+
+//Set heigth and width to mask to fill up the whole screen
+
+$('#mask').css({'width':maskWidth,'height':maskHeight});
+
+//transition effect
+
+$('#mask').fadeIn(500);
+
+$('#mask').fadeTo("slow",0.9); 
+
+//Get the window height and width
+
+var winH = $(window).height();
+
+var winW = $(window).width();
+
+               
+
+//Set the popup window to center
+
+$(id).css('top',  winH/2-$(id).height()/2);
+
+$(id).css('left', winW/2-$(id).width()/2);
+
+   
+
+//transition effect
+
+$(id).fadeIn(2000);  
+
+
+//if mask is clicked
+
+$('#mask').click(function () {
+
+$(this).hide();
+
+$('.window').hide();
+
+});
+
+});
+
+</script>
+<script>
+var str="Ideas are dime a dozen, people who implement are priceless. Be one.  STAB welcomes you to IIT Bombay!"
+function count_it() {
+ 
+document.getElementById('special_box').value = str.substr(0,document.getElementById('special_box').value.length);
+}
+count_it();
+</script>
+		 <!--====================================================popup======================================================-->
+
+			
+			<section id="buy-template" class="tint-bg">
+				<div class="container inner-xs">
+					<div class="row">
+						<div class="col-sm-10 center-block text-center">
+							<ul>
+							<!-- <li class="single-block">Welcome!!</li>
+ -->
+							@if (Auth::check())
+								@if (Auth::User()->admin==1)
+
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Team Details</a> </li>		
+							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->
+
+							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
+
+							 @endif
+<!-- 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
+							 <li class="single-block">Any team member can document.</li>
+ -->							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
+							 @else
+							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
+<!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
+ -->					     @endif
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>
+							  <li class="single-block"><a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a> </li>		
+							<!--
+							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li> -->
+							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
+							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
+													 2) You need not necessarily have a team while registering now.<br>
+													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
+													 4) Abstract submission deadline will soon be announced.<br>
+													 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li> -->
+							<!-- <li class="single-block">Convener and Hostel Technical Secretary Application Form &nbsp<a href="{{URL::route('events.PoR.form')}}" class="btn">Apply</a></li> -->
+							</ul>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+>>>>>>> cc954e70b5f62258e2683ce478176c36b128dc40
 			@if($errors->has('email.absent'))
 									
 			<section id="error" class="light-bg">
@@ -143,7 +367,7 @@
 											
 											<div class="col-md-5 col-md-pull-5 col-sm-6 col-sm-pull-6 inner-right-xs">
 												<h3><a href="{{URL::Route('MnP')}}">Maths and Physics Club</a></h3>
-												<p>Students after coming to IIT and studying engineering tend to forget why they were fascinated by math and physics in their childhood and why they chose it. The documentaries, scientific phenomena happening around and interesting chats with elders were those things which had attracted us in our childhood towards our current field of studies. The aim of the club is to bring back that feeling of fascination inside students by showing them similar interesting scientific phenomenon and discussing about them in experimental demonstrations, lectures and group discussions. 
+												<p>Maths and Physics Club conducts several events throughout the semester. Our events vary from casual events such as movie screenings, demonstrations of physical phenomenon and quizzes to formal events such as lectures and Olympiad level paper solving. We have always motivated students to explore Physics and Maths, we also fund students for making their own demonstrations and experiments. Our flagship event, Bazinga, is a quiz that relies solely on your concepts rather than the dry and conventional algorithmic procedure of solving questions with pre-defined methods. We also conduct Group Discussions (popularly known as GDs) where everyone is invited to discuss Physics and Maths and go out as a more learned person than they were when they came in. Apart from this, we host lectures from eminent researchers and students alike and we also screen inspiring documentaries and movies based on Maths and Physics. All in all, we are a self-sustaining community of intellectuals, students & professors, across ages and departments, who enjoy sharing knowledge through platforms provided by our club​ and if you talk Physics and Maths, there is no better place for you than the Maths and Physics Club IIT Bombay. 
 												 </p>
 												
 												<a href="{{URL::Route('MnP')}}" class="btn btn-blue">Visit WebPage</a>
