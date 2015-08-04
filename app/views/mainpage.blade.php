@@ -1,6 +1,35 @@
 @extends('layout.default')
 
+@section('meta')
+
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ -->
+@endsection
+
 @section('content')
+<style>
+	#myDIV {
+	    /*border: 1px solid black;
+	    background-color: lightblue;
+	    width: 300px;
+	    height: 300px;*/
+	    position: fixed;
+	    right : 0%;
+	    top: 17%;
+	}
+	#fb-div {
+	    data-width: 22%;
+	    data-height: 300px;
+	    
+</style>
+
 <style type="text/css">
 	#mask {
 
@@ -88,11 +117,11 @@
 
   <div id="dialog" class="window">
 
-    Hello Freshmen!
+    Hello Freshie !
     <br>
-    Your Intro:
+    Feel free to introduce yourself :)
     <br>
-    <textarea onKeyUp="count_it()"style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
+    <textarea onKeyUp="count_it()" onKeyDown="count_it()" style="height: 150px; font-size:30px ;font-family: 'Comic Sans MS' "id="special_box" maxlength='101'></textarea> 
     <button class="btn" onclick="hideMask()">Submit</button>
 	
     <div id="popupfoot">
@@ -182,15 +211,14 @@ document.getElementById('special_box').value = str.substr(0,document.getElementB
 count_it();
 </script>
 		 <!--====================================================popup======================================================-->
-
-			
-			<section id="buy-template" class="tint-bg">
-				<div class="container inner-xs">
+		 <div class="row">
+			<div class="col-xs-12">
+			<section class="tint-bg">
+				<div class="container ">
 					<div class="row">
-						<div class="col-sm-10 center-block text-center">
-							<ul>
-							<!-- <li class="single-block">Welcome!!</li>
- -->
+						<div class="col-md-9 col-sm-10 center-block text-center">
+						<ul>
+							<br>
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
 
@@ -200,9 +228,9 @@ count_it();
 							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
 
 							 @endif
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
+<!-- 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
 							 <li class="single-block">Any team member can document.</li>
-							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
+ -->							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
 							 @else
 							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
@@ -219,10 +247,13 @@ count_it();
 													 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li> -->
 							<!-- <li class="single-block">Convener and Hostel Technical Secretary Application Form &nbsp<a href="{{URL::route('events.PoR.form')}}" class="btn">Apply</a></li> -->
 							</ul>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div><!-- /.container -->
+							<br>
+						</div>
+					</div>
+					
+				</div>
 			</section>
+
 			@if($errors->has('email.absent'))
 									
 			<section id="error" class="light-bg">
@@ -235,11 +266,13 @@ count_it();
 				</div><!-- /.container -->
 			</section>
 			@endif	
+
 			<section id="services">
-				<div class="container inner">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center" style="">
 							<header>
+							<br>
 								<h1>Hobby Clubs</h1>
 							</header>
 						</div>
@@ -616,7 +649,18 @@ count_it();
 			</section>
 			
 			<!-- ============================================================= SECTION – TEAM : END ============================================================= -->	
-			
+			</div>
+			<div class="col-xs-3 center-block text-center" id="myDIV">
+
+								<!-- <h2>Hot Links</h2> -->
+								<ul>
+							<!-- <li class="single-block">Welcome!!</li>
+ -->
+							</ul>
+								<!-- <div id="fb-div" class="fb-page" data-href="https://www.facebook.com/stab.iitb" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/stab.iitb"><a href="https://www.facebook.com/stab.iitb">Tech&#064;IITB</a></blockquote></div></div>	
+			 -->
+				</div>
+			</div>
 		</main>
 		
 		<!-- ============================================================= MAIN : END ============================================================= -->

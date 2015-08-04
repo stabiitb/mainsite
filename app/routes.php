@@ -1,5 +1,6 @@
 <?php
 
+Route::get('update_server/{code}',array('as'=>'update_server','uses'=>'HomeController@update_server'));
 
 //ITSP - 2015 URL
 Route::group(array('prefix' => 'itsp'),function()
@@ -41,6 +42,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('tshirt',array('as'=>'events.ITSP_2015.tshirt','uses'=>'ITSPController@tshirt'));
 
 });
+
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return View::make('freshie_intro');}));

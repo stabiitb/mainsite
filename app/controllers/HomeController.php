@@ -63,6 +63,8 @@ class HomeController extends BaseController {
 			$cl = 'elec';
 			return View::make('club.club_team',compact('cl','managers','conveners'));
 		}
+		else if($page=='vision')
+			return View::make('club.elec.vision');
 		else if($page=='event')
 			return View::make('club.elec.event');
 		else if ($page=='gallery') 
@@ -249,6 +251,34 @@ class HomeController extends BaseController {
 			}
 		}
 		return [$managers,$conveners];
+	}
+
+	function update_server($code){
+		if (Auth::check() ){
+			if(Auth::User()->admin==1){
+			  
+			  shell_exec("cd ..");
+			  if ($code=="gpl"){
+			  	$code ="git pull origin master";
+			  }
+			  if ($code=="gps"){
+			  	$code ="git push origin master";
+			  }
+			  echo $code;
+		      $message=shell_exec("ls");
+      		  echo ($message);
+
+		      $message=shell_exec($code);
+      		  echo ($message);
+      		  echo "yo";
+			}
+			else{
+     		  echo "who the hell are you";
+			}
+		}
+		else{
+			echo "Please login.";
+		}
 	}
 
 }

@@ -55,7 +55,7 @@
 						
 						<ul class="pull-right" style="margin:3px">
 							@if(Auth::check())
-							<li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li> 
+							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
 							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
 							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
 							</li>	
@@ -108,15 +108,15 @@
 													<h4></h4>
 													
 													<ul class="circled">
-														<!-- <li><a href="{{URL::Route('vision')}}">Vision</a></li> -->
-														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
-														<li>Reports
+														<li><a href="{{URL::Route('vision')}}">VISION</a></li>
+														<li><a href="{{URL::Route('halloffame')}}">HALL OF FAME</a></li>
+														<li>REPORTS
 															<ul>
 																<li>
-																	<a href="{{URL::Route('institute_review_2013')}}">Institute Review 2013</a>
+																	<a href="{{URL::Route('institute_review_2013')}}">INSTITUTE REVIEW 2013</a>
 																</li>
 																<li>
-																	<a href="{{URL::Route('annual_report_2014_2015')}}">Annual Report 2014-2015</a>
+																	<a href="{{URL::Route('annual_report_2014_2015')}}">ANNUAL REPORT 2014-2015</a>
 																</li>
 															</ul>
 														</li>
@@ -124,12 +124,12 @@
 												</div><!-- /.col -->
 
 												<div class="col-sm-6 inner">
-													<h4>Contacts</h4>
+													<h4>CONTACTS</h4>
 													
 													<ul class="circled">
-														<li><a href="{{URL::Route('team_2015')}}">Team 2015-16</a></li>
-														<li><a href="{{URL::Route('alumni')}}">Alumni</a></li>
-														<li><a href="{{URL::Route('facad')}}">Faculty Advisors/Mentors</a></li>
+														<li><a href="{{URL::Route('team_2015')}}">TEAM 2015-16</a></li>
+														<li><a href="{{URL::Route('alumni')}}">ALUMNI</a></li>
+														<li><a href="{{URL::Route('facad')}}">FACULTY ADVISORS/MENTORS</a></li>
 													</ul><!-- /.circled -->
 												</div><!-- /.col -->
 											
@@ -177,7 +177,7 @@
 								
 								
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">Technical Teams</a>
+									<a href="#" class="dropdown-toggle js-activated">Tech Teams</a>
 									
 									<ul class="dropdown-menu">
 										<li><a target=_blank href="http://www.iitbracing.org/">IITB Racing</a></li>
