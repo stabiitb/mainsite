@@ -2,7 +2,7 @@
 
 @section('meta')
 
-<div id="fb-root"></div>
+<!-- <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -10,7 +10,7 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+ -->
 @endsection
 
 @section('content')
@@ -21,9 +21,13 @@
 	    width: 300px;
 	    height: 300px;*/
 	    position: fixed;
-	    right : 0px;
+	    right : 0%;
 	    top: 17%;
 	}
+	#fb-div {
+	    data-width: 22%;
+	    data-height: 300px;
+	    
 </style>
 
 <style type="text/css">
@@ -208,8 +212,48 @@ count_it();
 </script>
 		 <!--====================================================popup======================================================-->
 		 <div class="row">
-			<div class="col-xs-9">
-			
+			<div class="col-xs-12">
+			<section class="tint-bg">
+				<div class="container ">
+					<div class="row">
+						<div class="col-md-9 col-sm-10 center-block text-center">
+						<ul>
+							<br>
+							@if (Auth::check())
+								@if (Auth::User()->admin==1)
+
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Team Details</a> </li>		
+							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->
+
+							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
+
+							 @endif
+<!-- 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
+							 <li class="single-block">Any team member can document.</li>
+ -->							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
+							 @else
+							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
+<!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
+ -->					     @endif
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>
+							  <li class="single-block"><a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a> </li>		
+							<!--
+							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li> -->
+							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
+							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
+													 2) You need not necessarily have a team while registering now.<br>
+													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
+													 4) Abstract submission deadline will soon be announced.<br>
+													 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li> -->
+							<!-- <li class="single-block">Convener and Hostel Technical Secretary Application Form &nbsp<a href="{{URL::route('events.PoR.form')}}" class="btn">Apply</a></li> -->
+							</ul>
+							<br>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+
 			@if($errors->has('email.absent'))
 									
 			<section id="error" class="light-bg">
@@ -222,6 +266,7 @@ count_it();
 				</div><!-- /.container -->
 			</section>
 			@endif	
+
 			<section id="services">
 				<div class="container">
 					<div class="row">
@@ -607,41 +652,13 @@ count_it();
 			</div>
 			<div class="col-xs-3 center-block text-center" id="myDIV">
 
-								<h2>Hot Links</h2>
+								<!-- <h2>Hot Links</h2> -->
 								<ul>
 							<!-- <li class="single-block">Welcome!!</li>
  -->
-							@if (Auth::check())
-								@if (Auth::User()->admin==1)
-
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Team Details</a> </li>		
-							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->
-
-							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
-
-							 @endif
-<!-- 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
-							 <li class="single-block">Any team member can document.</li>
- -->							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
-							 @else
-							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
-<!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
- -->					     @endif
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> </li>
-							  <li class="single-block"><a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a> </li>		
-							<!--
-							<li class="single-block"><a href="{{URL::Route('events.ITSP_2015.tshirt')}}" class="btn">ITSP Tshirt Form</a></li> -->
-							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.mentor')}}" class="btn">ITSP 2015 Mentor Registration Link&nbsp</a> </li> -->
-							<!-- <li class="single-block">1) If your idea is selected, you need not worry about room retention, money, anything at all. <br>
-													 2) You need not necessarily have a team while registering now.<br>
-													 3) We'll soon have multiple brainstorming sessions, do attend.<br>
-													 4) Abstract submission deadline will soon be announced.<br>
-													 For further queries join the <a href="https://www.facebook.com/groups/1566380240276628/"><b>ITSP FB group</b></a>.</li> -->
-							<!-- <li class="single-block">Convener and Hostel Technical Secretary Application Form &nbsp<a href="{{URL::route('events.PoR.form')}}" class="btn">Apply</a></li> -->
 							</ul>
-								<div class="fb-page" data-href="https://www.facebook.com/stab.iitb"  style="data-height:50%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/stab.iitb"><a href="https://www.facebook.com/stab.iitb">Tech&#064;IITB</a></blockquote></div></div>	
-			
-						
+								<!-- <div id="fb-div" class="fb-page" data-href="https://www.facebook.com/stab.iitb" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/stab.iitb"><a href="https://www.facebook.com/stab.iitb">Tech&#064;IITB</a></blockquote></div></div>	
+			 -->
 				</div>
 			</div>
 		</main>
