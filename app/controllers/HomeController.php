@@ -4,7 +4,7 @@ class HomeController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Home Controller
+	| Defaul t Home Controller
 	|--------------------------------------------------------------------------
 	|
 	| You may wish to use controllers instead of, or in addition to, Closure
@@ -40,8 +40,12 @@ class HomeController extends BaseController {
 			return View::make('club.aero.vision');
 		else if($page=='event')
 			return View::make('club.aero.event');
-		else if ($page=='gallery') 
-			return View::make('club.aero.gallery');
+		else if ($page=='gallery') {
+			
+			$pics=$this->get_images("aero");
+			$cl='aero';
+			return View::make('script_gallery',compact('cl','pics'));
+		}
 		else if ($page=='video') 
 			return View::make('club.aero.video');
 		else if ($page=='video')
@@ -163,8 +167,10 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.wncc.vision');
-		else if ($page=='gallery') 
+		else if ($page=='gallery') {
+
 			return View::make('club.wncc.gallery');
+		}
 		else if ($page=='video') 
 			return View::make('club.wncc.video');
 		else if($page=='event')
@@ -187,7 +193,15 @@ class HomeController extends BaseController {
 	{
 		return View::make('home.techgc');
 	}
-
+	public function get_images($club){
+		$dir = public_path()."/assets/gallery_images/$club";
+		$dh  = opendir($dir);
+		while (false !== ($image = readdir($dh))) {
+	    	if ($image!="." && $image!="..")
+	    	$images[] = $image;
+		}
+		return $images;
+	}
 	public function update_script($club)
 	{
 		

@@ -1,6 +1,6 @@
 @extends('club.aero.layout')
 
-@section('inner-content')
+@section('inner-content') 
 <h1>Our Team</h1>
 <!-- ============================================================= SECTION – TEAM ============================================================= -->
 						

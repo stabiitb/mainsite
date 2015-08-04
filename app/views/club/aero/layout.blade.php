@@ -27,7 +27,7 @@
 						
 					</div><!-- /.col -->
 					
-					<div class="col-md-9 inner-left-md border-left">
+					<div class="col-md-9 inner-left-md  border-left">
 						@yield('inner-content')
 					</div><!-- ./col -->
 						
