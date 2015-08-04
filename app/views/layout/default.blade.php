@@ -108,15 +108,9 @@
 													<h4></h4>
 													
 													<ul class="circled">
-<<<<<<< HEAD
 														<li><a href="{{URL::Route('vision')}}">VISION</a></li>
 														<li><a href="{{URL::Route('halloffame')}}">HALL OF FAME</a></li>
 														<li>REPORTS
-=======
-														<!-- <li><a href="{{URL::Route('vision')}}">Vision</a></li> -->
-														<li><a href="{{URL::Route('halloffame')}}">Hall of Fame</a></li>
-														<li>Reports
->>>>>>> cc954e70b5f62258e2683ce478176c36b128dc40
 															<ul>
 																<li>
 																	<a href="{{URL::Route('institute_review_2013')}}">INSTITUTE REVIEW 2013</a>
