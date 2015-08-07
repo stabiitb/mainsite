@@ -43,6 +43,16 @@ Route::group(array('prefix' => 'itsp'),function()
 
 });
 
+Route::group(array('prefix' => 'robotics-club/event/XLR8-2015'),function()
+{
+    Route::get('/',array('as'=>'club.robo.XLR8_2015.index','uses'=>'HomeController@XLR8_index'));
+    Route::get('frequently-asked-questions',array('as'=>'club.robo.XLR8_2015.faq','uses'=>'HomeController@XLR8_faq'));
+    Route::get('about',array('as'=>'club.robo.XLR8_2015.about','uses'=>'HomeController@XLR8_about'));
+    Route::get('discuss',array('as'=>'club.robo.XLR8_2015.discuss','uses'=>'HomeController@XLR8_discuss'));
+    Route::get('timeline',array('as'=>'club.robo.XLR8_2015.timeline','uses'=>'HomeController@XLR8_timeline'));
+    Route::get('student_reg',array('as'=>'club.robo.XLR8_2015.students_reg','uses'=>'HomeController@XLR8_stud_reg'));
+    Route::get('mentor_reg',array('as'=>'club.robo.XLR8_2015.mentor_reg','uses'=>'HomeController@XLR8_mentor_reg'));
+});
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return View::make('freshie_intro');}));
