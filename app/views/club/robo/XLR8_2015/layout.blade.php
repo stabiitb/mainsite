@@ -19,7 +19,7 @@
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.index')}}">Home</a></li>
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.faq')}}">FAQ</a></li>
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.about')}}">About</a></li>
-							<li><a href="{{URL::Route('club.robo.XLR8_2015.students_reg')}}">XLR8 Form</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.students_reg')}}">Registration Form</a></li>
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.mentor_reg')}}">Mentor Form</a></li>
 						</ul><!-- /.sidenav -->
 						
