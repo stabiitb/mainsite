@@ -279,6 +279,7 @@ count_it();
 						<div class="col-md-8 col-sm-10 center-block text-center" style="">
 							<header>
 							<br>
+								<h1>Hobby Clubs</h1>
 							</header>
 						</div>
 						<div class="col-xs-12">
