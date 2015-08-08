@@ -4,7 +4,9 @@
 							<div class="row">			
 								<div class="col-sm-12 inner-right-xs inner-bottom-sm">
 									<h2>About XLR8</h2>
-									<p>Build a Bot. Race your Bot!</p>
+									<p>XLR8 is the first and biggest annual tech event for freshmen. It is conducted by the Robotics Club of IIT Bombay. It is the entry to the tech world of IITB. All you have to do is participate, get your hands dirty and make your childhood dream bot. Race this bot against time and other participants on a challenging track to win exciting prizes. So Build your bot, Race your bot.
+
+It may look somewhat like rocket science. But that's what Robotics club is here for. We will simplify it for you making sure you do not get stuck at any time. All you have to do is show enthusiasm and keep the commitment levels high. After this event, you'll know everything from how to make circuits to where to buy what.</p>
 								</div><!-- /.col -->
 							</div>
 							<div class="row">	
