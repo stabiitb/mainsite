@@ -10,23 +10,22 @@
 							
 							<ul class="filter text-center">
 								<li><a href="#" data-filter="*" class="active">All</a></li>
-								<li><a href="#" data-filter=".identity">Identity</a></li>
-								<li><a href="#" data-filter=".interactive">Interactive</a></li>
-								<li><a href="#" data-filter=".print">Print</a></li>
-								<li><a href="#" data-filter=".photography">Photography</a></li>
+								
+								<!--<li><a href="#" data-filter=".RC Plane">RC Plane</a></li>-->
+								
 							</ul><!-- /.filter -->
 							
 							<ul class="items col-3" id="images">
 								@foreach($pics as $pic)
-									<li class="item thumb interactive">
+									<li class="item thumb *">
 											<figure>
 												<figcaption class="text-overlay">
 													<div class="info">
-														<h4>Appscreen Dashboard</h4>
-														<p>Interactive</p>
-													</div><!-- /.info -->
+														
+														<p>photo</p>
+													</div>  
 												</figcaption>
-												<img src="{{ URL::asset('assets/gallery_images/aero/'.$pic)}}" alt="yo">
+												<img src="{{ URL::asset('assets/gallery_images/'.$cl.'/'.$pic)}}" alt="yo">
 											</figure>
 										</a>
 									</li><!-- /.item -->
