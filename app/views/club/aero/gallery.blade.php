@@ -16,7 +16,27 @@
 							</ul><!-- /.filter -->
 							
 							<ul class="items col-3">
-								
+								$dir = public_path()."/assets/gallery_images";
+								$dh  = opendir($dir);
+								while (false !== ($image = readdir($dh))) {
+    								$images[] = $image;
+								}
+								foreach($images as $pic){
+									<li class="item thumb interactive">
+										<a href="portfolio-post.html">
+											<figure>
+												<figcaption class="text-overlay">
+													<div class="info">
+														<h4>Appscreen Dashboard</h4>
+														<p>Interactive</p>
+													</div><!-- /.info -->
+												</figcaption>
+												<img src="{{ URL::asset('assets/gallery_images/pic')}}" alt="">
+											</figure>
+										</a>
+									</li><!-- /.item -->
+								}
+        						        						
 								<li class="item thumb interactive">
 									<a href="portfolio-post.html">
 										<figure>
