@@ -1,6 +1,6 @@
-	@extends('layout.default')
+@extends('layout.default')
 
-@section('clubcontent')
+@section('content')
 
 
 		<!-- ============================================================= MAIN ============================================================= -->
@@ -15,15 +15,12 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="{{URL::Route('robotics-club')}}/home">Home</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/vision">Vision</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/event/XLR8-2015">XLR8</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/event">Past Events</a></li>
-							<!--<li><a href="{{URL::Route('robotics-club')}}/gallery">Gallery</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/video">Videos</a></li>-->
-						
-
+							<li><a href="{{URL::Route('robotics-club')}}">Robotics Club</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.index')}}">Home</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.faq')}}">FAQ</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.about')}}">About</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.students_reg')}}">Registration Form</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.mentor_reg')}}">Mentor Form</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

@@ -253,6 +253,36 @@ class HomeController extends BaseController {
 		return [$managers,$conveners];
 	}
 
+	public function XLR8_index()
+	{
+		return View::make('club.robo.XLR8_2015.index');
+	}
+
+	public function XLR8_faq()
+	{
+		return View::make('club.robo.XLR8_2015.faq');
+	}
+	public function XLR8_timeline()
+	{
+		return View::make('club.robo.XLR8_2015.timeline');
+	}
+	public function XLR8_about()
+	{
+		return View::make('club.robo.XLR8_2015.about');
+	}
+	public function XLR8_discuss()
+	{
+		return View::make('club.robo.XLR8_2015.discuss');
+	}
+	public function XLR8_stud_reg()
+	{
+		return View::make('club.robo.XLR8_2015.students_reg');
+	}
+	public function XLR8_mentor_reg()
+	{
+		return View::make('club.robo.XLR8_2015.mentor_reg');
+	}
+
 	function update_server($code){
 		if (Auth::check() ){
 			if(Auth::User()->admin==1){
