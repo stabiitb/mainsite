@@ -21,8 +21,8 @@
 							<li><a href="{{URL::Route('robotics-club')}}/team">Team</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/event">Past Events</a></li>
 							<li><a href="{{URL::Route('robotics-club')}}/tshirt">T-Shirt Form</a></li>
-							<!--<li><a href="{{URL::Route('robotics-club')}}/gallery">Gallery</a></li>
-							<li><a href="{{URL::Route('robotics-club')}}/video">Videos</a></li>-->
+							<li><a href="{{URL::Route('robotics-club')}}/gallery">Gallery</a></li>
+							<!--<li><a href="{{URL::Route('robotics-club')}}/video">Videos</a></li>-->
 						
 
 						</ul><!-- /.sidenav -->

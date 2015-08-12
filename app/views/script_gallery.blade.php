@@ -25,17 +25,19 @@
 														<p>photo</p>
 													</div>  
 												</figcaption>
-												<img id = $pic src="{{ URL::asset('assets/gallery_images/'.$cl.'/'.$pic)}}" alt="yo">
 												
+													<img src="{{ URL::asset('assets/gallery_images/'.$cl.'/'.$pic)}}" alt="yo">
 											</figure>
-										</a>
 									</li><!-- /.item -->
+									
 								@endforeach
+
 							</ul><!-- /.items -->
 							
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 				</div><!-- /.container -->
+				
 			</section>
 			
 			
