@@ -25,7 +25,8 @@
 														<p>photo</p>
 													</div>  
 												</figcaption>
-												<img src="{{ URL::asset('assets/gallery_images/'.$cl.'/'.$pic)}}" alt="yo">
+												<img id = $pic src="{{ URL::asset('assets/gallery_images/'.$cl.'/'.$pic)}}" alt="yo">
+												
 											</figure>
 										</a>
 									</li><!-- /.item -->
