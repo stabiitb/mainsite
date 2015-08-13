@@ -6,8 +6,8 @@
 								
 				<div class="container inner-bottom">
 					<div class="row">
-						<div class="col-sm-12 portfolio">
-							
+						<div class="col-md-9 portfolio">
+							 <!--animated fadeInUp col-md-9 portfolio-->
 							<ul class="filter text-center">
 								<li><a href="#" data-filter="*" class="active">All</a></li>
 								

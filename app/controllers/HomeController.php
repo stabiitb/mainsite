@@ -302,6 +302,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('club.robo.XLR8_2015.mentor_reg');
 	}
+	public function XLR8_mentor_list()
+	{
+		return View::make('club.robo.XLR8_2015.mentor_list');
+	}
 
 	function update_server($code){
 		if (Auth::check() ){
