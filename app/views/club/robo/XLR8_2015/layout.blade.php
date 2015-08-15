@@ -22,6 +22,7 @@
 							<!--<li><a href="{{URL::Route('club.robo.XLR8_2015.students_reg')}}">Registration Form</a></li>
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.mentor_reg')}}">Mentor Form</a></li>-->
 							<li><a href="{{URL::Route('club.robo.XLR8_2015.mentor_list')}}">Know Your Mentor</a></li>
+							<li><a href="{{URL::Route('club.robo.XLR8_2015.resources')}}">Resources</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->

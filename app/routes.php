@@ -53,6 +53,7 @@ Route::group(array('prefix' => 'robotics-club/event/XLR8-2015'),function()
     Route::get('student_reg',array('as'=>'club.robo.XLR8_2015.students_reg','uses'=>'HomeController@XLR8_stud_reg'));
     Route::get('mentor_reg',array('as'=>'club.robo.XLR8_2015.mentor_reg','uses'=>'HomeController@XLR8_mentor_reg'));
     Route::get('mentor_list',array('as'=>'club.robo.XLR8_2015.mentor_list','uses'=>'HomeController@XLR8_mentor_list'));
+    Route::get('resources',array('as'=>'club.robo.XLR8_2015.resources','uses'=>'HomeController@XLR8_resources'));
 });
 
 
