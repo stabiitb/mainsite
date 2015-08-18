@@ -208,7 +208,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/rushil.jpg')}}" class="img-circle">
@@ -224,8 +224,23 @@
 								
 							</figure>
 						</div><!-- /.col -->
+						<div class="col-sm-6 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/pranav.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Pranav Jain
+										<span><i class="icon-phone">9167229212</i></span>
+										<span><i class="icon-mail">pranavjain@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
 					</div><!-- /.row -->
-
 					<hr>
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
