@@ -293,7 +293,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/umang.jpg')}}" class="img-circle">
@@ -304,6 +304,22 @@
 										Umang Chhaparia
 										<span><i class="icon-phone">9967346106</i></span>
 										<span><i class="icon-mail">umang147@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
+						<div class="col-sm-6 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/arnab.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Arnab Muhuri
+										<span><i class="icon-phone">9869101160</i></span>
+										<span><i class="icon-mail">muhuri.arnab@iitb.ac.in</i></span>
 									</h2>
 								</figcaption>
 								
