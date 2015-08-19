@@ -319,7 +319,7 @@
 									<h2>
 										Arnab Muhuri
 										<span><i class="icon-phone">9869101160</i></span>
-										<span><i class="icon-mail">muhuri.arnab@iitb.ac.in</i></span>
+										<span><i class="icon-mail">bikearoundmumbai@gmail.com</i></span>
 									</h2>
 								</figcaption>
 								
