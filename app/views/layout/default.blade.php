@@ -69,6 +69,47 @@
 							<li><a href="https://www.youtube.com/user/STABiitb"><i class="icon-s-youtube"></i></a></li>
 							<li><a href="#"><i class="icon-s-gplus"></i></a></li>
 						</ul><!-- /.social -->
+						<div class="pull-left " style="width:40%; all=default;">
+							<div id='cse-search-form' style='width: 100%;'>Loading</div>
+							<script src='//www.google.com/jsapi' type='text/javascript'></script>
+							<script type='text/javascript'>
+							google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
+							google.setOnLoadCallback(function() {
+							  var customSearchOptions = {};
+							  var orderByOptions = {};
+							  orderByOptions['keys'] = [{label: 'Relevance', key: ''} , {label: 'Date', key: 'date'}];
+							  customSearchOptions['enableOrderBy'] = true;
+							  customSearchOptions['orderByOptions'] = orderByOptions;
+							  var imageSearchOptions = {};
+							  imageSearchOptions['layout'] = 'google.search.ImageSearch.LAYOUT_POPUP';
+							  customSearchOptions['enableImageSearch'] = true;
+							  var customSearchControl =   new google.search.CustomSearchControl('011681609419535670422:cdwkjdrely0', customSearchOptions);
+							  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+							  var options = new google.search.DrawOptions();
+							  options.enableSearchboxOnly('https://www.google.com/cse?cx=011681609419535670422:cdwkjdrely0');
+							  options.setAutoComplete(true);
+							  customSearchControl.draw('cse-search-form', options);
+							}, true);
+							</script>
+							<style type='text/css'>
+							  input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+							    border-color: #D9D9D9;
+							    height: 38px;
+							    margin-top: 5px;
+							    padding-top: -10px;
+							    font-family: Arial, sans-serif;
+							  }
+							  input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+							    border-color: #2F5BB7;
+							    background-color: #357AE8;
+							    background-image: none;
+							    height: 28px;
+							    width: 70px;
+							    margin-top: 8px;
+
+							  }
+							</style>
+						</div>
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
 						
