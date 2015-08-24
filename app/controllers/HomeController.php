@@ -273,6 +273,23 @@ class HomeController extends BaseController {
 		return [$managers,$conveners];
 	}
 
+	public function RCPlane_index()
+	{
+		return View::make('club.aero.RC_Plane.index');
+	}
+	public function RCPlane_about()
+	{
+		return View::make('club.aero.RC_Plane.about');
+	}
+	public function RCPlane_stud_reg()
+	{
+		return View::make('club.aero.RC_Plane.students_reg');
+	}
+	public function RCPlane_resources()
+	{
+		return View::make('club.aero.RC_Plane.resources');
+	}
+
 	public function XLR8_index()
 	{
 		return View::make('club.robo.XLR8_2015.index');

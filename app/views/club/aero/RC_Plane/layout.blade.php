@@ -1,6 +1,6 @@
 @extends('layout.default')
 
-@section('clubcontent')
+@section('content')
 
 
 		<!-- ============================================================= MAIN ============================================================= -->
@@ -15,20 +15,19 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="{{URL::Route('aeromodelling-club')}}">Home</a></li>
-							<li><a href="{{URL::Route('aeromodelling-club')}}/vision">Vision</a></li>
-							<li><a href="{{URL::Route('aeromodelling-club')}}/event">Events</a></li>
-							<li><a href="{{URL::Route('aeromodelling-club')}}/team">Team</a></li>
-							<li><a href="{{URL::Route('aeromodelling-club')}}/event/RC-Plane">RC Plane</a></li>
-							<li><a href="{{URL::Route('aeromodelling-club')}}/gallery">Gallery</a></li>
-							<!--<li><a href="{{URL::Route('aeromodelling-club')}}/video">Videos</a></li>-->
+							<li><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></li>
+							<li><a href="{{URL::Route('club.aero.RC_Plane.index')}}">Home</a></li>
+							<!--<li><a href="{{URL::Route('club.aero.RC_Plane.about')}}">About</a></li>-->
+							<li><a href="{{URL::Route('club.aero.RC_Plane.students_reg')}}">Registration Form</a></li>
+							<!--<li><a href="{{URL::Route('club.robo.XLR8_2015.mentor_reg')}}">Mentor Form</a></li>-->
+							<li><a href="{{URL::Route('club.aero.RC_Plane.resources')}}">Resources</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
 						
 					</div><!-- /.col -->
 					
-					<div class="col-md-9 inner-left-md  border-left">
+					<div class="col-md-9 inner-left-md border-left">
 						@yield('inner-content')
 					</div><!-- ./col -->
 						
