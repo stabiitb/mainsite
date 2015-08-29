@@ -8,7 +8,7 @@
 							</div>
 							<div class="row">
 								
-									<a target = "blank" href = {{ URL::asset('media/2015/club_assets/aero/RC_Plane_Basics .pptx')}}><h3><i>RC Plane Basics</i></h3></a>
+									<a target = "blank" href = {{ URL::asset('media/2015/club_assets/aero/RC_Plane_Basics.pptx')}}><h3><i>RC Plane Basics</i></h3></a>
 									<br>
 									
 								
