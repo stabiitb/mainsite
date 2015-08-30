@@ -216,13 +216,23 @@ class HomeController extends BaseController {
 		return View::make('home.techgc');
 	}
 	public function get_images($club){
-		$dir = public_path()."/assets/gallery_images/$club";
+		$pics = array();
+		$dir = public_path()."/media/2015/club_assets/$club/Events";
 		$dh  = opendir($dir);
-		while (false !== ($image = readdir($dh))) {
-	    	if ($image!="." && $image!="..")
-	    	$images[] = $image;
+		while (false !== ($subdir = readdir($dh))) {
+	    	if ($subdir!="." && $subdir!="..")
+	    	{	$newdir = "$dir/$subdir/Photos";    		
+	    		$newdh  = opendir($newdir);
+	    		$pics[] = $subdir;
+	    		while (false !== ($image = readdir($newdh))) {
+			    	if ($image!="." && $image!="..")
+			    	{	
+			    		$pics[$subdir][] = $image;
+			    	}	
+				}
+	    	}	
 		}
-		return $images;
+		return $pics;
 	}
 	public function update_script($club)
 	{
