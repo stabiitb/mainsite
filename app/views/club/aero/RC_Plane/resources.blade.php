@@ -10,7 +10,9 @@
 								
 									<a target = "blank" href = {{ URL::asset('media/2015/club_assets/aero/RC_Plane_Basics.pptx')}}><h3><i>RC Plane Basics</i></h3></a>
 									<br>
-									
+									<a target = "blank" href = "https://play.google.com/store/apps/details?id=leofs.android.free&feature=search_result#?t=W251bGwsMSwxLDEsImxlb2ZzLmFuZHJvaWQuZnJlZSJd"><h3><i>Leo's RC Simulator App link</i></h3></a>
+									<br>
+									<a target = "blank" href = "https://play.google.com/store/apps/details?id=com.rcflightsim.cvplane2"><h3><i>Absolute RC Plane Simulator App link</i></h3></a>
 								
 							</div><!-- ./row -->
 						</section>
