@@ -432,7 +432,7 @@
 								<figcaption>
 									<h2>
 										Anay Tripathi
-										<span><i class="icon-phone">CallMeMaybe</i></span>
+										<span><i class="icon-phone">--</i></span>
 										<span><i class="icon-mail">anay@gmail.com</i></span>
 									</h2>
 								</figcaption>	
