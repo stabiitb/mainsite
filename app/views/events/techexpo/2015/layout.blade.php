@@ -15,7 +15,7 @@
 						<!-- ============================================================= SIDE NAVIGATION ============================================================= -->
 							
 						<ul class="sidenav">
-							<li><a href="{{URL::Route('events.techexpo.2015')}}/about">Tech Expo 2015 - Home</a></li>
+							<li><a href="{{URL::Route('events.techexpo.2015')}}/about">Tech & RnD Exposition 2015 - Home</a></li>
 							<li><a href="{{URL::Route('events.techexpo.2015')}}/gallery">Glimpse of last year</a></li>
 							<li><a href="{{URL::Route('events.techexpo.2015')}}/video-gallery">Last year videos</a></li>
 							<li><a href="{{URL::Route('events.techexpo.2015')}}/registration_tech_projects">Tech Projects Registration</a></li>
