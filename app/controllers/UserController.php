@@ -278,7 +278,9 @@ class UserController extends \BaseController {
 	}
 
 	public function login(){
-		$ldap=Input::get('ldap'); $ldap=$ldap."@iitb.ac.in";
+		$ldap=Input::get('ldap');
+		$ldap = explode('@', $ldap)[0];
+		$ldap=$ldap."@iitb.ac.in";
 		$pwd=Input::get('password');
 		
 		$messageBag = new MessageBag;
@@ -321,7 +323,6 @@ class UserController extends \BaseController {
 			return Redirect::back()->with('messages', $messageBag);
 		}
 		else{
-			User::where('id','=',$decrypted)->update(array('ldap_verified'=>1));
 			if($users[0]->ldap_verified == 1){
 				Auth::login($users[0]);
 				return Redirect::to('/');
