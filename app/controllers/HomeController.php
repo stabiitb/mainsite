@@ -38,8 +38,17 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.aero.vision');
-		else if($page=='event')
-			return View::make('club.aero.event');
+		else if($page=='event'){
+			$file = fopen("https://docs.google.com/spreadsheets/d/1tnuJIGHW-tC9jBCBkT0T2FdN-QvIFkVCMjrubi0hDTs/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+			}
+			return View::make('club.aero.event',compact('events'));
+		}
 		else if ($page=='gallery') {
 			
 			$pics=$this->get_images("aero");
@@ -65,8 +74,19 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.elec.vision');
-		else if($page=='event')
-			return View::make('club.elec.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1YiD_vHJwYnQYWU58DOJEBonDiWgXDvUM2GjtiDx5c1c/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.elec.event',compact('events'));
+		}
 		else if ($page=='gallery') {
 			
 			$pics=$this->get_images("elec");
@@ -95,8 +115,19 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.krittika.vision');
-		else if($page=='event')
-			return View::make('club.krittika.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1dF9mkE4mqKzh3BoLEVFRpedCnzhckD5VKZQfKGXdC4s/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.krittika.event',compact('events'));
+		}
 		else if($page=='the-cosmic-ladder-distance')
 			return View::make('club.krittika.events.cosmic_ladder');
 		else if ($page=='gallery') {
@@ -112,7 +143,6 @@ class HomeController extends BaseController {
 		else
 			return View::make('club.krittika.home');
 	}
-
 	public function MnP($page="about")
 	{
 		if($page=='about')
@@ -134,8 +164,19 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.mnp.video');
-		else if($page=='event')
-			return View::make('club.mnp.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1uRtl1c3vQYhLKmdWbEImjB4uyWXwMPYpgTcxMZ-PrGs/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.mnp.event',compact('events'));
+		}
 		else
 			return View::make('club.mnp.home');
 	}
@@ -161,8 +202,19 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.robo.video');
-		else if($page=='event')
-			return View::make('club.robo.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1aj4QyEJEE8QgugfSsecs_Q9k0e86N1m1OjFtZnfghwk/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.robo.event',compact('events'));
+		}
 		else if($page=="xlr8-registration")
 			return View::make('club.robo.xlr8_reg');
 		else if($page=="teams-and-mentors-xlr8-2014")
@@ -174,6 +226,7 @@ class HomeController extends BaseController {
 		else
 			return View::make('club.robo.home');
 	}
+	
 	public function wncc($page="about")
 	{
 		if($page=='about')
@@ -195,11 +248,25 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.wncc.video');
-		else if($page=='event')
-			return View::make('club.wncc.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1UG5iXKh1DZJvy1mSGBE92Xs_My7wfo_wJLVq-RVloe8/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.wncc.event',compact('events'));
+		}
 		else
 			return View::make('club.wncc.home');
 	}
+
+
+
 
 	public function techexpo2015($page="about")
 	{

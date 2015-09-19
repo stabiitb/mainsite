@@ -179,6 +179,11 @@ Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'Ap
 
 
 /* User */
+Route::get('login_page',array('as'=>'login_page', 'uses' => 'UserController@login_page'));
+Route::post('login',array('as'=>'user.login','uses'=>'UserController@login'));
+Route::post('signup',array('as'=>'user.signup','uses'=>'UserController@signup'));
+Route::post('set_password',array('as'=>'user.set_password','uses'=>'UserController@set_password'));
+
 Route::any('logout',array('as'=>'logout' ,'before'=>'login', 'uses' => 'UserController@logout'));
 Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'UserController@profile'));
 Route::get('fblogin','UserController@fblogin');

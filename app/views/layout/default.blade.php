@@ -62,7 +62,7 @@
 							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
 							</li>	
 							@else
-							<li><a href="{{UserController::LoginURL()}}" class="btn btn-small btn-green" ><i class="icon-facebook-squared-1"></i> Login</a></li> 
+							<li><a href="{{URL::Route('login_page')}}" class="btn btn-small btn-green" >Login</a></li> 
 							@endif
 						</ul>
 						<ul class="social pull-right">
