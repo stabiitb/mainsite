@@ -316,7 +316,7 @@ class UserController extends \BaseController {
 			return Redirect::back()->with('messages', $messageBag);
 		}
 
-		if($users[0]->password !== $pwd){
+		if($users[0]->password != sha1($pwd)){
 			$messageBag->add('message',"Password doesn't match" );
 			return Redirect::back()->with('messages', $messageBag);
 		}
@@ -394,7 +394,7 @@ class UserController extends \BaseController {
 			$user = new User;
 			$user->other_email = $email;
 			$user->name = $name;
-			$user->password = $pwd;
+			$user->password = sha1($pwd);
 			$user->ldap_email=$ldap;
 			$user->save();
 			// Auth::login($user);
@@ -464,7 +464,7 @@ class UserController extends \BaseController {
 		}
 
 		try{
-			User::where('id','=',$user->id)->update(array('password'=>$pwd));
+			User::where('id','=',$user->id)->update(array('password'=>sha1($pwd)));
 			$messageBag1 = new MessageBag;
 			$messageBag1->add('message',"Password Updated Successfully. \n You can now Login without fb also." );
 			return Redirect::back()->with('messages', $messageBag1)->withInput();
