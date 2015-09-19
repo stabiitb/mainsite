@@ -7,77 +7,35 @@
 				<br>
 			</section>
 			<!-- ============================================================= SECTION – BLOG ============================================================= -->
-			
-			<section id="blog" class="light-bg">
-					
-				<div class="inner-top-sm inner-bottom">
-					<div class="row">
-						<div class="col-sm-10 col-md-offset-1">
-							
-							<div class="grid-blog no-sidebar">
-								<div class="posts">
-															
-									<div class="post format-image" style="width:50%;">
-										
-										<div class="post-content">
-											
-											<figure class="icon-overlay icn-link post-media">
-												<a href="{{URL::route('krittika')}}/the-cosmic-ladder-distance"><img src="{{URL::asset('assets/images/2014/krittika/club_ladder.jpg')}}" alt=""></a>
-											</figure><!-- /.post-media -->
-											
-											<h2 class="post-title">
-												<a href="blog-post.html">The Cosmic Distance Ladder</a>
-											</h2>
-											
-											<ul class="meta">
-												<li class="date">7th Sept 2014</li>
-												<li class="categories">by Alankar Kotwal</li>
-											</ul><!-- /.meta -->
-											
-											<p>we went a step further in our understanding of Astronomy with a lecture delivered from Alankar Kotwal ...</p>
-											
-											<a href="{{URL::route('krittika')}}/the-cosmic-ladder-distance" class="btn">Read more</a>
-											
-										</div><!-- /.post-content --> 
-										
-									</div><!-- /.post -->
+<!-- Event=== 0:Name 1:Description 2:Date 3:Pics_Url 4:cover_pic_name -->
+				<?php //var_dump($events) ?>
+				@foreach($events as $event)
+					<section class="light-bg" style="padding:20px;margin-bottom:20px">
+						<h2>{{$event[0]}}</h2>
+						<figure>
+							<div class="row">
+								<div class="col-md-6">
+						    		<img class="custom-img" src="{{$event[4]}}" alt="">
+								</div>
+								<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
+									<p>{{$event[1]}}</p>
+									<ul class="item-details">
+										<li class="date">{{$event[2]}}</li>
+									</ul>
+									<!-- <p><a href="https://drive.google.com/file/d/0BzgIkwubB1cgLWdDa21Bc05HeUk/view">Link to Problem Statement</a></p>
+									<p><a href="https://docs.google.com/forms/d/1JyRKVKxUEZYEckeA-W0reRAQxRvK-9EpLrgBmFzAR7k/viewform?c=0&w=1">Click here to Register</a>
+									<br>
+									Deadline : Wednseday , 21st Jan
+									</p> -->
+									<p>Find content and photographs <a href="{{$event[3]}}" target="_blank">HERE</a></p>
 
-									<div class="post format-image" style="width:50%">
-										
-										<div class="post-content">
-											
-											<figure class="icon-overlay icn-link post-media">
-												<a href="{{URL::route('krittika')}}/astronomy-demystified"><img src="{{URL::asset('assets/images/2014/krittika/astronomy_demys.jpg')}}" alt=""></a>
-											</figure><!-- /.post-media -->
-											
-											<h2 class="post-title">
-												<a href="blog-post.html">Astronomy Demystified</a>
-											</h2>
-											
-											<ul class="meta">
-												<li class="date">20th August 2014</li>
-												<li class="categories">by Ruturaj Atre</li>
-											</ul><!-- /.meta -->
-											
-											<p>Yesterday we kicked off the journey by a lecture delivered by the former manager of the club...</p>
-											
-											<a href="{{URL::route('krittika')}}/astronomy-demystified" class="btn">Read more</a>
-											
-										</div><!-- /.post-content --> 
-										
-									</div><!-- /.post -->
-									
-																	
-								</div><!-- /.posts -->
+					                
 
-
-							</div><!-- /.grid-blog -->
-							
-							
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div>
-			</section>
+								</div>
+							</div>
+						</figure>
+					</section>
+				@endforeach
 			
 			<!-- ============================================================= SECTION – BLOG : END ============================================================= -->
 			
