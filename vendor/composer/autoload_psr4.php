@@ -7,6 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
+    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
+    'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
+    'Patchwork\\' => array($vendorDir . '/patchwork/utf8/src/Patchwork'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Facebook\\' => array($vendorDir . '/facebook/php-sdk-v4/src/Facebook'),
 );

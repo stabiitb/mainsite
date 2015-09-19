@@ -124,7 +124,6 @@ class UserController extends \BaseController {
 
      	$email = $newUser->email;
 		$users = User::where('email','=', $email)->get();
-	
 
 		if(sizeof($users) == 0){
 			$user = new User;
@@ -193,6 +192,7 @@ class UserController extends \BaseController {
 		$user->save();
 		return Redirect::back();
 	}
+
 	public function verify(){
 		$gpo_id=Input::get('gpo_id');
 		$gpo_id = explode('@', $gpo_id)[0];

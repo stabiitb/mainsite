@@ -205,8 +205,10 @@ class HomeController extends BaseController {
 	{
 		if($page=='about')
 			return View::make('events.techexpo.2015.about');
-		else if($page=='registration')
-			return View::make('events.techexpo.2015.students_reg');
+		else if($page=='registration_tech_projects')
+			return View::make('events.techexpo.2015.tech_project_reg');
+		else if($page=='registration_rnd_projects')
+			return View::make('events.techexpo.2015.rnd_project_reg');
 		else if ($page=='gallery') {
 			$pics=$this->get_images_of_folder("/media/2015/techexpo/gallery_2014");
 			return View::make('events.techexpo.2015.script_gallery',compact('pics'));
