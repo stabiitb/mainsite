@@ -398,11 +398,11 @@ class UserController extends \BaseController {
 			$user->password = sha1($pwd);
 			$user->ldap_email=$ldap;
 			$user->save();
-			// Auth::login($user);
+			Auth::login($user);
 
 			$gpo_id=$ldap;
 			$gpo_id = explode('@', $gpo_id)[0];
-			// $user=Auth::User();
+			$user=Auth::User();
 			//var_dump($user);
 			$key = 'Prateek';
 			$string =$user->id;
@@ -422,8 +422,10 @@ class UserController extends \BaseController {
 				 });
 				$messageBag1 = new MessageBag;
 				$messageBag1->add('message',"We have sent you an email regarding account activation on your gpo id ".$user->ldap_email." .Click on the link to verify." );
+				if(Auth::check()) Auth::logout();
 				return Redirect::back()->with('messages', $messageBag1)->withInput();
 			} catch (Exception $e) {
+				if(Auth::check()) Auth::logout();
 				return $e->getMessage();
 			}
 
