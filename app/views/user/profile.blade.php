@@ -134,14 +134,14 @@
 							<h4>Your room has been retained</h4>
 							@endif -->
 						@endif
-						@if($user->password=="")
+						@if($user->password == "")
 							<h3>Set your Password:</h3>
 							<form id="set_password" class="forms" action="{{URL::Route('user.set_password')}}" method="post">
 								<input class="form-control" name="password" size="8" type="password" placeholder="Enter Pasword" required>
 								<input class="form-control" name="password_verify" size="8" type="password" placeholder="Re-enter Password" required>
 								<input class="btn btn-green" type="submit" value="Set Password">
 							</form>
-						endif
+						@endif
 						</div>
 					</div><!-- ./row -->
 				</div><!-- /.container -->

@@ -36,7 +36,7 @@
 					</header>
 					<form class="forms" action="{{URL::Route('user.login')}}" method="post">
 						<input class="form-control" name="ldap" type="text" placeholder="LDAP ID (For Example: <LDAP ID>@iitb.ac.in)" required>
-						<input class="form-control" name="password" size="8" type="text" placeholder="Enter Pasword" required>
+						<input class="form-control" name="password" size="8" type="password" placeholder="Enter Pasword" required>
 						<input class="btn btn-green" type="submit" value="Login">
 					</form>
 					<div style="text-align:center">
