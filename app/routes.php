@@ -69,6 +69,9 @@ Route::group(array('prefix' => 'aeromodelling-club/event/RC-Plane'),function()
     Route::get('resources',array('as'=>'club.aero.RC_Plane.resources','uses'=>'HomeController@RCPlane_resources'));
 });
 
+Route::get('techandrndexpo2015/',array('as'=>'events.techexpo.2015','uses'=>'HomeController@techexpo2015'));
+Route::get('techandrndexpo2015/{page}',array('as'=>'events.techexpo.2015.pages','uses'=>'HomeController@techexpo2015'));
+
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return View::make('freshie_intro');}));

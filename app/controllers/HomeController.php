@@ -201,6 +201,25 @@ class HomeController extends BaseController {
 			return View::make('club.wncc.home');
 	}
 
+	public function techexpo2015($page="about")
+	{
+		if($page=='about')
+			return View::make('events.techexpo.2015.about');
+		else if($page=='registration_tech_projects')
+			return View::make('events.techexpo.2015.tech_project_reg');
+		else if($page=='registration_rnd_projects')
+			return View::make('events.techexpo.2015.rnd_project_reg');
+		else if ($page=='gallery') {
+			$pics=$this->get_images_of_folder("/media/2015/techexpo/gallery_2014");
+			return View::make('events.techexpo.2015.script_gallery',compact('pics'));
+		}
+		else if ($page=='video-gallery') {
+			return View::make('events.techexpo.2015.video-gallery');
+		}
+		else{
+			return View::make('events.techexpo.2015.about');
+		}
+	}
 
 	public function technovation()
 	{
@@ -230,6 +249,19 @@ class HomeController extends BaseController {
 			    		$pics[$subdir][] = $image;
 			    	}	
 				}
+	    	}	
+		}
+		return $pics;
+	}
+
+	public function get_images_of_folder($folder){
+		$pics = array();
+		$dir = public_path().$folder;
+		$dh  = opendir($dir);
+		while (false !== ($image = readdir($dh))) {
+	    	if ($image!="." && $image!="..")
+	    	{    		
+	    		$pics[] = $image;
 	    	}	
 		}
 		return $pics;

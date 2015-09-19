@@ -26,7 +26,9 @@
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
-		
+		<style>
+			@yield('css')
+		</style>
 		<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
 		<!--[if lt IE 9]>
 			<script src="{{ URL::asset('assets/js/html5shiv.js')}}"></script>
