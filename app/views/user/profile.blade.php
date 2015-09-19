@@ -28,15 +28,17 @@
 					</div><!-- /.row -->
 				</div><!-- /.container -->
 			</section>    
-	@else
+	@endif
 			<section class="img-bg img-bg-softer inner">
 				<div class="container" >
 					<div class="row">
 						<div class="col-md-12"> 
 						@if($user->ldap_verified == 0)
-						Verify now . Enter your GPO Id. 
+						Verify now your GPO Id. 
 							<form action="{{URL::Route('user.verify')}}" method="post">
+							@if($user->other_email == "")
 							<input name="gpo_id" type="text" placeholder="gpo Id">
+							@endif
 							<input type="submit" value="verify">
 							</form>
 <!-- 							<form action="{{URL::Route('user.update')}}" method="post">
@@ -146,7 +148,7 @@
 					</div><!-- ./row -->
 				</div><!-- /.container -->
 			</section>
-	@endif
+	
 
 </main>
 @endsection

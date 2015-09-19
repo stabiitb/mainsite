@@ -194,7 +194,12 @@ class UserController extends \BaseController {
 	}
 
 	public function verify(){
-		$gpo_id=Input::get('gpo_id');
+		if(Auth::User()->other_email == ""){
+			$gpo_id=Input::get('gpo_id');
+		}
+		else{
+			$gpo_id=Auth::User()->ldap_email;
+		}
 		$gpo_id = explode('@', $gpo_id)[0];
 		$user=Auth::User();
 		//var_dump($user);
@@ -329,7 +334,10 @@ class UserController extends \BaseController {
 			}
 			else{
 				$messageBag->add('message',"Please Verify LDAP (GPO) ID First" );
-				return Redirect::back()->with('messages', $messageBag);
+				// return Redirect::back()->with('messages', $messageBag);
+				Auth::login($users[0]);
+				return Redirect::Route('user.profile')->with('messages', $messageBag);
+
 			}
 		}
 
@@ -399,6 +407,7 @@ class UserController extends \BaseController {
 			$user->ldap_email=$ldap;
 			$user->save();
 			Auth::login($user);
+			return Redirect::Route('user.profile');
 
 			$gpo_id=$ldap;
 			$gpo_id = explode('@', $gpo_id)[0];
@@ -420,10 +429,10 @@ class UserController extends \BaseController {
 				 {
 		     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
 				 });
-				$messageBag1 = new MessageBag;
-				$messageBag1->add('message',"We have sent you an email regarding account activation on your gpo id ".$user->ldap_email." .Click on the link to verify." );
+				$messageBag_new = new MessageBag;
+				$messageBag_new->add('message',"We have sent you an email regarding account activation on your gpo id ".$user->ldap_email." .Click on the link to verify." );
 				if(Auth::check()) Auth::logout();
-				return Redirect::back()->with('messages', $messageBag1)->withInput();
+				return Redirect::back()->with('messages', $messageBag_new)->withInput();
 			} catch (Exception $e) {
 				if(Auth::check()) Auth::logout();
 				return $e->getMessage();
