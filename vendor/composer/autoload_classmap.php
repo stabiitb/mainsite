@@ -4209,6 +4209,7 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\CssToInlineStyles' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php',
     'TijsVerkoyen\\CssToInlineStyles\\Exception' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Exception.php',
     'TijsVerkoyen\\CssToInlineStyles\\Specificity' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Specificity.php',
+    'TutorialsTable' => $baseDir . '/app/database/migrations/2015_10_03_070737_tutorials_table.php',
     'User' => $baseDir . '/app/models/User.php',
     'UserController' => $baseDir . '/app/controllers/UserController.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
