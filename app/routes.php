@@ -43,6 +43,9 @@ Route::group(array('prefix' => 'itsp'),function()
 
 });
 
+//Tutorials
+Route::get('turorials',array('as'=>'tutorials','uses'=>'HomeController@tutorials'));
+
 Route::group(array('prefix' => 'robotics-club/event/XLR8-2015'),function()
 {
     Route::get('/',array('as'=>'club.robo.XLR8_2015.index','uses'=>'HomeController@XLR8_index'));
