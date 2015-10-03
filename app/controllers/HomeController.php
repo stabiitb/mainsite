@@ -467,7 +467,7 @@ class HomeController extends BaseController {
 	public function tutorials()
 	{
 		
-		return View::make('club.robo.XLR8_2015.resources');
+		return View::make('tutorials');
 	}
 
 }
