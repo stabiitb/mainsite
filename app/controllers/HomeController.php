@@ -464,10 +464,102 @@ class HomeController extends BaseController {
 		}
 	}
 
+	//Turotials
 	public function tutorials()
 	{
-		
-		return View::make('tutorials');
+		$dir = public_path()."/assets/tutorials";
+		$dh  = opendir($dir);
+
+		$all_tut = array();
+		$all_tut[] = "Maths and Physics";
+		$all_tut[] = "Krittika";
+		$all_tut[] = "WnCC";
+		$all_tut[] = "Robotics";
+		$all_tut[] = "Electronics";
+		$all_tut[] = "Tech-GSR";
+		$all_tut[] = "Technovation";
+		$all_tut[] = "Aeromodelling";
+
+		$all_tut["Maths and Physics"][]=TutorialsTable::where('Club','LIKE','%Maths%')->get();
+		$all_tut["Krittika"][]=TutorialsTable::where('Club','LIKE','%ttika%')->get();
+		$all_tut["WnCC"][]=TutorialsTable::where('Club','LIKE','%WnCC%')->get();
+		$all_tut["Robotics"][]=TutorialsTable::where('Club','LIKE','%Robo%')->get();
+		$all_tut["Electronics"][]=TutorialsTable::where('Club','LIKE','%tronics%')->get();
+		$all_tut["Tech-GSR"][]=TutorialsTable::where('Club','LIKE','%GSR%')->get();
+		$all_tut["Technovation"][]=TutorialsTable::where('Club','LIKE','%vation%')->get();
+		$all_tut["Aeromodelling"][]=TutorialsTable::where('Club','LIKE','%model%')->get();
+		return View::make('tutorials', compact('mnp_tut','all_tut'));
 	}
+	public function tutorials_save()
+	{
+		if (Auth::check()){
+			if (Auth::User()->ldap_verified == 0){
+	     		$messageBag = new MessageBag;
+				$messageBag->add('Please Verify Your GPO ID before Uploading a Tutorial');
+	     		return Redirect::route('user.profile')->withErrors($messageBag);
+			}
+			else{
+				// $user_id = Auth::User()->id;
+				// $name = Input::get("Name");
+				// $name = Input::get("Club");
+
+			}
+		}
+		else{
+     		$messageBag = new MessageBag;
+			$messageBag->add('Please Login before Uploading a Tutorial');
+     		return Redirect::route('login_page')->withErrors($messageBag);
+		}
+
+		// if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
+		// 	return "Error";
+		// }
+
+		$uploaddir = public_path()."/assets/tutorials";
+		// $uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
+		// if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
+		// 	return "done";
+		// } else {
+  //  	 		echo "Possible file upload attack!\n";
+		// }
+		// return View::make('club.robo.XLR8_2015.resources');
+	}
+
+	public function tutorials_upload()
+	{
+		if (Auth::check()){
+			if (Auth::User()->ldap_verified == 0){
+	     		$messageBag = new MessageBag;
+				$messageBag->add('Please Verify Your GPO ID before Uploading a Tutorial');
+	     		return Redirect::route('user.profile')->withErrors($messageBag);
+			}
+			else{
+				$user_id = Auth::User()->id;
+				$name = Input::get("Name");
+				$name = Input::get("Club");
+
+			}
+		}
+		else{
+     		$messageBag = new MessageBag;
+			$messageBag->add('Please Login before Uploading a Tutorial');
+     		return Redirect::route('login_page')->withErrors($messageBag);
+		}
+
+		// if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
+		// 	return "Error";
+		// }
+		
+		// $uploaddir = public_path()."/assets/tutorials";
+		// $uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
+		// if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
+		// 	return "done";
+		// } else {
+  //  	 		echo "Possible file upload attack!\n";
+		// }
+		// return View::make('club.robo.XLR8_2015.resources');
+		// return View::make('tutorials');
+	}
+
 
 }

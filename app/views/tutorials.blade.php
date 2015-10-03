@@ -47,8 +47,4 @@
 				</div><!-- /.container -->
 			</section>
 			
-			
-
-
-
 @endsection
