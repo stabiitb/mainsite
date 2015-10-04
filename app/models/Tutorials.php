@@ -9,6 +9,7 @@ class Tutorials extends Eloquent implements UserInterface , RemindableInterface{
 	use UserTrait , RemindableTrait;
 
 	protected $table = 'TutorialsTable';
+	public $timestamps = false;
 
 
 	public function saveFromInput(){
