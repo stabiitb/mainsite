@@ -573,7 +573,7 @@ class HomeController extends BaseController {
 		else{
      		$messageBag = new MessageBag;
 			$messageBag->add('message','Please Login before Uploading a Tutorial');
-			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
+			return Redirect::to('login_page')->with('messages', $messageBag)->withInput();
 		}
 	}
 
