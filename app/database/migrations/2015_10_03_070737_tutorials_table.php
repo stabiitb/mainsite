@@ -16,9 +16,10 @@ class TutorialsTable extends Migration {
 		Schema::create('TutorialsTable', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('Name',200);
+			$table->string('name',200);
 			$table->string('url',200);
-			$table->string('Club',50);
+			$table->string('club',50);
+			$table->integer('by');
 		});
 	}
 

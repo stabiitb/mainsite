@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\MessageBag;
 
 class HomeController extends BaseController {
 
@@ -496,34 +497,65 @@ class HomeController extends BaseController {
 		if (Auth::check()){
 			if (Auth::User()->ldap_verified == 0){
 	     		$messageBag = new MessageBag;
-				$messageBag->add('Please Verify Your GPO ID before Uploading a Tutorial');
-	     		return Redirect::route('user.profile')->withErrors($messageBag);
+				$messageBag->add('message',"Please Verify Your GPO ID before Uploading a Tutorial" );
+				return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 			}
 			else{
-				// $user_id = Auth::User()->id;
-				// $name = Input::get("Name");
-				// $name = Input::get("Club");
 
+				$user_id = Auth::User()->id;
+				$name = Input::get("Name");
+				$club = Input::get("Club");
+				$file = Input::file("File");
+
+				if(!Input::hasFile("File") || $user_id=="" || $name=="" || $club==""){
+
+					$messageBag = new MessageBag;
+					$messageBag->add('message',"Error in form. Fill up all the required fields correctly" );
+
+					return Redirect::back()->with('messages', $messageBag)->withInput();
+				}
+				if (Input::file("File") -> getSize() > 2*1024*1024) {
+					$messageBag = new MessageBag;
+					$messageBag->add('message',"Files Bigger than 2 MB aren't allowed" );
+
+					return Redirect::back()->with('messages', $messageBag)->withInput();
+					
+				}
+
+
+				$tutorial = new Tutorials;
+
+				$tutorial->name = $name;
+				$tutorial->by = intval($user_id);
+				$tutorial->club = $club;
+				// $tutorial->url = $filename;
+				$tutorial->save();
+
+				$destinationPath = public_path()."/assets/tutorials/";
+				$extension = $file->getClientOriginalExtension();
+				$filename = ($tutorial->id).".".$extension;
+				$file->move($destinationPath, $filename);
+
+				// $tutorial->name = $name;
+				// $tutorial->by = intval($user_id);
+				// $tutorial->club = $club;
+				$tutorial->url = $filename;
+				$tutorial->save();
+
+
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Tutorial successfully uploaded." );
+				return Redirect::back()->with('messages', $messageBag)->withInput();
+				
 			}
 		}
 		else{
      		$messageBag = new MessageBag;
-			$messageBag->add('Please Login before Uploading a Tutorial');
-     		return Redirect::route('login_page')->withErrors($messageBag);
+			$messageBag->add('message','Please Login before Uploading a Tutorial');
+			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 		}
 
-		// if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
-		// 	return "Error";
-		// }
-
-		$uploaddir = public_path()."/assets/tutorials";
-		// $uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
-		// if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
-		// 	return "done";
-		// } else {
-  //  	 		echo "Possible file upload attack!\n";
-		// }
-		// return View::make('club.robo.XLR8_2015.resources');
+	
 	}
 
 	public function tutorials_upload()
@@ -531,35 +563,18 @@ class HomeController extends BaseController {
 		if (Auth::check()){
 			if (Auth::User()->ldap_verified == 0){
 	     		$messageBag = new MessageBag;
-				$messageBag->add('Please Verify Your GPO ID before Uploading a Tutorial');
-	     		return Redirect::route('user.profile')->withErrors($messageBag);
+				$messageBag->add('message',"Please Verify Your GPO ID before Uploading a Tutorial" );
+				return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 			}
 			else{
-				$user_id = Auth::User()->id;
-				$name = Input::get("Name");
-				$name = Input::get("Club");
-
+				return View::make('tutorials_upload');				
 			}
 		}
 		else{
      		$messageBag = new MessageBag;
-			$messageBag->add('Please Login before Uploading a Tutorial');
-     		return Redirect::route('login_page')->withErrors($messageBag);
+			$messageBag->add('message','Please Login before Uploading a Tutorial');
+			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 		}
-
-		// if (Input::get("by")!=ITSP::find(Auth::User()->itsp)->user_id){
-		// 	return "Error";
-		// }
-		
-		// $uploaddir = public_path()."/assets/tutorials";
-		// $uploadfile = $uploaddir . basename("t".$_GET['no'].".png");
-		// if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
-		// 	return "done";
-		// } else {
-  //  	 		echo "Possible file upload attack!\n";
-		// }
-		// return View::make('club.robo.XLR8_2015.resources');
-		// return View::make('tutorials');
 	}
 
 
