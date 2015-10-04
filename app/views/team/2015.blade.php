@@ -208,7 +208,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/rushil.jpg')}}" class="img-circle">
@@ -224,8 +224,23 @@
 								
 							</figure>
 						</div><!-- /.col -->
+						<div class="col-sm-6 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/pranav.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Pranav Jain
+										<span><i class="icon-phone">9167229212</i></span>
+										<span><i class="icon-mail">pranavjain@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
 					</div><!-- /.row -->
-
 					<hr>
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
@@ -278,7 +293,7 @@
 					</div><!-- /.row -->
 					
 					<div class="row  text-center">
-						<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+						<div class="col-sm-6 inner-left inner-right " >
 							<figure class="member">
 								<div class="icn-link">
 									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/umang.jpg')}}" class="img-circle">
@@ -289,6 +304,22 @@
 										Umang Chhaparia
 										<span><i class="icon-phone">9967346106</i></span>
 										<span><i class="icon-mail">umang147@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
+						<div class="col-sm-6 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/arnab.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Arnab Muhuri
+										<span><i class="icon-phone">9869101160</i></span>
+										<span><i class="icon-mail">bikearoundmumbai@gmail.com</i></span>
 									</h2>
 								</figcaption>
 								
@@ -330,7 +361,7 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
-								<h3>Web Manager</h3>
+								<h2>Web Manager</h2>
 							</header>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
@@ -353,7 +384,61 @@
 							</figure>
 						</div><!-- /.col -->
 					</div><!-- /.row -->
-
+					<br><br>
+					<div class="row">
+						<div class="col-md-8 col-sm-10 center-block text-center " >
+							<header>
+								<h3>Web Conveners</h3>
+							</header>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+					<div class="row  text-center">
+						<div class="col-sm-4 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/shubham.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								
+								<figcaption>
+									<h2>
+										Shubham Goel
+										<span><i class="icon-phone">8879069817</i></span>
+										<span><i class="icon-mail">sgoel160@gmail.com</i></span>
+									</h2>
+								</figcaption>
+								
+							</figure>
+						</div><!-- /.col -->
+						<div class="col-sm-4 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/babel.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								<figcaption>
+									<h2>
+										Kushal Babel
+										<span><i class="icon-phone">9967176779</i></span>
+										<span><i class="icon-mail">babel97kushal@gmail.com</i></span>
+									</h2>
+								</figcaption>	
+							</figure>
+						</div><!-- /.col -->
+						<div class="col-sm-4 inner-left inner-right " >
+							<figure class="member">
+								<div class="icn-link">
+									<span class="icn-more"></span><img src="{{URL::asset('assets/images/2015/anay.jpg')}}" class="img-circle">
+								</div><!-- /.icon-overlay -->
+								<figcaption>
+									<h2>
+										Anay Tripathi
+										<span><i class="icon-phone">--</i></span>
+										<span><i class="icon-mail">anay@gmail.com</i></span>
+									</h2>
+								</figcaption>	
+							</figure>
+						</div><!-- /.col -->
+					</div><!-- /.row -->
 					<hr>
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >

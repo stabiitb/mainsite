@@ -6,79 +6,6 @@ use Facebook\GraphUser;
 use Facebook\FacebookRequestException;
 use Facebook\FacebookRedirectLoginHelper;
 
-// class Table {
-
-//     protected $table = null;
-//     protected $header = null;
-//     protected $attr = null;
-//     protected $data = null;
-
-//     public function __construct($data = null, $attr = null, $header = null)
-//     {
-//         if(is_null($data)) return;
-//         $this->data = $data;
-//         $this->attr = $attr;
-//         if(is_array($header)) {
-//             $this->header = $header;
-//         }
-//         else {
-//             if(count($this->data) && $this->is_assoc($this->data[0]) || is_object($this->data[0])) {
-//                 $headerKeys = is_object($this->data[0]) ? array_keys((array)$this->data[0]) : array_keys($this->data[0]);
-//                 $this->header = array();
-//                 foreach ($headerKeys as $value) {
-//                     $this->header[] = $value;
-//                 }
-//             }
-//         }
-//         return $this;
-//     }
-
-//     public function build()
-//     {
-//         $atts = '';
-//         if(!is_null($this->attr)) {
-//             foreach ($this->attr as $key => $value) {
-//                 $atts .= $key . ' = "' . $value . '" ';
-//             }
-//         }
-//         $table = '<table ' . $atts . ' >';
-
-//         if(!is_null($this->header)) {
-//             $table .= '<thead><tr>';
-//             foreach ($this->header as $value) {
-//                 $table .= '<th>' . ucfirst($value) . '</th>';
-//             }
-//             $table .= '</thead></tr>';
-//         }
-
-//         $table .= '<tbody>';
-//         foreach ($this->data as $value) {
-//             $table .= $this->createRow($value);
-//         }
-//         $table .= '</tbody>';
-//         $table .= '</table>';
-//         return $this->table = $table;
-//     }
-
-//     protected function createRow($array = null)
-//     {	
-//     	$count=0;
-//         if(is_null($array)) return false;
-//             $row = '<tr>';
-//             foreach ($array as $value) {
-//             	if($count==3)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
-//             	else{
-//                 $row .= '<td>' . $value . '</td>';}
-//                 $count++;
-//             }
-//             $row .= '</tr>';
-//             return $row;
-//     }
-
-//     protected function is_assoc($array){
-//         return is_array($array) && array_diff_key($array, array_keys(array_keys($array)));
-//     }
-// }
 
 
 class UserController extends \BaseController {
@@ -124,7 +51,6 @@ class UserController extends \BaseController {
 
      	$email = $newUser->email;
 		$users = User::where('email','=', $email)->get();
-	
 
 		if(sizeof($users) == 0){
 			$user = new User;
@@ -193,8 +119,14 @@ class UserController extends \BaseController {
 		$user->save();
 		return Redirect::back();
 	}
+
 	public function verify(){
-		$gpo_id=Input::get('gpo_id');
+		if(Auth::User()->other_email == ""){
+			$gpo_id=Input::get('gpo_id');
+		}
+		else{
+			$gpo_id=Auth::User()->ldap_email;
+		}
 		$gpo_id = explode('@', $gpo_id)[0];
 		$user=Auth::User();
 		//var_dump($user);
@@ -265,6 +197,220 @@ class UserController extends \BaseController {
 			return "You dont have required access.";	
 		}
 		return '<a href="'.UserController::LoginURL().'">Login</a>. to continue';
+	}
+
+	public function login_page()
+	{
+		if(Auth::check()){
+			return Redirect::back();
+		}
+		else{
+			return View::make('user.login_page');
+		}
+	}
+
+	public function login(){
+		$ldap=Input::get('ldap');
+		$ldap = explode('@', $ldap)[0];
+		$ldap=$ldap."@iitb.ac.in";
+		$pwd=Input::get('password');
+		
+		$messageBag = new MessageBag;
+		$bag_empty = true;
+
+		if($ldap==""){
+			$messageBag->add('message',"Please enter LDAP ID" );
+			$bag_empty = false;
+		}
+		if($pwd==""){
+			$messageBag->add('message',"Please enter Password" );
+			$bag_empty = false;
+		}
+
+		if (! filter_var($ldap, FILTER_VALIDATE_EMAIL)) {
+			$messageBag->add('message',"Please enter valid LDAP ID" );
+			$bag_empty = false;
+		}
+		if(!$bag_empty){
+			return Redirect::back()->with('messages', $messageBag);
+		}
+
+		$users = User::where('ldap_email','=', $ldap)->get();
+		if(sizeof($users)<=0)
+		{
+			$messageBag->add('message',"User Doesnt Exist" );
+			$bag_empty = false;
+		}
+		if(sizeof($users)>1)
+		{
+			$messageBag->add('message',"ERROR! Multiple Users" );
+			$bag_empty = false;
+		}
+		if(!$bag_empty){
+			return Redirect::back()->with('messages', $messageBag);
+		}
+
+		if($users[0]->password != sha1($pwd)){
+			$messageBag->add('message',"Password doesn't match" );
+			return Redirect::back()->with('messages', $messageBag);
+		}
+		else{
+			if($users[0]->ldap_verified == 1){
+				Auth::login($users[0]);
+				return Redirect::to('/');
+			}
+			else{
+				$messageBag->add('message',"Please Verify LDAP (GPO) ID First" );
+				// return Redirect::back()->with('messages', $messageBag);
+				Auth::login($users[0]);
+				return Redirect::Route('user.profile')->with('messages', $messageBag);
+
+			}
+		}
+
+	}
+
+	public function signup(){
+
+		$name=Input::get('name');
+		$pwd=Input::get('password');
+		$pwd_verify=Input::get('password_verify');
+		$ldap=Input::get('ldap');
+		$ldap = explode('@', $ldap)[0];
+		$ldap=$ldap."@iitb.ac.in";
+		$email=Input::get('email');
+
+		$messageBag = new MessageBag;
+		$bag_empty = true;
+		if($name==""){
+			$messageBag->add('message',"Please enter Name" );
+			$bag_empty = false;
+		}
+		if($pwd==""){
+			$messageBag->add('message',"Please enter Password" );
+			$bag_empty = false;
+		}
+		if($ldap==""){
+			$messageBag->add('message',"Please enter LDAP ID" );
+			$bag_empty = false;
+		}
+		if($email==""){
+			$messageBag->add('message',"Please enter Email" );
+			$bag_empty = false;
+		}
+
+		if (strlen($_POST["password"]) < '8' || strlen($_POST["password"]) > '20') {
+			$messageBag->add('message',"Password Must Contain At Least 8 and At Most 20 Characters" );
+			$bag_empty = false;
+	    }
+
+		if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+			$messageBag->add('message',"Only letters and white space allowed in Name" );
+			$bag_empty = false;
+		}
+		if (! filter_var($ldap, FILTER_VALIDATE_EMAIL)) {
+			$messageBag->add('message',"Please enter valid LDAP ID" );
+			$bag_empty = false;
+		}
+
+		if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			$messageBag->add('message',"Please enter valid Email" );
+			$bag_empty = false;
+		}
+		if($pwd!=$pwd_verify){
+			$messageBag->add('message',"Passwords do not Match" );
+			$bag_empty = false;
+		}
+		if(!$bag_empty){
+			return Redirect::back()->with('messages', $messageBag);
+		}
+		$users = User::where('ldap_email','=', $ldap)->get();
+
+		if(sizeof($users) == 0){
+			$user = new User;
+			$user->other_email = $email;
+			$user->name = $name;
+			$user->password = sha1($pwd);
+			$user->ldap_email=$ldap;
+			$user->save();
+			Auth::login($user);
+			return Redirect::Route('user.profile');
+
+			$gpo_id=$ldap;
+			$gpo_id = explode('@', $gpo_id)[0];
+			$user=Auth::User();
+			//var_dump($user);
+			$key = 'Prateek';
+			$string =$user->id;
+			$user->ldap_email=$gpo_id."@iitb.ac.in";
+			User::where('id','=',$string)->update(array('ldap_email'=>$gpo_id.'@iitb.ac.in'));
+
+			$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $string, MCRYPT_MODE_CBC, md5(md5($key))));
+			$decrypted = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($encrypted), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+
+			//var_dump($encrypted);
+			//var_dump($decrypted);
+			//echo $gpo_id;
+			try {
+				 Mail::send('email.verifygpo', ['key' => URL::Route('user.profile').'?key='.urlencode($encrypted),'name'=>$user->Name], function($message) use($user)
+				 {
+		     		$message->to($user->ldap_email, $user->Name)->subject('Verify Stab Id');
+				 });
+				$messageBag_new = new MessageBag;
+				$messageBag_new->add('message',"We have sent you an email regarding account activation on your gpo id ".$user->ldap_email." .Click on the link to verify." );
+				if(Auth::check()) Auth::logout();
+				return Redirect::back()->with('messages', $messageBag_new)->withInput();
+			} catch (Exception $e) {
+				if(Auth::check()) Auth::logout();
+				return $e->getMessage();
+			}
+
+
+			// return Redirect::route('user.profile');
+		}
+		else{
+			$messageBag->add('message',"A User with the same LDAP ID Already Exists" );
+			return Redirect::back()->with('messages', $messageBag);
+		}
+		
+	}
+	public function set_password()
+	{
+		$pwd=Input::get('password');
+		$pwd_verify=Input::get('password_verify');
+		$user=Auth::User();
+
+
+		$messageBag = new MessageBag;
+		$bag_empty = true;
+
+		if($pwd==""){
+			$messageBag->add('message',"Please enter Password" );
+			$bag_empty = false;
+		}
+
+		if (strlen($_POST["password"]) < '8' || strlen($_POST["password"]) > '20') {
+			$messageBag->add('message',"Password Must Contain At Least 8 and At Most 20 Characters" );
+			$bag_empty = false;
+	    }
+
+		if($pwd!=$pwd_verify){
+			$messageBag->add('message',"Passwords do not Match" );
+			$bag_empty = false;
+		}
+		if(!$bag_empty){
+			return Redirect::back()->with('messages', $messageBag);
+		}
+
+		try{
+			User::where('id','=',$user->id)->update(array('password'=>sha1($pwd)));
+			$messageBag1 = new MessageBag;
+			$messageBag1->add('message',"Password Updated Successfully. \n You can now Login without fb also." );
+			return Redirect::back()->with('messages', $messageBag1)->withInput();
+		}
+		catch (Exception $e) {
+				return $e->getMessage();
+		}
 	}
 
 }

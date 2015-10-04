@@ -43,6 +43,11 @@ Route::group(array('prefix' => 'itsp'),function()
 
 });
 
+//Tutorials
+Route::get('tutorials',array('as'=>'tutorials','uses'=>'HomeController@tutorials'));
+Route::get('tutorials/upload',array('as'=>'tutorials.upload','uses'=>'HomeController@tutorials_upload'));
+Route::post('tutorials/save',array('as'=>'tutorials.save','uses'=>'HomeController@tutorials_save'));
+
 Route::group(array('prefix' => 'robotics-club/event/XLR8-2015'),function()
 {
     Route::get('/',array('as'=>'club.robo.XLR8_2015.index','uses'=>'HomeController@XLR8_index'));
@@ -55,6 +60,22 @@ Route::group(array('prefix' => 'robotics-club/event/XLR8-2015'),function()
     Route::get('mentor_list',array('as'=>'club.robo.XLR8_2015.mentor_list','uses'=>'HomeController@XLR8_mentor_list'));
     Route::get('resources',array('as'=>'club.robo.XLR8_2015.resources','uses'=>'HomeController@XLR8_resources'));
 });
+
+Route::group(array('prefix' => 'aeromodelling-club/event/RC-Plane'),function()
+{
+    Route::get('/',array('as'=>'club.aero.RC_Plane.index','uses'=>'HomeController@RCPlane_index'));
+    //Route::get('frequently-asked-questions',array('as'=>'club.robo.XLR8_2015.faq','uses'=>'HomeController@XLR8_faq'));
+    Route::get('about',array('as'=>'club.aero.RC_Plane.about','uses'=>'HomeController@RCPlane_about'));
+    //Route::get('discuss',array('as'=>'club.robo.XLR8_2015.discuss','uses'=>'HomeController@XLR8_discuss'));
+    //Route::get('timeline',array('as'=>'club.robo.XLR8_2015.timeline','uses'=>'HomeController@XLR8_timeline'));
+    Route::get('student_reg',array('as'=>'club.aero.RC_Plane.students_reg','uses'=>'HomeController@RCPlane_stud_reg'));
+    //Route::get('mentor_reg',array('as'=>'club.robo.XLR8_2015.mentor_reg','uses'=>'HomeController@XLR8_mentor_reg'));
+    //Route::get('mentor_list',array('as'=>'club.robo.XLR8_2015.mentor_list','uses'=>'HomeController@XLR8_mentor_list'));
+    Route::get('resources',array('as'=>'club.aero.RC_Plane.resources','uses'=>'HomeController@RCPlane_resources'));
+});
+
+Route::get('techandrndexpo2015/',array('as'=>'events.techexpo.2015','uses'=>'HomeController@techexpo2015'));
+Route::get('techandrndexpo2015/{page}',array('as'=>'events.techexpo.2015.pages','uses'=>'HomeController@techexpo2015'));
 
 
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
@@ -163,6 +184,11 @@ Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'Ap
 
 
 /* User */
+Route::get('login_page',array('as'=>'login_page', 'uses' => 'UserController@login_page'));
+Route::post('login',array('as'=>'user.login','uses'=>'UserController@login'));
+Route::post('signup',array('as'=>'user.signup','uses'=>'UserController@signup'));
+Route::post('set_password',array('as'=>'user.set_password','uses'=>'UserController@set_password'));
+
 Route::any('logout',array('as'=>'logout' ,'before'=>'login', 'uses' => 'UserController@logout'));
 Route::any('profile',array('as'=>'user.profile' ,'before'=>'login', 'uses' => 'UserController@profile'));
 Route::get('fblogin','UserController@fblogin');

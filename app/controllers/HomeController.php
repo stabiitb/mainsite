@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\MessageBag;
 
 class HomeController extends BaseController {
 
@@ -38,8 +39,17 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.aero.vision');
-		else if($page=='event')
-			return View::make('club.aero.event');
+		else if($page=='event'){
+			$file = fopen("https://docs.google.com/spreadsheets/d/1tnuJIGHW-tC9jBCBkT0T2FdN-QvIFkVCMjrubi0hDTs/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+			}
+			return View::make('club.aero.event',compact('events'));
+		}
 		else if ($page=='gallery') {
 			
 			$pics=$this->get_images("aero");
@@ -65,8 +75,19 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.elec.vision');
-		else if($page=='event')
-			return View::make('club.elec.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1YiD_vHJwYnQYWU58DOJEBonDiWgXDvUM2GjtiDx5c1c/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.elec.event',compact('events'));
+		}
 		else if ($page=='gallery') {
 			
 			$pics=$this->get_images("elec");
@@ -95,8 +116,19 @@ class HomeController extends BaseController {
 		}
 		else if($page=='vision')
 			return View::make('club.krittika.vision');
-		else if($page=='event')
-			return View::make('club.krittika.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1dF9mkE4mqKzh3BoLEVFRpedCnzhckD5VKZQfKGXdC4s/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.krittika.event',compact('events'));
+		}
 		else if($page=='the-cosmic-ladder-distance')
 			return View::make('club.krittika.events.cosmic_ladder');
 		else if ($page=='gallery') {
@@ -112,7 +144,6 @@ class HomeController extends BaseController {
 		else
 			return View::make('club.krittika.home');
 	}
-
 	public function MnP($page="about")
 	{
 		if($page=='about')
@@ -134,8 +165,19 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.mnp.video');
-		else if($page=='event')
-			return View::make('club.mnp.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1uRtl1c3vQYhLKmdWbEImjB4uyWXwMPYpgTcxMZ-PrGs/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.mnp.event',compact('events'));
+		}
 		else
 			return View::make('club.mnp.home');
 	}
@@ -161,8 +203,19 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.robo.video');
-		else if($page=='event')
-			return View::make('club.robo.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1aj4QyEJEE8QgugfSsecs_Q9k0e86N1m1OjFtZnfghwk/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.robo.event',compact('events'));
+		}
 		else if($page=="xlr8-registration")
 			return View::make('club.robo.xlr8_reg');
 		else if($page=="teams-and-mentors-xlr8-2014")
@@ -174,6 +227,7 @@ class HomeController extends BaseController {
 		else
 			return View::make('club.robo.home');
 	}
+	
 	public function wncc($page="about")
 	{
 		if($page=='about')
@@ -195,12 +249,45 @@ class HomeController extends BaseController {
 		}
 		else if ($page=='video') 
 			return View::make('club.wncc.video');
-		else if($page=='event')
-			return View::make('club.wncc.event');
+		else if($page=='event'){
+
+			$file = fopen("https://docs.google.com/spreadsheets/d/1UG5iXKh1DZJvy1mSGBE92Xs_My7wfo_wJLVq-RVloe8/export?format=csv","r");
+			// $events=array();
+			while(!feof($file)){
+				$csv = fgetcsv($file);
+				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$events[]=$csv;
+				}
+				
+			}
+			return View::make('club.wncc.event',compact('events'));
+		}
 		else
 			return View::make('club.wncc.home');
 	}
 
+
+
+
+	public function techexpo2015($page="about")
+	{
+		if($page=='about')
+			return View::make('events.techexpo.2015.about');
+		else if($page=='registration_tech_projects')
+			return View::make('events.techexpo.2015.tech_project_reg');
+		else if($page=='registration_rnd_projects')
+			return View::make('events.techexpo.2015.rnd_project_reg');
+		else if ($page=='gallery') {
+			$pics=$this->get_images_of_folder("/media/2015/techexpo/gallery_2014");
+			return View::make('events.techexpo.2015.script_gallery',compact('pics'));
+		}
+		else if ($page=='video-gallery') {
+			return View::make('events.techexpo.2015.video-gallery');
+		}
+		else{
+			return View::make('events.techexpo.2015.about');
+		}
+	}
 
 	public function technovation()
 	{
@@ -216,13 +303,36 @@ class HomeController extends BaseController {
 		return View::make('home.techgc');
 	}
 	public function get_images($club){
-		$dir = public_path()."/assets/gallery_images/$club";
+		$pics = array();
+		$dir = public_path()."/media/2015/club_assets/$club/Events";
+		$dh  = opendir($dir);
+		while (false !== ($subdir = readdir($dh))) {
+	    	if ($subdir!="." && $subdir!="..")
+	    	{	$newdir = "$dir/$subdir/Photos";    		
+	    		$newdh  = opendir($newdir);
+	    		$pics[] = $subdir;
+	    		while (false !== ($image = readdir($newdh))) {
+			    	if ($image!="." && $image!="..")
+			    	{	
+			    		$pics[$subdir][] = $image;
+			    	}	
+				}
+	    	}	
+		}
+		return $pics;
+	}
+
+	public function get_images_of_folder($folder){
+		$pics = array();
+		$dir = public_path().$folder;
 		$dh  = opendir($dir);
 		while (false !== ($image = readdir($dh))) {
 	    	if ($image!="." && $image!="..")
-	    	$images[] = $image;
+	    	{    		
+	    		$pics[] = $image;
+	    	}	
 		}
-		return $images;
+		return $pics;
 	}
 	public function update_script($club)
 	{
@@ -271,6 +381,23 @@ class HomeController extends BaseController {
 			}
 		}
 		return [$managers,$conveners];
+	}
+
+	public function RCPlane_index()
+	{
+		return View::make('club.aero.RC_Plane.index');
+	}
+	public function RCPlane_about()
+	{
+		return View::make('club.aero.RC_Plane.about');
+	}
+	public function RCPlane_stud_reg()
+	{
+		return View::make('club.aero.RC_Plane.students_reg');
+	}
+	public function RCPlane_resources()
+	{
+		return View::make('club.aero.RC_Plane.resources');
 	}
 
 	public function XLR8_index()
@@ -337,5 +464,118 @@ class HomeController extends BaseController {
 			echo "Please login.";
 		}
 	}
+
+	//Turotials
+	public function tutorials()
+	{
+		$dir = public_path()."/assets/tutorials";
+		$dh  = opendir($dir);
+
+		$all_tut = array(
+			"Maths and Physics" => array(),
+			"Krittika" => array(),
+			"WnCC" => array(),
+			"Robotics" => array(),
+			"Electronics" => array(),
+			"Tech-GSR" => array(),
+			"Technovation" => array(),
+			"Aeromodelling" => array()
+		);
+
+		$all_tut["Maths and Physics"]=Tutorials::where('Club','LIKE','%Maths%')->get();
+		$all_tut["Krittika"]=Tutorials::where('Club','LIKE','%ttika%')->get();
+		$all_tut["WnCC"]=Tutorials::where('Club','LIKE','%WnCC%')->get();
+		$all_tut["Robotics"]=Tutorials::where('Club','LIKE','%Robo%')->get();
+		$all_tut["Electronics"]=Tutorials::where('Club','LIKE','%tronics%')->get();
+		$all_tut["Tech-GSR"]=Tutorials::where('Club','LIKE','%GSR%')->get();
+		$all_tut["Technovation"]=Tutorials::where('Club','LIKE','%vation%')->get();
+		$all_tut["Aeromodelling"]=Tutorials::where('Club','LIKE','%model%')->get();
+		return View::make('tutorials', compact('all_tut'));
+	}
+	public function tutorials_save()
+	{
+		if (Auth::check()){
+			if (Auth::User()->ldap_verified == 0){
+	     		$messageBag = new MessageBag;
+				$messageBag->add('message',"Please Verify Your GPO ID before Uploading a Tutorial" );
+				return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
+			}
+			else{
+
+				$user_id = Auth::User()->id;
+				$name = Input::get("Name");
+				$club = Input::get("Club");
+				$file = Input::file("File");
+
+				if(!Input::hasFile("File") || $user_id=="" || $name=="" || $club==""){
+
+					$messageBag = new MessageBag;
+					$messageBag->add('message',"Error in form. Fill up all the required fields correctly" );
+
+					return Redirect::back()->with('messages', $messageBag)->withInput();
+				}
+				if (Input::file("File") -> getSize() > 2*1024*1024) {
+					$messageBag = new MessageBag;
+					$messageBag->add('message',"Files Bigger than 2 MB aren't allowed" );
+
+					return Redirect::back()->with('messages', $messageBag)->withInput();
+					
+				}
+
+
+				$tutorial = new Tutorials;
+
+				$tutorial->name = $name;
+				$tutorial->by = intval($user_id);
+				$tutorial->club = $club;
+				// $tutorial->url = $filename;
+				$tutorial->save();
+
+				$destinationPath = public_path()."/assets/tutorials/";
+				$extension = $file->getClientOriginalExtension();
+				$filename = ($tutorial->id).".".$extension;
+				$file->move($destinationPath, $filename);
+
+				// $tutorial->name = $name;
+				// $tutorial->by = intval($user_id);
+				// $tutorial->club = $club;
+				$tutorial->url = $filename;
+				$tutorial->save();
+
+
+				$messageBag = new MessageBag;
+				$messageBag->add('message',"Tutorial successfully uploaded." );
+				return Redirect::back()->with('messages', $messageBag)->withInput();
+				
+			}
+		}
+		else{
+     		$messageBag = new MessageBag;
+			$messageBag->add('message','Please Login before Uploading a Tutorial');
+			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
+		}
+
+	
+	}
+
+	public function tutorials_upload()
+	{
+		if (Auth::check()){
+			if (Auth::User()->ldap_verified == 0){
+	     		$messageBag = new MessageBag;
+				$messageBag->add('message',"Please Verify Your GPO ID before Uploading a Tutorial" );
+				return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
+			}
+			else{
+				return View::make('tutorials_upload');				
+			}
+		}
+		else{
+     		$messageBag = new MessageBag;
+			$messageBag->add('message','Please Login before Uploading a Tutorial');
+			return Redirect::to('login_page')->with('messages', $messageBag)->withInput();
+		}
+	}
+
 
 }
