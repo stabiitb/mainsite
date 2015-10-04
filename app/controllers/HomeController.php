@@ -470,25 +470,26 @@ class HomeController extends BaseController {
 		$dir = public_path()."/assets/tutorials";
 		$dh  = opendir($dir);
 
-		$all_tut = array();
-		$all_tut[] = "Maths and Physics";
-		$all_tut[] = "Krittika";
-		$all_tut[] = "WnCC";
-		$all_tut[] = "Robotics";
-		$all_tut[] = "Electronics";
-		$all_tut[] = "Tech-GSR";
-		$all_tut[] = "Technovation";
-		$all_tut[] = "Aeromodelling";
+		$all_tut = array(
+			"Maths and Physics" => array(),
+			"Krittika" => array(),
+			"WnCC" => array(),
+			"Robotics" => array(),
+			"Electronics" => array(),
+			"Tech-GSR" => array(),
+			"Technovation" => array(),
+			"Aeromodelling" => array()
+		);
 
-		$all_tut["Maths and Physics"][]=TutorialsTable::where('Club','LIKE','%Maths%')->get();
-		$all_tut["Krittika"][]=TutorialsTable::where('Club','LIKE','%ttika%')->get();
-		$all_tut["WnCC"][]=TutorialsTable::where('Club','LIKE','%WnCC%')->get();
-		$all_tut["Robotics"][]=TutorialsTable::where('Club','LIKE','%Robo%')->get();
-		$all_tut["Electronics"][]=TutorialsTable::where('Club','LIKE','%tronics%')->get();
-		$all_tut["Tech-GSR"][]=TutorialsTable::where('Club','LIKE','%GSR%')->get();
-		$all_tut["Technovation"][]=TutorialsTable::where('Club','LIKE','%vation%')->get();
-		$all_tut["Aeromodelling"][]=TutorialsTable::where('Club','LIKE','%model%')->get();
-		return View::make('tutorials', compact('mnp_tut','all_tut'));
+		$all_tut["Maths and Physics"]=Tutorials::where('Club','LIKE','%Maths%')->get();
+		$all_tut["Krittika"]=Tutorials::where('Club','LIKE','%ttika%')->get();
+		$all_tut["WnCC"]=Tutorials::where('Club','LIKE','%WnCC%')->get();
+		$all_tut["Robotics"]=Tutorials::where('Club','LIKE','%Robo%')->get();
+		$all_tut["Electronics"]=Tutorials::where('Club','LIKE','%tronics%')->get();
+		$all_tut["Tech-GSR"]=Tutorials::where('Club','LIKE','%GSR%')->get();
+		$all_tut["Technovation"]=Tutorials::where('Club','LIKE','%vation%')->get();
+		$all_tut["Aeromodelling"]=Tutorials::where('Club','LIKE','%model%')->get();
+		return View::make('tutorials', compact('all_tut'));
 	}
 	public function tutorials_save()
 	{
