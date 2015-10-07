@@ -269,7 +269,7 @@
 				<div class="container inner">
 					<p class="pull-left">© 2015 STAB-IITB. All rights reserved. Designed by
 					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a> and maintained by 
-					<a href="https://www.facebook.com/siddharth.bulia">Siddharth Bulia</a>.
+					<a href="{{URL::Route('team_2015')}}#Webteam">STAB Web Team</a>.
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::Route('stab.home')}}">Home</a></li>

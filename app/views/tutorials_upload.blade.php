@@ -1,4 +1,4 @@
-@extends('layout.default')
+ @extends('layout.default')
 @section('content')
 <main>
 	@if (Session::get('messages') != null && Session::get('messages')->has('message'))			
