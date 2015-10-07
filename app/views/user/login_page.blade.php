@@ -1,4 +1,7 @@
 @extends('layout.default')
+@section('script')
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+@endsection
 @section('content')
 <main>
 	@if (Session::get('messages') != null && Session::get('messages')->has('message'))			
@@ -27,6 +30,7 @@
 						<input class="form-control" name="password_verify" size="8" type="password" placeholder="Re-enter Password" required>
 						<input class="form-control" name="ldap" type="text" placeholder="LDAP ID (For Example: <LDAP ID>@iitb.ac.in)" required>
 						<input class="form-control" name="email" type="email" placeholder="Email (Preferrably gmail)" required>
+						<div class="g-recaptcha" data-sitekey="6LeQbA0TAAAAALLqeFkJGG-JVh-CHYilzDaVxWxH"></div>
 						<input class="btn btn-green" type="submit" value="Signup">
 					</form>
 				</div><!-- /.col -->

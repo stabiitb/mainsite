@@ -6,6 +6,79 @@ use Facebook\GraphUser;
 use Facebook\FacebookRequestException;
 use Facebook\FacebookRedirectLoginHelper;
 
+// class Table {
+
+//     protected $table = null;
+//     protected $header = null;
+//     protected $attr = null;
+//     protected $data = null;
+
+//     public function __construct($data = null, $attr = null, $header = null)
+//     {
+//         if(is_null($data)) return;
+//         $this->data = $data;
+//         $this->attr = $attr;
+//         if(is_array($header)) {
+//             $this->header = $header;
+//         }
+//         else {
+//             if(count($this->data) && $this->is_assoc($this->data[0]) || is_object($this->data[0])) {
+//                 $headerKeys = is_object($this->data[0]) ? array_keys((array)$this->data[0]) : array_keys($this->data[0]);
+//                 $this->header = array();
+//                 foreach ($headerKeys as $value) {
+//                     $this->header[] = $value;
+//                 }
+//             }
+//         }
+//         return $this;
+//     }
+
+//     public function build()
+//     {
+//         $atts = '';
+//         if(!is_null($this->attr)) {
+//             foreach ($this->attr as $key => $value) {
+//                 $atts .= $key . ' = "' . $value . '" ';
+//             }
+//         }
+//         $table = '<table ' . $atts . ' >';
+
+//         if(!is_null($this->header)) {
+//             $table .= '<thead><tr>';
+//             foreach ($this->header as $value) {
+//                 $table .= '<th>' . ucfirst($value) . '</th>';
+//             }
+//             $table .= '</thead></tr>';
+//         }
+
+//         $table .= '<tbody>';
+//         foreach ($this->data as $value) {
+//             $table .= $this->createRow($value);
+//         }
+//         $table .= '</tbody>';
+//         $table .= '</table>';
+//         return $this->table = $table;
+//     }
+
+//     protected function createRow($array = null)
+//     {	
+//     	$count=0;
+//         if(is_null($array)) return false;
+//             $row = '<tr>';
+//             foreach ($array as $value) {
+//             	if($count==3)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
+//             	else{
+//                 $row .= '<td>' . $value . '</td>';}
+//                 $count++;
+//             }
+//             $row .= '</tr>';
+//             return $row;
+//     }
+
+//     protected function is_assoc($array){
+//         return is_array($array) && array_diff_key($array, array_keys(array_keys($array)));
+//     }
+// }
 
 
 class UserController extends \BaseController {
@@ -272,16 +345,38 @@ class UserController extends \BaseController {
 
 	public function signup(){
 
-		$name=Input::get('name');
+		$name=(Input::get('name');
 		$pwd=Input::get('password');
 		$pwd_verify=Input::get('password_verify');
 		$ldap=Input::get('ldap');
 		$ldap = explode('@', $ldap)[0];
 		$ldap=$ldap."@iitb.ac.in";
 		$email=Input::get('email');
+		$captcha=Input::get('g-recaptcha-response');
 
 		$messageBag = new MessageBag;
 		$bag_empty = true;
+
+		// To incorporate captcha
+		$url = 'https://www.google.com/recaptcha/api/siteverify';
+		$data = array('secret' => '6LeQbA0TAAAAAGj7pDd26ghKX_LyotrYw8ABD48o', 'response' => $captcha);
+
+		// use key 'http' even if you send the request to https://...
+		$options = array(
+    		'http' => array(
+		        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+		        'method'  => 'POST',
+		        'content' => http_build_query($data),
+		    ),
+		);
+		$context  = stream_context_create($options);
+		$result = file_get_contents($url, false, $context);
+     	echo $result;
+     	$result = json_decode($result);
+		if($result->success=='false'){
+			$messageBag->add('message',"Wrong Captcha");
+			$bag_empty = false;
+		}
 		if($name==""){
 			$messageBag->add('message',"Please enter Name" );
 			$bag_empty = false;
@@ -299,10 +394,10 @@ class UserController extends \BaseController {
 			$bag_empty = false;
 		}
 
-		if (strlen($_POST["password"]) < '8' || strlen($_POST["password"]) > '20') {
-			$messageBag->add('message',"Password Must Contain At Least 8 and At Most 20 Characters" );
-			$bag_empty = false;
-	    }
+		// if (strlen($_POST["password"]) < '8' || strlen($_POST["password"]) > '20') {
+		// 	$messageBag->add('message',"Password Must Contain At Least 8 and At Most 20 Characters" );
+		// 	$bag_empty = false;
+	 //    }
 
 		if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 			$messageBag->add('message',"Only letters and white space allowed in Name" );

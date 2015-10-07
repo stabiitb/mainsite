@@ -36,6 +36,7 @@
 		<![endif]-->
 
 		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
+		@yield('script')
 		
 	</head>
 	
