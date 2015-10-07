@@ -345,7 +345,7 @@ class UserController extends \BaseController {
 
 	public function signup(){
 
-		$name=(Input::get('name');
+		$name=Input::get('name');
 		$pwd=Input::get('password');
 		$pwd_verify=Input::get('password_verify');
 		$ldap=Input::get('ldap');
