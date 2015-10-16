@@ -533,7 +533,8 @@ class HomeController extends BaseController {
 
 				$destinationPath = public_path()."/assets/tutorials/";
 				$extension = $file->getClientOriginalExtension();
-				$filename = ($tutorial->id).".".$extension;
+				// $filename = ($tutorial->id).".".$extension;
+				$filename = ($tutorial->id);
 				$file->move($destinationPath, $filename);
 
 				// $tutorial->name = $name;
