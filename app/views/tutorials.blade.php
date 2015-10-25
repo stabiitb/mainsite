@@ -26,6 +26,7 @@
 											<figure>
 												<?php
 													$tut_name = $club[$x]["name"];
+													$tut_description = $club[$x]["desc"];
 													$stored_name  = $club[$x]["url"];
 													$by = $club[$x]["by"];
 													$by_name = User::where('id','=', $by)->get();
@@ -35,6 +36,9 @@
 												<section class="light-bg" style="padding:20px;margin-bottom:20px">
 												<h2><a href="{{ URL::asset('assets/tutorials/'.$stored_name)}}">{{$tut_name}}</a></h2>
 												<figure>
+													<p>
+														{{$tut_description}}
+													</p>
 													<div class="row">
 														<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
 															<p>Uploaded by {{$by_name}}</p>

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddAllotedSlotAndStatus' => $baseDir . '/app/database/migrations/2015_04_10_181054_add_alloted_slot_and_status.php',
+    'AddDescriptionToTutorials' => $baseDir . '/app/database/migrations/2015_10_25_115909_Add_Description_to_Tutorials.php',
     'AddFieldsPasswordAndOtherEmails' => $baseDir . '/app/database/migrations/2015_09_19_210209_add_fields_password_and_other_emails.php',
     'AddedId5InItsp' => $baseDir . '/app/database/migrations/2015_04_14_141847_added_id5_in_itsp.php',
     'AddedIdsFieldsInItsp' => $baseDir . '/app/database/migrations/2015_04_14_014429_added_ids_fields_in_itsp.php',
@@ -4209,6 +4210,7 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\CssToInlineStyles' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php',
     'TijsVerkoyen\\CssToInlineStyles\\Exception' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Exception.php',
     'TijsVerkoyen\\CssToInlineStyles\\Specificity' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Specificity.php',
+    'Tutorials' => $baseDir . '/app/models/Tutorials.php',
     'TutorialsTable' => $baseDir . '/app/database/migrations/2015_10_03_070737_tutorials_table.php',
     'User' => $baseDir . '/app/models/User.php',
     'UserController' => $baseDir . '/app/controllers/UserController.php',
