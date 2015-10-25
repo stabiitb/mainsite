@@ -22,7 +22,11 @@
 					</header>
 					<form id="tutorial_form" enctype="multipart/form-data" class="forms" action="{{URL::Route('tutorials.save')}}" method="post">
 						<input class="form-control" name="Name" type="text" placeholder="Name" required>
-						<input class="form-control" name="Club" size="8" placeholder="Enter corresponding Club" required>
+						<input class="form-control" name="Club" type="text" maxlength="8" placeholder="Enter corresponding Club" required>
+						<input class="form-control" name="Description" type="text" maxlength="140" placeholder="Enter Description here... (Not more than 140 characters)" required>
+						<!-- <input class="form-control" name="Club" size="8" placeholder="Enter corresponding Club" required> -->
+						<!-- <br> -->
+						<!-- <textarea name="Desc" form="tutorial_form" maxlength="140" form="tutorial_form">Enter Description here... (Not more than 140 characters)</textarea> -->
 						<br>
 						<span>Choose Tutorial File. Max Size: 2MB</span>
 						<input style="margin-top:10px;" name="File" type="file" placeholder="Enter Tutorial File" required> 
