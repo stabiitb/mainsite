@@ -199,18 +199,12 @@
 								
 
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">Technovation</a>
-									
-									<ul class="dropdown-menu">
-										
-										<li><a href="http://stab-iitb.org/technovation/">Visit Site</a></li>
-										
-									</ul> <!-- /.dropdown-menu -->
+										<li><a href="http://stab-iitb.org/technovation/">Technovation</a></li>
 								</li> <!-- /.dropdown -->
 
 
 								<li class="dropdown">
-									<a href="http://stab-iitb.org/tinkerers-lab/">Tinkerer's Lab</a>
+									<a href="http://stab-iitb.org/wiki/">Stab WIKI</a>
 								</li><!-- /.dropdown -->
 
 								<li class="dropdown">
