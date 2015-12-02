@@ -199,7 +199,7 @@
 								
 
 								<li class="dropdown">
-										<li><a href="http://stab-iitb.org/technovation/">Technovation</a></li>
+										<li><a href="www.stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></li>
 								</li> <!-- /.dropdown -->
 
 
@@ -231,7 +231,7 @@
 									
 									<ul class="dropdown-menu">
 										<!-- <li><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerers’ Lab</a></li>									 -->
-										<li><a href="http://wiki.stab-iitb.org/wiki/Main_Page">STAB WIKI</a></li>
+										<li><a href="http://stab-iitb.org/technovation">Technovation</a></li>
 										<!-- <li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li> -->
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
