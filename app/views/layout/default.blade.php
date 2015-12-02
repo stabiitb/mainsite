@@ -199,7 +199,7 @@
 								
 
 								<li class="dropdown">
-										<li><a href="www.stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></li>
+										<li><a href="http://www.stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></li>
 								</li> <!-- /.dropdown -->
 
 
