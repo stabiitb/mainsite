@@ -235,8 +235,8 @@ count_it();
 							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
 <!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
  -->					     @endif
-							 <li class="single-block"><a href="{{URL::route('events.techexpo.2015')}}" class="btn">&emsp;&emsp;Tech & RnD Exposition 2015&emsp;&emsp;</a> </li>	
-							 <li class="single-block"><a href="{{URL::route('club.aero.RC_Plane.index')}}" class="btn">RC Plane</a> &emsp;</li>	
+							 <!--<li class="single-block"><a href="{{URL::route('events.techexpo.2015')}}" class="btn">&emsp;&emsp;Tech & RnD Exposition 2015&emsp;&emsp;</a> </li>	-->
+							 <!--<li class="single-block"><a href="{{URL::route('club.aero.RC_Plane.index')}}" class="btn">RC Plane</a> &emsp;</li>	-->
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> &emsp; <a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a></li>
 							  	
 							<!--
