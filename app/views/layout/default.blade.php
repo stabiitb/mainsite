@@ -204,7 +204,7 @@
 
 
 								<li class="dropdown">
-									<a href="http://wiki.stab-iitb.org/wiki/Main_Page">Stab WIKI</a>
+									<a href="http://stab-iitb.org/wiki/Main_Page">Stab WIKI</a>
 								</li><!-- /.dropdown -->
 
 								<li class="dropdown">

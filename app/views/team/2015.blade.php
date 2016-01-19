@@ -416,8 +416,8 @@
 								<figcaption>
 									<h2>
 										Anay Tripathi
-										<span><i class="icon-phone">--</i></span>
-										<span><i class="icon-mail">anay@gmail.com</i></span>
+										<span><i class="icon-phone">8879049043</i></span>
+										<span><i class="icon-mail">tripathi.anay@gmail.com</i></span>
 									</h2>
 								</figcaption>	
 							</figure>

@@ -45,7 +45,24 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+						
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
 			}
 			return View::make('club.aero.event',compact('events'));
@@ -82,7 +99,24 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
 				
 			}
@@ -123,9 +157,25 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
-				
 			}
 			return View::make('club.krittika.event',compact('events'));
 		}
@@ -172,9 +222,25 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
-				
 			}
 			return View::make('club.mnp.event',compact('events'));
 		}
@@ -210,7 +276,24 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
 				
 			}
@@ -256,9 +339,25 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					try {
+					$img = explode('/',$csv[4]);
+					$img = $img[5];
+					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+					}
+					catch(Exception $e){
+
+						try{
+							$img = explode('=',$csv[4]);
+							$img = $img[1];
+							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
+						}
+						catch(Exception $e){
+
+						}
+					}
 					$events[]=$csv;
+
 				}
-				
 			}
 			return View::make('club.wncc.event',compact('events'));
 		}
