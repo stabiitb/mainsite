@@ -36,6 +36,7 @@
 		<![endif]-->
 
 		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
+		<script src="http://gymkhana.iitb.ac.in/sso/static/widget/js/login.min.js" type="application/javascript"></script>
 		@yield('script')
 		
 	</head>
@@ -54,9 +55,14 @@
 						
 						<ul class="info pull-left">
 							<li><a href="mailto://oc.stab@iitb.ac.in"><i class="icon-mail-1 contact"></i>oc.stab@iitb.ac.in</a></li>
+
 						</ul><!-- /.info -->
 						
 						<ul class="pull-right" style="margin:3px">
+							<!-- <a href="{{UserController::SSOLoginURL()}}"><button id="sso_but">Login@SSO</button></a>  class = "btn btn-small btn-green"-->
+							<div  id="sso-root" style = "height:10px width:10px"></div>
+							
+
 							@if(Auth::check())
 							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
 							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
@@ -113,6 +119,32 @@
 							  }
 							</style>
 						</div>
+						<script type="application/javascript">
+
+					        new SSO_JS({
+					            config: {
+					                client_id: 'UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl',   // Compulsory
+					                scope: ['basic', 'profile'],    // Optional. Default is  ['basic']
+					                state: '', // Optional. Default None
+					                response_type: 'code',  // Optional. Default is 'code'
+					                redirect_uri: 'http://localhost:8088/sso_login_redirect',    //Optional
+					                new_window: 'false',    // Optional.
+					                                        // Where authorization page should be opened in new tab or
+					                                        // same tab Default is false.
+					                sso_root: document.getElementById('sso-root'),
+					                /* Optional
+					                 document.getElementById don't work if your element is not in light DOM. In that case you need to
+					                 provide selector here. In most of the cases this will work.
+					                 */
+					            },
+					            colors: { // All Optional
+					                button_div_bg_color: '39ac90',//'303F9F', // Background color of button
+					                button_anchor_color: 'FFFFFF', // Font color of Button
+					                logout_anchor_color: '727272', // Font color of logout mark (The one with 'Login as other user'
+					            },
+					        }).init();
+
+					    </script>
 						
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
 						
