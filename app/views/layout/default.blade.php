@@ -18,8 +18,8 @@
 		<link href="{{ URL::asset('assets/css/animate.min.css')}}" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
+		<link href="{{ URL::asset('assets/css/fonts/lato.css') }}" rel="stylesheet">
+		<link href="{{ URL::asset('assets/css/fonts/source_sans_pro.css') }}" rel="stylesheet">
 		
 		<!-- Icons/Glyphs -->
 		<link href="{{ URL::asset('assets/fonts/fontello.css')}}" rel="stylesheet">
