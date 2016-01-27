@@ -197,6 +197,8 @@ Route::post('profile_update',array('as'=>'user.update','before'=>'login','uses'=
 Route::get('profile_edit',array('as'=>'user.edit','before'=>'login','uses'=>'UserController@edit'));
 Route::get('show_users',array('as'=>'user.show','before'=>'login','uses'=>'UserController@show_users'));
 
+/* SSO USER */
+Route::get('sso_login_redirect',array('as'=>'sso_login_redirect','uses' => 'UserController@sso_login_redirect'));
 
 
 

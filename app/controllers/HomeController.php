@@ -45,24 +45,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-						
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
 			}
 			return View::make('club.aero.event',compact('events'));
@@ -99,24 +82,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
 				
 			}
@@ -157,25 +123,9 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
+				
 			}
 			return View::make('club.krittika.event',compact('events'));
 		}
@@ -222,25 +172,9 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
+				
 			}
 			return View::make('club.mnp.event',compact('events'));
 		}
@@ -276,24 +210,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
 				
 			}
@@ -339,25 +256,9 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					try {
-					$img = explode('/',$csv[4]);
-					$img = $img[5];
-					$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-					}
-					catch(Exception $e){
-
-						try{
-							$img = explode('=',$csv[4]);
-							$img = $img[1];
-							$csv[4]='https://drive.google.com/uc?export=download&id='.$img;
-						}
-						catch(Exception $e){
-
-						}
-					}
 					$events[]=$csv;
-
 				}
+				
 			}
 			return View::make('club.wncc.event',compact('events'));
 		}
@@ -604,15 +505,7 @@ class HomeController extends BaseController {
 				$user_id = Auth::User()->id;
 				$name = Input::get("Name");
 				$club = Input::get("Club");
-				$desc = Input::get("Description");
 				$file = Input::file("File");
-				if($desc == "Enter Description here... (Not more than 140 characters)"){
-					$desc = "No Description Available";
-					$messageBag = new MessageBag;
-					$messageBag->add('message',"Error in form. Please Enter Description" );
-
-					return Redirect::back()->with('messages', $messageBag)->withInput();
-				}
 
 				if(!Input::hasFile("File") || $user_id=="" || $name=="" || $club==""){
 
@@ -635,7 +528,6 @@ class HomeController extends BaseController {
 				$tutorial->name = $name;
 				$tutorial->by = intval($user_id);
 				$tutorial->club = $club;
-				$tutorial->desc = $desc;
 				// $tutorial->url = $filename;
 				$tutorial->save();
 
