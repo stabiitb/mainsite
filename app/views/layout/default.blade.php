@@ -18,8 +18,8 @@
 		<link href="{{ URL::asset('assets/css/animate.min.css')}}" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href="{{ URL::asset('assets/css/fonts/lato.css') }}" rel="stylesheet">
-		<link href="{{ URL::asset('assets/css/fonts/source_sans_pro.css') }}" rel="stylesheet">
+		<link href="{{ URL::asset('assets/fonts/lato.css') }}" rel="stylesheet">
+		<link href="{{ URL::asset('assets/fonts/source_sans_pro.css') }}" rel="stylesheet">
 		
 		<!-- Icons/Glyphs -->
 		<link href="{{ URL::asset('assets/fonts/fontello.css')}}" rel="stylesheet">
