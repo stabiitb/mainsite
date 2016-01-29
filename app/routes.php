@@ -97,7 +97,7 @@ Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeContro
 Route::get('krittika',array('as'=>'krittika','uses'=>'HomeController@krittika'));
 Route::get('math-and-physics-club',array('as'=>'MnP','uses'=>'HomeController@MnP'));
 Route::get('robotics-club',array('as'=>'robotics-club','uses'=>'HomeController@robotics_club'));
-Route::get('web-and-coding-club',array('as'=>'wncc','uses'=>'HomeController@wncc'));
+Route::get('wncc',array('as'=>'wncc','uses'=>'HomeController@wncc'));
 Route::get('technovation',array('as'=>'technovation','uses'=>'HomeController@technovation'));
 
 // Clubs Pages

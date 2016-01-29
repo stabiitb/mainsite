@@ -303,7 +303,7 @@
 		<link href="{{ URL::asset('assets/css/navy.css')}}" rel="alternate stylesheet" title="Navy color">
 		<link href="{{ URL::asset('assets/css/gray.css')}}" rel="alternate stylesheet" title="Gray color">
 		
-		<script src="switchstylesheet/switchstylesheet.js"></script>
+		<!-- // <script src="switchstylesheet/switchstylesheet.js"></script> -->
 		
 		<script>
 			$(document).ready(function(){ 
