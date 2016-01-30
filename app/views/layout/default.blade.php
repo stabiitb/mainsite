@@ -36,6 +36,7 @@
 		<![endif]-->
 
 		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
+		<script src="http://gymkhana.iitb.ac.in/sso/static/widget/js/login.min.js" type="application/javascript"></script>
 		@yield('script')
 		
 	</head>
@@ -66,6 +67,18 @@
 						<!--	<li><a href="" class="btn btn-small btn-green" >Login</a></li> -->
 						<!--	@endif-->
 						<!--</ul>-->
+						
+						<ul class="pull-right" style="margin:3px">
+						<div  id="sso-root" style = "height:10px width:10px"></div>
+							@if(Auth::check())
+							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
+							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
+							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
+							</li>	
+							@else
+							<li><a href="{{URL::Route('login_page')}}" class="btn btn-small btn-green" >Login</a></li> 
+							@endif
+						</ul>
 						<ul class="social pull-right">
 							<li><a href="https://www.facebook.com/stab.iitb"><i class="icon-s-facebook"></i></a></li>
 							<li><a href="https://github.com/stabiitb"><i class="icon-s-github"></i></a></li>
@@ -94,6 +107,30 @@
 							  customSearchControl.draw('cse-search-form', options);
 							}, true);
 							</script>
+							<script type="application/javascript">
+					        new SSO_JS({
+					            config: {
+					                client_id: 'UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl',   // Compulsory
+					                scope: ['basic', 'profile'],    // Optional. Default is  ['basic']
+					                state: '', // Optional. Default None
+					                response_type: 'code',  // Optional. Default is 'code'
+					                redirect_uri: 'http://localhost:8088/sso_login_redirect',    //Optional
+					                new_window: 'false',    // Optional.
+					                                        // Where authorization page should be opened in new tab or
+					                                        // same tab Default is false.
+					                sso_root: document.getElementById('sso-root'),
+					                /* Optional
+					                 document.getElementById don't work if your element is not in light DOM. In that case you need to
+					                 provide selector here. In most of the cases this will work.
+					                 */
+					            },
+					            colors: { // All Optional
+					                button_div_bg_color: '39ac90',//'303F9F', // Background color of button
+					                button_anchor_color: 'FFFFFF', // Font color of Button
+					                logout_anchor_color: '727272', // Font color of logout mark (The one with 'Login as other user'
+					            },
+					        }).init();
+					    </script>
 							<style type='text/css'>
 							  input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 							    border-color: #D9D9D9;

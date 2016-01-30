@@ -6,6 +6,80 @@ use Facebook\GraphUser;
 use Facebook\FacebookRequestException;
 use Facebook\FacebookRedirectLoginHelper;
 
+// class Table {
+
+//     protected $table = null;
+//     protected $header = null;
+//     protected $attr = null;
+//     protected $data = null;
+
+//     public function __construct($data = null, $attr = null, $header = null)
+//     {
+//         if(is_null($data)) return;
+//         $this->data = $data;
+//         $this->attr = $attr;
+//         if(is_array($header)) {
+//             $this->header = $header;
+//         }
+//         else {
+//             if(count($this->data) && $this->is_assoc($this->data[0]) || is_object($this->data[0])) {
+//                 $headerKeys = is_object($this->data[0]) ? array_keys((array)$this->data[0]) : array_keys($this->data[0]);
+//                 $this->header = array();
+//                 foreach ($headerKeys as $value) {
+//                     $this->header[] = $value;
+//                 }
+//             }
+//         }
+//         return $this;
+//     }
+
+//     public function build()
+//     {
+//         $atts = '';
+//         if(!is_null($this->attr)) {
+//             foreach ($this->attr as $key => $value) {
+//                 $atts .= $key . ' = "' . $value . '" ';
+//             }
+//         }
+//         $table = '<table ' . $atts . ' >';
+
+//         if(!is_null($this->header)) {
+//             $table .= '<thead><tr>';
+//             foreach ($this->header as $value) {
+//                 $table .= '<th>' . ucfirst($value) . '</th>';
+//             }
+//             $table .= '</thead></tr>';
+//         }
+
+//         $table .= '<tbody>';
+//         foreach ($this->data as $value) {
+//             $table .= $this->createRow($value);
+//         }
+//         $table .= '</tbody>';
+//         $table .= '</table>';
+//         return $this->table = $table;
+//     }
+
+//     protected function createRow($array = null)
+//     {	
+//     	$count=0;
+//         if(is_null($array)) return false;
+//             $row = '<tr>';
+//             foreach ($array as $value) {
+//             	if($count==3)$row .= '<td><a href="' . $value . '">'.$value.'</a></td>';
+//             	else{
+//                 $row .= '<td>' . $value . '</td>';}
+//                 $count++;
+//             }
+//             $row .= '</tr>';
+//             return $row;
+//     }
+
+//     protected function is_assoc($array){
+//         return is_array($array) && array_diff_key($array, array_keys(array_keys($array)));
+//     }
+// }
+
 
 class UserController extends \BaseController {
 
@@ -436,25 +510,4 @@ class UserController extends \BaseController {
 		}
 	}
 
-
-	/*sso login*/
-	public function  sso_login_redirect(){
-		// $code = $_GET["code"];
-		// $state = $_GET["state"];
-		// // post request for login
-		// $post_url = "http://gymkhana.iitb.ac.in/sso/oauth/token/";
-		// $request = \Illuminate\Http\Request::create($post_url, 'POST',
-		// ['code' => $code, 'redirect_uri' => "URL::Route('sso_login_redirect')",'grant_type' => 'authorization_code']);
-		// // $request = $request->getBody();
-		// return $request;
-		return Redirect::to('/');
-
-	}
-
-	public static function SSOLoginURL(){
-		$client_id =  "UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl";
-		$redirect_url = URL::Route('sso_login_redirect');
-		$url = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=".$client_id."&response_type=code&scope=basic&redirect_uri=".$redirect_url."&state=some_state";
-		return $url;
-	}
 }
