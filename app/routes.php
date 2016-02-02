@@ -106,7 +106,7 @@ Route::get('electronics-club/{page}','HomeController@electronics_club');
 Route::get('krittika/{page}','HomeController@krittika');
 Route::get('robotics-club/{page}','HomeController@robotics_club');
 Route::get('math-and-physics-club/{page}','HomeController@MnP');
-Route::get('web-and-coding-club/{page}','HomeController@wncc');
+Route::get('wncc/{page}','HomeController@wncc');
 
 //CLub Events
 Route::get('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_show'));
