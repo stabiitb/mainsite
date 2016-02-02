@@ -442,7 +442,7 @@ class UserController extends \BaseController {
 	/*sso login*/
 	public function  sso_login_redirect(){
 		$code = $_GET["code"];
-		echo $code;
+		// echo $code;
 		$state = $_GET["state"];
 		// post request for login
 		$post_url = "http://gymkhana.iitb.ac.in/sso/oauth/token/";
@@ -464,11 +464,51 @@ class UserController extends \BaseController {
 
 		$result = file_get_contents($post_url, false,$context);
 
-		echo "strkjbiddsvng";
-		if ($result === FALSE) {echo"lollllllllllllllllll"; /* Handle error */ }
+		if ($result === FALSE) {return Redirect::to('/');}
+		$result = json_decode($result);
+		
+		$tokens = array('access_token' => $result->access_token,'refresh_token' => $result->refresh_token );
 
-		var_dump($result);
+		$profile_data = UserController::fetch_profile($tokens);
+		// var_dump($profile_data);
+		return View::make('user.sso_profile',compact('profile_data'));
 
+
+	}
+	public static function fetch_profile($tokens){
+		
+		$access_token = $tokens['access_token'];
+		$refresh_token = $tokens['refresh_token'];
+		$post_url = "http://gymkhana.iitb.ac.in/sso/user/api/user/?fields=first_name,last_name,type,profile_picture,sex,username,email,program,contacts,insti_address,secondary_emails,mobile,roll_number";
+		$options = array(
+    		'http' => array(
+        		'header'  => "GET /sso/user/api/user/ HTTP/1.1\r\nHost: gymkhana.iitb.ac.in\r\nAuthorization: Bearer ".$access_token,
+        		'method'  => 'GET',
+    			),
+			);
+		$context  = stream_context_create($options);
+
+		$result = file_get_contents($post_url, false,$context);
+
+		if ($result === FALSE) {echo "loll";}
+		$result = json_decode($result);
+		// var_dump($result);
+		$id = $result->id;
+		$dept = $result->program->department_name;
+		$degree = $result->program->degree_name;
+		$join_year = $result->program->join_year;
+		$graduation_year = $result->program->graduation_year;
+		$phone = $result->contacts[0]->number;
+		$hostel = $result->insti_address->hostel_name;
+		$room = $result->insti_address->room;
+		$roll_number = $result->roll_number;
+		$sex = $result->sex;
+		$username = $result->username;
+		$first_name = $result->first_name;
+		$last_name = $result->last_name;
+		$email = $result->email;
+		$profile_data  = array('id' => $id,'dept'=>$dept,'degree'=>$degree,'join_year'=>$join_year,'graduation_year'=>$graduation_year,'phone'=>$phone,'hostel'=>$hostel,'room'=>$room,'roll_number'=>$roll_number,'sex'=>$sex,'username'=>$username,'first_name'=>$first_name,'last_name'=>$last_name,'email'=>$email);
+		return $profile_data;
 	}
 
 	public static function SSOLoginURL(){

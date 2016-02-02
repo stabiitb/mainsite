@@ -69,7 +69,7 @@
 						<!--</ul>-->
 						
 						<ul class="pull-right" style="margin:3px">
-						<!-- <a href = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl&response_type=code&scope=basic&redirect_uri=http://localhost:8088/sso_login_redirect&state=some_state" > <button>Login@SSO</button></a> -->
+						<a href = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl&response_type=code&scope=basic%20profile%20sex%20ldap%20picture%20phone%20insti_address%20program&redirect_uri=http://localhost:8088/sso_login_redirect&state=some_state" > <button>Login@SSO</button></a>
 							@if(Auth::check())
 							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
 							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
