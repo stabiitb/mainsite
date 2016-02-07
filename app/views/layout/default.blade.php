@@ -56,26 +56,15 @@
 						<ul class="info pull-left">
 							<li><a href="mailto://oc.stab@iitb.ac.in"><i class="icon-mail-1 contact"></i>oc.stab@iitb.ac.in</a></li>
 						</ul><!-- /.info -->
-						
-						<!--<ul class="pull-right" style="margin:3px">-->
-						<!--	@if(Auth::check())-->
-							<!-- <li style="padding-right:9px"><a href="" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
-						<!--	<li style="padding-right:5px"><a href="" class="btn btn-small btn-green" >Profile</a></li> -->
-						<!--	<li><a href="" class="btn btn-small btn-green" >Logout</a></li> -->
-						<!--	</li>	-->
-						<!--	@else-->
-						<!--	<li><a href="" class="btn btn-small btn-green" >Login</a></li> -->
-						<!--	@endif-->
-						<!--</ul>-->
+		
 						
 						<ul class="pull-right" style="margin:3px">
-						<a href = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl&response_type=code&scope=basic%20profile%20sex%20ldap%20picture%20phone%20insti_address%20program&redirect_uri=http://localhost:8088/sso_login_redirect&state=some_state" > <button>Login@SSO</button></a>
 							@if(Auth::check())
-							<!-- <li style="padding-right:9px"><a href="{{URL::Route('events.ITSP_2015.team')}}" class="btn btn-small btn-green" >ITSP Profile</a></li>  -->
 							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
 							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
 							</li>	
 							@else
+							<!-- <li><a href="{{UserController::SSOLoginURL()}}" class="btn btn-small btn-green" >SSO Login</a></li>  -->
 							<li><a href="{{URL::Route('login_page')}}" class="btn btn-small btn-green" >Login</a></li> 
 							@endif
 						</ul>
@@ -267,12 +256,10 @@
 									<a href="#" class="dropdown-toggle js-activated">IITB Corner</a>
 									
 									<ul class="dropdown-menu">
-										<!-- <li><a href="http://stab-iitb.org/tinkerers-lab/">Tinkerers’ Lab</a></li>									 -->
-										<li><a href="http://stab-iitb.org/technovation">Technovation</a></li>
-										<!-- <li><a href="http://techid.stab-iitb.org/seasons">Stab Seasons</a></li> -->
+										<!-- <li><a href="http://stab-iitb.org/technovation">Technovation</a></li> -->
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
-										<li><a href="{{URL::Route('techgc')}}">Tech GC Rankings</a></li>
+										<li><a href="{{URL::Route('techgc2015')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calendar')}}">Tech Calendar</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->

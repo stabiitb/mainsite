@@ -298,10 +298,16 @@ class HomeController extends BaseController {
 		return View::make('vision');
 	}
 
-	public function techgc()
+	public function techgc2014()
 	{
-		return View::make('home.techgc');
+		return View::make('GCrankings.techgc2014');
 	}
+	public function techgc2015()
+	{
+		return View::make('GCrankings.techgc2015');
+	}
+
+
 	public function get_images($club){
 		$pics = array();
 		$dir = public_path()."/media/2015/club_assets/$club/Events";

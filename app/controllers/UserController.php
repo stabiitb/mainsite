@@ -17,8 +17,7 @@ class UserController extends \BaseController {
 	 * @return Response
 	 */
 
-	public function fblogin()
-	{
+	public function fblogin(){
 
 
 		$app_id='339712599560349';
@@ -71,10 +70,8 @@ class UserController extends \BaseController {
 			return Redirect::route('user.profile');
 		}
 
-     	return Redirect::to('/');
-     	
+     	return Redirect::to('/'); 	
 	}
-	
 	
 	// Logout
 	public function logout(){
@@ -152,8 +149,7 @@ class UserController extends \BaseController {
 			return Redirect::Route('user.profile')->with('messages', $messageBag)->withInput();
 		} catch (Exception $e) {
 			return $e->getMessage();
-		}
-		
+		}		
 	}
 
 	public function update()
@@ -280,33 +276,10 @@ class UserController extends \BaseController {
 		$ldap = explode('@', $ldap)[0];
 		$ldap=$ldap."@iitb.ac.in";
 		$email=Input::get('email');
-		// $captcha=Input::get('g-recaptcha-response');
 
 		$messageBag = new MessageBag;
 		$bag_empty = true;
-		// echo $captcha;
 
-		// // To incorporate captcha
-		// $url = 'https://www.google.com/recaptcha/api/siteverify';
-		// $data = array('secret' => '6LeQbA0TAAAAAGj7pDd26ghKX_LyotrYw8ABD48o', 'response' => $captcha);
-
-		// // use key 'http' even if you send the request to https://...
-		// $options = array(
-  //   		'http' => array(
-		//         'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-		//         'method'  => 'POST',
-		//         'content' => http_build_query($data),
-		//     ),
-		// );
-		// $context  = stream_context_create($options);
-		// $result = file_get_contents($url, false, $context);
-  //    	echo $result;
-  //    	return;
-  //    	$result = json_decode($result);
-		// if($result->success=='false'){
-		// 	$messageBag->add('message',"Wrong Captcha");
-		// 	$bag_empty = false;
-		// }
 		if($name==""){
 			$messageBag->add('message',"Please enter Name" );
 			$bag_empty = false;
@@ -323,11 +296,6 @@ class UserController extends \BaseController {
 			$messageBag->add('message',"Please enter Email" );
 			$bag_empty = false;
 		}
-
-		// if (strlen($_POST["password"]) < '8' || strlen($_POST["password"]) > '20') {
-		// 	$messageBag->add('message',"Password Must Contain At Least 8 and At Most 20 Characters" );
-		// 	$bag_empty = false;
-	 //    }
 
 		if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 			$messageBag->add('message',"Only letters and white space allowed in Name" );
@@ -442,17 +410,13 @@ class UserController extends \BaseController {
 	/*sso login*/
 	public function  sso_login_redirect(){
 		$code = $_GET["code"];
-		// echo $code;
 		$state = $_GET["state"];
+
 		// post request for login
 		$post_url = "http://gymkhana.iitb.ac.in/sso/oauth/token/";
-		// $request = \Illuminate\Http\Request::create($post_url, 'POST',
-		// ['code' => $code, 'redirect_uri' => "URL::Route('sso_login_redirect')",'grant_type' => 'authorization_code']);
-		// // $request = $request->getBody();
-		// var_dump($request);
+
 		$data = array('code' => $code, 'redirect_uri' => URL::Route('sso_login_redirect'), 'grant_type' => 'authorization_code');
 
-// use key 'http' even if you send the request to https://...
 		$options = array(
     		'http' => array(
         		'header'  => "Host: gymkhana.iitb.ac.in\r\nAuthorization: Basic ".base64_encode("UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl:3GRX2fD8CGk3UHdwNbPHBkevCx965xQouUJI9qXsVtD9ptVDKhVQ2zawexxEyZGUtMVeARkAmyNwtDvZepPaaZUj1HbX8SA4RgXIH1AYBKqO8ZIkORHf1Y3bIKAaZrUS")."\r\nContent-type: application/x-www-form-urlencoded; charset=UTF-8",
@@ -461,19 +425,12 @@ class UserController extends \BaseController {
     			),
 			);
 		$context  = stream_context_create($options);
-
 		$result = file_get_contents($post_url, false,$context);
-
 		if ($result === FALSE) {return Redirect::to('/');}
 		$result = json_decode($result);
-		
 		$tokens = array('access_token' => $result->access_token,'refresh_token' => $result->refresh_token );
-
 		$profile_data = UserController::fetch_profile($tokens);
-		// var_dump($profile_data);
 		return View::make('user.sso_profile',compact('profile_data'));
-
-
 	}
 	public static function fetch_profile($tokens){
 		
@@ -514,7 +471,7 @@ class UserController extends \BaseController {
 	public static function SSOLoginURL(){
 		$client_id =  "UjBW1n7gdAmBoP7OuUTSYEmTTW1FpPfnHuUgSukl";
 		$redirect_url = URL::Route('sso_login_redirect');
-		$url = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=".$client_id."&response_type=code&scope=basic&redirect_uri=".$redirect_url."&state=some_state";
+		$url = "http://gymkhana.iitb.ac.in/sso/oauth/authorize/?client_id=".$client_id."&response_type=code&scope=basic%20profile%20sex%20ldap%20picture%20phone%20insti_address%20program&redirect_uri=".$redirect_url."&state=some_state";
 		return $url;
 	}
 }

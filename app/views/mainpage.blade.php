@@ -225,18 +225,10 @@ count_it();
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Team Details</a> </li>		
 							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->
 
-							 <!-- <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li> -->
+							 <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li>
 
 							 @endif
-<!-- 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.documentation')}}?id={{Auth::User()->itsp}}" class="btn">ITSP 2015 Documentation &nbsp</a> </li>
-							 <li class="single-block">Any team member can document.</li>
- -->							 <!-- <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation</a> </li> -->
-							 @else
-							<!--  <li class="single-block">Login to document your ITSP project. Any team member can document.</li> -->
-<!-- 							 <li class="single-block"><a href="http://itsp2014.stab-iitb.org/" class="btn">Last Year's Documentation &nbsp</a> </li>
- -->					     @endif
-							 <li class="single-block"><a href="{{URL::route('events.techexpo.2015')}}" class="btn">&emsp;&emsp;Tech & RnD Exposition 2015&emsp;&emsp;</a> </li>	
-							 <li class="single-block"><a href="{{URL::route('club.aero.RC_Plane.index')}}" class="btn">RC Plane</a> &emsp;</li>	
+ 					     @endif
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> &emsp; <a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a></li>
 							  	
 							<!--
@@ -463,10 +455,10 @@ count_it();
 											</div><!-- /.col -->
 											
 											<div class="col-md-5 col-sm-6 inner-top-xs inner-left-xs">
-												<h3><a href="{{URL::Route('technovation')}}">Technovation</a></h3>
+												<h3><a href="#">Technovation</a></h3>
 												<p>Did you ever have an innovative idea but you just couldn’t get it going? Innovative technologies are the foundation of everything existing around you whether its new iPhone or your credit cards. But innovating new technologies needs money, inspiring leaders, dedicated teams and experience. This is where technovation steps in. What is Technovation? Technovation is a platform for students to float innovative projects, recruit teams, get funded, find mentors and realize their dream projects. Put simply its an expressway to innovation.</p>
 
-											<a href="{{URL::Route('technovation')}}" class="btn btn-blue">Visit WebPage</a>
+											<!-- <a href="{{URL::Route('technovation')}}" class="btn btn-blue">Visit WebPage</a> -->
 
 											</div><!-- /.col -->
 										</div><!-- /.row -->
