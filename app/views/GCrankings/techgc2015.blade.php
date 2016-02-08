@@ -176,7 +176,7 @@
 	    });
 
 		$(".highcharts-button").remove();
-		$(".highcharts-title").html("<tspan>Tech GC Tally 2014-15</tspan>")
+		$(".highcharts-title").html("<tspan>Tech GC Tally 2015-16</tspan>")
 
 	}
 
@@ -195,7 +195,7 @@
 							<header>
 								<h1>Tech GC Points</h1>
 								<p>Year : 2015 - 2016</p>
-								<p> Click <a href="https://docs.google.com/spreadsheets/d/1kTQ6zwYY0hiKmSi_6ZpkWm7fMBvN40-lWaQ3rAcCFZs/edit?usp=sharing">here</a> to see the overall tally</p> 
+								<p> Click <a href="https://docs.google.com/spreadsheets/d/1kTQ6zwYY0hiKmSi_6ZpkWm7fMBvN40-lWaQ3rAcCFZs/edit?usp=sharing">here</a> to see the overall Tally</p> 
 								<br>
 							</header>
 						</div><!-- /.col -->
