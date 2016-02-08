@@ -176,6 +176,7 @@
 	    });
 
 		$(".highcharts-button").remove();
+		$(".highcharts-title").html("<tspan>Tech GC Tally 2014-15</tspan>")
 
 	}
 
