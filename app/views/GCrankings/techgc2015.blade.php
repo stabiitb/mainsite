@@ -107,7 +107,14 @@
       window.onload = function() { init() };
 
       var public_spreadsheet_url_1 = 'https://docs.google.com/spreadsheets/d/1kTQ6zwYY0hiKmSi_6ZpkWm7fMBvN40-lWaQ3rAcCFZs/pubhtml?gid=0&single=true';
-
+   	var hostels = ['H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11','H12','H13','H14'];
+   	function sum(a){
+   		var j=0;
+   		for(var i=0;i<a.length;i++){
+   			j=j+a[i];
+   		}
+   		return j;
+   	}
       function init() {
         a = Tabletop({
             key: public_spreadsheet_url_1,
@@ -123,31 +130,70 @@
       GC.physXGC.scores = [];
       GC.logicGC.scores = [];
       function showInfo(data, tabletop) {
-        for(i = 1; i < data.length; i++) {
-        	GC.physXGC.scores.push(parseInt(data[0]["PhysX GC"])*parseFloat(data[i]["PhysX GC"]));
-        	GC.logicGC.scores.push(parseInt(data[0]["Logic GC"])*parseFloat(data[i]["Logic GC"]))
+      	keys = Object.keys(data[0]);
+      	for(var i=1;i<keys.length;i++){	
+      		GC[keys[i]]={};
+      		// console.log(Object.keys(data[0])[i]);
+      		GC[keys[i]].scores=[];
+      	}
+        for(var i = 1; i < data.length; i++) {
+        	for(var j=1;j<keys.length;j++){
+        		GC[keys[j]].scores.push(parseInt(data[0][keys[j]])*parseFloat(data[i][keys[j]]));
+        	}
+        }
+     	validGCs = [];
+     	for(var k in GC){
+     		if(k=="Overall Score"){
+     			continue;
+     		}
+     		console.log(GC[k].scores);
+     		console.log(sum(GC[k].scores));
+     		if(sum(GC[k].scores)>5){
+     			validGCs.push(k);
+     		}
+     	}
+     	console.log(validGCs);
+        series = [];
+        GC['Logic GC'].clubnick = 'mnp';
+        GC['PhysX GC'].clubnick = 'mnp';
+        GC['RC Plane GC'].clubnick = 'aero';
+        GC['Astrophysics GC'].clubnick = 'Krttika';
+        GC['Coding GC'].clubnick = 'wncc';
+        GC['Jhatka'].clubnick = 'elec';
+        GC['Hydrofoam GC'].clubnick = 'aero';
+        GC['Logic GC'].club = 'Maths and Physics Club';
+        GC['PhysX GC'].club = 'Maths and Physics Club';
+        GC['RC Plane GC'].club = 'Aeromodelling Club';
+        GC['Astrophysics GC'].club = 'Krittika';
+        GC['Coding GC'].club = 'Web and Coding Club';
+        GC['Jhatka'].club = 'Electronics Club';
+        GC['Hydrofoam GC'].club = 'Aeromodelling Club';
+        clubsDone  = [];
+   //      for(var k in validGCs){
+			// var fil = '<li><a data-filter=".'+GC[validGCs[k]].clubnick+'">'+GC[validGCs[k]].club+'</a></li>'
+			// if(clubsDone.indexOf(GC[validGCs[k]].clubnick)==-1){
+			// 	$("#fil").append(fil);
+			// 	clubsDone.push(GC[validGCs[k]].clubnick);
+			// }
+   //  	}
+        for(var k in validGCs){
+			GC[validGCs[k]].content = getContent(GC[validGCs[k]]);
+			GC[validGCs[k]].pie = chart(validGCs[k],validGCs[k],"Performance of Hostels",GC[validGCs[k]].content);
+			var ser = {
+				name:validGCs[k],
+				data:GC[validGCs[k]].scores
+			};
+			series.push(ser);
         }
 
-		GC.physXGC.content = getContent(GC.physXGC);
-		GC.physXGC.pie = chart("physXGC","PhysX GC","Performance of Hostels",GC.physXGC.content);
-		GC.logicGC.content = getContent(GC.logicGC);
-		GC.logicGC.pie = chart("logicGC","Logic GC","Performance of Hostels",GC.logicGC.content);
 		$('#allgraphs').trigger('click');
 
-		var hostels = ['H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11','H12','H13','H14'];
-		var series = [{
-		            name: 'PhysX GC',
-		            data: GC.physXGC.scores
-		        }, {
-		            name: 'Logic GC',
-		            data: GC.logicGC.scores
-		        }];
 	    $('#bar-graph').highcharts({
 	        chart: {
 	            type: 'bar'
 	        },
 	        title: {
-	            text: 'Stacked bar chart'
+	            text: 'Performance of Hostels in Tech GC'
 	        },
 	        xAxis: {
 	            categories: hostels
@@ -166,17 +212,10 @@
 	                stacking: 'normal'
 	            }
 	        },
-	        series: [{
-	            name: 'PhysX GC',
-	            data: GC.physXGC.scores
-	        }, {
-	            name: 'Logic GC',
-	            data: GC.logicGC.scores
-	        }]
+	        series: series
 	    });
 
 		$(".highcharts-button").remove();
-		$(".highcharts-title").html("<tspan>Tech GC Tally 2015-16</tspan>")
 
 	}
 
@@ -211,19 +250,34 @@
 					<div class="row">
 						<div class="col-sm-12 portfolio">
 							
-							<ul class="filter text-center">
+							<ul class="filter text-center" id='fil'>
 								<li><a id="allgraphs" href="#" data-filter="*" class="active">All</a></li>
 								<li><a href="#" data-filter=".mnp">Maths and Physics Club</a></li>
-							</ul><!-- /.filter -->
+								<li><a href="#" data-filter=".aero">Aeromodelling Club</a></li>
+						</ul><!-- /.filter -->
 							
-							<ul class="items col-2 gap">
-								
+							<ul class="items col-2 gap" id="pie-charts">
 								<li class="item mnp">
-									<div id="physXGC"></div>
-								</li><!-- /.item -->
+									<div id="Logic GC"></div>
+								</li>	
 								<li class="item mnp">
-									<div id="logicGC"></div>
-								</li><!-- /.item -->
+									<div id="PhysX GC"></div>
+								</li>	
+								<li class="item aero">
+									<div id="RC Plane GC"></div>
+								</li>	
+								<li class="item krittika">
+									<div id="Astrophotography GC"></div>
+								</li>	
+								<li class="item wncc">
+									<div id="Coding GC"></div>
+								</li>	
+								<li class="item aero">
+									<div id="Hydrofoam GC"></div>
+								</li>	
+								<li class="item elec">
+									<div id="Electronics GC"></div>
+								</li>	
 							</ul><!-- /.items -->
 							
 						</div><!-- /.col -->
@@ -233,6 +287,5 @@
 
 		</div>
 	</section>
-			
 </main>
 @endsection
