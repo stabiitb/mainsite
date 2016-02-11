@@ -83,7 +83,7 @@ Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return
 
 Route::get('Status_of_teams','ITSPController@test');
 Route::get('final_teams','ITSPController@final_teams');
-Route::group(array('prefix'=>'PoR'),function()
+Route::group(array('prefix'=>'positionofresponsibility'),function()
 {
     Route::get('/',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
     Route::get('register',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));

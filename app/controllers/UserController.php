@@ -32,8 +32,8 @@ class UserController extends \BaseController {
        	$response = file_get_contents($token_url);	
        }
        catch (Exception $e) {
-       		return $e->getMessage();
-       }
+       		return "problem";
+       		       }
        $params = null;
      	parse_str($response, $params);
      	$graph_url = "https://graph.facebook.com/me?access_token=" 
@@ -447,7 +447,7 @@ class UserController extends \BaseController {
 
 		$result = file_get_contents($post_url, false,$context);
 
-		if ($result === FALSE) {echo "loll";}
+		// if ($result === FALSE) {echo "loll";}
 		$result = json_decode($result);
 		// var_dump($result);
 		$id = $result->id;

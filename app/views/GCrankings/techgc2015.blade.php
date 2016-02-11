@@ -138,7 +138,7 @@
       	}
         for(var i = 1; i < data.length; i++) {
         	for(var j=1;j<keys.length;j++){
-        		GC[keys[j]].scores.push(parseInt(data[0][keys[j]])*parseFloat(data[i][keys[j]]));
+        		GC[keys[j]].scores.push(parseFloat(data[0][keys[j]])*parseFloat(data[i][keys[j]]));
         	}
         }
      	validGCs = [];
