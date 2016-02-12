@@ -25,7 +25,25 @@ class HomeController extends BaseController {
 	{
 		return View::make('linkpage');
 	}
-	
+
+	public static function get_image_link($ss){
+		try{
+			$base_url = "https://drive.google.com/uc?export=download&id=";
+			if($ss!=""){
+				if (strpos($ss, 'id') !== false) {
+				   		$ss=$base_url.explode("=",$ss)[1];
+				}
+				else if(strpos($ss,'view?usp=sharing')!==false){
+						$ss=$base_url.explode("/",$ss)[5];
+				}
+			}
+			return $ss;
+		}
+		catch (exception $e){
+			return $ss;
+		}
+	}
+
 	public function aeromodelling_club($page="about")
 	{
 		if($page=='about')
@@ -45,6 +63,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
 			}
@@ -82,10 +101,12 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
-				
 			}
+
+
 			return View::make('club.elec.event',compact('events'));
 		}
 		else if ($page=='gallery') {
@@ -123,6 +144,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
 				
@@ -172,6 +194,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
 				
@@ -210,6 +233,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
 				
@@ -256,6 +280,7 @@ class HomeController extends BaseController {
 			while(!feof($file)){
 				$csv = fgetcsv($file);
 				if($csv[0]!="Event Name"&&$csv[0]!=""){
+					$csv[4]=$this->get_image_link($csv[4]);
 					$events[]=$csv;
 				}
 				
@@ -327,6 +352,7 @@ class HomeController extends BaseController {
 		}
 		return $pics;
 	}
+
 
 	public function get_images_of_folder($folder){
 		$pics = array();
