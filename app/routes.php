@@ -78,6 +78,11 @@ Route::get('techandrndexpo2015/',array('as'=>'events.techexpo.2015','uses'=>'Hom
 Route::get('techandrndexpo2015/{page}',array('as'=>'events.techexpo.2015.pages','uses'=>'HomeController@techexpo2015'));
 
 
+Route::group(array('prefix'=>'events'),function(){
+    Route::get('harald_haas',array('as'=>'harald_haas','uses'=>'EventController@harald_haas'));
+
+});
+
 Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
 Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return View::make('freshie_intro');}));
 
@@ -109,9 +114,9 @@ Route::get('math-and-physics-club/{page}','HomeController@MnP');
 Route::get('wncc/{page}','HomeController@wncc');
 
 //CLub Events
-Route::get('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_show'));
-Route::get('electronics-club/event/CMOS-Design-Challenege-solution/all',array('as'=>'electronics-club.CMOS.all','uses'=>'EventController@elec_CMOS_Challenge_all'));
-Route::post('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_add'));
+// Route::get('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_show'));
+// Route::get('electronics-club/event/CMOS-Design-Challenege-solution/all',array('as'=>'electronics-club.CMOS.all','uses'=>'EventController@elec_CMOS_Challenge_all'));
+// Route::post('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_add'));
 
 // Vision , Reports , Lightsaber
 Route::get('vision-of-stab-team-2014-15',array('as'=>'vision','uses'=>'HomeController@vision'));
@@ -163,21 +168,21 @@ Route::get('calendar',array('as'=>'calendar','uses'=>function ()
 Route::get('jan-events',array('as' => 'events.jan.2015' , 'uses' => 'EventController@jan_2015'));
 
 //TechEXPO
-Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
-{
-    return View::make('events.tech_rnd');
-}));
+// Route::get('techexpo',array('as'=>'tech_rnd','uses'=>function ()
+// {
+//     return View::make('events.tech_rnd');
+// }));
 
 Route::get('tech-gc-points-2014',array('as'=>'techgc2014','uses'=>'HomeController@techgc2014'));
 Route::get('tech-gc-points-2015',array('as'=>'techgc2015','uses'=>'HomeController@techgc2015'));
 
-// Smart Campus
-Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
-Route::get('smart-campus/team/{id}',array('before'=>'login','as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_team'));
-Route::get('smart-campus/all-team-list',array('before'=>'login','as'=>'smart_campus.all-team-list','uses'=>'AppsController@smart_campus_xls'));
-Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_home'));
-Route::post('smart-campus/register',array('as'=>'smart_campus.register','uses'=>'AppsController@smart_campus_register'));
-Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>'AppsController@smart_campus_abstract'));
+// // Smart Campus
+// Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
+// Route::get('smart-campus/team/{id}',array('before'=>'login','as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_team'));
+// Route::get('smart-campus/all-team-list',array('before'=>'login','as'=>'smart_campus.all-team-list','uses'=>'AppsController@smart_campus_xls'));
+// Route::get('smart-campus/{page}',array('as'=>'smart_campus.page','uses'=>'AppsController@smart_campus_home'));
+// Route::post('smart-campus/register',array('as'=>'smart_campus.register','uses'=>'AppsController@smart_campus_register'));
+// Route::post('smart-campus/all-team',array('as'=>'smart_campus.all-team','uses'=>'AppsController@smart_campus_abstract'));
 
 // Inter IIT Tech Meet
 Route::get('inter-iit-tech-meet/register',array('as'=>'interiit.reg','uses'=>'AppsController@interiit'));

@@ -47,5 +47,9 @@ class EventController extends BaseController {
 		View::share('all',$all);
 		return View::make('club.elec.CMOS_challenge_all');
 	}
+
+	public function harald_haas(){
+		return View::make('events.TL.harald_haas');
+	}
 }
 
