@@ -15,7 +15,7 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('abstract',array('as'=>'events.ITSP_2015.abstract','uses'=>'ITSPController@abs'));
     Route::get('mentor',array('as'=>'events.ITSP_2015.mentor','uses'=>'ITSPController@mentor'));
     Route::get('discuss',array('as'=>'events.ITSP_2015.discuss','uses'=>'ITSPController@discuss'));
-    Route::get('give_reviews',array('as'=>'events.ITSP_2015.give_reviews','uses'=>'ITSPController@give_reviews'));
+    Route::get('give_reviews', ['as'=>'events.ITSP_2015.give_reviews','uses'=>'ITSPController@give_reviews']);
     Route::any('take_reviews',array('as'=>'events.ITSP_2015.take_reviews','uses'=>'ITSPController@take_reviews'));
     Route::any('resubmit_abstract',array('as'=>'events.ITSP_2015.resubmit_abstract','uses'=>'ITSPController@resubmit_abstract'));
     Route::get('final_reviews',array('as'=>'events.ITSP_2015.final_reviews','uses'=>'ITSPController@final_reviews'));
@@ -90,8 +90,9 @@ Route::get('Status_of_teams','ITSPController@test');
 Route::get('final_teams','ITSPController@final_teams');
 Route::group(array('prefix'=>'positionofresponsibility'),function()
 {
-    Route::get('/',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
+    Route::get('/', array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
     Route::get('register',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
+    Route::get('conveners2k16',array('as'=>'events.PoR.form', 'uses'=>'PoRController@form'));
 });
     
 
