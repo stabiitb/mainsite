@@ -4,7 +4,8 @@
 		$curtime = time();
 ?>
 @if($curtime < $closetime)
-@if(Auth::check())
+{{--@if(Auth::check())--}}
+@if(true)
 <style type="text/css">
 	iframe{
 		min-height: 600px;
