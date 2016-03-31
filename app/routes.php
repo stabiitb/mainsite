@@ -3,6 +3,12 @@
 //Route::get('update_server/{code}',array('as'=>'update_server','uses'=>'HomeController@update_server'));
 
 //ITSP - 2015 URL
+Route::group(array('prefix' => 'itsp2016'),function()
+{
+    Route::get('mentor2016',array('as'=>'events.ITSP_2016.mentor','uses'=>'ITSPController@mentor2016'));
+    Route::get('/',array('as'=>'events.ITSP_2016.index','uses'=>'ITSPController@index2016'));
+});
+
 Route::group(array('prefix' => 'itsp'),function()
 {
     Route::get('register',array('as'=>'events.ITSP_2015.form','uses'=>'ITSPController@form'));

@@ -519,7 +519,10 @@ class ITSPController extends \BaseController {
 	{
 		return View::make('events.ITSP_2015.index');
 	}
-
+	public function index2016()
+	{
+		return View::make('events.ITSP_2016.index');
+	}
 	public function faq()
 	{
 		return View::make('events.ITSP_2015.faq');
@@ -528,6 +531,10 @@ class ITSPController extends \BaseController {
 	public function mentor()
 	{
 		return View::make('events.ITSP_2015.mentor');
+	}
+	public function mentor2016()
+	{
+		return View::make('events.ITSP_2016.mentor');
 	}
 
 	public function timeline()
