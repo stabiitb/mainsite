@@ -133,7 +133,6 @@
       	keys = Object.keys(data[0]);
       	for(var i=1;i<keys.length;i++){	
       		GC[keys[i]]={};
-      		// console.log(Object.keys(data[0])[i]);
       		GC[keys[i]].scores=[];
       	}
         for(var i = 1; i < data.length; i++) {
@@ -161,6 +160,7 @@
         GC['Coding GC'].clubnick = 'wncc';
         GC['Jhatka'].clubnick = 'elec';
         GC['Hydrofoam GC'].clubnick = 'aero';
+        GC['The Last GC'].clubnick = 'thelastgc';
         GC['Logic GC'].club = 'Maths and Physics Club';
         GC['PhysX GC'].club = 'Maths and Physics Club';
         GC['RC Plane GC'].club = 'Aeromodelling Club';
@@ -168,14 +168,9 @@
         GC['Coding GC'].club = 'Web and Coding Club';
         GC['Jhatka'].club = 'Electronics Club';
         GC['Hydrofoam GC'].club = 'Aeromodelling Club';
+        GC["The Last GC"].club = 'The Last GC'
+
         clubsDone  = [];
-   //      for(var k in validGCs){
-			// var fil = '<li><a data-filter=".'+GC[validGCs[k]].clubnick+'">'+GC[validGCs[k]].club+'</a></li>'
-			// if(clubsDone.indexOf(GC[validGCs[k]].clubnick)==-1){
-			// 	$("#fil").append(fil);
-			// 	clubsDone.push(GC[validGCs[k]].clubnick);
-			// }
-   //  	}
         for(var k in validGCs){
 			GC[validGCs[k]].content = getContent(GC[validGCs[k]]);
 			GC[validGCs[k]].pie = chart(validGCs[k],validGCs[k],"Performance of Hostels",GC[validGCs[k]].content);
@@ -254,6 +249,10 @@
 								<li><a id="allgraphs" href="#" data-filter="*" class="active">All</a></li>
 								<li><a href="#" data-filter=".mnp">Maths and Physics Club</a></li>
 								<li><a href="#" data-filter=".aero">Aeromodelling Club</a></li>
+								<li><a href="#" data-filter=".krittika">Krittika Club</a></li>
+								<li><a href="#" data-filter=".wncc">Web and Coding Club</a></li>
+								<li><a href="#" data-filter=".elec">Electronics Club</a></li>
+								<li><a href="#" data-filter=".thelastgc">Best Hostel</a></li>
 						</ul><!-- /.filter -->
 							
 							<ul class="items col-2 gap" id="pie-charts">
