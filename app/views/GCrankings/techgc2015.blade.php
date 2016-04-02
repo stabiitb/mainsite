@@ -156,7 +156,7 @@
         GC['Logic GC'].clubnick = 'mnp';
         GC['PhysX GC'].clubnick = 'mnp';
         GC['RC Plane GC'].clubnick = 'aero';
-        GC['Astrophysics GC'].clubnick = 'Krttika';
+        GC['Astrophotography GC'].clubnick = 'Krttika';
         GC['Coding GC'].clubnick = 'wncc';
         GC['Jhatka'].clubnick = 'elec';
         GC['Hydrofoam GC'].clubnick = 'aero';
@@ -164,7 +164,7 @@
         GC['Logic GC'].club = 'Maths and Physics Club';
         GC['PhysX GC'].club = 'Maths and Physics Club';
         GC['RC Plane GC'].club = 'Aeromodelling Club';
-        GC['Astrophysics GC'].club = 'Krittika';
+        GC['Astrophotography GC'].club = 'Krittika';
         GC['Coding GC'].club = 'Web and Coding Club';
         GC['Jhatka'].club = 'Electronics Club';
         GC['Hydrofoam GC'].club = 'Aeromodelling Club';
@@ -275,7 +275,10 @@
 									<div id="Hydrofoam GC"></div>
 								</li>	
 								<li class="item elec">
-									<div id="Electronics GC"></div>
+									<div id="Jhatka"></div>
+								</li>	
+								<li class="item thelastgc ">
+									<div id="The Last GC"></div>
 								</li>	
 							</ul><!-- /.items -->
 							
