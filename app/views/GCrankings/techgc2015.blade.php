@@ -266,7 +266,7 @@
 									<div id="RC Plane GC"></div>
 								</li>	
 								<li class="item krittika">
-									<div id="Astrophotography GC"></div>
+									<div id="Astrophysics GC"></div>
 								</li>	
 								<li class="item wncc">
 									<div id="Coding GC"></div>
@@ -275,7 +275,10 @@
 									<div id="Hydrofoam GC"></div>
 								</li>	
 								<li class="item elec">
-									<div id="Electronics GC"></div>
+									<div id="Jhatka"></div>
+								</li>	
+								<li class="item thelastgc ">
+									<div id="The Last GC"></div>
 								</li>	
 							</ul><!-- /.items -->
 							
