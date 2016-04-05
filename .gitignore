@@ -16,3 +16,6 @@ vendor/barryvdh/
 vendor/phpdocumentor/
 vendor/symfony/class-loader/
 vendor/symfony/polyfill-apcu/
+vendor/composer
+.idea/
+composer.*
