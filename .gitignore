@@ -7,3 +7,12 @@ composer.lock
 Thumbs.db
 app/config/database.php
 log
+public/media/ITSP2015/qwrerttfaytfdyagadsaghgadugye2363613b/abstract.zip
+.idea/blade.xml
+.idea/copyright/
+.idea/laravel-plugin.xml
+.idea/php.xml
+vendor/barryvdh/
+vendor/phpdocumentor/
+vendor/symfony/class-loader/
+vendor/symfony/polyfill-apcu/

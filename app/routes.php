@@ -48,6 +48,12 @@ Route::group(array('prefix' => 'itsp'),function()
     Route::get('tshirt',array('as'=>'events.ITSP_2015.tshirt','uses'=>'ITSPController@tshirt'));
 
 });
+//Student Reading Groups
+Route::get('srg', array('as'=>'srg.index', 'uses'=>'SRGController@index'));
+Route::get('srg/team', array('as'=>'srg.team', 'uses'=>'SRGController@team'));
+Route::get('srg/about', array('as'=>'srg.controlsrg', 'uses'=>'SRGController@about'));
+Route::get('srg/upevents', array('as'=>'srg.controlevents', 'uses'=>'SRGController@upevents'));
+Route::get('srg/teamstruct', array('as'=>'srg.controlteam', 'uses'=>'SRGController@teamstruct'));
 
 //Tutorials
 Route::get('tutorials',array('as'=>'tutorials','uses'=>'HomeController@tutorials'));
