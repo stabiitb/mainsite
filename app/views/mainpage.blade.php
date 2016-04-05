@@ -230,9 +230,12 @@ count_it();
 							 @endif
  					     @endif
 							 {{--<li class="single-block"><a href="{{URL::route('events.PoR.form')}}" class="btn">Institute Technical Coordinators Form</a></li>--}}
-							<li class="single-block"><a href="{{URL::route('events.ITSP_2016.mentor')}}" class="btn">ITSP 2016 Mentors Form</a></li>
+							<li class="single-block"><a href="{{URL::route('events.ITSP_2016.index')}}" class="btn">ITSP 2016</a></li>
+
+				
 							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.projects')}}" class="btn">ITSP 2015 Projects</a> &emsp; <a href="https://www.youtube.com/watch?v=9EcNSvCPXpg&list=PL2jc8R1dnwjVOj4seOL8Lrmz9s6vdDzHS" class="btn">ITSP 2015 Videos</a></li>
-							 <li class="single-block"><a href="{{URL::Route('techgc2015')}}" class="btn">Tech GC Rankings</a></li>
+							
+							<li class="single-block"><a href="{{URL::route('events.ITSP_2016.mentor')}}" class="btn">ITSP 2016 Mentors Form</a></li>
 
 							  	
 							<!--
