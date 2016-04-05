@@ -536,6 +536,10 @@ class ITSPController extends \BaseController {
 	{
 		return View::make('events.ITSP_2016.mentor');
 	}
+	public function chat()
+	{
+		return View::make('events.ITSP_2016.chat');
+	}
 
 	public function timeline()
 	{
