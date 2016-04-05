@@ -225,7 +225,7 @@
 								
 
 								<li class="dropdown">
-										<li><a href="http://www.stab-iitb.org/tinkerers-lab/">Tinkerers' Lab</a></li>
+										<li><a href="http://www.stab-iitb.org/srg/">Student Reading Group</a></li>
 								</li> <!-- /.dropdown -->
 
 
