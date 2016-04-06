@@ -109,7 +109,7 @@ Route::group(array('prefix'=>'positionofresponsibility'),function()
 {
     Route::get('/', array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
     Route::get('register',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
-//    Route::get('techcoordinators2k16',array('as'=>'events.PoR.form', 'uses'=>'PoRController@form'));
+   Route::get('techcoordinators2k16',array('as'=>'events.PoR.form', 'uses'=>'PoRController@form'));
 });
     
 
