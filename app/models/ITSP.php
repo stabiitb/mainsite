@@ -40,7 +40,7 @@ class ITSP extends Eloquent implements UserInterface , RemindableInterface{
 		$this->t4_email = Input::get('t4_email');
 		$this->t4_contact = Input::get('t4_contact');
 		$this->t4_hostel = Input::get('t4_hostel');
-		$this->t4_roll = Input::get('t4_roll');	
+		$this->t4_roll = Input::get('t4_roll');
 
 		
 	}
