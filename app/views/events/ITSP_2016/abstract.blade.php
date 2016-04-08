@@ -12,15 +12,17 @@
      @if(Auth::User()->ldap_verified==1)
     <h4> Deadline for First Abstract Submission is 9th April 2016, 23:59:59 pm.</h4>
 
-    <h4> Then you must create a stab id and fill up all the details asked.</h4>
-    <h4> Team Member 1 will be the team leader.</h4>
+    <h4> Then you must create a stab id and fill up all the details asked. Faculty advisor's ldap will be required for room retention purposes.
+        Your StabId can be found under profile.</h4>
+    <h4> Team Member 1 will be the team leader.
+        The team leader is the only one who can fill this form, ie Member 1 should be the one who is logged in.</h4>
     <h4> One member can only be a part of one team.</h4>
 
     {{--<h4> No other format is allowed except pdf.</h4>--}}
     <h4>
         You need to have your abstract on a google docs and share it with commenting rights.
-        To do so, Open the google docs, click on share, click on share with anyone, and choose
-        anybody with the link can comment. This way mentors can directly comment on your abstract.
+        To do so, Open the google docs, click on share, click on get sharable link, and choose
+        anybody with the link can comment. This way we can directly comment on your abstract.
     </h4>
 
     <h4> If you are filling the form for the first time, leave the team id field blank.</h4>
