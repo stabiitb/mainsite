@@ -41,44 +41,41 @@
 							@endif
 							<input type="submit" value="verify">
 							</form>
- 							<br>
+<!-- 							<form action="{{URL::Route('user.update')}}" method="post">
+							<input name="name" type="text" placeholder="Full Name">
+							<input name="roll_no" type="text" placeholder="IITB Roll Number">
+							<input name="hostel" type="text" placeholder="Hostel Allotted for the next year (Give only hostel number eg. if your hostel is 6 , write only '6')">
+							<input name="dept" type="text" placeholder="Department(Please use full dept name, dont use short form like meta,chem,cse)">
+							<input name="contact" type="text" placeholder="Phone Number">
+							<input name="facad" type="text" placeholder="Name of Faculty Advisor (Full name of facad)">
+							<h4 style="color:red">Use camp.iitb.ac.in to find the ldap id of your facad.</h4> 
+							<input name="facad_ldap" type="text" placeholder="Ldap Id of Faculty Advisor (Only ldap id, do not include '@iitb.ac.in'">
+							<input type="submit" value="Update Profile">
+							</form>				
+ -->							<br>
 							<br> 
 						@else
- 						{{--@if($user->want_room==NULL)--}}
-								{{--<form class="form-horizontal" action="{{URL::route('events.ITSP_2015.want_room')}}" method="get">--}}
-								{{--<table>--}}
-								{{--<tr>--}}
-								{{--<td>Do you want to retain your room?</td>--}}
-								{{--</tr>--}}
-								{{--<tr>--}}
-								{{--<td><input name="want_room" type="radio" value="yes">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYes</td>--}}
-								{{--<td><input name="want_room" type="radio" value="No">No</td>--}}
-								{{--</td>--}}
-								{{--</tr>--}}
-								{{--<tr>--}}
-								{{--<td><input type="submit" value="Submit"></td>--}}
-								{{--</tr>--}}
-								{{--</table>--}}
-								{{--</form>--}}
-								{{--<br>--}}
-								{{--<br>--}}
-						{{--@endif--}}
-
-						@if($user->facad==NULL)
-									<form action="{{URL::Route('user.update')}}" method="post">
-										<input name="name" type="text" placeholder="Full Name">
-										<input name="roll_no" type="text" placeholder="IITB Roll Number">
-										<input name="hostel" type="text" placeholder="Hostel Allotted for the next year (Give only hostel number eg. if your hostel is 6 , write only '6')">
-										<input name="dept" type="text" placeholder="Department(Please use full dept name, dont use short form like meta,chem,cse)">
-										<input name="contact" type="text" placeholder="Phone Number">
-										<input name="facad" type="text" placeholder="Name of Faculty Advisor (Full name of facad)">
-										<h4 style="color:red">Use camp.iitb.ac.in to find the ldap id of your facad.</h4>
-										<input name="facad_ldap" type="text" placeholder="Ldap Id of Faculty Advisor (Only ldap id, do not include '@iitb.ac.in'">
-										<input type="submit" value="Update Profile">
-									</form>
-						@else
-							<i><u><a href="{{URL::route('user.edit')}}"> Delete your entire info and refill it</a></u></i>
- 							<table class="table">
+<!-- 						@if($user->want_room==NULL)
+								<form class="form-horizontal" action="{{URL::route('events.ITSP_2015.want_room')}}" method="get">
+								<table>
+								<tr>
+								<td>Do you want to retain your room?</td>
+								</tr>
+								<tr>
+								<td><input name="want_room" type="radio" value="yes">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYes</td>
+								<td><input name="want_room" type="radio" value="No">No</td>
+								</td>
+								</tr>
+								<tr>
+								<td><input type="submit" value="Submit"></td>
+								</tr>
+								</table>
+								</form>
+								<br>
+								<br>
+						@endif -->
+							<!-- <i><u><a href="{{URL::route('user.edit')}}"> Delete your entire info and refill it</a></u></i> -->
+<!-- 							<table class="table">
 							<tr>
 								<td>Name</td>
 								<td>{{$user->name}}</td>
@@ -107,10 +104,10 @@
 								<td>Contact</td>
 								<td>{{$user->contact}}</td>
 							</tr>	
-							{{--<tr>--}}
-								{{--<td>ITSP team Id</td>--}}
-								{{--<td>{{$user->itsp}}</td>--}}
-							{{--</tr>								--}}
+							<tr>
+								<td>ITSP team Id</td>
+								<td>{{$user->itsp}}</td>
+							</tr>								
 							<tr>
 								<td>Faculty Advisor</td>
 								<td>{{$user->facad}}</td>
@@ -122,22 +119,22 @@
 							</table>
 							<br>
 							<br>
- {{--<!-- 							@if($user->room_retained==0 && $user->want_room=='yes')--}}
-								{{--<form action="{{URL::route('events.ITSP_2015.room_retained')}}" method="get">--}}
-								{{--<table>--}}
-								{{--<tr>--}}
-								{{--<td>Have your request been approved??--}}
-								{{--<input name="room_retained" type="checkbox" value="yes">--}}
-								{{--</td>--}}
-								{{--</tr>--}}
-								{{--<tr>--}}
-								{{--<td><input type="submit" value="My room is confirmed"></td>--}}
-								{{--</tr>--}}
-								{{--</table>--}}
-								{{--</form>--}}
-							{{--@elseif($user->room_retained==1)--}}
-							{{--<h4>Your room has been retained</h4>--}}
-							{{--@endif -->--}}
+ --><!-- 							@if($user->room_retained==0 && $user->want_room=='yes')
+								<form action="{{URL::route('events.ITSP_2015.room_retained')}}" method="get">
+								<table>
+								<tr>
+								<td>Have your request been approved??
+								<input name="room_retained" type="checkbox" value="yes">
+								</td>
+								</tr>
+								<tr>
+								<td><input type="submit" value="My room is confirmed"></td>
+								</tr>
+								</table>
+								</form>
+							@elseif($user->room_retained==1)
+							<h4>Your room has been retained</h4>
+							@endif -->
 						@endif
 						@if($user->password == "" && $user->ldap_verified==1)
 							<h3>Set your Password:</h3>
@@ -146,7 +143,6 @@
 								<input class="form-control" name="password_verify" size="8" type="password" placeholder="Re-enter Password" required>
 								<input class="btn btn-green" type="submit" value="Set Password">
 							</form>
-						@endif
 						@endif
 						</div>
 					</div><!-- ./row -->

@@ -8,8 +8,6 @@ Route::group(array('prefix' => 'itsp2016'),function()
     Route::get('mentor2016',array('as'=>'events.ITSP_2016.mentor','uses'=>'ITSPController@mentor2016'));
     Route::get('/',array('as'=>'events.ITSP_2016.index','uses'=>'ITSPController@index2016'));
     Route::get('chat', array('as'=>'events.ITSP_2016.chat', 'uses'=>'ITSPController@chat'));
-    Route::get('abstract', array('as'=>'events.ITSP_2016.abstract', 'uses'=>'ITSPController@abstract2016'));
-    Route::post('auth',array('as'=>'events.ITSP_2016.auth','uses'=>'ITSP2016Controller@auth'));
 });
 
 
