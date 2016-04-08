@@ -18,7 +18,9 @@
 
     {{--<h4> No other format is allowed except pdf.</h4>--}}
     <h4>
-        You need to add a link to your google docs giving commenting rights. (Choose "Anyone with the link can Comment")
+        You need to have your abstract on a google docs and share it with commenting rights.
+        To do so, Open the google docs, click on share, click on share with anyone, and choose
+        anybody with the link can comment. This way mentors can directly comment on your abstract.
     </h4>
 
     <h4> If you are filling the form for the first time, leave the team id field blank.</h4>
