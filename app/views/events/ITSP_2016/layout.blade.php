@@ -19,6 +19,7 @@
 							<li><a href="{{URL::Route('events.ITSP_2016.index')}}">Home</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2016.mentor')}}">Mentor Form</a></li>
 							<li><a href="{{URL::Route('events.ITSP_2016.chat')}}">Chat</a></li>
+							<li><a href="{{URL::Route('events.ITSP_2016.abstract')}}">Abstract Submission</a></li>
 						</ul><!-- /.sidenav -->
 						
 						<!-- ============================================================= SIDE NAVIGATION : END ============================================================= -->
