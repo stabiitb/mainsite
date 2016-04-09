@@ -3,7 +3,7 @@
 @section('inner-content')
 <?php
      date_default_timezone_set('Asia/Kolkata');
-     $closetime=\Carbon\Carbon::create(2016,4, 9, 23, 59, 59);
+     $closetime=\Carbon\Carbon::create(2016,4, 10, 06, 59, 59);
      $curtime = \Carbon\Carbon::now();
 //     echo $closetime."  ".$curtime."\n";
 ?>
@@ -53,7 +53,7 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="id" value="{{Input::old('team_id')}}" placeholder="Team Id. (Leave blank if you are filling it for first time)">
+                                        <input type="text" class="form-control" name="team_id" value="{{Input::old('team_id')}}" placeholder="Team Id. (Leave blank if you are filling it for first time)">
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">
