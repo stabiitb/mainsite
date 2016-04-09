@@ -222,10 +222,11 @@ count_it();
 							@if (Auth::check())
 								@if (Auth::User()->admin==1)
 
-							 <li class="single-block"><a href="{{URL::route('events.ITSP_2015.review',array('ara'))}}" class="btn">ITSP 2015 All Team Details</a> </li>		
-							 <!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->
+							 <li class="single-block"><a href="{{URL::route('events.ITSP_2016.review',array('ara'))}}" class="btn">ITSP 2016 All Team Details</a> </li>
 
-							 <li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li>
+							 {{--<!-- <li class="single-block"><a href="{{URL::route('events.ITSP_2015.give_reviews')}}" class="btn">Review link for managers</a> </li>		 -->--}}
+
+							 {{--<li class="single-block"><a href="{{URL::route('links')}}" class="btn">Stab Important links</a></li>--}}
 
 							 @endif
  					     @endif

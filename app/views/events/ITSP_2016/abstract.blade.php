@@ -10,7 +10,7 @@
 @if($curtime < $closetime)
     @if(Auth::check())
      @if(Auth::User()->ldap_verified==1)
-    <h4> Deadline for First Abstract Submission is 9th April 2016, 23:59:59 pm.</h4>
+    <h4> Deadline for First Abstract Submission is 10th April 2016, 11:59:59 pm.</h4>
 
     <h4> Then you must create a stab id and fill up all the details asked. Faculty advisor's ldap will be required for room retention purposes.
         Your StabId can be found under profile.</h4>
