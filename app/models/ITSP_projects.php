@@ -21,7 +21,7 @@ class ITSP_Projects extends Eloquent implements UserInterface , RemindableInterf
 		{$this->user2 = Input::get('t2_stabid');}
 		if (Input::get('t3_stabid') != null)
 		{$this->user3 = Input::get('t3_stabid');}
-		if (Input::get('t3_stabid') != null)
+		if (Input::get('t4_stabid') != null)
 		{$this->user4 = Input::get('t4_stabid');}
         $this->abstractlink = Input::get('abs_link');
 
