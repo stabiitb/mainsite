@@ -53,7 +53,7 @@
 
                              <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input type="text" class="form-control" name="team_id" value="{{Input::old('team_id')}}" placeholder="Team Id. (Leave blank if you are filling it for first time)">
+                                        <input type="text" class="form-control" name="id" value="{{Input::old('id')}}" placeholder="Team Id. (Leave blank if you are filling it for first time)">
                              </div>
 
                              <div style="margin-bottom: 25px" class="input-group">

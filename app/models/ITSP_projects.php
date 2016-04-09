@@ -3,8 +3,9 @@ use Illuminate\Auth\UserTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;
+use Illuminate\Database\Eloquent\Model;
 
-class ITSP_Projects extends Eloquent implements UserInterface , RemindableInterface{
+class ITSP_Projects extends Model implements UserInterface , RemindableInterface{
 
 	use UserTrait , RemindableTrait;
 
@@ -24,7 +25,14 @@ class ITSP_Projects extends Eloquent implements UserInterface , RemindableInterf
 		if (Input::get('t4_stabid') != null)
 		{$this->user4 = Input::get('t4_stabid');}
         $this->abstractlink = Input::get('abs_link');
-
 	}
+    public function update_data()
+    {
+        $this->update(['team_name'=> Input::get('team_name'),
+                        'project_name' => Input::get('project_name'),
+                        'club' => Input::get('club'),
+                        'user1' =>Input::get('t1_stabid'),
+                        'abstractlink'=> Input::get('abs_link')]);
+    }
 
 }

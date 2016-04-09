@@ -8,23 +8,27 @@ class ITSP2016Controller extends \BaseController
 	public function auth()
 	{
         $curr_user_id = Auth::User()->id;
-        $team_id = Input::get("id");
-        if($team_id != "")
+        $id = Input::get("id");
+        if($id != null)
         {
+            $team_existing = ITSP_Projects::find($id);
 
-            $team_existing = ITSP_Projects::find($team_id);
-            if (is_null($team_id))
+            if (is_null($team_existing))
             {
                 $messageBag = new MessageBag;
                 $messageBag->add('message',"Team id does not exist" );
                 return Redirect::back()->with('messages', $messageBag)->withInput();
             }
+
             else
             {
-                //check if the current user is the one filling the form
-                if ($curr_user_id == $team_existing->user1)
+                $team_existing->saveFromInput(Input::all());
+                if ($curr_user_id == $team_existing -> user1)
                 {
-                    $team_existing->saveFromInput(Input::all());
+                    $team_existing->save();
+                    $messageBag = new MessageBag;
+                    $messageBag->add('message',"All changes saved successfully" );
+                    return Redirect::back()->with('messages', $messageBag)->withInput();
                 }
             }
         }

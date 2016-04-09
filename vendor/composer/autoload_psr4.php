@@ -13,5 +13,7 @@ return array(
     'Patchwork\\' => array($vendorDir . '/patchwork/utf8/src/Patchwork'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Facebook\\' => array($vendorDir . '/facebook/php-sdk-v4/src/Facebook'),
+    'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
+    'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),
     'Barryvdh\\LaravelIdeHelper\\' => array($vendorDir . '/barryvdh/laravel-ide-helper/src'),
 );
