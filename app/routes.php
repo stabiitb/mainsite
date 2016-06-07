@@ -14,6 +14,7 @@ Route::group(array('prefix' => 'itsp2016'),function()
     Route::get('review',array('as'=>'events.ITSP_2016.reviews','uses'=>'ITSP2016Controller@reviews'));
 });
 
+
 Route::get('itsp2015/projects',array('as'=>'events.ITSP_2015.projects','uses'=>'ITSPController@projects'));
 
 
@@ -184,9 +185,13 @@ Route::get('faculty-advisor-and-mentor',array('as'=>'facad','uses'=>function ()
 }));
 
 // Calender
-Route::get('calendar',array('as'=>'calendar','uses'=>function ()
+Route::get('calendar2015',array('as'=>'calendar','uses'=>function ()
 {
     return View::make('calendar');
+}));
+Route::get('calendar2016',array('as'=>'calendar','uses'=>function ()
+{
+    return View::make('calendar2016');
 }));
 
 // Events
