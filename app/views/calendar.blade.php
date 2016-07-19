@@ -1,17 +1,8 @@
 @extends('layout.default')
-
 @section('content')
 <main>
-			
 			<section>
-<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;
-&amp;src=fvktl04jnjac2ns9hh080fol2g%40group.calendar.google.com&amp;ctz=Asia/Calcutta&amp;color=%23FFFF00
-&amp;src=darshildave94%40gmail.com&amp;ctz=Asia/Calcutta&amp;color=%23FF0000
-&amp;src=yrajsm%40gmail.com&amp;ctz=Asia/Calcutta&amp;color=%23FF9900
-&amp;src=rushilmodi28%40gmail.com&amp;ctz=Asia/Calcutta&amp;color=%23FFFF00
-&amp;src=rpavanhebbar1996%40gmail.com&ctz=Asia/Calcutta&amp;color=%23FFFF00
-"
- style="border: 0;color=red" width="1000" height="600" frameborder="0" scrolling="no">
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=66978ahtmob4medi6rs249sghg%40group.calendar.google.com&amp;color=%23865A5A&amp;src=a3rr86qgippgh8ua80e508l4vg%40group.calendar.google.com&amp;color=%23691426&amp;src=36f0b3pimqplgse06util6q4to%40group.calendar.google.com&amp;color=%235F6B02&amp;src=i4ub9n4vdp70c35820lfhtagvc%40group.calendar.google.com&amp;color=%238C500B&amp;src=9h5p0ki7gnmair697q3od6o2ag%40group.calendar.google.com&amp;color=%235229A3&amp;src=oeptbo1ms672rjuv1pbl023hqk%40group.calendar.google.com&amp;color=%232F6309&amp;src=eds69f70uu4c46ackcugkei7hc%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </section>				
 </main>
 @endsection
