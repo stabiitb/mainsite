@@ -132,4 +132,48 @@ class ITSP2016Controller extends \BaseController
         return $this->review('all');
     }
 
+    public function all_projects()
+    {
+        $aero_ids = [2, 15, 69, 91, 97, 98, 142, 156, 174, 179, 207];
+        $aero = ITSP_Projects::find($aero_ids);
+        $bio_ids = [68, 134];
+        $bio = ITSP_Projects::find($bio_ids);
+        $elec_ids = [1, 47, 50, 71, 78, 84, 88, 99, 100, 101, 108, 111, 115, 122, 127, 132, 160, 169, 173, 184, 190, 194, 209, 131, 225, 227, 133, 65, 80];
+        $elec = ITSP_Projects::find($elec_ids);
+        $energy_ids = [109, 113, 159, 178, 210, 222];
+        $energy = ITSP_Projects::find($energy_ids);
+        $krittika_ids = [167];
+        $krittika = ITSP_Projects::find($krittika_ids);
+        $mnp_ids = [121, 123, 185];
+        $mnp = ITSP_Projects::find($mnp_ids);
+        $robo_ids = [6, 8, 10, 11, 14, 46, 63, 64, 79, 81, 94, 96, 114, 125, 138, 4, 181, 186, 187, 188, 162, 193, 196, 202, 211, 217, 92, 76, 107, 89, 195, 119, 39];
+        $robo = ITSP_Projects::find($robo_ids);
+        $wncc_ids = [13, 16, 45, 48, 59, 65, 70, 75, 90, 104, 126, 128, 144, 158, 164, 170, 183, 214];
+        $wncc = ITSP_Projects::find($wncc_ids);
+        $all_ids = [1, 47, 50, 71, 78, 84, 88, 99, 100, 101, 108, 111, 115, 122, 127, 132, 160, 169, 173, 184, 190, 194, 209, 131, 225, 227, 133, 65, 80, 6, 8, 10, 11, 14, 46, 63, 64, 79, 81, 94, 96, 114, 125, 138, 4, 181, 186, 187, 188, 162, 193, 196, 202, 211, 217, 92, 76, 107, 89, 195, 119, 39, 68, 134, 13, 16, 45, 48, 59, 65, 70, 75, 90, 104, 126, 128, 144, 158, 164, 170, 183, 214, 109, 113, 159, 178, 210, 222, 121, 123, 185, 167, 2, 15, 69, 91, 97, 98, 142, 156, 174, 179, 207];
+        $all = ITSP_Projects::find($all_ids);
+        $clubs = [$aero, $bio, $elec, $energy, $krittika, $mnp, $robo, $wncc, $all];
+//        $clubs = [$aero, $bio, $elec, $energy, $krittika];
+        return View::make('events.ITSP_2016.all_projects', compact('clubs'));
+    }
+
+    public function completed_projects()
+    {
+        $aero_ids = [15, 98, 156];
+        $aero = ITSP_Projects::find($aero_ids);
+        $elec_ids = [1, 49, 50, 80, 84, 99, 100, 133, 184, 184, 190, 197, 209];
+        $elec = ITSP_Projects::find($elec_ids);
+        $mnp_ids = [121];
+        $mnp = ITSP_Projects::find($mnp_ids);
+        $robo_ids = [4, 6, 8, 10, 11, 14, 46, 63, 64, 94, 107, 125, 138, 186, 193, 196, 211];
+        $robo = ITSP_Projects::find($robo_ids);
+        $wncc_ids = [16, 48, 90, 128];
+        $wncc = ITSP_Projects::find($wncc_ids);
+        $all_ids = [15, 98, 156, 1, 49, 50, 80, 84, 99, 100, 133, 184, 184, 190, 197, 209, 4, 6, 8, 10, 11, 14, 46, 63, 64, 94, 107, 125, 138, 186, 193, 196, 211, 16, 48, 90, 128];
+        $all = ITSP_Projects::find($all_ids);
+        $clubs = [$aero, $elec, $mnp, $robo, $wncc, $all];
+        return View::make('events.ITSP_2016.completed_projects', compact('clubs'));
+    }
+
+
 }
