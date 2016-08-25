@@ -14,11 +14,17 @@ Route::group(array('prefix' => 'itsp2016'),function()
     Route::get('review',array('as'=>'events.ITSP_2016.reviews','uses'=>'ITSP2016Controller@reviews'));
 });
 
-Route::get('techform',array('as'=>'events.Hostel_Events.projects','uses'=>'HostelTechController@techform'));
+//Route::get('techform',array('as'=>'events.Hostel_Events.tech_events','uses'=>'HostelTechController@techform'));
+Route::group(array('prefix' => 'hostel_events'), function()
+{
+    Route::get('home', array('as' => 'events.Hostel_Events.home', 'uses'=> 'HostelTechController@home'));
+    Route::get('techform', array('as' => 'events.Hostel_Events.tech_events', 'uses' => 'HostelTechController@techform'));
+    Route::post('techform_auth', array('as' => 'events.Hostel_Events.auth', 'uses' => 'HostelTechController@auth'));
+});
 
 Route::get('itsp2015/projects',array('as'=>'events.ITSP_2015.projects','uses'=>'ITSPController@projects'));
 Route::get('itsp2016/all_projects',array('as'=>'events.ITSP_2016.all_projects','uses'=>'ITSP2016Controller@all_projects'));
-Route::get('itsp2016/completed_projects',array('as'=>'events.ITSP_2016.all_projects','uses'=>'ITSP2016Controller@completed_projects'));
+Route::get('itsp2016/completed_projects',array('as'=>'events.ITSP_2016.completed_projects','uses'=>'ITSP2016Controller@completed_projects'));
 
 
 Route::group(array('prefix' => 'itsprandomap'),function()
@@ -37,8 +43,8 @@ Route::group(array('prefix' => 'itsprandomap'),function()
     Route::any('take_reviews',array('as'=>'events.ITSP_2015.take_reviews','uses'=>'ITSPController@take_reviews'));
     Route::any('resubmit_abstract',array('as'=>'events.ITSP_2015.resubmit_abstract','uses'=>'ITSPController@resubmit_abstract'));
     Route::get('final_reviews',array('as'=>'events.ITSP_2015.final_reviews','uses'=>'ITSPController@final_reviews'));
-    Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review')); 
-    Route::get('qwedfrtghyuj',array('as'=>'events.ITSP_2015.reviews','uses'=>'ITSPController@reviews')); 
+    Route::get('qwedfrtghyuj/{club}',array('as'=>'events.ITSP_2015.review','uses'=>'ITSPController@review'));
+    Route::get('qwedfrtghyuj',array('as'=>'events.ITSP_2015.reviews','uses'=>'ITSPController@reviews'));
     Route::get('qwsaqwasqwas/updating_data_base',array('as'=>'events.ITSP_2015.updateslots','uses'=>'ITSPController@update_slots'));
     Route::get('team',array('as'=>'events.ITSP_2015.team','uses'=>'ITSPController@team'));
     Route::get('team_verify',array('as'=>'events.ITSP_2015.team_verify','uses'=>'ITSPController@team_verify'));
@@ -107,7 +113,7 @@ Route::group(array('prefix'=>'events'),function(){
 
 });
 
-Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links')); 
+Route::get('implinks',array('as'=>'links','uses'=>'HomeController@links'));
 Route::get('freshie_intro',array('as'=>'freshie_intro','uses'=>function(){return View::make('freshie_intro');}));
 
 Route::get('Status_of_teams','ITSPController@test');
@@ -118,7 +124,7 @@ Route::group(array('prefix'=>'positionofresponsibility'),function()
     Route::get('register',array('as'=>'events.PoR.form','uses'=>'PoRController@form'));
    Route::get('techcoordinators2k16',array('as'=>'events.PoR.form', 'uses'=>'PoRController@form'));
 });
-    
+
 
 Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
 // Clubs URLs
