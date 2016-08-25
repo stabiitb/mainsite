@@ -119,8 +119,8 @@
                                         <input type="text" class="form-control" name="doc_link" value="{{Input::old('doc_link')}}" placeholder="Documentation Link">
                                     </div>
 
-                            </div>
-                        </div>
+
+
 
 
                         <div style="margin-top:10px" class="form-group">
