@@ -18,6 +18,8 @@ class CompleteDatabases extends Migration {
 		Schema::dropIfExists('Users');
 		Schema::dropIfExists('smartcampus_users');
 		Schema::dropIfExists('CMOS_challenge_users');
+		Schema::dropIfExists('ITSP_Projects');
+		Schema::drop('Hostel_tech_events');
 		Schema::create('Users', function(Blueprint $table)
 		{
 			$table->increments('id');
@@ -131,6 +133,29 @@ class CompleteDatabases extends Migration {
 			$table->timestamps();
 			$table->rememberToken();
 		});
+		Schema::create('ITSP_Projects', function(Blueprint $table)
+		{
+			$table->increments('team_id');
+			$table->integer('user1')->unsigned()->nullable();
+			$table->integer('user2')->unsigned()->nullable();
+			$table->integer('user3')->unsigned()->nullable();
+			$table->integer('user4')->unsigned()->nullable();
+			$table->foreign('user1')->references('id')->on('Users');
+			$table->foreign('user2')->references('id')->on('Users');
+			$table->foreign('user3')->references('id')->on('Users');
+			$table->foreign('user4')->references('id')->on('Users');
+			$table->string('abstractlink',200);
+			$table->string('year',4);
+			$table->string('team_name',200);
+			$table->string('project_name',200);
+			$table->string('club',50);
+			$table->string('reviews',500)->nullable();
+			$table->string('status',50)->nullable();
+			$table->string('githublink',100)->nullable();
+			$table->string('presentationlink',100)->nullable();
+			$table->string('youtubelink',100)->nullable();
+			$table->timestamps();
+		});
 		/*
 		Schema::create('ITSP_2015_users', function(Blueprint $table)
 		{
@@ -166,6 +191,29 @@ class CompleteDatabases extends Migration {
 			$table->rememberToken();
 		});
 		*/
+//		Schema::create('ITSP_Projects', function(Blueprint $table)
+//		{
+//			$table->increments('team_id');
+//			$table->integer('user1')->unsigned()->nullable();
+//			$table->integer('user2')->unsigned()->nullable();
+//			$table->integer('user3')->unsigned()->nullable();
+//			$table->integer('user4')->unsigned()->nullable();
+//			$table->foreign('user1')->references('id')->on('Users');
+//			$table->foreign('user2')->references('id')->on('Users');
+//			$table->foreign('user3')->references('id')->on('Users');
+//			$table->foreign('user4')->references('id')->on('Users');
+//			$table->string('abstractlink',200);
+//			$table->string('year',4);
+//			$table->string('team_name',200);
+//			$table->string('project_name',200);
+//			$table->string('club',50);
+//			$table->string('reviews',500)->nullable();
+//			$table->string('status',50)->nullable();
+//			$table->string('githublink',100)->nullable();
+//			$table->string('presentationlink',100)->nullable();
+//			$table->string('youtubelink',100)->nullable();
+//			$table->timestamps();
+//		});
 
 	}
 
