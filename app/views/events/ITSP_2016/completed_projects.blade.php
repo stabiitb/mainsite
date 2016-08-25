@@ -60,6 +60,9 @@
                                                     <th>
                                                         Team Members
                                                     </th>
+                                                    <th>
+                                                        Link to Abstract
+                                                    </th>
 
                                                 </tr>
 
@@ -91,6 +94,9 @@
                                                             <br>
                                                             Email: {{User::find($project->user1)->email;}}
                                                         </td>
+                                                        <td><b><a href="{{
+																URL::asset('media/ITSP2016/abstracts/' . str_replace(' ','', $project->club) . '/' . $project->id .  '.pdf')}}">
+                                                                    Link to Abstract</a></b></td>
 
 
                                                     </tr>

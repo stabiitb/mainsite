@@ -23,9 +23,9 @@ Route::group(array('prefix' => 'hostel_events'), function()
 });
 
 Route::get('itsp2015/projects',array('as'=>'events.ITSP_2015.projects','uses'=>'ITSPController@projects'));
-Route::get('itsp2016/all_projects',array('as'=>'events.ITSP_2016.all_projects','uses'=>'ITSP2016Controller@all_projects'));
+//Route::get('itsp2016/all_projects',array('as'=>'events.ITSP_2016.all_projects','uses'=>'ITSP2016Controller@all_projects'));
 Route::get('itsp2016/completed_projects',array('as'=>'events.ITSP_2016.completed_projects','uses'=>'ITSP2016Controller@completed_projects'));
-
+Route::get('itsp2016/certificates/{id}', array('as'=>'events.ITSP_2016.certi_template','uses'=>'ITSP2016Controller@certificates'));
 
 Route::group(array('prefix' => 'itsprandomap'),function()
 {
