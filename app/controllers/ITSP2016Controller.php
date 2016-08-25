@@ -159,18 +159,12 @@ class ITSP2016Controller extends \BaseController
 
     public function completed_projects()
     {
-        $aero_ids = [15, 98, 156];
-        $aero = ITSP_Projects::find($aero_ids);
-        $elec_ids = [1, 49, 50, 80, 84, 99, 100, 133, 184, 184, 190, 197, 209];
-        $elec = ITSP_Projects::find($elec_ids);
-        $mnp_ids = [121];
-        $mnp = ITSP_Projects::find($mnp_ids);
-        $robo_ids = [4, 6, 8, 10, 11, 14, 46, 63, 64, 94, 107, 125, 138, 186, 193, 196, 211];
-        $robo = ITSP_Projects::find($robo_ids);
-        $wncc_ids = [16, 48, 90, 128];
-        $wncc = ITSP_Projects::find($wncc_ids);
-        $all_ids = [15, 98, 156, 1, 49, 50, 80, 84, 99, 100, 133, 184, 184, 190, 197, 209, 4, 6, 8, 10, 11, 14, 46, 63, 64, 94, 107, 125, 138, 186, 193, 196, 211, 16, 48, 90, 128];
-        $all = ITSP_Projects::find($all_ids);
+        $aero = ITSP_Projects::where(['status' => 'Completed', 'club' => 'Aeromodelling Club'])->get();
+        $elec = ITSP_Projects::where(['status' => 'Completed', 'club' => 'Electronics Club'])->get();
+        $mnp = ITSP_Projects::where(['status' => 'Completed', 'club' => 'Maths and Physics'])->get();
+        $robo = ITSP_Projects::where(['status' => 'Completed', 'club' => 'Robotics Club'])->get();
+        $wncc = ITSP_Projects::where(['status' => 'Completed', 'club' => 'WnCC'])->get();
+        $all = ITSP_Projects::where(['status' => 'Completed'])->get();
         $clubs = [$aero, $elec, $mnp, $robo, $wncc, $all];
         return View::make('events.ITSP_2016.completed_projects', compact('clubs'));
     }
