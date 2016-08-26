@@ -112,7 +112,7 @@
 
 
                                     <div style="margin-bottom: 25px" class="input-group">
-                                        <span>Upload file Documentation pdf and Photographs Links</span>
+                                        <span>Documentation pdf and Photographs Links</span>
                                     </div>
                                     <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="icon-star"></i></span>
