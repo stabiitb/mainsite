@@ -288,13 +288,13 @@
 			
 			<div class="footer-bottom">
 				<div class="container inner">
-					<p class="pull-left">© 2015 STAB-IITB. All rights reserved. Designed by
+					<p class="pull-left">© 2016 STAB-IITB. All rights reserved. Designed by
 					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a> and maintained by 
-					<a href="{{URL::Route('team_2015')}}#Webteam">STAB Web Team</a>.
+					<a href="{{URL::Route('team_2016')}}#Webteam">STAB Web Team</a>.
 					</p>
 					<ul class="footer-menu pull-right">
 						<li><a href="{{URL::Route('stab.home')}}">Home</a></li>
-						<li><a href="{{URL::Route('team_2015')}}">Contact</a></li>
+						<li><a href="{{URL::Route('team_2016')}}">Contact</a></li>
 					</ul><!-- .footer-menu -->
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->

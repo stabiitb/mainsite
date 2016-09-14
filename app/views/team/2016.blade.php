@@ -89,7 +89,7 @@
 	</div><!-- /.row -->
 
 	<div class="row  text-center">
-		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+		<div class="col-sm-6 inner-left inner-right " >
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2016/Yogesh_Kumar.jpg')}}" class="img-circle">
@@ -105,6 +105,21 @@
 
 			</figure>
 		</div><!-- /.col -->
+
+	<div class="col-sm-6 inner-left inner-right " >
+		<figure class="member">
+			<div class="icn-link">
+				<span class="icn-more"></span><img src="{{URL::asset('assets/images/2016/Sarvesh Hire')}}" class="img-circle">
+			</div><!-- /.icon-overlay -->
+			<figcaption>
+				<h2>
+					Sarvesh Hire
+					<span><i class="icon-phone">9833283633</i></span>
+					<span><i class="icon-mail">hiresarvesh@gmail.com</i></span>
+				</h2>
+			</figcaption>
+		</figure>
+	</div><!-- /.col -->
 	</div><!-- /.row -->
 	<hr>
 	<div class="row">
