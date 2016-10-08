@@ -79,7 +79,7 @@
 												</div><!-- /.info -->
 											</div><!-- /.text-overlay -->
 
-											<img src= "{{URL::asset('assets/images/2015/club_teams/'.$convener[0])}}" style="height:200px;width:200">
+											<img src= "{{URL::asset('assets/images/2016/club_teams/'.$convener[0].'.jpg')}}" style="height:200px;width:200">
 
 										</div><!-- /.member-image -->
 										
