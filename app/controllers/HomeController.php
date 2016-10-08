@@ -497,7 +497,7 @@ class HomeController extends BaseController {
 		}
 	}
 
-	//Turotials
+	//Tutorials
 	public function tutorials()
 	{
 		$dir = public_path()."/assets/tutorials";
