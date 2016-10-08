@@ -255,7 +255,7 @@ class HomeController extends BaseController {
 	public function wncc($page="about")
 	{
 		if($page=='about')
-			return View::make('club.wncc.home');
+			return Redirect::to("http://www.wncc-iitb.org");
 		else if($page=='team'){
 			$data = $this->update_script("WnCC");
 			$managers = $data[0];
