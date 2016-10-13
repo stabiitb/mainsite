@@ -331,6 +331,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('GCrankings.techgc2015');
 	}
+	public function techgc2016()
+	{
+		return View::make('GCrankings.techgc2016');
+	}
 
 
 	public function get_images($club){
