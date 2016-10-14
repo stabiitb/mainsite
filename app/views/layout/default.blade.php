@@ -254,7 +254,7 @@
 										<!-- <li><a href="http://stab-iitb.org/technovation">Technovation</a></li> -->
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
-										<li><a href="{{URL::Route('techgc2015')}}">Tech GC Rankings</a></li>
+										<li><a href="{{URL::Route('techgc2016')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calendar')}}">Tech Calendar</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->

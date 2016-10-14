@@ -216,7 +216,7 @@ Route::get('jan-events',array('as' => 'events.jan.2015' , 'uses' => 'EventContro
 
 Route::get('tech-gc-points-2014',array('as'=>'techgc2014','uses'=>'HomeController@techgc2014'));
 Route::get('tech-gc-points-2015',array('as'=>'techgc2015','uses'=>'HomeController@techgc2015'));
-Route::get('tech-gc-points-2015',array('as'=>'techgc2016','uses'=>'HomeController@techgc2016'));
+Route::get('tech-gc-points-2016',array('as'=>'techgc2016','uses'=>'HomeController@techgc2016'));
 
 // // Smart Campus
 // Route::get('smart-campus',array('as'=>'smart-campus','uses'=>'AppsController@smart_campus_home'));
