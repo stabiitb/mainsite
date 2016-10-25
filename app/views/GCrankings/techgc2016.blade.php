@@ -154,6 +154,7 @@
      	console.log(validGCs);
         series = [];
         GC['Jhatka'].club = 'Electronics Club';
+        GC['Chain Reaction'].club = 'Robotics Club';
 
         clubsDone  = [];
         for(var k in validGCs){
@@ -234,10 +235,10 @@
 								<li><a id="allgraphs" href="#" data-filter="*" class="active">All</a></li>
 								<li><a href="#" data-filter=".mnp">Maths and Physics Club</a></li>
 								<li><a href="#" data-filter=".aero">Aeromodelling Club</a></li>
-								<li><a href="#" data-filter=".krittika">Krittika Club</a></li>
+								<li><a href="#" data-filter=".krittika">Krittika</a></li>
 								<li><a href="#" data-filter=".wncc">Web and Coding Club</a></li>
 								<li><a href="#" data-filter=".elec">Electronics Club</a></li>
-								<li><a href="#" data-filter=".thelastgc">Best Hostel</a></li>
+								<li><a href="#" data-filter=".robo">Robotics Club</a></li>
 						</ul><!-- /.filter -->
 							
 							<ul class="items col-2 gap" id="pie-charts">
@@ -261,9 +262,9 @@
 								</li>	
 								<li class="item elec">
 									<div id="Jhatka"></div>
-								</li>	
-								<li class="item thelastgc ">
-									<div id="The Last GC"></div>
+								</li>
+								<li class="item robo">
+									<div id="Chain Reaction"></div>
 								</li>	
 							</ul><!-- /.items -->
 							
