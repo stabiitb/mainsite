@@ -107,7 +107,7 @@
       window.onload = function() { init() };
 
       var public_spreadsheet_url_1 = 'https://docs.google.com/spreadsheets/d/1LCWFDiY1U0Ghy6NzSxDCd43oc_hErWks_xeNcyXj78c/pubhtml?gid=0&single=true';
-   	var hostels = ['H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11','H12','H13','H14'];
+   	var hostels = ['H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11', 'H12', 'H13', 'H14','H15', 'H16'];
    	function sum(a){
    		var j=0;
    		for(var i=0;i<a.length;i++){
@@ -215,7 +215,7 @@
 							<header>
 								<h1>Tech GC Points</h1>
 								<p>Year : 2016 - 2017</p>
-								<p> Click <a href="https://docs.google.com/spreadsheets/d/1kTQ6zwYY0hiKmSi_6ZpkWm7fMBvN40-lWaQ3rAcCFZs/edit?usp=sharing">here</a> to see the overall Tally</p> 
+								<p> Click <a href="https://docs.google.com/spreadsheets/d/1LCWFDiY1U0Ghy6NzSxDCd43oc_hErWks_xeNcyXj78c/edit?usp=sharing">here</a> to see the overall Tally</p> 
 								<br>
 							</header>
 						</div><!-- /.col -->
