@@ -29,7 +29,7 @@ Route::get('itsp2015/projects',array('as'=>'events.ITSP_2015.projects','uses'=>'
 Route::get('itsp2016/completed_projects',array('as'=>'events.ITSP_2016.completed_projects','uses'=>'ITSP2016Controller@completed_projects'));
 Route::get('itsp2016/certificates/{id}', array('as'=>'events.ITSP_2016.certi_template','uses'=>'ITSP2016Controller@certificates'));
 
-Route::group(array('prefix' => 'itsprandomap'),function()
+Route::group(array('prefix' => 'itsp2015'),function()
 {
     Route::get('register',array('as'=>'events.ITSP_2015.form','uses'=>'ITSPController@form'));
     Route::get('/',array('as'=>'events.ITSP_2015.index','uses'=>'ITSPController@index'));
