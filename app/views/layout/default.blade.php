@@ -6,24 +6,24 @@
 		@yield('meta')
 		<meta name="google-site-verification" content="U37UkrwWrB9z8bjUiI4i6-iss8-hQom2u2j5mlSs9v8" />
 		<title>STAB | IITB</title>
-		
+
 		<!-- Bootstrap Core CSS -->
 		<link href="{{ URL::asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
-		
+
 		<!-- Customizable CSS -->
 		<link href="{{ URL::asset('assets/css/main.css')}}" rel="stylesheet" data-skrollr-stylesheet>
 		<link href="{{ URL::asset('assets/css/green.css')}}" rel="stylesheet" title="Color">
 		<link href="{{ URL::asset('assets/css/owl.carousel.css')}}" rel="stylesheet">
 		<link href="{{ URL::asset('assets/css/owl.transitions.css')}}" rel="stylesheet">
 		<link href="{{ URL::asset('assets/css/animate.min.css')}}" rel="stylesheet">
-		
+
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
-		
+
 		<!-- Icons/Glyphs -->
 		<link href="{{ URL::asset('assets/fonts/fontello.css')}}" rel="stylesheet">
-		
+
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
 		<style>
@@ -38,34 +38,34 @@
 		<script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
 		<script src="http://gymkhana.iitb.ac.in/sso/static/widget/js/login.min.js" type="application/javascript"></script>
 		@yield('script')
-		
+
 	</head>
-	
+
 	<body>
 
-	
+
 
 		<!-- ============================================================= HEADER ============================================================= -->
-		
+
 		<header>
 			<div class="navbar">
-				
+
 				<div class="navbar-header">
 					<div class="container">
-						
+
 						<ul class="info pull-left">
 							<li><a href="mailto://oc.stab@iitb.ac.in"><i class="icon-mail-1 contact"></i>oc.stab@iitb.ac.in</a></li>
 						</ul><!-- /.info -->
-		
-						
+
+
 						<ul class="pull-right" style="margin:3px">
 							@if(Auth::check())
-							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li> 
-							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li> 
-							</li>	
+							<li style="padding-right:5px"><a href="{{URL::Route('user.profile')}}" class="btn btn-small btn-green" >Profile</a></li>
+							<li><a href="{{URL::Route('logout')}}" class="btn btn-small btn-green" >Logout</a></li>
+							</li>
 							@else
 							<!-- <li><a href="{{UserController::SSOLoginURL()}}" class="btn btn-small btn-green" >SSO Login</a></li>  -->
-							<li><a href="{{URL::Route('login_page')}}" class="btn btn-small btn-green" >Login</a></li> 
+							<li><a href="{{URL::Route('login_page')}}" class="btn btn-small btn-green" >Login</a></li>
 							@endif
 						</ul>
 						<ul class="social pull-right">
@@ -139,44 +139,44 @@
 							  }
 							</style>
 						</div>
-						
+
 						<!-- ============================================================= LOGO MOBILE ============================================================= -->
-						
+
 						<a class="navbar-brand" href="index.php"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
-						
+
 						<!-- ============================================================= LOGO MOBILE : END ============================================================= -->
-						
+
 						<a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
-						
+
 					</div><!-- /.container -->
 				</div><!-- /.navbar-header -->
-				
+
 				<div class="yamm">
 					<div class="navbar-collapse collapse">
 						<div class="container">
-							
+
 							<!-- ============================================================= LOGO ============================================================= -->
-							
+
 							<a class="navbar-brand" href="{{URL::Route('stab.home')}}"><img src="{{ URL::asset('assets/images/logo.png')}}" class="logo" alt=""></a>
-							
+
 							<!-- ============================================================= LOGO : END ============================================================= -->
-							
-							
+
+
 							<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
-							
+
 							<ul class="nav navbar-nav">
-								
+
 								<li class="dropdown yamm-fullwidth">
 									<a href="#" class="dropdown-toggle js-activated">About</a>
-									
+
 									<ul class="dropdown-menu yamm-dropdown-menu" style="width: 40%;left:10%">
 										<li>
 											<div class="yamm-content row">
-											
-											
+
+
 												<div class="col-sm-6 inner">
 													<h4></h4>
-													
+
 													<ul class="circled">
 														<li><a href="{{URL::Route('vision')}}">VISION</a></li>
 														<li><a href="{{URL::Route('halloffame')}}">HALL OF FAME</a></li>
@@ -195,24 +195,24 @@
 
 												<div class="col-sm-6 inner">
 													<h4>CONTACTS</h4>
-													
+
 													<ul class="circled">
 														<li><a href="{{URL::Route('team_2016')}}">TEAM 2016-17</a></li>
 														<li><a href="{{URL::Route('alumni')}}">ALUMNI</a></li>
 														<li><a href="{{URL::Route('facad')}}">FACULTY ADVISORS/MENTORS</a></li>
 													</ul><!-- /.circled -->
 												</div><!-- /.col -->
-											
-												
+
+
 											</div><!-- /.yamm-content -->
 										</li>
 									</ul><!-- /.yamm-dropdown-menu -->
 								</li><!-- /.yamm-fullwidth -->
-								
-								
+
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Clubs</a>
-									
+
 									<ul class="dropdown-menu">
 										<li><a href="{{URL::Route('aeromodelling-club')}}">Aeromodelling Club</a></li>
 										<li><a href="{{URL::Route('electronics-club')}}">Electronics Club</a></li>
@@ -222,7 +222,7 @@
 										<li><a href="{{URL::Route('wncc')}}">Web and Coding club</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
-								
+
 
 								<li class="dropdown">
 										<li><a href="http://www.stab-iitb.org/srg/">Student Reading Group</a></li>
@@ -233,15 +233,10 @@
 									<a href="http://stab-iitb.org/wiki/Main_Page">Stab WIKI</a>
 								</li><!-- /.dropdown -->
 
-								<li class="dropdown">
-									<a href="http://techgsr.com/" >TechGSR</a>
-								</li><!-- /.dropdown -->
 
-								
-								
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Tech Teams</a>
-									
+
 									<ul class="dropdown-menu">
 										<li><a target=_blank href="http://www.iitbracing.org/">IITB Racing</a></li>
 										<li><a target=_blank href="http://www.auv-iitb.org/">AUV IITB</a></li>
@@ -254,12 +249,12 @@
 
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">IITB Corner</a>
-									
+
 									<ul class="dropdown-menu">
 										<!-- <li><a href="http://stab-iitb.org/technovation">Technovation</a></li> -->
 										<li><a href="{{URL::Route('lightsaber')}}">Light Saber</a></li>
 										<li><a href="{{URL::asset('media/WELpermission.pdf')}}">WEL Lab Permission form</a></li>
-										<li><a href="{{URL::Route('techgc2015')}}">Tech GC Rankings</a></li>
+										<li><a href="{{URL::Route('techgc2016')}}">Tech GC Rankings</a></li>
 										<li><a href="{{URL::Route('calendar')}}">Tech Calendar</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
@@ -268,28 +263,28 @@
 
 								<!-- /.dropdown -->
 
-								
+
 							</ul><!-- /.nav -->
-							
+
 							<!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->
-							
+
 						</div><!-- /.container -->
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.yamm -->
 			</div><!-- /.navbar -->
 		</header>
-		
+
 		<!-- ============================================================= HEADER : END ============================================================= -->
 		@yield('clubcontent')
 		@yield('content')
 <!-- ============================================================= FOOTER ============================================================= -->
-		
+
 		<footer class="dark-bg">
-			
+
 			<div class="footer-bottom">
 				<div class="container inner">
 					<p class="pull-left">© 2016 STAB-IITB. All rights reserved. Designed by
-					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a> and maintained by 
+					<a href="http://www.cse.iitb.ac.in/~prateekchandan">Prateek Chandan</a> and maintained by
 					<a href="{{URL::Route('team_2016')}}#Webteam">STAB Web Team</a>.
 					</p>
 					<ul class="footer-menu pull-right">
@@ -299,11 +294,11 @@
 				</div><!-- .container -->
 			</div><!-- .footer-bottom -->
 		</footer>
-		
+
 		<!-- ============================================================= FOOTER : END ============================================================= -->
-		
+
 		<!-- JavaScripts placed at the end of the document so the pages load faster -->
-		
+
 		<script src="{{ URL::asset('assets/js/jquery.easing.1.3.min.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.form.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/jquery.validate.min.js')}}"></script>
@@ -318,7 +313,7 @@
 		<script src="{{ URL::asset('assets/js/jquery.easytabs.min.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/viewport-units-buggyfill.js')}}"></script>
 		<script src="{{ URL::asset('assets/js/scripts.js')}}"></script>
-		
+
 		<!-- For demo purposes – can be removed on production -->
 		<link href="{{ URL::asset('assets/css/green.css ')}}" rel="alternate stylesheet" title="Green color">
 		<link href="{{ URL::asset('assets/css/blue.css ')}}" rel="alternate stylesheet" title="Blue color">
@@ -328,15 +323,15 @@
 		<link href="{{ URL::asset('assets/css/orange.css')}}" rel="alternate stylesheet" title="Orange color">
 		<link href="{{ URL::asset('assets/css/navy.css')}}" rel="alternate stylesheet" title="Navy color">
 		<link href="{{ URL::asset('assets/css/gray.css')}}" rel="alternate stylesheet" title="Gray color">
-		
+
 		<!-- // <script src="switchstylesheet/switchstylesheet.js"></script> -->
-		
+
 		<script>
-			$(document).ready(function(){ 
+			$(document).ready(function(){
 				$(".changecolor").switchstylesheet( { seperator:"color"} );
 			});
 		</script>
-		
+
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

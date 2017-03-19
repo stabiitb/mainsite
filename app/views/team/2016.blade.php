@@ -472,6 +472,64 @@
 		</div><!-- /.col -->
 	</div><!-- /.row -->
 
+	<div class="row" id="Webteam">
+		<div class="col-md-8 col-sm-10 center-block text-center " >
+			<header>
+				<h3>Web Conveners</h3>
+			</header>
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+
+    <div class="row  text-center">
+        <div class="col-sm-4 inner-left inner-right " >
+            <figure class="member">
+                <div class="icn-link">
+                    <span class="icn-more"></span><img src="{{URL::asset('https://avatars1.githubusercontent.com/u/13691317?v=3&s=466')}}" class="img-circle">
+                </div><!-- /.icon-overlay -->
+
+                <figcaption>
+                    <h2>
+                        Arunabh Ghosh
+                        {{-- <span>Tinkerers' Lab and Infrastructure</span> --}}
+                        <span><i class="icon-phone">9702070117</i></span>
+                        <span><i class="icon-mail">arunabhghosh98@gmail.com</i></span>
+                    </h2>
+                </figcaption>
+
+            </figure>
+        </div><!-- /.col -->
+
+		<div class="col-sm-4 inner-left inner-right " >
+			<figure class="member">
+				<div class="icn-link">
+					<span class="icn-more"></span><img src="{{URL::asset('https://scontent.fbom1-2.fna.fbcdn.net/v/t1.0-9/13592756_1072573342780392_7550294345227458969_n.jpg?oh=71d1d29d1698a20148090ed2c5327999&oe=586A7226')}}" class="img-circle">
+				</div><!-- /.icon-overlay -->
+				<figcaption>
+					<h2>
+						Akash Trehan
+						<span><i class="icon-phone">8879126404</i></span>
+                        <span><i class="icon-mail">akash.trehan123@gmail.com</i></span>
+					</h2>
+				</figcaption>
+			</figure>
+		</div><!-- /.col -->
+
+        <div class="col-sm-4 inner-left inner-right " >
+            <figure class="member">
+                <div class="icn-link">
+                    <span class="icn-more"></span><img src="{{URL::asset('https://scontent.fbom1-2.fna.fbcdn.net/v/t1.0-9/12032193_10206706033661784_5711709208906431172_n.jpg?oh=9938bc814e9e8f042146b472d2b49d03&oe=586B1F1B')}}" class="img-circle">
+                </div><!-- /.icon-overlay -->
+                <figcaption>
+                    <h2>
+                        Gurbir Singh
+                        {{-- <span>Tinkerers' Lab Public and Alumni Relations </span> --}}
+                        <span><i class="icon-phone">9987582233</i></span>
+                        <span><i class="icon-mail">singhgurbir10@gmail.com</i></span>
+                    </h2>
+                </figcaption>
+            </figure>
+        </div><!-- /.col -->
+    </div><!-- /.row -->
 
 
 </section>

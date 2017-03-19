@@ -255,7 +255,7 @@ class HomeController extends BaseController {
 	public function wncc($page="about")
 	{
 		if($page=='about')
-			return View::make('club.wncc.home');
+			return Redirect::to("http://www.wncc-iitb.org");
 		else if($page=='team'){
 			$data = $this->update_script("WnCC");
 			$managers = $data[0];
@@ -330,6 +330,10 @@ class HomeController extends BaseController {
 	public function techgc2015()
 	{
 		return View::make('GCrankings.techgc2015');
+	}
+	public function techgc2016()
+	{
+		return View::make('GCrankings.techgc2016');
 	}
 
 
@@ -497,7 +501,7 @@ class HomeController extends BaseController {
 		}
 	}
 
-	//Turotials
+	//Tutorials
 	public function tutorials()
 	{
 		$dir = public_path()."/assets/tutorials";
