@@ -125,6 +125,10 @@
 
       var count = 0;
       var GC = {};
+      GC.physXGC = {};
+      GC.logicGC = {};
+      GC.physXGC.scores = [];
+      GC.logicGC.scores = [];
       function showInfo(data, tabletop) {
       	console.log(data[0]);
       	keys = Object.keys(data[0]);
@@ -144,13 +148,15 @@
      		}
      		console.log(GC[k].scores);
      		console.log(sum(GC[k].scores));
-     		if(sum(GC[k].scores)>5){
+     		if(sum(GC[k].scores)>1){
      			validGCs.push(k);
      		}
      	}
      	console.log(validGCs);
         series = [];
         GC['Jhatka'].club = 'Electronics Club';
+        GC['Biotech GC'].club = 'Biotech Club';
+        GC['Biotech GC'].clubnick = 'Bio';
         GC['Chain Reaction'].club = 'Robotics Club';
         GC['Logic GC'].clubnick = 'mnp';
         GC['PhysX GC'].clubnick = 'mnp';
@@ -160,7 +166,6 @@
         GC['PhysX GC'].club = 'Maths and Physics Club';
         GC['Astro GC'].club = 'Krittika';
         GC['Jhatka'].club = 'Electronics Club';
-        GC["The Last GC"].club = 'The Last GC'
 
 
         clubsDone  = [];
@@ -241,7 +246,7 @@
 							<ul class="filter text-center" id='fil'>
 								<li><a id="allgraphs" href="#" data-filter="*" class="active">All</a></li>
 								<li><a href="#" data-filter=".mnp">Maths and Physics Club</a></li>
-								<li><a href="#" data-filter=".aero">Aeromodelling Club</a></li>
+								<li><a href="#" data-filter=".bio">Biotech Club</a></li>
 								<li><a href="#" data-filter=".krittika">Krittika</a></li>
 								<li><a href="#" data-filter=".wncc">Web and Coding Club</a></li>
 								<li><a href="#" data-filter=".elec">Electronics Club</a></li>
@@ -254,6 +259,9 @@
 								</li>	
 								<li class="item mnp">
 									<div id="PhysX GC"></div>
+								</li>
+								<li class="item bio">
+									<div id="Biotech GC"></div>
 								</li>		
 								<li class="item krittika">
 									<div id="Astro GC"></div>
