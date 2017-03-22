@@ -125,10 +125,6 @@
 
       var count = 0;
       var GC = {};
-      GC.physXGC = {};
-      GC.logicGC = {};
-      GC.physXGC.scores = [];
-      GC.logicGC.scores = [];
       function showInfo(data, tabletop) {
       	keys = Object.keys(data[0]);
       	for(var i=1;i<keys.length;i++){	
