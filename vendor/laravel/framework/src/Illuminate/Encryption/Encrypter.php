@@ -52,7 +52,7 @@ class Encrypter {
 	 */
 	public function encrypt($value)
 	{
-		$iv = mcrypt_create_iv($this->getIvSize(), $this->getRandomizer());
+		$iv = @mcrypt_create_iv($this->getIvSize(), $this->getRandomizer());
 
 		$value = base64_encode($this->padAndMcrypt($value, $iv));
 
@@ -75,7 +75,7 @@ class Encrypter {
 	{
 		$value = $this->addPadding(serialize($value));
 
-		return mcrypt_encrypt($this->cipher, $this->key, $value, $this->mode, $iv);
+		return @mcrypt_encrypt($this->cipher, $this->key, $value, $this->mode, $iv);
 	}
 
 	/**
@@ -239,7 +239,7 @@ class Encrypter {
 	 */
 	protected function getIvSize()
 	{
-		return mcrypt_get_iv_size($this->cipher, $this->mode);
+		return @mcrypt_get_iv_size($this->cipher, $this->mode);
 	}
 
 	/**
@@ -302,7 +302,7 @@ class Encrypter {
 	 */
 	protected function updateBlockSize()
 	{
-		$this->block = mcrypt_get_iv_size($this->cipher, $this->mode);
+		$this->block = @mcrypt_get_iv_size($this->cipher, $this->mode);
 	}
 
 }

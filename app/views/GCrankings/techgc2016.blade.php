@@ -126,6 +126,7 @@
       var count = 0;
       var GC = {};
       function showInfo(data, tabletop) {
+      	console.log(data[0]);
       	keys = Object.keys(data[0]);
       	for(var i=1;i<keys.length;i++){	
       		GC[keys[i]]={};
@@ -151,6 +152,16 @@
         series = [];
         GC['Jhatka'].club = 'Electronics Club';
         GC['Chain Reaction'].club = 'Robotics Club';
+        GC['Logic GC'].clubnick = 'mnp';
+        GC['PhysX GC'].clubnick = 'mnp';
+        GC['Astro GC'].clubnick = 'Krttika';
+        GC['Jhatka'].clubnick = 'elec';
+        GC['Logic GC'].club = 'Maths and Physics Club';
+        GC['PhysX GC'].club = 'Maths and Physics Club';
+        GC['Astro GC'].club = 'Krittika';
+        GC['Jhatka'].club = 'Electronics Club';
+        GC["The Last GC"].club = 'The Last GC'
+
 
         clubsDone  = [];
         for(var k in validGCs){
@@ -243,18 +254,9 @@
 								</li>	
 								<li class="item mnp">
 									<div id="PhysX GC"></div>
-								</li>	
-								<li class="item aero">
-									<div id="RC Plane GC"></div>
-								</li>	
+								</li>		
 								<li class="item krittika">
-									<div id="Astrophysics GC"></div>
-								</li>	
-								<li class="item wncc">
-									<div id="Coding GC"></div>
-								</li>	
-								<li class="item aero">
-									<div id="Hydrofoam GC"></div>
+									<div id="Astro GC"></div>
 								</li>	
 								<li class="item elec">
 									<div id="Jhatka"></div>
