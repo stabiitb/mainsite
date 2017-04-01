@@ -7,7 +7,7 @@
      $curtime = \Carbon\Carbon::now();
 //     echo $closetime."  ".$curtime."\n";
 ?>
-@if($curtime < $closetime)
+<!--@if($curtime < $closetime)-->
     @if(Auth::check())
      @if(Auth::User()->ldap_verified==1)
     <h4> Deadline for First Abstract Submission is 20th April 2016, 11:59:59 pm.</h4>
@@ -143,8 +143,8 @@
     @else
         Please Login with Facebook account to continue.
     @endif  
-@else
+<!--@else
     <h3>Abstract Submission Link has been Closed</h3>
-@endif    
+@endif    -->
   	
 @endsection
