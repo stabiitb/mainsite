@@ -197,7 +197,7 @@
 													<h4>CONTACTS</h4>
 
 													<ul class="circled">
-														<li><a href="{{URL::Route('team_2016')}}">TEAM 2016-17</a></li>
+														<li><a href="{{URL::Route('team_2017')}}">TEAM 2016-17</a></li>
 														<li><a href="{{URL::Route('alumni')}}">ALUMNI</a></li>
 														<li><a href="{{URL::Route('facad')}}">FACULTY ADVISORS/MENTORS</a></li>
 													</ul><!-- /.circled -->

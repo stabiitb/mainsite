@@ -158,6 +158,10 @@ Route::get('annual_report_2014_2015',array('as'=>'annual_report_2014_2015','uses
 Route::get('lightsaber',array('as'=>'lightsaber','uses'=>function(){return View::make('lightsaber');}));
 
 // Team
+Route::get('team-stab-2017',array('as'=>'team_2017','uses'=>function ()
+{
+    return View::make('team.2017');
+}));
 Route::get('team-stab-2016',array('as'=>'team_2016','uses'=>function ()
 {
     return View::make('team.2016');
