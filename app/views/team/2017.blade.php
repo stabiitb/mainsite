@@ -15,7 +15,7 @@
                 </div>
 
 	<div class="row  text-center">
-		<div class="col-sm-6 inner-left inner-right" >
+		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right">
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/sravan.jpg')}}" class="img-circle">
@@ -32,8 +32,9 @@
 			</figure>
 		</div><!-- /.col -->
   </div>
+  <hr>
   <div class="row  text-center">
-        <div class="col-sm-6 inner-left inner-right" >
+        <div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
             <figure class="member">
                 <div class="icn-link">
                     <span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/shubham.jpg')}}" class="img-circle">
@@ -72,7 +73,7 @@
 	</div><!-- /.row -->
 
 	<div class="row  text-center">
-		<div class="col-sm-6 inner-left inner-right " >
+		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/karthik.jpg')}}" class="img-circle">
@@ -99,7 +100,7 @@
 	</div><!-- /.row -->
 
 	<div class="row  text-center">
-		<div class="col-sm-6 inner-left inner-right " >
+		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/hrushikesh.jpg')}}" class="img-circle">
@@ -212,7 +213,7 @@
 	</div><!-- /.row -->
 
 	<div class="row  text-center">
-		<div class="col-sm-6 inner-left inner-right " >
+		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/thariq.jpg')}}" class="img-circle">
@@ -324,7 +325,7 @@
 	</div><!-- /.row -->
 
 	<div class="row  text-center">
-		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right " >
+		<div class="col-sm-6 col-sm-offset-3 inner-left inner-right" >
 			<figure class="member">
 				<div class="icn-link">
 					<span class="icn-more"></span><img src="{{URL::asset('assets/images/2017/shounak.jpg')}}" class="img-circle">
