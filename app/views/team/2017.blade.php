@@ -7,7 +7,7 @@
 					<div class="row">
 						<div class="col-md-8 col-sm-10 center-block text-center " >
 							<header>
-								<h1>Team STAB 2016</h1>
+								<h1>Institute Technical Council 2017-18</h1>
 								{{--<h3>Technical Coordinators To be updated soon</h3>--}}
 							</header>
 						</div><!-- /.col -->
