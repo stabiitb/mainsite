@@ -24,7 +24,7 @@
 				<figcaption>
 					<h2>
 						Sravan Patchala
-						<span>General Secretary,Technical Affairs</span>
+						<span>General Secretary Technical Affairs</span>
 						<span><i class="icon-phone">8976087774</i></span>
 						<span><i class="icon-mail">sravps7@gmail.com</i></span>
 					</h2>
