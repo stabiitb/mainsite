@@ -242,7 +242,7 @@
 										<li><a target=_blank href="http://www.auv-iitb.org/">AUV IITB</a></li>
 										<li><a target=_blank href="http://www.aero.iitb.ac.in/pratham/Pratham/">Pratham</a></li>
 										<li><a target=_blank href="http://www.marssociety.org.in/">Mars Rover</a></li>
-										<li><a target=_blank href="http://www.umic-iitb.org/">Innovation Cell</a></li>
+										<li><a target=_blank href="http://www.umic-iitb.com/">Innovation Cell</a></li>
 										<li><a target=_blank href="http://teamshunya.in/">Team Shunya</a></li>
 									</ul><!-- /.dropdown-menu -->
 								</li><!-- /.dropdown -->
