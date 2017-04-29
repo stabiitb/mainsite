@@ -81,48 +81,14 @@ class HomeController extends BaseController {
 			return View::make('club.aero.video');
 		else return View::make('club.aero.home');
 	}
-	public function electronics_club($page="about")
+	public function electronics_club($request)
 	{
-		if($page=='about')
-			return View::make('club.elec.home');
-		else if($page=='team'){
-			$data = $this->update_script("Electronics Club");
-			$managers = $data[0];
-			$conveners = $data[1];
-			$cl = 'elec';
-			return View::make('club.club_team',compact('cl','managers','conveners'));
-		}
-		else if($page=='vision')
-			return View::make('club.elec.vision');
-		else if($page=='event'){
+        $sig_check = 'sha1=' . hash_hmac('sha1', $request->getContent(), $_ENV['GITHUB_ELEC_CLUB_SECRET']]);
+        if ($sig_check !== $request->header('x-hub-signature'))
+            return response(['error' => 'Unauthorized'], 401);
 
-			$file = fopen("https://docs.google.com/spreadsheets/d/1YiD_vHJwYnQYWU58DOJEBonDiWgXDvUM2GjtiDx5c1c/export?format=csv","r");
-			// $events=array();
-			while(!feof($file)){
-				$csv = fgetcsv($file);
-				if($csv[0]!="Event Name"&&$csv[0]!=""){
-					$csv[4]=$this->get_image_link($csv[4]);
-					$events[]=$csv;
-				}
-			}
-
-
-			return View::make('club.elec.event',compact('events'));
-		}
-		else if ($page=='gallery') {
-			
-			$pics=$this->get_images("elec");
-			$cl='elec';
-			return View::make('script_gallery',compact('cl','pics'));
-		}
-		else if ($page=='video') 
-			return View::make('club.elec.video');
-		else if($page=='line-follower-registration')
-			return View::make('club.elec.lf-register');
-		else if($page=='club-initiatives')
-			return View::make('club.elec.club_initiative');
-		else
-			return View::make('club.elec.home');
+        exec("./ecupdate.sh");
+        return response(['status' => 'OK'], 200);
 	}
 	public function krittika($page="about")
 	{

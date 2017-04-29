@@ -131,7 +131,7 @@ Route::group(array('prefix'=>'positionofresponsibility'),function()
 Route::get('/',array('as'=>'stab.home' , 'uses'=>'HomeController@home'));
 // Clubs URLs
 Route::get('aeromodelling-club',array('as'=>'aeromodelling-club','uses'=>'HomeController@aeromodelling_club'));
-Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
+//Route::get('electronics-club',array('as'=>'electronics-club','uses'=>'HomeController@electronics_club'));
 Route::get('krittika',array('as'=>'krittika','uses'=>'HomeController@krittika'));
 Route::get('math-and-physics-club',array('as'=>'MnP','uses'=>'HomeController@MnP'));
 Route::get('robotics-club',array('as'=>'robotics-club','uses'=>'HomeController@robotics_club'));
@@ -140,11 +140,14 @@ Route::get('technovation',array('as'=>'technovation','uses'=>'HomeController@tec
 
 // Clubs Pages
 Route::get('aeromodelling-club/{page}','HomeController@aeromodelling_club');
-Route::get('electronics-club/{page}','HomeController@electronics_club');
+//Route::get('electronics-club/{page}','HomeController@electronics_club');
 Route::get('krittika/{page}','HomeController@krittika');
 Route::get('robotics-club/{page}','HomeController@robotics_club');
 Route::get('math-and-physics-club/{page}','HomeController@MnP');
 Route::get('wncc/{page}','HomeController@wncc');
+
+//Github Webhook update
+Route::post('electronics-club/update','HomeController@electronics_club');
 
 //CLub Events
 // Route::get('electronics-club/event/CMOS-Design-Challenege-solution',array('as'=>'electronics-club.CMOS','uses'=>'EventController@elec_CMOS_Challenge_show'));
